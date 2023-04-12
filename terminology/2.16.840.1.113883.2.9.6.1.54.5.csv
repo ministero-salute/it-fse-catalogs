@@ -1,0 +1,9 @@
+version,code,description,release_date
+"",1,dimissione a domicilio,2019-03-19
+"",2,ricovero in reparto di degenza,2019-03-19
+"",3,trasferimento ad altro istituto,2019-03-19
+"",4,decesso,2019-03-19
+"",5,rifiuta ricovero,2019-03-19
+"",6,il paziente abbandona l???OBI/PS in corso di accertamenti e/o prima della chiusura della cartella clinica,2019-03-19
+"",8,dimissione con rinvio a strutture ambulatoriali,2019-03-19
+"",9,trasferimento verso struttura di tipo territoriale,2019-03-19
