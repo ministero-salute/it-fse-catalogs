@@ -1,0 +1,23 @@
+version,code,description,release_date
+"",ACUTE,Ricovero urgente,2022-04-04
+"",ALC,In attesa di trasferimento,2022-04-04
+"",AMB,Ambulatoriale,2022-04-04
+"",CARD,Cardiologia,2022-04-04
+"",CHR,Cronico,2022-04-04
+"",DNTL,Odontoiatria,2022-04-04
+"",EMER,Emergenza,2022-04-04
+"",FLD,Assistenza Territoriale,2022-04-04
+"",GENRL,Assistenza di Medicina Generale,2022-04-04
+"",HH,Assistenza Domiciliare,2022-04-04
+"",IMP,Ricovero,2022-04-04
+"",MED,Assistenza Medica,2022-04-04
+"",NONAC,Ricovero programmato,2022-04-04
+"",OBS,Ostetricia,2022-04-04
+"",ONC,Oncologia,2022-04-04
+"",PALL,Cure Palliative,2022-04-04
+"",PED,Pediatria,2022-04-04
+"",PHAR,Assistenza Farmaceutica,2022-04-04
+"",PHYRHB,Riabilitazione Fisica,2022-04-04
+"",PSYCH,Assistenza Psichiatrica,2022-04-04
+"",SURG,Intervento Chirurgico,2022-04-04
+"",VR,Virtuale,2022-04-04
