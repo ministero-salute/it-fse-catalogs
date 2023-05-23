@@ -17,7 +17,7 @@ Sono inoltre disponibili i [mapping](mapping/) in FHIR mapping language per la t
 ## Container
 
 All'interno della directory container è presente un `Dockerfile` che permette di creare un'immagine mongodb con i dizionari precaricati.  
-Per la creazione dell'immagine è sufficiente (dalla directory principale del repository) ed eseguire:
+Per la creazione dell'immagine è sufficiente (dalla directory principale del repository) eseguire:
 ```bash
 docker build  . -f container/Dockerfile -t it-fse-catalogs
 ```
