@@ -1,0 +1,64 @@
+version,code,description,release_date
+"",00,Nessuna condizione,
+"",01,Alcoolismo cronico,
+"",02,"Asplenia anatomica o funzionale e 
+candidati alla splenectomia",
+"",03,BPCO,
+"",04,Chemioterapia o radioterapia,
+"",05,Coagulopatie,
+"",06,Deficit del complemento,
+"",07,"Deficit dell???immunit?? cellulare ",
+"",08,Deficit dell???immunit?? umorale,
+"",09,Diabete mellito e altre endocrinopatie,
+"",10,"Emodializzati e uremici cronici di cui si 
+prevede l???ingresso in dialisi e dializzati",
+"",11,"prevede l???ingresso in dialisi e dializzati 39.95 Emodialisi
+11 Emoglobinopatie quali anemia falciforme e 
+talassemia",
+"",12,Epatopatie croniche,
+"",13,Impianto cocleare,
+"",14,Infezione da HIV,
+"",15,"Insufficienza renale/surrenale cronica ",
+"",16,"Lesioni eczematose croniche o psoriasiche 
+alle mani",
+"",17,"Malattie associate a un incrementato 
+rischio di aspirazione delle secrezioni 
+respiratorie quali le malattie 
+neuromuscolari",
+"",18,Malattie croniche dell???apparato cardio-circolatorio,
+"",19,Malattie croniche dell???apparato respiratorio,
+"",20,Malattie del motoneurone,
+"",21,"Malattie infiammatorie croniche e sindromi 
+da malassorbimento intestinale ",
+"",22,"Malattie onco-ematologiche (leucemie, 
+linfomi e mieloma multiplo)",
+"",23,Tumori solidi,
+"",24,Obesit??,
+"",25,Trapianto di midollo,
+"",26,"Tossicodipendenza ",
+"",27,Trapianto d???organo solido,
+"",28,"Bambini e adolescenti in trattamento a 
+lungo termine con acido acetilsalicilico, a 
+rischio di Sindrome di Reye in caso di 
+infezione influenzale",
+"",29,"Soggetti con perdite liquorali da traumi o 
+intervento",
+"",30,"Soggetti destinati a terapia 
+immunosoppressiva",
+"",31,Malattie metaboliche,
+"",32,Malattie degli organi emopoietici,
+"",33,"Malattie congenite e acquisite che 
+comportino carente produzione di 
+anticorpi, immunosppressione indotta da 
+farmaci",
+"",34,"Patologie per le quali sono programmati 
+importanti interventi chirurgici",
+"",35,Malattie neurologiche,
+"",36,"Fibrosi cistica ",
+"",37," Malattie autoimmuni immunodeficienze 
+primitive",
+"",38,Malattie cerebrovascolari,
+"",39,Sindrome di Down,
+"",40,"Disabilit?? (fisica, sensoriale, intellettiva, 
+psichica)",
+"",99,"Dato non disponibile ",
