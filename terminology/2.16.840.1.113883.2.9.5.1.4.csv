@@ -689,8 +689,8 @@ version,code,description,release_date
 7.0.0,CWOH,certified women's health care,2019-12-15
 7.0.0,CommonRule,Common Rule,2019-12-15
 7.0.0,DACT,drug action detected issue,2019-12-15
-7.0.0,DALG,,2019-12-15
 7.0.0,DALG,Drug Allergy,2019-12-15
+7.0.0,DALG,,2019-12-15
 7.0.0,DAY,day,2019-12-15
 7.0.0,DAY,,2019-12-15
 7.0.0,DDP,Direct Deposit,2019-12-15
@@ -756,8 +756,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,,2019-12-15
 7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
+7.0.0,DOSELINDA,,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
@@ -777,13 +777,13 @@ version,code,description,release_date
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,,2019-12-15
 7.0.0,EALG,Environmental Allergy,2019-12-15
+7.0.0,EALG,,2019-12-15
 7.0.0,EAP,employee assistance program,2019-12-15
 7.0.0,EDU,education fees,2019-12-15
 7.0.0,EFORM,electronic form to follow,2019-12-15
-7.0.0,EHCPOL,,2019-12-15
 7.0.0,EHCPOL,extended healthcare,2019-12-15
+7.0.0,EHCPOL,,2019-12-15
 7.0.0,EINT,Environmental Intolerance,2019-12-15
 7.0.0,ELG,Eligible,2019-12-15
 7.0.0,ELLIPSE,ellipse,2019-12-15
@@ -794,8 +794,8 @@ version,code,description,release_date
 7.0.0,EMP,employee information sensitivity,2019-12-15
 7.0.0,EMPL,employer information sensitivity,2019-12-15
 7.0.0,EMRGONLY,emergency only,2019-12-15
-7.0.0,ENAINT,,2019-12-15
 7.0.0,ENAINT,Environmental Non-Allergy Intolerance,2019-12-15
+7.0.0,ENAINT,,2019-12-15
 7.0.0,ENCRYPT,encrypt,2019-12-15
 7.0.0,ENCRYPTR,encrypt at rest,2019-12-15
 7.0.0,ENCRYPTT,encrypt in transit,2019-12-15
@@ -847,8 +847,8 @@ version,code,description,release_date
 7.0.0,FLD,field,2019-12-15
 7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
 7.0.0,FMCOMPT,financial management compartment,2019-12-15
-7.0.0,FNAINT,,2019-12-15
 7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
+7.0.0,FNAINT,,2019-12-15
 7.0.0,FNLFEE,final fee,2019-12-15
 7.0.0,FOMTRNS,fomite transmission,2019-12-15
 7.0.0,FOOD,Food Interaction Alert,2019-12-15
@@ -961,8 +961,8 @@ version,code,description,release_date
 7.0.0,KEY,keyword,2019-12-15
 7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY204,,2019-12-15
-7.0.0,KEY205,,2019-12-15
 7.0.0,KEY205,Duplicate key identifier,2019-12-15
+7.0.0,KEY205,,2019-12-15
 7.0.0,KEY206,non-matching identification,2019-12-15
 7.0.0,KSUBJ,knowledge subject,2019-12-15
 7.0.0,KSUBT,knowledge subtopic,2019-12-15
@@ -1094,8 +1094,8 @@ version,code,description,release_date
 7.0.0,NUMEX,numerator exclusions,2019-12-15
 7.0.0,O,In Process,2019-12-15
 7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,,2019-12-15
 7.0.0,OBSA,Observation Alert,2019-12-15
+7.0.0,OBSA,,2019-12-15
 7.0.0,OBSANTC,antigen count,2019-12-15
 7.0.0,OBSANTV,antigen validity,2019-12-15
 7.0.0,OBSENC,observation encounter,2019-12-15
@@ -1187,8 +1187,8 @@ version,code,description,release_date
 7.0.0,PPRD,prior period adjustment,2019-12-15
 7.0.0,PRA,,2019-12-15
 7.0.0,PRDING,product invoice group,2019-12-15
-7.0.0,PRDMX,,2019-12-15
 7.0.0,PRDMX,period maximum,2019-12-15
+7.0.0,PRDMX,,2019-12-15
 7.0.0,PRE,Pre-Dilution,2019-12-15
 7.0.0,PREFSTRENGTH,preference strength,2019-12-15
 7.0.0,PREG,Pregnancy Alert,2019-12-15
@@ -1213,8 +1213,8 @@ version,code,description,release_date
 7.0.0,PSYCH,Psychiatric,2019-12-15
 7.0.0,PSYTHPN,psychotherapy note information sensitivity,2019-12-15
 7.0.0,PTNTCARE,Health Care Interaction - Patient Care,2019-12-15
-7.0.0,PUBLICPOL,,2019-12-15
 7.0.0,PUBLICPOL,public healthcare,2019-12-15
+7.0.0,PUBLICPOL,,2019-12-15
 7.0.0,PUBTRN,public transport,2019-12-15
 7.0.0,PYRDELAY,delayed by a previous payor,2019-12-15
 7.0.0,R,Process Completed,2019-12-15
@@ -1353,8 +1353,8 @@ version,code,description,release_date
 7.0.0,TBS,trial balance partial strength,2019-12-15
 7.0.0,TEACHER,teacher,2019-12-15
 7.0.0,TF,Trial Fill,2019-12-15
-7.0.0,TFS,,2019-12-15
 7.0.0,TFS,trial fill partial strength,2019-12-15
+7.0.0,TFS,,2019-12-15
 7.0.0,TFS,,2019-12-15
 7.0.0,TIME,timing detected issue,2019-12-15
 7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
