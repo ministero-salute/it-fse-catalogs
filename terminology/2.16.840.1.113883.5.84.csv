@@ -100,11 +100,11 @@ version,code,description,release_date
 2.1.0,0099,"Immunoperoxidase, Peroxidase anti-peroxidase complex",2019-11-01
 2.1.0,0100,"Immunoperoxidase, Protein A-peroxidase complex",2019-11-01
 2.1.0,0101,Immunoassay,2019-11-01
-2.1.0,0102,"Immunoassay, qualitative, multiple step",2019-11-01
-2.1.0,0103,"Immunoassay, qualitative, single step",2019-11-01
+2.1.0,0102,"Immunoassay, qualitative; multiple step",2019-11-01
+2.1.0,0103,"Immunoassay, qualitative; single step",2019-11-01
 2.1.0,0104,Radioimmunoassay,2019-11-01
-2.1.0,0105,"Immunoassay, semi-quantitative, multiple step",2019-11-01
-2.1.0,0106,"Immunoassay, semi-quantitative, single step",2019-11-01
+2.1.0,0105,"Immunoassay, semi-quantitative; multiple step",2019-11-01
+2.1.0,0106,"Immunoassay, semi-quantitative; single step",2019-11-01
 2.1.0,0107,Microscopy,2019-11-01
 2.1.0,0108,Darkfield microscopy,2019-11-01
 2.1.0,0109,Electron microscopy,2019-11-01
