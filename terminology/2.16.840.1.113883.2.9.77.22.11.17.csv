@@ -1,13 +1,13 @@
 version,code,description,release_date
-"",Q10.4,Assenza e agenesia dell???apparato lacrimale,2022-04-04
-"",Q13.1,Assenza dell???iride,2022-04-04
+"",Q10.4,Assenza e agenesia dell'apparato lacrimale,2022-04-04
+"",Q13.1,Assenza dell'iride,2022-04-04
 "",Q16,Assenza congenita di padiglione auricolare,2022-04-04
 "",Q16.1,"Assenza, atresia e restringimento congeniti di condotto uditivo (esterno)",2022-04-04
 "",Q16.2,Assenza congenita della Tuba di Eustachio,2022-04-04
-"",Q50.0,Assenza congenita dell???Ovaio,2022-04-04
+"",Q50.0,Assenza congenita dell'Ovaio,2022-04-04
 "",Q52.0,Assenza congenita della vagina,2022-04-04
 "",Z89,Mancanza acquisita di un arto,2022-04-04
-"",Z89.0,"Mancanza acquisita di dito(a) della mano, [compreso il pollice], unilaterale",2022-04-04
+"",Z89.0,"Mancanza acquisita di dito(a) della mano, [compreso il pollice]; unilaterale",2022-04-04
 "",Z89.1,Mancanza acquisita della mano e del polso,2022-04-04
 "",Z89.2,"Mancanza acquisita del braccio, al di sopra del polso",2022-04-04
 "",Z89.3,Mancanza acquisita di entrambi gli arti superiori [qualsiasi livello],2022-04-04
