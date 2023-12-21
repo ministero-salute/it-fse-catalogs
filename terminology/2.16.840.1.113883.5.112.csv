@@ -11,8 +11,8 @@ version,code,description,release_date
 2.1.0,BLADINSTL,"Instillation, urinary catheter",2019-03-20
 2.1.0,BLADIRR,"Irrigation, urinary bladder",2019-03-20
 2.1.0,BLADIRR,"Irrigation, urinary bladder",2019-03-20
-2.1.0,BLADIRRC,"Irrigation, urinary bladder, continuous",2019-03-20
-2.1.0,BLADIRRT,"Irrigation, urinary bladder, tidal",2019-03-20
+2.1.0,BLADIRRC,"Irrigation, urinary bladder; continuous",2019-03-20
+2.1.0,BLADIRRT,"Irrigation, urinary bladder; tidal",2019-03-20
 2.1.0,BUC,"Topical application, buccal",2019-03-20
 2.1.0,BUC,"Topical application, buccal",2019-03-20
 2.1.0,CAPDINSTL,"Instillation, continuous ambulatory peritoneal dialysis port",2019-03-20
@@ -55,10 +55,10 @@ version,code,description,release_date
 2.1.0,EPI,"Infusion, epidural",2019-03-20
 2.1.0,EPIDURINJ,"Injection, epidural",2019-03-20
 2.1.0,EPIDURINJ,"Injection, epidural",2019-03-20
-2.1.0,EPIINJ,"Injection, epidural, push",2019-03-20
-2.1.0,EPIINJ,"Injection, epidural, push",2019-03-20
-2.1.0,EPINJSP,"Injection, epidural, slow push",2019-03-20
-2.1.0,EPINJSP,"Injection, epidural, slow push",2019-03-20
+2.1.0,EPIINJ,"Injection, epidural; push",2019-03-20
+2.1.0,EPIINJ,"Injection, epidural; push",2019-03-20
+2.1.0,EPINJSP,"Injection, epidural; slow push",2019-03-20
+2.1.0,EPINJSP,"Injection, epidural; slow push",2019-03-20
 2.1.0,ETINSTL,"Instillation, endotracheal tube",2019-03-20
 2.1.0,ETINSTL,"Instillation, endotracheal tube",2019-03-20
 2.1.0,ETNEB,"Nebulization, endotracheal tube",2019-03-20
@@ -96,8 +96,8 @@ version,code,description,release_date
 2.1.0,IABDINJ,"Injection, intra-abdominal",2019-03-20
 2.1.0,IAINJ,"Injection, intraarterial",2019-03-20
 2.1.0,IAINJ,"Injection, intraarterial",2019-03-20
-2.1.0,IAINJP,"Injection, intraarterial, push",2019-03-20
-2.1.0,IAINJSP,"Injection, intraarterial, slow push",2019-03-20
+2.1.0,IAINJP,"Injection, intraarterial; push",2019-03-20
+2.1.0,IAINJSP,"Injection, intraarterial; slow push",2019-03-20
 2.1.0,IARTINJ,"Injection, intraarticular",2019-03-20
 2.1.0,IARTINJ,"Injection, intraarticular",2019-03-20
 2.1.0,IBRONCHINSTIL,"Instillation, intrabronchial",2019-03-20
@@ -108,9 +108,9 @@ version,code,description,release_date
 2.1.0,IC,"Infusion, intracardiac",2019-03-20
 2.1.0,ICARDINJ,"Injection, intracardiac",2019-03-20
 2.1.0,ICARDINJ,"Injection, intracardiac",2019-03-20
-2.1.0,ICARDINJRP,"Injection, intracardiac, rapid push",2019-03-20
-2.1.0,ICARDINJSP,"Injection, intracardiac, slow push",2019-03-20
-2.1.0,ICARINJP,"Injection, intracardiac, push",2019-03-20
+2.1.0,ICARDINJRP,"Injection, intracardiac; rapid push",2019-03-20
+2.1.0,ICARDINJSP,"Injection, intracardiac; slow push",2019-03-20
+2.1.0,ICARINJP,"Injection, intracardiac; push",2019-03-20
 2.1.0,ICARTINJ,"Injection, intracartilaginous",2019-03-20
 2.1.0,ICARTINJ,"Injection, intracartilaginous",2019-03-20
 2.1.0,ICAUDINJ,"Injection, intracaudal",2019-03-20
@@ -129,7 +129,7 @@ version,code,description,release_date
 2.1.0,ICORNTA,"Topical application, intracorneal",2019-03-20
 2.1.0,ICORONINJ,"Injection, intracoronary",2019-03-20
 2.1.0,ICORONINJ,"Injection, intracoronary",2019-03-20
-2.1.0,ICORONINJP,"Injection, intracoronary, push",2019-03-20
+2.1.0,ICORONINJP,"Injection, intracoronary; push",2019-03-20
 2.1.0,ICORONTA,"Topical application, intracoronal (dental)",2019-03-20
 2.1.0,ICORONTA,"Topical application, intracoronal (dental)",2019-03-20
 2.1.0,ICORPCAVINJ,"Injection, intracorpus cavernosum",2019-03-20
@@ -180,10 +180,10 @@ version,code,description,release_date
 2.1.0,ILYMPJINJ,"Injection, intralymphatic",2019-03-20
 2.1.0,IM,"Injection, intramuscular",2019-03-20
 2.1.0,IM,"Injection, intramuscular",2019-03-20
-2.1.0,IMD,"Injection, intramuscular, deep",2019-03-20
+2.1.0,IMD,"Injection, intramuscular; deep",2019-03-20
 2.1.0,IMEDULINJ,"Injection, intramedullary",2019-03-20
 2.1.0,IMEDULINJ,"Injection, intramedullary",2019-03-20
-2.1.0,IMZ,"Injection, intramuscular, z track",2019-03-20
+2.1.0,IMZ,"Injection, intramuscular; z track",2019-03-20
 2.1.0,INSUF,Insufflation,2019-03-20
 2.1.0,INTERMENINJ,"Injection, interameningeal",2019-03-20
 2.1.0,INTERMENINJ,"Injection, interameningeal",2019-03-20
@@ -198,12 +198,12 @@ version,code,description,release_date
 2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
 2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
 2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
-2.1.0,IOSSC,"Infusion, intraosseous, continuous",2019-03-20
-2.1.0,IOSSC,"Infusion, intraosseous, continuous",2019-03-20
+2.1.0,IOSSC,"Infusion, intraosseous; continuous",2019-03-20
+2.1.0,IOSSC,"Infusion, intraosseous; continuous",2019-03-20
 2.1.0,IOSSINJ,"Injection, intraosseous",2019-03-20
 2.1.0,IOSSINJ,"Injection, intraosseous",2019-03-20
-2.1.0,IOSURGINS,"Insertion, intraocular, surgical",2019-03-20
-2.1.0,IOSURGINS,"Insertion, intraocular, surgical",2019-03-20
+2.1.0,IOSURGINS,"Insertion, intraocular; surgical",2019-03-20
+2.1.0,IOSURGINS,"Insertion, intraocular; surgical",2019-03-20
 2.1.0,IOTOP,"Topical application, intraocular",2019-03-20
 2.1.0,IOTOP,"Topical application, intraocular",2019-03-20
 2.1.0,IOVARINJ,"Injection, intraovarian",2019-03-20
@@ -261,16 +261,16 @@ version,code,description,release_date
 2.1.0,IUINJC,"Injection, intracervical (uterus)",2019-03-20
 2.1.0,IUINSTL,"Instillation, intrauterine",2019-03-20
 2.1.0,IUINSTL,"Instillation, intrauterine",2019-03-20
-2.1.0,IURETINJ,"Injection, intraureteral, retrograde",2019-03-20
-2.1.0,IURETINJ,"Injection, intraureteral, retrograde",2019-03-20
+2.1.0,IURETINJ,"Injection, intraureteral; retrograde",2019-03-20
+2.1.0,IURETINJ,"Injection, intraureteral; retrograde",2019-03-20
 2.1.0,IV,"Infusion, intravenous",2019-03-20
 2.1.0,IVASCINFUS,"Infusion, intravascular",2019-03-20
 2.1.0,IVASCINFUS,"Infusion, intravascular",2019-03-20
 2.1.0,IVASCINJ,"Injection, intravascular",2019-03-20
 2.1.0,IVASCINJ,"Injection, intravascular",2019-03-20
 2.1.0,IVC,"Infusion, intravenous catheter",2019-03-20
-2.1.0,IVCC,"Infusion, intravenous catheter, continuous",2019-03-20
-2.1.0,IVCI,"Infusion, intravenous catheter, intermittent",2019-03-20
+2.1.0,IVCC,"Infusion, intravenous catheter; continuous",2019-03-20
+2.1.0,IVCI,"Infusion, intravenous catheter; intermittent",2019-03-20
 2.1.0,IVENTINJ,"Injection, intraventricular (heart)",2019-03-20
 2.1.0,IVENTINJ,"Injection, intraventricular (heart)",2019-03-20
 2.1.0,IVESINJ,"Injection, intravesicle",2019-03-20
@@ -279,14 +279,14 @@ version,code,description,release_date
 2.1.0,IVFLUSH,"Flush, intravenous catheter",2019-03-20
 2.1.0,IVINJ,"Injection, intravenous",2019-03-20
 2.1.0,IVINJ,"Injection, intravenous",2019-03-20
-2.1.0,IVINJBOL,"Injection, intravenous, bolus",2019-03-20
+2.1.0,IVINJBOL,"Injection, intravenous; bolus",2019-03-20
 2.1.0,IVITIMPLNT,"Implantation, intravitreal",2019-03-20
 2.1.0,IVITIMPLNT,"Implantation, intravitreal",2019-03-20
 2.1.0,IVITINJ,"Injection, intravitreal",2019-03-20
 2.1.0,IVITINJ,"Injection, intravitreal",2019-03-20
-2.1.0,IVPUSH,"Injection, intravenous, push",2019-03-20
-2.1.0,IVRPUSH,"Injection, intravenous, rapid push",2019-03-20
-2.1.0,IVSPUSH,"Injection, intravenous, slow push",2019-03-20
+2.1.0,IVPUSH,"Injection, intravenous; push",2019-03-20
+2.1.0,IVRPUSH,"Injection, intravenous; rapid push",2019-03-20
+2.1.0,IVSPUSH,"Injection, intravenous; slow push",2019-03-20
 2.1.0,JJTINSTL,"Instillation, jejunostomy tube",2019-03-20
 2.1.0,JJTINSTL,"Instillation, jejunostomy tube",2019-03-20
 2.1.0,LARYNGINSTIL,"Instillation, laryngeal",2019-03-20
@@ -306,7 +306,7 @@ version,code,description,release_date
 2.1.0,NASINHL,"Inhalation, nasal",2019-03-20
 2.1.0,NASINHL,"Inhalation, nasal",2019-03-20
 2.1.0,NASINHLC,"Inhalation, nasal cannula",2019-03-20
-2.1.0,NASNEB,"Inhalation, nebulization, nasal",2019-03-20
+2.1.0,NASNEB,"Inhalation, nebulization; nasal",2019-03-20
 2.1.0,NASOGASINSTIL,"Instillation, nasogastric",2019-03-20
 2.1.0,NASOGASINSTIL,"Instillation, nasogastric",2019-03-20
 2.1.0,NEB,"Inhalation, nebulization",2019-03-20
@@ -333,7 +333,7 @@ version,code,description,release_date
 2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
 2.1.0,ORMUC,"Topical application, oromucosal",2019-03-20
 2.1.0,ORMUC,"Topical application, oromucosal",2019-03-20
-2.1.0,ORNEB,"Inhalation, nebulization, oral",2019-03-20
+2.1.0,ORNEB,"Inhalation, nebulization; oral",2019-03-20
 2.1.0,OROPHARTA,"Topical application, oropharyngeal",2019-03-20
 2.1.0,OROPHARTA,"Topical application, oropharyngeal",2019-03-20
 2.1.0,ORRINSE,"Rinse, oral",2019-03-20
@@ -344,7 +344,7 @@ version,code,description,release_date
 2.1.0,PAINJ,"Injection, periarticular",2019-03-20
 2.1.0,PARENTINJ,"Injection, parenteral",2019-03-20
 2.1.0,PARENTINJ,"Injection, parenteral",2019-03-20
-2.1.0,PCA,"Infusion, intravenous catheter, pca pump",2019-03-20
+2.1.0,PCA,"Infusion, intravenous catheter; pca pump",2019-03-20
 2.1.0,PDONTINJ,"Injection, periodontal",2019-03-20
 2.1.0,PDONTINJ,"Injection, periodontal",2019-03-20
 2.1.0,PDONTTA,"Topical application, periodontal",2019-03-20
@@ -392,8 +392,8 @@ version,code,description,release_date
 2.1.0,SCINJ,"Injection, subconjunctival",2019-03-20
 2.1.0,SHAMPOO,Shampoo,2019-03-20
 2.1.0,SHAMPOO,Shampoo,2019-03-20
-2.1.0,SININSTIL,"Instillation, sinus, unspecified",2019-03-20
-2.1.0,SININSTIL,"Instillation, sinus, unspecified",2019-03-20
+2.1.0,SININSTIL,"Instillation, sinus; unspecified",2019-03-20
+2.1.0,SININSTIL,"Instillation, sinus; unspecified",2019-03-20
 2.1.0,SKIN,"Topical application, skin",2019-03-20
 2.1.0,SKIN,"Topical application, skin",2019-03-20
 2.1.0,SL,"Dissolve, sublingual",2019-03-20
@@ -414,8 +414,8 @@ version,code,description,release_date
 2.1.0,SQIMPLNT,"Implantation, subcutaneous",2019-03-20
 2.1.0,SQINFUS,"Infusion, subcutaneous",2019-03-20
 2.1.0,SQINFUS,"Infusion, subcutaneous",2019-03-20
-2.1.0,SQSURGINS,"Insertion, subcutaneous, surgical",2019-03-20
-2.1.0,SQSURGINS,"Insertion, subcutaneous, surgical",2019-03-20
+2.1.0,SQSURGINS,"Insertion, subcutaneous; surgical",2019-03-20
+2.1.0,SQSURGINS,"Insertion, subcutaneous; surgical",2019-03-20
 2.1.0,SUBARACHINJ,"Injection, subarachnoid",2019-03-20
 2.1.0,SUBARACHINJ,"Injection, subarachnoid",2019-03-20
 2.1.0,SUBCONJTA,Subconjunctival,2019-03-20
