@@ -1,0 +1,33 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+   <id value="4101791"></id>
+   <meta>
+      <versionId value="1"></versionId>
+      <lastUpdated value="2023-12-29T15:11:59.244+00:00"></lastUpdated>
+      <source value="#JqxX7H6cqsWtKZxy"></source>
+      <security>
+         <system value="https://www.hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html"></system>
+         <code value="N"></code>
+         <display value="Normal"></display>
+      </security>
+      <tag>
+         <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"></system>
+         <code value="SUBSETTED"></code>
+         <display value="Resource encoded in summary mode"></display>
+      </tag>
+      <tag>
+         <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"></system>
+         <code value="SUBSETTED"></code>
+         <display value="Resource encoded in summary mode"></display>
+      </tag>
+   </meta>
+   <url value="http://example.com/fakeSnomed_829965eb-f96f-42e1-ba5c-73ea65321889"></url>
+   <identifier>
+      <system value="urn:ietf:rfc:3986"></system>
+      <value value="urn:oid:829965eb-f96f-42e1-ba5c-73ea65321889"></value>
+   </identifier>
+   <version value="1.0.0"></version>
+   <name value="Fake SNOMED"></name>
+   <status value="active"></status>
+   <copyright value="? 2023 Fake Company. All rights reserved."></copyright>
+   <content value="fragment"></content>
+</CodeSystem>
