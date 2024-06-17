@@ -1,0 +1,346 @@
+map "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/Vaccinazioni" = "Vaccinazioni"
+
+
+uses "http://hl7.org/fhir/cda/StructureDefinition/ClinicalDocument" alias ClinicalDocument as source
+uses "http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor" alias AssignedAuthor as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity" alias AssignedEntity as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/AssociatedEntity" alias AssociatedEntity as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/CustodianOrganization" alias CustodianOrganization as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/OrganizationPartOf" alias OrganizationPartOf as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/Organization" alias rapresentedOrganization as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/Section" alias Section as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/PatientRole" alias PatientRole as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/AD" alias AD as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/Composition" alias Composition as produced
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as produced
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" alias Encounter as produced
+uses "http://hl7.org/fhir/StructureDefinition/Person" alias Patient as produced
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" alias Practitioner as produced
+uses "http://hl7.org/fhir/StructureDefinition/Organization" alias Organization as produced
+uses "http://hl7.org/fhir/cda/StructureDefinition/Act" alias Act as produced
+uses "http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ" alias IVL_PQ as source
+uses "http://hl7.org/fhir/cda/StructureDefinition/PQ" alias PQ as source
+uses "http://hl7.org/fhir/StructureDefinition/SimpleQuantity" alias SimpleQuantity as target
+uses "http://hl7.org/fhir/StructureDefinition/Immunization" alias Immunization as target
+
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/CdaToFhirDataTypes"
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/FULLHEADER"
+
+group CdaToBundle(source cda : ClinicalDocument, target bundle : Bundle) {
+  cda ->  bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('Composition') as composition,  composition.id = uuid() as uuid1,  e.fullUrl = append('https://example/Composition/', uuid1), request.url = 'Composition',  bundle.entry as e2, e2.request = create('BackboneElement') as requestPAT, requestPAT.method = 'PUT', e2.resource = create('Patient') as patient,  patient.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Patient/', uuid2), bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST',  e3.resource = create('Encounter') as encounter,  encounter.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Encounter/', uuid3),request.url = 'Encounter',
+  bundle.entry as e5, e5.request = create('BackboneElement') as request, request.method = 'POST',  e5.resource = create('DocumentReference') as DocumentReference,  DocumentReference.id = uuid() as uuid5,  e5.fullUrl = append('https://example/DocumentReference/', uuid5),request.url = 'DocumentReference' then {
+  cda then ClinicalDocumentToBundle(cda, patient, composition, encounter, bundle, DocumentReference) "cdatobundle";
+  cda.recordTarget as recordTarget then{
+    recordTarget.patientRole as patient then{
+       patient.id as id-> patient.identifier as identifier then {
+         id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+          id.extension as ext1 -> identifier.value = ext1 "value";
+          id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+        }"idfr";
+        patient.id as id where (root='2.16.840.1.113883.2.9.4.3.2') or (root='2.16.840.1.113883.2.9.4.3.7')
+        or (root='2.16.840.1.113883.2.9.4.3.3') or(root='2.16.840.1.113883.2.9.4.3.17')  or (root = '2.16.840.1.113883.2.9.4.3.18') or (root = '2.16.840.1.113883.2.9.2.10.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.20.4.1.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.41.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.42.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.50.4.1.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.70.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.80.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.90.4.1.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1.1') or (root = '2.16.840.1.113883.2.9.2.120.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.130.4.1.1') or (root = '2.16.840.1.113883.2.9.2.140.4.1.1') or (root = '2.16.840.1.113883.2.9.2.150.4.1.1') or (root = '2.16.840.1.113883.2.9.2.160.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.170.4.1.1') or (root = '2.16.840.1.113883.2.9.2.180.4.1.1') or (root = '2.16.840.1.113883.2.9.2.190.4.1.1') or (root = '2.16.840.1.113883.2.9.2.200.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.10.4.1') or (root = '2.16.840.1.113883.2.9.2.20.4.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1') or (root = '2.16.840.1.113883.2.9.2.41.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.42.4.1') or (root = '2.16.840.1.113883.2.9.2.50.4.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1') or (root = '2.16.840.1.113883.2.9.2.70.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.80.4.1') or (root = '2.16.840.1.113883.2.9.2.90.4.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.120.4.1')  or (root = '2.16.840.1.113883.2.9.2.130.4.1')  or (root = '2.16.840.1.113883.2.9.2.140.4.1')  or (root = '2.16.840.1.113883.2.9.2.150.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.160.4.1')  or (root = '2.16.840.1.113883.2.9.2.170.4.1')  or (root = '2.16.840.1.113883.2.9.2.180.4.1')  or (root = '2.16.840.1.113883.2.9.2.190.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.200.4.1') or (root='2.16.840.1.113883.2.9.4.3.15')  then {
+          id.extension as ext -> requestPAT.url = append('Patient?identifier=',ext) "UUID";
+          }"ext";
+        }"record";
+      }"recPat";
+ } "ClinicalDocumentToBody";
+}
+
+group ClinicalDocumentToBundle(source cda : ClinicalDocument, target patient : Patient, target composition : Composition, target encounter : Encounter, target bundle : Bundle, target DocumentReference : DocumentReference) {
+  cda -> encounter.status = 'finished' "finished";
+  cda -> encounter.class = create("Coding") as coding then{
+    cda -> coding.code = 'AMB' "amb";
+  }"coding";
+  cda -> bundle.id = uuid() "id";
+  cda.id -> bundle.identifier "identifier";
+  cda -> bundle.type = 'transaction' "type";
+  cda -> bundle.timestamp=(timestamp.now()) "date";
+  cda then ClinicalDocumentComposition(cda, composition, patient, encounter, bundle, DocumentReference) "composition";  
+  cda.component as component then {
+    component.structuredBody as body then {
+      body.component as component  then {       
+	     component.section as srcSection then {
+        srcSection -> composition.section as tgtSection  then ClinicalDocumentSection(cda, srcSection, patient, tgtSection, bundle,encounter) "TerapiaFarmacologicaAllaDimissione";
+       };
+      };
+    } "body";
+  };
+}
+
+//--------------------------------
+
+group ClinicalDocumentSection(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+  src.title as t -> tgt.title = (t.dataString);
+  src.code -> tgt.code;
+  src.text as cdaText -> tgt.text as fhirText then {
+    cdaText -> fhirText.status = 'generated' "narrativeStatus";
+    cdaText as t -> fhirText.div = t "narrativeText";    
+  } "cdaText";
+  src.entry as entry1 then {
+    
+    entry1.substanceAdministration as substance  then {
+      substance.templateId where(root = '2.16.840.1.113883.2.9.10.1.11.4.1') -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Immunization') as immunization,  immunization.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Immunization/', uuid1), request.url = 'Immunization',tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Immunization/' + %immunization.id) then{
+        substance -> immunization.patient  = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "patientRef"; 
+        substance.statusCode  as statusc where (code='completed') -> immunization.status ='completed';  
+        substance.statusCode  as statusc where (code='aborted') -> immunization.status ='final';  
+        substance.statusCode  as statusc where (code='suspended') -> immunization.status ='enterer-in-error';  
+        substance.statusCode  as statusc where (code='cancelled') -> immunization.status ='not-done';          
+        substance.effectiveTime as eff where (value.exists()) -> immunization.occurrence = create('dateTime') as value then TSDateTime(eff, value) "value1";
+        substance.effectiveTime as eff where (low.exists()) -> immunization.occurrence = create('Period') as value then IVLTSPeriod(eff, value) "valuePeriod";
+        substance.routeCode -> immunization.route "route";
+        substance.approachSiteCode -> immunization.site "site";
+        substance -> immunization.doseQuantity = create('SimpleQuantity') as quantity then{
+          substance.doseQuantity as q then{
+            q -> quantity.value = (q.value) "val";
+            q -> quantity.unit = (q.unit) "uni"; 
+          }"quant"; 
+        }"unit";
+        substance.consumable as cons then{
+          cons.manufacturedProduct as manufact then{
+            manufact.manufacturedMaterial as manufactmat then{
+              manufactmat.code -> immunization.vaccineCode;
+              manufactmat.lotNumberText as t -> immunization.lotNumber = (t.dataString);
+            }"manufactmat";
+            manufact.manufacturerOrganization as manufactOrg -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'PUT',   e1.resource = create('Organization') as organization  then{
+              manufactOrg->organization.meta as meta then {
+                manufactOrg->meta.tag = create('Coding') as coding then {
+                  manufactOrg -> coding.system ='http://algoritmodiscoring'"system";
+                  manufactOrg -> coding.code ='ClinicalDocument/body/manufacturerOrganization'"code";
+                      }"coding";
+                }"meta";
+              manufactOrg.id as id -> organization.identifier as identifier then {
+                id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+                id.extension as ext->identifier.value = ext then {
+                  ext-> request.url = append('Organization?identifier=',ext)"UUID";
+                }"ext";
+                id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+                id.root as r then {
+                  id.extension as ext  -> organization.id =(r +'-'+ ext) as uuid5,  e1.fullUrl = append('https://example/Organization/', uuid5) ,immunization.manufacturer  = create('Reference') as reference,  reference.reference = ('https://example/Organization/' + %uuid5) ;
+                }"r" ; 
+              }"identifier";                                      
+              manufactOrg.name as n -> organization.name = (n.other);
+            }"manufactOrg";          
+          }"manufact";
+        }"cons";
+        substance.participant as part ->  bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'PUT',   e1.resource = create('Location') as location then{       
+          part->location.meta as meta then {
+            part->meta.tag = create('Coding') as coding then {
+              part -> coding.system ='http://algoritmodiscoring'"system";
+              part -> coding.code ='ClinicalDocument/body/participant'"code";
+                  }"coding";
+            }"meta";
+          part.participantRole as partRole then{
+            partRole.id as id  -> location.identifier as identifier then {
+              id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+              id.extension as ext-> identifier.value = ext then {
+                ext-> request.url = append('Location?identifier=',ext)"UUID";
+              }"ext";
+              id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+              id.root as r then {
+                id.extension as ext ->location.id =(r +'-'+ ext) as uuid6,  e1.fullUrl = append('https://example/Location/', uuid6),  immunization.location  = create('Reference') as reference,  reference.reference = ('https://example/Location/' + %uuid6) "ref";
+                }"r" ; 
+              }"identifier";
+           }"role";
+        }"part";
+        cda-> immunization.protocolApplied  as prot then {  
+        substance.entryRelationship as entrirel4 then{
+              entrirel4.observation as obs  then {          
+                obs.code where( code = '75323-6') then {
+                obs.value -> prot.targetDisease;
+                }"codeControl";
+              }"entrirel2";
+          entrirel4.observation as obsdosenumber  then {          
+             obsdosenumber.code where( code = '30973-2') then {
+                obsdosenumber.value as v then {
+                  v.value as int ->prot.doseNumber=(int.toString());
+                 }"v";
+            }"codeControl";
+          }"entrirel2";
+        }"entrirel4";
+      }"protocolAp";
+       
+        substance.entryRelationship as entrirel2 then{
+          entrirel2.observation as obs then{          
+            obs.code where( code = '59778-1' or code = '30981-5' or code = '30980-7' or code = '59777-3')then{
+              obs.value as value then{
+                value.high as h  then {
+                  h.value as date-> immunization.expirationDate= truncate(date, 10);
+             }"da";
+              }"value";
+            }"codeControl";
+          }"obs";
+        }"entrirel2";
+        substance.entryRelationship as entrirel3 then{
+          entrirel3.observation as obs then{          
+            obs.code where( code = '95715-9') -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Observation') as observation,  observation.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url = 'Observation' , immunization.reasonReference  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %observation.id) then {
+              obs then Observation(entrirel3,patient,tgt,bundle,enc,observation) "observation";
+            }"codeControl";
+          }"obs";
+        }"entrirel2";
+        substance.entryRelationship as entrirel4 then{
+          entrirel4.observation as obs then{          
+            obs.code where( code = '59785-6') -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Observation') as observation,  observation.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url = 'Observation' , immunization.reasonReference  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %observation.id) then {
+              obs then Observation1(entrirel4,patient,tgt,bundle,enc,observation) "observation";
+            }"codeControl";
+          }"obs";
+        }"entrirel2";
+        substance.entryRelationship as entrirel4 then{
+          entrirel4.observation as obs then{          
+            obs.code where( code = '31044-1') -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Observation') as observation,  observation.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url = 'Observation' , immunization.reasonReference  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %observation.id) then {
+              obs then Observation1(entrirel4,patient,tgt,bundle,enc,observation) "observation";
+            }"codeControl";
+          }"obs";
+        }"entrirel2";
+      }"ControlloImmunization";
+
+      substance.templateId where(root = '2.16.840.1.113883.2.9.10.1.11.4.2') -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Immunization') as immunization,  immunization.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Immunization/', uuid1), request.url = 'Immunization' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Immunization/' + %immunization.id) then{
+        substance -> immunization.patient  = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "patientRef"; 
+        substance.statusCode  as statusc where (code='completed') -> immunization.status ='completed';  
+        substance.statusCode  as statusc where (code='aborted') -> immunization.status ='final';  
+        substance.statusCode  as statusc where (code='suspended') -> immunization.status ='enterer-in-error';  
+        substance.statusCode  as statusc where (code='cancelled') -> immunization.status ='not-done'; 
+        substance.effectiveTime as eff where (value.exists()) -> immunization.occurrence = create('dateTime') as value then TSDateTime(eff, value) "value1";
+        substance.effectiveTime as eff where (low.exists()) -> immunization.occurrence = create('Period') as value then IVLTSPeriod(eff, value) "valuePeriod";
+        substance.consumable as cons then{
+          cons.manufacturedProduct as manufact then{
+            manufact.manufacturedMaterial as manufactmat then{
+              manufactmat.code -> immunization.vaccineCode;
+              manufactmat.lotNumberText as t -> immunization.lotNumber = (t.dataString);
+            }"manufactmat";
+            manufact.manufacturerOrganization as manufactOrg -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'PUT',   e1.resource = create('Organization') as organization  then{
+              manufactOrg->organization.meta as meta then {
+                manufactOrg->meta.tag = create('Coding') as coding then {
+                  manufactOrg -> coding.system ='http://algoritmodiscoring'"system";
+                  manufactOrg -> coding.code ='ClinicalDocument/body/manufacturerOrganization'"code";
+                      }"coding";
+                }"meta";
+                manufactOrg.id as id -> organization2.identifier as identifier then {
+                id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+                id.extension as ext->identifier.value = ext then {
+                    manufactOrg-> request.url = append('Organization?identifier=',ext)"UUID";
+                }"ext";
+                id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+                id.root as r then {
+                  id.extension as ext  -> organization1.id= (r +'-'+ ext) as uuid23,  e1.fullUrl = append('https://example/Organization/', uuid23) ,immunization.manufacturer  = create('Reference') as reference,  reference.reference = ('https://example/Organization/' + %uuid23)"org";
+                }"r" ;   
+              }"identifier";
+              manufactOrg.name as n -> organization.name = (n.other);
+            }"manufactOrg";          
+          }"manufact";
+        }"cons";
+
+        cda-> immunization.protocolApplied  as prot then {  
+          substance.entryRelationship as entrirel4 then{
+                entrirel4.observation as obs  then {          
+                  obs.code where( code = '75323-6') then {
+                    obs.value -> prot.targetDisease;
+                  }"codeControl";
+                }"entrirel2";
+            entrirel4.observation as obsdosenumber  then {          
+               obsdosenumber.code where( code = '30973-2') then {
+                  obsdosenumber.value as v then {
+                    v.value as int ->prot.doseNumber=(int.toString());
+                   }"v";
+              }"codeControl";
+            }"entrirel2";
+          }"entrirel4";
+        }"protocolAp";
+
+        substance.entryRelationship as entrirel1 then{
+          entrirel1.observation as obs then{          
+            obs.code where( code = '85714-4') then {
+              obs.code -> immunization.statusReason;
+            }"codeControl";
+            obs.code where( code = '59784-9') then {
+              obs.value as val then{
+                val.originalText as original -> immunization.statusReason = create('CodeableConcept') as cod then{
+                  original.reference as reff -> cod.text = (reff.value);
+                }"cod";
+              }"val";
+            }"codeControl";
+          }"obs";
+        }"entrirel1";
+
+        substance.participant as part -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'PUT',   e1.resource = create('Location') as location then{          
+          
+            part->location.meta as meta then {
+              part->meta.tag = create('Coding') as coding then {
+                part -> coding.system ='http://algoritmodiscoring'"system";
+                part -> coding.code ='ClinicalDocument/body/participant'"code";
+                    }"coding";
+              }"meta";
+            part.participantRole as partRole then{
+              partRole.id as id  -> location.identifier as identifier then {
+                id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+                id.extension as ext-> identifier.value = ext then {
+                ext-> request.url = append('Location?identifier=',ext)"UUID";
+                }"ext";
+                id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+                id.root as r then {
+                  id.extension as ext ->location.id =(r +'-'+ ext) as uuid7,  e1.fullUrl = append('https://example/Location/', uuid7), immunization.location  = create('Reference') as reference,  reference.reference = ('https://example/Location/' + %uuid7) "ref";
+                  }"r" ; 
+                }"identifier";
+             }"role";
+        }"location";
+      }"sub2";
+    }"substance";
+  }"entry";
+}
+
+group Observation(source entrirel2: entryRelationship, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter, target obs: Observation){  
+  entrirel2.observation as observation then{
+    observation.code -> obs.code;
+    observation.statusCode as statusc where (code='completed') -> obs.status ='final';
+    observation.statusCode as statusc where (code='active') -> obs.status ='registered';
+    observation.statusCode as statusc where (code='aborted') -> obs.status ='cancelled';
+    observation.statusCode as statusc where (code='suspended') -> obs.status ='partial';
+    observation-> obs.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    observation-> obs.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";   
+    observation -> obs.referenceRange as refRange then{
+      observation.value -> refRange.appliesTo;
+      observation -> refRange.text = 'string' "text";
+    }"refRange";
+  }"obs";
+}
+
+group Observation1(source entrirel4: entryRelationship, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter, target obs: Observation){  
+  entrirel4.observation as observation then{
+    observation.code -> obs.code;
+    observation.statusCode as statusc where (code='completed') -> obs.status ='final';
+    observation.statusCode as statusc where (code='active') -> obs.status ='registered';
+    observation.statusCode as statusc where (code='aborted') -> obs.status ='cancelled';
+    observation.statusCode as statusc where (code='suspended') -> obs.status ='partial';
+    observation-> obs.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    observation-> obs.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";  
+
+    observation.effectiveTime as eff where (value.exists()) -> obs.effective = create('dateTime') as value then TSDateTime(eff, value) "value1";
+    observation.effectiveTime as eff -> obs.effective = create('Period') as period then IVLTSPeriod(eff,period) "period";
+    
+    observation -> obs.value = create('CodeableConcept') as concept then{      
+      observation.value -> concept.coding = create('Coding') as coding then{
+        observation.value as v -> coding.code = (v.code);
+        observation.value as v then{
+          v.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+        }"vv";
+        observation.value as v -> coding.display = (v.displayName);
+      }"coding";
+      observation.value as valu then {
+        valu.originalText as txt then{
+          txt.reference as ref ->  concept.text = (ref.value);
+        }"txt";  
+      }"value";
+    }"refRange";
+  }"obs";
+}
