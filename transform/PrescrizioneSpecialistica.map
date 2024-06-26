@@ -1,0 +1,354 @@
+map "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/PrescrizioneSpecialistica" = "PrescrizioneSpecialistica"
+
+conceptmap "OBSstatus" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-statusCode"
+    prefix t = "http://hl7.org/fhir/observation-status"
+
+    s:completed == t:final
+    s:active == t:registered
+    s:aborted == t:cancelled
+    s:suspended == t:partial
+  }
+
+  conceptmap "priority" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+     prefix t = "http://hl7.org/fhir/ValueSet/request-priority"
+   
+     s:R == t:routine
+     s:P == t:asap
+     s:UR == t:urgent
+     s:EM == t: stat
+     s:S == t: stat
+     s:A == t:asap
+     s:CR == t:routine
+     s:EL == t:routine
+     s:p == t: stat
+     s:PRN == t:routine
+     s:RR == t:asap
+     s:T == t:urgent
+     s:UD == t:routine
+
+    
+   }
+
+  conceptmap "cm-v3-administrative-gender" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-AdministrativeGender"
+    prefix t = "http://hl7.org/fhir/ValueSet/administrative-gender"
+  
+    s:M == t:male
+    s:F == t:female
+  }
+  conceptmap "AllergyTypeMap" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-type"
+    prefix t = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+
+    s:OINT == t:intolerance
+    s:ALG == t:allergy
+    s:DALG == t:allergy
+    s:EALG == t:allergy
+    s:FALG == t:allergy
+    s:NAINT == t:intolerance
+    s:FNAINT == t:intolerance
+    s:DNAINT == t:intolerance
+    s:ENAINT == t:intolerance
+    s:FINT == t:intolerance
+    s:DINT == t:intolerance
+    s:EINT == t:intolerance
+  }
+  conceptmap "AllergyCategoryMap" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-type"
+    prefix t = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+
+    s:DALG == t:medication
+    s:EALG == t:enviroment
+    s:FALG == t:food
+    s:FNAINT == t:intolerance
+    s:DNAINT == t:medication
+    s:ENAINT == t:enviroment
+    s:FINT == t:food
+    s:DINT == t:medication
+    s:EINT == t:enviroment
+  }
+
+conceptmap "CricalityMap" {
+    prefix s = "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"
+    prefix t = "http://hl7.org/fhir/allergy-intolerance-criticality"
+
+    s: M == t: low
+    s: H == t: high
+    s: L == t: low
+}
+
+uses "http://hl7.org/fhir/cda/StructureDefinition/ClinicalDocument" alias ClinicalDocument as source
+uses "http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor" alias AssignedAuthor as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity" alias AssignedEntity as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/AssociatedEntity" alias AssociatedEntity as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/CustodianOrganization" alias CustodianOrganization as queried
+uses  "http://hl7.org/fhir/cda/StructureDefinition/OrganizationPartOf" alias OrganizationPartOf as queried
+uses  "http://hl7.org/fhir/cda/StructureDefinition/Organization" alias rapresentedOrganization as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/Section" alias Section as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/PatientRole" alias PatientRole as queried
+uses "http://hl7.org/fhir/cda/StructureDefinition/AD" alias AD as source
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/Composition" alias Composition as produced
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as produced
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" alias Encounter as produced
+uses "http://hl7.org/fhir/StructureDefinition/Person" alias Patient as produced
+uses "http://hl7.org/fhir/StructureDefinition/List" alias List as produced
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" alias Practitioner as produced
+uses "http://hl7.org/fhir/StructureDefinition/Organization" alias Organization as produced
+uses "http://hl7.org/fhir/cda/StructureDefinition/Act" alias Act as produced
+uses "http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ" alias IVL_PQ as source
+uses "http://hl7.org/fhir/cda/StructureDefinition/PQ" alias PQ as source
+uses "http://hl7.org/fhir/StructureDefinition/SimpleQuantity" alias SimpleQuantity as target
+
+
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/CdaToFhirDataTypes"
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/FULLHEADER"
+
+group CdaToBundle(source cda : ClinicalDocument, target bundle : Bundle) {
+    cda ->  bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('Composition') as composition,  composition.id = uuid() as uuid1,  e.fullUrl = append('https://example/Composition/', uuid1), request.url = 'Composition',  bundle.entry as e2, e2.request = create('BackboneElement') as requestPAT, requestPAT.method = 'PUT', e2.resource = create('Patient') as patient,  patient.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Patient/', uuid2), bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST',  e3.resource = create('Encounter') as encounter,  encounter.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Encounter/', uuid3),request.url = 'Encounter', bundle.entry as e4, e4.request = create('BackboneElement') as request, request.method = 'POST',  e4.resource = create('DocumentReference') as DocumentReference,  DocumentReference.id = uuid() as uuid4,  e4.fullUrl = append('https://example/DocumentReference/', uuid4),request.url = 'DocumentReference' then {
+    cda then ClinicalDocumentToBundle(cda, patient, composition, encounter, bundle, DocumentReference) "cdatobundle";
+    cda.recordTarget as recordTarget then{
+        recordTarget.patientRole as patient then{
+        patient.id as id -> patient.identifier as identifier then {
+        id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+        id.extension as ext1 -> identifier.value = ext1 "value";
+        id.assigningAuthorityName as s -> identifier.assigner as a, a.display = s;
+        }"idfr";
+        patient.id as id where (root='2.16.840.1.113883.2.9.4.3.2') or (root='2.16.840.1.113883.2.9.4.3.7')
+        or (root='2.16.840.1.113883.2.9.4.3.3') or(root='2.16.840.1.113883.2.9.4.3.17')  or (root = '2.16.840.1.113883.2.9.4.3.18') or (root = '2.16.840.1.113883.2.9.2.10.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.20.4.1.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.41.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.42.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.50.4.1.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.70.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.80.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.90.4.1.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1.1') or (root = '2.16.840.1.113883.2.9.2.120.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.130.4.1.1') or (root = '2.16.840.1.113883.2.9.2.140.4.1.1') or (root = '2.16.840.1.113883.2.9.2.150.4.1.1') or (root = '2.16.840.1.113883.2.9.2.160.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.170.4.1.1') or (root = '2.16.840.1.113883.2.9.2.180.4.1.1') or (root = '2.16.840.1.113883.2.9.2.190.4.1.1') or (root = '2.16.840.1.113883.2.9.2.200.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.10.4.1') or (root = '2.16.840.1.113883.2.9.2.20.4.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1') or (root = '2.16.840.1.113883.2.9.2.41.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.42.4.1') or (root = '2.16.840.1.113883.2.9.2.50.4.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1') or (root = '2.16.840.1.113883.2.9.2.70.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.80.4.1') or (root = '2.16.840.1.113883.2.9.2.90.4.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.120.4.1')  or (root = '2.16.840.1.113883.2.9.2.130.4.1')  or (root = '2.16.840.1.113883.2.9.2.140.4.1')  or (root = '2.16.840.1.113883.2.9.2.150.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.160.4.1')  or (root = '2.16.840.1.113883.2.9.2.170.4.1')  or (root = '2.16.840.1.113883.2.9.2.180.4.1')  or (root = '2.16.840.1.113883.2.9.2.190.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.200.4.1') or (root='2.16.840.1.113883.2.9.4.3.15')  then {
+          id.extension as ext -> requestPAT.url = append('Patient?identifier=',ext) "UUID";
+          }"ext";
+        }"recPat";
+    }"patient";
+   } "ClinicalDocumentToBody";
+  }
+  
+group ClinicalDocumentToBundle(source cda : ClinicalDocument, target patient : Patient, target composition : Composition, target encounter : Encounter, target bundle : Bundle, target DocumentReference : DocumentReference) {
+    cda -> bundle.id = uuid() "id";
+    cda.id -> bundle.identifier "identifier";
+    cda -> bundle.type = 'transaction' "type";
+    cda -> bundle.timestamp=(timestamp.now()) "date";
+    cda then ClinicalDocumentComposition(cda, composition, patient, encounter, bundle, DocumentReference) "composition";
+    cda -> bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('ServiceRequest') as ServiceRequest,  ServiceRequest.id = uuid() as uuid1,  e.fullUrl = append('https://example/ServiceRequest/', uuid1), request.url = 'ServiceRequest' then{
+        cda -> ServiceRequest.intent = 'order' "intent";
+        cda -> ServiceRequest.status = 'unknown' "stats";
+        cda-> ServiceRequest.subject =create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";  
+    cda.component as component then {
+      component.structuredBody as body then {
+        body.component as component  then {
+           component.section as srcSection then {
+          srcSection.code -> composition.section as tgtSection  then ClinicalDocumentSection(cda, srcSection, patient, tgtSection, bundle,encounter, ServiceRequest);       
+         } "section";
+        } "component";
+    }"body";
+    };
+    }"ServiceRequest";
+  }
+  
+group ClinicalDocumentSection(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter, target ServiceRequest : ServiceRequest) {
+    src.title as t -> tgt.title = (t.dataString);
+    src.code -> tgt.code;
+    src.code as code where (code='48767-8') or(code='51851-4') or (code='57827-8') or (code='57828-6') then {
+    src -> tgt.entry = create('Reference') as reference,  reference.reference = ('https://example/ServiceRequest/' + %ServiceRequest.id) "reference"; 
+    }"Note";
+        src.text as cdaText -> tgt.text as fhirText then {
+            cdaText -> fhirText.status = 'generated' "narrativeStatus";
+            cdaText as t -> fhirText.div = t "narrativeText";
+        } "cdaText";
+
+  //--------------Sezione Esenzioni------------------------------------------------------------------------------------------------------------------------------------     
+
+        src.code as code where (code='57827-8') then{
+        src.id  ->ServiceRequest.identifier; 
+          src.entry as entry ->bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('Coverage') as Coverage, Coverage.id = uuid() as uuid11,  e11.fullUrl = append('https://example/Coverage/', uuid11), request.url = 'Coverage', ServiceRequest.insurance = create('Reference') as reference, reference.reference = ('https://example/Coverage/' + %Coverage.id) then {
+                src-> Coverage.beneficiary =create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";     
+                src->Coverage.payor=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+                src where statusCode.exists().not() -> Coverage.status = 'active' "statusAbsent";  
+                entry.act as act then {
+                    act.code ->Coverage.type;
+                 }"act";
+            }"entry";
+        }"Esenzioni"; 
+
+
+//-------------Sezione Prescrizioni-------------------------------------------------------------------------------------------------------------------------------------
+
+        src.code as code where (code='57828-6') then{ 
+            src.entry as entry then {
+                 entry.observation as observation then {
+                  observation.code->ServiceRequest.code "code";
+                  observation.priorityCode as priorityCode then{
+                    priorityCode.code as v -> ServiceRequest.priority = translate(v, '#priority', 'code') "priority";
+                }"priorityCode";
+                  observation.repeatNumber as repeatNumber->ServiceRequest.quantity=create('Quantity') as Ratio then {
+                       repeatNumber.value as value ->Ratio.value=value;
+                  }"value";
+
+
+
+                observation.participant as participant then {
+                      participant.participantRole as partRol then {
+                           partRol.scopingEntity as scopingEntity then {
+                             scopingEntity.code->ServiceRequest.locationCode;
+                     }"ScopingEntity";
+                  }"PartROle";
+                }"Location";
+//----------------codice Patologia------------------------------------------------------------------------------------------------------------------------------------
+                observation.entryRelationship as entryRelationship then { 
+                    entryRelationship.act as act then {
+                        act.templateId as temid where (root='2.16.840.1.113883.3.1937.777.63.10.275')->bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('Condition') as Condition, Condition.id = uuid() as uuid11,  e11.fullUrl = append('https://example/Condition/', uuid11), request.url = 'Condition', ServiceRequest.reasonReference = create('Reference') as reference, reference.reference = ('https://example/Condition/' + %Condition.id) then {
+                             act -> Condition.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+                             act -> Condition.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";
+                             act -> Condition.clinicalStatus as status2 then {
+                                act ->  status2.coding as status3 then{
+                                    act -> status3.code ='unknown' "finald";
+                                    act -> status3.system='http://terminology.hl7.org/CodeSystem/condition-clinical'"system";
+                                }"st3";
+                              }"status";
+                            act.code->Condition.code;
+                    }"Condition";
+                    }"act";
+                }"entryrelationshipCondition";
+
+
+//---------Tipo di Visita---------------------------------------------------------------------------------------------------------------------------------
+observation.entryRelationship as entryRelationship then {
+    entryRelationship.encounter as encounter then {
+        encounter.templateId as temid where (root='2.16.840.1.113883.3.1937.777.63.10.276') then {
+           encounter -> ServiceRequest.encounter = create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) then {
+                observation.entryRelationship as entryRelationship then {
+                    entryRelationship.encounter as encounter1 then {
+                    encounter1.templateId as temid where (root='2.16.840.1.113883.3.1937.777.63.10.281') then {
+                      encounter1.code as code1-> enc.class = create('Coding') as coding then {
+                        code1.code as code -> coding.code = cast(code, 'string');
+                         code1.codeSystem as system->coding.system= translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+                        code1.displayName as display->coding.display= cast(display, 'string');
+                       }"class";
+                           }"reference";
+                        }"templateId";
+                    }"Act";
+             
+            }"encounter";
+       
+        
+    
+    }"templateId";
+    }"Act";
+  }"entryRelationship";
+
+
+//------------Nota esplicita--------------------------------------------------------------------------------------------------------------------------------------------
+                observation.entryRelationship as entryRelationship then {
+                    entryRelationship.act as act then {
+                    act. templateId as temid where (root='2.16.840.1.113883.3.1937.777.63.10.274') then {
+                      act.text as text -> ServiceRequest.note as note then {
+                        text.reference as t then{
+                          t.value as l ->note.text=l "reference";
+                        }"tcx";
+                        }"reference";
+                        }"templateId";
+                    }"Act";
+                  }"entryRelationship";
+                  observation.entryRelationship as entryRelationship then {
+                    entryRelationship.act as act then {
+                    act. templateId as temid where (root='2.16.840.1.113883.3.1937.777.63.10.278') then {
+                        act.code -> ServiceRequest.reasonCode;
+                           }"reference";
+                        }"templateId";
+                    }"Act";
+                  
+//-----Sedute-----------------------------------------------------------------------------------------------------------------------------------------------
+                  observation.entryRelationship as entryRelationship then {
+                    entryRelationship.observation as observation then {
+                    observation.templateId as temid where (root='2.16.840.1.113883.3.1937.777.63.10.277') then { 
+                       observation.repeatNumber as repeatNumber -> ServiceRequest.occurrence=create('Timing') as Timing then {
+                                  repeatNumber->Timing.repeat as repeat then {
+                                    repeatNumber.value as value->repeat.count=value "count";
+                                   } "event";
+                                 } "Count";
+                            }"Timing";
+                        }"templateId";
+                    }"Act";
+                 }"Observation";
+             }"entry";
+         }"Esenzioni"; 
+
+ //------------Sezione Annotazioni-----------------------------------------------------------------------------------------------------------------------------------------     
+        src.code as code where (code='48767-8') then { 
+             src.entry as entry then {
+                entry.act as act then { 
+                    act.text as text -> ServiceRequest.note as note then {
+                      text.reference as t then{
+                        t.value as l ->note.text=l "reference";
+                      }"tcx";
+                      }"reference";
+                    }"act";
+              }"entry";
+           }"Annotazioni";
+        
+//----------Sezione Messaggio Regionale-----------------------------------------------------------------------------------------------------------------------------------
+
+        src.code as code where (code='51851-4') then {  
+            src.text as cdaText -> ServiceRequest.note as note then{
+                       cdaText as text then{
+                          text as l ->note.text=l "reference";
+                          }"tcx";
+                        }"reference";
+            }"MessaggioRegionale";
+
+ //-------Sezione Parametri Vitali---------------------------------------------------------------------------------------------------------------------------------------
+            
+        src.code as code where (code='8716-3')->bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('Observation') as Observation, Observation.id = uuid() as uuid11,  e11.fullUrl = append('https://example/Observation/', uuid11), request.url = 'Observation', tgt.entry = create('Reference') as reference, reference.reference = ('https://example/Observation/' + %Observation.id) then{ 
+            src -> Observation.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+            src -> Observation.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference"; 
+            src.code -> Observation.code;
+                src where Observation.statusCode.exists().not() then {
+                src->Observation.status ='final'"status";
+                }"statuscode";         
+                src.text as cdaText -> Observation.note as note then{
+                        cdaText as t ->note.text =t "reference";
+                }"reference";
+        }"ParametriVitali"; 
+
+//-------Sezione Allergie------------------------------------------------------------------------------------------------------------------------------------------------
+
+        src.code as code where (code='48765-2')->bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('AllergyIntolerance') as AllergyIntolerance, AllergyIntolerance.id = uuid() as uuid11,  e11.fullUrl = append('https://example/AllergyIntolerance/', uuid11), request.url = 'AllergyIntolerance', tgt.entry = create('Reference') as reference, reference.reference = ('https://example/AllergyIntolerance/' + %AllergyIntolerance.id) then{ 
+        src -> AllergyIntolerance.patient=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";       
+        src -> AllergyIntolerance.clinicalStatus = create('CodeableConcept') as status then {
+          src -> status.text = 'string' "text";
+          src -> status.coding = create('Coding') as coding then{
+            src -> coding.code = 'active'"active";
+            src -> coding.system ='http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'"system";
+          }"coding";
+        }"allergy";
+        src.text as cdaText -> AllergyIntolerance.note as note then{
+                        cdaText as t ->note.text =t "reference";
+                    }"reference";
+                }"Allergie";
+  
+ //------Sezione Stato Funzionale------------------------------------------------------------------------------------------------------------------------------------------               
+        src.code as code where (code='47420-5')->bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('Observation') as Observation, Observation.id = uuid() as uuid11,  e11.fullUrl = append('https://example/Observation/', uuid11), request.url = 'Observation', tgt.entry = create('Reference') as reference, reference.reference = ('https://example/Observation/' + %Observation.id) then{ 
+            src -> Observation.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+            src -> Observation.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference"; 
+            src.code -> Observation.code;
+            src where Observation.statusCode.exists().not() then {
+                src->Observation.status ='final'"status";
+            }"statuscode";         
+            src.text as cdaText -> Observation.note as note then{
+                        cdaText as t ->note.text =t "reference";
+            }"reference";
+        }"StatoFunzionale"; 
+}
