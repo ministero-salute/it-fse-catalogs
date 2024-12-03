@@ -626,8 +626,8 @@ version,code,description,release_date
 7.0.0,COND,Condition Alert,2019-12-15
 7.0.0,CONDLIST,condition list,2019-12-15
 7.0.0,CONSUMPTION,Consumption Volume,2019-12-15
-7.0.0,CONT,contract,2019-12-15
 7.0.0,CONT,,2019-12-15
+7.0.0,CONT,contract,2019-12-15
 7.0.0,CONTF,contract funding,2019-12-15
 7.0.0,CONVEYNC,Common Conveyance Interaction,2019-12-15
 7.0.0,COPAY,,2019-12-15
@@ -691,8 +691,8 @@ version,code,description,release_date
 7.0.0,DACT,drug action detected issue,2019-12-15
 7.0.0,DALG,Drug Allergy,2019-12-15
 7.0.0,DALG,,2019-12-15
-7.0.0,DAY,,2019-12-15
 7.0.0,DAY,day,2019-12-15
+7.0.0,DAY,,2019-12-15
 7.0.0,DDP,Direct Deposit,2019-12-15
 7.0.0,DECLASSIFYLABEL,declassify security label,2019-12-15
 7.0.0,DEDUCT,,2019-12-15
@@ -710,8 +710,8 @@ version,code,description,release_date
 7.0.0,DENTAL,dental care policy,2019-12-15
 7.0.0,DENTPRG,dental program,2019-12-15
 7.0.0,DERMTRNS,transdermal transmission,2019-12-15
-7.0.0,DF,,2019-12-15
 7.0.0,DF,Daily Fill,2019-12-15
+7.0.0,DF,,2019-12-15
 7.0.0,DIA,diagnosis information sensitivity,2019-12-15
 7.0.0,DIAGLISTE,diagnosis list entry task,2019-12-15
 7.0.0,DIAGLISTREV,diagnosis list review task,2019-12-15
@@ -737,8 +737,8 @@ version,code,description,release_date
 7.0.0,DNTL,Dental,2019-12-15
 7.0.0,DOB,date of birth information sensitivity,2019-12-15
 7.0.0,DOCUMENT,document,2019-12-15
-7.0.0,DOSE,,2019-12-15
 7.0.0,DOSE,Dosage problem,2019-12-15
+7.0.0,DOSE,,2019-12-15
 7.0.0,DOSECOND,dosage-condition alert,2019-12-15
 7.0.0,DOSEDUR,Dose-Duration Alert,2019-12-15
 7.0.0,DOSEDURH,Dose-Duration High Alert,2019-12-15
@@ -756,8 +756,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDA,,2019-12-15
+7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
@@ -772,13 +772,13 @@ version,code,description,release_date
 7.0.0,DSC,discount,2019-12-15
 7.0.0,DUPTHPCLS,duplicate therapeutic alass alert,2019-12-15
 7.0.0,DUPTHPGEN,duplicate generic alert,2019-12-15
-7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
 7.0.0,DUPTHPY,,2019-12-15
+7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,Environmental Allergy,2019-12-15
 7.0.0,EALG,,2019-12-15
+7.0.0,EALG,Environmental Allergy,2019-12-15
 7.0.0,EAP,employee assistance program,2019-12-15
 7.0.0,EDU,education fees,2019-12-15
 7.0.0,EFORM,electronic form to follow,2019-12-15
@@ -811,8 +811,8 @@ version,code,description,release_date
 7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
 7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
 7.0.0,F,final,2019-12-15
-7.0.0,FALG,,2019-12-15
 7.0.0,FALG,Food Allergy,2019-12-15
+7.0.0,FALG,,2019-12-15
 7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
 7.0.0,FAST,fasting,2019-12-15
 7.0.0,FAX,fax to follow,2019-12-15
@@ -834,8 +834,8 @@ version,code,description,release_date
 7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
 7.0.0,FFPS,,2019-12-15
 7.0.0,FFPS,,2019-12-15
-7.0.0,FFS,,2019-12-15
 7.0.0,FFS,fee for service,2019-12-15
+7.0.0,FFS,,2019-12-15
 7.0.0,FFSS,"first fill, partial strength",2019-12-15
 7.0.0,FFSTOP,fee for service top off,2019-12-15
 7.0.0,FIBRIN,Fibrin,2019-12-15
@@ -1094,8 +1094,8 @@ version,code,description,release_date
 7.0.0,NUMEX,numerator exclusions,2019-12-15
 7.0.0,O,In Process,2019-12-15
 7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,Observation Alert,2019-12-15
 7.0.0,OBSA,,2019-12-15
+7.0.0,OBSA,Observation Alert,2019-12-15
 7.0.0,OBSANTC,antigen count,2019-12-15
 7.0.0,OBSANTV,antigen validity,2019-12-15
 7.0.0,OBSENC,observation encounter,2019-12-15
@@ -1165,8 +1165,8 @@ version,code,description,release_date
 7.0.0,PEALRT,pediatric alert,2019-12-15
 7.0.0,PED,Pediatrics,2019-12-15
 7.0.0,PERFEE,periodic fee,2019-12-15
-7.0.0,PERIOD,period,2019-12-15
 7.0.0,PERIOD,,2019-12-15
+7.0.0,PERIOD,period,2019-12-15
 7.0.0,PERMBNS,performance bonus,2019-12-15
 7.0.0,PERSISTLABEL,persist security label,2019-12-15
 7.0.0,PHAR,Pharmaceutical,2019-12-15
@@ -1181,8 +1181,8 @@ version,code,description,release_date
 7.0.0,PNC,property and casualty insurance policy,2019-12-15
 7.0.0,POINT,point,2019-12-15
 7.0.0,POLY,polyline,2019-12-15
-7.0.0,POS,point of service policy,2019-12-15
 7.0.0,POS,,2019-12-15
+7.0.0,POS,point of service policy,2019-12-15
 7.0.0,PPO,preferred provider organization policy,2019-12-15
 7.0.0,PPRD,prior period adjustment,2019-12-15
 7.0.0,PRA,,2019-12-15
@@ -1213,8 +1213,8 @@ version,code,description,release_date
 7.0.0,PSYCH,Psychiatric,2019-12-15
 7.0.0,PSYTHPN,psychotherapy note information sensitivity,2019-12-15
 7.0.0,PTNTCARE,Health Care Interaction - Patient Care,2019-12-15
-7.0.0,PUBLICPOL,,2019-12-15
 7.0.0,PUBLICPOL,public healthcare,2019-12-15
+7.0.0,PUBLICPOL,,2019-12-15
 7.0.0,PUBTRN,public transport,2019-12-15
 7.0.0,PYRDELAY,delayed by a previous payor,2019-12-15
 7.0.0,R,Process Completed,2019-12-15
@@ -1353,8 +1353,8 @@ version,code,description,release_date
 7.0.0,TBS,trial balance partial strength,2019-12-15
 7.0.0,TEACHER,teacher,2019-12-15
 7.0.0,TF,Trial Fill,2019-12-15
-7.0.0,TFS,,2019-12-15
 7.0.0,TFS,trial fill partial strength,2019-12-15
+7.0.0,TFS,,2019-12-15
 7.0.0,TFS,,2019-12-15
 7.0.0,TIME,timing detected issue,2019-12-15
 7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
@@ -1413,8 +1413,8 @@ version,code,description,release_date
 7.0.0,VRXINV,vision dispense invoice,2019-12-15
 7.0.0,W,Ward,2019-12-15
 7.0.0,WATTRNS,water-borne transmission,2019-12-15
-7.0.0,WCBPOL,worker's compensation,2019-12-15
 7.0.0,WCBPOL,,2019-12-15
+7.0.0,WCBPOL,worker's compensation,2019-12-15
 7.0.0,WEEK,week,2019-12-15
 7.0.0,WEEK,,2019-12-15
 7.0.0,WELLREMLE,wellness reminder list entry,2019-12-15
