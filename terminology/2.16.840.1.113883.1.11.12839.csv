@@ -1,1358 +1,1358 @@
 version,code,description,release_date
-2.0.0,%,percent,2014-03-26
-2.0.0,%/100{WBC},percent / 100 WBC,2014-03-26
-2.0.0,%[slope],percent of slope,2014-03-26
-2.0.0,%{0to3Hours},percent 0to3Hours,2014-03-26
-2.0.0,%{Abnormal},percent Abnormal,2014-03-26
-2.0.0,%{Activity},percent Activity,2014-03-26
-2.0.0,%{BasalActivity},percent BasalActivity,2014-03-26
-2.0.0,%{Binding},percent Binding,2014-03-26
-2.0.0,%{Blockade},percent Blockade,2014-03-26
-2.0.0,%{Bound},PercentBound,2014-03-26
 2.0.0,%{Carboxyhemoglobin},percent Carboxyhemoglobin,2014-03-26
-2.0.0,%{Conversion},percent Conversion,2014-03-26
-2.0.0,%{Cound},percent Cound,2014-03-26
-2.0.0,%{EosSeen},percent EosSeen,2014-03-26
-2.0.0,%{Excretion},percent Excretion,2014-03-26
-2.0.0,%{Fat},percent Fat,2014-03-26
-2.0.0,%{FetalErythrocytes},percent FetalErythrocytes,2014-03-26
-2.0.0,%{Hb},percent hemoglobin,2014-03-26
+2.0.0,U/(2.h),enzyme unit per 2 hour,2014-03-26
+2.0.0,U/10*12{RBCs},enzyme unit per trillion red blood cells,2014-03-26
+2.0.0,%,percent,2014-03-26
 2.0.0,%{HemoglobinA1C},percent HemoglobinA1C,2014-03-26
-2.0.0,%{HemoglobinSaturation},percent HemoglobinSaturation,2014-03-26
-2.0.0,%{Hemoglobin},percent Hemoglobin,2014-03-26
-2.0.0,%{Hemolysis},percent Hemolysis,2014-03-26
-2.0.0,%{HumanResponse},percent HumanResponse,2014-03-26
-2.0.0,%{Index},percent Index,2014-03-26
-2.0.0,%{Inhibition},percent Inhibition,2014-03-26
-2.0.0,%{Live},percent Live,2014-03-26
-2.0.0,%{Negative Control},percent Negative Control,2014-03-26
-2.0.0,%{NormalControl},percent NormalControl,2014-03-26
-2.0.0,%{NormalPooledPlasma},percent NormalPooledPlasma,2014-03-26
-2.0.0,%{Normal},percent Normal,2014-03-26
-2.0.0,%{OfLymphocytes},percent OfLymphocytes,2014-03-26
-2.0.0,%{OfWBCs},percent OfWBCs,2014-03-26
-2.0.0,%{Oxygen},percent Oxygen,2014-03-26
-2.0.0,%{Positive},percent Positive,2014-03-26
-2.0.0,%{Precipitate},percent Precipitate,2014-03-26
-2.0.0,%{RBCs},percent of red blood cells,2014-03-26
-2.0.0,%{Reactivity},percent Reactivity,2014-03-26
-2.0.0,%{SpermMotility},percent SpermMotility,2014-03-26
-2.0.0,%{Tot'Cholesterol},percent Tot'Cholesterol,2014-03-26
-2.0.0,%{Tot'Hgb},percent Tot'Hgb,2014-03-26
-2.0.0,%{TotalProtein},percent TotalProtein,2014-03-26
-2.0.0,%{Total},percent Total,2014-03-26
-2.0.0,%{Uptake},percent Uptake,2014-03-26
-2.0.0,%{WBCs},percent of white blood cells,2014-03-26
-2.0.0,%{WeightToWeight},percent WeightToWeight,2014-03-26
-2.0.0,%{abnormal},percent abnormal,2014-03-26
-2.0.0,%{activity},percent activity,2014-03-26
-2.0.0,%{aggregation},percent aggregation,2014-03-26
-2.0.0,%{at_60_min},percent at 60 minute,2014-03-26
-2.0.0,%{bacteria},percent of bacteria,2014-03-26
-2.0.0,%{basal_activity},percent basal activity,2014-03-26
-2.0.0,%{baseline},percent of baseline,2014-03-26
-2.0.0,%{binding},percent binding,2014-03-26
-2.0.0,%{blockade},percent blockade,2014-03-26
-2.0.0,%{blocked},percent blocked,2014-03-26
-2.0.0,%{bound},percent bound,2014-03-26
-2.0.0,%{breakdown},percent breakdown,2014-03-26
-2.0.0,%{cells},percent of cells,2014-03-26
-2.0.0,%{deficient},percent deficient,2014-03-26
-2.0.0,%{dose},percent dose,2014-03-26
-2.0.0,%{excretion},percent excretion,2014-03-26
-2.0.0,%{hemolysis},percent hemolysis,2014-03-26
-2.0.0,%{index},percent index,2014-03-26
-2.0.0,%{inhibition},percent inhibition,2014-03-26
-2.0.0,%{loss_AChR},percent loss of acetylcholine receptor,2014-03-26
-2.0.0,%{loss},percent loss,2014-03-26
-2.0.0,%{lysis},percent lysis,2014-03-26
-2.0.0,%{normal_pooled_plasma},percent normal pooled plasma,2014-03-26
+2.0.0,/mo,per month,2014-03-26
+2.0.0,L/L,liter per liter,2014-03-26
+2.0.0,St,Stokes,2014-03-26
+2.0.0,[CFU]/mL,colony forming unit per milliliter,2014-03-26
+2.0.0,/{entity},per entity,2014-03-26
+2.0.0,Oe,Oersted,2014-03-26
+2.0.0,10*3/L,Thousand Per Liter,2014-03-26
+2.0.0,REM,radiation equivalent man,2014-03-26
 2.0.0,%{normal},percent normal,2014-03-26
-2.0.0,%{ofAvailable},percent ofAvailable,2014-03-26
-2.0.0,%{ofBacteria},percent ofBacteria,2014-03-26
-2.0.0,%{penetration},percent penetration,2014-03-26
-2.0.0,%{positive},percent positive,2014-03-26
-2.0.0,%{reactive},percent reactive,2014-03-26
-2.0.0,%{recovery},percent recovery,2014-03-26
-2.0.0,%{reference},percent reference,2014-03-26
-2.0.0,%{relative},relative percent,2014-03-26
-2.0.0,%{residual},percent residual,2014-03-26
-2.0.0,%{response},percent response,2014-03-26
-2.0.0,%{risk},percent risk,2014-03-26
-2.0.0,%{saturation},percent saturation,2014-03-26
-2.0.0,%{total},percent total,2014-03-26
-2.0.0,%{uptake},percent uptake,2014-03-26
-2.0.0,%{viable},percent viable,2014-03-26
-2.0.0,%{vol},VolumePercent,2014-03-26
-2.0.0,',minute,2014-03-26
-2.0.0,'',second,2014-03-26
-2.0.0,/(12.h),per 12 * hour,2014-03-26
-2.0.0,/10*10,PerTenGiga,2014-03-26
-2.0.0,/10*12,PerTrillion,2014-03-26
-2.0.0,/10*12{RBCs},per trillion red blood cells,2014-03-26
+2.0.0,U/10,enzyme unit per 10,2014-03-26
+2.0.0,H,Henry,2014-03-26
+2.0.0,10*,the number ten for arbitrary powers,2014-03-26
 2.0.0,/10*12{rbc},PerTrillionRedBloodCells,2014-03-26
-2.0.0,/10*3,per thousand,2014-03-26
-2.0.0,/10*3.{RBCs},per thousand red blood cells,2014-03-26
-2.0.0,/10*4{RBCs},per 10 thousand red blood cells,2014-03-26
-2.0.0,/10*6,PerMillion,2014-03-26
-2.0.0,/10*9,PerBillion,2014-03-26
-2.0.0,/100,per 100,2014-03-26
+2.0.0,%{FetalErythrocytes},percent FetalErythrocytes,2014-03-26
+2.0.0,%{Binding},percent Binding,2014-03-26
+2.0.0,%{ofAvailable},percent ofAvailable,2014-03-26
+2.0.0,U/(12.h),enzyme unit per 12 hour,2014-03-26
+2.0.0,%{excretion},percent excretion,2014-03-26
+2.0.0,%{risk},percent risk,2014-03-26
+2.0.0,10*5,OneHundredThousand,2014-03-26
+2.0.0,B[kW],bel kilowatt,2014-03-26
+2.0.0,/kg{body_wt},per kilogram of body weight,2014-03-26
+2.0.0,10*6/kg,million per kilogram,2014-03-26
+2.0.0,Hz,Hertz,2014-03-26
+2.0.0,[IU]/g,international unit per gram,2014-03-26
+2.0.0,%{activity},percent activity,2014-03-26
+2.0.0,[IU]/mL,international unit per milliliter,2014-03-26
+2.0.0,%{NormalControl},percent NormalControl,2014-03-26
+2.0.0,10*3{Copies}/mL,Thousand Copies Per MilliLiter,2014-03-26
+2.0.0,U/g{hemoglobin},enzyme Unit per gram of hemoglobin,2014-03-26
+2.0.0,K,Kelvin,2014-03-26
+2.0.0,U/g{protein},enzyme unit per gram of protein,2014-03-26
+2.0.0,J,joule,2014-03-26
 2.0.0,/100{Spermatozoa},Per100Spermatozoa,2014-03-26
-2.0.0,/100{WBCs},Per100WBC,2014-03-26
-2.0.0,/100{WBC},Per100WBC,2014-03-26
-2.0.0,/100{cells},per 100 cells,2014-03-26
-2.0.0,/100{neutrophils},per 100 neutrophils,2014-03-26
-2.0.0,/100{spermatozoa},per 100 spermatozoa,2014-03-26
-2.0.0,/L,per liter,2014-03-26
-2.0.0,/U,per enzyme unit,2014-03-26
-2.0.0,/[HPF],per high power field,2014-03-26
-2.0.0,/[IU],per international unit,2014-03-26
+2.0.0,10*3{copies}/mL,thousand copies per milliliter,2014-03-26
+2.0.0,Pa,Pascal,2014-03-26
+2.0.0,U/10*9,enzyme unit per billion,2014-03-26
+2.0.0,%{dose},percent dose,2014-03-26
+2.0.0,%{OfLymphocytes},percent OfLymphocytes,2014-03-26
+2.0.0,Ms,megasecond,2014-03-26
+2.0.0,%{WBCs},percent of white blood cells,2014-03-26
+2.0.0,T,Tesla,2014-03-26
+2.0.0,/10*6,PerMillion,2014-03-26
+2.0.0,10*3{RBCs},thousand red blood cells,2014-03-26
+2.0.0,10*3.U,Thousand Per * Unit,2014-03-26
+2.0.0,/10*12,PerTrillion,2014-03-26
+2.0.0,/10*3,per thousand,2014-03-26
+2.0.0,Cel,degree Celsius,2014-03-26
+2.0.0,10*6/uL,million per microliter,2014-03-26
+2.0.0,U/mol,enzyme Unit per mole,2014-03-26
+2.0.0,/g{wet_tis},per gram of wet tissue,2014-03-26
+2.0.0,L.s2/s,liter * (second ^ 2) / second,2014-03-26
+2.0.0,/min,per minute,2014-03-26
+2.0.0,U/g{creat},enzyme unit per gram of creatinine,2014-03-26
+2.0.0,/g{hgb},per gram hgb,2014-03-26
+2.0.0,10*3/uL,Thousands Per MicroLiter,2014-03-26
+2.0.0,[Ch],French (catheter gauge),2014-03-26
+2.0.0,/{oif},per oif,2014-03-26
+2.0.0,U/10*10{cells},enzyme unit per 10 billion cells,2014-03-26
+2.0.0,%{positive},percent positive,2014-03-26
+2.0.0,%[slope],percent of slope,2014-03-26
+2.0.0,/(12.h),per 12 * hour,2014-03-26
 2.0.0,/[LPF],per low power field,2014-03-26
+2.0.0,10*6/L,million per liter,2014-03-26
+2.0.0,%{Blockade},percent Blockade,2014-03-26
+2.0.0,%{blockade},percent blockade,2014-03-26
+2.0.0,/dL,per deciliter,2014-03-26
+2.0.0,10*6.[IU],million international unit,2014-03-26
+2.0.0,L/(24.h),liter per 24 hour,2014-03-26
+2.0.0,L/d,liter per day,2014-03-26
+2.0.0,[Btu_39],British thermal unit at 39 ??F,2014-03-26
+2.0.0,U/10*6,enzyme unit per million,2014-03-26
+2.0.0,10*9/uL,billion per microliter,2014-03-26
+2.0.0,C,Coulomb,2014-03-26
+2.0.0,U/(18.h),enzyme Unit per 18 hour,2014-03-26
+2.0.0,10*6/mL,million per milliliter,2014-03-26
+2.0.0,[IU]/kg,international unit per kilogram,2014-03-26
+2.0.0,[IU]/(2.h),international unit per 2 hour,2014-03-26
+2.0.0,10*6/mm3,(the number ten for arbitrary powers ^ 6) / (millimeter ^ 3),2014-03-26
+2.0.0,Bq,Becquerel,2014-03-26
+2.0.0,/g{tot_nit},per gram of total nitrogen,2014-03-26
+2.0.0,U/g{Cre},Unit / gram Cre,2014-03-26
+2.0.0,Wb,Weber,2014-03-26
+2.0.0,[IU]/d,international unit per day,2014-03-26
+2.0.0,N.cm,Newton centimeter,2014-03-26
+2.0.0,U{G},G unit,2014-03-26
+2.0.0,%{Hb},percent hemoglobin,2014-03-26
+2.0.0,%{SpermMotility},percent SpermMotility,2014-03-26
+2.0.0,[Amb'a'1'U],Amb a 1 units,2014-03-26
+2.0.0,/100{WBCs},Per100WBC,2014-03-26
+2.0.0,/g{wet'tis},per gram wet'tis,2014-03-26
+2.0.0,Ao,??ngstr??m,2014-03-26
+2.0.0,/10*12{RBCs},per trillion red blood cells,2014-03-26
+2.0.0,/g{tot'prot},per gram tot'prot,2014-03-26
+2.0.0,%{loss_AChR},percent loss of acetylcholine receptor,2014-03-26
+2.0.0,[CCID_50],CELL CULTURE INFECTIOUS DOSE 50%,2014-03-26
+2.0.0,',minute,2014-03-26
+2.0.0,[Btu_IT],international table British thermal unit,2014-03-26
+2.0.0,%{saturation},percent saturation,2014-03-26
+2.0.0,%{Index},percent Index,2014-03-26
+2.0.0,%{WeightToWeight},percent WeightToWeight,2014-03-26
+2.0.0,%{Bound},PercentBound,2014-03-26
+2.0.0,/g{tot_prot},per gram of total protein,2014-03-26
+2.0.0,Bi,Biot,2014-03-26
+2.0.0,%{Tot'Cholesterol},percent Tot'Cholesterol,2014-03-26
+2.0.0,10*3.{RBC},Thousand Red Blood Cells,2014-03-26
+2.0.0,B[V],bel volt,2014-03-26
+2.0.0,%{Hemoglobin},percent Hemoglobin,2014-03-26
+2.0.0,/mmol,per millimole,2014-03-26
+2.0.0,Ci,CURIE,2014-03-26
+2.0.0,%{bound},percent bound,2014-03-26
+2.0.0,L/h,liter per hour,2014-03-26
+2.0.0,10*6.U,(the number ten for arbitrary powers ^ 6) * Unit,2014-03-26
+2.0.0,B[W],bel watt,2014-03-26
+2.0.0,U/mL{RBCs},enzyme unit per milliliter of red blood cells,2014-03-26
+2.0.0,%{0to3Hours},percent 0to3Hours,2014-03-26
+2.0.0,U/dL,enzyme unit per deciliter,2014-03-26
+2.0.0,Mx,Maxwell,2014-03-26
+2.0.0,[IU]/h,international unit per hour,2014-03-26
+2.0.0,[Cal],nutrition label Calories,2014-03-26
+2.0.0,%{vol},VolumePercent,2014-03-26
+2.0.0,10*-6{Immunofluorescence'U},(the number ten for arbitrary powers ^ -6) Immunofluorescence'U,2014-03-26
+2.0.0,[Btu_m],mean British thermal unit,2014-03-26
+2.0.0,[IU]/dL,international unit per deciliter,2014-03-26
+2.0.0,/10*4{RBCs},per 10 thousand red blood cells,2014-03-26
+2.0.0,10*9/L,billion per liter,2014-03-26
+2.0.0,V,volt,2014-03-26
+2.0.0,%{bacteria},percent of bacteria,2014-03-26
+2.0.0,/U,per enzyme unit,2014-03-26
+2.0.0,%{Hemolysis},percent Hemolysis,2014-03-26
+2.0.0,Ky,Kayser,2014-03-26
+2.0.0,[AU],allergy unit,2014-03-26
+2.0.0,%{HemoglobinSaturation},percent HemoglobinSaturation,2014-03-26
+2.0.0,W,Watt,2014-03-26
+2.0.0,/uL,per microliter,2014-03-26
+2.0.0,10*-3{Polarization'U},(the number ten for arbitrary powers ^ -3) Polarization'U,2014-03-26
+2.0.0,L/min,liter per minute,2014-03-26
+2.0.0,Ohm,Ohm,2014-03-26
+2.0.0,[LPF],low power field,2014-03-26
+2.0.0,%{Excretion},percent Excretion,2014-03-26
+2.0.0,/10*9,PerBillion,2014-03-26
+2.0.0,[CFU]/L,colony forming unit per liter,2014-03-26
+2.0.0,Gal,Gal,2014-03-26
+2.0.0,U/umol,enzyme Unit per micromole,2014-03-26
+2.0.0,[APL'U],IgA anticardiolipin unit,2014-03-26
+2.0.0,/m2,per square meter,2014-03-26
+2.0.0,/{tot},per tot,2014-03-26
+2.0.0,Sv,Sievert,2014-03-26
+2.0.0,[IU]/min,international unit per minute,2014-03-26
+2.0.0,10.uN.s/(cm5.m2),10 micronewton second per centimeter to the fifth power per square meter,2014-03-26
+2.0.0,Bd,baud,2014-03-26
+2.0.0,N,Newton,2014-03-26
+2.0.0,/mm3,per cubic millimeter,2014-03-26
+2.0.0,U/mL{RBC},Unit / milliliter RBC,2014-03-26
+2.0.0,/100{WBC},Per100WBC,2014-03-26
+2.0.0,[D'ag'U],D-ANTIGEN UNITS,2014-03-26
+2.0.0,A,Amp??re,2014-03-26
+2.0.0,%{Fat},percent Fat,2014-03-26
+2.0.0,U/10*12,enzyme unit per trillion,2014-03-26
+2.0.0,%{ofBacteria},percent ofBacteria,2014-03-26
+2.0.0,10*6/{Specimen},MillionPerSpecimen,2014-03-26
+2.0.0,[IU],international unit,2014-03-26
+2.0.0,%{at_60_min},percent at 60 minute,2014-03-26
+2.0.0,[IU]/10*9{RBCs},international unit per billion red blood cells,2014-03-26
+2.0.0,%{recovery},percent recovery,2014-03-26
+2.0.0,U/h,enzyme unit per hour,2014-03-26
+2.0.0,%{uptake},percent uptake,2014-03-26
+2.0.0,/100,per 100,2014-03-26
+2.0.0,/mm,per millimeter,2014-03-26
+2.0.0,[HPF],high power field,2014-03-26
+2.0.0,[IU]/L{37Cel},international unit per liter at 37 degrees Celsius,2014-03-26
+2.0.0,%{index},percent index,2014-03-26
+2.0.0,%{normal_pooled_plasma},percent normal pooled plasma,2014-03-26
+2.0.0,%{hemolysis},percent hemolysis,2014-03-26
+2.0.0,/[IU],per international unit,2014-03-26
+2.0.0,N.s,Newton second,2014-03-26
+2.0.0,[CFU],colony forming unit,2014-03-26
+2.0.0,Gy,Gray,2014-03-26
+2.0.0,U,enzyme Unit,2014-03-26
+2.0.0,/d,per day,2014-03-26
+2.0.0,/L,per liter,2014-03-26
+2.0.0,%{Tot'Hgb},percent Tot'Hgb,2014-03-26
+2.0.0,10.uN.s/(cm.m2),10 * microNewton * second / centimeter * (meter ^ 2),2014-03-26
+2.0.0,/mg,per milligram,2014-03-26
 2.0.0,/[arb'U],per arbitrary unit,2014-03-26
+2.0.0,U/s,enzyme unit per second,2014-03-26
+2.0.0,U/10*10,enzyme unit per 10 billion,2014-03-26
+2.0.0,%{reference},percent reference,2014-03-26
+2.0.0,%{Inhibition},percent Inhibition,2014-03-26
+2.0.0,/s,per second,2014-03-26
+2.0.0,%{BasalActivity},percent BasalActivity,2014-03-26
+2.0.0,/100{neutrophils},per 100 neutrophils,2014-03-26
+2.0.0,[IU]/(24.h),international unit per 24 hour,2014-03-26
+2.0.0,[Btu_59],British thermal unit at 59 ??F,2014-03-26
+2.0.0,Lmb,Lambert,2014-03-26
+2.0.0,%{response},percent response,2014-03-26
+2.0.0,/100{cells},per 100 cells,2014-03-26
+2.0.0,/g{tot'nit},per gram tot'nit,2014-03-26
+2.0.0,[IU]/kg/d,international unit per kilogram per day,2014-03-26
+2.0.0,10*6.eq/mL,MillionEquivalentsPerMilliLiter,2014-03-26
+2.0.0,10*8,TenToEighth,2014-03-26
+2.0.0,U/kg{Hb},enzyme unit per kilogram of hemoglobin,2014-03-26
+2.0.0,%{Abnormal},percent Abnormal,2014-03-26
+2.0.0,B[uV],bel microvolt,2014-03-26
+2.0.0,[IU]/L,international unit per liter,2014-03-26
+2.0.0,%{blocked},percent blocked,2014-03-26
+2.0.0,1/min,one per minute,2014-03-26
+2.0.0,%{penetration},percent penetration,2014-03-26
+2.0.0,Gb,Gilbert,2014-03-26
+2.0.0,[GPL'U],IgG anticardiolipin unit,2014-03-26
+2.0.0,[G],Newtonian constant of gravitation,2014-03-26
+2.0.0,Ohm.m,Ohm meter,2014-03-26
+2.0.0,[Lf],LIMIT OF FLOCCULATION,2014-03-26
+2.0.0,%{basal_activity},percent basal activity,2014-03-26
+2.0.0,/m3,per cubic meter,2014-03-26
+2.0.0,[Btu_th],thermochemical British thermal unit,2014-03-26
+2.0.0,10*6/(24.h),million per 24 hour,2014-03-26
+2.0.0,A/m,Amp??re / meter,2014-03-26
+2.0.0,10*4/uL,10 thousand per microliter,2014-03-26
+2.0.0,By,byte,2014-03-26
+2.0.0,F,Farad,2014-03-26
+2.0.0,%{abnormal},percent abnormal,2014-03-26
+2.0.0,/{Specimen},per Specimen,2014-03-26
+2.0.0,%{Live},percent Live,2014-03-26
+2.0.0,/{OIF},per oil immersion field,2014-03-26
+2.0.0,%{viable},percent viable,2014-03-26
+2.0.0,B[SPL],bel sound pressure,2014-03-26
+2.0.0,U/min,enzyme unit per minute,2014-03-26
+2.0.0,10.L/(min.m2),10 liter per minute per square meter,2014-03-26
+2.0.0,Np,neper,2014-03-26
+2.0.0,%{reactive},percent reactive,2014-03-26
+2.0.0,/g{Hb},per gram of hemoglobin,2014-03-26
+2.0.0,B[mV],bel millivolt,2014-03-26
+2.0.0,[FFU],FOCUS-FORMING UNITS,2014-03-26
+2.0.0,[HP],horsepower,2014-03-26
+2.0.0,%{TotalProtein},percent TotalProtein,2014-03-26
+2.0.0,/10*3.{RBCs},per thousand red blood cells,2014-03-26
+2.0.0,/100{spermatozoa},per 100 spermatozoa,2014-03-26
+2.0.0,/g,per gram,2014-03-26
+2.0.0,%/100{WBC},percent / 100 WBC,2014-03-26
+2.0.0,/[HPF],per high power field,2014-03-26
+2.0.0,10*3/mL,Thousand Per MilliLiter,2014-03-26
+2.0.0,10*12/L,trillion per liter,2014-03-26
+2.0.0,R,Roentgen,2014-03-26
+2.0.0,%{HumanResponse},percent HumanResponse,2014-03-26
+2.0.0,%{NormalPooledPlasma},percent NormalPooledPlasma,2014-03-26
+2.0.0,%{relative},relative percent,2014-03-26
+2.0.0,24.h,24 hour,2014-03-26
+2.0.0,RAD,radiation absorbed dose,2014-03-26
+2.0.0,L/(8.h),liter per 8 hour,2014-03-26
+2.0.0,%{deficient},percent deficient,2014-03-26
+2.0.0,/g{creat},per gram creat,2014-03-26
+2.0.0,10*9/mL,billion per milliliter,2014-03-26
+2.0.0,10.uN.s/cm2,10 * microNewton * second / (centimeter ^ 2),2014-03-26
+2.0.0,U/mmol{creat},enzyme unit per millimole of creatinine,2014-03-26
+2.0.0,%{Uptake},percent Uptake,2014-03-26
+2.0.0,U/mL,enzyme unit per milliliter,2014-03-26
+2.0.0,%{residual},percent residual,2014-03-26
+2.0.0,[APL'U]/mL,IgA anticardiolipin unit per milliliter,2014-03-26
+2.0.0,/wk,per week,2014-03-26
+2.0.0,%{OfWBCs},percent OfWBCs,2014-03-26
+2.0.0,[Btu_60],British thermal unit at 60 ??F,2014-03-26
+2.0.0,%{Conversion},percent Conversion,2014-03-26
+2.0.0,%{baseline},percent of baseline,2014-03-26
+2.0.0,%{total},percent total,2014-03-26
+2.0.0,L/(min.m2),liter per minute per square meter,2014-03-26
+2.0.0,/{Entity},per Entity,2014-03-26
+2.0.0,B,bel,2014-03-26
+2.0.0,/mL,per milliliter,2014-03-26
+2.0.0,U/d,enzyme unit per day,2014-03-26
+2.0.0,U/(24.h),enzyme unit per 24 hour,2014-03-26
+2.0.0,10*3,Thousand,2014-03-26
+2.0.0,10.uN.s/cm,10 * microNewton * second / centimeter,2014-03-26
+2.0.0,%{loss},percent loss,2014-03-26
+2.0.0,10*6.[CFU]/L,million colony forming unit per liter,2014-03-26
+2.0.0,%{Precipitate},percent Precipitate,2014-03-26
+2.0.0,/10*10,PerTenGiga,2014-03-26
+2.0.0,%{binding},percent binding,2014-03-26
+2.0.0,%{Positive},percent Positive,2014-03-26
+2.0.0,MBq,megaBecquerel,2014-03-26
+2.0.0,U{25Cel}/L,enzyme unit per liter at 25 deg Celsius,2014-03-26
+2.0.0,%{inhibition},percent inhibition,2014-03-26
+2.0.0,U/L,enzyme unit per liter,2014-03-26
+2.0.0,%{Activity},percent Activity,2014-03-26
+2.0.0,%{Normal},percent Normal,2014-03-26
+2.0.0,U/(10.g){feces},enzyme unit per 10 gram of feces,2014-03-26
+2.0.0,/kg,per kilogram,2014-03-26
+2.0.0,/cm[H2O],per centimeter of water,2014-03-26
+2.0.0,G,Gauss,2014-03-26
+2.0.0,U/(1.h),enzyme Unit per 1 hour,2014-03-26
+2.0.0,/g{HGB},PerGramHemoglobin,2014-03-26
+2.0.0,L/kg,liter per kilogram,2014-03-26
+2.0.0,%{Oxygen},percent Oxygen,2014-03-26
+2.0.0,U/g,enzyme unit per gram,2014-03-26
+2.0.0,U/g{Hgb},UnitsPerGramHemoglobin,2014-03-26
+2.0.0,[IU]/g{Hb},international unit per gram of hemoglobin,2014-03-26
+2.0.0,1/d,one per day,2014-03-26
+2.0.0,U/kg/h,Unit / kilogram / hour,2014-03-26
+2.0.0,[Btu],British thermal unit,2014-03-26
+2.0.0,[IU]/mg{creat},international unit per milligram of creatinine,2014-03-26
+2.0.0,1,1*,2014-03-26
+2.0.0,%{Reactivity},percent Reactivity,2014-03-26
+2.0.0,%{breakdown},percent breakdown,2014-03-26
+2.0.0,U/kg{hemoglobin},enzyme Unit per kilogram of hemoglobin,2014-03-26
+2.0.0,[BAU],bioequivalent allergen unit,2014-03-26
+2.0.0,[GPL'U]/mL,IgG anticardiolipin unit per milliliter**,2014-03-26
+2.0.0,L,liter,2014-03-26
+2.0.0,J/L,joule per liter,2014-03-26
+2.0.0,AU,astronomic unit,2014-03-26
+2.0.0,U{37Cel}/L,enzyme unit per liter at 37 deg Celsius,2014-03-26
+2.0.0,%{lysis},percent lysis,2014-03-26
 2.0.0,/[iU],per international unit,2014-03-26
 2.0.0,/a,/ year,2014-03-26
-2.0.0,/cm[H2O],per centimeter of water,2014-03-26
-2.0.0,/d,per day,2014-03-26
-2.0.0,/dL,per deciliter,2014-03-26
-2.0.0,/g,per gram,2014-03-26
-2.0.0,/g{HGB},PerGramHemoglobin,2014-03-26
-2.0.0,/g{Hb},per gram of hemoglobin,2014-03-26
-2.0.0,/g{creat},per gram creat,2014-03-26
-2.0.0,/g{hgb},per gram hgb,2014-03-26
-2.0.0,/g{tot'nit},per gram tot'nit,2014-03-26
-2.0.0,/g{tot'prot},per gram tot'prot,2014-03-26
-2.0.0,/g{tot_nit},per gram of total nitrogen,2014-03-26
-2.0.0,/g{tot_prot},per gram of total protein,2014-03-26
-2.0.0,/g{wet'tis},per gram wet'tis,2014-03-26
-2.0.0,/g{wet_tis},per gram of wet tissue,2014-03-26
-2.0.0,/h,per hour,2014-03-26
-2.0.0,/kg,per kilogram,2014-03-26
-2.0.0,/kg{body'wt},per kilogram body wt,2014-03-26
-2.0.0,/kg{body_wt},per kilogram of body weight,2014-03-26
-2.0.0,/m2,per square meter,2014-03-26
-2.0.0,/m3,per cubic meter,2014-03-26
-2.0.0,/mL,per milliliter,2014-03-26
-2.0.0,/mg,per milligram,2014-03-26
-2.0.0,/min,per minute,2014-03-26
-2.0.0,/mm,per millimeter,2014-03-26
-2.0.0,/mm3,per cubic millimeter,2014-03-26
-2.0.0,/mmol,per millimole,2014-03-26
-2.0.0,/mmol{creat},per millimole of creatinine,2014-03-26
-2.0.0,/mo,per month,2014-03-26
-2.0.0,/s,per second,2014-03-26
-2.0.0,/uL,per microliter,2014-03-26
-2.0.0,/ug,per microgram,2014-03-26
-2.0.0,/wk,per week,2014-03-26
-2.0.0,/{Entity},per Entity,2014-03-26
-2.0.0,/{OIF},per oil immersion field,2014-03-26
-2.0.0,/{Specimen},per Specimen,2014-03-26
-2.0.0,/{entity},per entity,2014-03-26
-2.0.0,/{oif},per oif,2014-03-26
-2.0.0,/{tot},per tot,2014-03-26
-2.0.0,1,1*,2014-03-26
-2.0.0,1/d,one per day,2014-03-26
-2.0.0,1/min,one per minute,2014-03-26
-2.0.0,10*,the number ten for arbitrary powers,2014-03-26
-2.0.0,10*-3{Polarization'U},(the number ten for arbitrary powers ^ -3) Polarization'U,2014-03-26
-2.0.0,10*-6{Immunofluorescence'U},(the number ten for arbitrary powers ^ -6) Immunofluorescence'U,2014-03-26
-2.0.0,10*12/L,trillion per liter,2014-03-26
-2.0.0,10*3,Thousand,2014-03-26
-2.0.0,10*3.U,Thousand Per * Unit,2014-03-26
-2.0.0,10*3.{RBC},Thousand Red Blood Cells,2014-03-26
-2.0.0,10*3/L,Thousand Per Liter,2014-03-26
-2.0.0,10*3/mL,Thousand Per MilliLiter,2014-03-26
-2.0.0,10*3/uL,Thousands Per MicroLiter,2014-03-26
-2.0.0,10*3{Copies}/mL,Thousand Copies Per MilliLiter,2014-03-26
-2.0.0,10*3{RBCs},thousand red blood cells,2014-03-26
-2.0.0,10*3{copies}/mL,thousand copies per milliliter,2014-03-26
-2.0.0,10*4/uL,10 thousand per microliter,2014-03-26
-2.0.0,10*5,OneHundredThousand,2014-03-26
-2.0.0,10*6,Million,2014-03-26
-2.0.0,10*6.U,(the number ten for arbitrary powers ^ 6) * Unit,2014-03-26
-2.0.0,10*6.[CFU]/L,million colony forming unit per liter,2014-03-26
-2.0.0,10*6.[IU],million international unit,2014-03-26
-2.0.0,10*6.[iU],MillionInternationalUnit,2014-03-26
-2.0.0,10*6.eq/mL,MillionEquivalentsPerMilliLiter,2014-03-26
-2.0.0,10*6/(24.h),million per 24 hour,2014-03-26
-2.0.0,10*6/L,million per liter,2014-03-26
-2.0.0,10*6/kg,million per kilogram,2014-03-26
-2.0.0,10*6/mL,million per milliliter,2014-03-26
-2.0.0,10*6/mm3,(the number ten for arbitrary powers ^ 6) / (millimeter ^ 3),2014-03-26
-2.0.0,10*6/uL,million per microliter,2014-03-26
-2.0.0,10*6/{Specimen},MillionPerSpecimen,2014-03-26
-2.0.0,10*8,TenToEighth,2014-03-26
-2.0.0,10*9/L,billion per liter,2014-03-26
-2.0.0,10*9/mL,billion per milliliter,2014-03-26
-2.0.0,10*9/uL,billion per microliter,2014-03-26
-2.0.0,10.L/(min.m2),10 liter per minute per square meter,2014-03-26
-2.0.0,10.L/min,10 liter per minute,2014-03-26
-2.0.0,10.uN.s/(cm.m2),10 * microNewton * second / centimeter * (meter ^ 2),2014-03-26
-2.0.0,10.uN.s/(cm5.m2),10 micronewton second per centimeter to the fifth power per square meter,2014-03-26
-2.0.0,10.uN.s/cm,10 * microNewton * second / centimeter,2014-03-26
-2.0.0,10.uN.s/cm2,10 * microNewton * second / (centimeter ^ 2),2014-03-26
-2.0.0,10^,the number ten for arbitrary powers,2014-03-26
-2.0.0,24.h,24 hour,2014-03-26
-2.0.0,A,Amp??re,2014-03-26
-2.0.0,A/m,Amp??re / meter,2014-03-26
-2.0.0,AU,astronomic unit,2014-03-26
-2.0.0,Ao,??ngstr??m,2014-03-26
-2.0.0,B,bel,2014-03-26
-2.0.0,B[SPL],bel sound pressure,2014-03-26
-2.0.0,B[V],bel volt,2014-03-26
-2.0.0,B[W],bel watt,2014-03-26
-2.0.0,B[kW],bel kilowatt,2014-03-26
-2.0.0,B[mV],bel millivolt,2014-03-26
-2.0.0,B[uV],bel microvolt,2014-03-26
-2.0.0,Bd,baud,2014-03-26
-2.0.0,Bi,Biot,2014-03-26
-2.0.0,Bq,Becquerel,2014-03-26
-2.0.0,By,byte,2014-03-26
-2.0.0,C,Coulomb,2014-03-26
-2.0.0,Cel,degree Celsius,2014-03-26
-2.0.0,Ci,CURIE,2014-03-26
-2.0.0,F,Farad,2014-03-26
-2.0.0,G,Gauss,2014-03-26
-2.0.0,GBq,gigaBecquerel,2014-03-26
-2.0.0,Gal,Gal,2014-03-26
-2.0.0,Gb,Gilbert,2014-03-26
-2.0.0,Gy,Gray,2014-03-26
-2.0.0,H,Henry,2014-03-26
-2.0.0,Hz,Hertz,2014-03-26
-2.0.0,J,joule,2014-03-26
-2.0.0,J/L,joule per liter,2014-03-26
-2.0.0,K,Kelvin,2014-03-26
-2.0.0,K/W,Kelvin / Watt,2014-03-26
-2.0.0,Ky,Kayser,2014-03-26
-2.0.0,L,liter,2014-03-26
-2.0.0,L.s2/s,liter * (second ^ 2) / second,2014-03-26
-2.0.0,L/(24.h),liter per 24 hour,2014-03-26
-2.0.0,L/(8.h),liter per 8 hour,2014-03-26
-2.0.0,L/(min.m2),liter per minute per square meter,2014-03-26
-2.0.0,L/L,liter per liter,2014-03-26
-2.0.0,L/d,liter per day,2014-03-26
-2.0.0,L/h,liter per hour,2014-03-26
-2.0.0,L/kg,liter per kilogram,2014-03-26
-2.0.0,L/min,liter per minute,2014-03-26
-2.0.0,L/s,liter / second,2014-03-26
-2.0.0,L/s/s2,liter per second per square second,2014-03-26
-2.0.0,Lmb,Lambert,2014-03-26
-2.0.0,MBq,megaBecquerel,2014-03-26
-2.0.0,Ms,megasecond,2014-03-26
-2.0.0,Mx,Maxwell,2014-03-26
-2.0.0,N,Newton,2014-03-26
-2.0.0,N.cm,Newton centimeter,2014-03-26
-2.0.0,N.s,Newton second,2014-03-26
-2.0.0,Np,neper,2014-03-26
-2.0.0,Oe,Oersted,2014-03-26
-2.0.0,Ohm,Ohm,2014-03-26
-2.0.0,Ohm.m,Ohm meter,2014-03-26
-2.0.0,P,Poise,2014-03-26
-2.0.0,Pa,Pascal,2014-03-26
-2.0.0,R,Roentgen,2014-03-26
-2.0.0,RAD,radiation absorbed dose,2014-03-26
-2.0.0,REM,radiation equivalent man,2014-03-26
 2.0.0,S,Siemens,2014-03-26
-2.0.0,St,Stokes,2014-03-26
-2.0.0,Sv,Sievert,2014-03-26
-2.0.0,T,Tesla,2014-03-26
-2.0.0,U,enzyme Unit,2014-03-26
-2.0.0,U/(1.h),enzyme Unit per 1 hour,2014-03-26
-2.0.0,U/(10.g){feces},enzyme unit per 10 gram of feces,2014-03-26
-2.0.0,U/(12.h),enzyme unit per 12 hour,2014-03-26
-2.0.0,U/(18.h),enzyme Unit per 18 hour,2014-03-26
-2.0.0,U/(2.h),enzyme unit per 2 hour,2014-03-26
-2.0.0,U/(24.h),enzyme unit per 24 hour,2014-03-26
-2.0.0,U/10,enzyme unit per 10,2014-03-26
-2.0.0,U/10*10,enzyme unit per 10 billion,2014-03-26
-2.0.0,U/10*10{cells},enzyme unit per 10 billion cells,2014-03-26
-2.0.0,U/10*12,enzyme unit per trillion,2014-03-26
-2.0.0,U/10*12{RBCs},enzyme unit per trillion red blood cells,2014-03-26
-2.0.0,U/10*6,enzyme unit per million,2014-03-26
-2.0.0,U/10*9,enzyme unit per billion,2014-03-26
-2.0.0,U/L,enzyme unit per liter,2014-03-26
-2.0.0,U/d,enzyme unit per day,2014-03-26
-2.0.0,U/dL,enzyme unit per deciliter,2014-03-26
-2.0.0,U/g,enzyme unit per gram,2014-03-26
-2.0.0,U/g{Cre},Unit / gram Cre,2014-03-26
+2.0.0,%{cells},percent of cells,2014-03-26
+2.0.0,'',second,2014-03-26
 2.0.0,U/g{Hb},enzyme unit per gram of hemoglobin,2014-03-26
-2.0.0,U/g{Hgb},UnitsPerGramHemoglobin,2014-03-26
-2.0.0,U/g{creat},enzyme unit per gram of creatinine,2014-03-26
-2.0.0,U/g{hemoglobin},enzyme Unit per gram of hemoglobin,2014-03-26
-2.0.0,U/g{protein},enzyme unit per gram of protein,2014-03-26
-2.0.0,U/h,enzyme unit per hour,2014-03-26
-2.0.0,U/kg/h,Unit / kilogram / hour,2014-03-26
-2.0.0,U/kg{Hb},enzyme unit per kilogram of hemoglobin,2014-03-26
-2.0.0,U/kg{hemoglobin},enzyme Unit per kilogram of hemoglobin,2014-03-26
-2.0.0,U/mL,enzyme unit per milliliter,2014-03-26
-2.0.0,U/mL{RBCs},enzyme unit per milliliter of red blood cells,2014-03-26
-2.0.0,U/mL{RBC},Unit / milliliter RBC,2014-03-26
-2.0.0,U/min,enzyme unit per minute,2014-03-26
-2.0.0,U/mmol{creat},enzyme unit per millimole of creatinine,2014-03-26
-2.0.0,U/mol,enzyme Unit per mole,2014-03-26
-2.0.0,U/s,enzyme unit per second,2014-03-26
-2.0.0,U/umol,enzyme Unit per micromole,2014-03-26
-2.0.0,U{25Cel}/L,enzyme unit per liter at 25 deg Celsius,2014-03-26
-2.0.0,U{37Cel}/L,enzyme unit per liter at 37 deg Celsius,2014-03-26
-2.0.0,U{G},G unit,2014-03-26
-2.0.0,V,volt,2014-03-26
-2.0.0,W,Watt,2014-03-26
-2.0.0,Wb,Weber,2014-03-26
-2.0.0,[APL'U],IgA anticardiolipin unit,2014-03-26
-2.0.0,[APL'U]/mL,IgA anticardiolipin unit per milliliter,2014-03-26
-2.0.0,[AU],allergy unit,2014-03-26
-2.0.0,[Amb'a'1'U],Amb a 1 units,2014-03-26
-2.0.0,[BAU],bioequivalent allergen unit,2014-03-26
-2.0.0,[Btu],British thermal unit,2014-03-26
-2.0.0,[Btu_39],British thermal unit at 39 ??F,2014-03-26
-2.0.0,[Btu_59],British thermal unit at 59 ??F,2014-03-26
-2.0.0,[Btu_60],British thermal unit at 60 ??F,2014-03-26
-2.0.0,[Btu_IT],international table British thermal unit,2014-03-26
-2.0.0,[Btu_m],mean British thermal unit,2014-03-26
-2.0.0,[Btu_th],thermochemical British thermal unit,2014-03-26
-2.0.0,[CCID_50],CELL CULTURE INFECTIOUS DOSE 50%,2014-03-26
-2.0.0,[CFU],colony forming unit,2014-03-26
-2.0.0,[CFU]/L,colony forming unit per liter,2014-03-26
-2.0.0,[CFU]/mL,colony forming unit per milliliter,2014-03-26
-2.0.0,[Cal],nutrition label Calories,2014-03-26
-2.0.0,[Ch],French (catheter gauge),2014-03-26
-2.0.0,[D'ag'U],D-ANTIGEN UNITS,2014-03-26
-2.0.0,[FFU],FOCUS-FORMING UNITS,2014-03-26
-2.0.0,[GPL'U],IgG anticardiolipin unit,2014-03-26
-2.0.0,[GPL'U]/mL,IgG anticardiolipin unit per milliliter**,2014-03-26
-2.0.0,[G],Newtonian constant of gravitation,2014-03-26
-2.0.0,[HPF],high power field,2014-03-26
-2.0.0,[HP],horsepower,2014-03-26
-2.0.0,[IU],international unit,2014-03-26
-2.0.0,[IU]/(2.h),international unit per 2 hour,2014-03-26
-2.0.0,[IU]/(24.h),international unit per 24 hour,2014-03-26
-2.0.0,[IU]/10*9{RBCs},international unit per billion red blood cells,2014-03-26
-2.0.0,[IU]/L,international unit per liter,2014-03-26
-2.0.0,[IU]/L{37Cel},international unit per liter at 37 degrees Celsius,2014-03-26
-2.0.0,[IU]/d,international unit per day,2014-03-26
-2.0.0,[IU]/dL,international unit per deciliter,2014-03-26
-2.0.0,[IU]/g,international unit per gram,2014-03-26
-2.0.0,[IU]/g{Hb},international unit per gram of hemoglobin,2014-03-26
-2.0.0,[IU]/h,international unit per hour,2014-03-26
-2.0.0,[IU]/kg,international unit per kilogram,2014-03-26
-2.0.0,[IU]/kg/d,international unit per kilogram per day,2014-03-26
-2.0.0,[IU]/mL,international unit per milliliter,2014-03-26
-2.0.0,[IU]/mg{creat},international unit per milligram of creatinine,2014-03-26
-2.0.0,[IU]/min,international unit per minute,2014-03-26
-2.0.0,[LPF],low power field,2014-03-26
-2.0.0,[Lf],LIMIT OF FLOCCULATION,2014-03-26
-2.0.0,[MET],metabolic equivalent,2014-03-26
-2.0.0,[MPL'U],IgM anticardiolipin unit,2014-03-26
-2.0.0,[MPL'U]/mL,IgM anticardiolipin unit per milliliter**,2014-03-26
-2.0.0,[PFU],PLAQUE-FORMING UNITS,2014-03-26
-2.0.0,[PNU],PROTEIN NITROGEN UNITS,2014-03-26
+2.0.0,%{Cound},percent Cound,2014-03-26
+2.0.0,L/s/s2,liter per second per square second,2014-03-26
+2.0.0,/h,per hour,2014-03-26
+2.0.0,%{Negative Control},percent Negative Control,2014-03-26
+2.0.0,/mmol{creat},per millimole of creatinine,2014-03-26
+2.0.0,10.L/min,10 liter per minute,2014-03-26
+2.0.0,K/W,Kelvin / Watt,2014-03-26
+2.0.0,P,Poise,2014-03-26
+2.0.0,%{EosSeen},percent EosSeen,2014-03-26
+2.0.0,%{aggregation},percent aggregation,2014-03-26
+2.0.0,10*6,Million,2014-03-26
+2.0.0,10*6.[iU],MillionInternationalUnit,2014-03-26
+2.0.0,%{RBCs},percent of red blood cells,2014-03-26
+2.0.0,%{Total},percent Total,2014-03-26
+2.0.0,10^,the number ten for arbitrary powers,2014-03-26
+2.0.0,/kg{body'wt},per kilogram body wt,2014-03-26
+2.0.0,L/s,liter / second,2014-03-26
+2.0.0,/ug,per microgram,2014-03-26
+2.0.0,GBq,gigaBecquerel,2014-03-26
 2.0.0,[PRU],peripheral vascular resistance unit,2014-03-26
-2.0.0,[S],Svedberg unit,2014-03-26
-2.0.0,[TCID_50],TISSUE CULTURE INFECTIOUS DOSE 50%,2014-03-26
-2.0.0,[USP'U],UNITED STATES PHARMACOPEIA UNIT,2014-03-26
 2.0.0,[acr_br],acre,2014-03-26
-2.0.0,[acr_us],acre,2014-03-26
-2.0.0,[arb'U],arbitrary unit,2014-03-26
-2.0.0,[arb'U]/L,arbitary unit / liter,2014-03-26
-2.0.0,[arb'U]/mL,arbitrary unit per milliliter,2014-03-26
-2.0.0,[bbl_us],barrel,2014-03-26
-2.0.0,[bdsk'U],Bodansky unit,2014-03-26
-2.0.0,[beth'U],Bethesda unit,2014-03-26
-2.0.0,[bf_i],board foot,2014-03-26
-2.0.0,[bu_br],bushel,2014-03-26
-2.0.0,[bu_us],bushel,2014-03-26
-2.0.0,[c],velocity of light,2014-03-26
-2.0.0,[car_Au],carat of gold alloys,2014-03-26
-2.0.0,[car_m],metric carat,2014-03-26
-2.0.0,[cft_i],cubic foot,2014-03-26
-2.0.0,[ch_br],Gunter's chain,2014-03-26
-2.0.0,[ch_us],Gunter's chain Surveyor's chain,2014-03-26
-2.0.0,[cicero],cicero Didot's pica,2014-03-26
-2.0.0,[cin_i],cubic inch,2014-03-26
-2.0.0,[cml_i],circular mil,2014-03-26
-2.0.0,[cr_i],cord,2014-03-26
-2.0.0,[crd_us],cord,2014-03-26
-2.0.0,[cup_us],cup,2014-03-26
-2.0.0,[cyd_i],cubic yard,2014-03-26
-2.0.0,[degF],degree Fahrenheit,2014-03-26
-2.0.0,[didot],didot Didot's point,2014-03-26
-2.0.0,[diop],diopter,2014-03-26
-2.0.0,[dpt_us],dry pint,2014-03-26
-2.0.0,[dqt_us],dry quart,2014-03-26
-2.0.0,[dr_ap],dram drachm,2014-03-26
-2.0.0,[dr_av],Dram (US and British),2014-03-26
-2.0.0,[drp],drop,2014-03-26
-2.0.0,[drp]/[HPF],drop / HPF,2014-03-26
-2.0.0,[drp]/h,drop / hour,2014-03-26
-2.0.0,[drp]/mL,drop / milliliter,2014-03-26
-2.0.0,[drp]/min,drop / minute,2014-03-26
-2.0.0,[drp]/s,drop / second,2014-03-26
-2.0.0,[dye'U],Dye unit,2014-03-26
-2.0.0,[e],elementary charge,2014-03-26
-2.0.0,[eps_0],permittivity of vacuum,2014-03-26
-2.0.0,[fdr_br],fluid dram,2014-03-26
-2.0.0,[fdr_us],fluid dram,2014-03-26
-2.0.0,[foz_br],fluid ounce,2014-03-26
-2.0.0,[foz_us],fluid ounce,2014-03-26
-2.0.0,[ft_br],foot,2014-03-26
-2.0.0,[ft_i],Feet,2014-03-26
-2.0.0,[ft_us],foot,2014-03-26
-2.0.0,[fth_br],fathom,2014-03-26
-2.0.0,[fth_i],fathom,2014-03-26
-2.0.0,[fth_us],fathom,2014-03-26
-2.0.0,[fur_us],furlong,2014-03-26
-2.0.0,[gal_br],gallon,2014-03-26
-2.0.0,[gal_us],Queen Anne's wine gallon,2014-03-26
-2.0.0,[gal_wi],historical winchester gallon,2014-03-26
-2.0.0,[gil_br],gill,2014-03-26
-2.0.0,[gil_us],gill,2014-03-26
-2.0.0,[gr],grain,2014-03-26
-2.0.0,[h],Planck constant,2014-03-26
-2.0.0,[hd_i],hand,2014-03-26
-2.0.0,[hnsf'U],Hounsfield unit,2014-03-26
-2.0.0,[hp_C],HOMEOPATHIC POTENCY OF CENTESIMAL SERIES,2014-03-26
-2.0.0,[hp_M],HOMEOPATHIC POTENCY OF MILLESIMAL SERIES,2014-03-26
-2.0.0,[hp_Q],HOMEOPATHIC POTENCY OF QUINTAMILLESIMAL SERIES,2014-03-26
-2.0.0,[hp_X],HOMEOPATHIC POTENCY OF DECIMAL SERIES,2014-03-26
-2.0.0,[iU],international unit,2014-03-26
-2.0.0,[iU]/L,InternationalUnitsPerLiter,2014-03-26
-2.0.0,[iU]/dL,InternationalUnitsPerDeciLiter,2014-03-26
-2.0.0,[iU]/g,InternationalUnitsPerGram,2014-03-26
-2.0.0,[iU]/g{Hgb},international unit / gram Hgb,2014-03-26
-2.0.0,[iU]/kg,InternationalUnitsPerKilogram,2014-03-26
-2.0.0,[iU]/mL,InternationalUnitsPerMilliLiter,2014-03-26
-2.0.0,[in_br],inch,2014-03-26
-2.0.0,[in_i'H2O],inch (international) of water,2014-03-26
-2.0.0,[in_i'Hg],inch of mercury column,2014-03-26
-2.0.0,[in_i],inch (international),2014-03-26
-2.0.0,[in_us],inch,2014-03-26
-2.0.0,[k],Boltzmann constant,2014-03-26
-2.0.0,[ka'U],King Armstrong unit,2014-03-26
-2.0.0,[kn_br],knot,2014-03-26
-2.0.0,[kn_i],knot,2014-03-26
-2.0.0,[knk'U],Kunkel unit,2014-03-26
-2.0.0,[lb_ap],pound,2014-03-26
-2.0.0,[lb_av],pound (US and British),2014-03-26
-2.0.0,[lb_tr],pound,2014-03-26
-2.0.0,[lbf_av],pound force,2014-03-26
-2.0.0,[lcwt_av],long hunderdweight British hundredweight,2014-03-26
-2.0.0,[ligne],ligne French line,2014-03-26
-2.0.0,[lk_br],link for Gunter's chain,2014-03-26
-2.0.0,[lk_us],link for Gunter's chain,2014-03-26
-2.0.0,[lne],line,2014-03-26
-2.0.0,[lton_av],long ton British ton,2014-03-26
-2.0.0,[ly],light-year,2014-03-26
-2.0.0,[m_e],electron mass,2014-03-26
-2.0.0,[m_p],proton mass,2014-03-26
-2.0.0,[mclg'U],Mac Lagan unit,2014-03-26
-2.0.0,[mesh_i],mesh,2014-03-26
-2.0.0,[mi_br],mile,2014-03-26
-2.0.0,[mi_i],statute mile,2014-03-26
-2.0.0,[mi_us],mile,2014-03-26
-2.0.0,[mil_i],mil,2014-03-26
-2.0.0,[mil_us],mil,2014-03-26
-2.0.0,[min_br],minim,2014-03-26
-2.0.0,[min_us],minim,2014-03-26
-2.0.0,[mu_0],permeability of vacuum,2014-03-26
-2.0.0,[nmi_br],nautical mile,2014-03-26
-2.0.0,[nmi_i],nautical mile,2014-03-26
-2.0.0,[oz_ap],ounce (US and British),2014-03-26
-2.0.0,[oz_av],ounce (US and British),2014-03-26
-2.0.0,[oz_tr],ounce,2014-03-26
-2.0.0,[p'diop],prism diopter,2014-03-26
-2.0.0,[pH],pH,2014-03-26
-2.0.0,[pc_br],pace,2014-03-26
-2.0.0,[pca],pica,2014-03-26
-2.0.0,[pca_pr],Printer's pica,2014-03-26
-2.0.0,[pi],the number pi,2014-03-26
-2.0.0,[pi].rad/min,the number pi * radian / minute,2014-03-26
-2.0.0,[pied],pied French foot,2014-03-26
-2.0.0,[pk_br],peck,2014-03-26
-2.0.0,[pk_us],peck,2014-03-26
-2.0.0,[pnt],point,2014-03-26
-2.0.0,[pnt_pr],Printer's point,2014-03-26
-2.0.0,[pouce],pouce French inch,2014-03-26
-2.0.0,[ppb],part per billion,2014-03-26
-2.0.0,[ppm],part per million,2014-03-26
-2.0.0,[ppm]{v/v},part per million in volume per volume,2014-03-26
-2.0.0,[ppth],parts per thousand,2014-03-26
-2.0.0,[pptr],part per trillion,2014-03-26
-2.0.0,[psi],pound per square inch,2014-03-26
-2.0.0,[pt_br],pint,2014-03-26
-2.0.0,[pt_us],pint,2014-03-26
-2.0.0,[pwt_tr],pennyweight,2014-03-26
-2.0.0,[qt_br],quart,2014-03-26
-2.0.0,[qt_us],quart,2014-03-26
-2.0.0,[rch_us],Ramden's chain Engineer's chain,2014-03-26
-2.0.0,[rd_br],rod,2014-03-26
-2.0.0,[rd_us],rod,2014-03-26
-2.0.0,[rlk_us],link for Ramden's chain,2014-03-26
-2.0.0,[sc_ap],scruple,2014-03-26
-2.0.0,[sct],section,2014-03-26
-2.0.0,[scwt_av],short hundredweight U.S. hundredweight,2014-03-26
-2.0.0,[sft_i],square foot (international),2014-03-26
-2.0.0,[sin_i],square inch (international),2014-03-26
-2.0.0,[smgy'U],Somogyi unit,2014-03-26
-2.0.0,[smi_us],square mile,2014-03-26
-2.0.0,[smoot],Smoot,2014-03-26
-2.0.0,[srd_us],square rod,2014-03-26
-2.0.0,[ston_av],short ton U.S. ton,2014-03-26
-2.0.0,[stone_av],stone British stone,2014-03-26
-2.0.0,[syd_i],square yard,2014-03-26
-2.0.0,[tb'U],tuberculin unit,2014-03-26
-2.0.0,[tbs_us],tablespoon (US),2014-03-26
-2.0.0,[todd'U],Todd unit,2014-03-26
-2.0.0,[tsp_us],teaspoon,2014-03-26
-2.0.0,[twp],township,2014-03-26
-2.0.0,[yd_br],yard,2014-03-26
-2.0.0,[yd_i],yard,2014-03-26
-2.0.0,[yd_us],yard,2014-03-26
-2.0.0,a,year,2014-03-26
-2.0.0,a_g,mean Gregorian year,2014-03-26
-2.0.0,a_j,mean Julian year,2014-03-26
-2.0.0,a_t,tropical year,2014-03-26
-2.0.0,ag/{cell},attogram per cell,2014-03-26
-2.0.0,ar,are,2014-03-26
-2.0.0,atm,standard atmosphere,2014-03-26
-2.0.0,att,technical atmosphere,2014-03-26
-2.0.0,b,barn,2014-03-26
-2.0.0,bar,bar,2014-03-26
-2.0.0,bit,bit,2014-03-26
-2.0.0,bit_s,bit,2014-03-26
-2.0.0,cL,centiliter,2014-03-26
-2.0.0,cP,centiPoise,2014-03-26
-2.0.0,cSt,centiStokes,2014-03-26
-2.0.0,cal,calorie,2014-03-26
-2.0.0,cal_IT,international table calorie,2014-03-26
-2.0.0,cal_[15],calorie at 15 ??C,2014-03-26
-2.0.0,cal_[20],calorie at 20 ??C,2014-03-26
-2.0.0,cal_m,mean calorie,2014-03-26
-2.0.0,cal_th,thermochemical calorie,2014-03-26
-2.0.0,cd,candela,2014-03-26
-2.0.0,cg,centigram,2014-03-26
-2.0.0,circ,circle,2014-03-26
-2.0.0,cm,centimeter,2014-03-26
-2.0.0,cm2,square centimeter,2014-03-26
-2.0.0,cm2/s,square centimeter per second,2014-03-26
-2.0.0,cm3,cubic centimeter,2014-03-26
-2.0.0,cm[H2O],centimeter of water,2014-03-26
-2.0.0,cm[H2O]/(s.m),centimeter of water column / second * meter,2014-03-26
-2.0.0,cm[H2O]/L/s,centimeter of water per liter per second,2014-03-26
-2.0.0,cm[H2O]/s/m,centimeter of water per second per meter,2014-03-26
-2.0.0,cm[Hg],centimeter of mercury,2014-03-26
-2.0.0,d,day,2014-03-26
-2.0.0,dB,decibel,2014-03-26
-2.0.0,dL,deciliter,2014-03-26
-2.0.0,daL/min,dekaliter per minute,2014-03-26
-2.0.0,daL/min/m2,dekaliter per minute per square meter,2014-03-26
-2.0.0,deg,degree,2014-03-26
-2.0.0,deg/s,degree per second,2014-03-26
-2.0.0,dg,decigram,2014-03-26
-2.0.0,dm,decimeter,2014-03-26
-2.0.0,dm2/s2,square decimeter per square second,2014-03-26
-2.0.0,dyn,dyne,2014-03-26
-2.0.0,dyn.s/(cm.m2),dyne second per centimeter per square meter,2014-03-26
-2.0.0,dyn.s/cm,dyne second per centimeter,2014-03-26
-2.0.0,eV,electronvolt,2014-03-26
-2.0.0,eq,equivalents,2014-03-26
-2.0.0,eq/L,equivalents / liter,2014-03-26
-2.0.0,eq/mL,equivalents / milliliter,2014-03-26
-2.0.0,eq/mmol,equivalents / millimole,2014-03-26
-2.0.0,eq/umol,equivalents / micromole,2014-03-26
-2.0.0,erg,erg,2014-03-26
-2.0.0,fL,femtoliter,2014-03-26
-2.0.0,fL/nL,femtoliter / nanoliter,2014-03-26
-2.0.0,fg,femtogram,2014-03-26
-2.0.0,fm,femtometer,2014-03-26
-2.0.0,fmol,femtomole,2014-03-26
-2.0.0,fmol/L,femtomole per liter,2014-03-26
-2.0.0,fmol/g,femtomole per gram,2014-03-26
-2.0.0,fmol/mL,femtomole / milliliter,2014-03-26
-2.0.0,fmol/mg,femtomole / milligram,2014-03-26
-2.0.0,fmol/mg{cytosol_protein},femtomole per milligram of cytosol protein,2014-03-26
-2.0.0,fmol/mg{protein},femtomole per milligram of protein,2014-03-26
-2.0.0,g,gram,2014-03-26
-2.0.0,g%,gram percent,2014-03-26
-2.0.0,g.m,gram * meter,2014-03-26
-2.0.0,g.m/({hb}.m2),gram * meter / hb * (meter ^ 2),2014-03-26
-2.0.0,g.m/{H.B.},gram meter per heartbeat,2014-03-26
-2.0.0,g.m/{beat},gram meter per heart beat,2014-03-26
-2.0.0,g.m/{hb},gram * meter / hb,2014-03-26
-2.0.0,g/(100.g),gram per 100 gram,2014-03-26
-2.0.0,g/(12.h),gram per 12 hour,2014-03-26
-2.0.0,g/(24.h),gram per 24 hour,2014-03-26
-2.0.0,g/(3.d),gram per 3 days,2014-03-26
-2.0.0,g/(4.h),gram per 4 hour,2014-03-26
-2.0.0,g/(48.h),gram per 48 hour,2014-03-26
-2.0.0,g/(5.h),gram per 5 hour,2014-03-26
-2.0.0,g/(6.h),gram per 6 hour,2014-03-26
-2.0.0,g/(72.h),gram per 72 hour,2014-03-26
-2.0.0,g/(8.h),gram / 8 * hour,2014-03-26
-2.0.0,g/(8.h){shift},gram per 8 hour shift,2014-03-26
-2.0.0,g/(8.kg.h),gram / 8 * kilogram * hour,2014-03-26
-2.0.0,g/(kg.h),gram / kilogram * hour,2014-03-26
-2.0.0,g/(kg.min),gram / kilogram * minute,2014-03-26
-2.0.0,g/L,gram per liter,2014-03-26
-2.0.0,g/cm3,gram per cubic centimeter,2014-03-26
-2.0.0,g/d,gram per day,2014-03-26
-2.0.0,g/dL,gram per deciliter,2014-03-26
-2.0.0,g/g,gram per gram,2014-03-26
-2.0.0,g/g{Cre},gram / gram Cre,2014-03-26
-2.0.0,g/g{creat},gram / gram creat,2014-03-26
-2.0.0,g/g{globulin},gram per gram of globulin,2014-03-26
-2.0.0,g/g{tissue},gram per gram of tissue,2014-03-26
-2.0.0,g/h,gram per hour,2014-03-26
-2.0.0,g/h/m2,gram per hour per square meter,2014-03-26
-2.0.0,g/kg,gram per kilogram,2014-03-26
-2.0.0,g/kg/(8.h),gram per kilogram per 8 hour,2014-03-26
-2.0.0,g/kg/(8.h){shift},gram per kilogram per 8 hour shift,2014-03-26
-2.0.0,g/kg/d,gram per kilogram per day,2014-03-26
-2.0.0,g/kg/h,gram per kilogram per hour,2014-03-26
-2.0.0,g/kg/min,gram per kilogram per minute,2014-03-26
-2.0.0,g/m2,grams Per Square Meter,2014-03-26
-2.0.0,g/mL,gram per milliliter,2014-03-26
-2.0.0,g/mg,gram per milligram,2014-03-26
-2.0.0,g/min,gram per minute,2014-03-26
-2.0.0,g/mmol,gram per millimole,2014-03-26
-2.0.0,g/mmol{creat},gram / millimole creat,2014-03-26
-2.0.0,g/mol,gram per mole,2014-03-26
-2.0.0,g/mol{creat},gram per mole of creatinine,2014-03-26
-2.0.0,g/{TotalWeight},gram / TotalWeight,2014-03-26
-2.0.0,g/{specimen},gram per specimen,2014-03-26
-2.0.0,g/{total_output},gram per total output,2014-03-26
-2.0.0,g/{total_weight},gram per total weight,2014-03-26
-2.0.0,gf,gram-force,2014-03-26
-2.0.0,gon,gon grade,2014-03-26
-2.0.0,g{Hb},gram of hemoglobin,2014-03-26
-2.0.0,g{creat},gram of creatinine,2014-03-26
-2.0.0,g{total_nit},gram of total nitrogen,2014-03-26
-2.0.0,g{total_prot},gram of total protein,2014-03-26
-2.0.0,g{wet_tissue},gram of wet tissue,2014-03-26
-2.0.0,h,hour,2014-03-26
-2.0.0,hL,hectoliter,2014-03-26
-2.0.0,kBq,kiloBecquerel,2014-03-26
-2.0.0,kL,kiloliter,2014-03-26
-2.0.0,kPa,kiloPascal,2014-03-26
-2.0.0,kU,kilo enzyme unit,2014-03-26
-2.0.0,kU/L,kiloenzyme Unit per liter,2014-03-26
-2.0.0,kU/L{class},kilo enzyme unit per liter class,2014-03-26
-2.0.0,kU/g,kiloenzyme Unit per gram,2014-03-26
-2.0.0,kU/h,kiloUnit / hour,2014-03-26
-2.0.0,kU/mL,kilo enzyme unit per milliliter,2014-03-26
-2.0.0,k[IU]/L,kilo international unit per liter,2014-03-26
-2.0.0,k[IU]/mL,kilo international unit per milliliter,2014-03-26
-2.0.0,k[iU]/mL,KiloInternationalUnitsPerMilliLiter,2014-03-26
-2.0.0,kat,katal,2014-03-26
-2.0.0,kat/L,katal / liter,2014-03-26
-2.0.0,kat/kg,katal / kilogram,2014-03-26
-2.0.0,kcal,kilocalorie,2014-03-26
-2.0.0,kcal/(8.h),kilocalorie / 8 * hour,2014-03-26
-2.0.0,kcal/[oz_av],kilocalorie per ounce (US & British),2014-03-26
-2.0.0,kcal/d,kilocalorie per day,2014-03-26
-2.0.0,kcal/h,kilocalorie per hour,2014-03-26
-2.0.0,kcal/kg/(24.h),kilocalorie per kilogram per 24 hour,2014-03-26
-2.0.0,kg,kilogram,2014-03-26
-2.0.0,kg.m/s,kilogram meter per second,2014-03-26
-2.0.0,kg/(s.m2),kilogram per second per square meter,2014-03-26
-2.0.0,kg/L,kilogram per liter,2014-03-26
-2.0.0,kg/h,kilogram per hour,2014-03-26
-2.0.0,kg/m2,kilogram / (meter ^ 2),2014-03-26
-2.0.0,kg/m3,kilogram / (meter ^ 3),2014-03-26
-2.0.0,kg/min,kilogram / minute,2014-03-26
-2.0.0,kg/mol,kilogram per mole,2014-03-26
-2.0.0,kg/s,kilogram / second,2014-03-26
-2.0.0,kg{wet'tis},kilogram of wet tissue,2014-03-26
-2.0.0,km,kilometer,2014-03-26
-2.0.0,ks,kilosecond,2014-03-26
-2.0.0,lm,lumen,2014-03-26
-2.0.0,lm.m2,lumen square meter,2014-03-26
-2.0.0,lm/m2,lumen / (meter ^ 2),2014-03-26
-2.0.0,lx,lux,2014-03-26
-2.0.0,m,meter,2014-03-26
-2.0.0,m/s,meter per second,2014-03-26
-2.0.0,m/s2,meter per square second,2014-03-26
-2.0.0,m2,square meter,2014-03-26
-2.0.0,m2/s,square meter per second,2014-03-26
-2.0.0,m3/s,cubic meter per second,2014-03-26
-2.0.0,mA,milliAmp??re,2014-03-26
-2.0.0,mCi,milliCurie,2014-03-26
-2.0.0,mL,milliliter,2014-03-26
-2.0.0,mL/(10.h),milliliter per 10 hour,2014-03-26
-2.0.0,mL/(12.h),milliliter per 12 hour,2014-03-26
-2.0.0,mL/(2.h),milliliter per 2 hour,2014-03-26
-2.0.0,mL/(24.h),milliliter per 24 hour,2014-03-26
-2.0.0,mL/(4.h),milliliter per 4 hour,2014-03-26
-2.0.0,mL/(5.h),milliliter per 5 hour,2014-03-26
-2.0.0,mL/(6.h),milliliter per 6 hour,2014-03-26
-2.0.0,mL/(72.h),milliliter per 72 hour,2014-03-26
-2.0.0,mL/(8.h),milliliter per 8 hour,2014-03-26
-2.0.0,mL/(kg.min),milliliter / kilogram * minute,2014-03-26
-2.0.0,mL/({h'b}.m2),milliliter / h'b * (meter ^ 2),2014-03-26
-2.0.0,mL/L,milliliter per liter,2014-03-26
-2.0.0,mL/[sin_i],milliliter per square inch (international),2014-03-26
-2.0.0,mL/cm[H2O],milliliter / centimeter of water column,2014-03-26
-2.0.0,mL/d,milliliter per day,2014-03-26
-2.0.0,mL/dL,milliliter per deciliter,2014-03-26
-2.0.0,mL/h,milliliter per hour,2014-03-26
-2.0.0,mL/kg,milliliter per kilogram,2014-03-26
-2.0.0,mL/kg/(8.h),milliliter per kilogram per 8 hour,2014-03-26
-2.0.0,mL/kg/d,milliliter per kilogram per day,2014-03-26
-2.0.0,mL/kg/h,milliliter per kilogram per hour,2014-03-26
-2.0.0,mL/kg/min,milliliter per kilogram per minute,2014-03-26
-2.0.0,mL/m2,milliliter per square meter,2014-03-26
-2.0.0,mL/mbar,milliliter per millibar,2014-03-26
-2.0.0,mL/min,milliliter per minute,2014-03-26
-2.0.0,mL/min/(173.10*-2.m2),milliliter / minute / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2),2014-03-26
-2.0.0,mL/min/m2,milliliter per minute per square meter,2014-03-26
-2.0.0,mL/min/{1.73_m2},milliliter per minute per 1.73 square meter,2014-03-26
-2.0.0,mL/mm,milliliter per millimeter,2014-03-26
-2.0.0,mL/s,milliliter per second,2014-03-26
-2.0.0,mL/{beat},milliliter per heart beat,2014-03-26
-2.0.0,mL/{beat}/m2,milliliter per heart beat per square meter,2014-03-26
-2.0.0,mL/{h'b},MilliLitersPerHeartbeat [SI Volume Units],2014-03-26
-2.0.0,mL{fetal_RBCs},milliliter of fetal red blood cells,2014-03-26
-2.0.0,mPa,millipascal,2014-03-26
-2.0.0,mPa.s,millipascal second,2014-03-26
-2.0.0,mU,millienzyme Unit,2014-03-26
-2.0.0,mU/L,millienzyme Unit per liter,2014-03-26
-2.0.0,mU/g,millienzyme Unit per gram,2014-03-26
-2.0.0,mU/g{Hb},milli enzyme unit per gram of hemoglobin,2014-03-26
-2.0.0,mU/g{Hgb},milliUnit / gram Hgb,2014-03-26
-2.0.0,mU/g{protein},milli enzyme unit per gram of protein,2014-03-26
-2.0.0,mU/mL,millienzyme Unit per milliliter,2014-03-26
-2.0.0,mU/mL/min,millienzyme Unit per milliliter per minute,2014-03-26
-2.0.0,mU/mg,milliUnit / milligram,2014-03-26
-2.0.0,mU/mg{Cre},milliUnit / milligram Cre,2014-03-26
-2.0.0,mU/mg{creat},milli enzyme unit per milligram of creatinine,2014-03-26
-2.0.0,mU/min,milliUnit / minute,2014-03-26
-2.0.0,mU/mmol{RBCs},millienzyme Unit per millimole of red blood cells,2014-03-26
-2.0.0,mU/mmol{creatinine},millienzyme Unit per millimole of creatinine,2014-03-26
-2.0.0,mU/mmol{creat},milli enzyme unit per millimole of creatinine,2014-03-26
-2.0.0,mV,milliVolt,2014-03-26
-2.0.0,m[H2O],meter of water column,2014-03-26
-2.0.0,m[Hg],meter of mercury column,2014-03-26
-2.0.0,m[IU]/L,milli international unit per liter,2014-03-26
-2.0.0,m[IU]/mL,milli international unit per milliliter,2014-03-26
-2.0.0,m[iU],milliinternational unit,2014-03-26
-2.0.0,mbar,millibar,2014-03-26
-2.0.0,mbar.s/L,millibar second per liter,2014-03-26
-2.0.0,mbar/L/s,millibar per liter per second,2014-03-26
-2.0.0,meq,milliequivalent,2014-03-26
-2.0.0,meq/(12.h),milliequivalent per 12 hour,2014-03-26
-2.0.0,meq/(2.h),milliequivalent per 2 hour,2014-03-26
-2.0.0,meq/(24.h),milliequivalent per 24 hour,2014-03-26
-2.0.0,meq/(8.h),milliequivalent per 8 hour,2014-03-26
-2.0.0,meq/(8.h.kg),milliequivalents / 8 * hour * kilogram,2014-03-26
-2.0.0,meq/(kg.d),milliequivalents / kilogram * day,2014-03-26
-2.0.0,meq/L,milliequivalent per liter,2014-03-26
-2.0.0,meq/d,milliequivalent per day,2014-03-26
-2.0.0,meq/dL,milliequivalent per deciliter,2014-03-26
-2.0.0,meq/g,milliequivalent per gram,2014-03-26
-2.0.0,meq/g{Cre},milliequivalents / gram Cre,2014-03-26
-2.0.0,meq/g{creat},milliequivalent per gram of creatinine,2014-03-26
-2.0.0,meq/h,milliequivalent per hour,2014-03-26
-2.0.0,meq/kg,milliequivalent per kilogram,2014-03-26
-2.0.0,meq/kg/h,milliequivalent per kilogram per hour,2014-03-26
-2.0.0,meq/kg/min,milliequivalents / kilogram / minute,2014-03-26
-2.0.0,meq/m2,milliequivalent per square meter,2014-03-26
-2.0.0,meq/mL,milliequivalent per milliliter,2014-03-26
-2.0.0,meq/min,milliequivalent per minute,2014-03-26
-2.0.0,meq/{Specimen},milliequivalents / Specimen,2014-03-26
-2.0.0,meq/{specimen},milliequivalent per specimen,2014-03-26
-2.0.0,meq/{total_volume},milliequivalent per total volume,2014-03-26
-2.0.0,mg,milligram,2014-03-26
-2.0.0,mg/(10.h),milligram per 10 hour,2014-03-26
-2.0.0,mg/(12.h),milligram per 12 hour,2014-03-26
-2.0.0,mg/(18.h),milligram per 18 hour,2014-03-26
 2.0.0,mg/(2.h),milligram per 2 hour,2014-03-26
-2.0.0,mg/(24.h),milligram per 24 hour,2014-03-26
-2.0.0,mg/(6.h),milligram per 6 hour,2014-03-26
-2.0.0,mg/(72.h),milligram per 72 hour,2014-03-26
-2.0.0,mg/(8.h),milligram per 8 hour,2014-03-26
-2.0.0,mg/(8.h.kg),milligram / 8 * hour * kilogram,2014-03-26
-2.0.0,mg/(kg.h),milligram / kilogram * hour,2014-03-26
-2.0.0,mg/L,milligram per liter,2014-03-26
-2.0.0,mg/L{RBCs},milligram per liter of red blood cells,2014-03-26
-2.0.0,mg/d,milligram per day,2014-03-26
-2.0.0,mg/d/(173.10*-2.m2),milligram / day / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2),2014-03-26
-2.0.0,mg/d/{1.73_m2},milligram per day per 1.73 square meter,2014-03-26
-2.0.0,mg/dL,milligram per deciliter,2014-03-26
-2.0.0,mg/dL{RBCs},milligram per deciliter of red blood cells,2014-03-26
-2.0.0,mg/g,milligram per gram,2014-03-26
-2.0.0,mg/g{Cre},milligram / gram Cre,2014-03-26
-2.0.0,mg/g{creat},milligram per gram of creatinine,2014-03-26
-2.0.0,mg/g{dry_tissue},milligram per gram of dry tissue,2014-03-26
-2.0.0,mg/g{feces},milligram per gram of feces,2014-03-26
-2.0.0,mg/g{tissue},milligram per gram of tissue,2014-03-26
-2.0.0,mg/g{wet_tissue},milligram per gram of wet tissue,2014-03-26
-2.0.0,mg/h,milligram per hour,2014-03-26
-2.0.0,mg/kg,milligram per kilogram,2014-03-26
-2.0.0,mg/kg/(24.h),milligram / kilogram / 24 * hour,2014-03-26
-2.0.0,mg/kg/(8.h),milligram per kilogram per 8 hour,2014-03-26
-2.0.0,mg/kg/d,milligram per kilogram per day,2014-03-26
-2.0.0,mg/kg/h,milligram per kilogram per hour,2014-03-26
-2.0.0,mg/kg/min,milligram per kilogram per minute,2014-03-26
-2.0.0,mg/m2,milligram per square meter,2014-03-26
-2.0.0,mg/m3,milligram per cubic meter,2014-03-26
-2.0.0,mg/mL,milligram per milliliter,2014-03-26
-2.0.0,mg/mg,milligram per milligram,2014-03-26
-2.0.0,mg/mg{Cre},MilligramsPerMilligramCreatinine,2014-03-26
-2.0.0,mg/mg{creat},milligram per milligram of creatinine,2014-03-26
-2.0.0,mg/mg{cre},milligram / milligram cre,2014-03-26
-2.0.0,mg/min,milligram per minute,2014-03-26
-2.0.0,mg/mmol,milligram per millimole,2014-03-26
-2.0.0,mg/mmol{Cre},milligram / millimole Cre,2014-03-26
-2.0.0,mg/mmol{creat},milligram per millimole of creatinine,2014-03-26
-2.0.0,mg/wk,milligram per week,2014-03-26
-2.0.0,mg/{Hgb}/g,milligram / Hgb / gram,2014-03-26
-2.0.0,mg/{Specimen},milligram / Specimen,2014-03-26
-2.0.0,mg/{Tot'Volume},milligram / Tot'Volume,2014-03-26
-2.0.0,mg/{TotalVolume},MilliGramPerTotalVolume,2014-03-26
+2.0.0,[yd_i],yard,2014-03-26
+2.0.0,g/g{globulin},gram per gram of globulin,2014-03-26
 2.0.0,mg/{Volume},milligram / Volume,2014-03-26
-2.0.0,mg/{collection},milligram per collection,2014-03-26
-2.0.0,mg/{specimen},milligram per specimen,2014-03-26
+2.0.0,mL/(6.h),milliliter per 6 hour,2014-03-26
+2.0.0,[car_Au],carat of gold alloys,2014-03-26
+2.0.0,cm[H2O]/(s.m),centimeter of water column / second * meter,2014-03-26
+2.0.0,[nmi_i],nautical mile,2014-03-26
+2.0.0,mU/mmol{RBCs},millienzyme Unit per millimole of red blood cells,2014-03-26
+2.0.0,meq/(24.h),milliequivalent per 24 hour,2014-03-26
 2.0.0,mg/{total_output},milligram per total output,2014-03-26
+2.0.0,mPa.s,millipascal second,2014-03-26
 2.0.0,mg/{total_volume},milligram per total volume,2014-03-26
-2.0.0,mg{FEU}/L,milligram fibrinogen equivalent unit per liter,2014-03-26
-2.0.0,mg{Phenylketones}/dL,milligram Phenylketones / deciliter,2014-03-26
-2.0.0,mg{creat},milligram of creatinine,2014-03-26
-2.0.0,mho,mho,2014-03-26
-2.0.0,min,minute,2014-03-26
-2.0.0,mm,millimeter,2014-03-26
-2.0.0,mm/h,millimeter per hour,2014-03-26
-2.0.0,mm/min,millimeter per minute,2014-03-26
-2.0.0,mm2,square millimeter,2014-03-26
-2.0.0,mm3,cubic millimeter,2014-03-26
-2.0.0,mm[H2O],millimeter of water,2014-03-26
-2.0.0,mm[Hg],millimeter of mercury,2014-03-26
-2.0.0,mmol,millimole,2014-03-26
-2.0.0,mmol/(12.h),millimole per 12 hour,2014-03-26
+2.0.0,ag/{cell},attogram per cell,2014-03-26
+2.0.0,fm,femtometer,2014-03-26
+2.0.0,mL/min/(173.10*-2.m2),milliliter / minute / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2),2014-03-26
+2.0.0,[lton_av],long ton British ton,2014-03-26
+2.0.0,mL/m2,milliliter per square meter,2014-03-26
 2.0.0,mmol/(18.h),millimole per 18 hour,2014-03-26
-2.0.0,mmol/(2.h),millimole per 2 hour,2014-03-26
-2.0.0,mmol/(24.h),millimole per 24 hour,2014-03-26
-2.0.0,mmol/(5.h),millimole per 5 hour,2014-03-26
-2.0.0,mmol/(6.h),millimole per 6 hour,2014-03-26
-2.0.0,mmol/(8.h),millimole per 8 hour,2014-03-26
+2.0.0,dL,deciliter,2014-03-26
+2.0.0,g.m/{H.B.},gram meter per heartbeat,2014-03-26
+2.0.0,kcal,kilocalorie,2014-03-26
+2.0.0,g/d,gram per day,2014-03-26
+2.0.0,mg/kg,milligram per kilogram,2014-03-26
+2.0.0,[m_p],proton mass,2014-03-26
+2.0.0,m2,square meter,2014-03-26
+2.0.0,m[Hg],meter of mercury column,2014-03-26
+2.0.0,mbar,millibar,2014-03-26
+2.0.0,mg/(24.h),milligram per 24 hour,2014-03-26
+2.0.0,[iU]/L,InternationalUnitsPerLiter,2014-03-26
+2.0.0,fmol/mL,femtomole / milliliter,2014-03-26
+2.0.0,[MPL'U]/mL,IgM anticardiolipin unit per milliliter**,2014-03-26
+2.0.0,g/{specimen},gram per specimen,2014-03-26
+2.0.0,meq/mL,milliequivalent per milliliter,2014-03-26
+2.0.0,[k],Boltzmann constant,2014-03-26
+2.0.0,[tb'U],tuberculin unit,2014-03-26
+2.0.0,g/mmol,gram per millimole,2014-03-26
+2.0.0,[in_us],inch,2014-03-26
+2.0.0,mm/min,millimeter per minute,2014-03-26
+2.0.0,mg/kg/min,milligram per kilogram per minute,2014-03-26
+2.0.0,mL/(8.h),milliliter per 8 hour,2014-03-26
+2.0.0,eq/L,equivalents / liter,2014-03-26
+2.0.0,g/h/m2,gram per hour per square meter,2014-03-26
+2.0.0,mg{Phenylketones}/dL,milligram Phenylketones / deciliter,2014-03-26
+2.0.0,kg/h,kilogram per hour,2014-03-26
+2.0.0,[lk_br],link for Gunter's chain,2014-03-26
+2.0.0,d,day,2014-03-26
+2.0.0,g{total_nit},gram of total nitrogen,2014-03-26
+2.0.0,[acr_us],acre,2014-03-26
+2.0.0,cm2,square centimeter,2014-03-26
+2.0.0,cm[H2O]/s/m,centimeter of water per second per meter,2014-03-26
+2.0.0,mU/min,milliUnit / minute,2014-03-26
+2.0.0,[m_e],electron mass,2014-03-26
+2.0.0,[tbs_us],tablespoon (US),2014-03-26
+2.0.0,g/kg,gram per kilogram,2014-03-26
+2.0.0,[ston_av],short ton U.S. ton,2014-03-26
+2.0.0,[fur_us],furlong,2014-03-26
+2.0.0,mg/g{Cre},milligram / gram Cre,2014-03-26
+2.0.0,[iU]/g,InternationalUnitsPerGram,2014-03-26
+2.0.0,fmol/mg,femtomole / milligram,2014-03-26
+2.0.0,mL/{beat}/m2,milliliter per heart beat per square meter,2014-03-26
+2.0.0,g/g{Cre},gram / gram Cre,2014-03-26
+2.0.0,bar,bar,2014-03-26
+2.0.0,g/(4.h),gram per 4 hour,2014-03-26
+2.0.0,gf,gram-force,2014-03-26
+2.0.0,mL/[sin_i],milliliter per square inch (international),2014-03-26
+2.0.0,mg/dL,milligram per deciliter,2014-03-26
+2.0.0,cm,centimeter,2014-03-26
+2.0.0,gon,gon grade,2014-03-26
+2.0.0,[pc_br],pace,2014-03-26
+2.0.0,mg/(8.h.kg),milligram / 8 * hour * kilogram,2014-03-26
+2.0.0,mg/g{dry_tissue},milligram per gram of dry tissue,2014-03-26
+2.0.0,[fdr_us],fluid dram,2014-03-26
+2.0.0,[gal_us],Queen Anne's wine gallon,2014-03-26
+2.0.0,mg/{Tot'Volume},milligram / Tot'Volume,2014-03-26
+2.0.0,b,barn,2014-03-26
+2.0.0,mL/(4.h),milliliter per 4 hour,2014-03-26
+2.0.0,[bf_i],board foot,2014-03-26
+2.0.0,dyn,dyne,2014-03-26
+2.0.0,g/g{creat},gram / gram creat,2014-03-26
+2.0.0,[cft_i],cubic foot,2014-03-26
+2.0.0,g/kg/min,gram per kilogram per minute,2014-03-26
+2.0.0,[ppth],parts per thousand,2014-03-26
+2.0.0,ar,are,2014-03-26
+2.0.0,bit_s,bit,2014-03-26
+2.0.0,[lb_tr],pound,2014-03-26
+2.0.0,[p'diop],prism diopter,2014-03-26
+2.0.0,mL/L,milliliter per liter,2014-03-26
+2.0.0,[cr_i],cord,2014-03-26
+2.0.0,g/g,gram per gram,2014-03-26
+2.0.0,[mclg'U],Mac Lagan unit,2014-03-26
+2.0.0,cm[H2O]/L/s,centimeter of water per liter per second,2014-03-26
+2.0.0,mL/(12.h),milliliter per 12 hour,2014-03-26
+2.0.0,[rd_br],rod,2014-03-26
+2.0.0,[TCID_50],TISSUE CULTURE INFECTIOUS DOSE 50%,2014-03-26
+2.0.0,m/s2,meter per square second,2014-03-26
 2.0.0,mmol/(8.h.kg),millimole / 8 * hour * kilogram,2014-03-26
-2.0.0,mmol/L,millimole per liter,2014-03-26
-2.0.0,mmol/L/s,millimole per liter per second,2014-03-26
+2.0.0,[pnt],point,2014-03-26
+2.0.0,meq/(8.h.kg),milliequivalents / 8 * hour * kilogram,2014-03-26
+2.0.0,eV,electronvolt,2014-03-26
+2.0.0,g/{total_output},gram per total output,2014-03-26
+2.0.0,meq/{total_volume},milliequivalent per total volume,2014-03-26
+2.0.0,[car_m],metric carat,2014-03-26
+2.0.0,mL/(2.h),milliliter per 2 hour,2014-03-26
+2.0.0,m[iU],milliinternational unit,2014-03-26
+2.0.0,mm/h,millimeter per hour,2014-03-26
+2.0.0,[iU]/mL,InternationalUnitsPerMilliLiter,2014-03-26
+2.0.0,g/(48.h),gram per 48 hour,2014-03-26
+2.0.0,g/mol{creat},gram per mole of creatinine,2014-03-26
 2.0.0,mmol/L{RBCs},millimole per liter of red blood cells,2014-03-26
+2.0.0,[lcwt_av],long hunderdweight British hundredweight,2014-03-26
+2.0.0,[rch_us],Ramden's chain Engineer's chain,2014-03-26
+2.0.0,dm2/s2,square decimeter per square second,2014-03-26
+2.0.0,[bdsk'U],Bodansky unit,2014-03-26
+2.0.0,mho,mho,2014-03-26
+2.0.0,meq,milliequivalent,2014-03-26
+2.0.0,[didot],didot Didot's point,2014-03-26
+2.0.0,[syd_i],square yard,2014-03-26
+2.0.0,mL/kg/h,milliliter per kilogram per hour,2014-03-26
+2.0.0,[PNU],PROTEIN NITROGEN UNITS,2014-03-26
+2.0.0,mL/h,milliliter per hour,2014-03-26
+2.0.0,[beth'U],Bethesda unit,2014-03-26
+2.0.0,cal_[20],calorie at 20 ??C,2014-03-26
+2.0.0,[pi],the number pi,2014-03-26
+2.0.0,m3/s,cubic meter per second,2014-03-26
+2.0.0,[e],elementary charge,2014-03-26
+2.0.0,m,meter,2014-03-26
+2.0.0,mL,milliliter,2014-03-26
+2.0.0,mPa,millipascal,2014-03-26
+2.0.0,[crd_us],cord,2014-03-26
+2.0.0,[mi_br],mile,2014-03-26
+2.0.0,[sin_i],square inch (international),2014-03-26
+2.0.0,mg/(72.h),milligram per 72 hour,2014-03-26
+2.0.0,meq/kg/min,milliequivalents / kilogram / minute,2014-03-26
+2.0.0,[dr_ap],dram drachm,2014-03-26
+2.0.0,g/(8.h){shift},gram per 8 hour shift,2014-03-26
+2.0.0,[hp_X],HOMEOPATHIC POTENCY OF DECIMAL SERIES,2014-03-26
+2.0.0,cd,candela,2014-03-26
+2.0.0,kU/g,kiloenzyme Unit per gram,2014-03-26
+2.0.0,lm.m2,lumen square meter,2014-03-26
+2.0.0,[drp]/min,drop / minute,2014-03-26
+2.0.0,mmol/(6.h),millimole per 6 hour,2014-03-26
+2.0.0,g/mol,gram per mole,2014-03-26
+2.0.0,mU/g{Hgb},milliUnit / gram Hgb,2014-03-26
+2.0.0,mg/(12.h),milligram per 12 hour,2014-03-26
+2.0.0,[arb'U],arbitrary unit,2014-03-26
+2.0.0,min,minute,2014-03-26
+2.0.0,mL/kg/min,milliliter per kilogram per minute,2014-03-26
+2.0.0,mL/{beat},milliliter per heart beat,2014-03-26
+2.0.0,[knk'U],Kunkel unit,2014-03-26
+2.0.0,mU/g{protein},milli enzyme unit per gram of protein,2014-03-26
+2.0.0,[mesh_i],mesh,2014-03-26
+2.0.0,mL/s,milliliter per second,2014-03-26
+2.0.0,mV,milliVolt,2014-03-26
+2.0.0,[drp]/h,drop / hour,2014-03-26
+2.0.0,mU/mL,millienzyme Unit per milliliter,2014-03-26
+2.0.0,[ppb],part per billion,2014-03-26
+2.0.0,g/kg/d,gram per kilogram per day,2014-03-26
+2.0.0,g/mL,gram per milliliter,2014-03-26
 2.0.0,mmol/d,millimole per day,2014-03-26
+2.0.0,att,technical atmosphere,2014-03-26
+2.0.0,g/(72.h),gram per 72 hour,2014-03-26
+2.0.0,kg/m2,kilogram / (meter ^ 2),2014-03-26
+2.0.0,kat/kg,katal / kilogram,2014-03-26
+2.0.0,meq/m2,milliequivalent per square meter,2014-03-26
+2.0.0,mg/mg{Cre},MilligramsPerMilligramCreatinine,2014-03-26
+2.0.0,[todd'U],Todd unit,2014-03-26
+2.0.0,[h],Planck constant,2014-03-26
+2.0.0,hL,hectoliter,2014-03-26
+2.0.0,mL/mm,milliliter per millimeter,2014-03-26
+2.0.0,mU/mL/min,millienzyme Unit per milliliter per minute,2014-03-26
+2.0.0,g.m,gram * meter,2014-03-26
+2.0.0,meq/dL,milliequivalent per deciliter,2014-03-26
+2.0.0,[c],velocity of light,2014-03-26
+2.0.0,[ka'U],King Armstrong unit,2014-03-26
+2.0.0,[pouce],pouce French inch,2014-03-26
+2.0.0,erg,erg,2014-03-26
+2.0.0,g/mmol{creat},gram / millimole creat,2014-03-26
+2.0.0,a_g,mean Gregorian year,2014-03-26
+2.0.0,g/mg,gram per milligram,2014-03-26
+2.0.0,kU/mL,kilo enzyme unit per milliliter,2014-03-26
+2.0.0,k[IU]/mL,kilo international unit per milliliter,2014-03-26
+2.0.0,g,gram,2014-03-26
+2.0.0,g/(12.h),gram per 12 hour,2014-03-26
+2.0.0,mg/g,milligram per gram,2014-03-26
+2.0.0,[rlk_us],link for Ramden's chain,2014-03-26
+2.0.0,mmol/(5.h),millimole per 5 hour,2014-03-26
+2.0.0,mU/L,millienzyme Unit per liter,2014-03-26
+2.0.0,mg/{Specimen},milligram / Specimen,2014-03-26
+2.0.0,cP,centiPoise,2014-03-26
+2.0.0,g/(3.d),gram per 3 days,2014-03-26
+2.0.0,kg/min,kilogram / minute,2014-03-26
+2.0.0,mL/d,milliliter per day,2014-03-26
+2.0.0,mL/min/{1.73_m2},milliliter per minute per 1.73 square meter,2014-03-26
+2.0.0,meq/(2.h),milliequivalent per 2 hour,2014-03-26
+2.0.0,mmol/(2.h),millimole per 2 hour,2014-03-26
+2.0.0,mg/(8.h),milligram per 8 hour,2014-03-26
+2.0.0,[fth_br],fathom,2014-03-26
+2.0.0,[hp_Q],HOMEOPATHIC POTENCY OF QUINTAMILLESIMAL SERIES,2014-03-26
+2.0.0,g%,gram percent,2014-03-26
+2.0.0,mU/g,millienzyme Unit per gram,2014-03-26
+2.0.0,kg/m3,kilogram / (meter ^ 3),2014-03-26
+2.0.0,mL/(24.h),milliliter per 24 hour,2014-03-26
+2.0.0,mL/dL,milliliter per deciliter,2014-03-26
+2.0.0,[ft_i],Feet,2014-03-26
+2.0.0,kcal/h,kilocalorie per hour,2014-03-26
+2.0.0,kg/mol,kilogram per mole,2014-03-26
+2.0.0,mg{creat},milligram of creatinine,2014-03-26
+2.0.0,[pi].rad/min,the number pi * radian / minute,2014-03-26
+2.0.0,eq/mmol,equivalents / millimole,2014-03-26
+2.0.0,g/(8.kg.h),gram / 8 * kilogram * hour,2014-03-26
+2.0.0,cm3,cubic centimeter,2014-03-26
+2.0.0,g/(6.h),gram per 6 hour,2014-03-26
+2.0.0,mg/L,milligram per liter,2014-03-26
+2.0.0,[drp],drop,2014-03-26
+2.0.0,mL/(kg.min),milliliter / kilogram * minute,2014-03-26
+2.0.0,mU/mmol{creat},milli enzyme unit per millimole of creatinine,2014-03-26
+2.0.0,mU/mg,milliUnit / milligram,2014-03-26
+2.0.0,mg/m2,milligram per square meter,2014-03-26
+2.0.0,mm3,cubic millimeter,2014-03-26
+2.0.0,[bu_br],bushel,2014-03-26
+2.0.0,[drp]/s,drop / second,2014-03-26
+2.0.0,daL/min,dekaliter per minute,2014-03-26
+2.0.0,meq/(12.h),milliequivalent per 12 hour,2014-03-26
+2.0.0,fmol/L,femtomole per liter,2014-03-26
+2.0.0,kU/h,kiloUnit / hour,2014-03-26
+2.0.0,meq/L,milliequivalent per liter,2014-03-26
+2.0.0,mg/{Hgb}/g,milligram / Hgb / gram,2014-03-26
 2.0.0,mmol/dL,millimole per deciliter,2014-03-26
+2.0.0,deg,degree,2014-03-26
+2.0.0,mg/{collection},milligram per collection,2014-03-26
+2.0.0,mmol/(12.h),millimole per 12 hour,2014-03-26
+2.0.0,[cup_us],cup,2014-03-26
+2.0.0,g{total_prot},gram of total protein,2014-03-26
+2.0.0,mU/mmol{creatinine},millienzyme Unit per millimole of creatinine,2014-03-26
+2.0.0,m[IU]/mL,milli international unit per milliliter,2014-03-26
+2.0.0,meq/{specimen},milliequivalent per specimen,2014-03-26
+2.0.0,cm[H2O],centimeter of water,2014-03-26
+2.0.0,dyn.s/cm,dyne second per centimeter,2014-03-26
+2.0.0,mg/d/{1.73_m2},milligram per day per 1.73 square meter,2014-03-26
 2.0.0,mmol/g,millimole per gram,2014-03-26
+2.0.0,[pca],pica,2014-03-26
+2.0.0,g{creat},gram of creatinine,2014-03-26
+2.0.0,meq/g{creat},milliequivalent per gram of creatinine,2014-03-26
+2.0.0,dB,decibel,2014-03-26
+2.0.0,[pk_us],peck,2014-03-26
+2.0.0,[degF],degree Fahrenheit,2014-03-26
+2.0.0,mg/g{feces},milligram per gram of feces,2014-03-26
+2.0.0,[pH],pH,2014-03-26
+2.0.0,ks,kilosecond,2014-03-26
+2.0.0,[lk_us],link for Gunter's chain,2014-03-26
+2.0.0,meq/d,milliequivalent per day,2014-03-26
+2.0.0,[ft_us],foot,2014-03-26
+2.0.0,g/kg/(8.h),gram per kilogram per 8 hour,2014-03-26
+2.0.0,km,kilometer,2014-03-26
+2.0.0,g/h,gram per hour,2014-03-26
+2.0.0,meq/{Specimen},milliequivalents / Specimen,2014-03-26
+2.0.0,mmol/(8.h),millimole per 8 hour,2014-03-26
 2.0.0,mmol/g{creat},millimole per gram of creatinine,2014-03-26
-2.0.0,mmol/g{hemoglobin},millimole per gram of hemoglobin,2014-03-26
-2.0.0,mmol/h,millimole per hour,2014-03-26
-2.0.0,mmol/h/mg{Hb},millimole per hour per milligram of hemoglobin,2014-03-26
-2.0.0,mmol/h/mg{protein},millimole per hour per milligram of protein,2014-03-26
-2.0.0,mmol/kg,millimole per kilogram,2014-03-26
-2.0.0,mmol/kg/(8.h),millimole per kilogram per 8 hour,2014-03-26
-2.0.0,mmol/kg/d,millimole per kilogram per day,2014-03-26
-2.0.0,mmol/kg/h,millimole per kilogram per hour,2014-03-26
-2.0.0,mmol/kg/min,millimole per kilogram per minute,2014-03-26
-2.0.0,mmol/kg{H2O},millimole per kilogram of water,2014-03-26
-2.0.0,mmol/m,millimole / meter,2014-03-26
-2.0.0,mmol/m2,millimole per square meter,2014-03-26
-2.0.0,mmol/min,millimole per minute,2014-03-26
-2.0.0,mmol/mmol,millimole per millimole,2014-03-26
-2.0.0,mmol/mmol{creat},millimole per millmole of creatinine,2014-03-26
-2.0.0,mmol/mmol{urea},millimole per millimole of urea,2014-03-26
-2.0.0,mmol/mol,millimole per mole,2014-03-26
-2.0.0,mmol/mol{Cre},MilliMolesPerMoleCreatinine,2014-03-26
-2.0.0,mmol/mol{creat},millimole per mole of creatinine,2014-03-26
-2.0.0,mmol/s/L,millimole per second per liter,2014-03-26
-2.0.0,mmol/{Tot'Volume},millimole / Tot'Volume,2014-03-26
-2.0.0,mmol/{TotalVolume},MilliMolesPerTotalVolume [Substance Units],2014-03-26
-2.0.0,mmol/{ejaculate},millimole per ejaculate,2014-03-26
-2.0.0,mmol/{specimen},millimole per specimen,2014-03-26
-2.0.0,mmol/{total_vol},millimole per total volume,2014-03-26
-2.0.0,mo,month,2014-03-26
-2.0.0,mo_g,mean Gregorian month,2014-03-26
-2.0.0,mo_j,mean Julian month,2014-03-26
-2.0.0,mo_s,synodal month,2014-03-26
-2.0.0,mol,mole,2014-03-26
-2.0.0,mol/L,mole per liter,2014-03-26
-2.0.0,mol/d,mole per day,2014-03-26
-2.0.0,mol/kg,mole per kilogram,2014-03-26
-2.0.0,mol/kg/s,mole per kilogram per second,2014-03-26
-2.0.0,mol/m3,mole per cubic meter,2014-03-26
-2.0.0,mol/mL,mole per milliliter,2014-03-26
-2.0.0,mol/mol,mole per mole,2014-03-26
-2.0.0,mol/mol{creat},mole / mole creat,2014-03-26
-2.0.0,mol/s,mole per second,2014-03-26
-2.0.0,mosm,milliosmole,2014-03-26
-2.0.0,mosm/L,milliosmole per liter,2014-03-26
-2.0.0,mosm/kg,milliosmole per kilogram,2014-03-26
-2.0.0,ms,millisecond,2014-03-26
-2.0.0,nCi,nanoCurie,2014-03-26
-2.0.0,nL,nanoliter,2014-03-26
-2.0.0,nU/mL,nanoenzyme unit per milliliter,2014-03-26
-2.0.0,nU/{RBC},nanoenzyme unit per red blood cell,2014-03-26
-2.0.0,ng,nanogram,2014-03-26
-2.0.0,ng/(24.h),nanogram per 24 hour,2014-03-26
-2.0.0,ng/(8.h),nanogram per 8 hour,2014-03-26
-2.0.0,ng/(8.h.kg),nanogram / 8 * hour * kilogram,2014-03-26
-2.0.0,ng/(kg.d),nanogram / kilogram * day,2014-03-26
-2.0.0,ng/(kg.h),nanogram / kilogram * hour,2014-03-26
-2.0.0,ng/(kg.min),nanogram / kilogram * minute,2014-03-26
-2.0.0,ng/10*6,nanogram per million,2014-03-26
-2.0.0,ng/10*6{RBCs},nanogram per million red blood cells,2014-03-26
-2.0.0,ng/L,nanogram per liter,2014-03-26
-2.0.0,ng/U,nanogram per enzyme unit,2014-03-26
-2.0.0,ng/d,nanogram per day,2014-03-26
-2.0.0,ng/dL,nanogram per deciliter,2014-03-26
-2.0.0,ng/dL/h,nanogram / deciliter / hour,2014-03-26
-2.0.0,ng/g,nanogram per gram,2014-03-26
-2.0.0,ng/g{Cre},nanogram / gram Cre,2014-03-26
-2.0.0,ng/g{creat},nanogram per gram of creatinine,2014-03-26
-2.0.0,ng/h,nanogram per hour,2014-03-26
-2.0.0,ng/kg,nanogram per kilogram,2014-03-26
-2.0.0,ng/kg/(8.h),nanogram per kilogram per 8 hour,2014-03-26
-2.0.0,ng/kg/h,nanogram per kilogram per hour,2014-03-26
-2.0.0,ng/kg/min,nanogram per kilogram per minute,2014-03-26
-2.0.0,ng/m2,nanogram per square meter,2014-03-26
-2.0.0,ng/mL,nanogram per millliiter,2014-03-26
-2.0.0,ng/mL/h,nanogram per milliliter per hour,2014-03-26
-2.0.0,ng/mL{RBCs},nanogram per milliliter of red blood cells,2014-03-26
-2.0.0,ng/mL{rbc},nanogram / milliliter rbc,2014-03-26
-2.0.0,ng/mg,nanogram per milligram,2014-03-26
-2.0.0,ng/mg/h,nanogram per milligram per hour,2014-03-26
-2.0.0,ng/mg{Protein},nanogram / milligram Protein,2014-03-26
-2.0.0,ng/mg{creat},nanogram per milligram of creatinine,2014-03-26
-2.0.0,ng/mg{protein},nanogram per milligram of protein,2014-03-26
-2.0.0,ng/min,nanogram per minute,2014-03-26
-2.0.0,ng/s,nanogram per second,2014-03-26
-2.0.0,ng{FEU}/mL,nanogram fibrinogen equivalent unit per milliliter,2014-03-26
-2.0.0,nkat,nanokatal,2014-03-26
-2.0.0,nm,nanometer,2014-03-26
-2.0.0,nm/s/L,nanometer per second per liter,2014-03-26
-2.0.0,nmol,nanomole,2014-03-26
-2.0.0,nmol/(24.h),nanomole per 24 hour,2014-03-26
-2.0.0,nmol/L,nanomole per liter,2014-03-26
-2.0.0,nmol/L/mmol{creat},nanomole per liter per millimole of creatinine,2014-03-26
-2.0.0,nmol/L/s,nanomole per liter per second,2014-03-26
-2.0.0,nmol/L{RBCs},nanomole per liter of red blood cells,2014-03-26
-2.0.0,nmol/d,nanomole per day,2014-03-26
-2.0.0,nmol/dL,nanomole per deciliter,2014-03-26
-2.0.0,nmol/dL{GF},nanomole per deciliter of glomerular filtrate,2014-03-26
-2.0.0,nmol/g,nanomole per gram,2014-03-26
-2.0.0,nmol/g{Cre},nanomole / gram Cre,2014-03-26
-2.0.0,nmol/g{creat},nanomole per gram of creatinine,2014-03-26
-2.0.0,nmol/g{dry_wt},nanomole per gram of dry weight,2014-03-26
-2.0.0,nmol/h/L,nanomole per hour per liter,2014-03-26
-2.0.0,nmol/h/mL,nanomole per hour per milliliter,2014-03-26
-2.0.0,nmol/h/mg{protein},nanomole per hour per milligram of protein,2014-03-26
-2.0.0,nmol/m/mg{protein},nanomole per meter per milligram of protein,2014-03-26
-2.0.0,nmol/mL,nanomole per milliliter,2014-03-26
-2.0.0,nmol/mL/h,nanomole per milliliter per hour,2014-03-26
-2.0.0,nmol/mL/min,nanomole per milliliter per minute,2014-03-26
-2.0.0,nmol/mg,nanomole per milligram,2014-03-26
-2.0.0,nmol/mg/h,nanomole per milligram per hour,2014-03-26
-2.0.0,nmol/mg{creat},nanomole per milligram of creatinine,2014-03-26
-2.0.0,nmol/mg{protein},nanomole per milligram of protein,2014-03-26
-2.0.0,nmol/mg{protein}/h,nanomole per milligram of protein per hour,2014-03-26
-2.0.0,nmol/min,nanomole per minute,2014-03-26
-2.0.0,nmol/min/10*6{cells},nanomole per minute per million cells,2014-03-26
-2.0.0,nmol/min/mL,nanomole per minute per milliliter,2014-03-26
-2.0.0,nmol/min/mg{Hb},nanomole per minute per milligram of hemoglobin,2014-03-26
-2.0.0,nmol/min/mg{hemoglobin},nanomole per minute per milligram of hemoglobin,2014-03-26
-2.0.0,nmol/min/mg{protein},nanomole per minute per milligram of protein,2014-03-26
-2.0.0,nmol/mmol,nanomole per millimole,2014-03-26
-2.0.0,nmol/mmol{Cre},nanomole / millimole Cre,2014-03-26
-2.0.0,nmol/mmol{creat},nanomole per millimole of creatinine,2014-03-26
-2.0.0,nmol/mol,nanomole per mole,2014-03-26
-2.0.0,nmol/nmol,nanomole per nanomole,2014-03-26
-2.0.0,nmol/s,nanomole per second,2014-03-26
-2.0.0,nmol/s/L,nanomole per second per liter,2014-03-26
-2.0.0,nmol/umol{creat},nanomole per micromole of creatinine,2014-03-26
-2.0.0,nmol{1/2cys}/mg{protein},nanomole of 1/2 cystine per milligram of protein,2014-03-26
-2.0.0,nmol{ATP},nanomole of ATP,2014-03-26
-2.0.0,nmol{BCE},nanomole bone collagen equivalent,2014-03-26
-2.0.0,nmol{BCE}/L,nanomole bone collagen equivalent per liter,2014-03-26
-2.0.0,nmol{BCE}/mmol{creat},nanomole bone collagen equivalent per millimole of creatinine,2014-03-26
-2.0.0,ns,nanosecond,2014-03-26
-2.0.0,osm,osmole,2014-03-26
-2.0.0,osm/L,osmole per liter,2014-03-26
-2.0.0,osm/kg,osmole per kilogram,2014-03-26
-2.0.0,pA,picoampere,2014-03-26
-2.0.0,pL,picoliter,2014-03-26
-2.0.0,pT,picotesla,2014-03-26
-2.0.0,pc,parsec,2014-03-26
-2.0.0,pg,picogram,2014-03-26
-2.0.0,pg/L,picogram per liter,2014-03-26
-2.0.0,pg/dL,picogram per deciliter,2014-03-26
-2.0.0,pg/mL,picogram per milliliter,2014-03-26
-2.0.0,pg/mg,picogram per milligram,2014-03-26
-2.0.0,pg/mg{creat},picogram per milligram of creatinine,2014-03-26
-2.0.0,pg/mm,picogram per millimeter,2014-03-26
-2.0.0,pg/{RBC},picogram per red blood cell,2014-03-26
-2.0.0,pg/{cell},picogram per cell,2014-03-26
-2.0.0,ph,phot,2014-03-26
-2.0.0,pkat,picokatal,2014-03-26
-2.0.0,pm,picometer,2014-03-26
-2.0.0,pmol,picomole,2014-03-26
-2.0.0,pmol/(24.h),picomole per 24 hour,2014-03-26
-2.0.0,pmol/L,picomole per liter,2014-03-26
-2.0.0,pmol/d,picomole per day,2014-03-26
-2.0.0,pmol/dL,picomole per deciliter,2014-03-26
-2.0.0,pmol/g,picomole per gram,2014-03-26
-2.0.0,pmol/h/mL,picomole per hour per milliliter,2014-03-26
-2.0.0,pmol/h/mg{protein},picomole per hour per milligram of protein,2014-03-26
-2.0.0,pmol/mL,picomole per milliliter,2014-03-26
+2.0.0,[lbf_av],pound force,2014-03-26
+2.0.0,mmol/(24.h),millimole per 24 hour,2014-03-26
+2.0.0,[hp_M],HOMEOPATHIC POTENCY OF MILLESIMAL SERIES,2014-03-26
+2.0.0,g/m2,grams Per Square Meter,2014-03-26
+2.0.0,m[H2O],meter of water column,2014-03-26
+2.0.0,[psi],pound per square inch,2014-03-26
+2.0.0,kg/L,kilogram per liter,2014-03-26
+2.0.0,mg/mmol{Cre},milligram / millimole Cre,2014-03-26
+2.0.0,mg/{specimen},milligram per specimen,2014-03-26
+2.0.0,kcal/(8.h),kilocalorie / 8 * hour,2014-03-26
+2.0.0,kcal/d,kilocalorie per day,2014-03-26
+2.0.0,[nmi_br],nautical mile,2014-03-26
+2.0.0,fmol/g,femtomole per gram,2014-03-26
+2.0.0,g/(8.h),gram / 8 * hour,2014-03-26
+2.0.0,k[IU]/L,kilo international unit per liter,2014-03-26
+2.0.0,meq/(kg.d),milliequivalents / kilogram * day,2014-03-26
+2.0.0,mg/kg/(24.h),milligram / kilogram / 24 * hour,2014-03-26
+2.0.0,mg/mL,milligram per milliliter,2014-03-26
+2.0.0,[bu_us],bushel,2014-03-26
+2.0.0,[gil_us],gill,2014-03-26
+2.0.0,mg/g{tissue},milligram per gram of tissue,2014-03-26
+2.0.0,[pt_us],pint,2014-03-26
+2.0.0,a_t,tropical year,2014-03-26
+2.0.0,mg/mmol,milligram per millimole,2014-03-26
+2.0.0,[gil_br],gill,2014-03-26
+2.0.0,fg,femtogram,2014-03-26
+2.0.0,mL/min,milliliter per minute,2014-03-26
+2.0.0,[hnsf'U],Hounsfield unit,2014-03-26
+2.0.0,cal_th,thermochemical calorie,2014-03-26
+2.0.0,mL/kg/(8.h),milliliter per kilogram per 8 hour,2014-03-26
+2.0.0,[in_i],inch (international),2014-03-26
+2.0.0,[pwt_tr],pennyweight,2014-03-26
+2.0.0,meq/g,milliequivalent per gram,2014-03-26
+2.0.0,[mu_0],permeability of vacuum,2014-03-26
+2.0.0,[yd_us],yard,2014-03-26
+2.0.0,kU/L,kiloenzyme Unit per liter,2014-03-26
+2.0.0,[dr_av],Dram (US and British),2014-03-26
+2.0.0,g/min,gram per minute,2014-03-26
+2.0.0,mg/mg{cre},milligram / milligram cre,2014-03-26
+2.0.0,[ch_us],Gunter's chain Surveyor's chain,2014-03-26
+2.0.0,[lne],line,2014-03-26
+2.0.0,[pnt_pr],Printer's point,2014-03-26
+2.0.0,a,year,2014-03-26
+2.0.0,[ch_br],Gunter's chain,2014-03-26
+2.0.0,cSt,centiStokes,2014-03-26
+2.0.0,mg{FEU}/L,milligram fibrinogen equivalent unit per liter,2014-03-26
+2.0.0,[kn_i],knot,2014-03-26
+2.0.0,g/{total_weight},gram per total weight,2014-03-26
+2.0.0,mbar/L/s,millibar per liter per second,2014-03-26
+2.0.0,fL/nL,femtoliter / nanoliter,2014-03-26
+2.0.0,g/(100.g),gram per 100 gram,2014-03-26
+2.0.0,mg/g{wet_tissue},milligram per gram of wet tissue,2014-03-26
+2.0.0,mmol,millimole,2014-03-26
+2.0.0,[MPL'U],IgM anticardiolipin unit,2014-03-26
+2.0.0,[pptr],part per trillion,2014-03-26
+2.0.0,[rd_us],rod,2014-03-26
+2.0.0,mL/(72.h),milliliter per 72 hour,2014-03-26
+2.0.0,mU/mg{Cre},milliUnit / milligram Cre,2014-03-26
+2.0.0,mg/(6.h),milligram per 6 hour,2014-03-26
+2.0.0,mg/kg/h,milligram per kilogram per hour,2014-03-26
+2.0.0,mmol/L,millimole per liter,2014-03-26
+2.0.0,[oz_ap],ounce (US and British),2014-03-26
+2.0.0,mL/({h'b}.m2),milliliter / h'b * (meter ^ 2),2014-03-26
+2.0.0,[smgy'U],Somogyi unit,2014-03-26
+2.0.0,kcal/[oz_av],kilocalorie per ounce (US & British),2014-03-26
+2.0.0,mmol/L/s,millimole per liter per second,2014-03-26
+2.0.0,g/(24.h),gram per 24 hour,2014-03-26
+2.0.0,cal_IT,international table calorie,2014-03-26
+2.0.0,mL/{h'b},MilliLitersPerHeartbeat [SI Volume Units],2014-03-26
+2.0.0,[ft_br],foot,2014-03-26
+2.0.0,cm2/s,square centimeter per second,2014-03-26
+2.0.0,g/g{tissue},gram per gram of tissue,2014-03-26
+2.0.0,mg/mg{creat},milligram per milligram of creatinine,2014-03-26
+2.0.0,kL,kiloliter,2014-03-26
+2.0.0,mg/L{RBCs},milligram per liter of red blood cells,2014-03-26
+2.0.0,[mi_i],statute mile,2014-03-26
+2.0.0,mg/min,milligram per minute,2014-03-26
+2.0.0,mm[Hg],millimeter of mercury,2014-03-26
+2.0.0,[drp]/mL,drop / milliliter,2014-03-26
+2.0.0,[eps_0],permittivity of vacuum,2014-03-26
+2.0.0,[min_us],minim,2014-03-26
+2.0.0,kat,katal,2014-03-26
+2.0.0,mg/(10.h),milligram per 10 hour,2014-03-26
+2.0.0,cg,centigram,2014-03-26
+2.0.0,g.m/{hb},gram * meter / hb,2014-03-26
+2.0.0,g/dL,gram per deciliter,2014-03-26
+2.0.0,kg/s,kilogram / second,2014-03-26
+2.0.0,mm[H2O],millimeter of water,2014-03-26
+2.0.0,dyn.s/(cm.m2),dyne second per centimeter per square meter,2014-03-26
+2.0.0,lm/m2,lumen / (meter ^ 2),2014-03-26
+2.0.0,mCi,milliCurie,2014-03-26
+2.0.0,cal_m,mean calorie,2014-03-26
+2.0.0,mg/{TotalVolume},MilliGramPerTotalVolume,2014-03-26
+2.0.0,g/{TotalWeight},gram / TotalWeight,2014-03-26
+2.0.0,mL{fetal_RBCs},milliliter of fetal red blood cells,2014-03-26
+2.0.0,[min_br],minim,2014-03-26
+2.0.0,meq/(8.h),milliequivalent per 8 hour,2014-03-26
+2.0.0,[in_i'Hg],inch of mercury column,2014-03-26
+2.0.0,mA,milliAmp??re,2014-03-26
+2.0.0,mg/kg/(8.h),milligram per kilogram per 8 hour,2014-03-26
+2.0.0,[arb'U]/L,arbitary unit / liter,2014-03-26
+2.0.0,lm,lumen,2014-03-26
+2.0.0,mL/mbar,milliliter per millibar,2014-03-26
+2.0.0,mg/d/(173.10*-2.m2),milligram / day / 173 * (the number ten for arbitrary powers ^ -2) * (meter ^ 2),2014-03-26
+2.0.0,kU,kilo enzyme unit,2014-03-26
+2.0.0,lx,lux,2014-03-26
+2.0.0,g/cm3,gram per cubic centimeter,2014-03-26
+2.0.0,mL/(10.h),milliliter per 10 hour,2014-03-26
+2.0.0,mg/wk,milligram per week,2014-03-26
+2.0.0,[drp]/[HPF],drop / HPF,2014-03-26
+2.0.0,[in_br],inch,2014-03-26
+2.0.0,mm2,square millimeter,2014-03-26
+2.0.0,[MET],metabolic equivalent,2014-03-26
+2.0.0,[arb'U]/mL,arbitrary unit per milliliter,2014-03-26
+2.0.0,[ppm],part per million,2014-03-26
+2.0.0,g{Hb},gram of hemoglobin,2014-03-26
+2.0.0,kcal/kg/(24.h),kilocalorie per kilogram per 24 hour,2014-03-26
+2.0.0,[hp_C],HOMEOPATHIC POTENCY OF CENTESIMAL SERIES,2014-03-26
+2.0.0,g/kg/(8.h){shift},gram per kilogram per 8 hour shift,2014-03-26
+2.0.0,[oz_av],ounce (US and British),2014-03-26
+2.0.0,kg,kilogram,2014-03-26
+2.0.0,[dqt_us],dry quart,2014-03-26
+2.0.0,[lb_ap],pound,2014-03-26
+2.0.0,fL,femtoliter,2014-03-26
+2.0.0,meq/h,milliequivalent per hour,2014-03-26
+2.0.0,h,hour,2014-03-26
+2.0.0,kg.m/s,kilogram meter per second,2014-03-26
+2.0.0,mU/g{Hb},milli enzyme unit per gram of hemoglobin,2014-03-26
+2.0.0,[qt_us],quart,2014-03-26
+2.0.0,[PFU],PLAQUE-FORMING UNITS,2014-03-26
+2.0.0,meq/min,milliequivalent per minute,2014-03-26
+2.0.0,[qt_br],quart,2014-03-26
+2.0.0,[gal_wi],historical winchester gallon,2014-03-26
+2.0.0,cL,centiliter,2014-03-26
+2.0.0,g/L,gram per liter,2014-03-26
+2.0.0,kg/(s.m2),kilogram per second per square meter,2014-03-26
+2.0.0,[cml_i],circular mil,2014-03-26
+2.0.0,bit,bit,2014-03-26
+2.0.0,[gr],grain,2014-03-26
+2.0.0,[pk_br],peck,2014-03-26
+2.0.0,[tsp_us],teaspoon,2014-03-26
+2.0.0,g.m/{beat},gram meter per heart beat,2014-03-26
+2.0.0,[hd_i],hand,2014-03-26
+2.0.0,eq/mL,equivalents / milliliter,2014-03-26
+2.0.0,[fth_i],fathom,2014-03-26
+2.0.0,[sct],section,2014-03-26
+2.0.0,[srd_us],square rod,2014-03-26
+2.0.0,mL/(5.h),milliliter per 5 hour,2014-03-26
+2.0.0,[USP'U],UNITED STATES PHARMACOPEIA UNIT,2014-03-26
+2.0.0,[scwt_av],short hundredweight U.S. hundredweight,2014-03-26
+2.0.0,[smi_us],square mile,2014-03-26
+2.0.0,g/(kg.min),gram / kilogram * minute,2014-03-26
+2.0.0,[cyd_i],cubic yard,2014-03-26
+2.0.0,[pca_pr],Printer's pica,2014-03-26
+2.0.0,mg/(18.h),milligram per 18 hour,2014-03-26
+2.0.0,[dye'U],Dye unit,2014-03-26
+2.0.0,[in_i'H2O],inch (international) of water,2014-03-26
+2.0.0,mg/d,milligram per day,2014-03-26
+2.0.0,[cicero],cicero Didot's pica,2014-03-26
+2.0.0,[fdr_br],fluid dram,2014-03-26
+2.0.0,[pied],pied French foot,2014-03-26
+2.0.0,dm,decimeter,2014-03-26
+2.0.0,m/s,meter per second,2014-03-26
+2.0.0,mg/kg/d,milligram per kilogram per day,2014-03-26
+2.0.0,mL/cm[H2O],milliliter / centimeter of water column,2014-03-26
+2.0.0,mg,milligram,2014-03-26
+2.0.0,mg/dL{RBCs},milligram per deciliter of red blood cells,2014-03-26
+2.0.0,mU,millienzyme Unit,2014-03-26
+2.0.0,mg/(kg.h),milligram / kilogram * hour,2014-03-26
+2.0.0,eq,equivalents,2014-03-26
+2.0.0,[kn_br],knot,2014-03-26
+2.0.0,kU/L{class},kilo enzyme unit per liter class,2014-03-26
+2.0.0,mg/mmol{creat},milligram per millimole of creatinine,2014-03-26
+2.0.0,[iU],international unit,2014-03-26
+2.0.0,[mil_us],mil,2014-03-26
+2.0.0,cm[Hg],centimeter of mercury,2014-03-26
+2.0.0,[sft_i],square foot (international),2014-03-26
+2.0.0,kBq,kiloBecquerel,2014-03-26
+2.0.0,a_j,mean Julian year,2014-03-26
+2.0.0,cal_[15],calorie at 15 ??C,2014-03-26
+2.0.0,daL/min/m2,dekaliter per minute per square meter,2014-03-26
+2.0.0,m2/s,square meter per second,2014-03-26
+2.0.0,[stone_av],stone British stone,2014-03-26
+2.0.0,mL/kg/d,milliliter per kilogram per day,2014-03-26
+2.0.0,[gal_br],gallon,2014-03-26
+2.0.0,[ly],light-year,2014-03-26
+2.0.0,atm,standard atmosphere,2014-03-26
+2.0.0,cal,calorie,2014-03-26
+2.0.0,circ,circle,2014-03-26
+2.0.0,mg/g{creat},milligram per gram of creatinine,2014-03-26
+2.0.0,[twp],township,2014-03-26
+2.0.0,deg/s,degree per second,2014-03-26
+2.0.0,mL/kg,milliliter per kilogram,2014-03-26
+2.0.0,[sc_ap],scruple,2014-03-26
+2.0.0,fmol,femtomole,2014-03-26
+2.0.0,meq/g{Cre},milliequivalents / gram Cre,2014-03-26
+2.0.0,mg/mg,milligram per milligram,2014-03-26
+2.0.0,[diop],diopter,2014-03-26
+2.0.0,kat/L,katal / liter,2014-03-26
+2.0.0,fmol/mg{protein},femtomole per milligram of protein,2014-03-26
+2.0.0,g/(kg.h),gram / kilogram * hour,2014-03-26
+2.0.0,k[iU]/mL,KiloInternationalUnitsPerMilliLiter,2014-03-26
+2.0.0,mbar.s/L,millibar second per liter,2014-03-26
+2.0.0,meq/kg/h,milliequivalent per kilogram per hour,2014-03-26
+2.0.0,[fth_us],fathom,2014-03-26
+2.0.0,mL/min/m2,milliliter per minute per square meter,2014-03-26
+2.0.0,[smoot],Smoot,2014-03-26
+2.0.0,[foz_us],fluid ounce,2014-03-26
+2.0.0,[iU]/g{Hgb},international unit / gram Hgb,2014-03-26
+2.0.0,[ligne],ligne French line,2014-03-26
+2.0.0,[mil_i],mil,2014-03-26
+2.0.0,[pt_br],pint,2014-03-26
+2.0.0,[cin_i],cubic inch,2014-03-26
+2.0.0,[lb_av],pound (US and British),2014-03-26
+2.0.0,mg/m3,milligram per cubic meter,2014-03-26
+2.0.0,[iU]/dL,InternationalUnitsPerDeciLiter,2014-03-26
+2.0.0,g/(5.h),gram per 5 hour,2014-03-26
+2.0.0,g/kg/h,gram per kilogram per hour,2014-03-26
+2.0.0,[bbl_us],barrel,2014-03-26
+2.0.0,g.m/({hb}.m2),gram * meter / hb * (meter ^ 2),2014-03-26
+2.0.0,m[IU]/L,milli international unit per liter,2014-03-26
+2.0.0,kg{wet'tis},kilogram of wet tissue,2014-03-26
+2.0.0,[foz_br],fluid ounce,2014-03-26
+2.0.0,eq/umol,equivalents / micromole,2014-03-26
+2.0.0,mg/h,milligram per hour,2014-03-26
+2.0.0,mm,millimeter,2014-03-26
+2.0.0,[oz_tr],ounce,2014-03-26
+2.0.0,[S],Svedberg unit,2014-03-26
+2.0.0,[iU]/kg,InternationalUnitsPerKilogram,2014-03-26
+2.0.0,[ppm]{v/v},part per million in volume per volume,2014-03-26
+2.0.0,dg,decigram,2014-03-26
+2.0.0,fmol/mg{cytosol_protein},femtomole per milligram of cytosol protein,2014-03-26
+2.0.0,[mi_us],mile,2014-03-26
+2.0.0,kPa,kiloPascal,2014-03-26
+2.0.0,[dpt_us],dry pint,2014-03-26
+2.0.0,meq/kg,milliequivalent per kilogram,2014-03-26
+2.0.0,[yd_br],yard,2014-03-26
+2.0.0,g{wet_tissue},gram of wet tissue,2014-03-26
+2.0.0,mU/mg{creat},milli enzyme unit per milligram of creatinine,2014-03-26
 2.0.0,pmol/mg{protein},picomole per milligram of protein,2014-03-26
-2.0.0,pmol/min,picomole per minute,2014-03-26
-2.0.0,pmol/min/mg{protein},picomole per minute per milligram of protein,2014-03-26
-2.0.0,pmol/mmol,picomole per millimole,2014-03-26
-2.0.0,pmol/mmol{creat},picomole per millimole of creatinine,2014-03-26
-2.0.0,pmol/mol,picomole per mole,2014-03-26
-2.0.0,pmol/umol,picomole per micromole,2014-03-26
-2.0.0,pmol/umol{creat},picomole per micromole of creatinine,2014-03-26
-2.0.0,pmol/{RBC},picomole per red blood cell,2014-03-26
-2.0.0,ps,picosecond,2014-03-26
-2.0.0,rad,radian,2014-03-26
-2.0.0,s,second,2014-03-26
-2.0.0,s/{control},second per control,2014-03-26
-2.0.0,sb,stilb,2014-03-26
-2.0.0,sph,spere,2014-03-26
-2.0.0,sr,steradian,2014-03-26
-2.0.0,st,stere,2014-03-26
-2.0.0,t,tonne,2014-03-26
-2.0.0,u,unified atomic mass unit,2014-03-26
-2.0.0,uCi,MICROCURIE,2014-03-26
-2.0.0,uL,microliter,2014-03-26
-2.0.0,uL/(2.h),microliter per 2 hour,2014-03-26
-2.0.0,uL/h,microliter per hour,2014-03-26
-2.0.0,uOhm,microOhm,2014-03-26
-2.0.0,uU,microUnit,2014-03-26
-2.0.0,uU/L,micro enzyme unit per liter,2014-03-26
-2.0.0,uU/g,micro enzyme unit per gram,2014-03-26
-2.0.0,uU/mL,micro enzyme unit per milliliter,2014-03-26
-2.0.0,uV,microvolt,2014-03-26
-2.0.0,u[IU],micro international unit,2014-03-26
-2.0.0,u[IU]/L,microinternational unit per liter,2014-03-26
-2.0.0,u[IU]/mL,micro international unit per milliliter,2014-03-26
-2.0.0,ueq,microequivalents,2014-03-26
-2.0.0,ueq/L,microequivalent per liter,2014-03-26
-2.0.0,ueq/mL,microequivalent per milliliter,2014-03-26
-2.0.0,ug,microgram,2014-03-26
-2.0.0,ug/(100.g),microgram per 100 gram,2014-03-26
-2.0.0,ug/(24.h),microgram per 24 hour,2014-03-26
-2.0.0,ug/(8.h),microgram per 8 hour,2014-03-26
-2.0.0,ug/(kg.d),microgram / kilogram * day,2014-03-26
-2.0.0,ug/(kg.h),microgram / kilogram * hour,2014-03-26
-2.0.0,ug/L,microgram per liter,2014-03-26
-2.0.0,ug/L/(24.h),microgram per liter per 24 hour,2014-03-26
-2.0.0,ug/L{DDU},microgram / liter DDU,2014-03-26
-2.0.0,ug/L{RBCs},microgram per liter of red blood cells,2014-03-26
-2.0.0,ug/[sft_i],microgram per square foot (international),2014-03-26
-2.0.0,ug/d,microgram per day,2014-03-26
-2.0.0,ug/dL,microgram per deciliter,2014-03-26
-2.0.0,ug/dL{RBCs},microgram per deciliter of red blood cells,2014-03-26
-2.0.0,ug/dL{rbc},microgram / deciliter rbc,2014-03-26
-2.0.0,ug/g,microgram per gram,2014-03-26
-2.0.0,ug/g{Cre},microgram / gram Cre,2014-03-26
-2.0.0,ug/g{DryWeight},microgram / gram DryWeight,2014-03-26
-2.0.0,ug/g{Hb},microgram per gram of hemoglobin,2014-03-26
-2.0.0,ug/g{Hgb},microgram / gram Hgb,2014-03-26
-2.0.0,ug/g{Tissue},microgram / gram Tissue,2014-03-26
-2.0.0,ug/g{creat},microgram per gram of creatinine,2014-03-26
-2.0.0,ug/g{dry_tissue},microgram per gram of dry tissue,2014-03-26
-2.0.0,ug/g{dry_wt},microgram per gram of dry weight,2014-03-26
-2.0.0,ug/g{feces},microgram per gram of feces,2014-03-26
-2.0.0,ug/g{hair},microgram per gram of hair,2014-03-26
-2.0.0,ug/g{tissue},microgram per gram of tissue,2014-03-26
-2.0.0,ug/h,microgram per hour,2014-03-26
-2.0.0,ug/kg,microgram per kilogram,2014-03-26
-2.0.0,ug/kg/(8.h),microgram per kilogram per 8 hour,2014-03-26
-2.0.0,ug/kg/d,microgram per kilogram per day,2014-03-26
-2.0.0,ug/kg/h,microgram per kilogram per hour,2014-03-26
-2.0.0,ug/kg/min,microgram per kilogram per minute,2014-03-26
-2.0.0,ug/m2,microgram per square meter,2014-03-26
-2.0.0,ug/m3,microgram per cubic meter,2014-03-26
-2.0.0,ug/mL,microgram per milliliter,2014-03-26
-2.0.0,ug/mL{FEU},microgram / milliliter FEU,2014-03-26
-2.0.0,ug/mL{class},microgram per milliliter class,2014-03-26
-2.0.0,ug/mL{eqv},microgram per milliliter equivalent,2014-03-26
-2.0.0,ug/mg,microgram per milligram,2014-03-26
-2.0.0,ug/mg{Cre},microgram / milligram Cre,2014-03-26
-2.0.0,ug/mg{creat},microgram per milligram of creatinine,2014-03-26
-2.0.0,ug/min,microgram per minute,2014-03-26
-2.0.0,ug/mmol,microgram per millimole,2014-03-26
-2.0.0,ug/mmol{creat},microgram per millimole of creatinine,2014-03-26
-2.0.0,ug/ng,microgram per nanogram,2014-03-26
-2.0.0,ug/{Specimen},microgram / Specimen,2014-03-26
-2.0.0,ug/{TotalVolume},MicroGramsPerTotalVolume,2014-03-26
-2.0.0,ug/{specimen},microgram per specimen,2014-03-26
-2.0.0,ug{FEU}/mL,microgram fibrinogen equivalent unit per milliliter,2014-03-26
-2.0.0,ug{T4}/dL,microgram T4 / deciliter,2014-03-26
-2.0.0,ukat,microkatal,2014-03-26
-2.0.0,um,micrometer,2014-03-26
-2.0.0,um/s,micrometer per second,2014-03-26
-2.0.0,umol,micromole,2014-03-26
-2.0.0,umol/(2.h),micromole per 2 hour,2014-03-26
-2.0.0,umol/(24.h),micromole per 24 hour,2014-03-26
-2.0.0,umol/(8.h),micromole per 8 hour,2014-03-26
-2.0.0,umol/L,micromole per liter,2014-03-26
-2.0.0,umol/L/h,micromole per liter per hour,2014-03-26
-2.0.0,umol/L{RBCs},micromole per liter of red blood cells,2014-03-26
-2.0.0,umol/L{rbc},micromole per liter of red blood cells,2014-03-26
-2.0.0,umol/d,micromole per day,2014-03-26
-2.0.0,umol/dL,micromole per deciliter,2014-03-26
-2.0.0,umol/dL{GF},micromole per deciliter of glomerular filtrate,2014-03-26
-2.0.0,umol/g,micromole per gram,2014-03-26
-2.0.0,umol/g{Cre},micromole / gram Cre,2014-03-26
-2.0.0,umol/g{Hb},micromole per gram of hemoglobin,2014-03-26
-2.0.0,umol/g{Hgb},micromole / gram Hgb,2014-03-26
-2.0.0,umol/g{creat},micromole per gram of creatinine,2014-03-26
-2.0.0,umol/g{hemoglobin},micromole per gram of hemoglobin,2014-03-26
-2.0.0,umol/h,micromole per hour,2014-03-26
-2.0.0,umol/h/L,micromole per hour per liter,2014-03-26
-2.0.0,umol/h/g,micromole / hour / gram,2014-03-26
-2.0.0,umol/h/mg{protein},micromole per hour per milligram of protein,2014-03-26
-2.0.0,umol/kg,micromole per kilogram,2014-03-26
-2.0.0,umol/kg{feces},micromole per kilogram of feces,2014-03-26
-2.0.0,umol/m,micromole / meter,2014-03-26
-2.0.0,umol/mL,micromole per milliliter,2014-03-26
-2.0.0,umol/mL/min,micromole per milliliter per minute,2014-03-26
-2.0.0,umol/mg,micromole per milligram,2014-03-26
-2.0.0,umol/mg{Cre},micromole / milligram Cre,2014-03-26
-2.0.0,umol/mg{creat},micromole per milligram of creatinine,2014-03-26
-2.0.0,umol/min,micromole per minute,2014-03-26
-2.0.0,umol/min/L,micromole per minute per liter,2014-03-26
-2.0.0,umol/min/g,micromole per minute per gram,2014-03-26
-2.0.0,umol/min/g{mucosa},micromole per minute per gram of mucosa,2014-03-26
-2.0.0,umol/min/g{protein},micromole per minute per gram of protein,2014-03-26
+2.0.0,mol/s,mole per second,2014-03-26
+2.0.0,ns,nanosecond,2014-03-26
+2.0.0,{cells}/uL,cells per microliter,2014-03-26
 2.0.0,umol/min/g{prot},micromole / minute / gram prot,2014-03-26
-2.0.0,umol/mmol,micromole per millimole,2014-03-26
-2.0.0,umol/mmol{creat},micromole per millimole of creatinine,2014-03-26
-2.0.0,umol/mol,micromole per mole,2014-03-26
+2.0.0,nm/s/L,nanometer per second per liter,2014-03-26
+2.0.0,ph,phot,2014-03-26
+2.0.0,{IgGAntiphosphatidyleserine'U},IgGAntiphosphatidyleserine'U,2014-03-26
+2.0.0,{Capsule},Capsule,2014-03-26
+2.0.0,{WBCs},white blood cells,2014-03-26
+2.0.0,umol/(8.h),micromole per 8 hour,2014-03-26
+2.0.0,pmol/L,picomole per liter,2014-03-26
 2.0.0,umol/mol{Cre},micromole / mole Cre,2014-03-26
-2.0.0,umol/mol{Hb},micromole per mole of hemoglobin,2014-03-26
-2.0.0,umol/mol{creat},micromole per mole of creatinine,2014-03-26
-2.0.0,umol/umol,micromole per micromole,2014-03-26
-2.0.0,umol/umol{creat},micromole per micromole of creatinine,2014-03-26
-2.0.0,umol{BCE}/mol,micromole bone collagen equivalent per mole,2014-03-26
-2.0.0,us,microsecond,2014-03-26
-2.0.0,wk,week,2014-03-26
-2.0.0,{# of calculi},"# of calculi",2014-03-26
+2.0.0,{Counts}/min,Counts / minute,2014-03-26
+2.0.0,mmol/mol{Cre},MilliMolesPerMoleCreatinine,2014-03-26
+2.0.0,{FIU},fluorescent intensity unit,2014-03-26
+2.0.0,mmol/h/mg{Hb},millimole per hour per milligram of hemoglobin,2014-03-26
+2.0.0,{ElisaU}/mL,ElisaUnitsPerMilliLiter [Arbitrary Concentration Units],2014-03-26
+2.0.0,ug/m2,microgram per square meter,2014-03-26
+2.0.0,umol/h/g,micromole / hour / gram,2014-03-26
+2.0.0,{CH100'U},complement CH100 unit,2014-03-26
+2.0.0,{Package},Package,2014-03-26
 2.0.0,{# of donor informative markers},"# of donor informative markers",2014-03-26
-2.0.0,{# of fetuses},"# of fetuses",2014-03-26
-2.0.0,{# of informative markers},"# of informative markers",2014-03-26
-2.0.0,{#},"#",2014-03-26
-2.0.0,{#}/L,number per liter,2014-03-26
-2.0.0,{#}/[HPF],number per high power field,2014-03-26
-2.0.0,{#}/[LPF],number per low power field,2014-03-26
-2.0.0,{#}/mL,number per milliliter,2014-03-26
-2.0.0,{#}/min,number per minute,2014-03-26
-2.0.0,{#}/uL,number per microliter,2014-03-26
-2.0.0,{2 or 3 times}/d,2 or 3 times / day,2014-03-26
-2.0.0,{3 times}/d,3 times / day,2014-03-26
-2.0.0,{4 times}/d,4 times / day,2014-03-26
-2.0.0,{5 times}/d,5 times / day,2014-03-26
-2.0.0,{AHF'U},AHF'U,2014-03-26
-2.0.0,{APS'U},IgA antiphosphatidylserine unit,2014-03-26
-2.0.0,{ARU},aspirin response unit,2014-03-26
-2.0.0,{Absorbance'U},Absorbance'U,2014-03-26
-2.0.0,{Absorbance'U}/mL,Absorbance'U / milliliter,2014-03-26
-2.0.0,{ActivityCoefficient},ActivityCoefficient,2014-03-26
-2.0.0,{AntibodyResponse'U},AntibodyResponse'U,2014-03-26
-2.0.0,{Applicator},Applicator,2014-03-26
-2.0.0,{AspirinReaction'U},AspirinReaction'U,2014-03-26
-2.0.0,{Bead},Bead,2014-03-26
-2.0.0,{Beats}/min,Beats / minute,2014-03-26
-2.0.0,{Bottle},Bottle,2014-03-26
-2.0.0,{Bowls}/d,Bowls / day,2014-03-26
+2.0.0,{index},index,2014-03-26
+2.0.0,mmol/kg/h,millimole per kilogram per hour,2014-03-26
+2.0.0,mo,month,2014-03-26
+2.0.0,nU/mL,nanoenzyme unit per milliliter,2014-03-26
+2.0.0,pT,picotesla,2014-03-26
 2.0.0,{Breaths}/min,Breaths / minute,2014-03-26
 2.0.0,{CAE'U},complement activity enzyme unit,2014-03-26
-2.0.0,{CAG_repeats},CAG trinucleotide repeats,2014-03-26
-2.0.0,{CGG_repeats},CGG_repeats,2014-03-26
-2.0.0,{CGG},CGG,2014-03-26
-2.0.0,{CH100'U},complement CH100 unit,2014-03-26
-2.0.0,{CPM},counts per minute,2014-03-26
-2.0.0,{CPM}/10*3{cell},counts per minute per thousand cells,2014-03-26
-2.0.0,{CagRepeat},CagRepeat,2014-03-26
-2.0.0,{Cans}/wk,Cans / week,2014-03-26
-2.0.0,{Can},Can,2014-03-26
-2.0.0,{Capsule},Capsule,2014-03-26
-2.0.0,{Cells}/mL,Cells / milliliter,2014-03-26
-2.0.0,{Cells}/uL,CellsPerMicroLiter,2014-03-26
-2.0.0,{Cell},Cell,2014-03-26
-2.0.0,{CfTiter},CfTiter,2014-03-26
-2.0.0,{ComplementActivityEnzyme'U},ComplementActivityEnzyme'U,2014-03-26
-2.0.0,{ComplementCH100'U},ComplementCH100'U,2014-03-26
-2.0.0,{ComplementCH50'U},ComplementCH50'U,2014-03-26
-2.0.0,{Copies}/mL,CopiesPerMilliLiter,2014-03-26
-2.0.0,{Copies}/uL,Copies / microliter,2014-03-26
-2.0.0,{Counts}/min,Counts / minute,2014-03-26
-2.0.0,{Count},Count,2014-03-26
-2.0.0,{Ct},crossing threshold,2014-03-26
-2.0.0,{Dalton},Dalton,2014-03-26
-2.0.0,{DdTiter},DdTiter,2014-03-26
-2.0.0,{DeltaOpticalDensity},DeltaOpticalDensity,2014-03-26
-2.0.0,{Dilution},dilution,2014-03-26
-2.0.0,{Disintegrations}/min,Disintegrations / minute,2014-03-26
-2.0.0,{Dose},Dose,2014-03-26
-2.0.0,{Drinks}/d,Drinks / day,2014-03-26
-2.0.0,{EIA'U},EIA unit,2014-03-26
-2.0.0,{EIA'U}/U,EIA unit per enzyme Unit,2014-03-26
-2.0.0,{EIAIndex},EIA index,2014-03-26
-2.0.0,{EIATiter},EIA titer,2014-03-26
-2.0.0,{EIA_index},EIA index,2014-03-26
-2.0.0,{EIA_titer},EIA titer,2014-03-26
-2.0.0,{ELISA'U},ELISA unit,2014-03-26
-2.0.0,{ERY}/uL,erythrocyte per microliter,2014-03-26
-2.0.0,{EV},EIA value,2014-03-26
-2.0.0,{Each},Each,2014-03-26
-2.0.0,{Ehrlich'U},Ehrlich unit,2014-03-26
-2.0.0,{Ehrlich'U}/(2.h),Ehrlich unit per 2 hour,2014-03-26
-2.0.0,{Ehrlich'U}/100.g,Ehrlich unit per 100 gram,2014-03-26
-2.0.0,{Ehrlich'U}/d,Ehrlich unit per day,2014-03-26
-2.0.0,{Ehrlich'U}/dL,Ehrilich unit per deciliter,2014-03-26
-2.0.0,{Ehrlich'U}/mL,Ehrlich'U / milliliter,2014-03-26
 2.0.0,{EhrlichU}/dL,EhrlichUnitsPerDeciLiter [Arbitrary Concentration Units],2014-03-26
-2.0.0,{Ehrlich_U}/dL,EhrlichUnitsPerDeciLiter,2014-03-26
-2.0.0,{Elisa'U}/mL,Elisa'U / milliliter,2014-03-26
-2.0.0,{ElisaIndex},ElisaIndex,2014-03-26
-2.0.0,{ElisaU}/mL,ElisaUnitsPerMilliLiter [Arbitrary Concentration Units],2014-03-26
-2.0.0,{ElisaValue},ElisaValue,2014-03-26
-2.0.0,{Elisa_U}/mL,ElisaUnitsPerMilliLiter,2014-03-26
-2.0.0,{Events},Events,2014-03-26
-2.0.0,{FIU},fluorescent intensity unit,2014-03-26
-2.0.0,{FluorescenceIntensity'U},FluorescenceIntensity'U,2014-03-26
-2.0.0,{G-PortionPhospholipids},G-PortionPhospholipids,2014-03-26
-2.0.0,{GAA_repeats},GAA trinucleotide repeats,2014-03-26
-2.0.0,{GPS'U},IgG antiphosphatidylserine unit,2014-03-26
-2.0.0,{GliadinIndexValue},GliadinIndexValue,2014-03-26
-2.0.0,{Globules}/[HPF],globules (drops) per high power field,2014-03-26
-2.0.0,{HA_titer},influenza hemagglutination titer,2014-03-26
-2.0.0,{HaTiter},HaTiter,2014-03-26
-2.0.0,{IFA_index},immunofluorescence assay index,2014-03-26
-2.0.0,{IFA_titer},Immunofluorescence assay titer,2014-03-26
-2.0.0,{INR'unit},INR'unit,2014-03-26
-2.0.0,{INR},international normalized ratio,2014-03-26
-2.0.0,{ISR},immune status ratio,2014-03-26
-2.0.0,{IfaIndex},IfaIndex,2014-03-26
-2.0.0,{IfaTiter},IfaTiter,2014-03-26
-2.0.0,{IgAAntiphosphatidyleserine'U},IgAAntiphosphatidyleserine'U,2014-03-26
-2.0.0,{IgAPhospholipid'U},IgAPhospholipid'U,2014-03-26
-2.0.0,{IgGAntiphosphatidyleserine'U},IgGAntiphosphatidyleserine'U,2014-03-26
-2.0.0,{IgGIndex},IgGIndex,2014-03-26
-2.0.0,{IgMAntiphosphatidyleserine'U},IgMAntiphosphatidyleserine'U,2014-03-26
-2.0.0,{IgMIndex},IgMIndex,2014-03-26
-2.0.0,{ImmuneComplex'U},immune complex unit,2014-03-26
-2.0.0,{ImmuneStatusRatio},ImmuneStatusRatio,2014-03-26
-2.0.0,{Immunity},Immunity,2014-03-26
-2.0.0,{IndexValue},IndexValue,2014-03-26
-2.0.0,{Index_val},Index_val,2014-03-26
-2.0.0,{InhaledTobaccoUseAmountYears},InhaledTobaccoUseAmountYears,2014-03-26
-2.0.0,{InhaledTobaccoUsePacks}/d,InhaledTobaccoUsePacks / day,2014-03-26
-2.0.0,{JDF'U},Juvenile Diabetes Foundation unit,2014-03-26
-2.0.0,{JDF'U}/L,Juvenile Diabetes Foundation unit per liter,2014-03-26
-2.0.0,{JuvenileDiabetesFound'U},JuvenileDiabetesFound'U,2014-03-26
-2.0.0,{KCT'U},kaolin clotting time,2014-03-26
-2.0.0,{KRONU'U}/L,Kronus unit per liter,2014-03-26
-2.0.0,{KRONU'U}/mL,Kronus unit per milliliter,2014-03-26
-2.0.0,{Log_IU},log (base 10) international unit,2014-03-26
-2.0.0,{Log_IU}/mL,log (base 10) international unit per milliliter,2014-03-26
-2.0.0,{Log_copies}/mL,log (base 10) copies per milliliter,2014-03-26
-2.0.0,{Log},log base 10,2014-03-26
-2.0.0,{LymeIndexValue},LymeIndexValue,2014-03-26
-2.0.0,{Lyme_index_value},Lyme index value,2014-03-26
-2.0.0,{M-PortionPhospholipids},M-PortionPhospholipids,2014-03-26
-2.0.0,{M.o.M.},M.o.M.,2014-03-26
-2.0.0,{M.o.M},multiple of the median,2014-03-26
-2.0.0,{MPS'U},IgM antiphosphatidylserine unit,2014-03-26
-2.0.0,{MPS'U}/mL,IgM antiphosphatidylserine unit per milliliter,2014-03-26
-2.0.0,{Markers},Markers,2014-03-26
-2.0.0,{Molecule}/{Platelet},Molecule / Platelet,2014-03-26
-2.0.0,{MultOfMean},MultOfMean,2014-03-26
-2.0.0,{NonspecificOunce},NonspecificOunce,2014-03-26
-2.0.0,{Number},Number,2014-03-26
-2.0.0,{OD_unit},optical density unit,2014-03-26
-2.0.0,{Once}/d,Once / day,2014-03-26
-2.0.0,{OpticalDensityIndex},OpticalDensityIndex,2014-03-26
-2.0.0,{OpticalDensityRatio},OpticalDensityRatio,2014-03-26
-2.0.0,{OpticalDensity},OpticalDensity,2014-03-26
-2.0.0,{P2Y12 Reaction Units},P2Y12 Reaction Units,2014-03-26
-2.0.0,{PackYears},PackYears,2014-03-26
-2.0.0,{Package},Package,2014-03-26
-2.0.0,{Packs}/d,Packs / day,2014-03-26
-2.0.0,{Pan_Bio'U},panbio unit,2014-03-26
-2.0.0,{Patch},Patch,2014-03-26
-2.0.0,{Percentile},Percentile,2014-03-26
-2.0.0,{Pill},Pill,2014-03-26
-2.0.0,{Pouches}/wk,Pouches / week,2014-03-26
-2.0.0,{RBC}/uL,red blood cell per microliter,2014-03-26
-2.0.0,{RPI'U},RPI'U,2014-03-26
-2.0.0,{RadioactiveT3UptakeRatio},RadioactiveT3UptakeRatio,2014-03-26
-2.0.0,{RecTiter},RecTiter,2014-03-26
-2.0.0,{Relative'U},Relative'U,2014-03-26
-2.0.0,{RelativeViscosity},RelativeViscosity,2014-03-26
-2.0.0,{RubellaVirus},RubellaVirus,2014-03-26
-2.0.0,{Rubella_virus},rubella virus,2014-03-26
-2.0.0,{STDV},standard deviation,2014-03-26
-2.0.0,{SatIndex},SatIndex,2014-03-26
-2.0.0,{Scoop},Scoop,2014-03-26
-2.0.0,{ScoreOf},ScoreOf,2014-03-26
-2.0.0,{Spermatozoa}/mL,SpermatozoaPerMilliLiter,2014-03-26
-2.0.0,{StandardDeviation},StandardDeviation,2014-03-26
-2.0.0,{StandardIgA'U},StandardIgA'U,2014-03-26
-2.0.0,{StandardIgG'U},StandardIgG'U,2014-03-26
-2.0.0,{StandardIgM'U},StandardIgM'U,2014-03-26
-2.0.0,{StdDeviation'U},StdDeviation'U,2014-03-26
-2.0.0,{StimulatingIndex},StimulatingIndex,2014-03-26
-2.0.0,{Streptozyme'U},Streptozyme'U,2014-03-26
+2.0.0,nmol/umol{creat},nanomole per micromole of creatinine,2014-03-26
+2.0.0,pkat,picokatal,2014-03-26
 2.0.0,{TIBC'U},TIBC'U,2014-03-26
-2.0.0,{TSI_index},thyroid-stimulating immunoglobulin index,2014-03-26
-2.0.0,{ThyroxinUptake'U},ThyroxinUptake'U,2014-03-26
+2.0.0,uOhm,microOhm,2014-03-26
+2.0.0,{IgGIndex},IgGIndex,2014-03-26
+2.0.0,nmol/mL/h,nanomole per milliliter per hour,2014-03-26
+2.0.0,umol/mol{creat},micromole per mole of creatinine,2014-03-26
+2.0.0,{IFA_index},immunofluorescence assay index,2014-03-26
+2.0.0,{Log_copies}/mL,log (base 10) copies per milliliter,2014-03-26
+2.0.0,pmol,picomole,2014-03-26
+2.0.0,{IndexValue},IndexValue,2014-03-26
+2.0.0,mosm,milliosmole,2014-03-26
+2.0.0,umol/umol,micromole per micromole,2014-03-26
+2.0.0,ng/d,nanogram per day,2014-03-26
+2.0.0,uU,microUnit,2014-03-26
+2.0.0,ug/mg{Cre},microgram / milligram Cre,2014-03-26
+2.0.0,umol{BCE}/mol,micromole bone collagen equivalent per mole,2014-03-26
+2.0.0,{AspirinReaction'U},AspirinReaction'U,2014-03-26
+2.0.0,{ELISA'U},ELISA unit,2014-03-26
+2.0.0,{Patch},Patch,2014-03-26
+2.0.0,nmol/min/mL,nanomole per minute per milliliter,2014-03-26
+2.0.0,ng/mL{RBCs},nanogram per milliliter of red blood cells,2014-03-26
+2.0.0,nmol/s/L,nanomole per second per liter,2014-03-26
+2.0.0,pm,picometer,2014-03-26
+2.0.0,umol/d,micromole per day,2014-03-26
+2.0.0,pmol/min,picomole per minute,2014-03-26
+2.0.0,ug/g{hair},microgram per gram of hair,2014-03-26
+2.0.0,{CAG_repeats},CAG trinucleotide repeats,2014-03-26
+2.0.0,ug/L{DDU},microgram / liter DDU,2014-03-26
+2.0.0,{GPS'U},IgG antiphosphatidylserine unit,2014-03-26
+2.0.0,{Ehrlich'U}/dL,Ehrilich unit per deciliter,2014-03-26
+2.0.0,{InhaledTobaccoUsePacks}/d,InhaledTobaccoUsePacks / day,2014-03-26
+2.0.0,{RecTiter},RecTiter,2014-03-26
+2.0.0,nmol/m/mg{protein},nanomole per meter per milligram of protein,2014-03-26
+2.0.0,ug/mL{class},microgram per milliliter class,2014-03-26
+2.0.0,{Ehrlich'U}/d,Ehrlich unit per day,2014-03-26
+2.0.0,{StdDeviation'U},StdDeviation'U,2014-03-26
+2.0.0,mol/mol,mole per mole,2014-03-26
+2.0.0,{Index_val},Index_val,2014-03-26
+2.0.0,{OpticalDensityIndex},OpticalDensityIndex,2014-03-26
+2.0.0,sr,steradian,2014-03-26
+2.0.0,{StandardIgA'U},StandardIgA'U,2014-03-26
+2.0.0,mmol/m2,millimole per square meter,2014-03-26
+2.0.0,nmol/d,nanomole per day,2014-03-26
+2.0.0,u[IU]/mL,micro international unit per milliliter,2014-03-26
+2.0.0,ueq,microequivalents,2014-03-26
+2.0.0,ug{FEU}/mL,microgram fibrinogen equivalent unit per milliliter,2014-03-26
+2.0.0,{3 times}/d,3 times / day,2014-03-26
+2.0.0,uL/(2.h),microliter per 2 hour,2014-03-26
+2.0.0,ng/mg{Protein},nanogram / milligram Protein,2014-03-26
+2.0.0,nmol/(24.h),nanomole per 24 hour,2014-03-26
+2.0.0,um,micrometer,2014-03-26
+2.0.0,{EIA_titer},EIA titer,2014-03-26
+2.0.0,{MPS'U}/mL,IgM antiphosphatidylserine unit per milliliter,2014-03-26
+2.0.0,{Rubella_virus},rubella virus,2014-03-26
+2.0.0,{IfaTiter},IfaTiter,2014-03-26
+2.0.0,mo_j,mean Julian month,2014-03-26
+2.0.0,rad,radian,2014-03-26
+2.0.0,umol/(2.h),micromole per 2 hour,2014-03-26
+2.0.0,umol/min/L,micromole per minute per liter,2014-03-26
+2.0.0,{Log_IU}/mL,log (base 10) international unit per milliliter,2014-03-26
+2.0.0,pg/{RBC},picogram per red blood cell,2014-03-26
+2.0.0,pg/mL,picogram per milliliter,2014-03-26
+2.0.0,umol/g,micromole per gram,2014-03-26
+2.0.0,{ElisaIndex},ElisaIndex,2014-03-26
+2.0.0,{CPM}/10*3{cell},counts per minute per thousand cells,2014-03-26
+2.0.0,mmol/{total_vol},millimole per total volume,2014-03-26
+2.0.0,ug/dL,microgram per deciliter,2014-03-26
+2.0.0,{# of fetuses},"# of fetuses",2014-03-26
+2.0.0,{Events},Events,2014-03-26
 2.0.0,{Times}/wk,Times / week,2014-03-26
-2.0.0,{Tine'U},Tine'U,2014-03-26
-2.0.0,{ToxoplasmaIndexValue},ToxoplasmaIndexValue,2014-03-26
-2.0.0,{Vial},Vial,2014-03-26
-2.0.0,{Volume}/{Vvolume},Volume / Vvolume,2014-03-26
-2.0.0,{WBCs},white blood cells,2014-03-26
-2.0.0,{WeeksDays},WeeksDays,2014-03-26
-2.0.0,{WhiteBloodCell},WhiteBloodCell,2014-03-26
-2.0.0,{absorbance},absorbance,2014-03-26
+2.0.0,nmol/L,nanomole per liter,2014-03-26
+2.0.0,ug/g{dry_wt},microgram per gram of dry weight,2014-03-26
+2.0.0,nmol/mmol,nanomole per millimole,2014-03-26
+2.0.0,{Applicator},Applicator,2014-03-26
+2.0.0,{Ehrlich'U},Ehrlich unit,2014-03-26
 2.0.0,{activity},activity,2014-03-26
-2.0.0,{beats}/min,heart beats per minute,2014-03-26
-2.0.0,{binding_index},binding index,2014-03-26
+2.0.0,mmol/kg/d,millimole per kilogram per day,2014-03-26
+2.0.0,nmol/mmol{Cre},nanomole / millimole Cre,2014-03-26
+2.0.0,ug/d,microgram per day,2014-03-26
+2.0.0,umol/mg{Cre},micromole / milligram Cre,2014-03-26
+2.0.0,{Packs}/d,Packs / day,2014-03-26
 2.0.0,{cells},cells,2014-03-26
-2.0.0,{cells}/[HPF],cells per high power field,2014-03-26
-2.0.0,{cells}/uL,cells per microliter,2014-03-26
-2.0.0,{cfu},cfu,2014-03-26
-2.0.0,{cfu}/mL,cfu / milliliter,2014-03-26
-2.0.0,{clock time},clock time,2014-03-26
-2.0.0,{clock_time},clock_time,2014-03-26
-2.0.0,{copies},copies,2014-03-26
+2.0.0,nmol/mL,nanomole per milliliter,2014-03-26
+2.0.0,ug/ng,microgram per nanogram,2014-03-26
+2.0.0,umol/g{creat},micromole per gram of creatinine,2014-03-26
+2.0.0,{IfaIndex},IfaIndex,2014-03-26
 2.0.0,{copies}/mL,copies per milliliter,2014-03-26
+2.0.0,ug/mg,microgram per milligram,2014-03-26
+2.0.0,ug/mmol,microgram per millimole,2014-03-26
+2.0.0,{Beats}/min,Beats / minute,2014-03-26
+2.0.0,{Disintegrations}/min,Disintegrations / minute,2014-03-26
+2.0.0,ng/kg/(8.h),nanogram per kilogram per 8 hour,2014-03-26
+2.0.0,{#}/mL,number per milliliter,2014-03-26
+2.0.0,ng/dL/h,nanogram / deciliter / hour,2014-03-26
+2.0.0,{Bead},Bead,2014-03-26
+2.0.0,{EIA_index},EIA index,2014-03-26
+2.0.0,nmol,nanomole,2014-03-26
+2.0.0,nmol/mol,nanomole per mole,2014-03-26
+2.0.0,pmol/mL,picomole per milliliter,2014-03-26
+2.0.0,{Dose},Dose,2014-03-26
+2.0.0,mmol/mmol{urea},millimole per millimole of urea,2014-03-26
+2.0.0,nCi,nanoCurie,2014-03-26
+2.0.0,ng/g,nanogram per gram,2014-03-26
+2.0.0,mo_g,mean Gregorian month,2014-03-26
+2.0.0,ug/kg/h,microgram per kilogram per hour,2014-03-26
+2.0.0,umol/dL{GF},micromole per deciliter of glomerular filtrate,2014-03-26
+2.0.0,umol/mol{Hb},micromole per mole of hemoglobin,2014-03-26
+2.0.0,{# of calculi},"# of calculi",2014-03-26
+2.0.0,{2 or 3 times}/d,2 or 3 times / day,2014-03-26
+2.0.0,{TSI_index},thyroid-stimulating immunoglobulin index,2014-03-26
+2.0.0,ng/10*6,nanogram per million,2014-03-26
+2.0.0,mmol/m,millimole / meter,2014-03-26
+2.0.0,mmol/{Tot'Volume},millimole / Tot'Volume,2014-03-26
+2.0.0,mmol/s/L,millimole per second per liter,2014-03-26
+2.0.0,umol/L{RBCs},micromole per liter of red blood cells,2014-03-26
+2.0.0,pmol/h/mL,picomole per hour per milliliter,2014-03-26
+2.0.0,ug/g{creat},microgram per gram of creatinine,2014-03-26
+2.0.0,mmol/mmol{creat},millimole per millmole of creatinine,2014-03-26
+2.0.0,nmol/min/mg{hemoglobin},nanomole per minute per milligram of hemoglobin,2014-03-26
+2.0.0,nmol/mL/min,nanomole per milliliter per minute,2014-03-26
+2.0.0,{Pouches}/wk,Pouches / week,2014-03-26
+2.0.0,{binding_index},binding index,2014-03-26
+2.0.0,ng/mg{protein},nanogram per milligram of protein,2014-03-26
+2.0.0,ug/L/(24.h),microgram per liter per 24 hour,2014-03-26
+2.0.0,{AntibodyResponse'U},AntibodyResponse'U,2014-03-26
+2.0.0,{IgMAntiphosphatidyleserine'U},IgMAntiphosphatidyleserine'U,2014-03-26
+2.0.0,{Log},log base 10,2014-03-26
+2.0.0,{Copies}/uL,Copies / microliter,2014-03-26
+2.0.0,t,tonne,2014-03-26
+2.0.0,ug/L{RBCs},microgram per liter of red blood cells,2014-03-26
+2.0.0,umol/mmol{creat},micromole per millimole of creatinine,2014-03-26
+2.0.0,ng/mg,nanogram per milligram,2014-03-26
+2.0.0,ug/m3,microgram per cubic meter,2014-03-26
+2.0.0,{EIA'U}/U,EIA unit per enzyme Unit,2014-03-26
+2.0.0,ng/g{creat},nanogram per gram of creatinine,2014-03-26
+2.0.0,umol/(24.h),micromole per 24 hour,2014-03-26
+2.0.0,{Elisa_U}/mL,ElisaUnitsPerMilliLiter,2014-03-26
+2.0.0,ug/L,microgram per liter,2014-03-26
+2.0.0,{INR'unit},INR'unit,2014-03-26
+2.0.0,mmol/mmol,millimole per millimole,2014-03-26
+2.0.0,mosm/kg,milliosmole per kilogram,2014-03-26
+2.0.0,{kp_C},HOMEOPATHIC POTENCY OF CENTESIMAL KORSAKOVIAN SERIES,2014-03-26
+2.0.0,{KRONU'U}/mL,Kronus unit per milliliter,2014-03-26
+2.0.0,{Relative'U},Relative'U,2014-03-26
+2.0.0,pmol/(24.h),picomole per 24 hour,2014-03-26
+2.0.0,{cfu}/mL,cfu / milliliter,2014-03-26
+2.0.0,pc,parsec,2014-03-26
+2.0.0,ng/dL,nanogram per deciliter,2014-03-26
+2.0.0,umol/kg,micromole per kilogram,2014-03-26
+2.0.0,nkat,nanokatal,2014-03-26
+2.0.0,{FluorescenceIntensity'U},FluorescenceIntensity'U,2014-03-26
+2.0.0,{Cell},Cell,2014-03-26
+2.0.0,ng,nanogram,2014-03-26
+2.0.0,nm,nanometer,2014-03-26
+2.0.0,ug/g{Cre},microgram / gram Cre,2014-03-26
+2.0.0,nmol/min/mg{Hb},nanomole per minute per milligram of hemoglobin,2014-03-26
+2.0.0,pg/dL,picogram per deciliter,2014-03-26
+2.0.0,{CagRepeat},CagRepeat,2014-03-26
+2.0.0,nmol/mg{protein},nanomole per milligram of protein,2014-03-26
+2.0.0,{WeeksDays},WeeksDays,2014-03-26
+2.0.0,mol/mL,mole per milliliter,2014-03-26
+2.0.0,ng/(kg.min),nanogram / kilogram * minute,2014-03-26
+2.0.0,nmol/s,nanomole per second,2014-03-26
+2.0.0,pmol/mol,picomole per mole,2014-03-26
+2.0.0,{Ct},crossing threshold,2014-03-26
+2.0.0,{PackYears},PackYears,2014-03-26
+2.0.0,{Percentile},Percentile,2014-03-26
+2.0.0,umol/mL/min,micromole per milliliter per minute,2014-03-26
+2.0.0,{ImmuneStatusRatio},ImmuneStatusRatio,2014-03-26
+2.0.0,{RelativeViscosity},RelativeViscosity,2014-03-26
+2.0.0,nmol{BCE}/L,nanomole bone collagen equivalent per liter,2014-03-26
+2.0.0,pmol/h/mg{protein},picomole per hour per milligram of protein,2014-03-26
+2.0.0,umol/dL,micromole per deciliter,2014-03-26
+2.0.0,mmol/h/mg{protein},millimole per hour per milligram of protein,2014-03-26
+2.0.0,{APS'U},IgA antiphosphatidylserine unit,2014-03-26
+2.0.0,ng/mg/h,nanogram per milligram per hour,2014-03-26
+2.0.0,{minidrop}/s,minidrop per second,2014-03-26
+2.0.0,ng/L,nanogram per liter,2014-03-26
+2.0.0,{JDF'U}/L,Juvenile Diabetes Foundation unit per liter,2014-03-26
+2.0.0,nmol/h/mg{protein},nanomole per hour per milligram of protein,2014-03-26
+2.0.0,sph,spere,2014-03-26
+2.0.0,umol/g{hemoglobin},micromole per gram of hemoglobin,2014-03-26
+2.0.0,umol/mg{creat},micromole per milligram of creatinine,2014-03-26
+2.0.0,nmol/h/mL,nanomole per hour per milliliter,2014-03-26
+2.0.0,nmol/mg{creat},nanomole per milligram of creatinine,2014-03-26
+2.0.0,mol,mole,2014-03-26
+2.0.0,mol/L,mole per liter,2014-03-26
+2.0.0,pg/mg,picogram per milligram,2014-03-26
+2.0.0,ng/g{Cre},nanogram / gram Cre,2014-03-26
+2.0.0,u,unified atomic mass unit,2014-03-26
+2.0.0,mmol/kg/(8.h),millimole per kilogram per 8 hour,2014-03-26
+2.0.0,ng/kg/min,nanogram per kilogram per minute,2014-03-26
+2.0.0,nmol/g{Cre},nanomole / gram Cre,2014-03-26
+2.0.0,ug/kg,microgram per kilogram,2014-03-26
+2.0.0,ug/kg/(8.h),microgram per kilogram per 8 hour,2014-03-26
+2.0.0,umol/L/h,micromole per liter per hour,2014-03-26
+2.0.0,umol/min/g,micromole per minute per gram,2014-03-26
+2.0.0,ng/m2,nanogram per square meter,2014-03-26
+2.0.0,ms,millisecond,2014-03-26
+2.0.0,{Cells}/mL,Cells / milliliter,2014-03-26
+2.0.0,{Pan_Bio'U},panbio unit,2014-03-26
+2.0.0,{RadioactiveT3UptakeRatio},RadioactiveT3UptakeRatio,2014-03-26
+2.0.0,pmol/d,picomole per day,2014-03-26
+2.0.0,{Ehrlich'U}/mL,Ehrlich'U / milliliter,2014-03-26
+2.0.0,ug/mmol{creat},microgram per millimole of creatinine,2014-03-26
+2.0.0,ug/g{Tissue},microgram / gram Tissue,2014-03-26
+2.0.0,ug/min,microgram per minute,2014-03-26
+2.0.0,pmol/dL,picomole per deciliter,2014-03-26
+2.0.0,s,second,2014-03-26
+2.0.0,ug/g{feces},microgram per gram of feces,2014-03-26
+2.0.0,umol/kg{feces},micromole per kilogram of feces,2014-03-26
+2.0.0,ng/(24.h),nanogram per 24 hour,2014-03-26
+2.0.0,nmol/mmol{creat},nanomole per millimole of creatinine,2014-03-26
+2.0.0,pmol/umol{creat},picomole per micromole of creatinine,2014-03-26
+2.0.0,{HaTiter},HaTiter,2014-03-26
+2.0.0,ng/mL{rbc},nanogram / milliliter rbc,2014-03-26
+2.0.0,umol/L,micromole per liter,2014-03-26
+2.0.0,{Ehrlich'U}/(2.h),Ehrlich unit per 2 hour,2014-03-26
+2.0.0,nmol/g,nanomole per gram,2014-03-26
+2.0.0,{MPS'U},IgM antiphosphatidylserine unit,2014-03-26
+2.0.0,umol/g{Hgb},micromole / gram Hgb,2014-03-26
+2.0.0,{Can},Can,2014-03-26
+2.0.0,{RPI'U},RPI'U,2014-03-26
 2.0.0,{copies}/ug,copies per microgram,2014-03-26
+2.0.0,ng/s,nanogram per second,2014-03-26
+2.0.0,ukat,microkatal,2014-03-26
+2.0.0,{P2Y12 Reaction Units},P2Y12 Reaction Units,2014-03-26
+2.0.0,ueq/L,microequivalent per liter,2014-03-26
+2.0.0,{CPM},counts per minute,2014-03-26
+2.0.0,{cfu},cfu,2014-03-26
+2.0.0,uL,microliter,2014-03-26
+2.0.0,{Tine'U},Tine'U,2014-03-26
+2.0.0,ug,microgram,2014-03-26
+2.0.0,u[IU]/L,microinternational unit per liter,2014-03-26
+2.0.0,ug/(100.g),microgram per 100 gram,2014-03-26
+2.0.0,{Ehrlich_U}/dL,EhrlichUnitsPerDeciLiter,2014-03-26
+2.0.0,pmol/umol,picomole per micromole,2014-03-26
+2.0.0,ug/mL,microgram per milliliter,2014-03-26
+2.0.0,{AHF'U},AHF'U,2014-03-26
+2.0.0,{Absorbance'U}/mL,Absorbance'U / milliliter,2014-03-26
+2.0.0,mol/mol{creat},mole / mole creat,2014-03-26
+2.0.0,nmol/dL,nanomole per deciliter,2014-03-26
+2.0.0,{Molecule}/{Platelet},Molecule / Platelet,2014-03-26
+2.0.0,ug/dL{RBCs},microgram per deciliter of red blood cells,2014-03-26
+2.0.0,pg,picogram,2014-03-26
+2.0.0,umol/h/mg{protein},micromole per hour per milligram of protein,2014-03-26
+2.0.0,{ComplementCH100'U},ComplementCH100'U,2014-03-26
+2.0.0,{M.o.M.},M.o.M.,2014-03-26
+2.0.0,{Log_IU},log (base 10) international unit,2014-03-26
+2.0.0,{DeltaOpticalDensity},DeltaOpticalDensity,2014-03-26
+2.0.0,{OD_unit},optical density unit,2014-03-26
+2.0.0,{Pill},Pill,2014-03-26
+2.0.0,{ElisaValue},ElisaValue,2014-03-26
+2.0.0,ng/(kg.d),nanogram / kilogram * day,2014-03-26
+2.0.0,ug/g,microgram per gram,2014-03-26
+2.0.0,ug/{Specimen},microgram / Specimen,2014-03-26
+2.0.0,{Number},Number,2014-03-26
+2.0.0,uU/mL,micro enzyme unit per milliliter,2014-03-26
+2.0.0,u[IU],micro international unit,2014-03-26
+2.0.0,ug/g{dry_tissue},microgram per gram of dry tissue,2014-03-26
+2.0.0,wk,week,2014-03-26
+2.0.0,{Globules}/[HPF],globules (drops) per high power field,2014-03-26
+2.0.0,{StandardDeviation},StandardDeviation,2014-03-26
+2.0.0,mmol/mol,millimole per mole,2014-03-26
+2.0.0,osm/L,osmole per liter,2014-03-26
+2.0.0,ug/(kg.h),microgram / kilogram * hour,2014-03-26
+2.0.0,{StandardIgG'U},StandardIgG'U,2014-03-26
+2.0.0,ug/g{tissue},microgram per gram of tissue,2014-03-26
+2.0.0,umol/min/g{protein},micromole per minute per gram of protein,2014-03-26
+2.0.0,{ERY}/uL,erythrocyte per microliter,2014-03-26
+2.0.0,pg/{cell},picogram per cell,2014-03-26
+2.0.0,umol/mg,micromole per milligram,2014-03-26
+2.0.0,nmol/nmol,nanomole per nanomole,2014-03-26
+2.0.0,pg/mg{creat},picogram per milligram of creatinine,2014-03-26
+2.0.0,{JDF'U},Juvenile Diabetes Foundation unit,2014-03-26
+2.0.0,{RubellaVirus},RubellaVirus,2014-03-26
+2.0.0,mmol/kg/min,millimole per kilogram per minute,2014-03-26
+2.0.0,mmol/{TotalVolume},MilliMolesPerTotalVolume [Substance Units],2014-03-26
+2.0.0,{log_IU}/mL,log (base 10) international unit per milliliter,2014-03-26
+2.0.0,{Bottle},Bottle,2014-03-26
 2.0.0,{count},count,2014-03-26
-2.0.0,{delta_OD},change in (delta) optical density,2014-03-26
+2.0.0,mmol/mol{creat},millimole per mole of creatinine,2014-03-26
+2.0.0,umol/L{rbc},micromole per liter of red blood cells,2014-03-26
+2.0.0,{clock_time},clock_time,2014-03-26
+2.0.0,mol/m3,mole per cubic meter,2014-03-26
+2.0.0,ng/kg/h,nanogram per kilogram per hour,2014-03-26
+2.0.0,uV,microvolt,2014-03-26
+2.0.0,umol/h/L,micromole per hour per liter,2014-03-26
+2.0.0,umol/mmol,micromole per millimole,2014-03-26
+2.0.0,{4 times}/d,4 times / day,2014-03-26
+2.0.0,{Streptozyme'U},Streptozyme'U,2014-03-26
+2.0.0,ng/mL/h,nanogram per milliliter per hour,2014-03-26
+2.0.0,umol/mL,micromole per milliliter,2014-03-26
+2.0.0,{cells}/[HPF],cells per high power field,2014-03-26
+2.0.0,pmol/min/mg{protein},picomole per minute per milligram of protein,2014-03-26
+2.0.0,ug/{specimen},microgram per specimen,2014-03-26
 2.0.0,{dilution},dilution,2014-03-26
+2.0.0,{Spermatozoa}/mL,SpermatozoaPerMilliLiter,2014-03-26
+2.0.0,ug/g{Hb},microgram per gram of hemoglobin,2014-03-26
+2.0.0,{CfTiter},CfTiter,2014-03-26
+2.0.0,{StandardIgM'U},StandardIgM'U,2014-03-26
+2.0.0,nmol/L/mmol{creat},nanomole per liter per millimole of creatinine,2014-03-26
+2.0.0,{LymeIndexValue},LymeIndexValue,2014-03-26
+2.0.0,nmol/L{RBCs},nanomole per liter of red blood cells,2014-03-26
+2.0.0,uU/L,micro enzyme unit per liter,2014-03-26
+2.0.0,nmol{BCE}/mmol{creat},nanomole bone collagen equivalent per millimole of creatinine,2014-03-26
+2.0.0,nU/{RBC},nanoenzyme unit per red blood cell,2014-03-26
+2.0.0,pmol/{RBC},picomole per red blood cell,2014-03-26
+2.0.0,nmol/min,nanomole per minute,2014-03-26
+2.0.0,{NonspecificOunce},NonspecificOunce,2014-03-26
+2.0.0,ueq/mL,microequivalent per milliliter,2014-03-26
+2.0.0,{Scoop},Scoop,2014-03-26
+2.0.0,ug/g{DryWeight},microgram / gram DryWeight,2014-03-26
+2.0.0,ug/dL{rbc},microgram / deciliter rbc,2014-03-26
+2.0.0,{KCT'U},kaolin clotting time,2014-03-26
+2.0.0,{EIATiter},EIA titer,2014-03-26
+2.0.0,ng/(kg.h),nanogram / kilogram * hour,2014-03-26
+2.0.0,osm/kg,osmole per kilogram,2014-03-26
+2.0.0,uCi,MICROCURIE,2014-03-26
+2.0.0,ug{T4}/dL,microgram T4 / deciliter,2014-03-26
+2.0.0,umol,micromole,2014-03-26
+2.0.0,{Count},Count,2014-03-26
+2.0.0,{copies},copies,2014-03-26
+2.0.0,ng/10*6{RBCs},nanogram per million red blood cells,2014-03-26
+2.0.0,pg/mm,picogram per millimeter,2014-03-26
+2.0.0,umol/min/g{mucosa},micromole per minute per gram of mucosa,2014-03-26
+2.0.0,{IFA_titer},Immunofluorescence assay titer,2014-03-26
 2.0.0,{fraction},fraction,2014-03-26
+2.0.0,nmol/min/10*6{cells},nanomole per minute per million cells,2014-03-26
+2.0.0,ug/kg/min,microgram per kilogram per minute,2014-03-26
+2.0.0,{ARU},aspirin response unit,2014-03-26
+2.0.0,{MultOfMean},MultOfMean,2014-03-26
+2.0.0,st,stere,2014-03-26
+2.0.0,pA,picoampere,2014-03-26
+2.0.0,ug/kg/d,microgram per kilogram per day,2014-03-26
+2.0.0,mo_s,synodal month,2014-03-26
+2.0.0,{StimulatingIndex},StimulatingIndex,2014-03-26
+2.0.0,{beats}/min,heart beats per minute,2014-03-26
+2.0.0,ng/min,nanogram per minute,2014-03-26
+2.0.0,nmol/dL{GF},nanomole per deciliter of glomerular filtrate,2014-03-26
+2.0.0,nmol/h/L,nanomole per hour per liter,2014-03-26
+2.0.0,{ComplementActivityEnzyme'U},ComplementActivityEnzyme'U,2014-03-26
+2.0.0,{Ehrlich'U}/100.g,Ehrlich unit per 100 gram,2014-03-26
+2.0.0,{ThyroxinUptake'U},ThyroxinUptake'U,2014-03-26
+2.0.0,mmol/g{hemoglobin},millimole per gram of hemoglobin,2014-03-26
+2.0.0,s/{control},second per control,2014-03-26
+2.0.0,umol/h,micromole per hour,2014-03-26
+2.0.0,{Cells}/uL,CellsPerMicroLiter,2014-03-26
+2.0.0,ug/mL{eqv},microgram per milliliter equivalent,2014-03-26
+2.0.0,{Vial},Vial,2014-03-26
+2.0.0,{delta_OD},change in (delta) optical density,2014-03-26
+2.0.0,{M-PortionPhospholipids},M-PortionPhospholipids,2014-03-26
+2.0.0,{Volume}/{Vvolume},Volume / Vvolume,2014-03-26
+2.0.0,ug/[sft_i],microgram per square foot (international),2014-03-26
+2.0.0,{ISR},immune status ratio,2014-03-26
+2.0.0,{minidrop}/min,minidrop per minute,2014-03-26
+2.0.0,mmol/{specimen},millimole per specimen,2014-03-26
+2.0.0,sb,stilb,2014-03-26
+2.0.0,{ToxoplasmaIndexValue},ToxoplasmaIndexValue,2014-03-26
+2.0.0,mosm/L,milliosmole per liter,2014-03-26
+2.0.0,umol/umol{creat},micromole per micromole of creatinine,2014-03-26
+2.0.0,{Markers},Markers,2014-03-26
+2.0.0,nmol{ATP},nanomole of ATP,2014-03-26
+2.0.0,osm,osmole,2014-03-26
+2.0.0,{#}/uL,number per microliter,2014-03-26
+2.0.0,{G-PortionPhospholipids},G-PortionPhospholipids,2014-03-26
+2.0.0,{ScoreOf},ScoreOf,2014-03-26
+2.0.0,ps,picosecond,2014-03-26
+2.0.0,{EV},EIA value,2014-03-26
+2.0.0,{Immunity},Immunity,2014-03-26
+2.0.0,{InhaledTobaccoUseAmountYears},InhaledTobaccoUseAmountYears,2014-03-26
+2.0.0,{OpticalDensity},OpticalDensity,2014-03-26
+2.0.0,ug/mg{creat},microgram per milligram of creatinine,2014-03-26
+2.0.0,{Elisa'U}/mL,Elisa'U / milliliter,2014-03-26
+2.0.0,{STDV},standard deviation,2014-03-26
+2.0.0,ng/(8.h.kg),nanogram / 8 * hour * kilogram,2014-03-26
+2.0.0,{# of informative markers},"# of informative markers",2014-03-26
+2.0.0,nmol/mg{protein}/h,nanomole per milligram of protein per hour,2014-03-26
+2.0.0,mmol/min,millimole per minute,2014-03-26
+2.0.0,pg/L,picogram per liter,2014-03-26
+2.0.0,pmol/g,picomole per gram,2014-03-26
+2.0.0,{GliadinIndexValue},GliadinIndexValue,2014-03-26
+2.0.0,{HA_titer},influenza hemagglutination titer,2014-03-26
+2.0.0,ug/mL{FEU},microgram / milliliter FEU,2014-03-26
+2.0.0,{Lyme_index_value},Lyme index value,2014-03-26
+2.0.0,{OpticalDensityRatio},OpticalDensityRatio,2014-03-26
+2.0.0,mmol/kg,millimole per kilogram,2014-03-26
+2.0.0,ug/h,microgram per hour,2014-03-26
+2.0.0,uU/g,micro enzyme unit per gram,2014-03-26
+2.0.0,{Cans}/wk,Cans / week,2014-03-26
+2.0.0,uL/h,microliter per hour,2014-03-26
+2.0.0,{JuvenileDiabetesFound'U},JuvenileDiabetesFound'U,2014-03-26
+2.0.0,{KRONU'U}/L,Kronus unit per liter,2014-03-26
+2.0.0,nmol/g{creat},nanomole per gram of creatinine,2014-03-26
+2.0.0,{GAA_repeats},GAA trinucleotide repeats,2014-03-26
+2.0.0,mol/kg,mole per kilogram,2014-03-26
+2.0.0,us,microsecond,2014-03-26
+2.0.0,ug/(8.h),microgram per 8 hour,2014-03-26
+2.0.0,um/s,micrometer per second,2014-03-26
+2.0.0,{ImmuneComplex'U},immune complex unit,2014-03-26
+2.0.0,pL,picoliter,2014-03-26
+2.0.0,{#}/min,number per minute,2014-03-26
+2.0.0,{SatIndex},SatIndex,2014-03-26
 2.0.0,{genomes}/mL,genomes per milliliter,2014-03-26
 2.0.0,{index_val},index value,2014-03-26
-2.0.0,{index},index,2014-03-26
-2.0.0,{kp_C},HOMEOPATHIC POTENCY OF CENTESIMAL KORSAKOVIAN SERIES,2014-03-26
+2.0.0,ng/U,nanogram per enzyme unit,2014-03-26
+2.0.0,nmol/mg,nanomole per milligram,2014-03-26
+2.0.0,nmol/mg/h,nanomole per milligram per hour,2014-03-26
+2.0.0,nmol/min/mg{protein},nanomole per minute per milligram of protein,2014-03-26
+2.0.0,mol/d,mole per day,2014-03-26
+2.0.0,ug/(24.h),microgram per 24 hour,2014-03-26
+2.0.0,{Once}/d,Once / day,2014-03-26
 2.0.0,{lgCopies}/ml,lgCopies / milliliter,2014-03-26
-2.0.0,{log_IU}/mL,log (base 10) international unit per milliliter,2014-03-26
-2.0.0,{log_copies}/mL,log (base 10) copies per milliliter,2014-03-26
-2.0.0,{minidrop}/min,minidrop per minute,2014-03-26
-2.0.0,{minidrop}/s,minidrop per second,2014-03-26
+2.0.0,{CGG_repeats},CGG_repeats,2014-03-26
+2.0.0,nmol{BCE},nanomole bone collagen equivalent,2014-03-26
+2.0.0,{Drinks}/d,Drinks / day,2014-03-26
+2.0.0,ng/(8.h),nanogram per 8 hour,2014-03-26
+2.0.0,mmol/h,millimole per hour,2014-03-26
+2.0.0,{IgAAntiphosphatidyleserine'U},IgAAntiphosphatidyleserine'U,2014-03-26
+2.0.0,{Absorbance'U},Absorbance'U,2014-03-26
+2.0.0,{Bowls}/d,Bowls / day,2014-03-26
+2.0.0,{DdTiter},DdTiter,2014-03-26
+2.0.0,{RBC}/uL,red blood cell per microliter,2014-03-26
+2.0.0,{EIA'U},EIA unit,2014-03-26
+2.0.0,nmol{1/2cys}/mg{protein},nanomole of 1/2 cystine per milligram of protein,2014-03-26
+2.0.0,umol/mol,micromole per mole,2014-03-26
+2.0.0,{ActivityCoefficient},ActivityCoefficient,2014-03-26
+2.0.0,{Each},Each,2014-03-26
+2.0.0,{ComplementCH50'U},ComplementCH50'U,2014-03-26
+2.0.0,ng/mL,nanogram per millliiter,2014-03-26
+2.0.0,pmol/mmol,picomole per millimole,2014-03-26
+2.0.0,{Dalton},Dalton,2014-03-26
+2.0.0,ng/kg,nanogram per kilogram,2014-03-26
+2.0.0,ug/g{Hgb},microgram / gram Hgb,2014-03-26
+2.0.0,mmol/kg{H2O},millimole per kilogram of water,2014-03-26
+2.0.0,nmol/L/s,nanomole per liter per second,2014-03-26
+2.0.0,pmol/mmol{creat},picomole per millimole of creatinine,2014-03-26
+2.0.0,{IgMIndex},IgMIndex,2014-03-26
+2.0.0,ng/h,nanogram per hour,2014-03-26
+2.0.0,{#},"#",2014-03-26
+2.0.0,{EIAIndex},EIA index,2014-03-26
+2.0.0,{WhiteBloodCell},WhiteBloodCell,2014-03-26
+2.0.0,ng/mg{creat},nanogram per milligram of creatinine,2014-03-26
 2.0.0,{minidrp},minidrp,2014-03-26
-2.0.0,{mm/dd/yyyy},month-day-year,2014-03-26
-2.0.0,{molecule}/{platelet},molecule per platelet,2014-03-26
+2.0.0,{#}/[LPF],number per low power field,2014-03-26
+2.0.0,{clock time},clock time,2014-03-26
+2.0.0,ug/(kg.d),microgram / kilogram * day,2014-03-26
+2.0.0,ug/{TotalVolume},MicroGramsPerTotalVolume,2014-03-26
+2.0.0,umol/g{Cre},micromole / gram Cre,2014-03-26
+2.0.0,{INR},international normalized ratio,2014-03-26
+2.0.0,{IgAPhospholipid'U},IgAPhospholipid'U,2014-03-26
+2.0.0,{5 times}/d,5 times / day,2014-03-26
+2.0.0,{M.o.M},multiple of the median,2014-03-26
+2.0.0,{absorbance},absorbance,2014-03-26
+2.0.0,umol/g{Hb},micromole per gram of hemoglobin,2014-03-26
+2.0.0,{#}/L,number per liter,2014-03-26
+2.0.0,mol/kg/s,mole per kilogram per second,2014-03-26
+2.0.0,{log_copies}/mL,log (base 10) copies per milliliter,2014-03-26
+2.0.0,ng{FEU}/mL,nanogram fibrinogen equivalent unit per milliliter,2014-03-26
+2.0.0,{Dilution},dilution,2014-03-26
+2.0.0,nmol/g{dry_wt},nanomole per gram of dry weight,2014-03-26
+2.0.0,umol/m,micromole / meter,2014-03-26
+2.0.0,nL,nanoliter,2014-03-26
+2.0.0,{CGG},CGG,2014-03-26
+2.0.0,{Copies}/mL,CopiesPerMilliLiter,2014-03-26
+2.0.0,mmol/{ejaculate},millimole per ejaculate,2014-03-26
+2.0.0,umol/min,micromole per minute,2014-03-26
+2.0.0,{#}/[HPF],number per high power field,2014-03-26
 2.0.0,{mutation},mutation,2014-03-26
-2.0.0,{percentile},percentile,2014-03-26
-2.0.0,{phenotype},phenotype,2014-03-26
 2.0.0,{ratio},ratio,2014-03-26
-2.0.0,{rbc},red blood cell count,2014-03-26
-2.0.0,{relative_saturation},relative saturation,2014-03-26
-2.0.0,{s_co_ratio},signal to cutoff ratio,2014-03-26
-2.0.0,{saturation},saturation,2014-03-26
-2.0.0,{shift},shift,2014-03-26
-2.0.0,{spermatozoa}/mL,spermatozoa per milliliter,2014-03-26
-2.0.0,{spray},spray,2014-03-26
-2.0.0,{tbl},tablets,2014-03-26
-2.0.0,{titer},titer,2014-03-26
 2.0.0,{tot},particles total count,2014-03-26
+2.0.0,{percentile},percentile,2014-03-26
+2.0.0,{titer},titer,2014-03-26
+2.0.0,{tbl},tablets,2014-03-26
+2.0.0,{s_co_ratio},signal to cutoff ratio,2014-03-26
+2.0.0,{shift},shift,2014-03-26
+2.0.0,{saturation},saturation,2014-03-26
+2.0.0,{rbc},red blood cell count,2014-03-26
+2.0.0,{mm/dd/yyyy},month-day-year,2014-03-26
+2.0.0,{spray},spray,2014-03-26
+2.0.0,{molecule}/{platelet},molecule per platelet,2014-03-26
+2.0.0,{relative_saturation},relative saturation,2014-03-26
+2.0.0,{spermatozoa}/mL,spermatozoa per milliliter,2014-03-26
+2.0.0,{phenotype},phenotype,2014-03-26
