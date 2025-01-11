@@ -1,11 +1,11 @@
 version,code,description,release_date
-"",ACUTE,inpatient acute,2017-11-15
 "",AMB,ambulatory,2017-11-15
-"",EMER,emergency,2017-11-15
 "",FLD,field,2017-11-15
-"",HH,home health,2017-11-15
-"",IMP,inpatient encounter,2017-11-15
-"",NONAC,inpatient non-acute,2017-11-15
 "",PRENC,pre-admission,2017-11-15
 "",SS,short stay,2017-11-15
+"",EMER,emergency,2017-11-15
+"",HH,home health,2017-11-15
 "",VR,virtual,2017-11-15
+"",IMP,inpatient encounter,2017-11-15
+"",ACUTE,inpatient acute,2017-11-15
+"",NONAC,inpatient non-acute,2017-11-15
