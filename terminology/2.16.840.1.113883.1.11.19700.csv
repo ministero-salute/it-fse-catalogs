@@ -1,7 +1,7 @@
 version,code,description,release_date
-"",EINT,Environmental Intolerance,2014-03-26
 "",ALG,Allergy,2014-03-26
-"",NAINT,Non-Allergy Intolerance,2014-03-26
 "",DINT,Drug Intolerance,2014-03-26
-"",OINT,intolerance,2014-03-26
+"",EINT,Environmental Intolerance,2014-03-26
 "",FINT,Food Intolerance,2014-03-26
+"",NAINT,Non-Allergy Intolerance,2014-03-26
+"",OINT,intolerance,2014-03-26
