@@ -1,53 +1,53 @@
 version,code,description,release_date
 2.0.0,ADMPHYS,admitting physician,2019-03-20
-2.0.0,_AuthorizedParticipationFunction,AuthorizedParticipationFunction,2019-03-20
-2.0.0,PROVMGT,provider management,2019-03-20
-2.0.0,ENROLL,enrollment broker,2019-03-20
-2.0.0,AUEMROV,emergency overrider,2019-03-20
-2.0.0,SUBCON,subject of consent author,2019-03-20
-2.0.0,SASST,second assistant surgeon,2019-03-20
-2.0.0,AUCOV,consent overrider,2019-03-20
-2.0.0,ATTPHYS,attending physician,2019-03-20
-2.0.0,AUWA,work area information receiver,2019-03-20
-2.0.0,_CoverageParticipationFunction,CoverageParticipationFunction,2019-03-20
-2.0.0,ANRS,anesthesia nurse,2019-03-20
-2.0.0,REVIEWER,reviewer,2019-03-20
-2.0.0,SNRS,scrub nurse,2019-03-20
-2.0.0,RNDPHYS,rounding physician,2019-03-20
-2.0.0,PRCON,personal representative consent author,2019-03-20
-2.0.0,_PayorParticipationFunction,PayorParticipationFunction,2019-03-20
-2.0.0,PROMSK,authorized provider masking author,2019-03-20
-2.0.0,CLMADJ,claims adjudication,2019-03-20
-2.0.0,AUCG,caregiver information receiver,2019-03-20
-2.0.0,MCMGT,managed care management,2019-03-20
-2.0.0,PRISURG,primary surgeon,2019-03-20
-2.0.0,RETROCES,retrocessionaires,2019-03-20
-2.0.0,COMPOSER,composer software,2019-03-20
-2.0.0,AULR,legitimate relationship information receiver,2019-03-20
-2.0.0,SUBCTRT,subcontracting risk,2019-03-20
-2.0.0,PAYORCNTR,payor contracting,2019-03-20
-2.0.0,FASST,first assistant surgeon,2019-03-20
-2.0.0,_ConsenterParticipationFunction,ConsenterParticipationFunction,2019-03-20
-2.0.0,_OverriderParticipationFunction,OverriderParticipationFunction,2019-03-20
-2.0.0,UMGT,utilization management,2019-03-20
-2.0.0,_AuthorizedReceiverParticipationFunction,AuthorizedReceiverParticipationFunction,2019-03-20
-2.0.0,_UnderwriterParticipationFunction,UnderwriterParticipationFunction,2019-03-20
-2.0.0,FFSMGT,ffs management,2019-03-20
-2.0.0,POACON,healthcare power of attorney consent author,2019-03-20
 2.0.0,ANEST,anesthesist,2019-03-20
-2.0.0,GRDCON,legal guardian consent author,2019-03-20
+2.0.0,ANRS,anesthesia nurse,2019-03-20
 2.0.0,ASSEMBLER,assembly software,2019-03-20
-2.0.0,RIC,Richiedente,2019-03-20
-2.0.0,UNDERWRTNG,underwriting,2019-03-20
-2.0.0,MDWF,midwife,2019-03-20
-2.0.0,DISPHYS,discharging physician,2019-03-20
-2.0.0,_SponsorParticipationFunction,SponsorParticipationFunction,2019-03-20
-2.0.0,REINS,reinsures,2019-03-20
-2.0.0,FULINRD,fully insured,2019-03-20
-2.0.0,PCP,primary care physician,2019-03-20
+2.0.0,ATTPHYS,attending physician,2019-03-20
+2.0.0,AUCG,caregiver information receiver,2019-03-20
+2.0.0,AUCOV,consent overrider,2019-03-20
+2.0.0,AUEMROV,emergency overrider,2019-03-20
+2.0.0,AULR,legitimate relationship information receiver,2019-03-20
 2.0.0,AUTM,care team information receiver,2019-03-20
-2.0.0,SELFINRD,self insured,2019-03-20
-2.0.0,NASST,nurse assistant,2019-03-20
+2.0.0,AUWA,work area information receiver,2019-03-20
+2.0.0,CLMADJ,claims adjudication,2019-03-20
+2.0.0,COMPOSER,composer software,2019-03-20
+2.0.0,DISPHYS,discharging physician,2019-03-20
+2.0.0,ENROLL,enrollment broker,2019-03-20
+2.0.0,FASST,first assistant surgeon,2019-03-20
+2.0.0,FFSMGT,ffs management,2019-03-20
+2.0.0,FULINRD,fully insured,2019-03-20
+2.0.0,GRDCON,legal guardian consent author,2019-03-20
+2.0.0,MCMGT,managed care management,2019-03-20
+2.0.0,MDWF,midwife,2019-03-20
 2.0.0,MEDSOST,Medico Sostituto,2019-03-20
-2.0.0,TASST,third assistant,2019-03-20
+2.0.0,NASST,nurse assistant,2019-03-20
+2.0.0,PAYORCNTR,payor contracting,2019-03-20
+2.0.0,PCP,primary care physician,2019-03-20
+2.0.0,POACON,healthcare power of attorney consent author,2019-03-20
+2.0.0,PRCON,personal representative consent author,2019-03-20
 2.0.0,PRE,Prenotatore,2019-03-20
+2.0.0,PRISURG,primary surgeon,2019-03-20
+2.0.0,PROMSK,authorized provider masking author,2019-03-20
+2.0.0,PROVMGT,provider management,2019-03-20
+2.0.0,REINS,reinsures,2019-03-20
+2.0.0,RETROCES,retrocessionaires,2019-03-20
+2.0.0,REVIEWER,reviewer,2019-03-20
+2.0.0,RIC,Richiedente,2019-03-20
+2.0.0,RNDPHYS,rounding physician,2019-03-20
+2.0.0,SASST,second assistant surgeon,2019-03-20
+2.0.0,SELFINRD,self insured,2019-03-20
+2.0.0,SNRS,scrub nurse,2019-03-20
+2.0.0,SUBCON,subject of consent author,2019-03-20
+2.0.0,SUBCTRT,subcontracting risk,2019-03-20
+2.0.0,TASST,third assistant,2019-03-20
+2.0.0,UMGT,utilization management,2019-03-20
+2.0.0,UNDERWRTNG,underwriting,2019-03-20
+2.0.0,_AuthorizedParticipationFunction,AuthorizedParticipationFunction,2019-03-20
+2.0.0,_AuthorizedReceiverParticipationFunction,AuthorizedReceiverParticipationFunction,2019-03-20
+2.0.0,_ConsenterParticipationFunction,ConsenterParticipationFunction,2019-03-20
+2.0.0,_CoverageParticipationFunction,CoverageParticipationFunction,2019-03-20
+2.0.0,_OverriderParticipationFunction,OverriderParticipationFunction,2019-03-20
+2.0.0,_PayorParticipationFunction,PayorParticipationFunction,2019-03-20
+2.0.0,_SponsorParticipationFunction,SponsorParticipationFunction,2019-03-20
+2.0.0,_UnderwriterParticipationFunction,UnderwriterParticipationFunction,2019-03-20
