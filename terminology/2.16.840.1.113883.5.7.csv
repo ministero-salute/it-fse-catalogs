@@ -1,16 +1,16 @@
 version,code,description,release_date
-2.1.0,A,ASAP,2019-03-20
 2.1.0,CR,callback results,2019-03-20
-2.1.0,CS,callback for scheduling,2019-03-20
-2.1.0,CSP,callback placer for scheduling,2019-03-20
-2.1.0,CSR,contact recipient for scheduling,2019-03-20
 2.1.0,EL,elective,2019-03-20
-2.1.0,EM,emergency,2019-03-20
-2.1.0,P,preop,2019-03-20
-2.1.0,PRN,as needed,2019-03-20
-2.1.0,R,routine,2019-03-20
 2.1.0,RR,rush reporting,2019-03-20
+2.1.0,A,ASAP,2019-03-20
+2.1.0,CSR,contact recipient for scheduling,2019-03-20
+2.1.0,UR,urgent,2019-03-20
+2.1.0,CS,callback for scheduling,2019-03-20
+2.1.0,EM,emergency,2019-03-20
 2.1.0,S,stat,2019-03-20
 2.1.0,T,timing critical,2019-03-20
+2.1.0,PRN,as needed,2019-03-20
+2.1.0,CSP,callback placer for scheduling,2019-03-20
+2.1.0,P,preop,2019-03-20
+2.1.0,R,routine,2019-03-20
 2.1.0,UD,use as directed,2019-03-20
-2.1.0,UR,urgent,2019-03-20
