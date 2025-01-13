@@ -1,305 +1,305 @@
 version,code,description,release_date
-2.1.0,0001,Complement fixation,2019-11-01
-2.1.0,0002,Computed axial tomography,2019-11-01
-2.1.0,0003,HLAR agar test,2019-11-01
-2.1.0,0004,Macroscopic observation,2019-11-01
-2.1.0,0005,Magnetic resonance,2019-11-01
-2.1.0,0006,Morphometry,2019-11-01
 2.1.0,0007,Positron emission tomography,2019-11-01
-2.1.0,0008,SAMHSA confirmation,2019-11-01
-2.1.0,0009,SAMHSA screening,2019-11-01
-2.1.0,0010,Serum Neutralization,2019-11-01
 2.1.0,0011,Titration,2019-11-01
 2.1.0,0012,Ultrasound,2019-11-01
-2.1.0,0013,X-ray crystallography,2019-11-01
-2.1.0,0014,Agglutination,2019-11-01
+2.1.0,0005,Magnetic resonance,2019-11-01
 2.1.0,0015,Buffered acidified plate agglutination,2019-11-01
-2.1.0,0016,Card agglutination,2019-11-01
-2.1.0,0017,Hemagglutination,2019-11-01
-2.1.0,0018,Hemagglutination inhibition,2019-11-01
-2.1.0,0019,Latex agglutination,2019-11-01
-2.1.0,0020,Plate agglutination,2019-11-01
 2.1.0,0021,Rapid agglutination,2019-11-01
-2.1.0,0022,RBC agglutination,2019-11-01
-2.1.0,0023,Rivanol agglutination,2019-11-01
-2.1.0,0024,Tube agglutination,2019-11-01
-2.1.0,0025,Bioassay,2019-11-01
+2.1.0,0004,Macroscopic observation,2019-11-01
+2.1.0,0003,HLAR agar test,2019-11-01
+2.1.0,0001,Complement fixation,2019-11-01
 2.1.0,0026,Animal Inoculation,2019-11-01
-2.1.0,0027,Cytotoxicity,2019-11-01
-2.1.0,0028,Embryo infective dose 50,2019-11-01
+2.1.0,0023,Rivanol agglutination,2019-11-01
 2.1.0,0029,Embryo lethal dose 50,2019-11-01
-2.1.0,0030,Mouse intercerebral inoculation,2019-11-01
-2.1.0,0031,"Bioassay, qualitative",2019-11-01
-2.1.0,0032,"Bioassay, quantitative",2019-11-01
-2.1.0,0033,Chemical method,2019-11-01
-2.1.0,0034,Differential light absorption chemical test,2019-11-01
-2.1.0,0035,Dipstick,2019-11-01
-2.1.0,0036,Dipstick colorimetric laboratory test,2019-11-01
-2.1.0,0037,Test strip,2019-11-01
-2.1.0,0038,Chromatography,2019-11-01
-2.1.0,0039,Affinity chromatography,2019-11-01
-2.1.0,0040,Gas liquid chromatography,2019-11-01
-2.1.0,0041,High performance liquid chromatography,2019-11-01
-2.1.0,0042,Liquid Chromatography,2019-11-01
-2.1.0,0043,Protein A affinity chromatography,2019-11-01
-2.1.0,0044,Coagulation,2019-11-01
-2.1.0,0045,Tilt tube coagulation time,2019-11-01
-2.1.0,0046,Tilt tube reptilase induced coagulation,2019-11-01
-2.1.0,0047,Automated count,2019-11-01
-2.1.0,0048,Manual cell count,2019-11-01
-2.1.0,0049,"Platelet count, Rees-Ecker",2019-11-01
-2.1.0,0050,Aerobic Culture,2019-11-01
-2.1.0,0051,Anaerobic Culture,2019-11-01
-2.1.0,0052,Chicken embryo culture,2019-11-01
-2.1.0,0053,Delayed secondary enrichment,2019-11-01
-2.1.0,0054,Microaerophilic Culture,2019-11-01
-2.1.0,0055,"Quantitative microbial culture, cup",2019-11-01
-2.1.0,0056,"Quantitative microbial culture, droplet",2019-11-01
-2.1.0,0057,"Quantitative microbial culture, filter paper",2019-11-01
-2.1.0,0058,"Quantitative microbial culture, pad culture",2019-11-01
-2.1.0,0059,"Quantitative microbial culture, pour plate",2019-11-01
-2.1.0,0060,"Quantitative microbial culture, surface streak",2019-11-01
-2.1.0,0061,Somatic Cell culture,2019-11-01
-2.1.0,0062,Agar diffusion,2019-11-01
-2.1.0,0063,Agar Gel Immunodiffusion,2019-11-01
-2.1.0,0064,Electrophoresis,2019-11-01
-2.1.0,0065,Agaorse gel electrophoresis,2019-11-01
-2.1.0,0066,"Electrophoresis, citrate agar",2019-11-01
-2.1.0,0067,Immunoelectrophoresis,2019-11-01
-2.1.0,0068,Polyacrylamide gel electrophoresis,2019-11-01
-2.1.0,0069,Starch gel electrophoresis,2019-11-01
-2.1.0,0070,ELISA,2019-11-01
-2.1.0,0071,"ELISA, antigen capture",2019-11-01
-2.1.0,0072,"ELISA, avidin biotin peroxidase complex",2019-11-01
-2.1.0,0073,Kinetic ELISA,2019-11-01
-2.1.0,0074,"ELISA, peroxidase-antiperoxidase",2019-11-01
-2.1.0,0075,API 20 Strep,2019-11-01
-2.1.0,0076,API 20A,2019-11-01
-2.1.0,0077,API 20C AUX,2019-11-01
-2.1.0,0078,API 20E,2019-11-01
-2.1.0,0079,API 20NE,2019-11-01
-2.1.0,0080,API 50 CH,2019-11-01
-2.1.0,0081,API An-IDENT,2019-11-01
-2.1.0,0082,API Coryne,2019-11-01
-2.1.0,0083,API Rapid 20E,2019-11-01
-2.1.0,0084,API Staph,2019-11-01
-2.1.0,0085,API ZYM,2019-11-01
-2.1.0,0086,Bacterial identification,2019-11-01
-2.1.0,0087,mini VIDAS,2019-11-01
-2.1.0,0088,Phage susceptibility typing,2019-11-01
-2.1.0,0089,Quad-FERM+,2019-11-01
-2.1.0,0090,RAPIDEC Staph,2019-11-01
-2.1.0,0091,Staphaurex,2019-11-01
-2.1.0,0092,VIDAS,2019-11-01
-2.1.0,0093,Vitek,2019-11-01
-2.1.0,0094,VITEK 2,2019-11-01
-2.1.0,0095,Immune stain,2019-11-01
-2.1.0,0096,"Immunofluorescent antibody, direct",2019-11-01
-2.1.0,0097,"Immunofluorescent antibody, indirect",2019-11-01
-2.1.0,0098,"Immunoperoxidase, Avidin-Biotin Complex",2019-11-01
-2.1.0,0099,"Immunoperoxidase, Peroxidase anti-peroxidase complex",2019-11-01
-2.1.0,0100,"Immunoperoxidase, Protein A-peroxidase complex",2019-11-01
-2.1.0,0101,Immunoassay,2019-11-01
-2.1.0,0102,"Immunoassay, qualitative; multiple step",2019-11-01
-2.1.0,0103,"Immunoassay, qualitative; single step",2019-11-01
-2.1.0,0104,Radioimmunoassay,2019-11-01
-2.1.0,0105,"Immunoassay, semi-quantitative; multiple step",2019-11-01
-2.1.0,0106,"Immunoassay, semi-quantitative; single step",2019-11-01
-2.1.0,0107,Microscopy,2019-11-01
-2.1.0,0108,Darkfield microscopy,2019-11-01
-2.1.0,0109,Electron microscopy,2019-11-01
-2.1.0,0110,Electron microscopy tomography,2019-11-01
-2.1.0,0111,"Electron microscopy, negative stain",2019-11-01
-2.1.0,0112,"Electron microscopy, thick section",2019-11-01
-2.1.0,0113,"Electron microscopy, thin section",2019-11-01
-2.1.0,0114,"Microscopy, Light",2019-11-01
-2.1.0,0115,Polarizing light microscopy,2019-11-01
-2.1.0,0116,Scanning electron microscopy,2019-11-01
-2.1.0,0117,Transmission electron microscopy,2019-11-01
-2.1.0,0118,Transparent tape direct examination,2019-11-01
-2.1.0,0119,3 Self-Sustaining Sequence Replication,2019-11-01
-2.1.0,0120,Branched Chain DNA,2019-11-01
-2.1.0,0121,Hybridization Protection Assay,2019-11-01
-2.1.0,0122,Immune blot,2019-11-01
-2.1.0,0123,In-situ hybridization,2019-11-01
-2.1.0,0124,Ligase Chain Reaction,2019-11-01
-2.1.0,0125,Ligation Activated Transcription,2019-11-01
-2.1.0,0126,Nucleic Acid Probe,2019-11-01
-2.1.0,0127,Nucleic acid probe,2019-11-01
-2.1.0,0128,Nucleic acid probe with amplification,2019-11-01
-2.1.0,0129,Nucleic acid probe with target amplification,2019-11-01
-2.1.0,0130,Nucleic acid reverse transcription,2019-11-01
-2.1.0,0131,Nucleic Acid Sequence Based Analysis,2019-11-01
-2.1.0,0132,Polymerase chain reaction,2019-11-01
-2.1.0,0133,Q-Beta Replicase or probe amplification category method,2019-11-01
-2.1.0,0134,Restriction Fragment Length Polymorphism,2019-11-01
-2.1.0,0135,Southern Blot,2019-11-01
-2.1.0,0136,Strand Displacement Amplification,2019-11-01
-2.1.0,0137,Transcription Mediated Amplification,2019-11-01
-2.1.0,0138,Western Blot,2019-11-01
-2.1.0,0139,Flocculation,2019-11-01
-2.1.0,0140,Immune precipitation,2019-11-01
-2.1.0,0141,Milk ring test,2019-11-01
-2.1.0,0142,Precipitin,2019-11-01
-2.1.0,0143,Acid fast stain,2019-11-01
-2.1.0,0144,"Acid fast stain, fluorochrome",2019-11-01
-2.1.0,0145,"Acid fast stain, Kinyoun's cold carbolfuchsin",2019-11-01
-2.1.0,0146,"Acid fast stain, Ziehl-Neelsen",2019-11-01
-2.1.0,0147,Acid phosphatase stain,2019-11-01
-2.1.0,0148,Acridine orange stain,2019-11-01
-2.1.0,0149,Active brilliant orange KH stain,2019-11-01
-2.1.0,0150,Alazarin red S stain,2019-11-01
-2.1.0,0151,Alcian blue stain,2019-11-01
-2.1.0,0152,Alcian blue with Periodic acid Schiff stain,2019-11-01
-2.1.0,0153,Argentaffin stain,2019-11-01
-2.1.0,0154,Argentaffin silver stain,2019-11-01
-2.1.0,0155,Azure-eosin stain,2019-11-01
-2.1.0,0156,Basic Fuschin stain,2019-11-01
-2.1.0,0157,Bennhold stain,2019-11-01
-2.1.0,0158,Bennhold's Congo red stain,2019-11-01
-2.1.0,0159,Bielschowsky stain,2019-11-01
-2.1.0,0160,Bielschowsky's silver stain,2019-11-01
-2.1.0,0161,Bleach stain,2019-11-01
-2.1.0,0162,Bodian stain,2019-11-01
-2.1.0,0163,Brown-Brenn stain,2019-11-01
-2.1.0,0164,Butyrate-esterase stain,2019-11-01
-2.1.0,0165,Calcofluor white fluorescent stain,2019-11-01
-2.1.0,0166,Carbol-fuchsin stain,2019-11-01
-2.1.0,0167,Carmine stain,2019-11-01
-2.1.0,0168,Churukian-Schenk stain,2019-11-01
-2.1.0,0169,Congo red stain,2019-11-01
-2.1.0,0170,Cresyl echt violet stain,2019-11-01
-2.1.0,0171,Crystal violet stain,2019-11-01
-2.1.0,0172,De Galantha stain,2019-11-01
-2.1.0,0173,Dieterle silver impregnation stain,2019-11-01
-2.1.0,0174,Fite-Farco stain,2019-11-01
-2.1.0,0175,Fontana-Masson silver stain,2019-11-01
-2.1.0,0176,Fouchet stain,2019-11-01
-2.1.0,0177,Gomori stain,2019-11-01
-2.1.0,0178,Gomori methenamine silver stain,2019-11-01
-2.1.0,0179,Gomori-Wheatly trichrome stain,2019-11-01
-2.1.0,0180,Gridley stain,2019-11-01
-2.1.0,0181,Grimelius silver stain,2019-11-01
-2.1.0,0182,Grocott stain,2019-11-01
-2.1.0,0183,Grocott methenamine silver stain,2019-11-01
-2.1.0,0184,Hale's colloidal ferric oxide stain,2019-11-01
-2.1.0,0185,Hale's colloidal iron stain,2019-11-01
-2.1.0,0186,Hansel stain,2019-11-01
-2.1.0,0187,Harris regressive hematoxylin and eosin stain,2019-11-01
-2.1.0,0188,Hematoxylin and eosin stain,2019-11-01
-2.1.0,0189,Highman stain,2019-11-01
-2.1.0,0190,Holzer stain,2019-11-01
-2.1.0,0191,Iron hematoxylin stain,2019-11-01
-2.1.0,0192,Jones stain,2019-11-01
-2.1.0,0193,Jones methenamine silver stain,2019-11-01
-2.1.0,0194,Kossa stain,2019-11-01
-2.1.0,0195,Lawson-Van Gieson stain,2019-11-01
-2.1.0,0196,Loeffler methylene blue stain,2019-11-01
-2.1.0,0197,Luxol fast blue with cresyl violet stain,2019-11-01
-2.1.0,0198,Luxol fast blue with Periodic acid-Schiff stain,2019-11-01
-2.1.0,0199,MacNeal's tetrachrome blood stain,2019-11-01
-2.1.0,0200,Mallory-Heidenhain stain,2019-11-01
-2.1.0,0201,Masson trichrome stain,2019-11-01
-2.1.0,0202,Mayer mucicarmine stain,2019-11-01
-2.1.0,0203,Mayers progressive hematoxylin and eosin stain,2019-11-01
-2.1.0,0204,May-Grunwald Giemsa stain,2019-11-01
-2.1.0,0205,Methyl green stain,2019-11-01
-2.1.0,0206,Methyl green pyronin stain,2019-11-01
-2.1.0,0207,Modified Gomori-Wheatly trichrome stain,2019-11-01
-2.1.0,0208,Modified Masson trichrome stain,2019-11-01
-2.1.0,0209,Modified trichrome stain,2019-11-01
-2.1.0,0210,Movat pentachrome stain,2019-11-01
-2.1.0,0211,Mucicarmine stain,2019-11-01
-2.1.0,0212,Neutral red stain,2019-11-01
-2.1.0,0213,Night blue stain,2019-11-01
-2.1.0,0214,Non-specific esterase stain,2019-11-01
-2.1.0,0215,Oil red-O stain,2019-11-01
-2.1.0,0216,Orcein stain,2019-11-01
-2.1.0,0217,Perls' stain,2019-11-01
-2.1.0,0218,Phosphotungstic acid-hematoxylin stain,2019-11-01
-2.1.0,0219,Potassium ferrocyanide stain,2019-11-01
-2.1.0,0220,Prussian blue stain,2019-11-01
-2.1.0,0221,Putchler modified Bennhold stain,2019-11-01
-2.1.0,0222,Quinacrine fluorescent stain,2019-11-01
+2.1.0,0013,X-ray crystallography,2019-11-01
+2.1.0,0028,Embryo infective dose 50,2019-11-01
+2.1.0,0027,Cytotoxicity,2019-11-01
+2.1.0,0014,Agglutination,2019-11-01
+2.1.0,0009,SAMHSA screening,2019-11-01
+2.1.0,0017,Hemagglutination,2019-11-01
+2.1.0,0022,RBC agglutination,2019-11-01
+2.1.0,0025,Bioassay,2019-11-01
+2.1.0,0016,Card agglutination,2019-11-01
+2.1.0,0018,Hemagglutination inhibition,2019-11-01
+2.1.0,0002,Computed axial tomography,2019-11-01
+2.1.0,0010,Serum Neutralization,2019-11-01
+2.1.0,0020,Plate agglutination,2019-11-01
+2.1.0,0024,Tube agglutination,2019-11-01
+2.1.0,0008,SAMHSA confirmation,2019-11-01
+2.1.0,0019,Latex agglutination,2019-11-01
+2.1.0,0006,Morphometry,2019-11-01
 2.1.0,0223,Reticulin stain,2019-11-01
-2.1.0,0224,Rhodamine stain,2019-11-01
-2.1.0,0225,Safranin stain,2019-11-01
-2.1.0,0226,Schmorl stain,2019-11-01
-2.1.0,0227,Seiver-Munger stain,2019-11-01
-2.1.0,0228,Silver stain,2019-11-01
-2.1.0,0229,Specific esterase stain,2019-11-01
-2.1.0,0230,Steiner silver stain,2019-11-01
-2.1.0,0231,Sudan III stain,2019-11-01
-2.1.0,0232,Sudan IVI stain,2019-11-01
-2.1.0,0233,Sulfated alcian blue stain,2019-11-01
-2.1.0,0234,Supravital stain,2019-11-01
-2.1.0,0235,Thioflavine-S stain,2019-11-01
-2.1.0,0236,Three micron Giemsa stain,2019-11-01
-2.1.0,0237,Vassar-Culling stain,2019-11-01
-2.1.0,0238,Vital Stain,2019-11-01
-2.1.0,0239,von Kossa stain,2019-11-01
-2.1.0,0240,"Antibiotic sensitivity, disk",2019-11-01
 2.1.0,0241,BACTEC susceptibility test,2019-11-01
-2.1.0,0242,Disk dilution,2019-11-01
-2.1.0,0243,"Minimum bactericidal concentration test, macrodilution",2019-11-01
-2.1.0,0244,"Minimum bactericidal concentration test, microdilution",2019-11-01
-2.1.0,0245,"Minimum Inhibitory Concentration, macrodilution",2019-11-01
-2.1.0,0246,"Minimum Inhibitory Concentration, microdilution",2019-11-01
-2.1.0,0247,Turbidometric,2019-11-01
+2.1.0,0096,"Immunofluorescent antibody, direct",2019-11-01
+2.1.0,0149,Active brilliant orange KH stain,2019-11-01
 2.1.0,0248,Refractometric,2019-11-01
-2.1.0,0249,Thin layer chromatography (TLC),2019-11-01
-2.1.0,0250,EMIT,2019-11-01
-2.1.0,0251,Flow cytometry (FC),2019-11-01
-2.1.0,0252,Radial immunodiffusion (RID),2019-11-01
+2.1.0,0125,Ligation Activated Transcription,2019-11-01
+2.1.0,0227,Seiver-Munger stain,2019-11-01
+2.1.0,0215,Oil red-O stain,2019-11-01
+2.1.0,0102,"Immunoassay, qualitative; multiple step",2019-11-01
+2.1.0,_DecisionObservationMethod,DecisionObservationMethod,2019-11-01
+2.1.0,0056,"Quantitative microbial culture, droplet",2019-11-01
+2.1.0,0097,"Immunofluorescent antibody, indirect",2019-11-01
+2.1.0,0107,Microscopy,2019-11-01
 2.1.0,0253,Fluorescence polarization immunoassay (FPIA),2019-11-01
-2.1.0,0254,Immunofixation electrophoresis (IFE),2019-11-01
-2.1.0,0255,Equilibrium dialysis,2019-11-01
-2.1.0,0256,Kleihauer-Betke acid elution,2019-11-01
-2.1.0,0257,Anti-complement immunofluorescence (ACIF),2019-11-01
-2.1.0,0258,GC/MS,2019-11-01
-2.1.0,0259,Nephelometry,2019-11-01
-2.1.0,0260,IgE immunoassay antibody,2019-11-01
-2.1.0,0261,Lymphocyte Microcytotoxicity Assay,2019-11-01
-2.1.0,0262,Spectrophotometry,2019-11-01
+2.1.0,0094,VITEK 2,2019-11-01
+2.1.0,0219,Potassium ferrocyanide stain,2019-11-01
+2.1.0,0099,"Immunoperoxidase, Peroxidase anti-peroxidase complex",2019-11-01
+2.1.0,0194,Kossa stain,2019-11-01
+2.1.0,0235,Thioflavine-S stain,2019-11-01
+2.1.0,0252,Radial immunodiffusion (RID),2019-11-01
+2.1.0,0221,Putchler modified Bennhold stain,2019-11-01
+2.1.0,VARIANCE.S,sample variance,2019-11-01
+2.1.0,0185,Hale's colloidal iron stain,2019-11-01
+2.1.0,0076,API 20A,2019-11-01
+2.1.0,0217,Perls' stain,2019-11-01
+2.1.0,0051,Anaerobic Culture,2019-11-01
+2.1.0,0196,Loeffler methylene blue stain,2019-11-01
+2.1.0,0098,"Immunoperoxidase, Avidin-Biotin Complex",2019-11-01
 2.1.0,0263,Atomic absorption spectrophotometry (AAS),2019-11-01
-2.1.0,0264,Ion selective electrode (ISE),2019-11-01
-2.1.0,0265,Gas chromatography (GC),2019-11-01
-2.1.0,0266,Isoelectric focusing (IEF),2019-11-01
+2.1.0,0193,Jones methenamine silver stain,2019-11-01
+2.1.0,0115,Polarizing light microscopy,2019-11-01
+2.1.0,0052,Chicken embryo culture,2019-11-01
+2.1.0,0175,Fontana-Masson silver stain,2019-11-01
+2.1.0,0034,Differential light absorption chemical test,2019-11-01
+2.1.0,0050,Aerobic Culture,2019-11-01
+2.1.0,0046,Tilt tube reptilase induced coagulation,2019-11-01
+2.1.0,0156,Basic Fuschin stain,2019-11-01
+2.1.0,0254,Immunofixation electrophoresis (IFE),2019-11-01
+2.1.0,0169,Congo red stain,2019-11-01
+2.1.0,0205,Methyl green stain,2019-11-01
+2.1.0,0262,Spectrophotometry,2019-11-01
+2.1.0,0280,Susceptibility Testing,2019-11-01
+2.1.0,0080,API 50 CH,2019-11-01
+2.1.0,0242,Disk dilution,2019-11-01
+2.1.0,0179,Gomori-Wheatly trichrome stain,2019-11-01
+2.1.0,0111,"Electron microscopy, negative stain",2019-11-01
+2.1.0,0133,Q-Beta Replicase or probe amplification category method,2019-11-01
+2.1.0,0213,Night blue stain,2019-11-01
 2.1.0,0267,Immunochemiluminescence,2019-11-01
-2.1.0,0268,Microparticle enzyme immunoassay (MEIA),2019-11-01
-2.1.0,0269,ICP/MS,2019-11-01
-2.1.0,0270,Immunoradiometric assay (IRMA),2019-11-01
-2.1.0,0271,Photo optical clot detection,2019-11-01
-2.1.0,0272,Minimum Inhibitory Concentration,2019-11-01
-2.1.0,0273,Viral Genotype Susceptibility,2019-11-01
-2.1.0,0274,Viral Phenotype Susceptibility,2019-11-01
+2.1.0,0265,Gas chromatography (GC),2019-11-01
+2.1.0,0154,Argentaffin silver stain,2019-11-01
+2.1.0,0092,VIDAS,2019-11-01
+2.1.0,0033,Chemical method,2019-11-01
+2.1.0,0135,Southern Blot,2019-11-01
+2.1.0,0230,Steiner silver stain,2019-11-01
+2.1.0,0249,Thin layer chromatography (TLC),2019-11-01
 2.1.0,0275,Gradient Strip,2019-11-01
+2.1.0,0251,Flow cytometry (FC),2019-11-01
+2.1.0,0093,Vitek,2019-11-01
+2.1.0,0101,Immunoassay,2019-11-01
+2.1.0,0209,Modified trichrome stain,2019-11-01
+2.1.0,0180,Gridley stain,2019-11-01
+2.1.0,0044,Coagulation,2019-11-01
+2.1.0,0153,Argentaffin stain,2019-11-01
+2.1.0,0040,Gas liquid chromatography,2019-11-01
+2.1.0,0271,Photo optical clot detection,2019-11-01
+2.1.0,0224,Rhodamine stain,2019-11-01
+2.1.0,0138,Western Blot,2019-11-01
+2.1.0,MODE,mode,2019-11-01
+2.1.0,0031,"Bioassay, qualitative",2019-11-01
+2.1.0,0137,Transcription Mediated Amplification,2019-11-01
+2.1.0,0148,Acridine orange stain,2019-11-01
+2.1.0,0059,"Quantitative microbial culture, pour plate",2019-11-01
+2.1.0,0064,Electrophoresis,2019-11-01
+2.1.0,0057,"Quantitative microbial culture, filter paper",2019-11-01
+2.1.0,0236,Three micron Giemsa stain,2019-11-01
+2.1.0,0165,Calcofluor white fluorescent stain,2019-11-01
+2.1.0,0123,In-situ hybridization,2019-11-01
+2.1.0,0131,Nucleic Acid Sequence Based Analysis,2019-11-01
+2.1.0,0200,Mallory-Heidenhain stain,2019-11-01
+2.1.0,_GeneticObservationMethod,GeneticObservationMethod,2019-11-01
+2.1.0,0095,Immune stain,2019-11-01
+2.1.0,0206,Methyl green pyronin stain,2019-11-01
+2.1.0,0122,Immune blot,2019-11-01
+2.1.0,0212,Neutral red stain,2019-11-01
+2.1.0,GINT,global introspection,2019-11-01
+2.1.0,0058,"Quantitative microbial culture, pad culture",2019-11-01
+2.1.0,0232,Sudan IVI stain,2019-11-01
+2.1.0,0240,"Antibiotic sensitivity, disk",2019-11-01
+2.1.0,0270,Immunoradiometric assay (IRMA),2019-11-01
+2.1.0,0116,Scanning electron microscopy,2019-11-01
+2.1.0,0192,Jones stain,2019-11-01
+2.1.0,0139,Flocculation,2019-11-01
+2.1.0,0256,Kleihauer-Betke acid elution,2019-11-01
+2.1.0,0120,Branched Chain DNA,2019-11-01
+2.1.0,0259,Nephelometry,2019-11-01
+2.1.0,0070,ELISA,2019-11-01
+2.1.0,0103,"Immunoassay, qualitative; single step",2019-11-01
+2.1.0,STDEV.S,sample standard deviation,2019-11-01
+2.1.0,0147,Acid phosphatase stain,2019-11-01
+2.1.0,VDOC,document verification,2019-11-01
+2.1.0,0106,"Immunoassay, semi-quantitative; single step",2019-11-01
+2.1.0,0273,Viral Genotype Susceptibility,2019-11-01
+2.1.0,0062,Agar diffusion,2019-11-01
+2.1.0,0078,API 20E,2019-11-01
+2.1.0,0229,Specific esterase stain,2019-11-01
+2.1.0,_ObservationMethodAggregate,observation method aggregate,2019-11-01
+2.1.0,0109,Electron microscopy,2019-11-01
+2.1.0,0077,API 20C AUX,2019-11-01
+2.1.0,0167,Carmine stain,2019-11-01
+2.1.0,0030,Mouse intercerebral inoculation,2019-11-01
+2.1.0,0164,Butyrate-esterase stain,2019-11-01
+2.1.0,0174,Fite-Farco stain,2019-11-01
+2.1.0,0105,"Immunoassay, semi-quantitative; multiple step",2019-11-01
+2.1.0,0141,Milk ring test,2019-11-01
+2.1.0,0214,Non-specific esterase stain,2019-11-01
+2.1.0,0114,"Microscopy, Light",2019-11-01
+2.1.0,0157,Bennhold stain,2019-11-01
+2.1.0,MAX,maxima,2019-11-01
+2.1.0,0234,Supravital stain,2019-11-01
+2.1.0,0237,Vassar-Culling stain,2019-11-01
+2.1.0,0032,"Bioassay, quantitative",2019-11-01
+2.1.0,0130,Nucleic acid reverse transcription,2019-11-01
+2.1.0,AVERAGE,average,2019-11-01
+2.1.0,0183,Grocott methenamine silver stain,2019-11-01
+2.1.0,0066,"Electrophoresis, citrate agar",2019-11-01
+2.1.0,0129,Nucleic acid probe with target amplification,2019-11-01
+2.1.0,0143,Acid fast stain,2019-11-01
+2.1.0,0100,"Immunoperoxidase, Protein A-peroxidase complex",2019-11-01
+2.1.0,0152,Alcian blue with Periodic acid Schiff stain,2019-11-01
+2.1.0,0260,IgE immunoassay antibody,2019-11-01
+2.1.0,0068,Polyacrylamide gel electrophoresis,2019-11-01
+2.1.0,0150,Alazarin red S stain,2019-11-01
+2.1.0,0084,API Staph,2019-11-01
+2.1.0,0117,Transmission electron microscopy,2019-11-01
+2.1.0,0158,Bennhold's Congo red stain,2019-11-01
+2.1.0,0055,"Quantitative microbial culture, cup",2019-11-01
+2.1.0,MEDIAN,median,2019-11-01
+2.1.0,VARIANCE.P,population variance,2019-11-01
+2.1.0,0161,Bleach stain,2019-11-01
+2.1.0,0202,Mayer mucicarmine stain,2019-11-01
+2.1.0,0269,ICP/MS,2019-11-01
+2.1.0,VTOKEN,electronic token verification,2019-11-01
+2.1.0,0079,API 20NE,2019-11-01
+2.1.0,0036,Dipstick colorimetric laboratory test,2019-11-01
+2.1.0,0060,"Quantitative microbial culture, surface streak",2019-11-01
+2.1.0,0190,Holzer stain,2019-11-01
+2.1.0,0278,Agar screen,2019-11-01
+2.1.0,BYCL,bayesian calculation,2019-11-01
+2.1.0,0279,Disk induction,2019-11-01
+2.1.0,0272,Minimum Inhibitory Concentration,2019-11-01
+2.1.0,0228,Silver stain,2019-11-01
+2.1.0,0258,GC/MS,2019-11-01
+2.1.0,0104,Radioimmunoassay,2019-11-01
+2.1.0,0048,Manual cell count,2019-11-01
+2.1.0,0170,Cresyl echt violet stain,2019-11-01
+2.1.0,0043,Protein A affinity chromatography,2019-11-01
+2.1.0,ALGM,algorithm,2019-11-01
+2.1.0,0277,Serum bactericidal titer,2019-11-01
+2.1.0,0176,Fouchet stain,2019-11-01
+2.1.0,0039,Affinity chromatography,2019-11-01
+2.1.0,0268,Microparticle enzyme immunoassay (MEIA),2019-11-01
+2.1.0,0110,Electron microscopy tomography,2019-11-01
+2.1.0,0088,Phage susceptibility typing,2019-11-01
+2.1.0,0201,Masson trichrome stain,2019-11-01
+2.1.0,0155,Azure-eosin stain,2019-11-01
+2.1.0,0119,3 Self-Sustaining Sequence Replication,2019-11-01
+2.1.0,0173,Dieterle silver impregnation stain,2019-11-01
+2.1.0,0188,Hematoxylin and eosin stain,2019-11-01
+2.1.0,0187,Harris regressive hematoxylin and eosin stain,2019-11-01
+2.1.0,0198,Luxol fast blue with Periodic acid-Schiff stain,2019-11-01
+2.1.0,0126,Nucleic Acid Probe,2019-11-01
+2.1.0,0082,API Coryne,2019-11-01
+2.1.0,0112,"Electron microscopy, thick section",2019-11-01
+2.1.0,0250,EMIT,2019-11-01
+2.1.0,0257,Anti-complement immunofluorescence (ACIF),2019-11-01
+2.1.0,0274,Viral Phenotype Susceptibility,2019-11-01
+2.1.0,0207,Modified Gomori-Wheatly trichrome stain,2019-11-01
+2.1.0,COUNT,count,2019-11-01
+2.1.0,0073,Kinetic ELISA,2019-11-01
+2.1.0,0182,Grocott stain,2019-11-01
+2.1.0,0195,Lawson-Van Gieson stain,2019-11-01
+2.1.0,0041,High performance liquid chromatography,2019-11-01
+2.1.0,0266,Isoelectric focusing (IEF),2019-11-01
+2.1.0,0159,Bielschowsky stain,2019-11-01
+2.1.0,0247,Turbidometric,2019-11-01
+2.1.0,0128,Nucleic acid probe with amplification,2019-11-01
+2.1.0,0218,Phosphotungstic acid-hematoxylin stain,2019-11-01
+2.1.0,0075,API 20 Strep,2019-11-01
+2.1.0,0225,Safranin stain,2019-11-01
+2.1.0,0264,Ion selective electrode (ISE),2019-11-01
+2.1.0,STDEV.P,population standard deviation,2019-11-01
+2.1.0,VREG,registry verification,2019-11-01
+2.1.0,0081,API An-IDENT,2019-11-01
+2.1.0,0121,Hybridization Protection Assay,2019-11-01
+2.1.0,0134,Restriction Fragment Length Polymorphism,2019-11-01
+2.1.0,0067,Immunoelectrophoresis,2019-11-01
+2.1.0,0083,API Rapid 20E,2019-11-01
+2.1.0,0245,"Minimum Inhibitory Concentration, macrodilution",2019-11-01
+2.1.0,0136,Strand Displacement Amplification,2019-11-01
+2.1.0,0069,Starch gel electrophoresis,2019-11-01
+2.1.0,0146,"Acid fast stain, Ziehl-Neelsen",2019-11-01
+2.1.0,0049,"Platelet count, Rees-Ecker",2019-11-01
+2.1.0,0238,Vital Stain,2019-11-01
+2.1.0,0151,Alcian blue stain,2019-11-01
+2.1.0,0163,Brown-Brenn stain,2019-11-01
+2.1.0,0160,Bielschowsky's silver stain,2019-11-01
+2.1.0,0142,Precipitin,2019-11-01
+2.1.0,0203,Mayers progressive hematoxylin and eosin stain,2019-11-01
+2.1.0,0184,Hale's colloidal ferric oxide stain,2019-11-01
+2.1.0,0065,Agaorse gel electrophoresis,2019-11-01
+2.1.0,0204,May-Grunwald Giemsa stain,2019-11-01
+2.1.0,MIN,minima,2019-11-01
+2.1.0,0091,Staphaurex,2019-11-01
+2.1.0,0168,Churukian-Schenk stain,2019-11-01
+2.1.0,0189,Highman stain,2019-11-01
+2.1.0,0054,Microaerophilic Culture,2019-11-01
+2.1.0,0140,Immune precipitation,2019-11-01
+2.1.0,0127,Nucleic acid probe,2019-11-01
+2.1.0,0113,"Electron microscopy, thin section",2019-11-01
+2.1.0,0071,"ELISA, antigen capture",2019-11-01
+2.1.0,0261,Lymphocyte Microcytotoxicity Assay,2019-11-01
+2.1.0,_VerificationMethod,VerificationMethod,2019-11-01
+2.1.0,0166,Carbol-fuchsin stain,2019-11-01
+2.1.0,0035,Dipstick,2019-11-01
+2.1.0,0199,MacNeal's tetrachrome blood stain,2019-11-01
+2.1.0,0216,Orcein stain,2019-11-01
 2.1.0,0275a,Minimum Lethal Concentration (MLC),2019-11-01
 2.1.0,0276,Slow Mycobacteria Susceptibility,2019-11-01
-2.1.0,0277,Serum bactericidal titer,2019-11-01
-2.1.0,0278,Agar screen,2019-11-01
-2.1.0,0279,Disk induction,2019-11-01
-2.1.0,0280,Susceptibility Testing,2019-11-01
-2.1.0,ALGM,algorithm,2019-11-01
-2.1.0,AVERAGE,average,2019-11-01
-2.1.0,BYCL,bayesian calculation,2019-11-01
-2.1.0,COUNT,count,2019-11-01
-2.1.0,GINT,global introspection,2019-11-01
-2.1.0,MAX,maxima,2019-11-01
-2.1.0,MEDIAN,median,2019-11-01
-2.1.0,MIN,minima,2019-11-01
-2.1.0,MODE,mode,2019-11-01
+2.1.0,0124,Ligase Chain Reaction,2019-11-01
+2.1.0,0181,Grimelius silver stain,2019-11-01
+2.1.0,0186,Hansel stain,2019-11-01
+2.1.0,0178,Gomori methenamine silver stain,2019-11-01
+2.1.0,0145,"Acid fast stain, Kinyoun's cold carbolfuchsin",2019-11-01
 2.1.0,PCR,PCR,2019-11-01
-2.1.0,STDEV.P,population standard deviation,2019-11-01
-2.1.0,STDEV.S,sample standard deviation,2019-11-01
 2.1.0,SUM,sum,2019-11-01
-2.1.0,VARIANCE.P,population variance,2019-11-01
-2.1.0,VARIANCE.S,sample variance,2019-11-01
-2.1.0,VDOC,document verification,2019-11-01
-2.1.0,VREG,registry verification,2019-11-01
-2.1.0,VTOKEN,electronic token verification,2019-11-01
+2.1.0,0085,API ZYM,2019-11-01
+2.1.0,0144,"Acid fast stain, fluorochrome",2019-11-01
+2.1.0,0061,Somatic Cell culture,2019-11-01
+2.1.0,0074,"ELISA, peroxidase-antiperoxidase",2019-11-01
 2.1.0,VVOICE,voice-based verification,2019-11-01
-2.1.0,_DecisionObservationMethod,DecisionObservationMethod,2019-11-01
-2.1.0,_GeneticObservationMethod,GeneticObservationMethod,2019-11-01
-2.1.0,_ObservationMethodAggregate,observation method aggregate,2019-11-01
-2.1.0,_VerificationMethod,VerificationMethod,2019-11-01
+2.1.0,0222,Quinacrine fluorescent stain,2019-11-01
+2.1.0,0045,Tilt tube coagulation time,2019-11-01
+2.1.0,0086,Bacterial identification,2019-11-01
+2.1.0,0087,mini VIDAS,2019-11-01
+2.1.0,0108,Darkfield microscopy,2019-11-01
+2.1.0,0226,Schmorl stain,2019-11-01
+2.1.0,0053,Delayed secondary enrichment,2019-11-01
+2.1.0,0072,"ELISA, avidin biotin peroxidase complex",2019-11-01
+2.1.0,0211,Mucicarmine stain,2019-11-01
+2.1.0,0118,Transparent tape direct examination,2019-11-01
+2.1.0,0197,Luxol fast blue with cresyl violet stain,2019-11-01
+2.1.0,0162,Bodian stain,2019-11-01
+2.1.0,0042,Liquid Chromatography,2019-11-01
+2.1.0,0177,Gomori stain,2019-11-01
+2.1.0,0208,Modified Masson trichrome stain,2019-11-01
+2.1.0,0239,von Kossa stain,2019-11-01
+2.1.0,0244,"Minimum bactericidal concentration test, microdilution",2019-11-01
+2.1.0,0047,Automated count,2019-11-01
+2.1.0,0063,Agar Gel Immunodiffusion,2019-11-01
+2.1.0,0210,Movat pentachrome stain,2019-11-01
+2.1.0,0172,De Galantha stain,2019-11-01
+2.1.0,0038,Chromatography,2019-11-01
+2.1.0,0231,Sudan III stain,2019-11-01
+2.1.0,0246,"Minimum Inhibitory Concentration, microdilution",2019-11-01
+2.1.0,0037,Test strip,2019-11-01
+2.1.0,0255,Equilibrium dialysis,2019-11-01
+2.1.0,0220,Prussian blue stain,2019-11-01
+2.1.0,0233,Sulfated alcian blue stain,2019-11-01
+2.1.0,0132,Polymerase chain reaction,2019-11-01
+2.1.0,0191,Iron hematoxylin stain,2019-11-01
+2.1.0,0089,Quad-FERM+,2019-11-01
+2.1.0,0090,RAPIDEC Staph,2019-11-01
+2.1.0,0243,"Minimum bactericidal concentration test, macrodilution",2019-11-01
+2.1.0,0171,Crystal violet stain,2019-11-01
