@@ -1,127 +1,127 @@
 version,code,description,release_date
-"",ABS,Abcess,2018-08-12
-"",AMN,Amniotic fluid,2018-08-12
-"",ASP,Aspirate,2018-08-12
-"",BBL,Blood bag,2018-08-12
-"",BDY,Whole body,2018-08-12
-"",BIFL,Bile fluid,2018-08-12
-"",BLD,Whole blood,2018-08-12
-"",BLDA,Blood arterial,2018-08-12
-"",BLDC,Blood capillary,2018-08-12
-"",BLDCO,Blood - cord,2018-08-12
-"",BLDV,Blood venous,2018-08-12
-"",BON,Bone,2018-08-12
-"",BPH,Basophils,2018-08-12
-"",BPU,Blood product unit,2018-08-12
-"",BRN,Burn,2018-08-12
-"",BRO,Bronchial,2018-08-12
-"",BRTH,Exhaled gas (=breath),2018-08-12
-"",CALC,Calculus (=Stone),2018-08-12
-"",CDM,Cardiac muscle,2018-08-12
-"",CNJT,Conjunctiva,2018-08-12
-"",CNL,Cannula,2018-08-12
-"",COL,Colostrum,2018-08-12
-"",CRN,Cornea,2018-08-12
-"",CSF,Cerebral spinal fluid,2018-08-12
-"",CTP,Catheter tip,2018-08-12
-"",CUR,Curettage,2018-08-12
-"",CVM,Cervical mucus,2018-08-12
-"",CVX,Cervix,2018-08-12
 "",CYST,Cyst,2018-08-12
-"",DIAF,Dialysis fluid,2018-08-12
-"",DOSE,Dose med or substance,2018-08-12
-"",DRN,Drain,2018-08-12
-"",DUFL,Duodenal fluid,2018-08-12
-"",EAR,Ear,2018-08-12
 "",EARW,Ear wax (cerumen),2018-08-12
-"",ELT,Electrode,2018-08-12
-"",ENDC,Endocardium,2018-08-12
-"",ENDM,Endometrium,2018-08-12
-"",EOS,Eosinophils,2018-08-12
-"",EXG,Exhaled gas (=breath),2018-08-12
-"",EYE,Eye,2018-08-12
-"",FIB,Fibroblasts,2018-08-12
-"",FIST,Fistula,2018-08-12
-"",FLT,Filter,2018-08-12
-"",FLU,"Body fluid, unsp",2018-08-12
-"",FOOD,Food sample,2018-08-12
-"",GAS,Gas,2018-08-12
-"",GAST,Gastric fluid/contents,2018-08-12
-"",GEN,Genital,2018-08-12
-"",GENC,Genital cervix,2018-08-12
-"",GENF,Genital fluid,2018-08-12
-"",GENL,Genital lochia,2018-08-12
-"",GENV,Genital vaginal,2018-08-12
-"",HAR,Hair,2018-08-12
-"",IHG,Inhaled Gas,2018-08-12
-"",ISLT,Isolate,2018-08-12
-"",IT,Intubation tube,2018-08-12
-"",LAM,Lamella,2018-08-12
-"",LIQ,Liquid NOS,2018-08-12
-"",LN,Line,2018-08-12
-"",LNA,Line arterial,2018-08-12
-"",LNV,Line venous,2018-08-12
-"",LYM,Lymphocytes,2018-08-12
-"",MAC,Macrophages,2018-08-12
-"",MAR,Marrow (bone),2018-08-12
-"",MBLD,Menstrual blood,2018-08-12
-"",MEC,Meconium,2018-08-12
-"",MILK,Breast milk,2018-08-12
-"",MLK,Milk,2018-08-12
-"",NAIL,Nail,2018-08-12
-"",NOS,Nose (nasal passage),2018-08-12
-"",PAFL,Pancreatic fluid,2018-08-12
-"",PAT,Patient,2018-08-12
-"",PLAS,Plasma,2018-08-12
-"",PLB,Plasma bag,2018-08-12
+"",CSF,Cerebral spinal fluid,2018-08-12
+"",BLDA,Blood arterial,2018-08-12
+"",UMED,Unknown medicine,2018-08-12
+"",SKM,Skeletal muscle,2018-08-12
+"",CUR,Curettage,2018-08-12
 "",PLC,Placenta,2018-08-12
-"",PLR,Pleural fluid (thoracentesis fld),2018-08-12
-"",PMN,Polymorphonuclear neutrophils,2018-08-12
-"",PPP,Platelet poor plasma,2018-08-12
+"",SMPLS,Seminal plasma,2018-08-12
+"",CVX,Cervix,2018-08-12
+"",BRN,Burn,2018-08-12
+"",SPTC,Sputum - coughed,2018-08-12
+"",TISS,"Tissue, unspecified",2018-08-12
+"",TISG,Tissue gall bladder,2018-08-12
+"",CTP,Catheter tip,2018-08-12
+"",PAT,Patient,2018-08-12
+"",LYM,Lymphocytes,2018-08-12
+"",STON,Calculus (=Stone),2018-08-12
 "",PRP,Platelet rich plasma,2018-08-12
 "",PRT,Peritoneal fluid /ascites,2018-08-12
-"",PUS,Pus,2018-08-12
-"",RBC,Erythrocytes,2018-08-12
-"",SAL,Saliva,2018-08-12
-"",SER,Serum,2018-08-12
-"",SKM,Skeletal muscle,2018-08-12
-"",SKN,Skin,2018-08-12
-"",SMN,Seminal fluid,2018-08-12
-"",SMPLS,Seminal plasma,2018-08-12
-"",SNV,Synovial fluid (Joint fluid),2018-08-12
-"",SPRM,Spermatozoa,2018-08-12
-"",SPT,Sputum,2018-08-12
-"",SPTC,Sputum - coughed,2018-08-12
-"",SPTT,Sputum - tracheal aspirate,2018-08-12
-"",STL,Stool = Fecal,2018-08-12
-"",STON,Calculus (=Stone),2018-08-12
-"",SWT,Sweat,2018-08-12
-"",TEAR,Tears,2018-08-12
-"",THRB,Thrombocyte (platelet),2018-08-12
-"",THRT,Throat,2018-08-12
-"",TISG,Tissue gall bladder,2018-08-12
-"",TISPL,Tissue placenta,2018-08-12
-"",TISS,"Tissue, unspecified",2018-08-12
+"",ENDC,Endocardium,2018-08-12
+"",ENDM,Endometrium,2018-08-12
+"",DOSE,Dose med or substance,2018-08-12
+"",CVM,Cervical mucus,2018-08-12
+"",BPH,Basophils,2018-08-12
+"",LNA,Line arterial,2018-08-12
 "",TISU,Tissue ulcer,2018-08-12
-"",TLGI,Tissue large intestine,2018-08-12
+"",PMN,Polymorphonuclear neutrophils,2018-08-12
+"",GEN,Genital,2018-08-12
+"",MAR,Marrow (bone),2018-08-12
+"",CNJT,Conjunctiva,2018-08-12
+"",BLDV,Blood venous,2018-08-12
+"",MAC,Macrophages,2018-08-12
+"",DIAF,Dialysis fluid,2018-08-12
+"",EAR,Ear,2018-08-12
+"",EOS,Eosinophils,2018-08-12
+"",THRT,Throat,2018-08-12
+"",BRTH,Exhaled gas (=breath),2018-08-12
+"",SWT,Sweat,2018-08-12
+"",ELT,Electrode,2018-08-12
+"",GENF,Genital fluid,2018-08-12
 "",TLNG,Tissue lung,2018-08-12
-"",TSMI,Tissue small intestine Tissue ulcer,2018-08-12
-"",TUB,"Tube, unspecified",2018-08-12
-"",ULC,Ulcer,2018-08-12
-"",UMB,Umbilical blood,2018-08-12
-"",UMED,Unknown medicine,2018-08-12
-"",UR,Urine,2018-08-12
 "",URC,Urine clean catch,2018-08-12
-"",URNS,Urine sediment,2018-08-12
-"",URT,Urine catheter,2018-08-12
-"",URTH,Urethra,2018-08-12
+"",SMN,Seminal fluid,2018-08-12
+"",PPP,Platelet poor plasma,2018-08-12
+"",TISPL,Tissue placenta,2018-08-12
+"",GAS,Gas,2018-08-12
+"",TEAR,Tears,2018-08-12
+"",MILK,Breast milk,2018-08-12
+"",LN,Line,2018-08-12
 "",USUB,Unknown substance,2018-08-12
 "",VOM,Vomitus,2018-08-12
-"",WAT,Water,2018-08-12
+"",MEC,Meconium,2018-08-12
+"",FLT,Filter,2018-08-12
+"",DUFL,Duodenal fluid,2018-08-12
+"",RBC,Erythrocytes,2018-08-12
+"",IT,Intubation tube,2018-08-12
+"",COL,Colostrum,2018-08-12
+"",SPT,Sputum,2018-08-12
+"",UMB,Umbilical blood,2018-08-12
+"",FOOD,Food sample,2018-08-12
+"",FIB,Fibroblasts,2018-08-12
 "",WBC,Leukocytes,2018-08-12
-"",WICK,Wick,2018-08-12
-"",WND,Wound,2018-08-12
-"",WNDA,Wound abscess,2018-08-12
-"",WNDD,Wound drainage,2018-08-12
+"",PLAS,Plasma,2018-08-12
 "",WNDE,Wound exudate,2018-08-12
+"",NOS,Nose (nasal passage),2018-08-12
+"",SKN,Skin,2018-08-12
+"",SPTT,Sputum - tracheal aspirate,2018-08-12
+"",URNS,Urine sediment,2018-08-12
+"",BDY,Whole body,2018-08-12
+"",CNL,Cannula,2018-08-12
+"",BIFL,Bile fluid,2018-08-12
+"",LAM,Lamella,2018-08-12
+"",URTH,Urethra,2018-08-12
+"",CALC,Calculus (=Stone),2018-08-12
+"",LIQ,Liquid NOS,2018-08-12
+"",WND,Wound,2018-08-12
+"",HAR,Hair,2018-08-12
+"",TSMI,Tissue small intestine Tissue ulcer,2018-08-12
+"",URT,Urine catheter,2018-08-12
+"",FIST,Fistula,2018-08-12
+"",WICK,Wick,2018-08-12
+"",UR,Urine,2018-08-12
+"",SER,Serum,2018-08-12
+"",STL,Stool = Fecal,2018-08-12
 "",_SpecimenEntityType,SpecimenEntityType,2018-08-12
+"",ULC,Ulcer,2018-08-12
+"",AMN,Amniotic fluid,2018-08-12
+"",CRN,Cornea,2018-08-12
+"",SPRM,Spermatozoa,2018-08-12
+"",SAL,Saliva,2018-08-12
+"",GENV,Genital vaginal,2018-08-12
+"",EXG,Exhaled gas (=breath),2018-08-12
+"",PUS,Pus,2018-08-12
+"",LNV,Line venous,2018-08-12
+"",GENL,Genital lochia,2018-08-12
+"",WAT,Water,2018-08-12
+"",THRB,Thrombocyte (platelet),2018-08-12
+"",DRN,Drain,2018-08-12
+"",BRO,Bronchial,2018-08-12
+"",IHG,Inhaled Gas,2018-08-12
+"",PLR,Pleural fluid (thoracentesis fld),2018-08-12
+"",SNV,Synovial fluid (Joint fluid),2018-08-12
+"",MBLD,Menstrual blood,2018-08-12
+"",CDM,Cardiac muscle,2018-08-12
+"",WNDA,Wound abscess,2018-08-12
+"",MLK,Milk,2018-08-12
+"",PAFL,Pancreatic fluid,2018-08-12
+"",BLD,Whole blood,2018-08-12
+"",GENC,Genital cervix,2018-08-12
+"",ASP,Aspirate,2018-08-12
+"",BON,Bone,2018-08-12
+"",FLU,"Body fluid, unsp",2018-08-12
+"",BPU,Blood product unit,2018-08-12
+"",NAIL,Nail,2018-08-12
+"",TLGI,Tissue large intestine,2018-08-12
+"",BLDCO,Blood - cord,2018-08-12
+"",WNDD,Wound drainage,2018-08-12
+"",BBL,Blood bag,2018-08-12
+"",ISLT,Isolate,2018-08-12
+"",GAST,Gastric fluid/contents,2018-08-12
+"",BLDC,Blood capillary,2018-08-12
+"",TUB,"Tube, unspecified",2018-08-12
+"",EYE,Eye,2018-08-12
+"",PLB,Plasma bag,2018-08-12
+"",ABS,Abcess,2018-08-12
