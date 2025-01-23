@@ -619,8 +619,8 @@ version,code,description,release_date
 7.0.0,COJR,certified orthopedic joint replacement care,2019-12-15
 7.0.0,COL,collision coverage policy,2019-12-15
 7.0.0,COMC,certified occupational medicine care,2019-12-15
-7.0.0,COMPLY,Compliance Alert,2019-12-15
 7.0.0,COMPLY,,2019-12-15
+7.0.0,COMPLY,Compliance Alert,2019-12-15
 7.0.0,COMPT,compartment,2019-12-15
 7.0.0,CONC,certified oncology care,2019-12-15
 7.0.0,COND,Condition Alert,2019-12-15
@@ -736,8 +736,8 @@ version,code,description,release_date
 7.0.0,DNTL,Dental,2019-12-15
 7.0.0,DOB,date of birth information sensitivity,2019-12-15
 7.0.0,DOCUMENT,document,2019-12-15
-7.0.0,DOSE,Dosage problem,2019-12-15
 7.0.0,DOSE,,2019-12-15
+7.0.0,DOSE,Dosage problem,2019-12-15
 7.0.0,DOSECOND,dosage-condition alert,2019-12-15
 7.0.0,DOSEDUR,Dose-Duration Alert,2019-12-15
 7.0.0,DOSEDURH,Dose-Duration High Alert,2019-12-15
@@ -833,8 +833,8 @@ version,code,description,release_date
 7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
 7.0.0,FFPS,,2019-12-15
 7.0.0,FFPS,,2019-12-15
-7.0.0,FFS,fee for service,2019-12-15
 7.0.0,FFS,,2019-12-15
+7.0.0,FFS,fee for service,2019-12-15
 7.0.0,FFSS,"first fill, partial strength",2019-12-15
 7.0.0,FFSTOP,fee for service top off,2019-12-15
 7.0.0,FIBRIN,Fibrin,2019-12-15
@@ -846,8 +846,8 @@ version,code,description,release_date
 7.0.0,FLD,field,2019-12-15
 7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
 7.0.0,FMCOMPT,financial management compartment,2019-12-15
-7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
 7.0.0,FNAINT,,2019-12-15
+7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
 7.0.0,FNLFEE,final fee,2019-12-15
 7.0.0,FOMTRNS,fomite transmission,2019-12-15
 7.0.0,FOOD,Food Interaction Alert,2019-12-15
@@ -958,10 +958,10 @@ version,code,description,release_date
 7.0.0,ISSUE,detected issue,2019-12-15
 7.0.0,ITMCNT,items counted,2019-12-15
 7.0.0,KEY,keyword,2019-12-15
-7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY204,,2019-12-15
-7.0.0,KEY205,Duplicate key identifier,2019-12-15
+7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY205,,2019-12-15
+7.0.0,KEY205,Duplicate key identifier,2019-12-15
 7.0.0,KEY206,non-matching identification,2019-12-15
 7.0.0,KSUBJ,knowledge subject,2019-12-15
 7.0.0,KSUBT,knowledge subtopic,2019-12-15
@@ -982,8 +982,8 @@ version,code,description,release_date
 7.0.0,LEN_RANGE,length out of range,2019-12-15
 7.0.0,LEN_SHORT,length is too short,2019-12-15
 7.0.0,LF,low fat,2019-12-15
-7.0.0,LFEMX,,2019-12-15
 7.0.0,LFEMX,life time maximum,2019-12-15
+7.0.0,LFEMX,,2019-12-15
 7.0.0,LGPC,licensed general physician care,2019-12-15
 7.0.0,LIFE,life insurance policy,2019-12-15
 7.0.0,LIPEMIA,Lipemia,2019-12-15
@@ -1031,8 +1031,8 @@ version,code,description,release_date
 7.0.0,MISSMAND,mandatory element missing,2019-12-15
 7.0.0,MLREV,medication list review task,2019-12-15
 7.0.0,MODEL,model,2019-12-15
-7.0.0,MONTH,month,2019-12-15
 7.0.0,MONTH,,2019-12-15
+7.0.0,MONTH,month,2019-12-15
 7.0.0,MS,Manufacturer Sample,2019-12-15
 7.0.0,MSD,measurement start date,2019-12-15
 7.0.0,MSRADJ,risk adjustment,2019-12-15
@@ -1093,8 +1093,8 @@ version,code,description,release_date
 7.0.0,NUMEX,numerator exclusions,2019-12-15
 7.0.0,O,In Process,2019-12-15
 7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,,2019-12-15
 7.0.0,OBSA,Observation Alert,2019-12-15
+7.0.0,OBSA,,2019-12-15
 7.0.0,OBSANTC,antigen count,2019-12-15
 7.0.0,OBSANTV,antigen validity,2019-12-15
 7.0.0,OBSENC,observation encounter,2019-12-15
@@ -1164,8 +1164,8 @@ version,code,description,release_date
 7.0.0,PEALRT,pediatric alert,2019-12-15
 7.0.0,PED,Pediatrics,2019-12-15
 7.0.0,PERFEE,periodic fee,2019-12-15
-7.0.0,PERIOD,period,2019-12-15
 7.0.0,PERIOD,,2019-12-15
+7.0.0,PERIOD,period,2019-12-15
 7.0.0,PERMBNS,performance bonus,2019-12-15
 7.0.0,PERSISTLABEL,persist security label,2019-12-15
 7.0.0,PHAR,Pharmaceutical,2019-12-15
@@ -1180,8 +1180,8 @@ version,code,description,release_date
 7.0.0,PNC,property and casualty insurance policy,2019-12-15
 7.0.0,POINT,point,2019-12-15
 7.0.0,POLY,polyline,2019-12-15
-7.0.0,POS,point of service policy,2019-12-15
 7.0.0,POS,,2019-12-15
+7.0.0,POS,point of service policy,2019-12-15
 7.0.0,PPO,preferred provider organization policy,2019-12-15
 7.0.0,PPRD,prior period adjustment,2019-12-15
 7.0.0,PRA,,2019-12-15
@@ -1349,8 +1349,8 @@ version,code,description,release_date
 7.0.0,TBS,trial balance partial strength,2019-12-15
 7.0.0,TEACHER,teacher,2019-12-15
 7.0.0,TF,Trial Fill,2019-12-15
-7.0.0,TFS,trial fill partial strength,2019-12-15
 7.0.0,TFS,,2019-12-15
+7.0.0,TFS,trial fill partial strength,2019-12-15
 7.0.0,TFS,,2019-12-15
 7.0.0,TIME,timing detected issue,2019-12-15
 7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
@@ -1409,10 +1409,10 @@ version,code,description,release_date
 7.0.0,VRXINV,vision dispense invoice,2019-12-15
 7.0.0,W,Ward,2019-12-15
 7.0.0,WATTRNS,water-borne transmission,2019-12-15
-7.0.0,WCBPOL,worker's compensation,2019-12-15
 7.0.0,WCBPOL,,2019-12-15
-7.0.0,WEEK,week,2019-12-15
+7.0.0,WCBPOL,worker's compensation,2019-12-15
 7.0.0,WEEK,,2019-12-15
+7.0.0,WEEK,week,2019-12-15
 7.0.0,WELLREMLE,wellness reminder list entry,2019-12-15
 7.0.0,WELLREMLREV,wellness reminder list review,2019-12-15
 7.0.0,WGHT,,2019-12-15
@@ -1422,8 +1422,8 @@ version,code,description,release_date
 7.0.0,WRKCOMP,(workers compensation program,2019-12-15
 7.0.0,X,Container Unavailable,2019-12-15
 7.0.0,XRAY,x-ray,2019-12-15
-7.0.0,YEAR,year,2019-12-15
 7.0.0,YEAR,,2019-12-15
+7.0.0,YEAR,year,2019-12-15
 7.0.0,_ActPatientAnnotationType,ActPatientAnnotationType,2019-12-15
 7.0.0,_ActUSPrivacyLaw,_ActUSPrivacyLaw,2019-12-15
 7.0.0,_ImmunizationObservationType,ImmunizationObservationType,2019-12-15
