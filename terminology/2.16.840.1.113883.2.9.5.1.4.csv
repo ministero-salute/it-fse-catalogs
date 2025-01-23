@@ -1,1161 +1,1161 @@
 version,code,description,release_date
-7.0.0,(ActTrustPolicyType) Abstract,,2019-12-15
-7.0.0,(SECINTPRVOBS) Abstract,,2019-12-15
-7.0.0,(SECOBS) Abstract,,2019-12-15
-7.0.0,(SECTRSTOBS) Abstract,,2019-12-15
-7.0.0,(_ActAccountCode) Abstract,,2019-12-15
-7.0.0,(_ActAdjudicationCode) Abstract,,2019-12-15
-7.0.0,(_ActAdjudicationGroupCode) Abstract,,2019-12-15
-7.0.0,(_ActAdjudicationResultActionCode) Abstract,,2019-12-15
-7.0.0,(_ActAdministrativeAuthorizationDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_ActAdministrativeDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_ActAdministrativeDetectedIssueManagementCode) Abstract,,2019-12-15
-7.0.0,(_ActAdministrativeRuleDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_ActBillableModifierCode) Abstract,,2019-12-15
-7.0.0,(_ActBillableServiceCode) Abstract,,2019-12-15
-7.0.0,(_ActBillingArrangementCode) Abstract,,2019-12-15
-7.0.0,(_ActBoundedROICode) Abstract,,2019-12-15
-7.0.0,(_ActCareProvisionCode) Abstract,,2019-12-15
-7.0.0,(_ActClaimAttachmentCategoryCode) Abstract,,2019-12-15
-7.0.0,(_ActConsentDirective) Abstract,,2019-12-15
-7.0.0,(_ActConsentType) Abstract,,2019-12-15
-7.0.0,(_ActContainerRegistrationCode) Abstract,,2019-12-15
-7.0.0,(_ActControlVariable) Abstract,,2019-12-15
-7.0.0,(_ActCoverageAuthorizationConfirmationCode) Abstract,,2019-12-15
-7.0.0,(_ActCoverageConfirmationCode) Abstract,,2019-12-15
-7.0.0,(_ActCoverageEligibilityConfirmationCode) Abstract,,2019-12-15
-7.0.0,(_ActCoverageLimitCode) Abstract,,2019-12-15
-7.0.0,(_ActCoverageQuantityLimitCode) Abstract,,2019-12-15
-7.0.0,(_ActCoverageTypeCode) Abstract,,2019-12-15
-7.0.0,(_ActCoveredPartyLimitCode) Abstract,,2019-12-15
-7.0.0,(_ActCredentialedCareCode) Abstract,,2019-12-15
-7.0.0,(_ActCredentialedCareProvisionPersonCode) Abstract,,2019-12-15
-7.0.0,(_ActCredentialedCareProvisionProgramCode) Abstract,,2019-12-15
-7.0.0,(_ActDetectedIssueManagementCode) Abstract,,2019-12-15
-7.0.0,(_ActEncounterAccommodationCode) Abstract,,2019-12-15
-7.0.0,(_ActEncounterCode) Abstract,,2019-12-15
-7.0.0,(_ActExposureCode) Abstract,,2019-12-15
-7.0.0,(_ActFinancialTransactionCode) Abstract,,2019-12-15
-7.0.0,(_ActHealthInsuranceTypeCode) Abstract,,2019-12-15
-7.0.0,(_ActIncidentCode) Abstract,,2019-12-15
-7.0.0,(_ActInformationAccessCode) Abstract,,2019-12-15
-7.0.0,(_ActInformationAccessContextCode) Abstract,,2019-12-15
-7.0.0,(_ActInformationCategoryCode) Abstract,,2019-12-15
-7.0.0,(_ActInformationSensitivityPolicy) Abstract,,2019-12-15
-7.0.0,(_ActInsurancePolicyCode) Abstract,,2019-12-15
-7.0.0,(_ActInsuranceTypeCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceAdjudicationPaymentCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceAdjudicationPaymentGroupCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceAdjudicationPaymentSummaryCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailClinicalProductCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailClinicalServiceCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailDrugProductCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailGenericAdjudicatorCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailGenericCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailGenericModifierCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailGenericProviderCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailPreferredAccommodationCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceDetailTaxCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceElementCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceElementSummaryCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceGroupCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceInterGroupCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceOverrideCode) Abstract,,2019-12-15
-7.0.0,(_ActInvoiceRootGroupCode) Abstract,,2019-12-15
-7.0.0,(_ActListCode) Abstract,,2019-12-15
-7.0.0,(_ActMedicalServiceCode) Abstract,,2019-12-15
-7.0.0,(_ActMedicationTherapyDurationWorkingListCode) Abstract,,2019-12-15
-7.0.0,(_ActMonitoringProtocolCode) Abstract,,2019-12-15
-7.0.0,(_ActNonObservationIndicationCode) Abstract,,2019-12-15
-7.0.0,(_ActObservationList) Abstract,,2019-12-15
-7.0.0,(_ActObservationVerificationType) Abstract,,2019-12-15
 7.0.0,(_ActPatientTransportationModeCode) Abstract,,2019-12-15
-7.0.0,(_ActPaymentCode) Abstract,,2019-12-15
-7.0.0,(_ActPharmacySupplyType) Abstract,,2019-12-15
-7.0.0,(_ActPolicyType) Abstract,,2019-12-15
-7.0.0,(_ActPrivacyLaw) Abstract,,2019-12-15
-7.0.0,(_ActPrivacyPolicy) Abstract,,2019-12-15
-7.0.0,(_ActProcedureCode) Abstract,,2019-12-15
-7.0.0,(_ActProductAcquisitionCode) Abstract,,2019-12-15
-7.0.0,(_ActProgramTypeCode) Abstract,,2019-12-15
-7.0.0,(_ActSpecObsCode) Abstract,,2019-12-15
-7.0.0,(_ActSpecimenTransportCode) Abstract,,2019-12-15
-7.0.0,(_ActSpecimenTreatmentCode) Abstract,,2019-12-15
-7.0.0,(_ActSubstanceAdministrationCode) Abstract,,2019-12-15
-7.0.0,(_ActSuppliedItemDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_ActTaskCode) Abstract,,2019-12-15
-7.0.0,(_ActTherapyDurationWorkingListCode) Abstract,,2019-12-15
-7.0.0,(_ActTransportationModeCode) Abstract,,2019-12-15
-7.0.0,(_AdministrationDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_AnnotationType) Abstract,,2019-12-15
-7.0.0,(_AppropriatenessDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_AuthorizationIssueManagementCode) Abstract,,2019-12-15
-7.0.0,(_CaseTransmissionMode) Abstract,,2019-12-15
-7.0.0,(_ECGObservationSeriesType) Abstract,,2019-12-15
-7.0.0,(_EntitySensitivityPolicyType) Abstract,,2019-12-15
-7.0.0,(_FDALabelData) Abstract,,2019-12-15
-7.0.0,(_GeneticObservationType) Abstract,,2019-12-15
-7.0.0,(_HL7AccommodationCode) Abstract,,2019-12-15
-7.0.0,(_HL7DefinedActCodes) Abstract,,2019-12-15
-7.0.0,(_IndividualCaseSafetyReportType) Abstract,,2019-12-15
-7.0.0,(_InformationSensitivityPolicy) Abstract,,2019-12-15
-7.0.0,(_InteractionDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_InvoiceElementAdjudicated) Abstract,,2019-12-15
-7.0.0,(_InvoiceElementPaid) Abstract,,2019-12-15
-7.0.0,(_InvoiceElementSubmitted) Abstract,,2019-12-15
-7.0.0,(_LOINCObservationActContextAgeType) Abstract,,2019-12-15
-7.0.0,(_MedicationObservationType) Abstract,,2019-12-15
-7.0.0,(_ObservationIssueTriggerCodedObservationType) Abstract,,2019-12-15
-7.0.0,(_ObservationSequenceType) Abstract,,2019-12-15
-7.0.0,(_ObservationSeriesType) Abstract,,2019-12-15
-7.0.0,(_ObservationType) Abstract,,2019-12-15
-7.0.0,(_PopulationInclusionObservationType) Abstract,,2019-12-15
-7.0.0,(_PreferenceObservationType) Abstract,,2019-12-15
-7.0.0,(_ROIOverlayShape) Abstract,,2019-12-15
-7.0.0,(_RoleInformationSensitivityPolicy) Abstract,,2019-12-15
-7.0.0,(_SupplyDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,(_TimingDetectedIssueCode) Abstract,,2019-12-15
-7.0.0,1,Therapy Appropriate,2019-12-15
-7.0.0,10,Provided Patient Education,2019-12-15
-7.0.0,11,Added Concurrent Therapy,2019-12-15
-7.0.0,12,Temporarily Suspended Concurrent Therapy,2019-12-15
-7.0.0,13,Stopped Concurrent Therapy,2019-12-15
-7.0.0,14,Supply Appropriate,2019-12-15
-7.0.0,15,Replacement,2019-12-15
-7.0.0,16,Vacation Supply,2019-12-15
-7.0.0,17,Weekend Supply,2019-12-15
-7.0.0,18,Leave of Absence,2019-12-15
-7.0.0,19,Consulted Supplier,2019-12-15
-7.0.0,2,Assessed Patient,2019-12-15
-7.0.0,20,additional quantity on separate dispense,2019-12-15
-7.0.0,21,authorization confirmed,2019-12-15
-7.0.0,21611-9,age patient qn est,2019-12-15
-7.0.0,21612-7,age patient qn reported,2019-12-15
-7.0.0,22,appropriate indication or diagnosis,2019-12-15
-7.0.0,23,prior therapy documented,2019-12-15
-7.0.0,29553-5,age patient qn calc,2019-12-15
-7.0.0,3,Patient Explanation,2019-12-15
-7.0.0,30525-0,age patient qn definition,2019-12-15
-7.0.0,30972-4,age at onset of adverse event,2019-12-15
-7.0.0,4,Consulted Other Source,2019-12-15
-7.0.0,42CFRPart2,42 CFR Part2,2019-12-15
-7.0.0,5,Consulted Prescriber,2019-12-15
-7.0.0,6,Prescriber Declined Change,2019-12-15
-7.0.0,7,Interacting Therapy No Longer Active/Planned,2019-12-15
-7.0.0,8,Other Action Taken,2019-12-15
-7.0.0,9,Instituted Ongoing Monitoring Program,2019-12-15
-7.0.0,AA,adjudicated with adjustments,2019-12-15
-7.0.0,AALC,accredited assisted living care,2019-12-15
-7.0.0,AAMC,accredited ambulatory care,2019-12-15
-7.0.0,ABHC,accredited behavioral health care,2019-12-15
-7.0.0,ABUSE,commonly abused/misused alert,2019-12-15
-7.0.0,ACAC,accredited critical access hospital care,2019-12-15
-7.0.0,ACADR,adverse drug reaction access,2019-12-15
-7.0.0,ACALL,all access,2019-12-15
-7.0.0,ACALLG,allergy access,2019-12-15
-7.0.0,ACCESSCONSCHEME,access control scheme,2019-12-15
-7.0.0,ACCONS,informational consent access,2019-12-15
-7.0.0,ACCTRECEIVABLE,account receivable,2019-12-15
-7.0.0,ACDEMO,demographics access,2019-12-15
-7.0.0,ACDI,diagnostic imaging access,2019-12-15
-7.0.0,ACH,Automated Clearing House,2019-12-15
-7.0.0,ACHC,accredited hospital care,2019-12-15
-7.0.0,ACID,Acidification,2019-12-15
-7.0.0,ACIMMUN,immunization access,2019-12-15
-7.0.0,ACLAB,lab test result access,2019-12-15
-7.0.0,ACMED,medication access,2019-12-15
-7.0.0,ACMEDC,medical condition access,2019-12-15
-7.0.0,ACMEN,mental health access,2019-12-15
-7.0.0,ACOBS,common observations access,2019-12-15
-7.0.0,ACOCOMPT,accountable care organization compartment,2019-12-15
-7.0.0,ACPOLPRG,policy or program information access,2019-12-15
-7.0.0,ACPROV,provider information access,2019-12-15
-7.0.0,ACPSERV,professional service access,2019-12-15
-7.0.0,ACSUBSTAB,substance abuse access,2019-12-15
-7.0.0,ACU,short term/acute,2019-12-15
-7.0.0,ACUTE,inpatient acute,2019-12-15
-7.0.0,ADALRT,adult alert,2019-12-15
-7.0.0,ADMDX,admitting diagnosis,2019-12-15
-7.0.0,ADNFPPELAT,adjud. nullified prior-period electronic amount,2019-12-15
-7.0.0,ADNFPPELCT,adjud. nullified prior-period electronic count,2019-12-15
-7.0.0,ADNFPPMNAT,adjud. nullified prior-period manual amount,2019-12-15
-7.0.0,ADNFPPMNCT,adjud. nullified prior-period manual count,2019-12-15
-7.0.0,ADNFSPELAT,adjud. nullified same-period electronic amount,2019-12-15
-7.0.0,ADNFSPELCT,adjud. nullified same-period electronic count,2019-12-15
-7.0.0,ADNFSPMNAT,adjud. nullified same-period manual amount,2019-12-15
-7.0.0,ADNFSPMNCT,adjud. nullified same-period manual count,2019-12-15
-7.0.0,ADNPPPELAT,adjud. non-payee payable prior-period electronic amount,2019-12-15
-7.0.0,ADNPPPELCT,adjud. non-payee payable prior-period electronic count,2019-12-15
-7.0.0,ADNPPPMNAT,adjud. non-payee payable prior-period manual amount,2019-12-15
-7.0.0,ADNPPPMNCT,adjud. non-payee payable prior-period manual count,2019-12-15
-7.0.0,ADNPSPELAT,adjud. non-payee payable same-period electronic amount,2019-12-15
-7.0.0,ADNPSPELCT,adjud. non-payee payable same-period electronic count,2019-12-15
-7.0.0,ADNPSPMNAT,adjud. non-payee payable same-period manual amount,2019-12-15
-7.0.0,ADNPSPMNCT,adjud. non-payee payable same-period manual count,2019-12-15
-7.0.0,ADOL,adolescent information sensitivity,2019-12-15
-7.0.0,ADPPPPELAT,adjud. payee payable prior-period electronic amount,2019-12-15
-7.0.0,ADPPPPELCT,adjud. payee payable prior-period electronic count,2019-12-15
-7.0.0,ADPPPPMNAT,adjud. payee payable prior-period manual amout,2019-12-15
-7.0.0,ADPPPPMNCT,adjud. payee payable prior-period manual count,2019-12-15
-7.0.0,ADPPSPELAT,adjud. payee payable same-period electronic amount,2019-12-15
-7.0.0,ADPPSPELCT,adjud. payee payable same-period electronic count,2019-12-15
-7.0.0,ADPPSPMNAT,adjud. payee payable same-period manual amount,2019-12-15
-7.0.0,ADPPSPMNCT,adjud. payee payable same-period manual count,2019-12-15
-7.0.0,ADRFPPELAT,adjud. refused prior-period electronic amount,2019-12-15
-7.0.0,ADRFPPELCT,adjud. refused prior-period electronic count,2019-12-15
-7.0.0,ADRFPPMNAT,adjud. refused prior-period manual amount,2019-12-15
-7.0.0,ADRFPPMNCT,adjud. refused prior-period manual count,2019-12-15
-7.0.0,ADRFSPELAT,adjud. refused same-period electronic amount,2019-12-15
-7.0.0,ADRFSPELCT,adjud. refused same-period electronic count,2019-12-15
-7.0.0,ADRFSPMNAT,adjud. refused same-period manual amount,2019-12-15
-7.0.0,ADRFSPMNCT,adjud. refused same-period manual count,2019-12-15
-7.0.0,ADVERSE_REACTION,Adverse Reaction,2019-12-15
-7.0.0,AE,American Express,2019-12-15
-7.0.0,AFOOT,pedestrian transport,2019-12-15
-7.0.0,AFTHRS,non-normal hours,2019-12-15
-7.0.0,AGE,Age Alert,2019-12-15
-7.0.0,AGGREGATE,aggregate measure observation,2019-12-15
-7.0.0,AHOC,accredited home care,2019-12-15
-7.0.0,AIRTRNS,airborne transmission,2019-12-15
-7.0.0,ALC,Alternative Level of Care,2019-12-15
-7.0.0,ALEC,alternate electronic,2019-12-15
-7.0.0,ALG,Allergy,2019-12-15
-7.0.0,ALGY,Allergy Alert,2019-12-15
-7.0.0,ALK,Alkalization,2019-12-15
-7.0.0,ALLCAT,all categories,2019-12-15
-7.0.0,ALLDONE,already performed,2019-12-15
-7.0.0,ALLERLE,allergy list entry,2019-12-15
-7.0.0,ALLERLREV,allergy list review,2019-12-15
-7.0.0,ALLGCAT,allergy category,2019-12-15
-7.0.0,ALRTENDLATE,end too late alert,2019-12-15
-7.0.0,ALRTSTRTLATE,start too late alert,2019-12-15
-7.0.0,ALTC,accredited long term care,2019-12-15
-7.0.0,AMB,ambulatory,2019-12-15
-7.0.0,AMBAIR,fixed-wing ambulance transport,2019-12-15
-7.0.0,AMBGRND,ground ambulance transport,2019-12-15
-7.0.0,AMBHELO,helicopter ambulance transport,2019-12-15
-7.0.0,AMBT,ambulance transport,2019-12-15
-7.0.0,ANANTRNS,animal to animal transmission,2019-12-15
-7.0.0,ANF,adjudicated with adjustments and no financial impact,2019-12-15
-7.0.0,ANHUMTRNS,animal to human transmission,2019-12-15
-7.0.0,ANNDI,diagnostic image note,2019-12-15
-7.0.0,ANNGEN,general note,2019-12-15
-7.0.0,ANNIMM,immunization note,2019-12-15
-7.0.0,ANNLAB,laboratory note,2019-12-15
-7.0.0,ANNMED,medication note,2019-12-15
-7.0.0,ANNU,annuity policy,2019-12-15
-7.0.0,ANONY,anonymize,2019-12-15
-7.0.0,AOD,accounting of disclosure,2019-12-15
-7.0.0,AOSC,accredited office-based surgery care,2019-12-15
-7.0.0,AR,adjudicated as refused,2019-12-15
-7.0.0,ARCAT,adverse drug reaction category,2019-12-15
-7.0.0,ARTBLD,ActSpecObsArtBldCode,2019-12-15
-7.0.0,AS,adjudicated as submitted,2019-12-15
-7.0.0,ASSERTION,Assertion,2019-12-15
-7.0.0,AUDIT,audit,2019-12-15
-7.0.0,AUDTR,audit trail,2019-12-15
-7.0.0,AUTH,Authorized,2019-12-15
-7.0.0,AUTHPOL,authorization policy,2019-12-15
-7.0.0,AUTO,auto-repeat permission,2019-12-15
-7.0.0,AUTO-HIGH,Auto-High Dilution,2019-12-15
-7.0.0,AUTO-LOW,Auto-Low Dilution,2019-12-15
 7.0.0,AUTOATTCH,auto attachment,2019-12-15
-7.0.0,AUTOPOL,,2019-12-15
-7.0.0,AUTOPOL,automobile,2019-12-15
-7.0.0,AVAILABLE,Available Volume,2019-12-15
-7.0.0,B,business information sensitivity,2019-12-15
-7.0.0,BDYFLDTRNS,body fluid contact transmission,2019-12-15
-7.0.0,BH,behavioral health information sensitivity,2019-12-15
-7.0.0,BLDTRNS,blood borne transmission,2019-12-15
-7.0.0,BLK,block funding,2019-12-15
-7.0.0,BONUS,bonus,2019-12-15
-7.0.0,BOOSTER,Booster Immunization,2019-12-15
-7.0.0,BR,breikost (GE),2019-12-15
-7.0.0,BUS,business constraint violation,2019-12-15
-7.0.0,C,corrected,2019-12-15
-7.0.0,CACC,certified anatomic pathology and clinical pathology care,2019-12-15
-7.0.0,CACS,certified acute coronary syndrome care,2019-12-15
-7.0.0,CAIC,certified allergy and immunology care,2019-12-15
-7.0.0,CAMC,certified aerospace medicine care,2019-12-15
-7.0.0,CAMI,certified acute myocardial infarction care,2019-12-15
-7.0.0,CANC,certified anesthesiology care,2019-12-15
-7.0.0,CANCAPT,cancelled appointment,2019-12-15
-7.0.0,CANPRG,women's cancer detection program,2019-12-15
-7.0.0,CAP,capitation funding,2019-12-15
-7.0.0,CAPC,certified anatomic pathology care,2019-12-15
-7.0.0,CARD,Cardiology,2019-12-15
-7.0.0,CARELIST,care plan,2019-12-15
-7.0.0,CASESER,case seriousness criteria,2019-12-15
-7.0.0,CASH,Cash,2019-12-15
-7.0.0,CAST,certified asthma care,2019-12-15
-7.0.0,CBAR,certified bariatric surgery care,2019-12-15
-7.0.0,CBGC,certified clinical biochemical genetics care,2019-12-15
-7.0.0,CC,credit card,2019-12-15
-7.0.0,CCAD,certified coronary artery disease care,2019-12-15
-7.0.0,CCAR,certified cardiac care,2019-12-15
-7.0.0,CCCC,certified clinical cytogenetics care,2019-12-15
-7.0.0,CCGC,certified clinical genetics (M.D.) care,2019-12-15
-7.0.0,CCPC,certified clinical pathology care,2019-12-15
-7.0.0,CCSC,certified colon and rectal surgery care,2019-12-15
-7.0.0,CDEC,certified dermatology care,2019-12-15
-7.0.0,CDEP,certified depression care,2019-12-15
-7.0.0,CDGD,certified digestive/gastrointestinal disorders care,2019-12-15
-7.0.0,CDIA,certified diabetes care,2019-12-15
-7.0.0,CDIO,case disease imported observation,2019-12-15
-7.0.0,CDRC,certified diagnostic radiology care,2019-12-15
-7.0.0,CDSREV,clinical decision support intervention review,2019-12-15
-7.0.0,CEL,celebrity information sensitivity,2019-12-15
-7.0.0,CEMC,certified emergency medicine care,2019-12-15
-7.0.0,CEPI,certified epilepsy care,2019-12-15
-7.0.0,CFEL,certified frail elderly care,2019-12-15
-7.0.0,CFPC,certified family practice care,2019-12-15
-7.0.0,CFWD,carry forward adjusment,2019-12-15
-7.0.0,CHAR,charity program,2019-12-15
-7.0.0,CHFC,certified heart failure care,2019-12-15
-7.0.0,CHK,Cheque,2019-12-15
-7.0.0,CHLDCARE,Day care - Child care Interaction,2019-12-15
-7.0.0,CHR,Chronic,2019-12-15
-7.0.0,CHRG,Standard Charge,2019-12-15
-7.0.0,CHRO,certified high risk obstetrics care,2019-12-15
-7.0.0,CHRON,continuous/chronic,2019-12-15
-7.0.0,CHYP,certified hyperlipidemia care,2019-12-15
-7.0.0,CIMC,certified internal medicine care,2019-12-15
-7.0.0,CIRCLE,circle,2019-12-15
-7.0.0,CLINNOTEE,clinical note entry task,2019-12-15
-7.0.0,CLINNOTEREV,clinical note review task,2019-12-15
-7.0.0,CLSSRM,classroom,2019-12-15
-7.0.0,CMGC,certified clinical molecular genetics care,2019-12-15
-7.0.0,CMIH,certified migraine headache care,2019-12-15
-7.0.0,CMPMSRMTH,composite measure method,2019-12-15
-7.0.0,CMPMSRSCRWGHT,component measure scoring weight,2019-12-15
-7.0.0,CMSC,certified multiple sclerosis care,2019-12-15
-7.0.0,CNEC,certified neurology care,2019-12-15
-7.0.0,CNMC,certified nuclear medicine care,2019-12-15
-7.0.0,CNQC,certified neurology with special qualifications in child neurology care,2019-12-15
-7.0.0,CNSC,certified neurological surgery care,2019-12-15
+7.0.0,(ActTrustPolicyType) Abstract,,2019-12-15
 7.0.0,COBSCAT,common observation category,2019-12-15
-7.0.0,CODE_DEPREC,code has been deprecated,2019-12-15
-7.0.0,CODE_INVAL,code is not valid,2019-12-15
-7.0.0,COGC,certified obstetrics and gynecology care,2019-12-15
-7.0.0,COGN,cognitive disability information sensitivity,2019-12-15
-7.0.0,COIN,coinsurance,2019-12-15
-7.0.0,COINS,co-insurance,2019-12-15
-7.0.0,COJR,certified orthopedic joint replacement care,2019-12-15
-7.0.0,COL,collision coverage policy,2019-12-15
-7.0.0,COMC,certified occupational medicine care,2019-12-15
-7.0.0,COMPLY,Compliance Alert,2019-12-15
-7.0.0,COMPLY,,2019-12-15
-7.0.0,COMPT,compartment,2019-12-15
-7.0.0,CONC,certified oncology care,2019-12-15
-7.0.0,COND,Condition Alert,2019-12-15
-7.0.0,CONDLIST,condition list,2019-12-15
-7.0.0,CONSUMPTION,Consumption Volume,2019-12-15
-7.0.0,CONT,,2019-12-15
-7.0.0,CONT,contract,2019-12-15
-7.0.0,CONTF,contract funding,2019-12-15
-7.0.0,CONVEYNC,Common Conveyance Interaction,2019-12-15
-7.0.0,COPAY,,2019-12-15
-7.0.0,COPAYMENT,patient co-pay,2019-12-15
-7.0.0,COPC,certified ophthalmology care,2019-12-15
-7.0.0,COPD,certified chronic obstructive pulmonary disease care,2019-12-15
-7.0.0,COPY,copyright,2019-12-15
-7.0.0,CORT,certified organ transplant care,2019-12-15
-7.0.0,COSC,certified orthopaedic surgery care,2019-12-15
-7.0.0,COTC,certified otolaryngology care,2019-12-15
-7.0.0,COVGE,coverage problem,2019-12-15
-7.0.0,COVMX,coverage maximum,2019-12-15
-7.0.0,COVPOL,benefit policy,2019-12-15
-7.0.0,COVPRD,coverage period,2019-12-15
-7.0.0,CPAD,certified parkinsons disease care,2019-12-15
-7.0.0,CPEC,certified pediatrics care,2019-12-15
-7.0.0,CPGC,certified Ph.D. medical genetics care,2019-12-15
-7.0.0,CPHC,certified public health and general preventive medicine care,2019-12-15
-7.0.0,CPINV,clinical product invoice,2019-12-15
-7.0.0,CPLYCC,comply with confidentiality code,2019-12-15
-7.0.0,CPLYCD,comply with consent directive,2019-12-15
-7.0.0,CPLYJPP,comply with jurisdictional privacy policy,2019-12-15
-7.0.0,CPLYOPP,comply with organizational privacy policy,2019-12-15
+7.0.0,(_ActInvoiceDetailDrugProductCode) Abstract,,2019-12-15
+7.0.0,(_ActConsentType) Abstract,,2019-12-15
+7.0.0,(_ActClaimAttachmentCategoryCode) Abstract,,2019-12-15
 7.0.0,CPLYOSP,comply with organizational security policy,2019-12-15
-7.0.0,CPLYPOL,comply with policy,2019-12-15
-7.0.0,CPND,certified pneumonia disease care,2019-12-15
-7.0.0,CPNDDRGING,compound drug invoice group,2019-12-15
-7.0.0,CPNDINDING,compound ingredient invoice group,2019-12-15
-7.0.0,CPNDSUPING,compound supply invoice group,2019-12-15
-7.0.0,CPRC,certified physical medicine and rehabilitation care,2019-12-15
-7.0.0,CPSC,certified plastic surgery care,2019-12-15
-7.0.0,CPST,certified primary stroke center care,2019-12-15
-7.0.0,CPTM,CPT modifier codes,2019-12-15
-7.0.0,CPYC,certified psychiatry care,2019-12-15
-7.0.0,CREACT,common reaction alert,2019-12-15
-7.0.0,CRIME,crime victim program,2019-12-15
-7.0.0,CRIT,criticality,2019-12-15
-7.0.0,CROC,certified radiation oncology care,2019-12-15
-7.0.0,CRPC,certified radiological physics care,2019-12-15
-7.0.0,CRS,clinical recommendation statement,2019-12-15
-7.0.0,CSDM,certified stroke disease management care,2019-12-15
-7.0.0,CSIC,certified sickle cell care,2019-12-15
-7.0.0,CSINV,clinical service invoice,2019-12-15
-7.0.0,CSLD,certified sleep disorders care,2019-12-15
-7.0.0,CSPINV,clinical service and product,2019-12-15
+7.0.0,8,Other Action Taken,2019-12-15
+7.0.0,(_ActInvoiceDetailGenericAdjudicatorCode) Abstract,,2019-12-15
 7.0.0,CSPT,certified spine treatment care,2019-12-15
-7.0.0,CSUC,certified surgery care,2019-12-15
-7.0.0,CTBU,certified trauma/burn center care,2019-12-15
+7.0.0,ADRFPPELCT,adjud. refused prior-period electronic count,2019-12-15
+7.0.0,CNEC,certified neurology care,2019-12-15
+7.0.0,(_ActInvoiceDetailGenericProviderCode) Abstract,,2019-12-15
+7.0.0,(_PreferenceObservationType) Abstract,,2019-12-15
+7.0.0,BDYFLDTRNS,body fluid contact transmission,2019-12-15
+7.0.0,AUTOPOL,,2019-12-15
 7.0.0,CTCOMPT,care team compartment,2019-12-15
-7.0.0,CTLSUB,Controlled Substance,2019-12-15
-7.0.0,CTMO,case transmission mode observation,2019-12-15
-7.0.0,CTSC,certified thoracic surgery care,2019-12-15
-7.0.0,CURC,certified urology care,2019-12-15
-7.0.0,CURMEDLIST,current medication list,2019-12-15
-7.0.0,CURRENT,Current Volume,2019-12-15
-7.0.0,CVDC,certified vascular diseases care,2019-12-15
-7.0.0,CVSC,certified vascular surgery care,2019-12-15
-7.0.0,CWMA,certified wound management care,2019-12-15
-7.0.0,CWOH,certified women's health care,2019-12-15
-7.0.0,CommonRule,Common Rule,2019-12-15
-7.0.0,DACT,drug action detected issue,2019-12-15
-7.0.0,DALG,Drug Allergy,2019-12-15
-7.0.0,DALG,,2019-12-15
-7.0.0,DAY,,2019-12-15
-7.0.0,DAY,day,2019-12-15
-7.0.0,DDP,Direct Deposit,2019-12-15
-7.0.0,DECLASSIFYLABEL,declassify security label,2019-12-15
-7.0.0,DEDUCT,,2019-12-15
-7.0.0,DEDUCTIBLE,deductible,2019-12-15
-7.0.0,DEF,definition,2019-12-15
-7.0.0,DEFB,Defibrination,2019-12-15
-7.0.0,DEID,deidentify,2019-12-15
-7.0.0,DELAU,delete after use,2019-12-15
-7.0.0,DELEPOL,delegation policy,2019-12-15
-7.0.0,DEMO,all demographic information sensitivity,2019-12-15
-7.0.0,DEMOCAT,demographics category,2019-12-15
-7.0.0,DENEX,denominator exclusions,2019-12-15
+7.0.0,ADNFSPELAT,adjud. nullified same-period electronic amount,2019-12-15
+7.0.0,COMC,certified occupational medicine care,2019-12-15
+7.0.0,(_ActInvoiceElementSummaryCode) Abstract,,2019-12-15
+7.0.0,(_CaseTransmissionMode) Abstract,,2019-12-15
+7.0.0,20,additional quantity on separate dispense,2019-12-15
+7.0.0,(_ActCoverageLimitCode) Abstract,,2019-12-15
+7.0.0,ADPPSPELCT,adjud. payee payable same-period electronic count,2019-12-15
+7.0.0,CPND,certified pneumonia disease care,2019-12-15
+7.0.0,ADNPPPMNAT,adjud. non-payee payable prior-period manual amount,2019-12-15
+7.0.0,(_ActMonitoringProtocolCode) Abstract,,2019-12-15
+7.0.0,(_ActAdjudicationGroupCode) Abstract,,2019-12-15
+7.0.0,ADNFPPMNCT,adjud. nullified prior-period manual count,2019-12-15
+7.0.0,CMGC,certified clinical molecular genetics care,2019-12-15
+7.0.0,AUTHPOL,authorization policy,2019-12-15
 7.0.0,DENEXCEP,denominator exceptions,2019-12-15
-7.0.0,DENOM,denominator,2019-12-15
-7.0.0,DENTAL,dental care policy,2019-12-15
-7.0.0,DENTPRG,dental program,2019-12-15
-7.0.0,DERMTRNS,transdermal transmission,2019-12-15
-7.0.0,DF,Daily Fill,2019-12-15
-7.0.0,DF,,2019-12-15
-7.0.0,DIA,diagnosis information sensitivity,2019-12-15
-7.0.0,DIAGLISTE,diagnosis list entry task,2019-12-15
-7.0.0,DIAGLISTREV,diagnosis list review task,2019-12-15
-7.0.0,DICAT,diagnostic image category,2019-12-15
-7.0.0,DIET,Diet,2019-12-15
-7.0.0,DILUTION,ActSpecObsDilutionCode,2019-12-15
-7.0.0,DINT,Drug Intolerance,2019-12-15
-7.0.0,DIR,Accesso Diretto,2019-12-15
-7.0.0,DIS,disability insurance policy,2019-12-15
-7.0.0,DISC,disclaimer,2019-12-15
-7.0.0,DISCHINSTE,discharge instruction entry,2019-12-15
-7.0.0,DISCHSUME,discharge summary entry task,2019-12-15
+7.0.0,(_ActInformationSensitivityPolicy) Abstract,,2019-12-15
+7.0.0,(_ActCredentialedCareProvisionProgramCode) Abstract,,2019-12-15
+7.0.0,(_ActNonObservationIndicationCode) Abstract,,2019-12-15
+7.0.0,COIN,coinsurance,2019-12-15
+7.0.0,ARTBLD,ActSpecObsArtBldCode,2019-12-15
+7.0.0,DEMO,all demographic information sensitivity,2019-12-15
+7.0.0,DDP,Direct Deposit,2019-12-15
+7.0.0,CACS,certified acute coronary syndrome care,2019-12-15
+7.0.0,AUDIT,audit,2019-12-15
+7.0.0,(_ActAccountCode) Abstract,,2019-12-15
+7.0.0,(_ActInvoiceDetailCode) Abstract,,2019-12-15
+7.0.0,AR,adjudicated as refused,2019-12-15
+7.0.0,(_ActCoveredPartyLimitCode) Abstract,,2019-12-15
+7.0.0,(_IndividualCaseSafetyReportType) Abstract,,2019-12-15
+7.0.0,(_ActEncounterAccommodationCode) Abstract,,2019-12-15
+7.0.0,CASH,Cash,2019-12-15
+7.0.0,CSIC,certified sickle cell care,2019-12-15
+7.0.0,(_ActObservationVerificationType) Abstract,,2019-12-15
+7.0.0,CIMC,certified internal medicine care,2019-12-15
+7.0.0,CDRC,certified diagnostic radiology care,2019-12-15
+7.0.0,CAMC,certified aerospace medicine care,2019-12-15
+7.0.0,ADNPPPELAT,adjud. non-payee payable prior-period electronic amount,2019-12-15
+7.0.0,DEF,definition,2019-12-15
+7.0.0,(_ActCoverageTypeCode) Abstract,,2019-12-15
+7.0.0,ADNFSPMNCT,adjud. nullified same-period manual count,2019-12-15
+7.0.0,CARELIST,care plan,2019-12-15
+7.0.0,(_ActInformationAccessCode) Abstract,,2019-12-15
+7.0.0,CommonRule,Common Rule,2019-12-15
+7.0.0,AGE,Age Alert,2019-12-15
 7.0.0,DISCHSUMREV,discharge summary review task,2019-12-15
-7.0.0,DISCMEDLIST,discharge medication list,2019-12-15
-7.0.0,DISDX,discharge diagnosis,2019-12-15
-7.0.0,DISEASE,disease specific policy,2019-12-15
-7.0.0,DISEASEPRG,public health program,2019-12-15
-7.0.0,DISPLAY,Display,2019-12-15
-7.0.0,DM,diabetes mellitus diet,2019-12-15
-7.0.0,DN,Diner's Club,2019-12-15
-7.0.0,DNAINT,,2019-12-15
-7.0.0,DNAINT,Drug Non-Allergy Intolerance,2019-12-15
-7.0.0,DNTL,Dental,2019-12-15
-7.0.0,DOB,date of birth information sensitivity,2019-12-15
-7.0.0,DOCUMENT,document,2019-12-15
-7.0.0,DOSE,,2019-12-15
-7.0.0,DOSE,Dosage problem,2019-12-15
-7.0.0,DOSECOND,dosage-condition alert,2019-12-15
-7.0.0,DOSEDUR,Dose-Duration Alert,2019-12-15
-7.0.0,DOSEDURH,Dose-Duration High Alert,2019-12-15
-7.0.0,DOSEDURHIND,Dose-Duration High for Indication Alert,2019-12-15
-7.0.0,DOSEDURL,Dose-Duration Low Alert,2019-12-15
-7.0.0,DOSEDURLIND,Dose-Duration Low for Indication Alert,2019-12-15
-7.0.0,DOSEH,High Dose Alert,2019-12-15
-7.0.0,DOSEHIND,High Dose for Indication Alert,2019-12-15
-7.0.0,DOSEHINDA,High Dose for Age Alert,2019-12-15
-7.0.0,DOSEHINDA,,2019-12-15
-7.0.0,DOSEHINDSA,High Dose for Height/Surface Area Alert,2019-12-15
-7.0.0,DOSEHINDW,High Dose for Weight Alert,2019-12-15
-7.0.0,DOSEIND,,2019-12-15
-7.0.0,DOSEIVL,Dose-Interval Alert,2019-12-15
-7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
-7.0.0,DOSEL,Low Dose Alert,2019-12-15
-7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,,2019-12-15
-7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
-7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
-7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
-7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
-7.0.0,DRG,Drug Interaction Alert,2019-12-15
-7.0.0,DRGIS,drug information sensitivity,2019-12-15
-7.0.0,DRGRHB,Drug Rehab,2019-12-15
-7.0.0,DRIVLABEL,derive security label,2019-12-15
-7.0.0,DRUG,Drug therapy,2019-12-15
-7.0.0,DRUGING,drug invoice group,2019-12-15
-7.0.0,DRUGPOL,drug policy,2019-12-15
-7.0.0,DRUGPRG,drug program,2019-12-15
-7.0.0,DSC,discount,2019-12-15
-7.0.0,DUPTHPCLS,duplicate therapeutic alass alert,2019-12-15
-7.0.0,DUPTHPGEN,duplicate generic alert,2019-12-15
-7.0.0,DUPTHPY,,2019-12-15
-7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
-7.0.0,DV,Discover Card,2019-12-15
-7.0.0,DVD,developmental disability information sensitivity,2019-12-15
-7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,Environmental Allergy,2019-12-15
-7.0.0,EALG,,2019-12-15
-7.0.0,EAP,employee assistance program,2019-12-15
-7.0.0,EDU,education fees,2019-12-15
-7.0.0,EFORM,electronic form to follow,2019-12-15
-7.0.0,EHCPOL,extended healthcare,2019-12-15
-7.0.0,EHCPOL,,2019-12-15
-7.0.0,EINT,Environmental Intolerance,2019-12-15
-7.0.0,ELG,Eligible,2019-12-15
-7.0.0,ELLIPSE,ellipse,2019-12-15
-7.0.0,EM,Emergency Supply,2019-12-15
-7.0.0,EMAUTH,emergency authorization override,2019-12-15
-7.0.0,EMER,emergency,2019-12-15
-7.0.0,EMOTDIS,emotional disturbance information sensitivity,2019-12-15
-7.0.0,EMP,employee information sensitivity,2019-12-15
-7.0.0,EMPL,employer information sensitivity,2019-12-15
-7.0.0,EMRGONLY,emergency only,2019-12-15
-7.0.0,ENAINT,,2019-12-15
-7.0.0,ENAINT,Environmental Non-Allergy Intolerance,2019-12-15
-7.0.0,ENCRYPT,encrypt,2019-12-15
-7.0.0,ENCRYPTR,encrypt at rest,2019-12-15
-7.0.0,ENCRYPTT,encrypt in transit,2019-12-15
-7.0.0,ENCRYPTU,encrypt in use,2019-12-15
-7.0.0,ENDC,endogenous content,2019-12-15
-7.0.0,ENDLATE,End Too Late Alert,2019-12-15
-7.0.0,ENDRENAL,end renal program,2019-12-15
-7.0.0,ENVTRNS,environmental exposure transmission,2019-12-15
-7.0.0,EPYMT,early payment fee,2019-12-15
-7.0.0,ESA,extraordinary service assessment,2019-12-15
-7.0.0,ETH,substance abuse information sensitivity,2019-12-15
-7.0.0,ETHUD,alcohol use disorder information sensitivity,2019-12-15
-7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
-7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
-7.0.0,F,final,2019-12-15
-7.0.0,FALG,Food Allergy,2019-12-15
-7.0.0,FALG,,2019-12-15
-7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
-7.0.0,FAST,fasting,2019-12-15
-7.0.0,FAX,fax to follow,2019-12-15
-7.0.0,FD,food,2019-12-15
-7.0.0,FDACOATING,coating,2019-12-15
-7.0.0,FDACOLOR,color,2019-12-15
-7.0.0,FDAIMPRINTCD,imprint code,2019-12-15
-7.0.0,FDALOGO,logo,2019-12-15
-7.0.0,FDASCORING,scoring,2019-12-15
-7.0.0,FDASHAPE,shape,2019-12-15
-7.0.0,FDASIZE,size,2019-12-15
-7.0.0,FECTRNS,fecal-oral transmission,2019-12-15
-7.0.0,FF,First Fill,2019-12-15
-7.0.0,FFC,First Fill - Complete,2019-12-15
-7.0.0,FFCS,,2019-12-15
-7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
-7.0.0,FFCS,,2019-12-15
-7.0.0,FFP,First Fill - Part Fill,2019-12-15
-7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
-7.0.0,FFPS,,2019-12-15
-7.0.0,FFPS,,2019-12-15
-7.0.0,FFS,,2019-12-15
-7.0.0,FFS,fee for service,2019-12-15
-7.0.0,FFSS,"first fill, partial strength",2019-12-15
-7.0.0,FFSTOP,fee for service top off,2019-12-15
-7.0.0,FIBRIN,Fibrin,2019-12-15
-7.0.0,FILT,Filtration,2019-12-15
-7.0.0,FINALDT,finalized date/time,2019-12-15
-7.0.0,FINBILL,financial,2019-12-15
-7.0.0,FININV,financial invoice,2019-12-15
-7.0.0,FINT,Food Intolerance,2019-12-15
-7.0.0,FLD,field,2019-12-15
-7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
-7.0.0,FMCOMPT,financial management compartment,2019-12-15
-7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
-7.0.0,FNAINT,,2019-12-15
-7.0.0,FNLFEE,final fee,2019-12-15
-7.0.0,FOMTRNS,fomite transmission,2019-12-15
-7.0.0,FOOD,Food Interaction Alert,2019-12-15
-7.0.0,FOODTRNS,food-borne transmission,2019-12-15
-7.0.0,FORM,Print on Form,2019-12-15
-7.0.0,FORMAT,invalid format,2019-12-15
-7.0.0,FORMULA,formula diet,2019-12-15
-7.0.0,FRAMEING,frame invoice group,2019-12-15
-7.0.0,FRAUD,potential fraud,2019-12-15
-7.0.0,FRSTFEE,first fee,2019-12-15
-7.0.0,FS,Floor stock,2019-12-15
-7.0.0,FST,federal sales tax,2019-12-15
-7.0.0,FULFIL,fulfillment alert,2019-12-15
-7.0.0,GARN,garnishee,2019-12-15
-7.0.0,GDIS,genetic disease information sensitivity,2019-12-15
-7.0.0,GEALRT,geriatric alert,2019-12-15
-7.0.0,GEN,Genetic Alert,2019-12-15
-7.0.0,GEND,Gender Alert,2019-12-15
-7.0.0,GENDER,gender and sexual orientation information sensitivity,2019-12-15
-7.0.0,GENE,gene,2019-12-15
-7.0.0,GENRL,General,2019-12-15
-7.0.0,GF,gluten free,2019-12-15
-7.0.0,GFTH,good faith indicator,2019-12-15
-7.0.0,GISTIER,GIS tier,2019-12-15
-7.0.0,GOALLIST,goal list,2019-12-15
-7.0.0,GOVEMP,government employee health program,2019-12-15
-7.0.0,GRADE,grade,2019-12-15
-7.0.0,GRANTORCHOICE,grantor choice,2019-12-15
-7.0.0,GTIN,Global Trade Item Number,2019-12-15
-7.0.0,GUIDE,guidance,2019-12-15
-7.0.0,HCPCSA,HCPCS Level II and Carrier-assigned,2019-12-15
-7.0.0,HEALTHREC,health record,2019-12-15
-7.0.0,HELD,held/suspended alert,2019-12-15
-7.0.0,HEMOLYSIS,Hemolysis,2019-12-15
-7.0.0,HGHT,,2019-12-15
-7.0.0,HH,home health,2019-12-15
-7.0.0,HHOBS,household situation observation,2019-12-15
-7.0.0,HIP,health insurance plan policy,2019-12-15
-7.0.0,HIPAANOPP,HIPAA notice of privacy practices,2019-12-15
-7.0.0,HIPAAPsyNotes,HIPAA psychotherapy notes,2019-12-15
-7.0.0,HIPAASelfPay,HIPAA self-pay,2019-12-15
-7.0.0,HIRISK,high risk pool program,2019-12-15
-7.0.0,HISTMEDLIST,medication history,2019-12-15
-7.0.0,HISTORIC,record recorded as historical,2019-12-15
-7.0.0,HIV,HIV/AIDS information sensitivity,2019-12-15
-7.0.0,HIVAIDS,HIV-AIDS program,2019-12-15
-7.0.0,HLTHCARE,Health Care Interaction - Not Patient Care,2019-12-15
-7.0.0,HMO,health maintenance organization policy,2019-12-15
-7.0.0,HOMECARE,Care Giver Interaction,2019-12-15
-7.0.0,HOSPPTNT,Hospital Patient Interaction,2019-12-15
-7.0.0,HOSPVSTR,Hospital Visitor Interaction,2019-12-15
-7.0.0,HOUSEHLD,Household Interaction,2019-12-15
-7.0.0,HRCOMPT,human resource compartment,2019-12-15
-7.0.0,HSAPOL,,2019-12-15
-7.0.0,HSAPOL,health spending account,2019-12-15
-7.0.0,HST,harmonized sales Tax,2019-12-15
-7.0.0,HUAPRV,human approval,2019-12-15
-7.0.0,HUMHUMTRNS,human to human transmission,2019-12-15
-7.0.0,I,Isolation,2019-12-15
-7.0.0,ICOL,information collection,2019-12-15
-7.0.0,ICTERUS,Icterus,2019-12-15
-7.0.0,ID,Identified,2019-12-15
-7.0.0,IDSCL,information disclosure,2019-12-15
-7.0.0,IDUR,improvement notation,2019-12-15
-7.0.0,ILLEGAL,illegal,2019-12-15
-7.0.0,IMG,image attachment,2019-12-15
-7.0.0,IMMLE,immunization list entry,2019-12-15
-7.0.0,IMMLREV,immunization list review,2019-12-15
-7.0.0,IMMUCAT,immunization category,2019-12-15
-7.0.0,IMMUNIZ,Immunization,2019-12-15
-7.0.0,IMP,inpatient encounter,2019-12-15
-7.0.0,IMPLIED,implied consent,2019-12-15
-7.0.0,IMPLIEDD,implied consent with opportunity to dissent,2019-12-15
-7.0.0,IND,indigenous peoples health program,2019-12-15
-7.0.0,IND01,imaging study requiring contrast,2019-12-15
-7.0.0,IND02,colonoscopy prep,2019-12-15
-7.0.0,IND03,prophylaxis,2019-12-15
-7.0.0,IND04,surgical prophylaxis,2019-12-15
-7.0.0,IND05,pregnancy prophylaxis,2019-12-15
-7.0.0,INDTRNS,indeterminate disease transmission mode,2019-12-15
-7.0.0,INFA,information access,2019-12-15
-7.0.0,INFAO,access only,2019-12-15
-7.0.0,INFASO,access and save only,2019-12-15
-7.0.0,INFAUT,authorized information transfer,2019-12-15
-7.0.0,INFCON,after explicit consent,2019-12-15
-7.0.0,INFCRT,only on court order,2019-12-15
-7.0.0,INFDNG,only if danger to others,2019-12-15
-7.0.0,INFEMER,only in an emergency,2019-12-15
-7.0.0,INFPWR,only if public welfare risk,2019-12-15
-7.0.0,INFREG,regulatory information transfer,2019-12-15
-7.0.0,INITIAL,Initial Volume,2019-12-15
-7.0.0,INITIMMUNIZ,Initial Immunization,2019-12-15
+7.0.0,CURRENT,Current Volume,2019-12-15
+7.0.0,ADPPPPELAT,adjud. payee payable prior-period electronic amount,2019-12-15
+7.0.0,DEDUCT,,2019-12-15
+7.0.0,ADPPSPMNCT,adjud. payee payable same-period manual count,2019-12-15
+7.0.0,(_ActInvoiceAdjudicationPaymentCode) Abstract,,2019-12-15
+7.0.0,AMBT,ambulance transport,2019-12-15
+7.0.0,(SECINTPRVOBS) Abstract,,2019-12-15
+7.0.0,ADNPSPELAT,adjud. non-payee payable same-period electronic amount,2019-12-15
+7.0.0,ADPPPPMNAT,adjud. payee payable prior-period manual amout,2019-12-15
+7.0.0,B,business information sensitivity,2019-12-15
+7.0.0,(_ActInvoiceDetailClinicalProductCode) Abstract,,2019-12-15
+7.0.0,CSPINV,clinical service and product,2019-12-15
+7.0.0,CEPI,certified epilepsy care,2019-12-15
+7.0.0,COMPLY,,2019-12-15
+7.0.0,BLDTRNS,blood borne transmission,2019-12-15
+7.0.0,CONDLIST,condition list,2019-12-15
+7.0.0,30972-4,age at onset of adverse event,2019-12-15
+7.0.0,ADRFPPMNAT,adjud. refused prior-period manual amount,2019-12-15
+7.0.0,(_ActControlVariable) Abstract,,2019-12-15
+7.0.0,DICAT,diagnostic image category,2019-12-15
+7.0.0,CANPRG,women's cancer detection program,2019-12-15
+7.0.0,ALLDONE,already performed,2019-12-15
+7.0.0,4,Consulted Other Source,2019-12-15
+7.0.0,COPD,certified chronic obstructive pulmonary disease care,2019-12-15
+7.0.0,DALG,Drug Allergy,2019-12-15
+7.0.0,23,prior therapy documented,2019-12-15
+7.0.0,ADNPSPELCT,adjud. non-payee payable same-period electronic count,2019-12-15
+7.0.0,COJR,certified orthopedic joint replacement care,2019-12-15
+7.0.0,(_ActInformationCategoryCode) Abstract,,2019-12-15
+7.0.0,16,Vacation Supply,2019-12-15
+7.0.0,CDIA,certified diabetes care,2019-12-15
+7.0.0,DEFB,Defibrination,2019-12-15
+7.0.0,COGC,certified obstetrics and gynecology care,2019-12-15
+7.0.0,CTMO,case transmission mode observation,2019-12-15
+7.0.0,COPAY,,2019-12-15
+7.0.0,(_InvoiceElementSubmitted) Abstract,,2019-12-15
+7.0.0,(_ActInsuranceTypeCode) Abstract,,2019-12-15
+7.0.0,11,Added Concurrent Therapy,2019-12-15
+7.0.0,CRIT,criticality,2019-12-15
+7.0.0,CCPC,certified clinical pathology care,2019-12-15
+7.0.0,CVSC,certified vascular surgery care,2019-12-15
+7.0.0,ANHUMTRNS,animal to human transmission,2019-12-15
+7.0.0,CDEC,certified dermatology care,2019-12-15
+7.0.0,(_ActAdjudicationResultActionCode) Abstract,,2019-12-15
+7.0.0,ADNFSPMNAT,adjud. nullified same-period manual amount,2019-12-15
+7.0.0,(_PopulationInclusionObservationType) Abstract,,2019-12-15
+7.0.0,ACLAB,lab test result access,2019-12-15
+7.0.0,CSUC,certified surgery care,2019-12-15
+7.0.0,DENTAL,dental care policy,2019-12-15
+7.0.0,ADRFPPELAT,adjud. refused prior-period electronic amount,2019-12-15
+7.0.0,(_ActMedicalServiceCode) Abstract,,2019-12-15
+7.0.0,(_ActCoverageEligibilityConfirmationCode) Abstract,,2019-12-15
+7.0.0,DF,Daily Fill,2019-12-15
+7.0.0,AE,American Express,2019-12-15
+7.0.0,DEMOCAT,demographics category,2019-12-15
+7.0.0,(_ActInvoiceDetailTaxCode) Abstract,,2019-12-15
+7.0.0,CPHC,certified public health and general preventive medicine care,2019-12-15
+7.0.0,ALC,Alternative Level of Care,2019-12-15
+7.0.0,(_TimingDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,ACALLG,allergy access,2019-12-15
+7.0.0,CCGC,certified clinical genetics (M.D.) care,2019-12-15
+7.0.0,(_LOINCObservationActContextAgeType) Abstract,,2019-12-15
+7.0.0,ALEC,alternate electronic,2019-12-15
+7.0.0,COND,Condition Alert,2019-12-15
+7.0.0,ADNPSPMNAT,adjud. non-payee payable same-period manual amount,2019-12-15
+7.0.0,AMBGRND,ground ambulance transport,2019-12-15
+7.0.0,CAIC,certified allergy and immunology care,2019-12-15
+7.0.0,CDIO,case disease imported observation,2019-12-15
+7.0.0,ANNU,annuity policy,2019-12-15
+7.0.0,CPAD,certified parkinsons disease care,2019-12-15
+7.0.0,ALRTSTRTLATE,start too late alert,2019-12-15
+7.0.0,5,Consulted Prescriber,2019-12-15
+7.0.0,ACDEMO,demographics access,2019-12-15
+7.0.0,CHRG,Standard Charge,2019-12-15
+7.0.0,AVAILABLE,Available Volume,2019-12-15
+7.0.0,ACSUBSTAB,substance abuse access,2019-12-15
+7.0.0,CTLSUB,Controlled Substance,2019-12-15
+7.0.0,9,Instituted Ongoing Monitoring Program,2019-12-15
+7.0.0,BUS,business constraint violation,2019-12-15
+7.0.0,CCCC,certified clinical cytogenetics care,2019-12-15
+7.0.0,BR,breikost (GE),2019-12-15
+7.0.0,CTBU,certified trauma/burn center care,2019-12-15
+7.0.0,(_ActInvoiceAdjudicationPaymentGroupCode) Abstract,,2019-12-15
+7.0.0,18,Leave of Absence,2019-12-15
+7.0.0,CURMEDLIST,current medication list,2019-12-15
+7.0.0,DISC,disclaimer,2019-12-15
+7.0.0,(_ObservationSequenceType) Abstract,,2019-12-15
+7.0.0,DECLASSIFYLABEL,declassify security label,2019-12-15
+7.0.0,ANNDI,diagnostic image note,2019-12-15
+7.0.0,CARD,Cardiology,2019-12-15
+7.0.0,13,Stopped Concurrent Therapy,2019-12-15
+7.0.0,CRPC,certified radiological physics care,2019-12-15
+7.0.0,AUTO-HIGH,Auto-High Dilution,2019-12-15
+7.0.0,DILUTION,ActSpecObsDilutionCode,2019-12-15
+7.0.0,AGGREGATE,aggregate measure observation,2019-12-15
+7.0.0,ADRFSPMNAT,adjud. refused same-period manual amount,2019-12-15
+7.0.0,ACMEDC,medical condition access,2019-12-15
+7.0.0,CSINV,clinical service invoice,2019-12-15
+7.0.0,ADNPPPMNCT,adjud. non-payee payable prior-period manual count,2019-12-15
+7.0.0,CASESER,case seriousness criteria,2019-12-15
+7.0.0,CONC,certified oncology care,2019-12-15
+7.0.0,CRIME,crime victim program,2019-12-15
+7.0.0,CEMC,certified emergency medicine care,2019-12-15
+7.0.0,CTSC,certified thoracic surgery care,2019-12-15
+7.0.0,(_ActCoverageAuthorizationConfirmationCode) Abstract,,2019-12-15
+7.0.0,(_ActSpecimenTreatmentCode) Abstract,,2019-12-15
+7.0.0,17,Weekend Supply,2019-12-15
+7.0.0,(_ActPaymentCode) Abstract,,2019-12-15
+7.0.0,CPNDSUPING,compound supply invoice group,2019-12-15
+7.0.0,CWOH,certified women's health care,2019-12-15
+7.0.0,COVMX,coverage maximum,2019-12-15
+7.0.0,(_ActInvoiceElementCode) Abstract,,2019-12-15
+7.0.0,21611-9,age patient qn est,2019-12-15
+7.0.0,(_ActAdministrativeDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,ASSERTION,Assertion,2019-12-15
+7.0.0,CC,credit card,2019-12-15
+7.0.0,ACU,short term/acute,2019-12-15
+7.0.0,CPLYCC,comply with confidentiality code,2019-12-15
+7.0.0,CHYP,certified hyperlipidemia care,2019-12-15
+7.0.0,(_ActInsurancePolicyCode) Abstract,,2019-12-15
+7.0.0,ADPPPPELCT,adjud. payee payable prior-period electronic count,2019-12-15
+7.0.0,DIR,Accesso Diretto,2019-12-15
+7.0.0,COVPRD,coverage period,2019-12-15
+7.0.0,ALRTENDLATE,end too late alert,2019-12-15
+7.0.0,CPLYOPP,comply with organizational privacy policy,2019-12-15
+7.0.0,CPGC,certified Ph.D. medical genetics care,2019-12-15
+7.0.0,CNMC,certified nuclear medicine care,2019-12-15
+7.0.0,ADNPPPELCT,adjud. non-payee payable prior-period electronic count,2019-12-15
+7.0.0,CMPMSRSCRWGHT,component measure scoring weight,2019-12-15
+7.0.0,DENOM,denominator,2019-12-15
+7.0.0,DACT,drug action detected issue,2019-12-15
+7.0.0,CLINNOTEREV,clinical note review task,2019-12-15
+7.0.0,ADNFPPELAT,adjud. nullified prior-period electronic amount,2019-12-15
+7.0.0,CLSSRM,classroom,2019-12-15
+7.0.0,AIRTRNS,airborne transmission,2019-12-15
+7.0.0,2,Assessed Patient,2019-12-15
+7.0.0,ANNGEN,general note,2019-12-15
+7.0.0,CFPC,certified family practice care,2019-12-15
+7.0.0,(_ActBillingArrangementCode) Abstract,,2019-12-15
+7.0.0,(_ActInvoiceOverrideCode) Abstract,,2019-12-15
+7.0.0,CLINNOTEE,clinical note entry task,2019-12-15
+7.0.0,AMBAIR,fixed-wing ambulance transport,2019-12-15
+7.0.0,DELEPOL,delegation policy,2019-12-15
+7.0.0,ACCTRECEIVABLE,account receivable,2019-12-15
+7.0.0,AUDTR,audit trail,2019-12-15
+7.0.0,ALLGCAT,allergy category,2019-12-15
+7.0.0,COGN,cognitive disability information sensitivity,2019-12-15
+7.0.0,CPTM,CPT modifier codes,2019-12-15
+7.0.0,(_ActInvoiceDetailClinicalServiceCode) Abstract,,2019-12-15
+7.0.0,CHK,Cheque,2019-12-15
+7.0.0,CIRCLE,circle,2019-12-15
+7.0.0,CFEL,certified frail elderly care,2019-12-15
+7.0.0,22,appropriate indication or diagnosis,2019-12-15
+7.0.0,(_ActProductAcquisitionCode) Abstract,,2019-12-15
+7.0.0,(_ActBillableServiceCode) Abstract,,2019-12-15
+7.0.0,(_ActSubstanceAdministrationCode) Abstract,,2019-12-15
+7.0.0,(_ActIncidentCode) Abstract,,2019-12-15
+7.0.0,(_SupplyDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,DENEX,denominator exclusions,2019-12-15
+7.0.0,(_RoleInformationSensitivityPolicy) Abstract,,2019-12-15
+7.0.0,ACIMMUN,immunization access,2019-12-15
+7.0.0,3,Patient Explanation,2019-12-15
+7.0.0,ACH,Automated Clearing House,2019-12-15
+7.0.0,CDSREV,clinical decision support intervention review,2019-12-15
+7.0.0,DAY,,2019-12-15
+7.0.0,ACOCOMPT,accountable care organization compartment,2019-12-15
+7.0.0,AUTO,auto-repeat permission,2019-12-15
+7.0.0,ACCONS,informational consent access,2019-12-15
+7.0.0,(_InvoiceElementAdjudicated) Abstract,,2019-12-15
+7.0.0,(_ObservationSeriesType) Abstract,,2019-12-15
+7.0.0,ALGY,Allergy Alert,2019-12-15
+7.0.0,ANF,adjudicated with adjustments and no financial impact,2019-12-15
+7.0.0,CONVEYNC,Common Conveyance Interaction,2019-12-15
+7.0.0,(_ActCoverageQuantityLimitCode) Abstract,,2019-12-15
+7.0.0,ACPOLPRG,policy or program information access,2019-12-15
+7.0.0,ALLCAT,all categories,2019-12-15
+7.0.0,ABUSE,commonly abused/misused alert,2019-12-15
+7.0.0,(_ActCareProvisionCode) Abstract,,2019-12-15
+7.0.0,CHLDCARE,Day care - Child care Interaction,2019-12-15
+7.0.0,ACUTE,inpatient acute,2019-12-15
+7.0.0,CACC,certified anatomic pathology and clinical pathology care,2019-12-15
+7.0.0,CDEP,certified depression care,2019-12-15
+7.0.0,ACALL,all access,2019-12-15
+7.0.0,CONT,,2019-12-15
+7.0.0,14,Supply Appropriate,2019-12-15
+7.0.0,(_InvoiceElementPaid) Abstract,,2019-12-15
+7.0.0,CFWD,carry forward adjusment,2019-12-15
+7.0.0,(SECTRSTOBS) Abstract,,2019-12-15
+7.0.0,DIET,Diet,2019-12-15
+7.0.0,AMBHELO,helicopter ambulance transport,2019-12-15
+7.0.0,(_ActInvoiceGroupCode) Abstract,,2019-12-15
+7.0.0,CURC,certified urology care,2019-12-15
+7.0.0,CPLYCD,comply with consent directive,2019-12-15
+7.0.0,ACADR,adverse drug reaction access,2019-12-15
+7.0.0,ADRFSPMNCT,adjud. refused same-period manual count,2019-12-15
+7.0.0,ACPSERV,professional service access,2019-12-15
+7.0.0,AMB,ambulatory,2019-12-15
+7.0.0,DISCHINSTE,discharge instruction entry,2019-12-15
+7.0.0,(_ActSpecObsCode) Abstract,,2019-12-15
+7.0.0,ADRFSPELAT,adjud. refused same-period electronic amount,2019-12-15
+7.0.0,DEID,deidentify,2019-12-15
+7.0.0,6,Prescriber Declined Change,2019-12-15
+7.0.0,CHR,Chronic,2019-12-15
+7.0.0,CCAR,certified cardiac care,2019-12-15
+7.0.0,(_ActContainerRegistrationCode) Abstract,,2019-12-15
+7.0.0,ANANTRNS,animal to animal transmission,2019-12-15
+7.0.0,BONUS,bonus,2019-12-15
+7.0.0,CONSUMPTION,Consumption Volume,2019-12-15
+7.0.0,COMPLY,Compliance Alert,2019-12-15
+7.0.0,ACCESSCONSCHEME,access control scheme,2019-12-15
+7.0.0,COSC,certified orthopaedic surgery care,2019-12-15
+7.0.0,21,authorization confirmed,2019-12-15
+7.0.0,(_GeneticObservationType) Abstract,,2019-12-15
+7.0.0,ADMDX,admitting diagnosis,2019-12-15
+7.0.0,(_EntitySensitivityPolicyType) Abstract,,2019-12-15
+7.0.0,ACID,Acidification,2019-12-15
+7.0.0,CMPMSRMTH,composite measure method,2019-12-15
+7.0.0,AALC,accredited assisted living care,2019-12-15
+7.0.0,DERMTRNS,transdermal transmission,2019-12-15
+7.0.0,(_ActEncounterCode) Abstract,,2019-12-15
+7.0.0,ALTC,accredited long term care,2019-12-15
+7.0.0,CWMA,certified wound management care,2019-12-15
+7.0.0,(_AdministrationDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,42CFRPart2,42 CFR Part2,2019-12-15
+7.0.0,(_ECGObservationSeriesType) Abstract,,2019-12-15
+7.0.0,CPINV,clinical product invoice,2019-12-15
+7.0.0,(_ActInvoiceDetailGenericCode) Abstract,,2019-12-15
+7.0.0,AFOOT,pedestrian transport,2019-12-15
+7.0.0,(_ActInvoiceRootGroupCode) Abstract,,2019-12-15
+7.0.0,(_ActAdjudicationCode) Abstract,,2019-12-15
+7.0.0,(_ActFinancialTransactionCode) Abstract,,2019-12-15
+7.0.0,(_MedicationObservationType) Abstract,,2019-12-15
+7.0.0,ADRFSPELCT,adjud. refused same-period electronic count,2019-12-15
+7.0.0,ADPPSPELAT,adjud. payee payable same-period electronic amount,2019-12-15
+7.0.0,AAMC,accredited ambulatory care,2019-12-15
+7.0.0,ADOL,adolescent information sensitivity,2019-12-15
+7.0.0,DISCHSUME,discharge summary entry task,2019-12-15
+7.0.0,COINS,co-insurance,2019-12-15
+7.0.0,CEL,celebrity information sensitivity,2019-12-15
+7.0.0,(_ActPharmacySupplyType) Abstract,,2019-12-15
+7.0.0,AFTHRS,non-normal hours,2019-12-15
+7.0.0,(_ActInvoiceAdjudicationPaymentSummaryCode) Abstract,,2019-12-15
+7.0.0,CPNDINDING,compound ingredient invoice group,2019-12-15
+7.0.0,CREACT,common reaction alert,2019-12-15
+7.0.0,ABHC,accredited behavioral health care,2019-12-15
+7.0.0,(_HL7DefinedActCodes) Abstract,,2019-12-15
+7.0.0,ACAC,accredited critical access hospital care,2019-12-15
+7.0.0,CMSC,certified multiple sclerosis care,2019-12-15
+7.0.0,COPY,copyright,2019-12-15
+7.0.0,CAPC,certified anatomic pathology care,2019-12-15
+7.0.0,BOOSTER,Booster Immunization,2019-12-15
+7.0.0,(_ObservationIssueTriggerCodedObservationType) Abstract,,2019-12-15
+7.0.0,ACDI,diagnostic imaging access,2019-12-15
+7.0.0,(_ActConsentDirective) Abstract,,2019-12-15
+7.0.0,COVGE,coverage problem,2019-12-15
+7.0.0,(_ActBillableModifierCode) Abstract,,2019-12-15
+7.0.0,ACHC,accredited hospital care,2019-12-15
+7.0.0,CANC,certified anesthesiology care,2019-12-15
+7.0.0,COVPOL,benefit policy,2019-12-15
+7.0.0,(_FDALabelData) Abstract,,2019-12-15
+7.0.0,ADNPSPMNCT,adjud. non-payee payable same-period manual count,2019-12-15
+7.0.0,(_ActObservationList) Abstract,,2019-12-15
+7.0.0,(_ActTransportationModeCode) Abstract,,2019-12-15
+7.0.0,ANONY,anonymize,2019-12-15
+7.0.0,DALG,,2019-12-15
+7.0.0,DF,,2019-12-15
+7.0.0,ACOBS,common observations access,2019-12-15
+7.0.0,CMIH,certified migraine headache care,2019-12-15
+7.0.0,30525-0,age patient qn definition,2019-12-15
+7.0.0,AUTOPOL,automobile,2019-12-15
+7.0.0,ALG,Allergy,2019-12-15
+7.0.0,CVDC,certified vascular diseases care,2019-12-15
+7.0.0,AHOC,accredited home care,2019-12-15
+7.0.0,(_AnnotationType) Abstract,,2019-12-15
+7.0.0,CONTF,contract funding,2019-12-15
+7.0.0,12,Temporarily Suspended Concurrent Therapy,2019-12-15
+7.0.0,CPLYPOL,comply with policy,2019-12-15
+7.0.0,CHRO,certified high risk obstetrics care,2019-12-15
+7.0.0,(_ActSpecimenTransportCode) Abstract,,2019-12-15
+7.0.0,ARCAT,adverse drug reaction category,2019-12-15
+7.0.0,(_ActAdministrativeDetectedIssueManagementCode) Abstract,,2019-12-15
+7.0.0,(_AuthorizationIssueManagementCode) Abstract,,2019-12-15
+7.0.0,(_ActListCode) Abstract,,2019-12-15
+7.0.0,AA,adjudicated with adjustments,2019-12-15
+7.0.0,AUTH,Authorized,2019-12-15
+7.0.0,COTC,certified otolaryngology care,2019-12-15
+7.0.0,(_ActTherapyDurationWorkingListCode) Abstract,,2019-12-15
+7.0.0,(_ActCredentialedCareProvisionPersonCode) Abstract,,2019-12-15
+7.0.0,29553-5,age patient qn calc,2019-12-15
+7.0.0,CHAR,charity program,2019-12-15
+7.0.0,(_ActCredentialedCareCode) Abstract,,2019-12-15
+7.0.0,DINT,Drug Intolerance,2019-12-15
+7.0.0,ACPROV,provider information access,2019-12-15
+7.0.0,CPEC,certified pediatrics care,2019-12-15
+7.0.0,CPSC,certified plastic surgery care,2019-12-15
+7.0.0,ADPPPPMNCT,adjud. payee payable prior-period manual count,2019-12-15
+7.0.0,CCAD,certified coronary artery disease care,2019-12-15
+7.0.0,(_ActSuppliedItemDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,(_ActAdministrativeRuleDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,1,Therapy Appropriate,2019-12-15
+7.0.0,CPLYJPP,comply with jurisdictional privacy policy,2019-12-15
+7.0.0,ADNFPPELCT,adjud. nullified prior-period electronic count,2019-12-15
+7.0.0,(_ActTaskCode) Abstract,,2019-12-15
+7.0.0,DENTPRG,dental program,2019-12-15
+7.0.0,7,Interacting Therapy No Longer Active/Planned,2019-12-15
+7.0.0,COPAYMENT,patient co-pay,2019-12-15
+7.0.0,(SECOBS) Abstract,,2019-12-15
+7.0.0,CANCAPT,cancelled appointment,2019-12-15
+7.0.0,BLK,block funding,2019-12-15
+7.0.0,CODE_DEPREC,code has been deprecated,2019-12-15
+7.0.0,ALK,Alkalization,2019-12-15
+7.0.0,CPYC,certified psychiatry care,2019-12-15
+7.0.0,CONT,contract,2019-12-15
+7.0.0,ALLERLE,allergy list entry,2019-12-15
+7.0.0,(_ActMedicationTherapyDurationWorkingListCode) Abstract,,2019-12-15
+7.0.0,ADNFSPELCT,adjud. nullified same-period electronic count,2019-12-15
+7.0.0,CSLD,certified sleep disorders care,2019-12-15
+7.0.0,DIAGLISTE,diagnosis list entry task,2019-12-15
+7.0.0,(_ActBoundedROICode) Abstract,,2019-12-15
+7.0.0,(_ObservationType) Abstract,,2019-12-15
+7.0.0,(_ActAdministrativeAuthorizationDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,CAST,certified asthma care,2019-12-15
+7.0.0,DEDUCTIBLE,deductible,2019-12-15
+7.0.0,COPC,certified ophthalmology care,2019-12-15
+7.0.0,(_ActInvoiceInterGroupCode) Abstract,,2019-12-15
+7.0.0,(_HL7AccommodationCode) Abstract,,2019-12-15
+7.0.0,ADALRT,adult alert,2019-12-15
+7.0.0,ACMEN,mental health access,2019-12-15
+7.0.0,(_ActCoverageConfirmationCode) Abstract,,2019-12-15
+7.0.0,ALLERLREV,allergy list review,2019-12-15
+7.0.0,DELAU,delete after use,2019-12-15
+7.0.0,CCSC,certified colon and rectal surgery care,2019-12-15
+7.0.0,ANNMED,medication note,2019-12-15
+7.0.0,DIA,diagnosis information sensitivity,2019-12-15
+7.0.0,CNQC,certified neurology with special qualifications in child neurology care,2019-12-15
+7.0.0,(_ActProcedureCode) Abstract,,2019-12-15
+7.0.0,ADRFPPMNCT,adjud. refused prior-period manual count,2019-12-15
+7.0.0,CPST,certified primary stroke center care,2019-12-15
+7.0.0,AS,adjudicated as submitted,2019-12-15
+7.0.0,(_ActInvoiceDetailPreferredAccommodationCode) Abstract,,2019-12-15
+7.0.0,(_ActHealthInsuranceTypeCode) Abstract,,2019-12-15
+7.0.0,DAY,day,2019-12-15
+7.0.0,AOD,accounting of disclosure,2019-12-15
+7.0.0,(_ActPrivacyPolicy) Abstract,,2019-12-15
+7.0.0,(_ActPrivacyLaw) Abstract,,2019-12-15
+7.0.0,ANNIMM,immunization note,2019-12-15
+7.0.0,(_ActInvoiceDetailGenericModifierCode) Abstract,,2019-12-15
+7.0.0,CAP,capitation funding,2019-12-15
+7.0.0,(_ActProgramTypeCode) Abstract,,2019-12-15
+7.0.0,(_ActInformationAccessContextCode) Abstract,,2019-12-15
+7.0.0,(_ROIOverlayShape) Abstract,,2019-12-15
+7.0.0,BH,behavioral health information sensitivity,2019-12-15
+7.0.0,CHFC,certified heart failure care,2019-12-15
+7.0.0,CSDM,certified stroke disease management care,2019-12-15
+7.0.0,19,Consulted Supplier,2019-12-15
+7.0.0,ANNLAB,laboratory note,2019-12-15
+7.0.0,CNSC,certified neurological surgery care,2019-12-15
+7.0.0,CODE_INVAL,code is not valid,2019-12-15
+7.0.0,DIS,disability insurance policy,2019-12-15
+7.0.0,COL,collision coverage policy,2019-12-15
+7.0.0,21612-7,age patient qn reported,2019-12-15
+7.0.0,AUTO-LOW,Auto-Low Dilution,2019-12-15
+7.0.0,ACMED,medication access,2019-12-15
+7.0.0,CBAR,certified bariatric surgery care,2019-12-15
+7.0.0,10,Provided Patient Education,2019-12-15
+7.0.0,CPRC,certified physical medicine and rehabilitation care,2019-12-15
+7.0.0,(_InformationSensitivityPolicy) Abstract,,2019-12-15
+7.0.0,15,Replacement,2019-12-15
+7.0.0,CPNDDRGING,compound drug invoice group,2019-12-15
+7.0.0,(_ActDetectedIssueManagementCode) Abstract,,2019-12-15
+7.0.0,CORT,certified organ transplant care,2019-12-15
+7.0.0,CBGC,certified clinical biochemical genetics care,2019-12-15
+7.0.0,COMPT,compartment,2019-12-15
+7.0.0,(_ActPolicyType) Abstract,,2019-12-15
+7.0.0,CAMI,certified acute myocardial infarction care,2019-12-15
+7.0.0,(_InteractionDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,AOSC,accredited office-based surgery care,2019-12-15
+7.0.0,ADPPSPMNAT,adjud. payee payable same-period manual amount,2019-12-15
+7.0.0,CROC,certified radiation oncology care,2019-12-15
+7.0.0,(_AppropriatenessDetectedIssueCode) Abstract,,2019-12-15
+7.0.0,CDGD,certified digestive/gastrointestinal disorders care,2019-12-15
 7.0.0,INMATE,Inmate Interaction,2019-12-15
-7.0.0,INT,Intolerance Alert,2019-12-15
-7.0.0,INTDX,intermediate diagnosis,2019-12-15
-7.0.0,INTERVAL,outside requested time,2019-12-15
-7.0.0,INTFR,ActSpecObsInterferenceCode,2019-12-15
-7.0.0,INTIMATE,Intimate Interaction,2019-12-15
+7.0.0,INDTRNS,indeterminate disease transmission mode,2019-12-15
+7.0.0,C,corrected,2019-12-15
+7.0.0,FINT,Food Intolerance,2019-12-15
+7.0.0,FDASHAPE,shape,2019-12-15
+7.0.0,ADNFPPMNAT,adjud. nullified prior-period manual amount,2019-12-15
+7.0.0,(_ActExposureCode) Abstract,,2019-12-15
+7.0.0,GENRL,General,2019-12-15
+7.0.0,IMMLE,immunization list entry,2019-12-15
+7.0.0,FRAMEING,frame invoice group,2019-12-15
+7.0.0,PDNFPPELAT,paid nullified prior-period electronic amount,2019-12-15
+7.0.0,IRDSCL,information redisclosure,2019-12-15
+7.0.0,POLY,polyline,2019-12-15
+7.0.0,IMPLIEDD,implied consent with opportunity to dissent,2019-12-15
+7.0.0,PROBLIST,problem list,2019-12-15
+7.0.0,DOSEL,Low Dose Alert,2019-12-15
+7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
+7.0.0,IPPOP,initial patient population,2019-12-15
+7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
+7.0.0,GEN,Genetic Alert,2019-12-15
+7.0.0,DRUGING,drug invoice group,2019-12-15
+7.0.0,IND02,colonoscopy prep,2019-12-15
+7.0.0,KEY205,,2019-12-15
+7.0.0,INITIAL,Initial Volume,2019-12-15
+7.0.0,INFCRT,only on court order,2019-12-15
+7.0.0,MAXOCCURS,repetitions above maximum,2019-12-15
+7.0.0,MEDLIST,medication list,2019-12-15
+7.0.0,LENSING,lens invoice group,2019-12-15
+7.0.0,PDPPPPELAT,paid payee payable prior-period electronic amount,2019-12-15
+7.0.0,IMMLREV,immunization list review,2019-12-15
+7.0.0,KSUBT,knowledge subtopic,2019-12-15
+7.0.0,MSRSET,health quality measure care setting,2019-12-15
+7.0.0,PUBTRN,public transport,2019-12-15
+7.0.0,NAINT,Non-Allergy Intolerance,2019-12-15
+7.0.0,MVA,Motor vehicle accident,2019-12-15
+7.0.0,INFAUT,authorized information transfer,2019-12-15
+7.0.0,FECTRNS,fecal-oral transmission,2019-12-15
+7.0.0,PDPPPPMNCT,paid payee payable prior-period manual count,2019-12-15
+7.0.0,PRE,Pre-Dilution,2019-12-15
+7.0.0,PAF,phenylalanine free,2019-12-15
+7.0.0,PDNFPPELCT,paid nullified prior-period electronic count,2019-12-15
+7.0.0,OREV,orders review task,2019-12-15
+7.0.0,GARN,garnishee,2019-12-15
+7.0.0,PDNPPPELAT,paid non-payee payable prior-period electronic amount,2019-12-15
+7.0.0,FDACOATING,coating,2019-12-15
+7.0.0,EMPL,employer information sensitivity,2019-12-15
+7.0.0,IPOP,initial population,2019-12-15
+7.0.0,P,Private,2019-12-15
+7.0.0,PREFSTRENGTH,preference strength,2019-12-15
+7.0.0,PSYTHPN,psychotherapy note information sensitivity,2019-12-15
+7.0.0,DVD,developmental disability information sensitivity,2019-12-15
+7.0.0,HH,home health,2019-12-15
+7.0.0,EMP,employee information sensitivity,2019-12-15
+7.0.0,MSRRPTTIME,timeframe for reporting,2019-12-15
+7.0.0,DISDX,discharge diagnosis,2019-12-15
+7.0.0,ENDRENAL,end renal program,2019-12-15
+7.0.0,NOLIST,no unlisted entity disclosure,2019-12-15
+7.0.0,CRS,clinical recommendation statement,2019-12-15
+7.0.0,CHRON,continuous/chronic,2019-12-15
+7.0.0,DOSEHINDW,High Dose for Weight Alert,2019-12-15
+7.0.0,MONTH,month,2019-12-15
+7.0.0,PROG,Accesso Programmato,2019-12-15
+7.0.0,PATREPE,pathology report entry task,2019-12-15
+7.0.0,FFPS,,2019-12-15
+7.0.0,MISSMAND,mandatory element missing,2019-12-15
+7.0.0,PAR,parenteral,2019-12-15
+7.0.0,ICOL,information collection,2019-12-15
+7.0.0,DM,diabetes mellitus diet,2019-12-15
+7.0.0,FIBRIN,Fibrin,2019-12-15
+7.0.0,DOSECOND,dosage-condition alert,2019-12-15
+7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
+7.0.0,GEND,Gender Alert,2019-12-15
+7.0.0,MISSAPT,missed appointment,2019-12-15
+7.0.0,NOTACTN,no longer actionable,2019-12-15
+7.0.0,OINT,intolerance,2019-12-15
 7.0.0,INTOLIST,intolerance list,2019-12-15
 7.0.0,INV,investigational,2019-12-15
-7.0.0,INVOICE,submitted invoice,2019-12-15
-7.0.0,INVTYPE,invoice type,2019-12-15
-7.0.0,IP,In Position,2019-12-15
-7.0.0,IPOP,initial population,2019-12-15
-7.0.0,IPPOP,initial patient population,2019-12-15
-7.0.0,IRDSCL,information redisclosure,2019-12-15
-7.0.0,ISOL,isolation allowance,2019-12-15
-7.0.0,ISSUE,detected issue,2019-12-15
-7.0.0,ITMCNT,items counted,2019-12-15
-7.0.0,KEY,keyword,2019-12-15
-7.0.0,KEY204,,2019-12-15
-7.0.0,KEY204,Unknown key identifier,2019-12-15
-7.0.0,KEY205,,2019-12-15
-7.0.0,KEY205,Duplicate key identifier,2019-12-15
-7.0.0,KEY206,non-matching identification,2019-12-15
 7.0.0,KSUBJ,knowledge subject,2019-12-15
-7.0.0,KSUBT,knowledge subtopic,2019-12-15
-7.0.0,L,Left Equipment,2019-12-15
-7.0.0,LAB,Lab Alert,2019-12-15
-7.0.0,LABCAT,lab test category,2019-12-15
-7.0.0,LABEL,assign security label,2019-12-15
-7.0.0,LABOE,laboratory test order entry task,2019-12-15
-7.0.0,LABRESULTS,lab results,2019-12-15
-7.0.0,LABRREV,laboratory results review task,2019-12-15
-7.0.0,LACT,Lactation Alert,2019-12-15
-7.0.0,LACTTRNS,lactation transmission,2019-12-15
-7.0.0,LATE,late invoice,2019-12-15
-7.0.0,LAWENF,law enforcement transport,2019-12-15
-7.0.0,LDLP,LDL Precipitation,2019-12-15
-7.0.0,LENSING,lens invoice group,2019-12-15
-7.0.0,LEN_LONG,length is too long,2019-12-15
-7.0.0,LEN_RANGE,length out of range,2019-12-15
-7.0.0,LEN_SHORT,length is too short,2019-12-15
-7.0.0,LF,low fat,2019-12-15
-7.0.0,LFEMX,,2019-12-15
-7.0.0,LFEMX,life time maximum,2019-12-15
-7.0.0,LGPC,licensed general physician care,2019-12-15
-7.0.0,LIFE,life insurance policy,2019-12-15
-7.0.0,LIPEMIA,Lipemia,2019-12-15
-7.0.0,LIVARG,living arrangement information sensitivity,2019-12-15
-7.0.0,LOAN,Loan,2019-12-15
-7.0.0,LOC,location,2019-12-15
-7.0.0,LOC,,2019-12-15
-7.0.0,LOCIS,location information sensitivity,2019-12-15
-7.0.0,LP,low protein,2019-12-15
-7.0.0,LQ,liquid,2019-12-15
-7.0.0,LRCOMPT,legitimate relationship compartment,2019-12-15
-7.0.0,LS,low sodium,2019-12-15
-7.0.0,LTC,long term care policy,2019-12-15
-7.0.0,LTRMCARE,Long Term Care Facility Interaction,2019-12-15
-7.0.0,LU,limited use,2019-12-15
-7.0.0,M,Missing,2019-12-15
-7.0.0,MANDPOL,mandatory health program,2019-12-15
-7.0.0,MANUAL,manual review,2019-12-15
-7.0.0,MARKUP,markup or up-charge,2019-12-15
-7.0.0,MARST,marital status information sensitivity,2019-12-15
-7.0.0,MARWLREV,medication administration record work list review task,2019-12-15
-7.0.0,MASK,mask,2019-12-15
-7.0.0,MAXOCCURS,repetitions above maximum,2019-12-15
-7.0.0,MC,Master Card,2019-12-15
-7.0.0,MCPOL,managed care policy,2019-12-15
-7.0.0,MDOSE,maximum dosage reached,2019-12-15
-7.0.0,MED,Medical,2019-12-15
-7.0.0,MEDCCAT,medical condition category,2019-12-15
-7.0.0,MEDLIST,medication list,2019-12-15
-7.0.0,MEDOE,medication order entry task,2019-12-15
-7.0.0,MEDT,measurement end date,2019-12-15
-7.0.0,MENCAT,mental health category,2019-12-15
-7.0.0,MENTPOL,mental health policy,2019-12-15
-7.0.0,MENTPRG,mental health program,2019-12-15
-7.0.0,MH,mental health information sensitivity,2019-12-15
-7.0.0,MICROORGRREV,microbiology organisms results review task,2019-12-15
-7.0.0,MICRORREV,microbiology results review task,2019-12-15
-7.0.0,MICROSENSRREV,microbiology sensitivity test results review task,2019-12-15
-7.0.0,MILITARY,military health program,2019-12-15
-7.0.0,MINEC,minimum necessary,2019-12-15
-7.0.0,MINFREQ,too soon within frequency based on the usage,2019-12-15
-7.0.0,MINOCCURS,repetitions below minimum,2019-12-15
-7.0.0,MISSAPT,missed appointment,2019-12-15
-7.0.0,MISSCOND,conditional element missing,2019-12-15
-7.0.0,MISSMAND,mandatory element missing,2019-12-15
-7.0.0,MLREV,medication list review task,2019-12-15
-7.0.0,MODEL,model,2019-12-15
-7.0.0,MONTH,month,2019-12-15
-7.0.0,MONTH,,2019-12-15
-7.0.0,MS,Manufacturer Sample,2019-12-15
-7.0.0,MSD,measurement start date,2019-12-15
-7.0.0,MSRADJ,risk adjustment,2019-12-15
-7.0.0,MSRAGG,rate aggregation,2019-12-15
-7.0.0,MSRIMPROV,health quality measure improvement notation,2019-12-15
-7.0.0,MSRJUR,jurisdiction,2019-12-15
-7.0.0,MSROBS,measure observation,2019-12-15
-7.0.0,MSRPOPL,measure population,2019-12-15
-7.0.0,MSRPOPLEX,measure population exclusions,2019-12-15
-7.0.0,MSRRPTR,reporter type,2019-12-15
-7.0.0,MSRRPTTIME,timeframe for reporting,2019-12-15
-7.0.0,MSRSCORE,measure scoring,2019-12-15
-7.0.0,MSRSET,health quality measure care setting,2019-12-15
-7.0.0,MSRTOPIC,health quality measure topic type,2019-12-15
-7.0.0,MSRTP,measurement period,2019-12-15
-7.0.0,MSRTYPE,measure type,2019-12-15
-7.0.0,MST,military sexual trauma information sensitivity,2019-12-15
-7.0.0,MVA,Motor vehicle accident,2019-12-15
-7.0.0,N,normal diet,2019-12-15
-7.0.0,NAINT,Non-Allergy Intolerance,2019-12-15
-7.0.0,NAT,Insufficient authorization,2019-12-15
-7.0.0,NAUTH,Not Authorized,2019-12-15
-7.0.0,NELG,Not Eligible,2019-12-15
-7.0.0,NETAMT,Net Amount,2019-12-15
-7.0.0,NEUT,Neutralization,2019-12-15
-7.0.0,NF,no fat,2019-12-15
-7.0.0,NHP,Natural Health Product Alert,2019-12-15
-7.0.0,NOAUTH,no disclosure without subject authorization,2019-12-15
-7.0.0,NOCOLLECT,no collection,2019-12-15
-7.0.0,NOCONSENT,no consent,2019-12-15
-7.0.0,NODSCLCD,no disclosure without consent directive,2019-12-15
-7.0.0,NODSCLCDS,no disclosure without information subject's consent directive,2019-12-15
-7.0.0,NODUPS,duplicate values are not permitted,2019-12-15
-7.0.0,NOI,nature of injury,2019-12-15
-7.0.0,NOINTEGRATE,no integration,2019-12-15
-7.0.0,NOLIST,no unlisted entity disclosure,2019-12-15
-7.0.0,NOMOU,no disclosure without MOU,2019-12-15
-7.0.0,NON,Non-Payment Data,2019-12-15
-7.0.0,NONAC,inpatient non-acute,2019-12-15
-7.0.0,NONRX,Non-Prescription Interaction Alert,2019-12-15
-7.0.0,NOORGPOL,no disclosure without organizational authorization,2019-12-15
-7.0.0,NOPAT,"no disclosure to patient, family or caregivers without attending provider's authorization",2019-12-15
-7.0.0,NOPERSIST,element will not be persisted,2019-12-15
-7.0.0,NOPERSISTP,no collection beyond purpose of use,2019-12-15
-7.0.0,NOPP,notice of privacy practices,2019-12-15
-7.0.0,NORDSCLCD,no redisclosure without consent directive,2019-12-15
-7.0.0,NORDSCLCDS,no redisclosure without information subject's consent directive,2019-12-15
-7.0.0,NORDSCLW,no disclosure without jurisdictional authorization,2019-12-15
-7.0.0,NORELINK,no relinking,2019-12-15
 7.0.0,NOREUSE,no reuse beyond purpose of use,2019-12-15
-7.0.0,NOSTRNS,nosocomial transmission,2019-12-15
-7.0.0,NOTACTN,no longer actionable,2019-12-15
-7.0.0,NOTEQUIV,not equivalent alert,2019-12-15
-7.0.0,NOTEQUIVGEN,not generically equivalent alert,2019-12-15
-7.0.0,NOTEQUIVTHER,not therapeutically equivalent alert,2019-12-15
-7.0.0,NOVIP,no unauthorized VIP disclosure,2019-12-15
-7.0.0,NUMER,numerator,2019-12-15
-7.0.0,NUMEX,numerator exclusions,2019-12-15
-7.0.0,O,In Process,2019-12-15
-7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,,2019-12-15
-7.0.0,OBSA,Observation Alert,2019-12-15
-7.0.0,OBSANTC,antigen count,2019-12-15
-7.0.0,OBSANTV,antigen validity,2019-12-15
-7.0.0,OBSENC,observation encounter,2019-12-15
-7.0.0,OBSOLETE,obsolete record returned,2019-12-15
-7.0.0,OE,order entry task,2019-12-15
-7.0.0,OHSINV,oral health service,2019-12-15
-7.0.0,OINT,intolerance,2019-12-15
-7.0.0,ONC,Oncology,2019-12-15
-7.0.0,ONET,one time,2019-12-15
-7.0.0,OOJ,out of jurisdiction,2019-12-15
-7.0.0,OOO,out of office,2019-12-15
-7.0.0,OPIOIDUD,opioid use disorder information sensitivity,2019-12-15
-7.0.0,OPTIN,opt-in,2019-12-15
-7.0.0,OPTINR,opt-in with restrictions,2019-12-15
-7.0.0,OPTOUT,op-out,2019-12-15
-7.0.0,OPTOUTE,opt-out with exceptions,2019-12-15
-7.0.0,ORCON,no disclosure without originator authorization,2019-12-15
-7.0.0,OREV,orders review task,2019-12-15
-7.0.0,ORTHO,orthodontic service,2019-12-15
-7.0.0,OTC,non prescription medicine,2019-12-15
-7.0.0,ObligationPolicy,obligation policy,2019-12-15
-7.0.0,P,Private,2019-12-15
-7.0.0,PACOMPT,patient administration compartment,2019-12-15
-7.0.0,PAF,phenylalanine free,2019-12-15
-7.0.0,PAINV,preferred accommodation invoice,2019-12-15
-7.0.0,PALL,Palliative,2019-12-15
-7.0.0,PAPER,paper documentation to follow,2019-12-15
-7.0.0,PAR,parenteral,2019-12-15
-7.0.0,PARTRNS,parenteral transmission,2019-12-15
-7.0.0,PATDOC,patient documentation task,2019-12-15
-7.0.0,PATEDUE,patient education entry,2019-12-15
-7.0.0,PATINFO,patient information review task,2019-12-15
-7.0.0,PATPREF,violates stated preferences,2019-12-15
-7.0.0,PATPREFALT,"violates stated preferences, alternate available",2019-12-15
-7.0.0,PATREPE,pathology report entry task,2019-12-15
-7.0.0,PATREPREV,pathology report review task,2019-12-15
-7.0.0,PAT_ADV_EVNT,patient adverse event,2019-12-15
-7.0.0,PAY,payment,2019-12-15
-7.0.0,PAYEE,payee,2019-12-15
-7.0.0,PAYOR,payor,2019-12-15
-7.0.0,PBILLACCT,patient billing account,2019-12-15
-7.0.0,PDNFPPELAT,paid nullified prior-period electronic amount,2019-12-15
-7.0.0,PDNFPPELCT,paid nullified prior-period electronic count,2019-12-15
-7.0.0,PDNFPPMNAT,paid nullified prior-period manual amount,2019-12-15
-7.0.0,PDNFPPMNCT,paid nullified prior-period manual count,2019-12-15
-7.0.0,PDNFSPELAT,paid nullified same-period electronic amount,2019-12-15
-7.0.0,PDNFSPELCT,paid nullified same-period electronic count,2019-12-15
-7.0.0,PDNFSPMNAT,paid nullified same-period manual amount,2019-12-15
-7.0.0,PDNFSPMNCT,paid nullified same-period manual count,2019-12-15
-7.0.0,PDNPPPELAT,paid non-payee payable prior-period electronic amount,2019-12-15
-7.0.0,PDNPPPELCT,paid non-payee payable prior-period electronic count,2019-12-15
-7.0.0,PDNPPPMNAT,paid non-payee payable prior-period manual amount,2019-12-15
-7.0.0,PDNPPPMNCT,paid non-payee payable prior-period manual count,2019-12-15
-7.0.0,PDNPSPELAT,paid non-payee payable same-period electronic amount,2019-12-15
-7.0.0,PDNPSPELCT,paid non-payee payable same-period electronic count,2019-12-15
-7.0.0,PDNPSPMNAT,paid non-payee payable same-period manual amount,2019-12-15
-7.0.0,PDNPSPMNCT,paid non-payee payable same-period manual count,2019-12-15
-7.0.0,PDPPPPELAT,paid payee payable prior-period electronic amount,2019-12-15
-7.0.0,PDPPPPELCT,paid payee payable prior-period electronic count,2019-12-15
-7.0.0,PDPPPPMNAT,paid payee payable prior-period manual amount,2019-12-15
-7.0.0,PDPPPPMNCT,paid payee payable prior-period manual count,2019-12-15
-7.0.0,PDPPSPELAT,paid payee payable same-period electronic amount,2019-12-15
-7.0.0,PDPPSPELCT,paid payee payable same-period electronic count,2019-12-15
-7.0.0,PDPPSPMNAT,paid payee payable same-period manual amount,2019-12-15
-7.0.0,PDPPSPMNCT,paid payee payable same-period manual count,2019-12-15
-7.0.0,PDS,patient default information sensitivity,2019-12-15
+7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
 7.0.0,PEALRT,pediatric alert,2019-12-15
-7.0.0,PED,Pediatrics,2019-12-15
-7.0.0,PERFEE,periodic fee,2019-12-15
-7.0.0,PERIOD,,2019-12-15
-7.0.0,PERIOD,period,2019-12-15
-7.0.0,PERMBNS,performance bonus,2019-12-15
-7.0.0,PERSISTLABEL,persist security label,2019-12-15
-7.0.0,PHAR,Pharmaceutical,2019-12-15
-7.0.0,PHY,physician requested information sensitivity,2019-12-15
-7.0.0,PHYRHB,Physical Rehab,2019-12-15
-7.0.0,PIE,public insurance exhausted,2019-12-15
-7.0.0,PINV,paper invoice,2019-12-15
-7.0.0,PLACE,Common Space Interaction,2019-12-15
-7.0.0,PLACTRNS,transplacental transmission,2019-12-15
-7.0.0,PLYDOC,Poly-orderer Alert,2019-12-15
-7.0.0,PLYPHRM,Poly-supplier Alert,2019-12-15
+7.0.0,DISCMEDLIST,discharge medication list,2019-12-15
+7.0.0,DIAGLISTREV,diagnosis list review task,2019-12-15
+7.0.0,ETHUD,alcohol use disorder information sensitivity,2019-12-15
+7.0.0,LDLP,LDL Precipitation,2019-12-15
+7.0.0,NOTEQUIV,not equivalent alert,2019-12-15
 7.0.0,PNC,property and casualty insurance policy,2019-12-15
-7.0.0,POINT,point,2019-12-15
-7.0.0,POLY,polyline,2019-12-15
-7.0.0,POS,,2019-12-15
-7.0.0,POS,point of service policy,2019-12-15
-7.0.0,PPO,preferred provider organization policy,2019-12-15
-7.0.0,PPRD,prior period adjustment,2019-12-15
-7.0.0,PRA,,2019-12-15
-7.0.0,PRDING,product invoice group,2019-12-15
-7.0.0,PRDMX,,2019-12-15
-7.0.0,PRDMX,period maximum,2019-12-15
-7.0.0,PRE,Pre-Dilution,2019-12-15
-7.0.0,PREFSTRENGTH,preference strength,2019-12-15
-7.0.0,PREG,Pregnancy Alert,2019-12-15
-7.0.0,PRENC,pre-admission,2019-12-15
-7.0.0,PREVINEF,previously ineffective,2019-12-15
-7.0.0,PRIVMARK,privacy mark,2019-12-15
-7.0.0,PRLMN,preliminary,2019-12-15
-7.0.0,PRN,as needed,2019-12-15
-7.0.0,PROA,professional association deduction,2019-12-15
-7.0.0,PROBLIST,problem list,2019-12-15
-7.0.0,PROBLISTE,problem list entry task,2019-12-15
+7.0.0,HIVAIDS,HIV-AIDS program,2019-12-15
+7.0.0,ETH,substance abuse information sensitivity,2019-12-15
 7.0.0,PROBLISTREV,problem list review task,2019-12-15
-7.0.0,PROG,Accesso Programmato,2019-12-15
-7.0.0,PROV,,2019-12-15
-7.0.0,PROV,provider,2019-12-15
-7.0.0,PRS,patient requested information sensitivity,2019-12-15
-7.0.0,PRVTRN,private transport,2019-12-15
-7.0.0,PSEUD,pseudonymize,2019-12-15
-7.0.0,PST,provincial/state sales tax,2019-12-15
-7.0.0,PSVCCAT,professional service category,2019-12-15
+7.0.0,MINEC,minimum necessary,2019-12-15
 7.0.0,PSY,psychiatry disorder information sensitivity,2019-12-15
-7.0.0,PSYCH,Psychiatric,2019-12-15
-7.0.0,PSYTHPN,psychotherapy note information sensitivity,2019-12-15
-7.0.0,PTNTCARE,Health Care Interaction - Patient Care,2019-12-15
-7.0.0,PUBLICPOL,public healthcare,2019-12-15
-7.0.0,PUBLICPOL,,2019-12-15
-7.0.0,PUBTRN,public transport,2019-12-15
-7.0.0,PYRDELAY,delayed by a previous payor,2019-12-15
+7.0.0,DRG,Drug Interaction Alert,2019-12-15
+7.0.0,NUMEX,numerator exclusions,2019-12-15
+7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
 7.0.0,R,Process Completed,2019-12-15
-7.0.0,RACE,race information sensitivity,2019-12-15
-7.0.0,RADREPE,radiology report entry task,2019-12-15
-7.0.0,RADREPREV,radiology report review task,2019-12-15
-7.0.0,RAD_DIR,Accesso Diretto (Radiologia),2019-12-15
-7.0.0,RAD_PROG,Accesso Programmato (Radiologia),2019-12-15
-7.0.0,RALG,Related Allergy Alert,2019-12-15
+7.0.0,DRGIS,drug information sensitivity,2019-12-15
+7.0.0,MSRPOPLEX,measure population exclusions,2019-12-15
+7.0.0,MSD,measurement start date,2019-12-15
+7.0.0,INVOICE,submitted invoice,2019-12-15
+7.0.0,FORM,Print on Form,2019-12-15
+7.0.0,MSRPOPL,measure population,2019-12-15
+7.0.0,NOVIP,no unauthorized VIP disclosure,2019-12-15
+7.0.0,MEDOE,medication order entry task,2019-12-15
+7.0.0,PIE,public insurance exhausted,2019-12-15
+7.0.0,ENAINT,,2019-12-15
+7.0.0,FF,First Fill,2019-12-15
+7.0.0,OE,order entry task,2019-12-15
+7.0.0,PDNPSPMNCT,paid non-payee payable same-period manual count,2019-12-15
+7.0.0,NORELINK,no relinking,2019-12-15
+7.0.0,OPTIN,opt-in,2019-12-15
+7.0.0,DNAINT,,2019-12-15
+7.0.0,DISPLAY,Display,2019-12-15
+7.0.0,ENVTRNS,environmental exposure transmission,2019-12-15
+7.0.0,LAB,Lab Alert,2019-12-15
+7.0.0,DOSE,Dosage problem,2019-12-15
+7.0.0,FDASIZE,size,2019-12-15
+7.0.0,ITMCNT,items counted,2019-12-15
+7.0.0,GDIS,genetic disease information sensitivity,2019-12-15
+7.0.0,IND,indigenous peoples health program,2019-12-15
+7.0.0,LAWENF,law enforcement transport,2019-12-15
 7.0.0,RAR,Related Prior Reaction Alert,2019-12-15
-7.0.0,RAT,rationale,2019-12-15
-7.0.0,RD,reduction diet,2019-12-15
-7.0.0,REACT,Reaction Alert,2019-12-15
-7.0.0,RECA,Recalcification,2019-12-15
-7.0.0,RECOV,recovery,2019-12-15
-7.0.0,REDACT,redact,2019-12-15
-7.0.0,REF,reference,2019-12-15
-7.0.0,REFLEX,reflex permission,2019-12-15
-7.0.0,REFNR,referral not required,2019-12-15
-7.0.0,REI,reinsurance policy,2019-12-15
-7.0.0,REL,religion information sensitivity,2019-12-15
-7.0.0,REMLE,reminder list entry,2019-12-15
-7.0.0,REMLREV,reminder list review,2019-12-15
-7.0.0,RENT,Rent,2019-12-15
-7.0.0,REPRESENTATIVE_BEAT,ECG representative beat waveforms,2019-12-15
-7.0.0,REPSERV,repeated service,2019-12-15
-7.0.0,REP_HALF_LIFE,representative half-life,2019-12-15
-7.0.0,REP_RANGE,repetitions out of range,2019-12-15
-7.0.0,RERUN,Rerun Dilution,2019-12-15
-7.0.0,RESCOMPT,research project compartment,2019-12-15
-7.0.0,RESEARCH,research information access,2019-12-15
-7.0.0,RESTOCK,restocking fee,2019-12-15
-7.0.0,RETIRE,retiree health program,2019-12-15
-7.0.0,RETRO,retro adjustment,2019-12-15
-7.0.0,REV,Standard Charge Reversal,2019-12-15
-7.0.0,RF,Refill,2019-12-15
-7.0.0,RFC,Refill - Complete,2019-12-15
-7.0.0,RFCS,refill complete partial strength,2019-12-15
-7.0.0,RFF,Refill (First fill this facility),2019-12-15
+7.0.0,NOTEQUIVGEN,not generically equivalent alert,2019-12-15
+7.0.0,ENDC,endogenous content,2019-12-15
+7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
+7.0.0,PDS,patient default information sensitivity,2019-12-15
+7.0.0,LP,low protein,2019-12-15
+7.0.0,OPTOUTE,opt-out with exceptions,2019-12-15
+7.0.0,NOORGPOL,no disclosure without organizational authorization,2019-12-15
+7.0.0,LF,low fat,2019-12-15
+7.0.0,PTNTCARE,Health Care Interaction - Patient Care,2019-12-15
+7.0.0,HIPAASelfPay,HIPAA self-pay,2019-12-15
+7.0.0,INVTYPE,invoice type,2019-12-15
+7.0.0,PARTRNS,parenteral transmission,2019-12-15
+7.0.0,HMO,health maintenance organization policy,2019-12-15
+7.0.0,DOSE,,2019-12-15
+7.0.0,ELG,Eligible,2019-12-15
+7.0.0,FOOD,Food Interaction Alert,2019-12-15
+7.0.0,NF,no fat,2019-12-15
+7.0.0,NOCOLLECT,no collection,2019-12-15
+7.0.0,HIPAAPsyNotes,HIPAA psychotherapy notes,2019-12-15
+7.0.0,GUIDE,guidance,2019-12-15
+7.0.0,IND03,prophylaxis,2019-12-15
+7.0.0,NHP,Natural Health Product Alert,2019-12-15
+7.0.0,FFS,fee for service,2019-12-15
+7.0.0,DOSEDURL,Dose-Duration Low Alert,2019-12-15
+7.0.0,IND01,imaging study requiring contrast,2019-12-15
+7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
+7.0.0,DISEASEPRG,public health program,2019-12-15
+7.0.0,NON,Non-Payment Data,2019-12-15
+7.0.0,MSRAGG,rate aggregation,2019-12-15
+7.0.0,OBSA,,2019-12-15
+7.0.0,PDNPSPELAT,paid non-payee payable same-period electronic amount,2019-12-15
+7.0.0,DUPTHPY,,2019-12-15
+7.0.0,FININV,financial invoice,2019-12-15
+7.0.0,MASK,mask,2019-12-15
+7.0.0,MST,military sexual trauma information sensitivity,2019-12-15
+7.0.0,L,Left Equipment,2019-12-15
+7.0.0,DSC,discount,2019-12-15
+7.0.0,MSRTP,measurement period,2019-12-15
+7.0.0,FOMTRNS,fomite transmission,2019-12-15
+7.0.0,OBSOLETE,obsolete record returned,2019-12-15
+7.0.0,PERMBNS,performance bonus,2019-12-15
+7.0.0,PAT_ADV_EVNT,patient adverse event,2019-12-15
+7.0.0,IMG,image attachment,2019-12-15
+7.0.0,GRADE,grade,2019-12-15
+7.0.0,GTIN,Global Trade Item Number,2019-12-15
+7.0.0,RADREPREV,radiology report review task,2019-12-15
+7.0.0,FFSTOP,fee for service top off,2019-12-15
+7.0.0,FORMULA,formula diet,2019-12-15
+7.0.0,LEN_LONG,length is too long,2019-12-15
+7.0.0,IDSCL,information disclosure,2019-12-15
+7.0.0,MONTH,,2019-12-15
+7.0.0,PDNFSPMNCT,paid nullified same-period manual count,2019-12-15
+7.0.0,HCPCSA,HCPCS Level II and Carrier-assigned,2019-12-15
+7.0.0,O,In Process,2019-12-15
+7.0.0,MINOCCURS,repetitions below minimum,2019-12-15
+7.0.0,FALG,Food Allergy,2019-12-15
+7.0.0,LABRESULTS,lab results,2019-12-15
+7.0.0,DOB,date of birth information sensitivity,2019-12-15
+7.0.0,PATREPREV,pathology report review task,2019-12-15
+7.0.0,DOSEDURH,Dose-Duration High Alert,2019-12-15
+7.0.0,M,Missing,2019-12-15
+7.0.0,RAD_DIR,Accesso Diretto (Radiologia),2019-12-15
+7.0.0,INTDX,intermediate diagnosis,2019-12-15
+7.0.0,LATE,late invoice,2019-12-15
+7.0.0,MSRJUR,jurisdiction,2019-12-15
+7.0.0,PDNFPPMNCT,paid nullified prior-period manual count,2019-12-15
+7.0.0,ONC,Oncology,2019-12-15
+7.0.0,PDPPSPELAT,paid payee payable same-period electronic amount,2019-12-15
+7.0.0,KEY206,non-matching identification,2019-12-15
+7.0.0,GOVEMP,government employee health program,2019-12-15
+7.0.0,DV,Discover Card,2019-12-15
+7.0.0,I,Isolation,2019-12-15
+7.0.0,OBS,Obstetrics,2019-12-15
+7.0.0,PRIVMARK,privacy mark,2019-12-15
+7.0.0,OBSANTV,antigen validity,2019-12-15
+7.0.0,NOPERSIST,element will not be persisted,2019-12-15
+7.0.0,POS,,2019-12-15
+7.0.0,PDNFSPELAT,paid nullified same-period electronic amount,2019-12-15
+7.0.0,HSAPOL,,2019-12-15
+7.0.0,INFCON,after explicit consent,2019-12-15
+7.0.0,PAY,payment,2019-12-15
+7.0.0,INT,Intolerance Alert,2019-12-15
+7.0.0,MSRADJ,risk adjustment,2019-12-15
+7.0.0,ORCON,no disclosure without originator authorization,2019-12-15
+7.0.0,LFEMX,,2019-12-15
+7.0.0,PATEDUE,patient education entry,2019-12-15
+7.0.0,PUBLICPOL,public healthcare,2019-12-15
+7.0.0,PATINFO,patient information review task,2019-12-15
+7.0.0,FFS,,2019-12-15
+7.0.0,RAD_PROG,Accesso Programmato (Radiologia),2019-12-15
+7.0.0,OPIOIDUD,opioid use disorder information sensitivity,2019-12-15
+7.0.0,PROA,professional association deduction,2019-12-15
+7.0.0,DOSEDUR,Dose-Duration Alert,2019-12-15
+7.0.0,NOSTRNS,nosocomial transmission,2019-12-15
+7.0.0,DNTL,Dental,2019-12-15
+7.0.0,OOO,out of office,2019-12-15
+7.0.0,HOSPPTNT,Hospital Patient Interaction,2019-12-15
+7.0.0,PREVINEF,previously ineffective,2019-12-15
+7.0.0,FD,food,2019-12-15
+7.0.0,DOSEIVL,Dose-Interval Alert,2019-12-15
+7.0.0,NODSCLCD,no disclosure without consent directive,2019-12-15
+7.0.0,EMER,emergency,2019-12-15
+7.0.0,DUPTHPCLS,duplicate therapeutic alass alert,2019-12-15
+7.0.0,ENCRYPTU,encrypt in use,2019-12-15
+7.0.0,PPO,preferred provider organization policy,2019-12-15
+7.0.0,IMMUCAT,immunization category,2019-12-15
+7.0.0,NEUT,Neutralization,2019-12-15
+7.0.0,GOALLIST,goal list,2019-12-15
+7.0.0,PHYRHB,Physical Rehab,2019-12-15
+7.0.0,PSVCCAT,professional service category,2019-12-15
+7.0.0,IMPLIED,implied consent,2019-12-15
+7.0.0,FNLFEE,final fee,2019-12-15
+7.0.0,EDU,education fees,2019-12-15
+7.0.0,INFEMER,only in an emergency,2019-12-15
+7.0.0,PRDMX,,2019-12-15
+7.0.0,GF,gluten free,2019-12-15
+7.0.0,LOCIS,location information sensitivity,2019-12-15
+7.0.0,ADVERSE_REACTION,Adverse Reaction,2019-12-15
+7.0.0,NAT,Insufficient authorization,2019-12-15
+7.0.0,MSRIMPROV,health quality measure improvement notation,2019-12-15
+7.0.0,DOSELINDA,,2019-12-15
+7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
+7.0.0,NOPP,notice of privacy practices,2019-12-15
+7.0.0,FFCS,,2019-12-15
+7.0.0,MEDT,measurement end date,2019-12-15
+7.0.0,NOAUTH,no disclosure without subject authorization,2019-12-15
+7.0.0,RADREPE,radiology report entry task,2019-12-15
+7.0.0,FLD,field,2019-12-15
+7.0.0,PAYEE,payee,2019-12-15
+7.0.0,INFDNG,only if danger to others,2019-12-15
+7.0.0,PED,Pediatrics,2019-12-15
+7.0.0,MARST,marital status information sensitivity,2019-12-15
+7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
+7.0.0,OOJ,out of jurisdiction,2019-12-15
+7.0.0,EMRGONLY,emergency only,2019-12-15
+7.0.0,NOPERSISTP,no collection beyond purpose of use,2019-12-15
+7.0.0,EMOTDIS,emotional disturbance information sensitivity,2019-12-15
+7.0.0,HUAPRV,human approval,2019-12-15
+7.0.0,PRENC,pre-admission,2019-12-15
+7.0.0,PRS,patient requested information sensitivity,2019-12-15
+7.0.0,PDNFSPELCT,paid nullified same-period electronic count,2019-12-15
+7.0.0,PLACTRNS,transplacental transmission,2019-12-15
+7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
+7.0.0,PLYPHRM,Poly-supplier Alert,2019-12-15
+7.0.0,HSAPOL,health spending account,2019-12-15
+7.0.0,ISSUE,detected issue,2019-12-15
+7.0.0,ISOL,isolation allowance,2019-12-15
+7.0.0,LABCAT,lab test category,2019-12-15
+7.0.0,NORDSCLCD,no redisclosure without consent directive,2019-12-15
+7.0.0,PDNFSPMNAT,paid nullified same-period manual amount,2019-12-15
+7.0.0,POS,point of service policy,2019-12-15
+7.0.0,MSROBS,measure observation,2019-12-15
+7.0.0,DISEASE,disease specific policy,2019-12-15
+7.0.0,PDNFPPMNAT,paid nullified prior-period manual amount,2019-12-15
+7.0.0,FINALDT,finalized date/time,2019-12-15
+7.0.0,FAST,fasting,2019-12-15
+7.0.0,MICRORREV,microbiology results review task,2019-12-15
+7.0.0,HIPAANOPP,HIPAA notice of privacy practices,2019-12-15
+7.0.0,ENCRYPT,encrypt,2019-12-15
+7.0.0,HUMHUMTRNS,human to human transmission,2019-12-15
+7.0.0,FS,Floor stock,2019-12-15
+7.0.0,OBSENC,observation encounter,2019-12-15
+7.0.0,DRUGPRG,drug program,2019-12-15
+7.0.0,NOPAT,"no disclosure to patient, family or caregivers without attending provider's authorization",2019-12-15
+7.0.0,PACOMPT,patient administration compartment,2019-12-15
+7.0.0,OBSA,Observation Alert,2019-12-15
+7.0.0,PRVTRN,private transport,2019-12-15
+7.0.0,INTERVAL,outside requested time,2019-12-15
+7.0.0,MED,Medical,2019-12-15
+7.0.0,INTIMATE,Intimate Interaction,2019-12-15
+7.0.0,FFP,First Fill - Part Fill,2019-12-15
+7.0.0,NONRX,Non-Prescription Interaction Alert,2019-12-15
+7.0.0,EM,Emergency Supply,2019-12-15
+7.0.0,PAINV,preferred accommodation invoice,2019-12-15
+7.0.0,MENCAT,mental health category,2019-12-15
+7.0.0,DRUGPOL,drug policy,2019-12-15
+7.0.0,DOSEDURHIND,Dose-Duration High for Indication Alert,2019-12-15
+7.0.0,ORTHO,orthodontic service,2019-12-15
+7.0.0,MCPOL,managed care policy,2019-12-15
+7.0.0,PSEUD,pseudonymize,2019-12-15
+7.0.0,EALG,,2019-12-15
+7.0.0,PDPPSPMNCT,paid payee payable same-period manual count,2019-12-15
+7.0.0,PDPPPPELCT,paid payee payable prior-period electronic count,2019-12-15
+7.0.0,FFPS,,2019-12-15
+7.0.0,IP,In Position,2019-12-15
+7.0.0,RALG,Related Allergy Alert,2019-12-15
+7.0.0,HELD,held/suspended alert,2019-12-15
+7.0.0,PDNPSPELCT,paid non-payee payable same-period electronic count,2019-12-15
+7.0.0,HST,harmonized sales Tax,2019-12-15
+7.0.0,HEALTHREC,health record,2019-12-15
+7.0.0,EALG,Environmental Allergy,2019-12-15
+7.0.0,EINT,Environmental Intolerance,2019-12-15
+7.0.0,OHSINV,oral health service,2019-12-15
+7.0.0,LACT,Lactation Alert,2019-12-15
+7.0.0,DUPTHPGEN,duplicate generic alert,2019-12-15
+7.0.0,MANUAL,manual review,2019-12-15
+7.0.0,EHCPOL,,2019-12-15
+7.0.0,PATPREFALT,"violates stated preferences, alternate available",2019-12-15
+7.0.0,FOODTRNS,food-borne transmission,2019-12-15
+7.0.0,MINFREQ,too soon within frequency based on the usage,2019-12-15
+7.0.0,MISSCOND,conditional element missing,2019-12-15
+7.0.0,HOUSEHLD,Household Interaction,2019-12-15
+7.0.0,HISTORIC,record recorded as historical,2019-12-15
+7.0.0,MODEL,model,2019-12-15
+7.0.0,NOTEQUIVTHER,not therapeutically equivalent alert,2019-12-15
+7.0.0,PRDING,product invoice group,2019-12-15
+7.0.0,MSRTYPE,measure type,2019-12-15
+7.0.0,FALG,,2019-12-15
+7.0.0,POINT,point,2019-12-15
+7.0.0,IND04,surgical prophylaxis,2019-12-15
+7.0.0,PHAR,Pharmaceutical,2019-12-15
+7.0.0,PINV,paper invoice,2019-12-15
+7.0.0,LTRMCARE,Long Term Care Facility Interaction,2019-12-15
+7.0.0,DRIVLABEL,derive security label,2019-12-15
+7.0.0,MENTPRG,mental health program,2019-12-15
+7.0.0,FORMAT,invalid format,2019-12-15
+7.0.0,GEALRT,geriatric alert,2019-12-15
+7.0.0,PATPREF,violates stated preferences,2019-12-15
+7.0.0,DN,Diner's Club,2019-12-15
+7.0.0,HOMECARE,Care Giver Interaction,2019-12-15
+7.0.0,FFC,First Fill - Complete,2019-12-15
+7.0.0,ELLIPSE,ellipse,2019-12-15
+7.0.0,PSYCH,Psychiatric,2019-12-15
+7.0.0,EFORM,electronic form to follow,2019-12-15
+7.0.0,LABRREV,laboratory results review task,2019-12-15
+7.0.0,MILITARY,military health program,2019-12-15
+7.0.0,GISTIER,GIS tier,2019-12-15
+7.0.0,NETAMT,Net Amount,2019-12-15
+7.0.0,LEN_RANGE,length out of range,2019-12-15
+7.0.0,PHY,physician requested information sensitivity,2019-12-15
+7.0.0,LTC,long term care policy,2019-12-15
+7.0.0,LEN_SHORT,length is too short,2019-12-15
+7.0.0,N,normal diet,2019-12-15
+7.0.0,LFEMX,life time maximum,2019-12-15
+7.0.0,MICROORGRREV,microbiology organisms results review task,2019-12-15
+7.0.0,FFSS,"first fill, partial strength",2019-12-15
+7.0.0,FDALOGO,logo,2019-12-15
+7.0.0,NODUPS,duplicate values are not permitted,2019-12-15
+7.0.0,NUMER,numerator,2019-12-15
+7.0.0,PERIOD,,2019-12-15
+7.0.0,HEMOLYSIS,Hemolysis,2019-12-15
+7.0.0,KEY204,,2019-12-15
+7.0.0,ENCRYPTT,encrypt in transit,2019-12-15
+7.0.0,ObligationPolicy,obligation policy,2019-12-15
+7.0.0,GENDER,gender and sexual orientation information sensitivity,2019-12-15
+7.0.0,NAUTH,Not Authorized,2019-12-15
+7.0.0,INFAO,access only,2019-12-15
+7.0.0,PDPPSPELCT,paid payee payable same-period electronic count,2019-12-15
+7.0.0,PAYOR,payor,2019-12-15
+7.0.0,IMP,inpatient encounter,2019-12-15
+7.0.0,LU,limited use,2019-12-15
+7.0.0,MDOSE,maximum dosage reached,2019-12-15
+7.0.0,HOSPVSTR,Hospital Visitor Interaction,2019-12-15
+7.0.0,NORDSCLW,no disclosure without jurisdictional authorization,2019-12-15
+7.0.0,ESA,extraordinary service assessment,2019-12-15
+7.0.0,LS,low sodium,2019-12-15
+7.0.0,LQ,liquid,2019-12-15
+7.0.0,IDUR,improvement notation,2019-12-15
+7.0.0,DNAINT,Drug Non-Allergy Intolerance,2019-12-15
+7.0.0,DOSEHIND,High Dose for Indication Alert,2019-12-15
+7.0.0,EHCPOL,extended healthcare,2019-12-15
+7.0.0,PBILLACCT,patient billing account,2019-12-15
+7.0.0,PRLMN,preliminary,2019-12-15
+7.0.0,NOINTEGRATE,no integration,2019-12-15
+7.0.0,HIRISK,high risk pool program,2019-12-15
+7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
+7.0.0,OTC,non prescription medicine,2019-12-15
+7.0.0,MSRTOPIC,health quality measure topic type,2019-12-15
+7.0.0,MLREV,medication list review task,2019-12-15
+7.0.0,ILLEGAL,illegal,2019-12-15
+7.0.0,LACTTRNS,lactation transmission,2019-12-15
+7.0.0,LGPC,licensed general physician care,2019-12-15
+7.0.0,FRSTFEE,first fee,2019-12-15
+7.0.0,INTFR,ActSpecObsInterferenceCode,2019-12-15
+7.0.0,GENE,gene,2019-12-15
+7.0.0,LIFE,life insurance policy,2019-12-15
+7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
+7.0.0,FFCS,,2019-12-15
+7.0.0,INFASO,access and save only,2019-12-15
+7.0.0,PROV,,2019-12-15
+7.0.0,F,final,2019-12-15
+7.0.0,EMAUTH,emergency authorization override,2019-12-15
+7.0.0,FDASCORING,scoring,2019-12-15
+7.0.0,HHOBS,household situation observation,2019-12-15
+7.0.0,MH,mental health information sensitivity,2019-12-15
+7.0.0,OPTOUT,op-out,2019-12-15
+7.0.0,PRDMX,period maximum,2019-12-15
+7.0.0,LABEL,assign security label,2019-12-15
+7.0.0,PREG,Pregnancy Alert,2019-12-15
+7.0.0,FULFIL,fulfillment alert,2019-12-15
+7.0.0,ONET,one time,2019-12-15
+7.0.0,DOSEHINDA,High Dose for Age Alert,2019-12-15
+7.0.0,PDPPSPMNAT,paid payee payable same-period manual amount,2019-12-15
+7.0.0,GFTH,good faith indicator,2019-12-15
+7.0.0,PDNPSPMNAT,paid non-payee payable same-period manual amount,2019-12-15
+7.0.0,NONAC,inpatient non-acute,2019-12-15
+7.0.0,NOCONSENT,no consent,2019-12-15
+7.0.0,PATDOC,patient documentation task,2019-12-15
+7.0.0,MENTPOL,mental health policy,2019-12-15
+7.0.0,HIV,HIV/AIDS information sensitivity,2019-12-15
+7.0.0,LIVARG,living arrangement information sensitivity,2019-12-15
+7.0.0,PALL,Palliative,2019-12-15
+7.0.0,FMCOMPT,financial management compartment,2019-12-15
+7.0.0,PROBLISTE,problem list entry task,2019-12-15
+7.0.0,MC,Master Card,2019-12-15
+7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
+7.0.0,PERSISTLABEL,persist security label,2019-12-15
+7.0.0,PST,provincial/state sales tax,2019-12-15
+7.0.0,FINBILL,financial,2019-12-15
+7.0.0,KEY204,Unknown key identifier,2019-12-15
+7.0.0,PRN,as needed,2019-12-15
+7.0.0,MSRSCORE,measure scoring,2019-12-15
+7.0.0,NORDSCLCDS,no redisclosure without information subject's consent directive,2019-12-15
+7.0.0,MEDCCAT,medical condition category,2019-12-15
+7.0.0,LRCOMPT,legitimate relationship compartment,2019-12-15
+7.0.0,DOSEHINDSA,High Dose for Height/Surface Area Alert,2019-12-15
+7.0.0,NELG,Not Eligible,2019-12-15
+7.0.0,PUBLICPOL,,2019-12-15
+7.0.0,NOMOU,no disclosure without MOU,2019-12-15
+7.0.0,DOSEIND,,2019-12-15
+7.0.0,KEY205,Duplicate key identifier,2019-12-15
+7.0.0,PDNPPPMNAT,paid non-payee payable prior-period manual amount,2019-12-15
+7.0.0,MANDPOL,mandatory health program,2019-12-15
+7.0.0,FST,federal sales tax,2019-12-15
+7.0.0,ENAINT,Environmental Non-Allergy Intolerance,2019-12-15
+7.0.0,EAP,employee assistance program,2019-12-15
+7.0.0,PERFEE,periodic fee,2019-12-15
+7.0.0,DOSEH,High Dose Alert,2019-12-15
+7.0.0,PERIOD,period,2019-12-15
+7.0.0,PRA,,2019-12-15
+7.0.0,FILT,Filtration,2019-12-15
 7.0.0,RFFS,refill partial strength (first fill this facility),2019-12-15
-7.0.0,RFP,Refill - Part Fill,2019-12-15
-7.0.0,RFPS,refill part fill partial strength,2019-12-15
-7.0.0,RFS,refill partial strength,2019-12-15
-7.0.0,RHYTHM,ECG rhythm waveforms,2019-12-15
-7.0.0,RINT,Related Intolerance Alert,2019-12-15
-7.0.0,RISKASSESS,risk assessment instrument task,2019-12-15
-7.0.0,RISKLIST,risk factors,2019-12-15
-7.0.0,RMGTCOMPT,records management compartment,2019-12-15
-7.0.0,ROIFS,fully specified ROI,2019-12-15
-7.0.0,ROIPS,partially specified ROI,2019-12-15
-7.0.0,ROST,roster funding,2019-12-15
-7.0.0,RREACT,Related Reaction Alert,2019-12-15
-7.0.0,RSDID,de-identified information access,2019-12-15
-7.0.0,RSREID,re-identifiable information access,2019-12-15
-7.0.0,RX,prescription only medicine,2019-12-15
-7.0.0,RXCAT,medication category,2019-12-15
+7.0.0,TIME_RELATIVE,relative time sequence,2019-12-15
 7.0.0,RXCINV,Rx compound invoice,2019-12-15
-7.0.0,RXDINV,Rx dispense invoice,2019-12-15
-7.0.0,RefrainPolicy,refrain policy,2019-12-15
-7.0.0,S,Suite,2019-12-15
-7.0.0,SA,special authorization,2019-12-15
-7.0.0,SAC,special access,2019-12-15
-7.0.0,SAFNET,safety net clinic program,2019-12-15
-7.0.0,SALE,Sale,2019-12-15
-7.0.0,SBBLELAT,submitted billed electronic amount,2019-12-15
-7.0.0,SBBLELCT,submitted billed electronic count,2019-12-15
-7.0.0,SBFINV,sessional or block fee invoice,2019-12-15
-7.0.0,SBNFELAT,submitted nullified electronic amount,2019-12-15
-7.0.0,SBNFELCT,submitted cancelled electronic count,2019-12-15
-7.0.0,SBPDELAT,submitted pending electronic amount,2019-12-15
-7.0.0,SBPDELCT,submitted pending electronic count,2019-12-15
-7.0.0,SCA,sickle cell anemia information sensitivity,2019-12-15
-7.0.0,SCH,schonkost (GE),2019-12-15
-7.0.0,SCHL,school,2019-12-15
-7.0.0,SCHLDIV,school division,2019-12-15
-7.0.0,SCHOOL,School Accident,2019-12-15
-7.0.0,SCHOOL2,School Interaction,2019-12-15
-7.0.0,SDE,supplemental data elements,2019-12-15
-7.0.0,SDV,"sexual assault, abuse, or domestic violence information sensitivity",2019-12-15
-7.0.0,SECALTINTOBS,security alteration integrity observation,2019-12-15
-7.0.0,SECCATOBS,security category observation,2019-12-15
-7.0.0,SECCLASSOBS,security classification observation,2019-12-15
-7.0.0,SECCONOBS,security control observation,2019-12-15
-7.0.0,SECDATINTOBS,security data integrity observation,2019-12-15
-7.0.0,SECINTCONOBS,security integrity confidence observation,2019-12-15
-7.0.0,SECINTOBS,security integrity observation,2019-12-15
-7.0.0,SECINTPRVABOBS,security integrity provenance asserted by observation,2019-12-15
-7.0.0,SECINTPRVRBOBS,security integrity provenance reported by observation,2019-12-15
-7.0.0,SECINTSTOBS,security integrity status observation,2019-12-15
-7.0.0,SENDAPP,sending application,2019-12-15
-7.0.0,SESS,sessional funding,2019-12-15
-7.0.0,SEV,Severity Observation,2019-12-15
-7.0.0,SEX,sexuality and reproductive health information sensitivity,2019-12-15
-7.0.0,SEXTRNS,sexual transmission,2019-12-15
-7.0.0,SICKLE,sickle cell,2019-12-15
-7.0.0,SO,Script Owing,2019-12-15
-7.0.0,SOCIAL,social service program,2019-12-15
-7.0.0,SOCIAL2,Social/Extended Family Interaction,2019-12-15
-7.0.0,SP,Semi-private,2019-12-15
-7.0.0,SPEND,spend down,2019-12-15
-7.0.0,SPI,specially protected information sensitivity,2019-12-15
-7.0.0,SPLCOATING,coating,2019-12-15
-7.0.0,SPLCOLOR,color,2019-12-15
-7.0.0,SPLIMAGE,image,2019-12-15
-7.0.0,SPLIMPRINT,imprint,2019-12-15
-7.0.0,SPLSCORING,scoring,2019-12-15
-7.0.0,SPLSHAPE,shape,2019-12-15
-7.0.0,SPLSIZE,size,2019-12-15
-7.0.0,SPLSYMBOL,symbol,2019-12-15
+7.0.0,REFNR,referral not required,2019-12-15
+7.0.0,REACT,Reaction Alert,2019-12-15
+7.0.0,WPA,Workplace accident,2019-12-15
 7.0.0,SPT,Sporting Accident,2019-12-15
-7.0.0,SREC,specimen received,2019-12-15
-7.0.0,SS,short stay,2019-12-15
-7.0.0,SSP,sensitive service provider information sensitivity,2019-12-15
-7.0.0,SSTOR,specimen in storage,2019-12-15
-7.0.0,STD,sexually transmitted disease information sensitivity,2019-12-15
-7.0.0,STORE Deprecated,Storage,2019-12-15
-7.0.0,STRAN,specimen in transit,2019-12-15
-7.0.0,STRAT,stratification,2019-12-15
-7.0.0,STRTLATE,Start Too Late Alert,2019-12-15
-7.0.0,SUBPOL,substance use policy,2019-12-15
-7.0.0,SUBPRG,substance use program,2019-12-15
-7.0.0,SUBSIDFFS,subsidized fee for service program,2019-12-15
-7.0.0,SUBSIDIZ,subsidized health program,2019-12-15
-7.0.0,SUBSIDMC,subsidized managed care program,2019-12-15
-7.0.0,SUBSTNCE,Common Substance Interaction,2019-12-15
-7.0.0,SUBSUPP,subsidized supplemental health program,2019-12-15
+7.0.0,INFA,information access,2019-12-15
+7.0.0,DRUG,Drug therapy,2019-12-15
+7.0.0,REDACT,redact,2019-12-15
+7.0.0,_ImmunizationObservationType,ImmunizationObservationType,2019-12-15
+7.0.0,SECCATOBS,security category observation,2019-12-15
+7.0.0,TRSTLOAOBS,trust assurance observation,2019-12-15
 7.0.0,SUD,substance use disorder information sensitivity,2019-12-15
-7.0.0,SUPPLEMENT,nutritional supplement,2019-12-15
-7.0.0,SUPPRESSED,record suppressed,2019-12-15
+7.0.0,ROIPS,partially specified ROI,2019-12-15
+7.0.0,dimissione,dimissione,2019-12-15
+7.0.0,SecurityPolicy,security policy,2019-12-15
+7.0.0,UD,Unit Dose,2019-12-15
+7.0.0,FAX,fax to follow,2019-12-15
+7.0.0,HIP,health insurance plan policy,2019-12-15
+7.0.0,EPYMT,early payment fee,2019-12-15
+7.0.0,DRGRHB,Drug Rehab,2019-12-15
+7.0.0,SCH,schonkost (GE),2019-12-15
 7.0.0,SURG,Surgical,2019-12-15
 7.0.0,SURPL,surplus line insurance policy,2019-12-15
-7.0.0,SecurityPolicy,security policy,2019-12-15
-7.0.0,T,tea only,2019-12-15
-7.0.0,TB,Trial Balance,2019-12-15
-7.0.0,TBOO,taboo,2019-12-15
-7.0.0,TBS,trial balance partial strength,2019-12-15
-7.0.0,TEACHER,teacher,2019-12-15
-7.0.0,TF,Trial Fill,2019-12-15
-7.0.0,TFS,trial fill partial strength,2019-12-15
-7.0.0,TFS,,2019-12-15
-7.0.0,TFS,,2019-12-15
-7.0.0,TIME,timing detected issue,2019-12-15
-7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
-7.0.0,TIME_RELATIVE,relative time sequence,2019-12-15
-7.0.0,TIMING,event timing incorrect alert,2019-12-15
-7.0.0,TLIFE,term life insurance policy,2019-12-15
-7.0.0,TOOLATE,Refill Too Late Alert,2019-12-15
-7.0.0,TOOSOON,Refill Too Soon Alert,2019-12-15
-7.0.0,TPROD,Therapeutic Product Alert,2019-12-15
-7.0.0,TRAN,transaction fee,2019-12-15
-7.0.0,TRANF,transmission format,2019-12-15
-7.0.0,TRANSFER,Transfer,2019-12-15
-7.0.0,TRAVEL,travel,2019-12-15
-7.0.0,TRAVINT,Common Travel Interaction,2019-12-15
 7.0.0,TRNSFTRNS,transfusion transmission,2019-12-15
-7.0.0,TRSTACCRD,trust accreditation,2019-12-15
-7.0.0,TRSTACCRDOBS,trust accreditation observation,2019-12-15
-7.0.0,TRSTAGRE,trust agreement,2019-12-15
-7.0.0,TRSTAGREOBS,trust agreement observation,2019-12-15
-7.0.0,TRSTASSUR,trust assurance,2019-12-15
-7.0.0,TRSTCERT,trust certificate,2019-12-15
-7.0.0,TRSTCERTOBS,trust certificate observation,2019-12-15
-7.0.0,TRSTFWK,trust framework,2019-12-15
+7.0.0,RFCS,refill complete partial strength,2019-12-15
+7.0.0,PPRD,prior period adjustment,2019-12-15
+7.0.0,LABOE,laboratory test order entry task,2019-12-15
+7.0.0,INITIMMUNIZ,Initial Immunization,2019-12-15
+7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
+7.0.0,IMMUNIZ,Immunization,2019-12-15
+7.0.0,DOSEDURLIND,Dose-Duration Low for Indication Alert,2019-12-15
+7.0.0,NOI,nature of injury,2019-12-15
+7.0.0,PROV,provider,2019-12-15
+7.0.0,PYRDELAY,delayed by a previous payor,2019-12-15
 7.0.0,TRSTFWKOBS,trust framework observation,2019-12-15
-7.0.0,TRSTLOAOBS,trust assurance observation,2019-12-15
-7.0.0,TRSTMEC,trust mechanism,2019-12-15
-7.0.0,TRSTMECOBS,trust mechanism observation,2019-12-15
-7.0.0,Title38Section7332,Title 38 Section 7332,2019-12-15
-7.0.0,UD,Unit Dose,2019-12-15
-7.0.0,UD,,2019-12-15
-7.0.0,UDE,unit dose equivalent,2019-12-15
-7.0.0,UFIL,Ultrafiltration,2019-12-15
-7.0.0,ULIFE,universal life insurance policy,2019-12-15
-7.0.0,UMBRL,umbrella liability insurance policy,2019-12-15
-7.0.0,UNINSMOT,uninsured motorist policy,2019-12-15
-7.0.0,UNITPRICE,Unit Price,2019-12-15
-7.0.0,UNITQTY,Unit Quantity,2019-12-15
-7.0.0,UNRELAT,unrelated service,2019-12-15
-7.0.0,UNSPSC,United Nations Standard Products and Services Classification,2019-12-15
-7.0.0,UPC,Universal Product Code,2019-12-15
-7.0.0,UPGRDLABEL,upgrade security label,2019-12-15
-7.0.0,URGENT,urgent,2019-12-15
-7.0.0,USE,notice of use,2019-12-15
-7.0.0,V,Visa,2019-12-15
-7.0.0,VAC_PROBLEM,vaccine product problem,2019-12-15
-7.0.0,VALIDAT,validation issue,2019-12-15
-7.0.0,VECTRNS,vector-borne transmission,2019-12-15
-7.0.0,VERBAUTH,verbal authorization,2019-12-15
-7.0.0,VET,veteran health program,2019-12-15
-7.0.0,VFPAPER,verify paper,2019-12-15
-7.0.0,VIO,violence information sensitivity,2019-12-15
-7.0.0,VISPOL,vision care policy,2019-12-15
-7.0.0,VLI,"low valin, leucin, isoleucin",2019-12-15
-7.0.0,VOLUME,ActSpecObsVolumeCode,2019-12-15
-7.0.0,VR,virtual,2019-12-15
-7.0.0,VRXINV,vision dispense invoice,2019-12-15
-7.0.0,W,Ward,2019-12-15
-7.0.0,WATTRNS,water-borne transmission,2019-12-15
-7.0.0,WCBPOL,,2019-12-15
-7.0.0,WCBPOL,worker's compensation,2019-12-15
-7.0.0,WEEK,,2019-12-15
-7.0.0,WEEK,week,2019-12-15
-7.0.0,WELLREMLE,wellness reminder list entry,2019-12-15
+7.0.0,SCHOOL2,School Interaction,2019-12-15
+7.0.0,TRANF,transmission format,2019-12-15
+7.0.0,RETIRE,retiree health program,2019-12-15
+7.0.0,TOOLATE,Refill Too Late Alert,2019-12-15
+7.0.0,SECINTSTOBS,security integrity status observation,2019-12-15
 7.0.0,WELLREMLREV,wellness reminder list review,2019-12-15
-7.0.0,WGHT,,2019-12-15
-7.0.0,WIATTCH,work injury report attachment,2019-12-15
-7.0.0,WORK2,Work Interaction,2019-12-15
-7.0.0,WPA,Workplace accident,2019-12-15
-7.0.0,WRKCOMP,(workers compensation program,2019-12-15
-7.0.0,X,Container Unavailable,2019-12-15
-7.0.0,XRAY,x-ray,2019-12-15
+7.0.0,FDAIMPRINTCD,imprint code,2019-12-15
+7.0.0,HGHT,,2019-12-15
+7.0.0,MARWLREV,medication administration record work list review task,2019-12-15
+7.0.0,HLTHCARE,Health Care Interaction - Not Patient Care,2019-12-15
+7.0.0,KEY,keyword,2019-12-15
+7.0.0,FRAUD,potential fraud,2019-12-15
+7.0.0,TIMING,event timing incorrect alert,2019-12-15
+7.0.0,STRAT,stratification,2019-12-15
+7.0.0,REP_RANGE,repetitions out of range,2019-12-15
+7.0.0,REF,reference,2019-12-15
+7.0.0,RXDINV,Rx dispense invoice,2019-12-15
+7.0.0,SUBSIDFFS,subsidized fee for service program,2019-12-15
+7.0.0,RESCOMPT,research project compartment,2019-12-15
+7.0.0,STORE Deprecated,Storage,2019-12-15
+7.0.0,TRAVEL,travel,2019-12-15
+7.0.0,MARKUP,markup or up-charge,2019-12-15
+7.0.0,GRANTORCHOICE,grantor choice,2019-12-15
+7.0.0,ENDLATE,End Too Late Alert,2019-12-15
+7.0.0,TF,Trial Fill,2019-12-15
+7.0.0,SECCLASSOBS,security classification observation,2019-12-15
+7.0.0,SESS,sessional funding,2019-12-15
+7.0.0,HRCOMPT,human resource compartment,2019-12-15
+7.0.0,OBSANTC,antigen count,2019-12-15
+7.0.0,SBBLELAT,submitted billed electronic amount,2019-12-15
+7.0.0,INFPWR,only if public welfare risk,2019-12-15
+7.0.0,IND05,pregnancy prophylaxis,2019-12-15
+7.0.0,MS,Manufacturer Sample,2019-12-15
+7.0.0,RFF,Refill (First fill this facility),2019-12-15
+7.0.0,WCBPOL,,2019-12-15
+7.0.0,REPRESENTATIVE_BEAT,ECG representative beat waveforms,2019-12-15
+7.0.0,VECTRNS,vector-borne transmission,2019-12-15
+7.0.0,LOAN,Loan,2019-12-15
+7.0.0,WEEK,,2019-12-15
+7.0.0,UNITQTY,Unit Quantity,2019-12-15
+7.0.0,WEEK,week,2019-12-15
 7.0.0,YEAR,,2019-12-15
-7.0.0,YEAR,year,2019-12-15
-7.0.0,_ActPatientAnnotationType,ActPatientAnnotationType,2019-12-15
-7.0.0,_ActUSPrivacyLaw,_ActUSPrivacyLaw,2019-12-15
-7.0.0,_ImmunizationObservationType,ImmunizationObservationType,2019-12-15
-7.0.0,_ObservationQualityMeasureAttribute,ObservationQualityMeasureAttribute,2019-12-15
+7.0.0,MSRRPTR,reporter type,2019-12-15
+7.0.0,MICROSENSRREV,microbiology sensitivity test results review task,2019-12-15
+7.0.0,INFREG,regulatory information transfer,2019-12-15
+7.0.0,WGHT,,2019-12-15
+7.0.0,S,Suite,2019-12-15
+7.0.0,SICKLE,sickle cell,2019-12-15
+7.0.0,SECINTPRVABOBS,security integrity provenance asserted by observation,2019-12-15
+7.0.0,SAFNET,safety net clinic program,2019-12-15
+7.0.0,HISTMEDLIST,medication history,2019-12-15
+7.0.0,T,tea only,2019-12-15
+7.0.0,SBNFELAT,submitted nullified electronic amount,2019-12-15
+7.0.0,SECINTPRVRBOBS,security integrity provenance reported by observation,2019-12-15
+7.0.0,STD,sexually transmitted disease information sensitivity,2019-12-15
+7.0.0,PLYDOC,Poly-orderer Alert,2019-12-15
+7.0.0,PLACE,Common Space Interaction,2019-12-15
+7.0.0,DOCUMENT,document,2019-12-15
+7.0.0,ULIFE,universal life insurance policy,2019-12-15
+7.0.0,LOC,location,2019-12-15
+7.0.0,SECINTCONOBS,security integrity confidence observation,2019-12-15
+7.0.0,SPEND,spend down,2019-12-15
+7.0.0,SUBSIDMC,subsidized managed care program,2019-12-15
+7.0.0,ENCRYPTR,encrypt at rest,2019-12-15
+7.0.0,FDACOLOR,color,2019-12-15
+7.0.0,ICTERUS,Icterus,2019-12-15
+7.0.0,RACE,race information sensitivity,2019-12-15
+7.0.0,FNAINT,,2019-12-15
+7.0.0,UFIL,Ultrafiltration,2019-12-15
+7.0.0,SPLSYMBOL,symbol,2019-12-15
+7.0.0,REL,religion information sensitivity,2019-12-15
+7.0.0,TFS,trial fill partial strength,2019-12-15
+7.0.0,TRSTAGRE,trust agreement,2019-12-15
+7.0.0,DOSEHINDA,,2019-12-15
+7.0.0,PDPPPPMNAT,paid payee payable prior-period manual amount,2019-12-15
+7.0.0,PAPER,paper documentation to follow,2019-12-15
+7.0.0,OPTINR,opt-in with restrictions,2019-12-15
+7.0.0,SUPPLEMENT,nutritional supplement,2019-12-15
+7.0.0,TRANSFER,Transfer,2019-12-15
+7.0.0,VALIDAT,validation issue,2019-12-15
+7.0.0,REMLREV,reminder list review,2019-12-15
+7.0.0,SAC,special access,2019-12-15
 7.0.0,_PatientImmunizationRelatedObservationType,PatientImmunizationRelatedObservationType,2019-12-15
-7.0.0,dimissione,dimissione,2019-12-15
+7.0.0,TRSTFWK,trust framework,2019-12-15
+7.0.0,SUPPRESSED,record suppressed,2019-12-15
+7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
+7.0.0,ID,Identified,2019-12-15
+7.0.0,RECOV,recovery,2019-12-15
+7.0.0,VFPAPER,verify paper,2019-12-15
+7.0.0,XRAY,x-ray,2019-12-15
+7.0.0,NODSCLCDS,no disclosure without information subject's consent directive,2019-12-15
+7.0.0,PDNPPPMNCT,paid non-payee payable prior-period manual count,2019-12-15
+7.0.0,LIPEMIA,Lipemia,2019-12-15
+7.0.0,LOC,,2019-12-15
+7.0.0,SECDATINTOBS,security data integrity observation,2019-12-15
+7.0.0,_ObservationQualityMeasureAttribute,ObservationQualityMeasureAttribute,2019-12-15
+7.0.0,PDNPPPELCT,paid non-payee payable prior-period electronic count,2019-12-15
+7.0.0,SPLIMPRINT,imprint,2019-12-15
+7.0.0,SECCONOBS,security control observation,2019-12-15
+7.0.0,TFS,,2019-12-15
+7.0.0,RENT,Rent,2019-12-15
+7.0.0,UDE,unit dose equivalent,2019-12-15
+7.0.0,VLI,"low valin, leucin, isoleucin",2019-12-15
+7.0.0,RSDID,de-identified information access,2019-12-15
+7.0.0,RHYTHM,ECG rhythm waveforms,2019-12-15
+7.0.0,Title38Section7332,Title 38 Section 7332,2019-12-15
+7.0.0,ROIFS,fully specified ROI,2019-12-15
+7.0.0,SUBSUPP,subsidized supplemental health program,2019-12-15
+7.0.0,RX,prescription only medicine,2019-12-15
+7.0.0,UPGRDLABEL,upgrade security label,2019-12-15
+7.0.0,UNSPSC,United Nations Standard Products and Services Classification,2019-12-15
+7.0.0,WELLREMLE,wellness reminder list entry,2019-12-15
+7.0.0,STRAN,specimen in transit,2019-12-15
+7.0.0,REV,Standard Charge Reversal,2019-12-15
+7.0.0,UNINSMOT,uninsured motorist policy,2019-12-15
+7.0.0,TRSTMEC,trust mechanism,2019-12-15
+7.0.0,SEX,sexuality and reproductive health information sensitivity,2019-12-15
+7.0.0,USE,notice of use,2019-12-15
+7.0.0,VERBAUTH,verbal authorization,2019-12-15
+7.0.0,REPSERV,repeated service,2019-12-15
+7.0.0,SUBSTNCE,Common Substance Interaction,2019-12-15
+7.0.0,TLIFE,term life insurance policy,2019-12-15
+7.0.0,RESTOCK,restocking fee,2019-12-15
+7.0.0,SBFINV,sessional or block fee invoice,2019-12-15
+7.0.0,SSTOR,specimen in storage,2019-12-15
+7.0.0,SPLSHAPE,shape,2019-12-15
+7.0.0,RD,reduction diet,2019-12-15
+7.0.0,UNITPRICE,Unit Price,2019-12-15
+7.0.0,SO,Script Owing,2019-12-15
+7.0.0,TFS,,2019-12-15
+7.0.0,SPLCOLOR,color,2019-12-15
+7.0.0,SOCIAL2,Social/Extended Family Interaction,2019-12-15
+7.0.0,SS,short stay,2019-12-15
+7.0.0,SBPDELAT,submitted pending electronic amount,2019-12-15
+7.0.0,SENDAPP,sending application,2019-12-15
+7.0.0,SPLIMAGE,image,2019-12-15
+7.0.0,UPC,Universal Product Code,2019-12-15
+7.0.0,TRSTACCRD,trust accreditation,2019-12-15
+7.0.0,SCHLDIV,school division,2019-12-15
+7.0.0,RREACT,Related Reaction Alert,2019-12-15
+7.0.0,SSP,sensitive service provider information sensitivity,2019-12-15
+7.0.0,RFPS,refill part fill partial strength,2019-12-15
+7.0.0,RMGTCOMPT,records management compartment,2019-12-15
+7.0.0,SPI,specially protected information sensitivity,2019-12-15
+7.0.0,SCHOOL,School Accident,2019-12-15
+7.0.0,VET,veteran health program,2019-12-15
+7.0.0,SBNFELCT,submitted cancelled electronic count,2019-12-15
+7.0.0,RECA,Recalcification,2019-12-15
+7.0.0,SCHL,school,2019-12-15
+7.0.0,WORK2,Work Interaction,2019-12-15
+7.0.0,RETRO,retro adjustment,2019-12-15
+7.0.0,VIO,violence information sensitivity,2019-12-15
+7.0.0,SBBLELCT,submitted billed electronic count,2019-12-15
+7.0.0,UNRELAT,unrelated service,2019-12-15
+7.0.0,VOLUME,ActSpecObsVolumeCode,2019-12-15
+7.0.0,TEACHER,teacher,2019-12-15
+7.0.0,_ActUSPrivacyLaw,_ActUSPrivacyLaw,2019-12-15
+7.0.0,_ActPatientAnnotationType,ActPatientAnnotationType,2019-12-15
+7.0.0,TRSTASSUR,trust assurance,2019-12-15
+7.0.0,SUBSIDIZ,subsidized health program,2019-12-15
+7.0.0,UMBRL,umbrella liability insurance policy,2019-12-15
+7.0.0,URGENT,urgent,2019-12-15
+7.0.0,W,Ward,2019-12-15
+7.0.0,RefrainPolicy,refrain policy,2019-12-15
+7.0.0,RESEARCH,research information access,2019-12-15
+7.0.0,SEXTRNS,sexual transmission,2019-12-15
+7.0.0,VAC_PROBLEM,vaccine product problem,2019-12-15
+7.0.0,SALE,Sale,2019-12-15
+7.0.0,REI,reinsurance policy,2019-12-15
+7.0.0,WATTRNS,water-borne transmission,2019-12-15
+7.0.0,ROST,roster funding,2019-12-15
+7.0.0,REMLE,reminder list entry,2019-12-15
+7.0.0,RFS,refill partial strength,2019-12-15
+7.0.0,RSREID,re-identifiable information access,2019-12-15
+7.0.0,SPLSCORING,scoring,2019-12-15
+7.0.0,UD,,2019-12-15
+7.0.0,V,Visa,2019-12-15
+7.0.0,RFP,Refill - Part Fill,2019-12-15
+7.0.0,SCA,sickle cell anemia information sensitivity,2019-12-15
+7.0.0,X,Container Unavailable,2019-12-15
+7.0.0,REP_HALF_LIFE,representative half-life,2019-12-15
+7.0.0,TRSTACCRDOBS,trust accreditation observation,2019-12-15
+7.0.0,SP,Semi-private,2019-12-15
+7.0.0,TBS,trial balance partial strength,2019-12-15
+7.0.0,TOOSOON,Refill Too Soon Alert,2019-12-15
+7.0.0,SDE,supplemental data elements,2019-12-15
+7.0.0,TIME,timing detected issue,2019-12-15
+7.0.0,SBPDELCT,submitted pending electronic count,2019-12-15
+7.0.0,TRSTAGREOBS,trust agreement observation,2019-12-15
+7.0.0,SA,special authorization,2019-12-15
+7.0.0,STRTLATE,Start Too Late Alert,2019-12-15
+7.0.0,WCBPOL,worker's compensation,2019-12-15
+7.0.0,SPLSIZE,size,2019-12-15
+7.0.0,TRSTCERTOBS,trust certificate observation,2019-12-15
+7.0.0,SUBPRG,substance use program,2019-12-15
+7.0.0,SDV,"sexual assault, abuse, or domestic violence information sensitivity",2019-12-15
+7.0.0,SPLCOATING,coating,2019-12-15
+7.0.0,TBOO,taboo,2019-12-15
+7.0.0,RISKLIST,risk factors,2019-12-15
+7.0.0,VR,virtual,2019-12-15
+7.0.0,WIATTCH,work injury report attachment,2019-12-15
+7.0.0,SUBPOL,substance use policy,2019-12-15
+7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
+7.0.0,YEAR,year,2019-12-15
+7.0.0,RFC,Refill - Complete,2019-12-15
+7.0.0,REFLEX,reflex permission,2019-12-15
+7.0.0,SEV,Severity Observation,2019-12-15
+7.0.0,RINT,Related Intolerance Alert,2019-12-15
+7.0.0,RERUN,Rerun Dilution,2019-12-15
+7.0.0,VRXINV,vision dispense invoice,2019-12-15
+7.0.0,RF,Refill,2019-12-15
+7.0.0,VISPOL,vision care policy,2019-12-15
+7.0.0,TRSTCERT,trust certificate,2019-12-15
+7.0.0,RAT,rationale,2019-12-15
+7.0.0,RISKASSESS,risk assessment instrument task,2019-12-15
+7.0.0,SECALTINTOBS,security alteration integrity observation,2019-12-15
+7.0.0,SECINTOBS,security integrity observation,2019-12-15
+7.0.0,TRAVINT,Common Travel Interaction,2019-12-15
+7.0.0,SREC,specimen received,2019-12-15
+7.0.0,TRSTMECOBS,trust mechanism observation,2019-12-15
+7.0.0,TRAN,transaction fee,2019-12-15
+7.0.0,RXCAT,medication category,2019-12-15
+7.0.0,WRKCOMP,(workers compensation program,2019-12-15
+7.0.0,TB,Trial Balance,2019-12-15
+7.0.0,TPROD,Therapeutic Product Alert,2019-12-15
+7.0.0,SOCIAL,social service program,2019-12-15
