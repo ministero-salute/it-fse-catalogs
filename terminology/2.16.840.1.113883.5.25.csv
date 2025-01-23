@@ -1,19 +1,19 @@
 version,code,description,release_date
 2.2.0,C,celebrity,2019-12-15
-2.2.0,N,normal,2019-12-15
-2.2.0,ETH,substance abuse related,2019-12-15
-2.2.0,D,clinician,2019-12-15
 2.2.0,_ConfidentialityModifiers,ConfidentialityModifiers,2019-12-15
-2.2.0,L,low,2019-12-15
-2.2.0,_Confidentiality,Confidentiality,2019-12-15
-2.2.0,HIV,HIV related,2019-12-15
-2.2.0,PSY,psychiatry relate,2019-12-15
-2.2.0,B,business,2019-12-15
+2.2.0,N,normal,2019-12-15
+2.2.0,D,clinician,2019-12-15
+2.2.0,ETH,substance abuse related,2019-12-15
 2.2.0,M,moderate,2019-12-15
 2.2.0,_ConfidentialityByAccessKind,ConfidentialityByAccessKind,2019-12-15
+2.2.0,_Confidentiality,Confidentiality,2019-12-15
+2.2.0,PSY,psychiatry relate,2019-12-15
+2.2.0,B,business,2019-12-15
+2.2.0,L,low,2019-12-15
+2.2.0,HIV,HIV related,2019-12-15
 2.2.0,R,restricted,2019-12-15
-2.2.0,U,unrestricted,2019-12-15
 2.2.0,I,individual,2019-12-15
+2.2.0,U,unrestricted,2019-12-15
 2.2.0,T,taboo,2019-12-15
 2.2.0,S,sensitive,2019-12-15
 2.2.0,SDV,sexual and domestic violence related,2019-12-15
