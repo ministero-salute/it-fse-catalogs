@@ -1,9 +1,9 @@
 version,code,description,release_date
 2.73,LA15920-4,Former smoker,2022-08-08
-2.73,LA18976-3,Current every day smoker,2022-08-08
-2.73,LA18977-1,Current some day smoker,2022-08-08
 2.73,LA18978-9,Never smoker,2022-08-08
 2.73,LA18979-7,"Smoker, current status unknown",2022-08-08
-2.73,LA18980-5,Unknown if ever smoked,2022-08-08
-2.73,LA18981-3,Heavy tobacco smoker,2022-08-08
+2.73,LA18976-3,Current every day smoker,2022-08-08
 2.73,LA18982-1,Light tobacco smoker,2022-08-08
+2.73,LA18981-3,Heavy tobacco smoker,2022-08-08
+2.73,LA18980-5,Unknown if ever smoked,2022-08-08
+2.73,LA18977-1,Current some day smoker,2022-08-08
