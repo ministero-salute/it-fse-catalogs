@@ -1,63 +1,63 @@
 version,code,description,release_date
-2.1.0,LL,Critical low,2019-03-20
 2.1.0,<,Off scale low,2019-03-20
-2.1.0,ObservationInterpretationExpectation,ObservationInterpretationExpectation,2019-03-20
-2.1.0,_ObservationInterpretationSusceptibility,ObservationInterpretationSusceptibility,2019-03-20
-2.1.0,H>,Significantly high,2019-03-20
-2.1.0,E,Equivocal,2019-03-20
-2.1.0,TOX,Cytotoxic substance present,2019-03-20
-2.1.0,Carrier,Carrier,2019-03-20
-2.1.0,LX,below low threshold,2019-03-20
-2.1.0,DET,Detected,2019-03-20
-2.1.0,IE,Insufficient evidence,2019-03-20
-2.1.0,NCL,No CLSI defined breakpoint,2019-03-20
 2.1.0,>,Off scale high,2019-03-20
-2.1.0,N,Normal,2019-03-20
-2.1.0,U,Significant change up,2019-03-20
-2.1.0,HH,Critical high,2019-03-20
-2.1.0,NS,Non-susceptible,2019-03-20
-2.1.0,CAR,Carrier,2019-03-20
-2.1.0,RR,Reactive,2019-03-20
-2.1.0,WR,Weakly reactive,2019-03-20
-2.1.0,SDD,Susceptible-dose dependent,2019-03-20
-2.1.0,EXP,Expected,2019-03-20
-2.1.0,POS,Positive,2019-03-20
-2.1.0,HH,Critical high,2019-03-20
-2.1.0,HM,Hold for Medical Review,2019-03-20
-2.1.0,_ObservationInterpretationExceptions,ObservationInterpretationExceptions,2019-03-20
-2.1.0,W,Worse,2019-03-20
+2.1.0,A,Abnormal,2019-03-20
+2.1.0,AA,Critical abnormal,2019-03-20
 2.1.0,AC,Anti-complementary substances present,2019-03-20
 2.1.0,B,Better,2019-03-20
-2.1.0,ReactivityObservationInterpretation,ReactivityObservationInterpretation,2019-03-20
-2.1.0,H,High,2019-03-20
-2.1.0,NEG,Negative,2019-03-20
-2.1.0,EX,outside threshold,2019-03-20
-2.1.0,HX,above high threshold,2019-03-20
-2.1.0,LU,Significantly low,2019-03-20
-2.1.0,IND,Indeterminate,2019-03-20
-2.1.0,MS,moderately susceptible,2019-03-20
-2.1.0,SYN-R,Synergy - resistant,2019-03-20
-2.1.0,_ObservationInterpretationNormality,ObservationInterpretationNormality,2019-03-20
-2.1.0,R,Resistant,2019-03-20
-2.1.0,A,Abnormal,2019-03-20
-2.1.0,HH,Critical high,2019-03-20
-2.1.0,HU,Significantly high,2019-03-20
-2.1.0,_ObservationInterpretationChange,ObservationInterpretationChange,2019-03-20
-2.1.0,LL,Critical low,2019-03-20
-2.1.0,VS,very susceptible,2019-03-20
+2.1.0,CAR,Carrier,2019-03-20
+2.1.0,Carrier,Carrier,2019-03-20
 2.1.0,D,Significant change down,2019-03-20
-2.1.0,LL,Critical low,2019-03-20
-2.1.0,S,Susceptible,2019-03-20
-2.1.0,IE,Insufficient evidence,2019-03-20
-2.1.0,SYN-S,Synergy - susceptible,2019-03-20
-2.1.0,L,Low,2019-03-20
+2.1.0,DET,Detected,2019-03-20
+2.1.0,E,Equivocal,2019-03-20
+2.1.0,EX,outside threshold,2019-03-20
+2.1.0,EXP,Expected,2019-03-20
+2.1.0,H,High,2019-03-20
+2.1.0,H>,Significantly high,2019-03-20
+2.1.0,HH,Critical high,2019-03-20
+2.1.0,HH,Critical high,2019-03-20
+2.1.0,HH,Critical high,2019-03-20
+2.1.0,HM,Hold for Medical Review,2019-03-20
+2.1.0,HU,Significantly high,2019-03-20
+2.1.0,HX,above high threshold,2019-03-20
 2.1.0,I,Intermediate,2019-03-20
-2.1.0,QCF,Quality control failure,2019-03-20
-2.1.0,ND,Not detected,2019-03-20
+2.1.0,IE,Insufficient evidence,2019-03-20
+2.1.0,IE,Insufficient evidence,2019-03-20
+2.1.0,IND,Indeterminate,2019-03-20
+2.1.0,L,Low,2019-03-20
 2.1.0,L<,Significantly low,2019-03-20
-2.1.0,OBX,Interpretation qualifiers in separate OBX segments,2019-03-20
-2.1.0,_GeneticObservationInterpretation,GeneticObservationInterpretation,2019-03-20
-2.1.0,AA,Critical abnormal,2019-03-20
+2.1.0,LL,Critical low,2019-03-20
+2.1.0,LL,Critical low,2019-03-20
+2.1.0,LL,Critical low,2019-03-20
+2.1.0,LU,Significantly low,2019-03-20
+2.1.0,LX,below low threshold,2019-03-20
+2.1.0,MS,moderately susceptible,2019-03-20
+2.1.0,N,Normal,2019-03-20
+2.1.0,NCL,No CLSI defined breakpoint,2019-03-20
+2.1.0,ND,Not detected,2019-03-20
+2.1.0,NEG,Negative,2019-03-20
 2.1.0,NR,Non-reactive,2019-03-20
+2.1.0,NS,Non-susceptible,2019-03-20
+2.1.0,OBX,Interpretation qualifiers in separate OBX segments,2019-03-20
 2.1.0,ObservationInterpretationDetection,ObservationInterpretationDetection,2019-03-20
+2.1.0,ObservationInterpretationExpectation,ObservationInterpretationExpectation,2019-03-20
+2.1.0,POS,Positive,2019-03-20
+2.1.0,QCF,Quality control failure,2019-03-20
+2.1.0,R,Resistant,2019-03-20
+2.1.0,RR,Reactive,2019-03-20
+2.1.0,ReactivityObservationInterpretation,ReactivityObservationInterpretation,2019-03-20
+2.1.0,S,Susceptible,2019-03-20
+2.1.0,SDD,Susceptible-dose dependent,2019-03-20
+2.1.0,SYN-R,Synergy - resistant,2019-03-20
+2.1.0,SYN-S,Synergy - susceptible,2019-03-20
+2.1.0,TOX,Cytotoxic substance present,2019-03-20
+2.1.0,U,Significant change up,2019-03-20
 2.1.0,UNE,Unexpected,2019-03-20
+2.1.0,VS,very susceptible,2019-03-20
+2.1.0,W,Worse,2019-03-20
+2.1.0,WR,Weakly reactive,2019-03-20
+2.1.0,_GeneticObservationInterpretation,GeneticObservationInterpretation,2019-03-20
+2.1.0,_ObservationInterpretationChange,ObservationInterpretationChange,2019-03-20
+2.1.0,_ObservationInterpretationExceptions,ObservationInterpretationExceptions,2019-03-20
+2.1.0,_ObservationInterpretationNormality,ObservationInterpretationNormality,2019-03-20
+2.1.0,_ObservationInterpretationSusceptibility,ObservationInterpretationSusceptibility,2019-03-20
