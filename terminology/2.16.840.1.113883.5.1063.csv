@@ -1,281 +1,281 @@
 version,code,description,release_date
-2.1.0,HOUSE,household expense,2020-12-10
-2.1.0,SECTRSTOBV,security trust observation,2020-12-10
-2.1.0,LOAAN,authentication level of assurance value,2020-12-10
-2.1.0,_ECGAnnotationValue,ECGAnnotationValue,2020-12-10
-2.1.0,ALLORNONESCR,All-or-nothing Scoring,2020-12-10
-2.1.0,DISABLE,disabled,2020-12-10
-2.1.0,HLSTAT,health status,2020-12-10
-2.1.0,DEPCHD,dependent children,2020-12-10
-2.1.0,LOAID,identity proofing level of assurance,2020-12-10
-2.1.0,LOARA4,high remote access level of assurance,2020-12-10
-2.1.0,_DiagnosisValue,DiagnosisValue,2020-12-10
-2.1.0,AGGRED,aggregated,2020-12-10
-2.1.0,_IndicationValue,IndicationValue,2020-12-10
-2.1.0,_CommonClinicalObservationAssertionValue,CommonClinicalObservationAssertionValue,2020-12-10
-2.1.0,_AnnotationValue,AnnotationValue,2020-12-10
-2.1.0,CLINRPT,clinician reported,2020-12-10
-2.1.0,LOARA,remote access level of assurance value,2020-12-10
-2.1.0,DIGSIG,digital signature,2020-12-10
-2.1.0,HCPAST,healthcare professional asserted,2020-12-10
-2.1.0,LOATK3,medium token level of assurance,2020-12-10
-2.1.0,SYNTAC,syntactic transform,2020-12-10
-2.1.0,DEPSPS,dependent spouse,2020-12-10
-2.1.0,DEVRPT,device reported,2020-12-10
-2.1.0,LOAID3,medium identity proofing level of assurance,2020-12-10
-2.1.0,ELSTAT,eligibility indicator,2020-12-10
-2.1.0,LOAAP1,low authentication process level of assurance,2020-12-10
-2.1.0,RSWON,rotating shift without nights,2020-12-10
-2.1.0,DEP,dependent,2020-12-10
-2.1.0,REDACTED,redacted,2020-12-10
-2.1.0,MI,Minimal extent,2020-12-10
-2.1.0,_MeasurementImprovementNotation,Measurement Improvement Notation,2020-12-10
-2.1.0,_SECINTOBV,security integrity,2020-12-10
-2.1.0,CHD,child,2020-12-10
-2.1.0,TRSTCERTOBV,trust certificate observation,2020-12-10
-2.1.0,_GeneticObservationValue,GeneticObservationValue,2020-12-10
-2.1.0,ASSET,asset,2020-12-10
-2.1.0,LOANR2,basic non-repudiation level of assurance,2020-12-10
-2.1.0,COHORT,cohort measure scoring,2020-12-10
-2.1.0,PAYRPT,payer reported,2020-12-10
-2.1.0,FLY,family coverage,2020-12-10
-2.1.0,_SECINTPRVRBOBV,provenance reported by,2020-12-10
-2.1.0,ABUSE,abuse victim,2020-12-10
-2.1.0,RTRD,reverse trendelenburg,2020-12-10
-2.1.0,PRO-PM,patient reported outcome performance measure,2020-12-10
-2.1.0,PROAST,professional asserted,2020-12-10
-2.1.0,MIL,military identification,2020-12-10
-2.1.0,_CoverageLocationLimitObservationValue,CoverageLocationLimitObservationValue,2020-12-10
-2.1.0,PAY,paid employment,2020-12-10
+2.1.0,A0,no reaction,2020-12-10
 2.1.0,A1,minimal reaction,2020-12-10
-2.1.0,TRSLT,translated,2020-12-10
-2.1.0,ELG,eligible,2020-12-10
-2.1.0,RATIO,ratio measure scoring,2020-12-10
-2.1.0,CONTVAR,continuous variable measure scoring,2020-12-10
-2.1.0,_SecurityObservationValue,SecurityObservationValue,2020-12-10
-2.1.0,PSEUDED,pseudonymized,2020-12-10
-2.1.0,LOACM3,medium token and credential management level of assurance,2020-12-10
-2.1.0,_ObservationMeasureScoring,ObservationMeasureScoring,2020-12-10
-2.1.0,VS,variable shift,2020-12-10
-2.1.0,TRD,trendelenburg,2020-12-10
-2.1.0,_ObservationMeasureType,ObservationMeasureType,2020-12-10
-2.1.0,HEALTH,health expense,2020-12-10
-2.1.0,LOACM1,low token and credential management level of assurance,2020-12-10
+2.1.0,A2,mild reaction,2020-12-10
+2.1.0,A3,moderate reaction,2020-12-10
 2.1.0,A4,severe reaction,2020-12-10
-2.1.0,SSP,same sex partner,2020-12-10
-2.1.0,LOATK2,basic token level of assurance,2020-12-10
-2.1.0,INVEST,investment income,2020-12-10
-2.1.0,_DeviceManufacturerEvaluationResult,DeviceManufacturerEvaluationResult,2020-12-10
-2.1.0,SUBSETTED,subsetted,2020-12-10
-2.1.0,RLD,right lateral decubitus,2020-12-10
-2.1.0,_CompositeMeasureScoring,CompositeMeasureScoring,2020-12-10
-2.1.0,LIVSIT,living situation,2020-12-10
-2.1.0,REFUG,refugee,2020-12-10
-2.1.0,IncrIsImp,Increased score indicates improvement,2020-12-10
-2.1.0,TRANS,transportation expense,2020-12-10
-2.1.0,TRUST,trust,2020-12-10
-2.1.0,_ObservationPopulationInclusion,ObservationPopulationInclusion,2020-12-10
-2.1.0,DecrIsImp,Decreased score indicates improvement,2020-12-10
-2.1.0,_CoverageItemLimitObservationValue,CoverageItemLimitObservationValue,2020-12-10
-2.1.0,ANNUITY,annuity,2020-12-10
-2.1.0,INACT,inactive,2020-12-10
-2.1.0,_CoverageChemicalDependencyValue,CoverageChemicalDependencyValue,2020-12-10
-2.1.0,_SECINTCONOBV,integrity confidence,2020-12-10
-2.1.0,L,Low,2020-12-10
-2.1.0,PACQAST,patient acquaintance asserted,2020-12-10
-2.1.0,LOAAS3,medium assertion level of assurance,2020-12-10
-2.1.0,LOARA3,medium remote access level of assurance,2020-12-10
-2.1.0,PROCESS,process measure type,2020-12-10
-2.1.0,SUNDRY,sundry expense,2020-12-10
-2.1.0,INPNDUPD,inactive - pending eligibility update,2020-12-10
-2.1.0,VLS,very long shift,2020-12-10
-2.1.0,EXPERIENCE,experience measure type,2020-12-10
-2.1.0,M,Moderate,2020-12-10
-2.1.0,_CommonClinicalObservationValue,common clinical observation,2020-12-10
-2.1.0,ME,Medium extent,2020-12-10
+2.1.0,ABSTRED,abstracted,2020-12-10
+2.1.0,ABUSE,abuse victim,2020-12-10
+2.1.0,ACT,active coverage,2020-12-10
+2.1.0,ACTPEND,active - pending investigation,2020-12-10
+2.1.0,ADC,adult child,2020-12-10
 2.1.0,ADOPT,adoption document,2020-12-10
-2.1.0,TRSTAGREOBV,trust agreement observation,2020-12-10
-2.1.0,NUMER,numerator,2020-12-10
-2.1.0,LOAAN1,low authentication level of assurance,2020-12-10
-2.1.0,LOAAN4,high authentication level of assurance,2020-12-10
+2.1.0,AGGRED,aggregated,2020-12-10
+2.1.0,ALLORNONESCR,All-or-nothing Scoring,2020-12-10
+2.1.0,ALONE,alone,2020-12-10
+2.1.0,ANNUITY,annuity,2020-12-10
+2.1.0,ANONYED,anonymized,2020-12-10
+2.1.0,APPROPRIATE,appropriate use process measure,2020-12-10
+2.1.0,ASSET,asset,2020-12-10
+2.1.0,BTHCERT,birth certificate,2020-12-10
+2.1.0,CCOC,creditable coverage document,2020-12-10
+2.1.0,CHD,child,2020-12-10
+2.1.0,CHILD,child support,2020-12-10
+2.1.0,CLINAST,clinician asserted,2020-12-10
+2.1.0,CLINRPT,clinician reported,2020-12-10
+2.1.0,CLOTH,clothing expense,2020-12-10
+2.1.0,COHORT,cohort measure scoring,2020-12-10
+2.1.0,COMPOSITE,composite measure type,2020-12-10
+2.1.0,CONTVAR,continuous variable measure scoring,2020-12-10
+2.1.0,CRITH,high criticality,2020-12-10
+2.1.0,CRITL,low criticality,2020-12-10
+2.1.0,CRITU,unable to assess criticality,2020-12-10
+2.1.0,CRYTOHASH,cryptographic hash function,2020-12-10
+2.1.0,DENEX,denominator exclusions,2020-12-10
+2.1.0,DENEXCEP,denominator exceptions,2020-12-10
+2.1.0,DENOM,denominator,2020-12-10
+2.1.0,DEP,dependent,2020-12-10
+2.1.0,DEPCHD,dependent children,2020-12-10
+2.1.0,DEPSPS,dependent spouse,2020-12-10
+2.1.0,DEPYGCHD,dependent young children,2020-12-10
+2.1.0,DEVAST,device asserted,2020-12-10
+2.1.0,DEVRPT,device reported,2020-12-10
+2.1.0,DIGSIG,digital signature,2020-12-10
+2.1.0,DISABL,disability pay,2020-12-10
+2.1.0,DISABLE,disabled,2020-12-10
+2.1.0,DP,domestic partner,2020-12-10
+2.1.0,DRLIC,driver license,2020-12-10
+2.1.0,DRUG,drug use,2020-12-10
+2.1.0,DS,daytime shift,2020-12-10
+2.1.0,DecrIsImp,Decreased score indicates improvement,2020-12-10
+2.1.0,ECH,employee,2020-12-10
+2.1.0,EFFICIENCY,efficiency measure type,2020-12-10
+2.1.0,ELG,eligible,2020-12-10
+2.1.0,ELSTAT,eligibility indicator,2020-12-10
 2.1.0,EMS,early morning shift,2020-12-10
 2.1.0,ES,evening shift,2020-12-10
-2.1.0,RELAT,relative,2020-12-10
-2.1.0,PASSPORT,passport,2020-12-10
-2.1.0,Homozygote,HOMO,2020-12-10
-2.1.0,MRGCERT,marriage certificate,2020-12-10
-2.1.0,UNEMPL,unemployed,2020-12-10
-2.1.0,UTIL,utility expense,2020-12-10
-2.1.0,DENEXCEP,denominator exceptions,2020-12-10
-2.1.0,_IntoleranceValue,IntoleranceValue,2020-12-10
-2.1.0,PACQRPT,patient acquaintance reported,2020-12-10
-2.1.0,NUMEX,numerator exclusions,2020-12-10
-2.1.0,_SECINTPRVABOBV,provenance asserted by,2020-12-10
-2.1.0,_AllergyTestValue,AllergyTestValue,2020-12-10
-2.1.0,SDMRPT,substitute decision maker reported,2020-12-10
-2.1.0,CCOC,creditable coverage document,2020-12-10
-2.1.0,_EmploymentStatus,_EmploymentStatus,2020-12-10
-2.1.0,SDMAST,substitute decision maker asserted,2020-12-10
-2.1.0,IP,initial population,2020-12-10
-2.1.0,BTHCERT,birth certificate,2020-12-10
-2.1.0,PGNT,pregnant,2020-12-10
-2.1.0,H,High,2020-12-10
-2.1.0,DENEX,denominator exclusions,2020-12-10
-2.1.0,URELDEP,unrelated person dependent,2020-12-10
-2.1.0,_InjuryObservationValue,InjuryObservationValue,2020-12-10
-2.1.0,ABSTRED,abstracted,2020-12-10
-2.1.0,TRSTMECOBV,none supplied 6,2020-12-10
-2.1.0,DISABL,disability pay,2020-12-10
-2.1.0,COMPOSITE,composite measure type,2020-12-10
-2.1.0,CLOTH,clothing expense,2020-12-10
-2.1.0,LOAID1,low identity proofing level of assurance,2020-12-10
-2.1.0,MSRPOPL,measure population,2020-12-10
-2.1.0,CRITH,high criticality,2020-12-10
-2.1.0,DRLIC,driver license,2020-12-10
-2.1.0,PRORPT,professional reported,2020-12-10
-2.1.0,SUPPLE,income supplement,2020-12-10
-2.1.0,HMLESS,homeless,2020-12-10
-2.1.0,PAYAST,payer asserted,2020-12-10
-2.1.0,IND,individual,2020-12-10
-2.1.0,FAM,live with family,2020-12-10
-2.1.0,TRSTACCRDOBV,trust accreditation observation,2020-12-10
-2.1.0,NotInLaborForce,Not In Labor Force,2020-12-10
-2.1.0,SOECSTAT,socio economic status,2020-12-10
-2.1.0,LEGAL,legal expense,2020-12-10
-2.1.0,STN,standing,2020-12-10
-2.1.0,CRITU,unable to assess criticality,2020-12-10
-2.1.0,LOAAS4,high assertion level of assurance,2020-12-10
-2.1.0,ECH,employee,2020-12-10
-2.1.0,LOAAP3,medium authentication process level of assurance,2020-12-10
-2.1.0,SUP,supine,2020-12-10
-2.1.0,SIT,sitting,2020-12-10
-2.1.0,LIVEXP,living expense,2020-12-10
-2.1.0,S,Some extent,2020-12-10
-2.1.0,_IssueTriggerObservationValue,IssueTriggerObservationValue,2020-12-10
-2.1.0,LOAID2,basic identity proofing level of assurance,2020-12-10
-2.1.0,RENT,rent,2020-12-10
-2.1.0,_CommonClinicalObservationResultValue,CommonClinicalObservationResultValue,2020-12-10
-2.1.0,FOSTER,foster child document,2020-12-10
-2.1.0,SPOUSAL,spousal or partner support,2020-12-10
-2.1.0,STUDENRL,student enrollment,2020-12-10
-2.1.0,PROPOR,proportion measure scoring,2020-12-10
-2.1.0,HRELIABLE,highly reliable,2020-12-10
-2.1.0,_DeviceManufacturerEvaluationInterpretation,DeviceManufacturerEvaluationInterpretation,2020-12-10
-2.1.0,_ProductCharacterization,Product Characterization,2020-12-10
-2.1.0,WEIGHTSCR,Weighted Scoring,2020-12-10
-2.1.0,_OtherIndicationValue,OtherIndicationValue,2020-12-10
-2.1.0,RELIABLE,reliable,2020-12-10
-2.1.0,INCOME,income,2020-12-10
-2.1.0,_CaseSeriousnessCriteria,CaseSeriousnessCriteria,2020-12-10
-2.1.0,N,None,2020-12-10
-2.1.0,_DeviceManufacturerEvaluationMethod,DeviceManufacturerEvaluationMethod,2020-12-10
-2.1.0,IVDRG,IV drug use,2020-12-10
-2.1.0,INCAR,incarcerated,2020-12-10
-2.1.0,LOANR3,medium non-repudiation level of assurance,2020-12-10
-2.1.0,LOATK1,low token level of assurance,2020-12-10
-2.1.0,LINEARSCR,Linear Scoring,2020-12-10
-2.1.0,CRITL,low criticality,2020-12-10
-2.1.0,ALONE,alone,2020-12-10
-2.1.0,LOACM2,basic token and credential management level of assurance,2020-12-10
-2.1.0,RETIRE,retirement pay,2020-12-10
-2.1.0,ACTPEND,active - pending investigation,2020-12-10
-2.1.0,RETACCT,retirement investment account,2020-12-10
-2.1.0,RESOURCE,resource use measure type,2020-12-10
-2.1.0,FOOD,food expense,2020-12-10
-2.1.0,SS,split shift,2020-12-10
-2.1.0,LOATK,token level of assurance value,2020-12-10
-2.1.0,_CriticalityObservationValue,CriticalityObservationValue,2020-12-10
-2.1.0,ADC,adult child,2020-12-10
-2.1.0,ANONYED,anonymized,2020-12-10
-2.1.0,DS,daytime shift,2020-12-10
-2.1.0,PROP,real property,2020-12-10
-2.1.0,INTERM-OM,intermediate clinical outcome measure,2020-12-10
-2.1.0,IPP,initial patient population,2020-12-10
-2.1.0,RSWN,rotating shift with nights,2020-12-10
-2.1.0,A3,moderate reaction,2020-12-10
-2.1.0,APPROPRIATE,appropriate use process measure,2020-12-10
-2.1.0,_SECDATINTOBV,data integrity,2020-12-10
-2.1.0,LOANR1,low non-repudiation level of assurance,2020-12-10
-2.1.0,LOANR4,high non-repudiation level of assurance,2020-12-10
-2.1.0,LE,Large extent,2020-12-10
-2.1.0,UNRELIABLE,unreliable,2020-12-10
-2.1.0,LOAAS1,low assertion level of assurance,2020-12-10
-2.1.0,MAPPED,mapped,2020-12-10
-2.1.0,NELG,not eligible,2020-12-10
-2.1.0,OUTCOME,outcome measure type,2020-12-10
-2.1.0,VERSIONED,versioned,2020-12-10
-2.1.0,PATAST,patient asserted,2020-12-10
-2.1.0,UNREL,unrelated person,2020-12-10
-2.1.0,ACT,active coverage,2020-12-10
-2.1.0,MASKED,masked,2020-12-10
-2.1.0,SFWL,Semi-Fowler's,2020-12-10
-2.1.0,LOAAN2,basic authentication level of assurance,2020-12-10
-2.1.0,PRN,prone,2020-12-10
-2.1.0,PATRPT,patient reported,2020-12-10
-2.1.0,TRSTLOAOBV,trust assurance observation,2020-12-10
-2.1.0,LOARA2,basic remote access level of assurance,2020-12-10
-2.1.0,_SECCONOBV,security control,2020-12-10
+2.1.0,EXPERIENCE,experience measure type,2020-12-10
 2.1.0,Employed,Employed,2020-12-10
-2.1.0,_IndividualCaseSafetyReportValueDomains,Individual Case Safety Report Value Domains,2020-12-10
-2.1.0,_SECINTSTOBV,integrity status,2020-12-10
-2.1.0,_CoverageLevelObservationValue,CoverageLevelObservationValue,2020-12-10
-2.1.0,RELDEP,relative dependent,2020-12-10
-2.1.0,LOANR,non-repudiation level of assurance value,2020-12-10
-2.1.0,_PartialCompletionScale,PartialCompletionScale,2020-12-10
-2.1.0,_ActCoverageAssessmentObservationValue,ActCoverageAssessmentObservationValue,2020-12-10
-2.1.0,CLINAST,clinician asserted,2020-12-10
-2.1.0,_SECALTINTOBV,alteration integrity,2020-12-10
-2.1.0,_SECINTPRVOBV,provenance,2020-12-10
-2.1.0,_SECCLASSOBV,security classification,2020-12-10
-2.1.0,DP,domestic partner,2020-12-10
-2.1.0,LOAAN3,medium authentication level of assurance,2020-12-10
-2.1.0,ILGIM,illegal immigrant,2020-12-10
-2.1.0,DEPYGCHD,dependent young children,2020-12-10
-2.1.0,TAX,tax obligation,2020-12-10
-2.1.0,SPSDEP,spouse dependent,2020-12-10
-2.1.0,LOARA1,low remote access level of assurance,2020-12-10
-2.1.0,Unemployed,Unemployed,2020-12-10
-2.1.0,_SubjectReactionEmphasis,SubjectReactionEmphasis,2020-12-10
-2.1.0,MEMBER,program or policy member,2020-12-10
-2.1.0,INPNDINV,inactive - pending investigation,2020-12-10
-2.1.0,LOATK4,high token level of assurance,2020-12-10
-2.1.0,UNCERTREL,uncertain reliability,2020-12-10
-2.1.0,CHILD,child support,2020-12-10
-2.1.0,LOACM4,high token and credential management level of assurance,2020-12-10
-2.1.0,LIVDEP,living dependency,2020-12-10
-2.1.0,LOACM,token and credential management level of assurance value),2020-12-10
-2.1.0,_ReactionActionTaken,ReactionActionTaken,2020-12-10
-2.1.0,EFFICIENCY,efficiency measure type,2020-12-10
-2.1.0,LOAAP4,high authentication process level of assurance,2020-12-10
-2.1.0,_CoverageLimitObservationValue,CoverageLimitObservationValue,2020-12-10
-2.1.0,_SECCATOBV,security category,2020-12-10
-2.1.0,STRUCTURE,structure measure type,2020-12-10
+2.1.0,FAM,live with family,2020-12-10
+2.1.0,FLY,family coverage,2020-12-10
+2.1.0,FOOD,food expense,2020-12-10
+2.1.0,FOSTER,foster child document,2020-12-10
 2.1.0,G,Great extent,2020-12-10
-2.1.0,DENOM,denominator,2020-12-10
-2.1.0,OPPORSCR,Opportunity Scoring,2020-12-10
-2.1.0,DEVAST,device asserted,2020-12-10
-2.1.0,CRYTOHASH,cryptographic hash function,2020-12-10
-2.1.0,LLD,left lateral decubitus,2020-12-10
-2.1.0,MORTG,mortgage,2020-12-10
-2.1.0,NS,night shift,2020-12-10
-2.1.0,PROB,probation,2020-12-10
-2.1.0,LOAAS,assertion level of assurance value,2020-12-10
-2.1.0,DRUG,drug use,2020-12-10
-2.1.0,_PertinentReactionRelatedness,Pertinent Reaction Relatedness,2020-12-10
-2.1.0,_VerificationOutcomeValue,verification outcome,2020-12-10
-2.1.0,LOAAP2,basic authentication process level of assurance,2020-12-10
-2.1.0,_SeverityObservation,SeverityObservation,2020-12-10
-2.1.0,LOAAS2,basic assertion level of assurance,2020-12-10
-2.1.0,A2,mild reaction,2020-12-10
-2.1.0,LOAAP,authentication process level of assurance value,2020-12-10
-2.1.0,SPS,spouse only,2020-12-10
+2.1.0,H,High,2020-12-10
+2.1.0,HCPAST,healthcare professional asserted,2020-12-10
 2.1.0,HCPRPT,healthcare professional reported,2020-12-10
-2.1.0,_ActFinancialStatusObservationValue,ActFinancialStatusObservationValue,2020-12-10
+2.1.0,HEALTH,health expense,2020-12-10
+2.1.0,HLSTAT,health status,2020-12-10
+2.1.0,HMLESS,homeless,2020-12-10
+2.1.0,HOUSE,household expense,2020-12-10
+2.1.0,HRELIABLE,highly reliable,2020-12-10
+2.1.0,Homozygote,HOMO,2020-12-10
+2.1.0,ILGIM,illegal immigrant,2020-12-10
+2.1.0,INACT,inactive,2020-12-10
+2.1.0,INCAR,incarcerated,2020-12-10
+2.1.0,INCOME,income,2020-12-10
+2.1.0,IND,individual,2020-12-10
+2.1.0,INPNDINV,inactive - pending investigation,2020-12-10
+2.1.0,INPNDUPD,inactive - pending eligibility update,2020-12-10
+2.1.0,INTERM-OM,intermediate clinical outcome measure,2020-12-10
+2.1.0,INVEST,investment income,2020-12-10
+2.1.0,IP,initial population,2020-12-10
+2.1.0,IPP,initial patient population,2020-12-10
+2.1.0,IVDRG,IV drug use,2020-12-10
+2.1.0,IncrIsImp,Increased score indicates improvement,2020-12-10
+2.1.0,L,Low,2020-12-10
+2.1.0,LE,Large extent,2020-12-10
+2.1.0,LEGAL,legal expense,2020-12-10
+2.1.0,LINEARSCR,Linear Scoring,2020-12-10
+2.1.0,LIVDEP,living dependency,2020-12-10
+2.1.0,LIVEXP,living expense,2020-12-10
+2.1.0,LIVSIT,living situation,2020-12-10
+2.1.0,LLD,left lateral decubitus,2020-12-10
+2.1.0,LOAAN,authentication level of assurance value,2020-12-10
+2.1.0,LOAAN1,low authentication level of assurance,2020-12-10
+2.1.0,LOAAN2,basic authentication level of assurance,2020-12-10
+2.1.0,LOAAN3,medium authentication level of assurance,2020-12-10
+2.1.0,LOAAN4,high authentication level of assurance,2020-12-10
+2.1.0,LOAAP,authentication process level of assurance value,2020-12-10
+2.1.0,LOAAP1,low authentication process level of assurance,2020-12-10
+2.1.0,LOAAP2,basic authentication process level of assurance,2020-12-10
+2.1.0,LOAAP3,medium authentication process level of assurance,2020-12-10
+2.1.0,LOAAP4,high authentication process level of assurance,2020-12-10
+2.1.0,LOAAS,assertion level of assurance value,2020-12-10
+2.1.0,LOAAS1,low assertion level of assurance,2020-12-10
+2.1.0,LOAAS2,basic assertion level of assurance,2020-12-10
+2.1.0,LOAAS3,medium assertion level of assurance,2020-12-10
+2.1.0,LOAAS4,high assertion level of assurance,2020-12-10
+2.1.0,LOACM,token and credential management level of assurance value),2020-12-10
+2.1.0,LOACM1,low token and credential management level of assurance,2020-12-10
+2.1.0,LOACM2,basic token and credential management level of assurance,2020-12-10
+2.1.0,LOACM3,medium token and credential management level of assurance,2020-12-10
+2.1.0,LOACM4,high token and credential management level of assurance,2020-12-10
+2.1.0,LOAID,identity proofing level of assurance,2020-12-10
+2.1.0,LOAID1,low identity proofing level of assurance,2020-12-10
+2.1.0,LOAID2,basic identity proofing level of assurance,2020-12-10
+2.1.0,LOAID3,medium identity proofing level of assurance,2020-12-10
 2.1.0,LOAID4,high identity proofing level of assurance,2020-12-10
+2.1.0,LOANR,non-repudiation level of assurance value,2020-12-10
+2.1.0,LOANR1,low non-repudiation level of assurance,2020-12-10
+2.1.0,LOANR2,basic non-repudiation level of assurance,2020-12-10
+2.1.0,LOANR3,medium non-repudiation level of assurance,2020-12-10
+2.1.0,LOANR4,high non-repudiation level of assurance,2020-12-10
+2.1.0,LOARA,remote access level of assurance value,2020-12-10
+2.1.0,LOARA1,low remote access level of assurance,2020-12-10
+2.1.0,LOARA2,basic remote access level of assurance,2020-12-10
+2.1.0,LOARA3,medium remote access level of assurance,2020-12-10
+2.1.0,LOARA4,high remote access level of assurance,2020-12-10
+2.1.0,LOATK,token level of assurance value,2020-12-10
+2.1.0,LOATK1,low token level of assurance,2020-12-10
+2.1.0,LOATK2,basic token level of assurance,2020-12-10
+2.1.0,LOATK3,medium token level of assurance,2020-12-10
+2.1.0,LOATK4,high token level of assurance,2020-12-10
+2.1.0,M,Moderate,2020-12-10
+2.1.0,MAPPED,mapped,2020-12-10
+2.1.0,MASKED,masked,2020-12-10
+2.1.0,ME,Medium extent,2020-12-10
+2.1.0,MEMBER,program or policy member,2020-12-10
+2.1.0,MI,Minimal extent,2020-12-10
+2.1.0,MIL,military identification,2020-12-10
+2.1.0,MORTG,mortgage,2020-12-10
+2.1.0,MRGCERT,marriage certificate,2020-12-10
+2.1.0,MSRPOPL,measure population,2020-12-10
+2.1.0,N,None,2020-12-10
+2.1.0,NELG,not eligible,2020-12-10
+2.1.0,NS,night shift,2020-12-10
+2.1.0,NUMER,numerator,2020-12-10
+2.1.0,NUMEX,numerator exclusions,2020-12-10
+2.1.0,NotInLaborForce,Not In Labor Force,2020-12-10
+2.1.0,OPPORSCR,Opportunity Scoring,2020-12-10
+2.1.0,OUTCOME,outcome measure type,2020-12-10
+2.1.0,PACQAST,patient acquaintance asserted,2020-12-10
+2.1.0,PACQRPT,patient acquaintance reported,2020-12-10
+2.1.0,PASSPORT,passport,2020-12-10
+2.1.0,PATAST,patient asserted,2020-12-10
+2.1.0,PATRPT,patient reported,2020-12-10
+2.1.0,PAY,paid employment,2020-12-10
+2.1.0,PAYAST,payer asserted,2020-12-10
+2.1.0,PAYRPT,payer reported,2020-12-10
+2.1.0,PGNT,pregnant,2020-12-10
+2.1.0,PRN,prone,2020-12-10
+2.1.0,PRO-PM,patient reported outcome performance measure,2020-12-10
+2.1.0,PROAST,professional asserted,2020-12-10
+2.1.0,PROB,probation,2020-12-10
+2.1.0,PROCESS,process measure type,2020-12-10
+2.1.0,PROP,real property,2020-12-10
+2.1.0,PROPOR,proportion measure scoring,2020-12-10
+2.1.0,PRORPT,professional reported,2020-12-10
+2.1.0,PSEUDED,pseudonymized,2020-12-10
+2.1.0,RATIO,ratio measure scoring,2020-12-10
+2.1.0,REDACTED,redacted,2020-12-10
+2.1.0,REFUG,refugee,2020-12-10
+2.1.0,RELAT,relative,2020-12-10
+2.1.0,RELDEP,relative dependent,2020-12-10
+2.1.0,RELIABLE,reliable,2020-12-10
+2.1.0,RENT,rent,2020-12-10
+2.1.0,RESOURCE,resource use measure type,2020-12-10
+2.1.0,RETACCT,retirement investment account,2020-12-10
+2.1.0,RETIRE,retirement pay,2020-12-10
+2.1.0,RLD,right lateral decubitus,2020-12-10
+2.1.0,RSWN,rotating shift with nights,2020-12-10
+2.1.0,RSWON,rotating shift without nights,2020-12-10
+2.1.0,RTRD,reverse trendelenburg,2020-12-10
+2.1.0,S,Some extent,2020-12-10
+2.1.0,SDMAST,substitute decision maker asserted,2020-12-10
+2.1.0,SDMRPT,substitute decision maker reported,2020-12-10
+2.1.0,SECTRSTOBV,security trust observation,2020-12-10
+2.1.0,SFWL,Semi-Fowler's,2020-12-10
+2.1.0,SIT,sitting,2020-12-10
+2.1.0,SOECSTAT,socio economic status,2020-12-10
+2.1.0,SPOUSAL,spousal or partner support,2020-12-10
+2.1.0,SPS,spouse only,2020-12-10
+2.1.0,SPSDEP,spouse dependent,2020-12-10
+2.1.0,SS,split shift,2020-12-10
+2.1.0,SSP,same sex partner,2020-12-10
+2.1.0,STN,standing,2020-12-10
+2.1.0,STRUCTURE,structure measure type,2020-12-10
+2.1.0,STUDENRL,student enrollment,2020-12-10
+2.1.0,SUBSETTED,subsetted,2020-12-10
+2.1.0,SUNDRY,sundry expense,2020-12-10
+2.1.0,SUP,supine,2020-12-10
+2.1.0,SUPPLE,income supplement,2020-12-10
+2.1.0,SYNTAC,syntactic transform,2020-12-10
+2.1.0,TAX,tax obligation,2020-12-10
+2.1.0,TRANS,transportation expense,2020-12-10
+2.1.0,TRD,trendelenburg,2020-12-10
+2.1.0,TRSLT,translated,2020-12-10
+2.1.0,TRSTACCRDOBV,trust accreditation observation,2020-12-10
+2.1.0,TRSTAGREOBV,trust agreement observation,2020-12-10
+2.1.0,TRSTCERTOBV,trust certificate observation,2020-12-10
 2.1.0,TRSTFWKOBV,none supplied 5,2020-12-10
-2.1.0,A0,no reaction,2020-12-10
+2.1.0,TRSTLOAOBV,trust assurance observation,2020-12-10
+2.1.0,TRSTMECOBV,none supplied 6,2020-12-10
+2.1.0,TRUST,trust,2020-12-10
+2.1.0,UNCERTREL,uncertain reliability,2020-12-10
+2.1.0,UNEMPL,unemployed,2020-12-10
+2.1.0,UNREL,unrelated person,2020-12-10
+2.1.0,UNRELIABLE,unreliable,2020-12-10
+2.1.0,URELDEP,unrelated person dependent,2020-12-10
+2.1.0,UTIL,utility expense,2020-12-10
+2.1.0,Unemployed,Unemployed,2020-12-10
+2.1.0,VERSIONED,versioned,2020-12-10
+2.1.0,VLS,very long shift,2020-12-10
+2.1.0,VS,variable shift,2020-12-10
+2.1.0,WEIGHTSCR,Weighted Scoring,2020-12-10
+2.1.0,_ActCoverageAssessmentObservationValue,ActCoverageAssessmentObservationValue,2020-12-10
+2.1.0,_ActFinancialStatusObservationValue,ActFinancialStatusObservationValue,2020-12-10
+2.1.0,_AllergyTestValue,AllergyTestValue,2020-12-10
+2.1.0,_AnnotationValue,AnnotationValue,2020-12-10
+2.1.0,_CaseSeriousnessCriteria,CaseSeriousnessCriteria,2020-12-10
+2.1.0,_CommonClinicalObservationAssertionValue,CommonClinicalObservationAssertionValue,2020-12-10
+2.1.0,_CommonClinicalObservationResultValue,CommonClinicalObservationResultValue,2020-12-10
+2.1.0,_CommonClinicalObservationValue,common clinical observation,2020-12-10
+2.1.0,_CompositeMeasureScoring,CompositeMeasureScoring,2020-12-10
+2.1.0,_CoverageChemicalDependencyValue,CoverageChemicalDependencyValue,2020-12-10
+2.1.0,_CoverageItemLimitObservationValue,CoverageItemLimitObservationValue,2020-12-10
+2.1.0,_CoverageLevelObservationValue,CoverageLevelObservationValue,2020-12-10
+2.1.0,_CoverageLimitObservationValue,CoverageLimitObservationValue,2020-12-10
+2.1.0,_CoverageLocationLimitObservationValue,CoverageLocationLimitObservationValue,2020-12-10
+2.1.0,_CriticalityObservationValue,CriticalityObservationValue,2020-12-10
+2.1.0,_DeviceManufacturerEvaluationInterpretation,DeviceManufacturerEvaluationInterpretation,2020-12-10
+2.1.0,_DeviceManufacturerEvaluationMethod,DeviceManufacturerEvaluationMethod,2020-12-10
+2.1.0,_DeviceManufacturerEvaluationResult,DeviceManufacturerEvaluationResult,2020-12-10
+2.1.0,_DiagnosisValue,DiagnosisValue,2020-12-10
+2.1.0,_ECGAnnotationValue,ECGAnnotationValue,2020-12-10
+2.1.0,_EmploymentStatus,_EmploymentStatus,2020-12-10
+2.1.0,_GeneticObservationValue,GeneticObservationValue,2020-12-10
+2.1.0,_IndicationValue,IndicationValue,2020-12-10
+2.1.0,_IndividualCaseSafetyReportValueDomains,Individual Case Safety Report Value Domains,2020-12-10
+2.1.0,_InjuryObservationValue,InjuryObservationValue,2020-12-10
+2.1.0,_IntoleranceValue,IntoleranceValue,2020-12-10
+2.1.0,_IssueTriggerObservationValue,IssueTriggerObservationValue,2020-12-10
+2.1.0,_MeasurementImprovementNotation,Measurement Improvement Notation,2020-12-10
+2.1.0,_ObservationMeasureScoring,ObservationMeasureScoring,2020-12-10
+2.1.0,_ObservationMeasureType,ObservationMeasureType,2020-12-10
+2.1.0,_ObservationPopulationInclusion,ObservationPopulationInclusion,2020-12-10
+2.1.0,_OtherIndicationValue,OtherIndicationValue,2020-12-10
+2.1.0,_PartialCompletionScale,PartialCompletionScale,2020-12-10
+2.1.0,_PertinentReactionRelatedness,Pertinent Reaction Relatedness,2020-12-10
+2.1.0,_ProductCharacterization,Product Characterization,2020-12-10
+2.1.0,_ReactionActionTaken,ReactionActionTaken,2020-12-10
+2.1.0,_SECALTINTOBV,alteration integrity,2020-12-10
+2.1.0,_SECCATOBV,security category,2020-12-10
+2.1.0,_SECCLASSOBV,security classification,2020-12-10
+2.1.0,_SECCONOBV,security control,2020-12-10
+2.1.0,_SECDATINTOBV,data integrity,2020-12-10
+2.1.0,_SECINTCONOBV,integrity confidence,2020-12-10
+2.1.0,_SECINTOBV,security integrity,2020-12-10
+2.1.0,_SECINTPRVABOBV,provenance asserted by,2020-12-10
+2.1.0,_SECINTPRVOBV,provenance,2020-12-10
+2.1.0,_SECINTPRVRBOBV,provenance reported by,2020-12-10
+2.1.0,_SECINTSTOBV,integrity status,2020-12-10
+2.1.0,_SecurityObservationValue,SecurityObservationValue,2020-12-10
+2.1.0,_SeverityObservation,SeverityObservation,2020-12-10
 2.1.0,_SubjectBodyPosition,_SubjectBodyPosition,2020-12-10
 2.1.0,_SubjectReaction,Subject Reaction,2020-12-10
-2.1.0,_SymptomValue,SymptomValue,2020-12-10
+2.1.0,_SubjectReactionEmphasis,SubjectReactionEmphasis,2020-12-10
 2.1.0,_SubjectReactionOutcome,SubjectReactionOutcome,2020-12-10
+2.1.0,_SymptomValue,SymptomValue,2020-12-10
+2.1.0,_VerificationOutcomeValue,verification outcome,2020-12-10
 2.1.0,_WorkSchedule,_WorkSchedule,2020-12-10
