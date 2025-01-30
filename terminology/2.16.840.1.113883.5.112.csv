@@ -1,619 +1,619 @@
 version,code,description,release_date
-2.1.0,BUC,"Topical application, buccal",2019-03-20
-2.1.0,CAPDINSTL,"Instillation, continuous ambulatory peritoneal dialysis port",2019-03-20
-2.1.0,BLADINJ,"Injection, urinary bladder",2019-03-20
-2.1.0,CERV,"Topical application, cervical",2019-03-20
-2.1.0,CERVINJ,"Injection, cervical",2019-03-20
-2.1.0,BUC,"Topical application, buccal",2019-03-20
-2.1.0,CECINSTL,"Instillation, cecostomy",2019-03-20
+2.1.0,AMNINJ,"Injection, amniotic fluid",2019-03-20
+2.1.0,AMNINJ,"Injection, amniotic fluid",2019-03-20
+2.1.0,AMNINJ,"Injection, amniotic fluid",2019-03-20
+2.1.0,BILINJ,"Injection, biliary tract",2019-03-20
+2.1.0,BILINJ,"Injection, biliary tract",2019-03-20
 2.1.0,BILINJ,"Injection, biliary tract",2019-03-20
 2.1.0,BLADINJ,"Injection, urinary bladder",2019-03-20
-2.1.0,BILINJ,"Injection, biliary tract",2019-03-20
-2.1.0,CERVINJ,"Injection, cervical",2019-03-20
-2.1.0,CAPDINSTL,"Instillation, continuous ambulatory peritoneal dialysis port",2019-03-20
-2.1.0,CERV,"Topical application, cervical",2019-03-20
-2.1.0,CECINSTL,"Instillation, cecostomy",2019-03-20
-2.1.0,BILINJ,"Injection, biliary tract",2019-03-20
+2.1.0,BLADINJ,"Injection, urinary bladder",2019-03-20
+2.1.0,BLADINSTL,"Instillation, urinary catheter",2019-03-20
+2.1.0,BLADINSTL,"Instillation, urinary catheter",2019-03-20
+2.1.0,BLADIRR,"Irrigation, urinary bladder",2019-03-20
+2.1.0,BLADIRR,"Irrigation, urinary bladder",2019-03-20
 2.1.0,BLADIRRC,"Irrigation, urinary bladder; continuous",2019-03-20
-2.1.0,CERVINS,"Insertion, cervical (uterine)",2019-03-20
-2.1.0,BLADINSTL,"Instillation, urinary catheter",2019-03-20
-2.1.0,AMNINJ,"Injection, amniotic fluid",2019-03-20
-2.1.0,AMNINJ,"Injection, amniotic fluid",2019-03-20
-2.1.0,AMNINJ,"Injection, amniotic fluid",2019-03-20
 2.1.0,BLADIRRT,"Irrigation, urinary bladder; tidal",2019-03-20
-2.1.0,BLADIRR,"Irrigation, urinary bladder",2019-03-20
-2.1.0,BLADINSTL,"Instillation, urinary catheter",2019-03-20
-2.1.0,SININSTIL,"Instillation, sinus; unspecified",2019-03-20
-2.1.0,IEPIDINJ,"Injection, intraepidermal",2019-03-20
-2.1.0,ILUMINJ,"Injection, intraluminal",2019-03-20
-2.1.0,IVFLUSH,"Flush, intravenous catheter",2019-03-20
-2.1.0,BLADIRR,"Irrigation, urinary bladder",2019-03-20
-2.1.0,NTT,"Instillation, nasotracheal tube",2019-03-20
-2.1.0,IVENTINJ,"Injection, intraventricular (heart)",2019-03-20
-2.1.0,TRNSDERMD,"Diffusion, transdermal",2019-03-20
-2.1.0,GBINJ,"Injection, gastric button",2019-03-20
-2.1.0,PDURINJ,"Injection, peridural",2019-03-20
-2.1.0,IMD,"Injection, intramuscular; deep",2019-03-20
-2.1.0,TRPLACINJ,"Injection, transplacental",2019-03-20
-2.1.0,IOVARINJ,"Injection, intraovarian",2019-03-20
-2.1.0,_IntradiscalRoute,IntradiscalRoute,2019-03-20
-2.1.0,ICORNTA,"Topical application, intracorneal",2019-03-20
-2.1.0,IPINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,OGT,"Instillation, orogastric tube",2019-03-20
-2.1.0,CTINSTL,"Instillation, chest tube",2019-03-20
-2.1.0,RESPINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,NTT,"Instillation, nasotracheal tube",2019-03-20
-2.1.0,IPINJ,"Injection, intrapulmonary",2019-03-20
-2.1.0,SMUCMAB,"Mucosal absorption, submucosal",2019-03-20
-2.1.0,ICOR,"Infusion, intracoronary",2019-03-20
-2.1.0,PDURINJ,"Injection, peridural",2019-03-20
-2.1.0,NP,"Inhalation, nasal cannula",2019-03-20
-2.1.0,_InterameningealRoute,InterameningealRoute,2019-03-20
-2.1.0,OPTHALTA,"Topical application, ophthalmic",2019-03-20
-2.1.0,ELECTOSMOS,Electro-osmosis,2019-03-20
-2.1.0,PCA,"Infusion, intravenous catheter; pca pump",2019-03-20
-2.1.0,URETINJ,"Injection, ureteral",2019-03-20
-2.1.0,TRPLACINJ,"Injection, transplacental",2019-03-20
-2.1.0,SWISHSWAL,"Swish and swallow, oromucosal",2019-03-20
-2.1.0,TRACH,"Inhalation, tracheostomy",2019-03-20
-2.1.0,EPIINJ,"Injection, epidural; push",2019-03-20
-2.1.0,TRNSDERM,Transdermal,2019-03-20
-2.1.0,_BodySurfaceRoute,BodySurfaceRoute,2019-03-20
-2.1.0,IEPIDINJ,"Injection, intraepidermal",2019-03-20
-2.1.0,IESOPHINSTIL,"Instillation, intraesophageal",2019-03-20
-2.1.0,SQSURGINS,"Insertion, subcutaneous; surgical",2019-03-20
-2.1.0,EPINJSP,"Injection, epidural; slow push",2019-03-20
-2.1.0,GINGINJ,"Injection, gingival",2019-03-20
-2.1.0,HEMODIFF,"Diffusion, hemodialysis",2019-03-20
-2.1.0,_EpiduralRoute,EpiduralRoute,2019-03-20
-2.1.0,URETHINSTL,"instillation, urethral",2019-03-20
-2.1.0,IARTINJ,"Injection, intraarticular",2019-03-20
-2.1.0,IAINJP,"Injection, intraarterial; push",2019-03-20
-2.1.0,ENDOSININJ,"Injection, endosinusial",2019-03-20
-2.1.0,GARGLE,Gargle,2019-03-20
-2.1.0,RECIRR,"Irrigation, rectal",2019-03-20
-2.1.0,IDUCTINJ,"Injection, intraductal",2019-03-20
-2.1.0,IUINSTL,"Instillation, intrauterine",2019-03-20
-2.1.0,SWISHSWAL,"Swish and swallow, oromucosal",2019-03-20
-2.1.0,SCINJ,"Injection, subconjunctival",2019-03-20
-2.1.0,ICISTERNINJ,"Injection, intracisternal",2019-03-20
-2.1.0,IOSSC,"Infusion, intraosseous; continuous",2019-03-20
-2.1.0,GJT,"Instillation, gastro-jejunostomy tube",2019-03-20
-2.1.0,IVCC,"Infusion, intravenous catheter; continuous",2019-03-20
-2.1.0,EPI,"Infusion, epidural",2019-03-20
-2.1.0,IUINJC,"Injection, intracervical (uterus)",2019-03-20
-2.1.0,NASAL,"Topical application, nasal",2019-03-20
-2.1.0,IOTOP,"Topical application, intraocular",2019-03-20
-2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
-2.1.0,VENT,"Inhalation, ventilator",2019-03-20
-2.1.0,_Douche,Douche,2019-03-20
-2.1.0,ISYNINJ,"Injection, intrasynovial",2019-03-20
-2.1.0,IOINJ,"Injection, intraocular",2019-03-20
-2.1.0,IVINJ,"Injection, intravenous",2019-03-20
-2.1.0,ISINJ,"Injection, intraspinal",2019-03-20
-2.1.0,_IntracardiacRoute,IntracardiacRoute,2019-03-20
-2.1.0,SL,"Dissolve, sublingual",2019-03-20
-2.1.0,ILESIRR,"Irrigation, intralesional",2019-03-20
-2.1.0,TRTYMPINSTIL,"Instillation, transtympanic",2019-03-20
-2.1.0,PERINEAL,"Topical application, perineal",2019-03-20
-2.1.0,ICARDINJ,"Injection, intracardiac",2019-03-20
-2.1.0,INTERSTITINJ,"Injection, interstitial",2019-03-20
-2.1.0,LPINS,"Insertion, lacrimal puncta",2019-03-20
-2.1.0,JJTINSTL,"Instillation, jejunostomy tube",2019-03-20
-2.1.0,IESOPHINSTIL,"Instillation, intraesophageal",2019-03-20
-2.1.0,ISTERINJ,"Injection, intrasternal",2019-03-20
-2.1.0,PNSINSTL,"Instillation, paranasal sinuses",2019-03-20
-2.1.0,ETINSTL,"Instillation, endotracheal tube",2019-03-20
-2.1.0,_Diffusion,Diffusion,2019-03-20
-2.1.0,EPIDURINJ,"Injection, epidural",2019-03-20
-2.1.0,EXTCORPINJ,"Injection, extracorporeal",2019-03-20
-2.1.0,PDPINJ,"Injection, peritoneal dialysis port",2019-03-20
-2.1.0,ITINJ,"Injection, intrathecal",2019-03-20
-2.1.0,_IntracavitaryRoute,IntracavitaryRoute,2019-03-20
-2.1.0,EPIDURINJ,"Injection, epidural",2019-03-20
-2.1.0,_Injection,Injection,2019-03-20
-2.1.0,ISTERINJ,"Injection, intrasternal",2019-03-20
-2.1.0,IVPUSH,"Injection, intravenous; push",2019-03-20
-2.1.0,ICAUDINJ,"Injection, intracaudal",2019-03-20
-2.1.0,IEPITHINJ,"Injection, intraepithelial",2019-03-20
-2.1.0,IPINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,_Chew,Chew,2019-03-20
-2.1.0,HEMOPORT,"Injection, hemodialysis port",2019-03-20
-2.1.0,GUIRR,"Irrigation, genitourinary",2019-03-20
-2.1.0,IDIMPLNT,"Implantation, intradermal",2019-03-20
-2.1.0,_ExtracorporealCirculationRoute,ExtracorporealCirculationRoute,2019-03-20
-2.1.0,VAGINS,"Topical application, vaginal",2019-03-20
-2.1.0,VAGINSI,"Insertion, vaginal",2019-03-20
-2.1.0,INSUF,Insufflation,2019-03-20
-2.1.0,OGT,"Instillation, orogastric tube",2019-03-20
-2.1.0,IDIMPLNT,"Implantation, intradermal",2019-03-20
-2.1.0,IDUODINSTIL,"Instillation, intraduodenal",2019-03-20
-2.1.0,ILUMINJ,"Injection, intraluminal",2019-03-20
-2.1.0,_IntraductalRoute,IntraductalRoute,2019-03-20
-2.1.0,EPI,"Infusion, epidural",2019-03-20
-2.1.0,_ExtraAmnioticRoute,ExtraAmnioticRoute,2019-03-20
-2.1.0,IVSPUSH,"Injection, intravenous; slow push",2019-03-20
-2.1.0,SQIMPLNT,"Implantation, subcutaneous",2019-03-20
-2.1.0,ICARDINJRP,"Injection, intracardiac; rapid push",2019-03-20
-2.1.0,EPIINJ,"Injection, epidural; push",2019-03-20
-2.1.0,NASNEB,"Inhalation, nebulization; nasal",2019-03-20
-2.1.0,PERIANAL,"Topical application, perianal",2019-03-20
-2.1.0,PR,"Insertion, rectal",2019-03-20
-2.1.0,URETHINS,"Insertion, urethral",2019-03-20
-2.1.0,IOSURGINS,"Insertion, intraocular; surgical",2019-03-20
-2.1.0,IC,"Infusion, intracardiac",2019-03-20
-2.1.0,SUBARACHINJ,"Injection, subarachnoid",2019-03-20
-2.1.0,IPLRINJ,"Injection, intrapleural",2019-03-20
-2.1.0,RECTAL,"Topical application, rectal",2019-03-20
-2.1.0,PNINJ,"Injection, perineural",2019-03-20
-2.1.0,_Inhalation,Inhalation,2019-03-20
-2.1.0,IVASCINJ,"Injection, intravascular",2019-03-20
-2.1.0,CTINSTL,"Instillation, chest tube",2019-03-20
-2.1.0,EXTCORPDIF,"Diffusion, extracorporeal",2019-03-20
-2.1.0,_IntracoronaryRoute,IntracoronaryRoute,2019-03-20
-2.1.0,IDOUDMAB,"Mucosal absorption, intraduodenal",2019-03-20
-2.1.0,IVESINJ,"Injection, intravesicle",2019-03-20
-2.1.0,TMUCTA,"Topical application, transmucosal",2019-03-20
-2.1.0,IESOPHTA,"Topical application, intraesophageal",2019-03-20
-2.1.0,IT,"Infusion, intrathecal",2019-03-20
-2.1.0,ITINJ,"Injection, intrathecal",2019-03-20
-2.1.0,TRNSDERM,Transdermal,2019-03-20
-2.1.0,IU,"Insertion, intrauterine",2019-03-20
-2.1.0,HEMOPORT,"Injection, hemodialysis port",2019-03-20
-2.1.0,_IntraduodenalRoute,IntraduodenalRoute,2019-03-20
-2.1.0,RECIRR,"Irrigation, rectal",2019-03-20
-2.1.0,_CervicalRoute,CervicalRoute,2019-03-20
-2.1.0,IGASTINSTIL,"Instillation, intragastric",2019-03-20
-2.1.0,SQ,"Injection, subcutaneous",2019-03-20
-2.1.0,PAINJ,"Injection, periarticular",2019-03-20
-2.1.0,IPERINJ,"Injection, intraperitoneal",2019-03-20
-2.1.0,IBURSINJ,"Injection, intrabursal",2019-03-20
-2.1.0,OT,"Instillation, otic",2019-03-20
-2.1.0,NASOGASINSTIL,"Instillation, nasogastric",2019-03-20
-2.1.0,_IntrabronchialRoute,IntrabronchialRoute,2019-03-20
-2.1.0,NASINHL,"Inhalation, nasal",2019-03-20
-2.1.0,SKIN,"Topical application, skin",2019-03-20
-2.1.0,IVASCINJ,"Injection, intravascular",2019-03-20
-2.1.0,IU,"Insertion, intrauterine",2019-03-20
-2.1.0,IPCARDINJ,"Injection, intrapericardial",2019-03-20
-2.1.0,GIN,"Topical application, gingival",2019-03-20
-2.1.0,IM,"Injection, intramuscular",2019-03-20
-2.1.0,PDONTINJ,"Injection, periodontal",2019-03-20
-2.1.0,IPUMPINJ,"Injection, insulin pump",2019-03-20
-2.1.0,IBRONCHINSTIL,"Instillation, intrabronchial",2019-03-20
-2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,ITESTINJ,"Injection, intratesticular",2019-03-20
-2.1.0,REBREATH,"Inhalation, oral rebreather mask",2019-03-20
-2.1.0,IGASTLAV,"Lavage, intragastric",2019-03-20
-2.1.0,PO,"Swallow, oral",2019-03-20
-2.1.0,TTYMPTABSORP,"Topical absorption, transtympanic",2019-03-20
-2.1.0,_IntracerebralRoute,IntracerebralRoute,2019-03-20
-2.1.0,REBREATH,"Inhalation, oral rebreather mask",2019-03-20
-2.1.0,_GingivalRoute,GingivalRoute,2019-03-20
-2.1.0,VENTMASK,"Inhalation, ventimask",2019-03-20
-2.1.0,_IntracisternalRoute,IntracisternalRoute,2019-03-20
-2.1.0,LARYNGTA,"Topical application, laryngeal",2019-03-20
-2.1.0,HAIR,"Topical application, hair",2019-03-20
-2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,EXTRAMNINJ,"Injection, extra-amniotic",2019-03-20
-2.1.0,MUC,"Topical application, mucous membrane",2019-03-20
-2.1.0,TRTYMPINSTIL,"Instillation, transtympanic",2019-03-20
-2.1.0,TRTRACHINJ,"Injection, transtracheal",2019-03-20
-2.1.0,NASAL,"Topical application, nasal",2019-03-20
-2.1.0,NASALINSTIL,"Instillation, nasal",2019-03-20
-2.1.0,IVASCINFUS,"Infusion, intravascular",2019-03-20
-2.1.0,_Implantation,Implantation,2019-03-20
-2.1.0,IPPB,"Inhalation, intermittent positive pressure breathing (ippb)",2019-03-20
-2.1.0,IVFLUSH,"Flush, intravenous catheter",2019-03-20
-2.1.0,GBINJ,"Injection, gastric button",2019-03-20
-2.1.0,CHOLINJ,"Injection, for cholangiography",2019-03-20
-2.1.0,PNSINSTL,"Instillation, paranasal sinuses",2019-03-20
-2.1.0,IILEALTA,"Topical application, intraileal",2019-03-20
-2.1.0,SLESINJ,"Injection, sublesional",2019-03-20
-2.1.0,_EnteralRoute,EnteralRoute,2019-03-20
-2.1.0,_EndocervicalRoute,EndocervicalRoute,2019-03-20
-2.1.0,HEMODIFF,"Diffusion, hemodialysis",2019-03-20
-2.1.0,ICORONTA,"Topical application, intracoronal (dental)",2019-03-20
-2.1.0,SCALP,"Topical application, scalp",2019-03-20
-2.1.0,OCDRESTA,Occlusive dressing technique,2019-03-20
-2.1.0,_Dissolve,Dissolve,2019-03-20
-2.1.0,_IntraabdominalRoute,IntraabdominalRoute,2019-03-20
-2.1.0,SWAB,"Topical application, swab",2019-03-20
-2.1.0,IDUCTINJ,"Injection, intraductal",2019-03-20
-2.1.0,IDURINJ,"Injection, intradural",2019-03-20
-2.1.0,TMUCTA,"Topical application, transmucosal",2019-03-20
-2.1.0,IDINJ,"Injection, intradermal",2019-03-20
-2.1.0,PDPINSTL,"Instillation, peritoneal dialysis port",2019-03-20
-2.1.0,DISSOLVE,"Dissolve, oral",2019-03-20
-2.1.0,URETHINS,"Insertion, urethral",2019-03-20
-2.1.0,IDISCINJ,"Injection, intradiscal",2019-03-20
-2.1.0,VENT,"Inhalation, ventilator",2019-03-20
-2.1.0,_IntracorpusCavernosumRoute,IntracorpusCavernosumRoute,2019-03-20
-2.1.0,IPUMPINJ,"Injection, insulin pump",2019-03-20
-2.1.0,ICORNTA,"Topical application, intracorneal",2019-03-20
-2.1.0,ITHORINJ,"Injection, intrathoracic",2019-03-20
-2.1.0,EXTCORPINJ,"Injection, extracorporeal",2019-03-20
-2.1.0,IUINJ,"Injection, intrauterine",2019-03-20
-2.1.0,URETHSUP,"Suppository, urethral",2019-03-20
-2.1.0,ITUMINJ,"Injection, intratumor",2019-03-20
-2.1.0,PNINJ,"Injection, perineural",2019-03-20
-2.1.0,DRESS,"Topical application, soaked dressing",2019-03-20
-2.1.0,ISINJ,"Injection, intraspinal",2019-03-20
-2.1.0,SQINFUS,"Infusion, subcutaneous",2019-03-20
-2.1.0,ENDOSININJ,"Injection, endosinusial",2019-03-20
-2.1.0,ILTOP,"Topical application, intralesional",2019-03-20
-2.1.0,ITHORINJ,"Injection, intrathoracic",2019-03-20
-2.1.0,ETNEB,"Nebulization, endotracheal tube",2019-03-20
-2.1.0,OJJ,"Instillation, orojejunum tube",2019-03-20
-2.1.0,ICORONINJ,"Injection, intracoronary",2019-03-20
-2.1.0,IOVARINJ,"Injection, intraovarian",2019-03-20
-2.1.0,IOSSINJ,"Injection, intraosseous",2019-03-20
-2.1.0,SOAK,Immersion (soak),2019-03-20
-2.1.0,IGASTLAV,"Lavage, intragastric",2019-03-20
-2.1.0,ILUMTA,"Topical application, intraluminal",2019-03-20
-2.1.0,RECTAL,"Topical application, rectal",2019-03-20
-2.1.0,ITYMPINJ,"Injection, intratympanic",2019-03-20
-2.1.0,ICORONINJP,"Injection, intracoronary; push",2019-03-20
-2.1.0,OROPHARTA,"Topical application, oropharyngeal",2019-03-20
-2.1.0,SUBCONJTA,Subconjunctival,2019-03-20
-2.1.0,DENRINSE,"Rinse, dental",2019-03-20
-2.1.0,OT,"Instillation, otic",2019-03-20
-2.1.0,PNSINJ,"Injection, paranasal sinuses",2019-03-20
-2.1.0,NGT,"Instillation, nasogastric tube",2019-03-20
-2.1.0,SUBARACHINJ,"Injection, subarachnoid",2019-03-20
-2.1.0,PERINEAL,"Topical application, perineal",2019-03-20
-2.1.0,IOIRR,"Irrigation, intraocular",2019-03-20
-2.1.0,TOPICAL,Topical,2019-03-20
-2.1.0,TTYMPTABSORP,"Topical absorption, transtympanic",2019-03-20
-2.1.0,ELECTOSMOS,Electro-osmosis,2019-03-20
-2.1.0,TRACHINSTL,"Instillation, tracheostomy",2019-03-20
-2.1.0,ISYNINJ,"Injection, intrasynovial",2019-03-20
-2.1.0,ITESTINJ,"Injection, intratesticular",2019-03-20
-2.1.0,IVESINJ,"Injection, intravesicle",2019-03-20
-2.1.0,IEPITHINJ,"Injection, intraepithelial",2019-03-20
-2.1.0,IOIRR,"Irrigation, intraocular",2019-03-20
-2.1.0,IILEALTA,"Topical application, intraileal",2019-03-20
-2.1.0,IOTOP,"Topical application, intraocular",2019-03-20
-2.1.0,RBINJ,"Injection, retrobulbar",2019-03-20
-2.1.0,GIN,"Topical application, gingival",2019-03-20
-2.1.0,RECINSTL,"Instillation, rectal",2019-03-20
-2.1.0,_BuccalMucosaRoute,BuccalMucosaRoute,2019-03-20
-2.1.0,ICARINJP,"Injection, intracardiac; push",2019-03-20
-2.1.0,PDONTTA,"Topical application, periodontal",2019-03-20
-2.1.0,PERIANAL,"Topical application, perianal",2019-03-20
-2.1.0,SHAMPOO,Shampoo,2019-03-20
-2.1.0,DOUCHE,"Douche, vaginal",2019-03-20
-2.1.0,_GenitourinaryRoute,GenitourinaryRoute,2019-03-20
-2.1.0,_GastricRoute,GastricRoute,2019-03-20
-2.1.0,IDUODINSTIL,"Instillation, intraduodenal",2019-03-20
-2.1.0,IVRPUSH,"Injection, intravenous; rapid push",2019-03-20
-2.1.0,NAIL,"Topical application, nail",2019-03-20
-2.1.0,VAGINSI,"Insertion, vaginal",2019-03-20
-2.1.0,_IntraarterialRoute,IntraarterialRoute,2019-03-20
-2.1.0,ISININSTIL,"Instillation, intrasinal",2019-03-20
-2.1.0,IPCARDINJ,"Injection, intrapericardial",2019-03-20
-2.1.0,RETENEMA,"Enema, rectal retention",2019-03-20
-2.1.0,OCDRESTA,Occlusive dressing technique,2019-03-20
-2.1.0,PDONTINJ,"Injection, periodontal",2019-03-20
-2.1.0,ORMUC,"Topical application, oromucosal",2019-03-20
-2.1.0,PDPINSTL,"Instillation, peritoneal dialysis port",2019-03-20
-2.1.0,NGT,"Instillation, nasogastric tube",2019-03-20
-2.1.0,SOFTISINJ,"Injection, soft tissue",2019-03-20
-2.1.0,OPTHALTA,"Topical application, ophthalmic",2019-03-20
-2.1.0,CHOLINJ,"Injection, for cholangiography",2019-03-20
-2.1.0,INTERMENINJ,"Injection, interameningeal",2019-03-20
-2.1.0,IMEDULINJ,"Injection, intramedullary",2019-03-20
-2.1.0,IILEALINJ,"Instillation, intraileal",2019-03-20
-2.1.0,HAIR,"Topical application, hair",2019-03-20
-2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
-2.1.0,SQSURGINS,"Insertion, subcutaneous; surgical",2019-03-20
-2.1.0,RECINSTL,"Instillation, rectal",2019-03-20
-2.1.0,SQINFUS,"Infusion, subcutaneous",2019-03-20
-2.1.0,ITRACHMAB,"Mucosal absorption, intratracheal",2019-03-20
-2.1.0,IDISCINJ,"Injection, intradiscal",2019-03-20
-2.1.0,ITUMINJ,"Injection, intratumor",2019-03-20
-2.1.0,IPINJ,"Injection, intrapulmonary",2019-03-20
-2.1.0,IC,"Infusion, intracardiac",2019-03-20
-2.1.0,ILUMTA,"Topical application, intraluminal",2019-03-20
-2.1.0,EFT,"Instillation, enteral feeding tube",2019-03-20
-2.1.0,ILESINJ,"Injection, intralesional",2019-03-20
-2.1.0,IA,"Infusion, intraarterial catheter",2019-03-20
-2.1.0,ICORONTA,"Topical application, intracoronal (dental)",2019-03-20
-2.1.0,TRTRACHINJ,"Injection, transtracheal",2019-03-20
-2.1.0,_IntradermalRoute,IntradermalRoute,2019-03-20
-2.1.0,ILTOP,"Topical application, intralesional",2019-03-20
-2.1.0,ICARDINJSP,"Injection, intracardiac; slow push",2019-03-20
-2.1.0,SWISHSPIT,"Swish and spit out, oromucosal",2019-03-20
-2.1.0,ORRINSE,"Rinse, oral",2019-03-20
-2.1.0,SQ,"Injection, subcutaneous",2019-03-20
+2.1.0,BUC,"Topical application, buccal",2019-03-20
+2.1.0,BUC,"Topical application, buccal",2019-03-20
+2.1.0,CAPDINSTL,"Instillation, continuous ambulatory peritoneal dialysis port",2019-03-20
+2.1.0,CAPDINSTL,"Instillation, continuous ambulatory peritoneal dialysis port",2019-03-20
+2.1.0,CECINSTL,"Instillation, cecostomy",2019-03-20
+2.1.0,CECINSTL,"Instillation, cecostomy",2019-03-20
+2.1.0,CERV,"Topical application, cervical",2019-03-20
+2.1.0,CERV,"Topical application, cervical",2019-03-20
+2.1.0,CERVINJ,"Injection, cervical",2019-03-20
+2.1.0,CERVINJ,"Injection, cervical",2019-03-20
 2.1.0,CERVINS,"Insertion, cervical (uterine)",2019-03-20
-2.1.0,IVITINJ,"Injection, intravitreal",2019-03-20
-2.1.0,ICEREBINJ,"Injection, intracerebral",2019-03-20
-2.1.0,ITENDINJ,"Injection, intratendinous",2019-03-20
-2.1.0,IAINJ,"Injection, intraarterial",2019-03-20
-2.1.0,PDPINJ,"Injection, peritoneal dialysis port",2019-03-20
-2.1.0,IPPB,"Inhalation, intermittent positive pressure breathing (ippb)",2019-03-20
-2.1.0,IV,"Infusion, intravenous",2019-03-20
-2.1.0,EFT,"Instillation, enteral feeding tube",2019-03-20
-2.1.0,SWAB,"Topical application, swab",2019-03-20
-2.1.0,GARGLE,Gargle,2019-03-20
-2.1.0,SUBCONJTA,Subconjunctival,2019-03-20
-2.1.0,ILYMPJINJ,"Injection, intralymphatic",2019-03-20
-2.1.0,DEN,"Topical application, dental",2019-03-20
-2.1.0,IGASTIRR,"Irrigation, intragastric",2019-03-20
-2.1.0,_Instillation,Instillation,2019-03-20
-2.1.0,IDINJ,"Injection, intradermal",2019-03-20
-2.1.0,GT,"Instillation, gastrostomy tube",2019-03-20
-2.1.0,IVINJBOL,"Injection, intravenous; bolus",2019-03-20
-2.1.0,OJJ,"Instillation, orojejunum tube",2019-03-20
-2.1.0,RESPINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,IOINSTL,"Instillation, intraocular",2019-03-20
-2.1.0,NAIL,"Topical application, nail",2019-03-20
-2.1.0,ETINSTL,"Instillation, endotracheal tube",2019-03-20
-2.1.0,NEB,"Inhalation, nebulization",2019-03-20
-2.1.0,IURETINJ,"Injection, intraureteral; retrograde",2019-03-20
-2.1.0,SUCK,"Suck, oromucosal",2019-03-20
-2.1.0,_IntracartilaginousRoute,IntracartilaginousRoute,2019-03-20
-2.1.0,ORRINSE,"Rinse, oral",2019-03-20
-2.1.0,RECTINSTL,"Instillation, rectal tube",2019-03-20
-2.1.0,_IntracavernosalRoute,IntracavernosalRoute,2019-03-20
-2.1.0,TRACHINSTL,"Instillation, tracheostomy",2019-03-20
-2.1.0,SOFTISINSTIL,"Instillation, soft tissue",2019-03-20
-2.1.0,IAINJSP,"Injection, intraarterial; slow push",2019-03-20
-2.1.0,PARENTINJ,"Injection, parenteral",2019-03-20
-2.1.0,PDONTTA,"Topical application, periodontal",2019-03-20
-2.1.0,ETNEB,"Nebulization, endotracheal tube",2019-03-20
-2.1.0,IMEDULINJ,"Injection, intramedullary",2019-03-20
-2.1.0,URETHSUP,"Suppository, urethral",2019-03-20
-2.1.0,ORALTA,"Topical application, oral",2019-03-20
-2.1.0,IPROSTINJ,"Injection, intraprostatic",2019-03-20
-2.1.0,IPLRINJ,"Injection, intrapleural",2019-03-20
-2.1.0,ICAVITINJ,"Injection, intracavitary",2019-03-20
-2.1.0,EXTRAMNINJ,"Injection, extra-amniotic",2019-03-20
-2.1.0,IURETINJ,"Injection, intraureteral; retrograde",2019-03-20
-2.1.0,INTERMENINJ,"Injection, interameningeal",2019-03-20
-2.1.0,NASOGASINSTIL,"Instillation, nasogastric",2019-03-20
-2.1.0,_HairRoute,HairRoute,2019-03-20
-2.1.0,GJT,"Instillation, gastro-jejunostomy tube",2019-03-20
+2.1.0,CERVINS,"Insertion, cervical (uterine)",2019-03-20
 2.1.0,CHEW,"Chew, oral",2019-03-20
-2.1.0,SQIMPLNT,"Implantation, subcutaneous",2019-03-20
-2.1.0,ITRACHINSTIL,"Instillation, intratracheal",2019-03-20
-2.1.0,PAINJ,"Injection, periarticular",2019-03-20
-2.1.0,IMZ,"Injection, intramuscular; z track",2019-03-20
-2.1.0,SOFTISINSTIL,"Instillation, soft tissue",2019-03-20
-2.1.0,ORIFINHL,"Inhalation, oral intermittent flow",2019-03-20
-2.1.0,IOINJ,"Injection, intraocular",2019-03-20
-2.1.0,ENTINSTL,"Instillation, enteral",2019-03-20
-2.1.0,ILESIRR,"Irrigation, intralesional",2019-03-20
-2.1.0,NASINHLC,"Inhalation, nasal cannula",2019-03-20
-2.1.0,ITYMPINJ,"Injection, intratympanic",2019-03-20
-2.1.0,ICAVINJ,"Injection, intracavernous",2019-03-20
-2.1.0,IESOPHTA,"Topical application, intraesophageal",2019-03-20
-2.1.0,SUBMUCINJ,"Injection, submucosal",2019-03-20
-2.1.0,ORIFINHL,"Inhalation, oral intermittent flow",2019-03-20
-2.1.0,_AmnioticFluidSacRoute,AmnioticFluidSacRoute,2019-03-20
-2.1.0,IBURSINJ,"Injection, intrabursal",2019-03-20
-2.1.0,_DentalRoute,DentalRoute,2019-03-20
-2.1.0,ENEMA,"Enema, rectal",2019-03-20
-2.1.0,IVITIMPLNT,"Implantation, intravitreal",2019-03-20
-2.1.0,_CecostomyRoute,CecostomyRoute,2019-03-20
-2.1.0,IVC,"Infusion, intravenous catheter",2019-03-20
-2.1.0,INTERSTITINJ,"Injection, interstitial",2019-03-20
-2.1.0,ICEREBINJ,"Injection, intracerebral",2019-03-20
-2.1.0,ISININSTIL,"Instillation, intrasinal",2019-03-20
-2.1.0,EPINJSP,"Injection, epidural; slow push",2019-03-20
-2.1.0,IVITIMPLNT,"Implantation, intravitreal",2019-03-20
-2.1.0,ICARTINJ,"Injection, intracartilaginous",2019-03-20
-2.1.0,SININSTIL,"Instillation, sinus; unspecified",2019-03-20
-2.1.0,IOSSC,"Infusion, intraosseous; continuous",2019-03-20
-2.1.0,TRNSLING,Translingual,2019-03-20
-2.1.0,ICOR,"Infusion, intracoronary",2019-03-20
-2.1.0,NASINHL,"Inhalation, nasal",2019-03-20
-2.1.0,IM,"Injection, intramuscular",2019-03-20
-2.1.0,LPINS,"Insertion, lacrimal puncta",2019-03-20
-2.1.0,IOSSINJ,"Injection, intraosseous",2019-03-20
-2.1.0,DRESS,"Topical application, soaked dressing",2019-03-20
-2.1.0,IT,"Infusion, intrathecal",2019-03-20
-2.1.0,RBINJ,"Injection, retrobulbar",2019-03-20
-2.1.0,IPINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,SWISHSPIT,"Swish and spit out, oromucosal",2019-03-20
-2.1.0,IDOUDMAB,"Mucosal absorption, intraduodenal",2019-03-20
-2.1.0,GINGINJ,"Injection, gingival",2019-03-20
-2.1.0,ITENDINJ,"Injection, intratendinous",2019-03-20
-2.1.0,SCALP,"Topical application, scalp",2019-03-20
-2.1.0,_IntraduralRoute,IntraduralRoute,2019-03-20
-2.1.0,IPROSTINJ,"Injection, intraprostatic",2019-03-20
-2.1.0,IAINJ,"Injection, intraarterial",2019-03-20
-2.1.0,RETENEMA,"Enema, rectal retention",2019-03-20
-2.1.0,VENTMASK,"Inhalation, ventimask",2019-03-20
-2.1.0,ORALTA,"Topical application, oral",2019-03-20
-2.1.0,TOPICAL,Topical,2019-03-20
-2.1.0,_IntracaudalRoute,IntracaudalRoute,2019-03-20
-2.1.0,_Infusion,Infusion,2019-03-20
-2.1.0,IABDINJ,"Injection, intra-abdominal",2019-03-20
-2.1.0,DEN,"Topical application, dental",2019-03-20
-2.1.0,IOSURGINS,"Insertion, intraocular; surgical",2019-03-20
-2.1.0,URETHINJ,"Injection, urethral",2019-03-20
-2.1.0,URETINJ,"Injection, ureteral",2019-03-20
-2.1.0,GT,"Instillation, gastrostomy tube",2019-03-20
-2.1.0,IUINJC,"Injection, intracervical (uterus)",2019-03-20
-2.1.0,_Insertion,Insertion,2019-03-20
-2.1.0,ORMUC,"Topical application, oromucosal",2019-03-20
-2.1.0,ICORPCAVINJ,"Injection, intracorpus cavernosum",2019-03-20
-2.1.0,ILESINJ,"Injection, intralesional",2019-03-20
-2.1.0,EXTCORPDIF,"Diffusion, extracorporeal",2019-03-20
-2.1.0,IABDINJ,"Injection, intra-abdominal",2019-03-20
-2.1.0,IILEALINJ,"Instillation, intraileal",2019-03-20
-2.1.0,ICORONINJ,"Injection, intracoronary",2019-03-20
-2.1.0,_Flush,Flush,2019-03-20
-2.1.0,PR,"Insertion, rectal",2019-03-20
-2.1.0,ICARDINJ,"Injection, intracardiac",2019-03-20
-2.1.0,JJTINSTL,"Instillation, jejunostomy tube",2019-03-20
-2.1.0,SKIN,"Topical application, skin",2019-03-20
-2.1.0,MUC,"Topical application, mucous membrane",2019-03-20
-2.1.0,IPERINJ,"Injection, intraperitoneal",2019-03-20
-2.1.0,IVENTINJ,"Injection, intraventricular (heart)",2019-03-20
-2.1.0,ILYMPJINJ,"Injection, intralymphatic",2019-03-20
-2.1.0,_InterstitialRoute,InterstitialRoute,2019-03-20
-2.1.0,URETHINJ,"Injection, urethral",2019-03-20
-2.1.0,ICORPCAVINJ,"Injection, intracorpus cavernosum",2019-03-20
-2.1.0,IGASTINSTIL,"Instillation, intragastric",2019-03-20
-2.1.0,ITRACHMAB,"Mucosal absorption, intratracheal",2019-03-20
-2.1.0,SOFTISINJ,"Injection, soft tissue",2019-03-20
-2.1.0,_IntracervicalRoute,IntracervicalRoute,2019-03-20
-2.1.0,SL,"Dissolve, sublingual",2019-03-20
-2.1.0,ITRACHINSTIL,"Instillation, intratracheal",2019-03-20
-2.1.0,_Enema,Enema,2019-03-20
-2.1.0,SUBMUCINJ,"Injection, submucosal",2019-03-20
-2.1.0,PARENTINJ,"Injection, parenteral",2019-03-20
-2.1.0,DOUCHE,"Douche, vaginal",2019-03-20
-2.1.0,LARYNGINSTIL,"Instillation, laryngeal",2019-03-20
-2.1.0,SMUCMAB,"Mucosal absorption, submucosal",2019-03-20
-2.1.0,IVASCINFUS,"Infusion, intravascular",2019-03-20
-2.1.0,URETHINSTL,"instillation, urethral",2019-03-20
-2.1.0,GUIRR,"Irrigation, genitourinary",2019-03-20
-2.1.0,ENTINSTL,"Instillation, enteral",2019-03-20
-2.1.0,_IntraarticularRoute,IntraarticularRoute,2019-03-20
-2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,TRACH,"Inhalation, tracheostomy",2019-03-20
-2.1.0,TRNSLING,Translingual,2019-03-20
-2.1.0,IVINJ,"Injection, intravenous",2019-03-20
-2.1.0,SUCK,"Suck, oromucosal",2019-03-20
 2.1.0,CHEW,"Chew, oral",2019-03-20
-2.1.0,ENEMA,"Enema, rectal",2019-03-20
-2.1.0,LARYNGINSTIL,"Instillation, laryngeal",2019-03-20
-2.1.0,ITUBINJ,"Injection, intratubular",2019-03-20
-2.1.0,IUINSTL,"Instillation, intrauterine",2019-03-20
-2.1.0,IUINJ,"Injection, intrauterine",2019-03-20
-2.1.0,ORIFINHL,"Inhalation, oral intermittent flow",2019-03-20
-2.1.0,IARTINJ,"Injection, intraarticular",2019-03-20
-2.1.0,TRNSDERMD,"Diffusion, transdermal",2019-03-20
-2.1.0,ICARTINJ,"Injection, intracartilaginous",2019-03-20
-2.1.0,VAGINS,"Topical application, vaginal",2019-03-20
-2.1.0,_IntrailealRoute,IntrailealRoute,2019-03-20
+2.1.0,CHOLINJ,"Injection, for cholangiography",2019-03-20
+2.1.0,CHOLINJ,"Injection, for cholangiography",2019-03-20
+2.1.0,CTINSTL,"Instillation, chest tube",2019-03-20
+2.1.0,CTINSTL,"Instillation, chest tube",2019-03-20
+2.1.0,DEN,"Topical application, dental",2019-03-20
+2.1.0,DEN,"Topical application, dental",2019-03-20
 2.1.0,DENRINSE,"Rinse, dental",2019-03-20
-2.1.0,SCINJ,"Injection, subconjunctival",2019-03-20
-2.1.0,RESPINHL,"Inhalation, respiratory",2019-03-20
-2.1.0,PNSINJ,"Injection, paranasal sinuses",2019-03-20
-2.1.0,_IntrabursalRoute,IntrabursalRoute,2019-03-20
-2.1.0,IA,"Infusion, intraarterial catheter",2019-03-20
-2.1.0,ICAVITINJ,"Injection, intracavitary",2019-03-20
-2.1.0,PO,"Swallow, oral",2019-03-20
-2.1.0,IOINSTL,"Instillation, intraocular",2019-03-20
-2.1.0,_IntraesophagealRoute,IntraesophagealRoute,2019-03-20
-2.1.0,_PeriodontalRoute,PeriodontalRoute,2019-03-20
-2.1.0,LARYNGTA,"Topical application, laryngeal",2019-03-20
-2.1.0,OROPHARTA,"Topical application, oropharyngeal",2019-03-20
-2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
-2.1.0,EXTCORPINJ,"Injection, extracorporeal",2019-03-20
-2.1.0,ICAVINJ,"Injection, intracavernous",2019-03-20
-2.1.0,_ElectroOsmosisRoute,ElectroOsmosisRoute,2019-03-20
-2.1.0,_IntraperitonealRoute,IntraperitonealRoute,2019-03-20
-2.1.0,IGASTIRR,"Irrigation, intragastric",2019-03-20
-2.1.0,SLESINJ,"Injection, sublesional",2019-03-20
-2.1.0,ITUBINJ,"Injection, intratubular",2019-03-20
-2.1.0,ORNEB,"Inhalation, nebulization; oral",2019-03-20
-2.1.0,NASALINSTIL,"Instillation, nasal",2019-03-20
-2.1.0,IVITINJ,"Injection, intravitreal",2019-03-20
-2.1.0,SOAK,Immersion (soak),2019-03-20
-2.1.0,_InfiltrationRoute,InfiltrationRoute,2019-03-20
+2.1.0,DENRINSE,"Rinse, dental",2019-03-20
 2.1.0,DISSOLVE,"Dissolve, oral",2019-03-20
-2.1.0,_TranstympanicRoute,TranstympanicRoute,2019-03-20
-2.1.0,_MucousMembraneRoute,MucousMembraneRoute,2019-03-20
-2.1.0,REBREATH,"Inhalation, oral rebreather mask",2019-03-20
+2.1.0,DISSOLVE,"Dissolve, oral",2019-03-20
+2.1.0,DOUCHE,"Douche, vaginal",2019-03-20
+2.1.0,DOUCHE,"Douche, vaginal",2019-03-20
+2.1.0,DRESS,"Topical application, soaked dressing",2019-03-20
+2.1.0,DRESS,"Topical application, soaked dressing",2019-03-20
+2.1.0,EFT,"Instillation, enteral feeding tube",2019-03-20
+2.1.0,EFT,"Instillation, enteral feeding tube",2019-03-20
+2.1.0,ELECTOSMOS,Electro-osmosis,2019-03-20
+2.1.0,ELECTOSMOS,Electro-osmosis,2019-03-20
+2.1.0,ENDOSININJ,"Injection, endosinusial",2019-03-20
+2.1.0,ENDOSININJ,"Injection, endosinusial",2019-03-20
+2.1.0,ENEMA,"Enema, rectal",2019-03-20
+2.1.0,ENEMA,"Enema, rectal",2019-03-20
+2.1.0,ENTINSTL,"Instillation, enteral",2019-03-20
+2.1.0,ENTINSTL,"Instillation, enteral",2019-03-20
+2.1.0,EPI,"Infusion, epidural",2019-03-20
+2.1.0,EPI,"Infusion, epidural",2019-03-20
+2.1.0,EPIDURINJ,"Injection, epidural",2019-03-20
+2.1.0,EPIDURINJ,"Injection, epidural",2019-03-20
+2.1.0,EPIINJ,"Injection, epidural; push",2019-03-20
+2.1.0,EPIINJ,"Injection, epidural; push",2019-03-20
+2.1.0,EPINJSP,"Injection, epidural; slow push",2019-03-20
+2.1.0,EPINJSP,"Injection, epidural; slow push",2019-03-20
+2.1.0,ETINSTL,"Instillation, endotracheal tube",2019-03-20
+2.1.0,ETINSTL,"Instillation, endotracheal tube",2019-03-20
+2.1.0,ETNEB,"Nebulization, endotracheal tube",2019-03-20
+2.1.0,ETNEB,"Nebulization, endotracheal tube",2019-03-20
+2.1.0,EXTCORPDIF,"Diffusion, extracorporeal",2019-03-20
+2.1.0,EXTCORPDIF,"Diffusion, extracorporeal",2019-03-20
+2.1.0,EXTCORPINJ,"Injection, extracorporeal",2019-03-20
+2.1.0,EXTCORPINJ,"Injection, extracorporeal",2019-03-20
+2.1.0,EXTCORPINJ,"Injection, extracorporeal",2019-03-20
+2.1.0,EXTRAMNINJ,"Injection, extra-amniotic",2019-03-20
+2.1.0,EXTRAMNINJ,"Injection, extra-amniotic",2019-03-20
+2.1.0,GARGLE,Gargle,2019-03-20
+2.1.0,GARGLE,Gargle,2019-03-20
+2.1.0,GBINJ,"Injection, gastric button",2019-03-20
+2.1.0,GBINJ,"Injection, gastric button",2019-03-20
+2.1.0,GIN,"Topical application, gingival",2019-03-20
+2.1.0,GIN,"Topical application, gingival",2019-03-20
+2.1.0,GINGINJ,"Injection, gingival",2019-03-20
+2.1.0,GINGINJ,"Injection, gingival",2019-03-20
+2.1.0,GJT,"Instillation, gastro-jejunostomy tube",2019-03-20
+2.1.0,GJT,"Instillation, gastro-jejunostomy tube",2019-03-20
+2.1.0,GT,"Instillation, gastrostomy tube",2019-03-20
+2.1.0,GT,"Instillation, gastrostomy tube",2019-03-20
+2.1.0,GUIRR,"Irrigation, genitourinary",2019-03-20
+2.1.0,GUIRR,"Irrigation, genitourinary",2019-03-20
+2.1.0,HAIR,"Topical application, hair",2019-03-20
+2.1.0,HAIR,"Topical application, hair",2019-03-20
+2.1.0,HEMODIFF,"Diffusion, hemodialysis",2019-03-20
+2.1.0,HEMODIFF,"Diffusion, hemodialysis",2019-03-20
+2.1.0,HEMOPORT,"Injection, hemodialysis port",2019-03-20
+2.1.0,HEMOPORT,"Injection, hemodialysis port",2019-03-20
+2.1.0,IA,"Infusion, intraarterial catheter",2019-03-20
+2.1.0,IA,"Infusion, intraarterial catheter",2019-03-20
+2.1.0,IABDINJ,"Injection, intra-abdominal",2019-03-20
+2.1.0,IABDINJ,"Injection, intra-abdominal",2019-03-20
+2.1.0,IAINJ,"Injection, intraarterial",2019-03-20
+2.1.0,IAINJ,"Injection, intraarterial",2019-03-20
+2.1.0,IAINJP,"Injection, intraarterial; push",2019-03-20
+2.1.0,IAINJSP,"Injection, intraarterial; slow push",2019-03-20
+2.1.0,IARTINJ,"Injection, intraarticular",2019-03-20
+2.1.0,IARTINJ,"Injection, intraarticular",2019-03-20
 2.1.0,IBRONCHINSTIL,"Instillation, intrabronchial",2019-03-20
-2.1.0,_BiliaryRoute,BiliaryRoute,2019-03-20
-2.1.0,IDURINJ,"Injection, intradural",2019-03-20
-2.1.0,ICISTERNINJ,"Injection, intracisternal",2019-03-20
-2.1.0,_IntracoronalRoute,IntracoronalRoute,2019-03-20
-2.1.0,SHAMPOO,Shampoo,2019-03-20
-2.1.0,IVCI,"Infusion, intravenous catheter; intermittent",2019-03-20
+2.1.0,IBRONCHINSTIL,"Instillation, intrabronchial",2019-03-20
+2.1.0,IBURSINJ,"Injection, intrabursal",2019-03-20
+2.1.0,IBURSINJ,"Injection, intrabursal",2019-03-20
+2.1.0,IC,"Infusion, intracardiac",2019-03-20
+2.1.0,IC,"Infusion, intracardiac",2019-03-20
+2.1.0,ICARDINJ,"Injection, intracardiac",2019-03-20
+2.1.0,ICARDINJ,"Injection, intracardiac",2019-03-20
+2.1.0,ICARDINJRP,"Injection, intracardiac; rapid push",2019-03-20
+2.1.0,ICARDINJSP,"Injection, intracardiac; slow push",2019-03-20
+2.1.0,ICARINJP,"Injection, intracardiac; push",2019-03-20
+2.1.0,ICARTINJ,"Injection, intracartilaginous",2019-03-20
+2.1.0,ICARTINJ,"Injection, intracartilaginous",2019-03-20
 2.1.0,ICAUDINJ,"Injection, intracaudal",2019-03-20
+2.1.0,ICAUDINJ,"Injection, intracaudal",2019-03-20
+2.1.0,ICAVINJ,"Injection, intracavernous",2019-03-20
+2.1.0,ICAVINJ,"Injection, intracavernous",2019-03-20
+2.1.0,ICAVITINJ,"Injection, intracavitary",2019-03-20
+2.1.0,ICAVITINJ,"Injection, intracavitary",2019-03-20
+2.1.0,ICEREBINJ,"Injection, intracerebral",2019-03-20
+2.1.0,ICEREBINJ,"Injection, intracerebral",2019-03-20
+2.1.0,ICISTERNINJ,"Injection, intracisternal",2019-03-20
+2.1.0,ICISTERNINJ,"Injection, intracisternal",2019-03-20
+2.1.0,ICOR,"Infusion, intracoronary",2019-03-20
+2.1.0,ICOR,"Infusion, intracoronary",2019-03-20
+2.1.0,ICORNTA,"Topical application, intracorneal",2019-03-20
+2.1.0,ICORNTA,"Topical application, intracorneal",2019-03-20
+2.1.0,ICORONINJ,"Injection, intracoronary",2019-03-20
+2.1.0,ICORONINJ,"Injection, intracoronary",2019-03-20
+2.1.0,ICORONINJP,"Injection, intracoronary; push",2019-03-20
+2.1.0,ICORONTA,"Topical application, intracoronal (dental)",2019-03-20
+2.1.0,ICORONTA,"Topical application, intracoronal (dental)",2019-03-20
+2.1.0,ICORPCAVINJ,"Injection, intracorpus cavernosum",2019-03-20
+2.1.0,ICORPCAVINJ,"Injection, intracorpus cavernosum",2019-03-20
+2.1.0,IDIMPLNT,"Implantation, intradermal",2019-03-20
+2.1.0,IDIMPLNT,"Implantation, intradermal",2019-03-20
+2.1.0,IDINJ,"Injection, intradermal",2019-03-20
+2.1.0,IDINJ,"Injection, intradermal",2019-03-20
+2.1.0,IDISCINJ,"Injection, intradiscal",2019-03-20
+2.1.0,IDISCINJ,"Injection, intradiscal",2019-03-20
+2.1.0,IDOUDMAB,"Mucosal absorption, intraduodenal",2019-03-20
+2.1.0,IDOUDMAB,"Mucosal absorption, intraduodenal",2019-03-20
+2.1.0,IDUCTINJ,"Injection, intraductal",2019-03-20
+2.1.0,IDUCTINJ,"Injection, intraductal",2019-03-20
+2.1.0,IDUODINSTIL,"Instillation, intraduodenal",2019-03-20
+2.1.0,IDUODINSTIL,"Instillation, intraduodenal",2019-03-20
+2.1.0,IDURINJ,"Injection, intradural",2019-03-20
+2.1.0,IDURINJ,"Injection, intradural",2019-03-20
+2.1.0,IEPIDINJ,"Injection, intraepidermal",2019-03-20
+2.1.0,IEPIDINJ,"Injection, intraepidermal",2019-03-20
+2.1.0,IEPITHINJ,"Injection, intraepithelial",2019-03-20
+2.1.0,IEPITHINJ,"Injection, intraepithelial",2019-03-20
+2.1.0,IESOPHINSTIL,"Instillation, intraesophageal",2019-03-20
+2.1.0,IESOPHINSTIL,"Instillation, intraesophageal",2019-03-20
+2.1.0,IESOPHTA,"Topical application, intraesophageal",2019-03-20
+2.1.0,IESOPHTA,"Topical application, intraesophageal",2019-03-20
+2.1.0,IGASTINSTIL,"Instillation, intragastric",2019-03-20
+2.1.0,IGASTINSTIL,"Instillation, intragastric",2019-03-20
+2.1.0,IGASTIRR,"Irrigation, intragastric",2019-03-20
+2.1.0,IGASTIRR,"Irrigation, intragastric",2019-03-20
+2.1.0,IGASTLAV,"Lavage, intragastric",2019-03-20
+2.1.0,IGASTLAV,"Lavage, intragastric",2019-03-20
+2.1.0,IILEALINJ,"Instillation, intraileal",2019-03-20
+2.1.0,IILEALINJ,"Instillation, intraileal",2019-03-20
+2.1.0,IILEALTA,"Topical application, intraileal",2019-03-20
+2.1.0,IILEALTA,"Topical application, intraileal",2019-03-20
+2.1.0,ILESINJ,"Injection, intralesional",2019-03-20
+2.1.0,ILESINJ,"Injection, intralesional",2019-03-20
+2.1.0,ILESIRR,"Irrigation, intralesional",2019-03-20
+2.1.0,ILESIRR,"Irrigation, intralesional",2019-03-20
+2.1.0,ILTOP,"Topical application, intralesional",2019-03-20
+2.1.0,ILTOP,"Topical application, intralesional",2019-03-20
+2.1.0,ILUMINJ,"Injection, intraluminal",2019-03-20
+2.1.0,ILUMINJ,"Injection, intraluminal",2019-03-20
+2.1.0,ILUMTA,"Topical application, intraluminal",2019-03-20
+2.1.0,ILUMTA,"Topical application, intraluminal",2019-03-20
+2.1.0,ILYMPJINJ,"Injection, intralymphatic",2019-03-20
+2.1.0,ILYMPJINJ,"Injection, intralymphatic",2019-03-20
+2.1.0,IM,"Injection, intramuscular",2019-03-20
+2.1.0,IM,"Injection, intramuscular",2019-03-20
+2.1.0,IMD,"Injection, intramuscular; deep",2019-03-20
+2.1.0,IMEDULINJ,"Injection, intramedullary",2019-03-20
+2.1.0,IMEDULINJ,"Injection, intramedullary",2019-03-20
+2.1.0,IMZ,"Injection, intramuscular; z track",2019-03-20
+2.1.0,INSUF,Insufflation,2019-03-20
+2.1.0,INTERMENINJ,"Injection, interameningeal",2019-03-20
+2.1.0,INTERMENINJ,"Injection, interameningeal",2019-03-20
+2.1.0,INTERSTITINJ,"Injection, interstitial",2019-03-20
+2.1.0,INTERSTITINJ,"Injection, interstitial",2019-03-20
+2.1.0,IOINJ,"Injection, intraocular",2019-03-20
+2.1.0,IOINJ,"Injection, intraocular",2019-03-20
+2.1.0,IOINSTL,"Instillation, intraocular",2019-03-20
+2.1.0,IOINSTL,"Instillation, intraocular",2019-03-20
+2.1.0,IOIRR,"Irrigation, intraocular",2019-03-20
+2.1.0,IOIRR,"Irrigation, intraocular",2019-03-20
+2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
+2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
+2.1.0,IONTO,"Topical application, iontophoresis",2019-03-20
+2.1.0,IOSSC,"Infusion, intraosseous; continuous",2019-03-20
+2.1.0,IOSSC,"Infusion, intraosseous; continuous",2019-03-20
+2.1.0,IOSSINJ,"Injection, intraosseous",2019-03-20
+2.1.0,IOSSINJ,"Injection, intraosseous",2019-03-20
+2.1.0,IOSURGINS,"Insertion, intraocular; surgical",2019-03-20
+2.1.0,IOSURGINS,"Insertion, intraocular; surgical",2019-03-20
+2.1.0,IOTOP,"Topical application, intraocular",2019-03-20
+2.1.0,IOTOP,"Topical application, intraocular",2019-03-20
+2.1.0,IOVARINJ,"Injection, intraovarian",2019-03-20
+2.1.0,IOVARINJ,"Injection, intraovarian",2019-03-20
+2.1.0,IPCARDINJ,"Injection, intrapericardial",2019-03-20
+2.1.0,IPCARDINJ,"Injection, intrapericardial",2019-03-20
+2.1.0,IPERINJ,"Injection, intraperitoneal",2019-03-20
+2.1.0,IPERINJ,"Injection, intraperitoneal",2019-03-20
+2.1.0,IPINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,IPINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,IPINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,IPINJ,"Injection, intrapulmonary",2019-03-20
+2.1.0,IPINJ,"Injection, intrapulmonary",2019-03-20
+2.1.0,IPLRINJ,"Injection, intrapleural",2019-03-20
+2.1.0,IPLRINJ,"Injection, intrapleural",2019-03-20
+2.1.0,IPPB,"Inhalation, intermittent positive pressure breathing (ippb)",2019-03-20
+2.1.0,IPPB,"Inhalation, intermittent positive pressure breathing (ippb)",2019-03-20
+2.1.0,IPROSTINJ,"Injection, intraprostatic",2019-03-20
+2.1.0,IPROSTINJ,"Injection, intraprostatic",2019-03-20
+2.1.0,IPUMPINJ,"Injection, insulin pump",2019-03-20
+2.1.0,IPUMPINJ,"Injection, insulin pump",2019-03-20
+2.1.0,ISININSTIL,"Instillation, intrasinal",2019-03-20
+2.1.0,ISININSTIL,"Instillation, intrasinal",2019-03-20
+2.1.0,ISINJ,"Injection, intraspinal",2019-03-20
+2.1.0,ISINJ,"Injection, intraspinal",2019-03-20
+2.1.0,ISTERINJ,"Injection, intrasternal",2019-03-20
+2.1.0,ISTERINJ,"Injection, intrasternal",2019-03-20
+2.1.0,ISYNINJ,"Injection, intrasynovial",2019-03-20
+2.1.0,ISYNINJ,"Injection, intrasynovial",2019-03-20
+2.1.0,IT,"Infusion, intrathecal",2019-03-20
+2.1.0,IT,"Infusion, intrathecal",2019-03-20
+2.1.0,ITENDINJ,"Injection, intratendinous",2019-03-20
+2.1.0,ITENDINJ,"Injection, intratendinous",2019-03-20
+2.1.0,ITESTINJ,"Injection, intratesticular",2019-03-20
+2.1.0,ITESTINJ,"Injection, intratesticular",2019-03-20
+2.1.0,ITHORINJ,"Injection, intrathoracic",2019-03-20
+2.1.0,ITHORINJ,"Injection, intrathoracic",2019-03-20
+2.1.0,ITINJ,"Injection, intrathecal",2019-03-20
+2.1.0,ITINJ,"Injection, intrathecal",2019-03-20
+2.1.0,ITRACHINSTIL,"Instillation, intratracheal",2019-03-20
+2.1.0,ITRACHINSTIL,"Instillation, intratracheal",2019-03-20
+2.1.0,ITRACHMAB,"Mucosal absorption, intratracheal",2019-03-20
+2.1.0,ITRACHMAB,"Mucosal absorption, intratracheal",2019-03-20
+2.1.0,ITUBINJ,"Injection, intratubular",2019-03-20
+2.1.0,ITUBINJ,"Injection, intratubular",2019-03-20
+2.1.0,ITUMINJ,"Injection, intratumor",2019-03-20
+2.1.0,ITUMINJ,"Injection, intratumor",2019-03-20
+2.1.0,ITYMPINJ,"Injection, intratympanic",2019-03-20
+2.1.0,ITYMPINJ,"Injection, intratympanic",2019-03-20
+2.1.0,IU,"Insertion, intrauterine",2019-03-20
+2.1.0,IU,"Insertion, intrauterine",2019-03-20
+2.1.0,IUINJ,"Injection, intrauterine",2019-03-20
+2.1.0,IUINJ,"Injection, intrauterine",2019-03-20
+2.1.0,IUINJC,"Injection, intracervical (uterus)",2019-03-20
+2.1.0,IUINJC,"Injection, intracervical (uterus)",2019-03-20
+2.1.0,IUINSTL,"Instillation, intrauterine",2019-03-20
+2.1.0,IUINSTL,"Instillation, intrauterine",2019-03-20
+2.1.0,IURETINJ,"Injection, intraureteral; retrograde",2019-03-20
+2.1.0,IURETINJ,"Injection, intraureteral; retrograde",2019-03-20
+2.1.0,IV,"Infusion, intravenous",2019-03-20
+2.1.0,IVASCINFUS,"Infusion, intravascular",2019-03-20
+2.1.0,IVASCINFUS,"Infusion, intravascular",2019-03-20
+2.1.0,IVASCINJ,"Injection, intravascular",2019-03-20
+2.1.0,IVASCINJ,"Injection, intravascular",2019-03-20
+2.1.0,IVC,"Infusion, intravenous catheter",2019-03-20
+2.1.0,IVCC,"Infusion, intravenous catheter; continuous",2019-03-20
+2.1.0,IVCI,"Infusion, intravenous catheter; intermittent",2019-03-20
+2.1.0,IVENTINJ,"Injection, intraventricular (heart)",2019-03-20
+2.1.0,IVENTINJ,"Injection, intraventricular (heart)",2019-03-20
+2.1.0,IVESINJ,"Injection, intravesicle",2019-03-20
+2.1.0,IVESINJ,"Injection, intravesicle",2019-03-20
+2.1.0,IVFLUSH,"Flush, intravenous catheter",2019-03-20
+2.1.0,IVFLUSH,"Flush, intravenous catheter",2019-03-20
+2.1.0,IVINJ,"Injection, intravenous",2019-03-20
+2.1.0,IVINJ,"Injection, intravenous",2019-03-20
+2.1.0,IVINJBOL,"Injection, intravenous; bolus",2019-03-20
+2.1.0,IVITIMPLNT,"Implantation, intravitreal",2019-03-20
+2.1.0,IVITIMPLNT,"Implantation, intravitreal",2019-03-20
+2.1.0,IVITINJ,"Injection, intravitreal",2019-03-20
+2.1.0,IVITINJ,"Injection, intravitreal",2019-03-20
+2.1.0,IVPUSH,"Injection, intravenous; push",2019-03-20
+2.1.0,IVRPUSH,"Injection, intravenous; rapid push",2019-03-20
+2.1.0,IVSPUSH,"Injection, intravenous; slow push",2019-03-20
+2.1.0,JJTINSTL,"Instillation, jejunostomy tube",2019-03-20
+2.1.0,JJTINSTL,"Instillation, jejunostomy tube",2019-03-20
+2.1.0,LARYNGINSTIL,"Instillation, laryngeal",2019-03-20
+2.1.0,LARYNGINSTIL,"Instillation, laryngeal",2019-03-20
+2.1.0,LARYNGTA,"Topical application, laryngeal",2019-03-20
+2.1.0,LARYNGTA,"Topical application, laryngeal",2019-03-20
+2.1.0,LPINS,"Insertion, lacrimal puncta",2019-03-20
+2.1.0,LPINS,"Insertion, lacrimal puncta",2019-03-20
+2.1.0,MUC,"Topical application, mucous membrane",2019-03-20
+2.1.0,MUC,"Topical application, mucous membrane",2019-03-20
+2.1.0,NAIL,"Topical application, nail",2019-03-20
+2.1.0,NAIL,"Topical application, nail",2019-03-20
+2.1.0,NASAL,"Topical application, nasal",2019-03-20
+2.1.0,NASAL,"Topical application, nasal",2019-03-20
+2.1.0,NASALINSTIL,"Instillation, nasal",2019-03-20
+2.1.0,NASALINSTIL,"Instillation, nasal",2019-03-20
+2.1.0,NASINHL,"Inhalation, nasal",2019-03-20
+2.1.0,NASINHL,"Inhalation, nasal",2019-03-20
+2.1.0,NASINHLC,"Inhalation, nasal cannula",2019-03-20
+2.1.0,NASNEB,"Inhalation, nebulization; nasal",2019-03-20
+2.1.0,NASOGASINSTIL,"Instillation, nasogastric",2019-03-20
+2.1.0,NASOGASINSTIL,"Instillation, nasogastric",2019-03-20
+2.1.0,NEB,"Inhalation, nebulization",2019-03-20
+2.1.0,NGT,"Instillation, nasogastric tube",2019-03-20
+2.1.0,NGT,"Instillation, nasogastric tube",2019-03-20
+2.1.0,NP,"Inhalation, nasal cannula",2019-03-20
+2.1.0,NTT,"Instillation, nasotracheal tube",2019-03-20
+2.1.0,NTT,"Instillation, nasotracheal tube",2019-03-20
+2.1.0,OCDRESTA,Occlusive dressing technique,2019-03-20
+2.1.0,OCDRESTA,Occlusive dressing technique,2019-03-20
+2.1.0,OGT,"Instillation, orogastric tube",2019-03-20
+2.1.0,OGT,"Instillation, orogastric tube",2019-03-20
+2.1.0,OJJ,"Instillation, orojejunum tube",2019-03-20
+2.1.0,OJJ,"Instillation, orojejunum tube",2019-03-20
+2.1.0,OPTHALTA,"Topical application, ophthalmic",2019-03-20
+2.1.0,OPTHALTA,"Topical application, ophthalmic",2019-03-20
+2.1.0,ORALTA,"Topical application, oral",2019-03-20
+2.1.0,ORALTA,"Topical application, oral",2019-03-20
+2.1.0,ORIFINHL,"Inhalation, oral intermittent flow",2019-03-20
+2.1.0,ORIFINHL,"Inhalation, oral intermittent flow",2019-03-20
+2.1.0,ORIFINHL,"Inhalation, oral intermittent flow",2019-03-20
+2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,ORINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,ORMUC,"Topical application, oromucosal",2019-03-20
+2.1.0,ORMUC,"Topical application, oromucosal",2019-03-20
+2.1.0,ORNEB,"Inhalation, nebulization; oral",2019-03-20
+2.1.0,OROPHARTA,"Topical application, oropharyngeal",2019-03-20
+2.1.0,OROPHARTA,"Topical application, oropharyngeal",2019-03-20
+2.1.0,ORRINSE,"Rinse, oral",2019-03-20
+2.1.0,ORRINSE,"Rinse, oral",2019-03-20
+2.1.0,OT,"Instillation, otic",2019-03-20
+2.1.0,OT,"Instillation, otic",2019-03-20
+2.1.0,PAINJ,"Injection, periarticular",2019-03-20
+2.1.0,PAINJ,"Injection, periarticular",2019-03-20
+2.1.0,PARENTINJ,"Injection, parenteral",2019-03-20
+2.1.0,PARENTINJ,"Injection, parenteral",2019-03-20
+2.1.0,PCA,"Infusion, intravenous catheter; pca pump",2019-03-20
+2.1.0,PDONTINJ,"Injection, periodontal",2019-03-20
+2.1.0,PDONTINJ,"Injection, periodontal",2019-03-20
+2.1.0,PDONTTA,"Topical application, periodontal",2019-03-20
+2.1.0,PDONTTA,"Topical application, periodontal",2019-03-20
+2.1.0,PDPINJ,"Injection, peritoneal dialysis port",2019-03-20
+2.1.0,PDPINJ,"Injection, peritoneal dialysis port",2019-03-20
+2.1.0,PDPINSTL,"Instillation, peritoneal dialysis port",2019-03-20
+2.1.0,PDPINSTL,"Instillation, peritoneal dialysis port",2019-03-20
+2.1.0,PDURINJ,"Injection, peridural",2019-03-20
+2.1.0,PDURINJ,"Injection, peridural",2019-03-20
+2.1.0,PERIANAL,"Topical application, perianal",2019-03-20
+2.1.0,PERIANAL,"Topical application, perianal",2019-03-20
+2.1.0,PERINEAL,"Topical application, perineal",2019-03-20
+2.1.0,PERINEAL,"Topical application, perineal",2019-03-20
+2.1.0,PNINJ,"Injection, perineural",2019-03-20
+2.1.0,PNINJ,"Injection, perineural",2019-03-20
+2.1.0,PNSINJ,"Injection, paranasal sinuses",2019-03-20
+2.1.0,PNSINJ,"Injection, paranasal sinuses",2019-03-20
+2.1.0,PNSINSTL,"Instillation, paranasal sinuses",2019-03-20
+2.1.0,PNSINSTL,"Instillation, paranasal sinuses",2019-03-20
+2.1.0,PO,"Swallow, oral",2019-03-20
+2.1.0,PO,"Swallow, oral",2019-03-20
+2.1.0,PR,"Insertion, rectal",2019-03-20
+2.1.0,PR,"Insertion, rectal",2019-03-20
+2.1.0,RBINJ,"Injection, retrobulbar",2019-03-20
+2.1.0,RBINJ,"Injection, retrobulbar",2019-03-20
+2.1.0,REBREATH,"Inhalation, oral rebreather mask",2019-03-20
+2.1.0,REBREATH,"Inhalation, oral rebreather mask",2019-03-20
+2.1.0,REBREATH,"Inhalation, oral rebreather mask",2019-03-20
+2.1.0,RECINSTL,"Instillation, rectal",2019-03-20
+2.1.0,RECINSTL,"Instillation, rectal",2019-03-20
+2.1.0,RECIRR,"Irrigation, rectal",2019-03-20
+2.1.0,RECIRR,"Irrigation, rectal",2019-03-20
+2.1.0,RECTAL,"Topical application, rectal",2019-03-20
+2.1.0,RECTAL,"Topical application, rectal",2019-03-20
+2.1.0,RECTINSTL,"Instillation, rectal tube",2019-03-20
+2.1.0,RESPINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,RESPINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,RESPINHL,"Inhalation, respiratory",2019-03-20
+2.1.0,RETENEMA,"Enema, rectal retention",2019-03-20
+2.1.0,RETENEMA,"Enema, rectal retention",2019-03-20
+2.1.0,SCALP,"Topical application, scalp",2019-03-20
+2.1.0,SCALP,"Topical application, scalp",2019-03-20
+2.1.0,SCINJ,"Injection, subconjunctival",2019-03-20
+2.1.0,SCINJ,"Injection, subconjunctival",2019-03-20
+2.1.0,SHAMPOO,Shampoo,2019-03-20
+2.1.0,SHAMPOO,Shampoo,2019-03-20
+2.1.0,SININSTIL,"Instillation, sinus; unspecified",2019-03-20
+2.1.0,SININSTIL,"Instillation, sinus; unspecified",2019-03-20
+2.1.0,SKIN,"Topical application, skin",2019-03-20
+2.1.0,SKIN,"Topical application, skin",2019-03-20
+2.1.0,SL,"Dissolve, sublingual",2019-03-20
+2.1.0,SL,"Dissolve, sublingual",2019-03-20
+2.1.0,SLESINJ,"Injection, sublesional",2019-03-20
+2.1.0,SLESINJ,"Injection, sublesional",2019-03-20
+2.1.0,SMUCMAB,"Mucosal absorption, submucosal",2019-03-20
+2.1.0,SMUCMAB,"Mucosal absorption, submucosal",2019-03-20
+2.1.0,SOAK,Immersion (soak),2019-03-20
+2.1.0,SOAK,Immersion (soak),2019-03-20
+2.1.0,SOFTISINJ,"Injection, soft tissue",2019-03-20
+2.1.0,SOFTISINJ,"Injection, soft tissue",2019-03-20
+2.1.0,SOFTISINSTIL,"Instillation, soft tissue",2019-03-20
+2.1.0,SOFTISINSTIL,"Instillation, soft tissue",2019-03-20
+2.1.0,SQ,"Injection, subcutaneous",2019-03-20
+2.1.0,SQ,"Injection, subcutaneous",2019-03-20
+2.1.0,SQIMPLNT,"Implantation, subcutaneous",2019-03-20
+2.1.0,SQIMPLNT,"Implantation, subcutaneous",2019-03-20
+2.1.0,SQINFUS,"Infusion, subcutaneous",2019-03-20
+2.1.0,SQINFUS,"Infusion, subcutaneous",2019-03-20
+2.1.0,SQSURGINS,"Insertion, subcutaneous; surgical",2019-03-20
+2.1.0,SQSURGINS,"Insertion, subcutaneous; surgical",2019-03-20
+2.1.0,SUBARACHINJ,"Injection, subarachnoid",2019-03-20
+2.1.0,SUBARACHINJ,"Injection, subarachnoid",2019-03-20
+2.1.0,SUBCONJTA,Subconjunctival,2019-03-20
+2.1.0,SUBCONJTA,Subconjunctival,2019-03-20
+2.1.0,SUBMUCINJ,"Injection, submucosal",2019-03-20
+2.1.0,SUBMUCINJ,"Injection, submucosal",2019-03-20
+2.1.0,SUCK,"Suck, oromucosal",2019-03-20
+2.1.0,SUCK,"Suck, oromucosal",2019-03-20
+2.1.0,SWAB,"Topical application, swab",2019-03-20
+2.1.0,SWAB,"Topical application, swab",2019-03-20
+2.1.0,SWISHSPIT,"Swish and spit out, oromucosal",2019-03-20
+2.1.0,SWISHSPIT,"Swish and spit out, oromucosal",2019-03-20
+2.1.0,SWISHSWAL,"Swish and swallow, oromucosal",2019-03-20
+2.1.0,SWISHSWAL,"Swish and swallow, oromucosal",2019-03-20
+2.1.0,TMUCTA,"Topical application, transmucosal",2019-03-20
+2.1.0,TMUCTA,"Topical application, transmucosal",2019-03-20
+2.1.0,TOPICAL,Topical,2019-03-20
+2.1.0,TOPICAL,Topical,2019-03-20
+2.1.0,TRACH,"Inhalation, tracheostomy",2019-03-20
+2.1.0,TRACH,"Inhalation, tracheostomy",2019-03-20
+2.1.0,TRACHINSTL,"Instillation, tracheostomy",2019-03-20
+2.1.0,TRACHINSTL,"Instillation, tracheostomy",2019-03-20
+2.1.0,TRNSDERM,Transdermal,2019-03-20
+2.1.0,TRNSDERM,Transdermal,2019-03-20
+2.1.0,TRNSDERMD,"Diffusion, transdermal",2019-03-20
+2.1.0,TRNSDERMD,"Diffusion, transdermal",2019-03-20
+2.1.0,TRNSLING,Translingual,2019-03-20
+2.1.0,TRNSLING,Translingual,2019-03-20
+2.1.0,TRPLACINJ,"Injection, transplacental",2019-03-20
+2.1.0,TRPLACINJ,"Injection, transplacental",2019-03-20
+2.1.0,TRTRACHINJ,"Injection, transtracheal",2019-03-20
+2.1.0,TRTRACHINJ,"Injection, transtracheal",2019-03-20
+2.1.0,TRTYMPINSTIL,"Instillation, transtympanic",2019-03-20
+2.1.0,TRTYMPINSTIL,"Instillation, transtympanic",2019-03-20
+2.1.0,TTYMPTABSORP,"Topical absorption, transtympanic",2019-03-20
+2.1.0,TTYMPTABSORP,"Topical absorption, transtympanic",2019-03-20
+2.1.0,URETHINJ,"Injection, urethral",2019-03-20
+2.1.0,URETHINJ,"Injection, urethral",2019-03-20
+2.1.0,URETHINS,"Insertion, urethral",2019-03-20
+2.1.0,URETHINS,"Insertion, urethral",2019-03-20
+2.1.0,URETHINSTL,"instillation, urethral",2019-03-20
+2.1.0,URETHINSTL,"instillation, urethral",2019-03-20
+2.1.0,URETHSUP,"Suppository, urethral",2019-03-20
+2.1.0,URETHSUP,"Suppository, urethral",2019-03-20
+2.1.0,URETINJ,"Injection, ureteral",2019-03-20
+2.1.0,URETINJ,"Injection, ureteral",2019-03-20
+2.1.0,VAGINS,"Topical application, vaginal",2019-03-20
+2.1.0,VAGINS,"Topical application, vaginal",2019-03-20
+2.1.0,VAGINSI,"Insertion, vaginal",2019-03-20
+2.1.0,VAGINSI,"Insertion, vaginal",2019-03-20
+2.1.0,VENT,"Inhalation, ventilator",2019-03-20
+2.1.0,VENT,"Inhalation, ventilator",2019-03-20
+2.1.0,VENTMASK,"Inhalation, ventimask",2019-03-20
+2.1.0,VENTMASK,"Inhalation, ventimask",2019-03-20
+2.1.0,_AmnioticFluidSacRoute,AmnioticFluidSacRoute,2019-03-20
+2.1.0,_BiliaryRoute,BiliaryRoute,2019-03-20
+2.1.0,_BodySurfaceRoute,BodySurfaceRoute,2019-03-20
+2.1.0,_BuccalMucosaRoute,BuccalMucosaRoute,2019-03-20
+2.1.0,_CecostomyRoute,CecostomyRoute,2019-03-20
+2.1.0,_CervicalRoute,CervicalRoute,2019-03-20
+2.1.0,_Chew,Chew,2019-03-20
+2.1.0,_DentalRoute,DentalRoute,2019-03-20
+2.1.0,_Diffusion,Diffusion,2019-03-20
+2.1.0,_Dissolve,Dissolve,2019-03-20
+2.1.0,_Douche,Douche,2019-03-20
+2.1.0,_ElectroOsmosisRoute,ElectroOsmosisRoute,2019-03-20
+2.1.0,_EndocervicalRoute,EndocervicalRoute,2019-03-20
+2.1.0,_Enema,Enema,2019-03-20
+2.1.0,_EnteralRoute,EnteralRoute,2019-03-20
+2.1.0,_EpiduralRoute,EpiduralRoute,2019-03-20
+2.1.0,_ExtraAmnioticRoute,ExtraAmnioticRoute,2019-03-20
+2.1.0,_ExtracorporealCirculationRoute,ExtracorporealCirculationRoute,2019-03-20
+2.1.0,_Flush,Flush,2019-03-20
+2.1.0,_GastricRoute,GastricRoute,2019-03-20
+2.1.0,_GenitourinaryRoute,GenitourinaryRoute,2019-03-20
+2.1.0,_GingivalRoute,GingivalRoute,2019-03-20
+2.1.0,_HairRoute,HairRoute,2019-03-20
+2.1.0,_Implantation,Implantation,2019-03-20
+2.1.0,_InfiltrationRoute,InfiltrationRoute,2019-03-20
+2.1.0,_Infusion,Infusion,2019-03-20
+2.1.0,_Inhalation,Inhalation,2019-03-20
+2.1.0,_Injection,Injection,2019-03-20
+2.1.0,_Insertion,Insertion,2019-03-20
+2.1.0,_Instillation,Instillation,2019-03-20
+2.1.0,_InterameningealRoute,InterameningealRoute,2019-03-20
+2.1.0,_InterstitialRoute,InterstitialRoute,2019-03-20
+2.1.0,_IntraabdominalRoute,IntraabdominalRoute,2019-03-20
+2.1.0,_IntraarterialRoute,IntraarterialRoute,2019-03-20
+2.1.0,_IntraarticularRoute,IntraarticularRoute,2019-03-20
+2.1.0,_IntrabronchialRoute,IntrabronchialRoute,2019-03-20
+2.1.0,_IntrabursalRoute,IntrabursalRoute,2019-03-20
+2.1.0,_IntracardiacRoute,IntracardiacRoute,2019-03-20
+2.1.0,_IntracartilaginousRoute,IntracartilaginousRoute,2019-03-20
+2.1.0,_IntracaudalRoute,IntracaudalRoute,2019-03-20
+2.1.0,_IntracavernosalRoute,IntracavernosalRoute,2019-03-20
+2.1.0,_IntracavitaryRoute,IntracavitaryRoute,2019-03-20
+2.1.0,_IntracerebralRoute,IntracerebralRoute,2019-03-20
+2.1.0,_IntracervicalRoute,IntracervicalRoute,2019-03-20
+2.1.0,_IntracisternalRoute,IntracisternalRoute,2019-03-20
 2.1.0,_IntracornealRoute,IntracornealRoute,2019-03-20
-2.1.0,_IntrapulmonaryRoute,IntrapulmonaryRoute,2019-03-20
-2.1.0,_LingualRoute,LingualRoute,2019-03-20
-2.1.0,_IntraocularRoute,IntraocularRoute,2019-03-20
-2.1.0,_Irrigation,Irrigation,2019-03-20
-2.1.0,_PeriduralRoute,PeriduralRoute,2019-03-20
-2.1.0,_IntraprostaticRoute,IntraprostaticRoute,2019-03-20
-2.1.0,_IntrapericardialRoute,IntrapericardialRoute,2019-03-20
-2.1.0,_IntraluminalRoute,IntraluminalRoute,2019-03-20
-2.1.0,_TranstrachealRoute,TranstrachealRoute,2019-03-20
-2.1.0,_SublingualRoute,SublingualRoute,2019-03-20
-2.1.0,_TracheostomyRoute,TracheostomyRoute,2019-03-20
-2.1.0,_SubcutaneousRoute,SubcutaneousRoute,2019-03-20
-2.1.0,_PeriarticularRoute,PeriarticularRoute,2019-03-20
-2.1.0,_SubconjunctivalRoute,SubconjunctivalRoute,2019-03-20
-2.1.0,_UrinaryBladderRoute,UrinaryBladderRoute,2019-03-20
-2.1.0,_IntrasynovialRoute,IntrasynovialRoute,2019-03-20
-2.1.0,_IntrapleuralRoute,IntrapleuralRoute,2019-03-20
-2.1.0,_IntramuscularRoute,IntramuscularRoute,2019-03-20
-2.1.0,_IntravitrealRoute,IntravitrealRoute,2019-03-20
-2.1.0,_IntratesticularRoute,IntratesticularRoute,2019-03-20
-2.1.0,_PerianalRoute,PerianalRoute,2019-03-20
-2.1.0,_SkinRoute,SkinRoute,2019-03-20
-2.1.0,_VitreousHumourRoute,VitreousHumourRoute,2019-03-20
-2.1.0,_IntrathoracicRoute,IntrathoracicRoute,2019-03-20
-2.1.0,_IntraspinalRoute,IntraspinalRoute,2019-03-20
-2.1.0,_TransmucosalRoute,TransmucosalRoute,2019-03-20
-2.1.0,_PerinealRoute,PerinealRoute,2019-03-20
-2.1.0,_SubarachnoidRoute,SubarachnoidRoute,2019-03-20
-2.1.0,_IntraventricularRoute,IntraventricularRoute,2019-03-20
-2.1.0,_IntramedullaryRoute,IntramedullaryRoute,2019-03-20
-2.1.0,_NasalRoute,NasalRoute,2019-03-20
-2.1.0,_RectalRoute,RectalRoute,2019-03-20
-2.1.0,_IntrauterineRoute,IntrauterineRoute,2019-03-20
-2.1.0,_IntraovarianRoute,IntraovarianRoute,2019-03-20
-2.1.0,_IntragastricRoute,IntragastricRoute,2019-03-20
-2.1.0,_MucosalAbsorptionRoute,MucosalAbsorptionRoute,2019-03-20
-2.1.0,_IntratrachealRoute,IntratrachealRoute,2019-03-20
-2.1.0,_NailRoute,NailRoute,2019-03-20
-2.1.0,_TopicalApplication,TopicalApplication,2019-03-20
-2.1.0,_IntralymphaticRoute,IntralymphaticRoute,2019-03-20
-2.1.0,_OticRoute,OticRoute,2019-03-20
-2.1.0,_SinusUnspecifiedRoute,SinusUnspecifiedRoute,2019-03-20
-2.1.0,_IntrathecalRoute,IntrathecalRoute,2019-03-20
-2.1.0,_UrinaryTractRoute,UrinaryTractRoute,2019-03-20
-2.1.0,_Swish,Swish,2019-03-20
-2.1.0,_IntrasternalRoute,IntrasternalRoute,2019-03-20
-2.1.0,_UrethralRoute,UrethralRoute,2019-03-20
-2.1.0,_TransplacentalRoute,TransplacentalRoute,2019-03-20
-2.1.0,_RespiratoryTractRoute,RespiratoryTractRoute,2019-03-20
-2.1.0,_IntratendinousRoute,IntratendinousRoute,2019-03-20
-2.1.0,_RetrobulbarRoute,RetrobulbarRoute,2019-03-20
-2.1.0,_LavageRoute,LavageRoute,2019-03-20
-2.1.0,_SubmucosalRoute,SubmucosalRoute,2019-03-20
-2.1.0,_IntratubularRoute,IntratubularRoute,2019-03-20
-2.1.0,_LacrimalPunctaRoute,LacrimalPunctaRoute,2019-03-20
-2.1.0,_JejunumRoute,JejunumRoute,2019-03-20
-2.1.0,_IntraosseousRoute,IntraosseousRoute,2019-03-20
-2.1.0,_SuppositoryRoute,SuppositoryRoute,2019-03-20
-2.1.0,_IntrasinalRoute,IntrasinalRoute,2019-03-20
-2.1.0,_OropharyngealRoute,OropharyngealRoute,2019-03-20
-2.1.0,_Nebulization,Nebulization,2019-03-20
-2.1.0,_PulmonaryRoute,PulmonaryRoute,2019-03-20
-2.1.0,_ScalpRoute,ScalpRoute,2019-03-20
-2.1.0,_SublesionalRoute,SublesionalRoute,2019-03-20
-2.1.0,_IntratumorRoute,IntratumorRoute,2019-03-20
-2.1.0,_IntravascularRoute,IntravascularRoute,2019-03-20
-2.1.0,_TopicalAbsorptionRoute,TopicalAbsorptionRoute,2019-03-20
-2.1.0,_RouteBySite,RouteBySite,2019-03-20
-2.1.0,_IontophoresisRoute,IontophoresisRoute,2019-03-20
+2.1.0,_IntracoronalRoute,IntracoronalRoute,2019-03-20
+2.1.0,_IntracoronaryRoute,IntracoronaryRoute,2019-03-20
+2.1.0,_IntracorpusCavernosumRoute,IntracorpusCavernosumRoute,2019-03-20
+2.1.0,_IntradermalRoute,IntradermalRoute,2019-03-20
+2.1.0,_IntradiscalRoute,IntradiscalRoute,2019-03-20
+2.1.0,_IntraductalRoute,IntraductalRoute,2019-03-20
+2.1.0,_IntraduodenalRoute,IntraduodenalRoute,2019-03-20
+2.1.0,_IntraduralRoute,IntraduralRoute,2019-03-20
 2.1.0,_IntraepidermalRoute,IntraepidermalRoute,2019-03-20
-2.1.0,_OromucosalRoute,OromucosalRoute,2019-03-20
+2.1.0,_IntraepithelialRoute,IntraepithelialRoute,2019-03-20
+2.1.0,_IntraesophagealRoute,IntraesophagealRoute,2019-03-20
+2.1.0,_IntragastricRoute,IntragastricRoute,2019-03-20
+2.1.0,_IntrailealRoute,IntrailealRoute,2019-03-20
+2.1.0,_IntralesionalRoute,IntralesionalRoute,2019-03-20
+2.1.0,_IntraluminalRoute,IntraluminalRoute,2019-03-20
+2.1.0,_IntralymphaticRoute,IntralymphaticRoute,2019-03-20
+2.1.0,_IntramedullaryRoute,IntramedullaryRoute,2019-03-20
+2.1.0,_IntramuscularRoute,IntramuscularRoute,2019-03-20
+2.1.0,_IntraocularRoute,IntraocularRoute,2019-03-20
+2.1.0,_IntraosseousRoute,IntraosseousRoute,2019-03-20
+2.1.0,_IntraovarianRoute,IntraovarianRoute,2019-03-20
+2.1.0,_IntrapericardialRoute,IntrapericardialRoute,2019-03-20
+2.1.0,_IntraperitonealRoute,IntraperitonealRoute,2019-03-20
+2.1.0,_IntrapleuralRoute,IntrapleuralRoute,2019-03-20
+2.1.0,_IntraprostaticRoute,IntraprostaticRoute,2019-03-20
+2.1.0,_IntrapulmonaryRoute,IntrapulmonaryRoute,2019-03-20
+2.1.0,_IntrasinalRoute,IntrasinalRoute,2019-03-20
+2.1.0,_IntraspinalRoute,IntraspinalRoute,2019-03-20
+2.1.0,_IntrasternalRoute,IntrasternalRoute,2019-03-20
+2.1.0,_IntrasynovialRoute,IntrasynovialRoute,2019-03-20
+2.1.0,_IntratendinousRoute,IntratendinousRoute,2019-03-20
+2.1.0,_IntratesticularRoute,IntratesticularRoute,2019-03-20
+2.1.0,_IntrathecalRoute,IntrathecalRoute,2019-03-20
+2.1.0,_IntrathoracicRoute,IntrathoracicRoute,2019-03-20
+2.1.0,_IntratrachealRoute,IntratrachealRoute,2019-03-20
+2.1.0,_IntratubularRoute,IntratubularRoute,2019-03-20
+2.1.0,_IntratumorRoute,IntratumorRoute,2019-03-20
+2.1.0,_IntratympanicRoute,IntratympanicRoute,2019-03-20
+2.1.0,_IntrauterineRoute,IntrauterineRoute,2019-03-20
+2.1.0,_IntravascularRoute,IntravascularRoute,2019-03-20
+2.1.0,_IntravenousRoute,IntravenousRoute,2019-03-20
+2.1.0,_IntraventricularRoute,IntraventricularRoute,2019-03-20
+2.1.0,_IntravesicleRoute,IntravesicleRoute,2019-03-20
+2.1.0,_IntravitrealRoute,IntravitrealRoute,2019-03-20
+2.1.0,_IontophoresisRoute,IontophoresisRoute,2019-03-20
+2.1.0,_Irrigation,Irrigation,2019-03-20
+2.1.0,_JejunumRoute,JejunumRoute,2019-03-20
+2.1.0,_LacrimalPunctaRoute,LacrimalPunctaRoute,2019-03-20
+2.1.0,_LaryngealRoute,LaryngealRoute,2019-03-20
+2.1.0,_LavageRoute,LavageRoute,2019-03-20
+2.1.0,_LingualRoute,LingualRoute,2019-03-20
+2.1.0,_MucosalAbsorptionRoute,MucosalAbsorptionRoute,2019-03-20
+2.1.0,_MucousMembraneRoute,MucousMembraneRoute,2019-03-20
+2.1.0,_NailRoute,NailRoute,2019-03-20
+2.1.0,_NasalRoute,NasalRoute,2019-03-20
+2.1.0,_Nebulization,Nebulization,2019-03-20
 2.1.0,_OphthalmicRoute,OphthalmicRoute,2019-03-20
 2.1.0,_OralRoute,OralRoute,2019-03-20
-2.1.0,_IntravenousRoute,IntravenousRoute,2019-03-20
-2.1.0,_VaginalRoute,VaginalRoute,2019-03-20
-2.1.0,_RouteByMethod,RouteByMethod,2019-03-20
-2.1.0,_IntraepithelialRoute,IntraepithelialRoute,2019-03-20
-2.1.0,_IntravesicleRoute,IntravesicleRoute,2019-03-20
-2.1.0,_IntratympanicRoute,IntratympanicRoute,2019-03-20
-2.1.0,_UreteralRoute,UreteralRoute,2019-03-20
-2.1.0,_Rinse,Rinse,2019-03-20
+2.1.0,_OromucosalRoute,OromucosalRoute,2019-03-20
+2.1.0,_OropharyngealRoute,OropharyngealRoute,2019-03-20
+2.1.0,_OticRoute,OticRoute,2019-03-20
 2.1.0,_ParanasalSinusesRoute,ParanasalSinusesRoute,2019-03-20
-2.1.0,_SoftTissueRoute,SoftTissueRoute,2019-03-20
-2.1.0,_IntralesionalRoute,IntralesionalRoute,2019-03-20
-2.1.0,_PerineuralRoute,PerineuralRoute,2019-03-20
 2.1.0,_ParenteralRoute,ParenteralRoute,2019-03-20
-2.1.0,_LaryngealRoute,LaryngealRoute,2019-03-20
+2.1.0,_PerianalRoute,PerianalRoute,2019-03-20
+2.1.0,_PeriarticularRoute,PeriarticularRoute,2019-03-20
+2.1.0,_PeriduralRoute,PeriduralRoute,2019-03-20
+2.1.0,_PerinealRoute,PerinealRoute,2019-03-20
+2.1.0,_PerineuralRoute,PerineuralRoute,2019-03-20
+2.1.0,_PeriodontalRoute,PeriodontalRoute,2019-03-20
+2.1.0,_PulmonaryRoute,PulmonaryRoute,2019-03-20
+2.1.0,_RectalRoute,RectalRoute,2019-03-20
+2.1.0,_RespiratoryTractRoute,RespiratoryTractRoute,2019-03-20
+2.1.0,_RetrobulbarRoute,RetrobulbarRoute,2019-03-20
+2.1.0,_Rinse,Rinse,2019-03-20
+2.1.0,_RouteByMethod,RouteByMethod,2019-03-20
+2.1.0,_RouteBySite,RouteBySite,2019-03-20
+2.1.0,_ScalpRoute,ScalpRoute,2019-03-20
+2.1.0,_SinusUnspecifiedRoute,SinusUnspecifiedRoute,2019-03-20
+2.1.0,_SkinRoute,SkinRoute,2019-03-20
+2.1.0,_SoftTissueRoute,SoftTissueRoute,2019-03-20
+2.1.0,_SubarachnoidRoute,SubarachnoidRoute,2019-03-20
+2.1.0,_SubconjunctivalRoute,SubconjunctivalRoute,2019-03-20
+2.1.0,_SubcutaneousRoute,SubcutaneousRoute,2019-03-20
+2.1.0,_SublesionalRoute,SublesionalRoute,2019-03-20
+2.1.0,_SublingualRoute,SublingualRoute,2019-03-20
+2.1.0,_SubmucosalRoute,SubmucosalRoute,2019-03-20
+2.1.0,_SuppositoryRoute,SuppositoryRoute,2019-03-20
+2.1.0,_Swish,Swish,2019-03-20
+2.1.0,_TopicalAbsorptionRoute,TopicalAbsorptionRoute,2019-03-20
+2.1.0,_TopicalApplication,TopicalApplication,2019-03-20
+2.1.0,_TracheostomyRoute,TracheostomyRoute,2019-03-20
+2.1.0,_TransmucosalRoute,TransmucosalRoute,2019-03-20
+2.1.0,_TransplacentalRoute,TransplacentalRoute,2019-03-20
+2.1.0,_TranstrachealRoute,TranstrachealRoute,2019-03-20
+2.1.0,_TranstympanicRoute,TranstympanicRoute,2019-03-20
+2.1.0,_UreteralRoute,UreteralRoute,2019-03-20
+2.1.0,_UrethralRoute,UrethralRoute,2019-03-20
+2.1.0,_UrinaryBladderRoute,UrinaryBladderRoute,2019-03-20
+2.1.0,_UrinaryTractRoute,UrinaryTractRoute,2019-03-20
+2.1.0,_VaginalRoute,VaginalRoute,2019-03-20
+2.1.0,_VitreousHumourRoute,VitreousHumourRoute,2019-03-20
