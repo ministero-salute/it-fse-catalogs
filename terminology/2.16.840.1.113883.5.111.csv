@@ -1,469 +1,469 @@
 version,code,description,release_date
-2.2.0,COCBEN,continuity of coverage beneficiary,2019-12-15
-2.2.0,FI,Fiber,2019-12-15
-2.2.0,_PractitionerCertifiedEntityType,PractitionerCertifiedEntityType,2019-12-15
-2.2.0,_ProductSafetyReportPartyRoleType,ProductSafetyReportPartyRoleType,2019-12-15
-2.2.0,PGGRMTH,paternal great-grandmother,2019-12-15
-2.2.0,EPIL,Epilepsy unit,2019-12-15
-2.2.0,DAU,natural daughter,2019-12-15
-2.2.0,POD,Podiatry clinic,2019-12-15
-2.2.0,GACH,Hospitals; General Acute Care Hospital,2019-12-15
-2.2.0,PUNCLE,paternal uncle,2019-12-15
-2.2.0,NMTH,natural mother,2019-12-15
-2.2.0,DOMPART,domestic partner,2019-12-15
-2.2.0,PRN,parent,2019-12-15
-2.2.0,PGRMTH,paternal grandmother,2019-12-15
-2.2.0,TWINBRO,twin brother,2019-12-15
-2.2.0,TWINBRO,twin brother,2019-12-15
-2.2.0,PGGRPRN,paternal great-grandparent,2019-12-15
-2.2.0,_ProgramEligiblePartyRoleType,ProgramEligiblePartyRoleType,2019-12-15
-2.2.0,_CertifiedEntityType,CertifiedEntityType,2019-12-15
-2.2.0,CONSENTER,consenter,2019-12-15
-2.2.0,OPTC,optometry clinic,2019-12-15
-2.2.0,WL,Wool,2019-12-15
-2.2.0,PROCTO,Proctology clinic,2019-12-15
-2.2.0,STPSIS,stepsister,2019-12-15
-2.2.0,GRANTOR,grantor,2019-12-15
-2.2.0,MBL,medical laboratory,2019-12-15
-2.2.0,STPBRO,stepbrother,2019-12-15
-2.2.0,TWINSIS,twin sister,2019-12-15
-2.2.0,MU,Multiplier,2019-12-15
-2.2.0,UNCLE,uncle,2019-12-15
-2.2.0,WIFE,wife,2019-12-15
-2.2.0,FTWINSIS,fraternal twin sister,2019-12-15
-2.2.0,GIDX,Gastroenterology diagnostics or therapeutics lab,2019-12-15
-2.2.0,ORTHO,Orthopedics clinic,2019-12-15
-2.2.0,CRS,Colon and rectal surgery clinic,2019-12-15
-2.2.0,HEM,Hematology clinic,2019-12-15
-2.2.0,DELEGATOR,delegator,2019-12-15
-2.2.0,DECLASSIFIER,declassifier,2019-12-15
-2.2.0,PCOUSN,paternal cousin,2019-12-15
-2.2.0,PT,Patient,2019-12-15
-2.2.0,MGGRMTH,maternal great-grandmother,2019-12-15
-2.2.0,BIOTH,Biotherapeutic non-person living subject,2019-12-15
-2.2.0,ADOPTM,adoptive mother,2019-12-15
-2.2.0,ADOPTM,adoptive mother,2019-12-15
-2.2.0,PAINCL,Pain clinic,2019-12-15
-2.2.0,ITWINSIS,identical twin sister,2019-12-15
-2.2.0,SH,Show,2019-12-15
-2.2.0,RHPIH,physical impairment - hearing center,2019-12-15
-2.2.0,CHEST,Chest unit,2019-12-15
-2.2.0,DERM,Dermatology clinic,2019-12-15
-2.2.0,RHPI,physical impairment center,2019-12-15
-2.2.0,OUTPHARM,outpatient pharmacy,2019-12-15
-2.2.0,STPDAU,stepdaughter,2019-12-15
-2.2.0,TR,Transplant clinic,2019-12-15
-2.2.0,MGDSF,manufactured drug strength form,2019-12-15
-2.2.0,HSIB,half-sibling,2019-12-15
-2.2.0,RTF,Residential treatment facility,2019-12-15
-2.2.0,COAG,Coagulation clinic,2019-12-15
-2.2.0,FTWINBRO,fraternal twin brother,2019-12-15
-2.2.0,ADOPTF,adoptive father,2019-12-15
-2.2.0,SONADOPT,adopted son,2019-12-15
-2.2.0,TRAVEL,Travel and geographic medicine clinic,2019-12-15
-2.2.0,homeHealth,Home Health,2019-12-15
-2.2.0,FULLINS,Fully insured coverage sponsor,2019-12-15
-2.2.0,DR,Draft,2019-12-15
-2.2.0,NFTHF,natural father of fetus,2019-12-15
-2.2.0,INPHARM,inpatient pharmacy,2019-12-15
-2.2.0,STPPRN,step parent,2019-12-15
-2.2.0,Q,Quality Control,2019-12-15
-2.2.0,_AssignedNonPersonLivingSubjectRoleType,AssignedNonPersonLivingSubjectRoleType,2019-12-15
-2.2.0,RHU,Rehabilitation hospital unit,2019-12-15
-2.2.0,SUBSCR,subscriber,2019-12-15
-2.2.0,HUSCS,specimen collection site,2019-12-15
 2.2.0,ACC,accident site,2019-12-15
-2.2.0,DX,Diagnostics or therapeutics unit,2019-12-15
-2.2.0,FSTUD,full-time student,2019-12-15
-2.2.0,_DedicatedServiceDeliveryLocationRoleType,DedicatedServiceDeliveryLocationRoleType,2019-12-15
-2.2.0,DEP,,2019-12-15
-2.2.0,NBRO,natural brother,2019-12-15
-2.2.0,RHEUM,Rheumatology clinic,2019-12-15
-2.2.0,OUTPHARM,outpatient pharmacy,2019-12-15
-2.2.0,GRNDCHILD,grandchild,2019-12-15
-2.2.0,ADOPTF,adoptive father,2019-12-15
-2.2.0,TWIN,twin,2019-12-15
-2.2.0,subject,Self,2019-12-15
-2.2.0,ROOM,Roommate,2019-12-15
-2.2.0,PROG,program eligible,2019-12-15
-2.2.0,RETIREE,retiree,2019-12-15
-2.2.0,PEDHEM,Pediatric hematology clinic,2019-12-15
-2.2.0,HD,Hemodialysis unit,2019-12-15
-2.2.0,BR,Breeder,2019-12-15
-2.2.0,DEBR,Debridement,2019-12-15
-2.2.0,MCOUSN,maternal cousin,2019-12-15
-2.2.0,MGEN,Medical genetics clinic,2019-12-15
-2.2.0,PEDRHEUM,Pediatric rheumatology clinic,2019-12-15
-2.2.0,DAUADOPT,adopted daughter,2019-12-15
-2.2.0,_ContactRoleType,ContactRoleType,2019-12-15
-2.2.0,ADOPT,adopted child,2019-12-15
-2.2.0,GRMTH,grandmother,2019-12-15
-2.2.0,RHMAD,parents with adjustment difficulties center,2019-12-15
-2.2.0,REVIEWER,reviewer,2019-12-15
-2.2.0,CHLDINLAW,child-in-law,2019-12-15
-2.2.0,LYMPH,Lympedema clinic,2019-12-15
-2.2.0,_LocationIdentifiedEntityRoleCode,LocationIdentifiedEntityRoleCode,2019-12-15
-2.2.0,PL,Pleasure,2019-12-15
-2.2.0,VET,veteran,2019-12-15
-2.2.0,BF,Beef,2019-12-15
-2.2.0,MGRPRN,maternal grandparent,2019-12-15
-2.2.0,PEDICU,Pediatric intensive care unit,2019-12-15
-2.2.0,_HealthcareProviderRoleType,HealthcareProviderRoleType,2019-12-15
-2.2.0,GDSF,generic drug strength form,2019-12-15
-2.2.0,B,Blind,2019-12-15
-2.2.0,DAUFOST,foster daughter,2019-12-15
-2.2.0,DEPEN,dependent,2019-12-15
-2.2.0,laboratory,Laboratory,2019-12-15
-2.2.0,PGRMTH,paternal grandmother,2019-12-15
-2.2.0,INTPRTER,interpreter,2019-12-15
-2.2.0,NSIB,natural sibling,2019-12-15
-2.2.0,PEDCARD,Pediatric cardiology clinic,2019-12-15
-2.2.0,NBRO,natural brother,2019-12-15
-2.2.0,NMTHF,natural mother of fetus,2019-12-15
-2.2.0,FTWINSIS,fraternal twin sister,2019-12-15
-2.2.0,COCBEN,continuity of coverage beneficiary,2019-12-15
-2.2.0,_AssignedRoleType,AssignedRoleType,2019-12-15
-2.2.0,GI,Gastroenterology clinic,2019-12-15
-2.2.0,COCBEN,continuity of coverage beneficiary,2019-12-15
-2.2.0,MHSP,Military Hospital,2019-12-15
-2.2.0,PAUNT,paternal aunt,2019-12-15
-2.2.0,_ProductProcessingOrganizationRoleType,ProductProcessingOrganizationRoleType,2019-12-15
-2.2.0,O,Operator Proficiency,2019-12-15
-2.2.0,GRANTEE,grantee,2019-12-15
-2.2.0,_DependentCoveredPartyRoleType,DependentCoveredPartyRoleType,2019-12-15
-2.2.0,_AdministrativeContactRoleType,AdministrativeContactRoleType,2019-12-15
-2.2.0,PRNINLAW,parent in-law,2019-12-15
-2.2.0,_ServiceDeliveryLocationRoleType,ServiceDeliveryLocationRoleType,2019-12-15
-2.2.0,_EmployeeRoleType,EmployeeRoleType,2019-12-15
-2.2.0,PSTUD,part-time student,2019-12-15
-2.2.0,P,Patient,2019-12-15
-2.2.0,RH,Rehabilitation hospital,2019-12-15
-2.2.0,MGRMTH,maternal grandmother,2019-12-15
-2.2.0,SIS,sister,2019-12-15
-2.2.0,ENDO,Endocrinology clinic,2019-12-15
-2.2.0,SONFOST,foster son,2019-12-15
-2.2.0,BROINLAW,brother-in-law,2019-12-15
-2.2.0,BREAST,Breast clinic,2019-12-15
-2.2.0,VALIDATOR,validator,2019-12-15
-2.2.0,ECON,emergency contact,2019-12-15
-2.2.0,DAUFOST,foster daughter,2019-12-15
-2.2.0,_AdministrativeLocationRoleType,AdministrativeLocationRoleType,2019-12-15
-2.2.0,SCHOOL,school,2019-12-15
-2.2.0,PC,Primary care clinic,2019-12-15
-2.2.0,PEDID,Pediatric infectious disease clinic,2019-12-15
-2.2.0,BRO,brother,2019-12-15
-2.2.0,_PolicyOrProgramCoverageRoleType,PolicyOrProgramCoverageRoleType,2019-12-15
-2.2.0,SPS,spouse,2019-12-15
-2.2.0,GPARNT,grandparent,2019-12-15
-2.2.0,CHILD,child,2019-12-15
-2.2.0,CNRP,non-country member without residence permit,2019-12-15
-2.2.0,MIL,military,2019-12-15
-2.2.0,SIB,sibling,2019-12-15
-2.2.0,PGRFTH,paternal grandfather,2019-12-15
-2.2.0,SONC,son,2019-12-15
-2.2.0,communityLaboratory,Community Laboratory,2019-12-15
-2.2.0,INJWKR,injured worker,2019-12-15
-2.2.0,HLAB,hospital laboratory,2019-12-15
-2.2.0,CHR,Chronic Care Facility,2019-12-15
-2.2.0,OPH,Opthalmology clinic,2019-12-15
-2.2.0,NEPHEW,nephew,2019-12-15
-2.2.0,BMTU,Bone marrow transplant unit,2019-12-15
-2.2.0,PSY,Psychiatry clinic,2019-12-15
-2.2.0,ONCL,Medical oncology clinic,2019-12-15
-2.2.0,DAUC,daughter,2019-12-15
-2.2.0,RHII,intellectual impairment center,2019-12-15
-2.2.0,PGRFTH,paternal grandfather,2019-12-15
-2.2.0,CRPM,non-country member minor with residence permit,2019-12-15
-2.2.0,URO,Urology clinic,2019-12-15
-2.2.0,LOCHFID,local location identifier,2019-12-15
-2.2.0,PGRPRN,paternal grandparent,2019-12-15
-2.2.0,MGGRFTH,maternal great-grandfather,2019-12-15
-2.2.0,HU,Hospital unit,2019-12-15
-2.2.0,NMTH,natural mother,2019-12-15
-2.2.0,PSYCHF,Psychatric Care Facility,2019-12-15
-2.2.0,DIFFABL,differently abled,2019-12-15
-2.2.0,ADOPTP,adoptive parent,2019-12-15
-2.2.0,R,Replicate,2019-12-15
-2.2.0,PHU,Psychiatric hospital unit,2019-12-15
-2.2.0,RNEU,Neuroradiology unit,2019-12-15
-2.2.0,RHYAD,youths with adjustment difficulties center,2019-12-15
-2.2.0,_IncidentalServiceDeliveryLocationRoleType,IncidentalServiceDeliveryLocationRoleType,2019-12-15
-2.2.0,DRIVCLASSIFIER,derivative classifier,2019-12-15
-2.2.0,DAUADOPT,adopted daughter,2019-12-15
-2.2.0,VL,Veal,2019-12-15
-2.2.0,_CoverageRoleType,CoverageRoleType,2019-12-15
-2.2.0,CRP,non-country member with residence permit,2019-12-15
-2.2.0,GRPRN,grandparent,2019-12-15
-2.2.0,SEE,Seeing,2019-12-15
-2.2.0,DPOWATT,durable power of attorney,2019-12-15
-2.2.0,GGRPRN,great grandparent,2019-12-15
-2.2.0,NFTH,natural father,2019-12-15
-2.2.0,_DedicatedClinicalLocationRoleType,DedicatedClinicalLocationRoleType,2019-12-15
-2.2.0,MGGRMTH,maternal great-grandmother,2019-12-15
-2.2.0,ITWINBRO,identical twin brother,2019-12-15
-2.2.0,SNIFF,Sniffing,2019-12-15
-2.2.0,MTHINLAW,mother-in-law,2019-12-15
-2.2.0,FAMMEMB,family member,2019-12-15
-2.2.0,STPSON,stepson,2019-12-15
-2.2.0,TRB,Tribal Member,2019-12-15
-2.2.0,TPA,Third party administrator,2019-12-15
-2.2.0,_DedicatedNonClinicalLocationRoleType,DedicatedNonClinicalLocationRoleType,2019-12-15
-2.2.0,WORK,work site,2019-12-15
-2.2.0,MTHINLOAW,mother-in-law,2019-12-15
-2.2.0,INFD,Infectious disease clinic,2019-12-15
-2.2.0,PEDNICU,Pediatric neonatal intensive care unit,2019-12-15
-2.2.0,CANC,Child and adolescent neurology clinic,2019-12-15
-2.2.0,NFTH,natural father,2019-12-15
-2.2.0,_DeviceOperatorType,DeviceOperatorType,2019-12-15
-2.2.0,INLAW,inlaw,2019-12-15
-2.2.0,PROFF,Provider's Office,2019-12-15
-2.2.0,OB,Obstetrics clinic,2019-12-15
-2.2.0,SIBINLAW,sibling in-law,2019-12-15
-2.2.0,CO,Companion,2019-12-15
-2.2.0,HSIS,half-sister,2019-12-15
-2.2.0,CRIMEVIC,crime victim,2019-12-15
-2.2.0,FTWIN,fraternal twin,2019-12-15
-2.2.0,CVDX,Cardiovascular diagnostics or therapeutics unit,2019-12-15
-2.2.0,CCO,Clinical Companion,2019-12-15
-2.2.0,RC,Racing,2019-12-15
-2.2.0,F,Filler Proficiency,2019-12-15
-2.2.0,FTHINLAW,father-in-law,2019-12-15
-2.2.0,_NDCRelatedDrugEntityType,NDCRelatedDrugEntityType,2019-12-15
-2.2.0,PEDGI,Pediatric gastroenterology clinic,2019-12-15
-2.2.0,ECHO,Echocardiography lab,2019-12-15
-2.2.0,GDS,generic drug strength,2019-12-15
-2.2.0,GUARD,guardian,2019-12-15
-2.2.0,ITWINBRO,identical twin brother,2019-12-15
-2.2.0,_ClaimantCoveredPartyRoleType,ClaimantCoveredPartyRoleType,2019-12-15
-2.2.0,STPMTH,stepmother,2019-12-15
-2.2.0,SNF,Skilled nursing facility,2019-12-15
-2.2.0,AMPUT,Amputee clinic,2019-12-15
-2.2.0,WARD,ward,2019-12-15
-2.2.0,PTRES,Patient's Residence,2019-12-15
-2.2.0,GRFTH,grandfather,2019-12-15
-2.2.0,COUSN,cousin,2019-12-15
-2.2.0,_LivingSubjectProductionClass,LivingSubjectProductionClass,2019-12-15
-2.2.0,DOWNGRDER,downgrader,2019-12-15
-2.2.0,PSYCHCF,,2019-12-15
-2.2.0,ALL,Allergy clinic,2019-12-15
-2.2.0,HTN,Hypertension clinic,2019-12-15
-2.2.0,PHARM,Pharmacy,2019-12-15
-2.2.0,EXT,extended family member,2019-12-15
-2.2.0,PRC,Pain rehabilitation center,2019-12-15
-2.2.0,ENDOS,Endoscopy lab,2019-12-15
-2.2.0,OF,Outpatient facility,2019-12-15
-2.2.0,_ClinicalOrganizationRoleType,ClinicalOrganizationRoleType,2019-12-15
-2.2.0,_AgentRoleType,AgentRoleType,2019-12-15
-2.2.0,C,Calibrator,2019-12-15
-2.2.0,PEDNEPH,Pediatric nephrology clinic,2019-12-15
-2.2.0,CSC,community service center,2019-12-15
-2.2.0,CARD,Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities,2019-12-15
-2.2.0,LY,Layer,2019-12-15
-2.2.0,PEDRHEUM,Pediatric rheumatology clinic,2019-12-15
-2.2.0,NOK,next of kin,2019-12-15
-2.2.0,_IndividualInsuredPartyRoleType,IndividualInsuredPartyRoleType,2019-12-15
-2.2.0,PEDGI,Pediatric gastroenterology clinic,2019-12-15
-2.2.0,FAMDEP,family dependent,2019-12-15
-2.2.0,AUNT,aunt,2019-12-15
-2.2.0,NPRN,natural parent,2019-12-15
-2.2.0,ASSIST,Assistive non-person living subject,2019-12-15
-2.2.0,NSIS,natural sister,2019-12-15
-2.2.0,ONESELF,self,2019-12-15
-2.2.0,DIFFABL,differently abled,2019-12-15
-2.2.0,STPMTH,stepmother,2019-12-15
-2.2.0,RADO,Radiation oncology unit,2019-12-15
-2.2.0,ORG,organizational contact,2019-12-15
-2.2.0,PEDC,Pediatrics clinic,2019-12-15
-2.2.0,GT,Guarantor,2019-12-15
-2.2.0,MAUNT,maternal aunt,2019-12-15
-2.2.0,ERL,enrollment,2019-12-15
-2.2.0,CONSWIT,consent witness,2019-12-15
-2.2.0,RETIREE,retiree,2019-12-15
-2.2.0,CATH,Cardiac catheterization lab,2019-12-15
-2.2.0,ITWIN,identical twin,2019-12-15
-2.2.0,STPBRO,stepbrother,2019-12-15
-2.2.0,_CoveredPartyRoleType,covered party role type,2019-12-15
-2.2.0,DAU,natural daughter,2019-12-15
-2.2.0,GUADLTM,guardian ad lidem,2019-12-15
-2.2.0,AMB,Ambulance,2019-12-15
-2.2.0,MUNCLE,maternal uncle,2019-12-15
-2.2.0,GDF,generic drug form,2019-12-15
-2.2.0,MGRFTH,maternal grandfather,2019-12-15
-2.2.0,MIL,military,2019-12-15
-2.2.0,_CitizenRoleType,CitizenRoleType,2019-12-15
-2.2.0,GGRFTH,great grandfather,2019-12-15
-2.2.0,BMTC,Bone marrow transplant clinic,2019-12-15
-2.2.0,CRIMEVIC,crime victim,2019-12-15
-2.2.0,NS,Neurosurgery unit,2019-12-15
-2.2.0,SPSE,spouse,2019-12-15
-2.2.0,CASM,single minor asylum seeker,2019-12-15
-2.2.0,SLEEP,Sleep disorders unit,2019-12-15
-2.2.0,STPCHLD,step child,2019-12-15
-2.2.0,GGRMTH,great grandmother,2019-12-15
-2.2.0,CLAIM,claimant,2019-12-15
-2.2.0,PROS,Prosthodontics clinic,2019-12-15
-2.2.0,SON,natural son,2019-12-15
-2.2.0,HRAD,radiology unit,2019-12-15
-2.2.0,SPON,sponsored dependent,2019-12-15
-2.2.0,pathologist,Pathologist,2019-12-15
-2.2.0,_SubscriberCoveredPartyRoleType,SubscriberCoveredPartyRoleType,2019-12-15
-2.2.0,UMO,Utilization management organization,2019-12-15
-2.2.0,_CoverageSponsorRoleType,CoverageSponsorRoleType,2019-12-15
-2.2.0,IEC,Impairment evaluation center,2019-12-15
-2.2.0,phlebotomist,Phlebotomist,2019-12-15
-2.2.0,STPFTH,stepfather,2019-12-15
-2.2.0,SELFINS,Self insured coverage sponsor,2019-12-15
-2.2.0,PGGRFTH,paternal great-grandfather,2019-12-15
-2.2.0,MT,Meat,2019-12-15
-2.2.0,SONFOST,foster son,2019-12-15
-2.2.0,L,Pool,2019-12-15
-2.2.0,NBOR,neighbor,2019-12-15
-2.2.0,_ResearchSubjectRoleBasis,ResearchSubjectRoleBasis,2019-12-15
-2.2.0,WARD,ward,2019-12-15
-2.2.0,GCHILD,grandchild,2019-12-15
-2.2.0,ANTIBIOT,Antibiotic,2019-12-15
-2.2.0,WO,Working,2019-12-15
-2.2.0,ETU,Emergency trauma unit,2019-12-15
-2.2.0,NCCS,Neurology critical care and stroke unit,2019-12-15
-2.2.0,HBRO,half-brother,2019-12-15
-2.2.0,COPART,co-participant,2019-12-15
-2.2.0,GRNDSON,grandson,2019-12-15
-2.2.0,PEDE,Pediatric endocrinology clinic,2019-12-15
-2.2.0,DAUINLAW,daughter in-law,2019-12-15
-2.2.0,NIENE,niece/nephew,2019-12-15
-2.2.0,INPHARM,inpatient pharmacy,2019-12-15
-2.2.0,NAMED,named insured,2019-12-15
-2.2.0,OMS,Oral and maxillofacial surgery clinic,2019-12-15
-2.2.0,ACTMIL,active duty military,2019-12-15
-2.2.0,SU,Surgery clinic,2019-12-15
-2.2.0,_PersonalRelationshipRoleType,PersonalRelationshipRoleType,2019-12-15
-2.2.0,OUTLAB,outpatient laboratory,2019-12-15
-2.2.0,STPFTH,stepfather,2019-12-15
-2.2.0,PEDU,Pediatric unit,2019-12-15
-2.2.0,NCHILD,natural child,2019-12-15
-2.2.0,GRNDDAU,granddaughter,2019-12-15
-2.2.0,CPCA,permit card applicant,2019-12-15
-2.2.0,SELF,self,2019-12-15
-2.2.0,MTHFOST,foster mother,2019-12-15
-2.2.0,HBRO,half-brother,2019-12-15
-2.2.0,ICU,Intensive care unit,2019-12-15
-2.2.0,_AffiliationRoleType,AffiliationRoleType,2019-12-15
-2.2.0,thirdParty,Third Party,2019-12-15
-2.2.0,CAPC,Child and adolescent psychiatry clinic,2019-12-15
-2.2.0,PEDE,Pediatric endocrinology clinic,2019-12-15
-2.2.0,V,Verifying,2019-12-15
-2.2.0,ENROLBKR,Enrollment Broker,2019-12-15
-2.2.0,RESPRSN,responsible party,2019-12-15
-2.2.0,SON,natural son,2019-12-15
-2.2.0,FTWINBRO,fraternal twin brother,2019-12-15
-2.2.0,STPSON,stepson,2019-12-15
-2.2.0,JURID,jurisdiction location identifier,2019-12-15
-2.2.0,MTHFOST,foster mother,2019-12-15
-2.2.0,CCU,Coronary care unit,2019-12-15
-2.2.0,_QualifiedRoleType,QualifiedRoleType,2019-12-15
-2.2.0,PGGRMTH,paternal great-grandmother,2019-12-15
-2.2.0,PEDNEPH,Pediatric nephrology clinic,2019-12-15
-2.2.0,BL,Broiler,2019-12-15
-2.2.0,NIENEPH,niece/nephew,2019-12-15
-2.2.0,ER,Emergency room,2019-12-15
-2.2.0,GESTM,gestational mother,2019-12-15
-2.2.0,NIECE,niece,2019-12-15
-2.2.0,HSIS,half-sister,2019-12-15
-2.2.0,STPSIS,stepsister,2019-12-15
-2.2.0,MGRMTH,maternal grandmother,2019-12-15
-2.2.0,AMENDER,amender,2019-12-15
-2.2.0,STPDAU,stepdaughter,2019-12-15
-2.2.0,SONINLAW,son in-law,2019-12-15
-2.2.0,FTHFOST,foster father,2019-12-15
-2.2.0,RETMIL,retired military,2019-12-15
-2.2.0,_CommissioningPartyRoleType,CommissioningPartyRoleType,2019-12-15
-2.2.0,PARNT,parent,2019-12-15
-2.2.0,DU,Dual,2019-12-15
-2.2.0,DC,therapeutic class,2019-12-15
-2.2.0,_IdentifiedEntityType,IdentifiedEntityType,2019-12-15
-2.2.0,ENT,Otorhinolaryngology clinic,2019-12-15
-2.2.0,SISINLAW,sister-in-law,2019-12-15
-2.2.0,EXCEST,executor of estate,2019-12-15
-2.2.0,RHPIMS,physical impairment - motor skills center,2019-12-15
-2.2.0,PEDHO,Pediatric oncology clinic,2019-12-15
-2.2.0,PGGRFTH,paternal great-grandfather,2019-12-15
-2.2.0,_LicensedRoleType,LicensedRoleType,2019-12-15
-2.2.0,PEDICU,Pediatric intensive care unit,2019-12-15
-2.2.0,DA,Dairy,2019-12-15
-2.2.0,MOBL,Mobile Unit,2019-12-15
-2.2.0,CLASSIFIER,classifier,2019-12-15
-2.2.0,STPSIB,step sibling,2019-12-15
-2.2.0,GYN,Gynecology clinic,2019-12-15
-2.2.0,PREV,Preventive medicine clinic,2019-12-15
-2.2.0,SPOWATT,special power of attorney,2019-12-15
-2.2.0,SPMED,Sports medicine clinic,2019-12-15
-2.2.0,CAS,asylum seeker,2019-12-15
-2.2.0,HOSP,Hospital,2019-12-15
-2.2.0,RADDX,Radiology diagnostics or therapeutics unit,2019-12-15
-2.2.0,HUSB,husband,2019-12-15
-2.2.0,PLS,Plastic surgery clinic,2019-12-15
-2.2.0,PRNFOST,foster parent,2019-12-15
-2.2.0,MGGRPRN,maternal great-grandparent,2019-12-15
-2.2.0,PEDHO,Pediatric oncology clinic,2019-12-15
-2.2.0,POWATT,power of attorney,2019-12-15
-2.2.0,G,Group,2019-12-15
-2.2.0,UPGRDER,upgrader,2019-12-15
-2.2.0,PSI,Psychology clinic,2019-12-15
-2.2.0,BILL,Billing Contact,2019-12-15
-2.2.0,INV,Infertility clinic,2019-12-15
-2.2.0,SISLINLAW,sister-in-law,2019-12-15
-2.2.0,MTH,mother,2019-12-15
-2.2.0,DADDR,Delivery Address,2019-12-15
-2.2.0,RHAT,addiction treatment center,2019-12-15
-2.2.0,NEPH,Nephrology clinic,2019-12-15
-2.2.0,_MedicationGeneralizationRoleType,MedicationGeneralizationRoleType,2019-12-15
-2.2.0,SIGOTHR,significant other,2019-12-15
-2.2.0,STUD,student,2019-12-15
-2.2.0,INJ,injured plaintiff,2019-12-15
-2.2.0,SONADOPT,adopted son,2019-12-15
-2.2.0,UPC,underage protection center,2019-12-15
-2.2.0,INDIV,individual,2019-12-15
-2.2.0,RHPIVS,physical impairment - visual skills center,2019-12-15
-2.2.0,FMRSPS,former spouse,2019-12-15
-2.2.0,TWINSIS,twin sister,2019-12-15
-2.2.0,MGGRFTH,maternal great-grandfather,2019-12-15
-2.2.0,PEDHEM,Pediatric hematology clinic,2019-12-15
-2.2.0,WND,Wound clinic,2019-12-15
-2.2.0,_MemberRoleType,MemberRoleType,2019-12-15
-2.2.0,NCCF,Nursing or custodial care facility,2019-12-15
-2.2.0,SURF,Substance use rehabilitation facility,2019-12-15
-2.2.0,PEDID,Pediatric infectious disease clinic,2019-12-15
-2.2.0,INLAB,inpatient laboratory,2019-12-15
-2.2.0,CN,national,2019-12-15
-2.2.0,PEDCARD,Pediatric cardiology clinic,2019-12-15
-2.2.0,E,Electronic QC,2019-12-15
-2.2.0,INJWKR,injured worker,2019-12-15
 2.2.0,ACHFID,accreditation location identifier,2019-12-15
-2.2.0,GD,generic drug,2019-12-15
-2.2.0,FMC,Family medicine clinic,2019-12-15
-2.2.0,_PayorRoleType,PayorRoleType,2019-12-15
-2.2.0,NAT,natural child,2019-12-15
-2.2.0,NSIS,natural sister,2019-12-15
-2.2.0,PH,Policy Holder,2019-12-15
+2.2.0,ACTMIL,active duty military,2019-12-15
+2.2.0,ADOPT,adopted child,2019-12-15
+2.2.0,ADOPTF,adoptive father,2019-12-15
+2.2.0,ADOPTF,adoptive father,2019-12-15
+2.2.0,ADOPTM,adoptive mother,2019-12-15
+2.2.0,ADOPTM,adoptive mother,2019-12-15
+2.2.0,ADOPTP,adoptive parent,2019-12-15
+2.2.0,ALL,Allergy clinic,2019-12-15
+2.2.0,AMB,Ambulance,2019-12-15
+2.2.0,AMENDER,amender,2019-12-15
+2.2.0,AMPUT,Amputee clinic,2019-12-15
+2.2.0,ANTIBIOT,Antibiotic,2019-12-15
+2.2.0,ASSIST,Assistive non-person living subject,2019-12-15
+2.2.0,AUNT,aunt,2019-12-15
+2.2.0,B,Blind,2019-12-15
+2.2.0,BF,Beef,2019-12-15
+2.2.0,BILL,Billing Contact,2019-12-15
+2.2.0,BIOTH,Biotherapeutic non-person living subject,2019-12-15
+2.2.0,BL,Broiler,2019-12-15
+2.2.0,BMTC,Bone marrow transplant clinic,2019-12-15
+2.2.0,BMTU,Bone marrow transplant unit,2019-12-15
+2.2.0,BR,Breeder,2019-12-15
+2.2.0,BREAST,Breast clinic,2019-12-15
+2.2.0,BRO,brother,2019-12-15
+2.2.0,BROINLAW,brother-in-law,2019-12-15
+2.2.0,C,Calibrator,2019-12-15
+2.2.0,CANC,Child and adolescent neurology clinic,2019-12-15
+2.2.0,CAPC,Child and adolescent psychiatry clinic,2019-12-15
+2.2.0,CARD,Ambulatory Health Care Facilities; Clinic/Center; Rehabilitation: Cardiac Facilities,2019-12-15
+2.2.0,CAS,asylum seeker,2019-12-15
+2.2.0,CASM,single minor asylum seeker,2019-12-15
+2.2.0,CATH,Cardiac catheterization lab,2019-12-15
+2.2.0,CCO,Clinical Companion,2019-12-15
+2.2.0,CCU,Coronary care unit,2019-12-15
+2.2.0,CHEST,Chest unit,2019-12-15
+2.2.0,CHILD,child,2019-12-15
+2.2.0,CHLDADOPT,adopted child,2019-12-15
+2.2.0,CHLDFOST,foster child,2019-12-15
+2.2.0,CHLDINLAW,child-in-law,2019-12-15
+2.2.0,CHR,Chronic Care Facility,2019-12-15
+2.2.0,CLAIM,claimant,2019-12-15
+2.2.0,CLASSIFIER,classifier,2019-12-15
+2.2.0,CN,national,2019-12-15
+2.2.0,CNRP,non-country member without residence permit,2019-12-15
+2.2.0,CNRPM,non-country member minor without residence permit,2019-12-15
+2.2.0,CO,Companion,2019-12-15
+2.2.0,COAG,Coagulation clinic,2019-12-15
+2.2.0,COCBEN,continuity of coverage beneficiary,2019-12-15
+2.2.0,COCBEN,continuity of coverage beneficiary,2019-12-15
+2.2.0,COCBEN,continuity of coverage beneficiary,2019-12-15
+2.2.0,COMM,Community Location,2019-12-15
+2.2.0,CONSENTER,consenter,2019-12-15
+2.2.0,CONSWIT,consent witness,2019-12-15
+2.2.0,COPART,co-participant,2019-12-15
+2.2.0,COUSN,cousin,2019-12-15
+2.2.0,CPCA,permit card applicant,2019-12-15
+2.2.0,CRIMEVIC,crime victim,2019-12-15
+2.2.0,CRIMEVIC,crime victim,2019-12-15
+2.2.0,CRP,non-country member with residence permit,2019-12-15
+2.2.0,CRPM,non-country member minor with residence permit,2019-12-15
+2.2.0,CRS,Colon and rectal surgery clinic,2019-12-15
+2.2.0,CSC,community service center,2019-12-15
+2.2.0,CVDX,Cardiovascular diagnostics or therapeutics unit,2019-12-15
+2.2.0,DA,Dairy,2019-12-15
+2.2.0,DADDR,Delivery Address,2019-12-15
+2.2.0,DAU,natural daughter,2019-12-15
+2.2.0,DAU,natural daughter,2019-12-15
+2.2.0,DAUADOPT,adopted daughter,2019-12-15
+2.2.0,DAUADOPT,adopted daughter,2019-12-15
+2.2.0,DAUC,daughter,2019-12-15
+2.2.0,DAUFOST,foster daughter,2019-12-15
+2.2.0,DAUFOST,foster daughter,2019-12-15
+2.2.0,DAUINLAW,daughter in-law,2019-12-15
+2.2.0,DC,therapeutic class,2019-12-15
+2.2.0,DEBR,Debridement,2019-12-15
+2.2.0,DECLASSIFIER,declassifier,2019-12-15
 2.2.0,DELEGATEE,delegatee,2019-12-15
-2.2.0,MGRFTH,maternal grandfather,2019-12-15
-2.2.0,STEP,step child,2019-12-15
+2.2.0,DELEGATOR,delegator,2019-12-15
+2.2.0,DEP,,2019-12-15
+2.2.0,DEPEN,dependent,2019-12-15
+2.2.0,DERM,Dermatology clinic,2019-12-15
+2.2.0,DIFFABL,differently abled,2019-12-15
+2.2.0,DIFFABL,differently abled,2019-12-15
+2.2.0,DOMPART,domestic partner,2019-12-15
+2.2.0,DOWNGRDER,downgrader,2019-12-15
+2.2.0,DPOWATT,durable power of attorney,2019-12-15
+2.2.0,DR,Draft,2019-12-15
+2.2.0,DRIVCLASSIFIER,derivative classifier,2019-12-15
+2.2.0,DU,Dual,2019-12-15
+2.2.0,DX,Diagnostics or therapeutics unit,2019-12-15
+2.2.0,E,Electronic QC,2019-12-15
+2.2.0,ECHO,Echocardiography lab,2019-12-15
+2.2.0,ECON,emergency contact,2019-12-15
+2.2.0,ENDO,Endocrinology clinic,2019-12-15
+2.2.0,ENDOS,Endoscopy lab,2019-12-15
+2.2.0,ENROLBKR,Enrollment Broker,2019-12-15
+2.2.0,ENT,Otorhinolaryngology clinic,2019-12-15
+2.2.0,EPIL,Epilepsy unit,2019-12-15
+2.2.0,ER,Emergency room,2019-12-15
+2.2.0,ERL,enrollment,2019-12-15
+2.2.0,ETU,Emergency trauma unit,2019-12-15
+2.2.0,EXCEST,executor of estate,2019-12-15
+2.2.0,EXT,extended family member,2019-12-15
+2.2.0,F,Filler Proficiency,2019-12-15
+2.2.0,FAMDEP,family dependent,2019-12-15
+2.2.0,FAMMEMB,family member,2019-12-15
+2.2.0,FI,Fiber,2019-12-15
+2.2.0,FM,Family Member,2019-12-15
+2.2.0,FMC,Family medicine clinic,2019-12-15
+2.2.0,FMRSPS,former spouse,2019-12-15
+2.2.0,FRND,unrelated friend,2019-12-15
+2.2.0,FSTUD,full-time student,2019-12-15
+2.2.0,FTH,father,2019-12-15
+2.2.0,FTHFOST,foster father,2019-12-15
+2.2.0,FTHFOST,foster father,2019-12-15
+2.2.0,FTHINLAW,father-in-law,2019-12-15
+2.2.0,FTWIN,fraternal twin,2019-12-15
+2.2.0,FTWINBRO,fraternal twin brother,2019-12-15
+2.2.0,FTWINBRO,fraternal twin brother,2019-12-15
+2.2.0,FTWINSIS,fraternal twin sister,2019-12-15
+2.2.0,FTWINSIS,fraternal twin sister,2019-12-15
+2.2.0,FULLINS,Fully insured coverage sponsor,2019-12-15
+2.2.0,G,Group,2019-12-15
+2.2.0,GACH,Hospitals; General Acute Care Hospital,2019-12-15
+2.2.0,GCHILD,grandchild,2019-12-15
+2.2.0,GD,generic drug,2019-12-15
+2.2.0,GDF,generic drug form,2019-12-15
+2.2.0,GDS,generic drug strength,2019-12-15
+2.2.0,GDSF,generic drug strength form,2019-12-15
+2.2.0,GESTM,gestational mother,2019-12-15
+2.2.0,GGRFTH,great grandfather,2019-12-15
+2.2.0,GGRMTH,great grandmother,2019-12-15
+2.2.0,GGRPRN,great grandparent,2019-12-15
+2.2.0,GI,Gastroenterology clinic,2019-12-15
+2.2.0,GIDX,Gastroenterology diagnostics or therapeutics lab,2019-12-15
+2.2.0,GIM,General internal medicine clinic,2019-12-15
+2.2.0,GPARNT,grandparent,2019-12-15
+2.2.0,GRANTEE,grantee,2019-12-15
+2.2.0,GRANTOR,grantor,2019-12-15
+2.2.0,GRFTH,grandfather,2019-12-15
+2.2.0,GRMTH,grandmother,2019-12-15
+2.2.0,GRNDCHILD,grandchild,2019-12-15
+2.2.0,GRNDDAU,granddaughter,2019-12-15
+2.2.0,GRNDSON,grandson,2019-12-15
+2.2.0,GRPRN,grandparent,2019-12-15
+2.2.0,GT,Guarantor,2019-12-15
+2.2.0,GUADLTM,guardian ad lidem,2019-12-15
+2.2.0,GUARD,guardian,2019-12-15
+2.2.0,GYN,Gynecology clinic,2019-12-15
 2.2.0,HAND,Hand clinic,2019-12-15
 2.2.0,HANDIC,handicapped dependent,2019-12-15
-2.2.0,ITWINSIS,identical twin sister,2019-12-15
-2.2.0,FM,Family Member,2019-12-15
-2.2.0,SCN,screening,2019-12-15
-2.2.0,COMM,Community Location,2019-12-15
-2.2.0,FTH,father,2019-12-15
-2.2.0,_SpecimenRoleType,SpecimenRoleType,2019-12-15
-2.2.0,NEUR,Neurology clinic,2019-12-15
-2.2.0,GIM,General internal medicine clinic,2019-12-15
-2.2.0,CHLDADOPT,adopted child,2019-12-15
-2.2.0,_OrganizationPartRoleType,OrganizationPartRoleType,2019-12-15
-2.2.0,PAYOR,Payor Contact,2019-12-15
+2.2.0,HBRO,half-brother,2019-12-15
+2.2.0,HBRO,half-brother,2019-12-15
+2.2.0,HD,Hemodialysis unit,2019-12-15
+2.2.0,HEM,Hematology clinic,2019-12-15
+2.2.0,HLAB,hospital laboratory,2019-12-15
+2.2.0,HOSP,Hospital,2019-12-15
 2.2.0,HPOWATT,healthcare power of attorney,2019-12-15
-2.2.0,CNRPM,non-country member minor without residence permit,2019-12-15
+2.2.0,HRAD,radiology unit,2019-12-15
+2.2.0,HSIB,half-sibling,2019-12-15
+2.2.0,HSIS,half-sister,2019-12-15
+2.2.0,HSIS,half-sister,2019-12-15
+2.2.0,HTN,Hypertension clinic,2019-12-15
+2.2.0,HU,Hospital unit,2019-12-15
+2.2.0,HUSB,husband,2019-12-15
+2.2.0,HUSCS,specimen collection site,2019-12-15
+2.2.0,ICU,Intensive care unit,2019-12-15
+2.2.0,IEC,Impairment evaluation center,2019-12-15
 2.2.0,INDIG,member of an indigenous people,2019-12-15
-2.2.0,FTHFOST,foster father,2019-12-15
-2.2.0,CHLDFOST,foster child,2019-12-15
-2.2.0,FRND,unrelated friend,2019-12-15
+2.2.0,INDIV,individual,2019-12-15
+2.2.0,INFD,Infectious disease clinic,2019-12-15
+2.2.0,INJ,injured plaintiff,2019-12-15
+2.2.0,INJWKR,injured worker,2019-12-15
+2.2.0,INJWKR,injured worker,2019-12-15
+2.2.0,INLAB,inpatient laboratory,2019-12-15
+2.2.0,INLAW,inlaw,2019-12-15
+2.2.0,INPHARM,inpatient pharmacy,2019-12-15
+2.2.0,INPHARM,inpatient pharmacy,2019-12-15
+2.2.0,INTPRTER,interpreter,2019-12-15
+2.2.0,INV,Infertility clinic,2019-12-15
+2.2.0,ITWIN,identical twin,2019-12-15
+2.2.0,ITWINBRO,identical twin brother,2019-12-15
+2.2.0,ITWINBRO,identical twin brother,2019-12-15
+2.2.0,ITWINSIS,identical twin sister,2019-12-15
+2.2.0,ITWINSIS,identical twin sister,2019-12-15
+2.2.0,JURID,jurisdiction location identifier,2019-12-15
+2.2.0,L,Pool,2019-12-15
+2.2.0,LOCHFID,local location identifier,2019-12-15
+2.2.0,LY,Layer,2019-12-15
+2.2.0,LYMPH,Lympedema clinic,2019-12-15
+2.2.0,MAUNT,maternal aunt,2019-12-15
+2.2.0,MBL,medical laboratory,2019-12-15
+2.2.0,MCOUSN,maternal cousin,2019-12-15
+2.2.0,MGDSF,manufactured drug strength form,2019-12-15
+2.2.0,MGEN,Medical genetics clinic,2019-12-15
+2.2.0,MGGRFTH,maternal great-grandfather,2019-12-15
+2.2.0,MGGRFTH,maternal great-grandfather,2019-12-15
+2.2.0,MGGRMTH,maternal great-grandmother,2019-12-15
+2.2.0,MGGRMTH,maternal great-grandmother,2019-12-15
+2.2.0,MGGRPRN,maternal great-grandparent,2019-12-15
+2.2.0,MGRFTH,maternal grandfather,2019-12-15
+2.2.0,MGRFTH,maternal grandfather,2019-12-15
+2.2.0,MGRMTH,maternal grandmother,2019-12-15
+2.2.0,MGRMTH,maternal grandmother,2019-12-15
+2.2.0,MGRPRN,maternal grandparent,2019-12-15
+2.2.0,MHSP,Military Hospital,2019-12-15
+2.2.0,MIL,military,2019-12-15
+2.2.0,MIL,military,2019-12-15
+2.2.0,MOBL,Mobile Unit,2019-12-15
+2.2.0,MT,Meat,2019-12-15
+2.2.0,MTH,mother,2019-12-15
+2.2.0,MTHFOST,foster mother,2019-12-15
+2.2.0,MTHFOST,foster mother,2019-12-15
+2.2.0,MTHINLAW,mother-in-law,2019-12-15
+2.2.0,MTHINLOAW,mother-in-law,2019-12-15
+2.2.0,MU,Multiplier,2019-12-15
+2.2.0,MUNCLE,maternal uncle,2019-12-15
+2.2.0,NAMED,named insured,2019-12-15
+2.2.0,NAT,natural child,2019-12-15
+2.2.0,NBOR,neighbor,2019-12-15
+2.2.0,NBRO,natural brother,2019-12-15
+2.2.0,NBRO,natural brother,2019-12-15
+2.2.0,NCCF,Nursing or custodial care facility,2019-12-15
+2.2.0,NCCS,Neurology critical care and stroke unit,2019-12-15
+2.2.0,NCHILD,natural child,2019-12-15
+2.2.0,NEPH,Nephrology clinic,2019-12-15
+2.2.0,NEPHEW,nephew,2019-12-15
+2.2.0,NEUR,Neurology clinic,2019-12-15
+2.2.0,NFTH,natural father,2019-12-15
+2.2.0,NFTH,natural father,2019-12-15
+2.2.0,NFTHF,natural father of fetus,2019-12-15
+2.2.0,NIECE,niece,2019-12-15
+2.2.0,NIENE,niece/nephew,2019-12-15
+2.2.0,NIENEPH,niece/nephew,2019-12-15
+2.2.0,NMTH,natural mother,2019-12-15
+2.2.0,NMTH,natural mother,2019-12-15
+2.2.0,NMTHF,natural mother of fetus,2019-12-15
+2.2.0,NOK,next of kin,2019-12-15
+2.2.0,NPRN,natural parent,2019-12-15
+2.2.0,NS,Neurosurgery unit,2019-12-15
+2.2.0,NSIB,natural sibling,2019-12-15
+2.2.0,NSIS,natural sister,2019-12-15
+2.2.0,NSIS,natural sister,2019-12-15
+2.2.0,O,Operator Proficiency,2019-12-15
+2.2.0,OB,Obstetrics clinic,2019-12-15
+2.2.0,OF,Outpatient facility,2019-12-15
+2.2.0,OMS,Oral and maxillofacial surgery clinic,2019-12-15
+2.2.0,ONCL,Medical oncology clinic,2019-12-15
+2.2.0,ONESELF,self,2019-12-15
+2.2.0,OPH,Opthalmology clinic,2019-12-15
+2.2.0,OPTC,optometry clinic,2019-12-15
+2.2.0,ORG,organizational contact,2019-12-15
+2.2.0,ORTHO,Orthopedics clinic,2019-12-15
+2.2.0,OUTLAB,outpatient laboratory,2019-12-15
+2.2.0,OUTPHARM,outpatient pharmacy,2019-12-15
+2.2.0,OUTPHARM,outpatient pharmacy,2019-12-15
+2.2.0,P,Patient,2019-12-15
+2.2.0,PAINCL,Pain clinic,2019-12-15
+2.2.0,PARNT,parent,2019-12-15
+2.2.0,PAUNT,paternal aunt,2019-12-15
+2.2.0,PAYOR,Payor Contact,2019-12-15
+2.2.0,PC,Primary care clinic,2019-12-15
+2.2.0,PCOUSN,paternal cousin,2019-12-15
+2.2.0,PEDC,Pediatrics clinic,2019-12-15
+2.2.0,PEDCARD,Pediatric cardiology clinic,2019-12-15
+2.2.0,PEDCARD,Pediatric cardiology clinic,2019-12-15
+2.2.0,PEDE,Pediatric endocrinology clinic,2019-12-15
+2.2.0,PEDE,Pediatric endocrinology clinic,2019-12-15
+2.2.0,PEDGI,Pediatric gastroenterology clinic,2019-12-15
+2.2.0,PEDGI,Pediatric gastroenterology clinic,2019-12-15
+2.2.0,PEDHEM,Pediatric hematology clinic,2019-12-15
+2.2.0,PEDHEM,Pediatric hematology clinic,2019-12-15
+2.2.0,PEDHO,Pediatric oncology clinic,2019-12-15
+2.2.0,PEDHO,Pediatric oncology clinic,2019-12-15
+2.2.0,PEDICU,Pediatric intensive care unit,2019-12-15
+2.2.0,PEDICU,Pediatric intensive care unit,2019-12-15
+2.2.0,PEDID,Pediatric infectious disease clinic,2019-12-15
+2.2.0,PEDID,Pediatric infectious disease clinic,2019-12-15
+2.2.0,PEDNEPH,Pediatric nephrology clinic,2019-12-15
+2.2.0,PEDNEPH,Pediatric nephrology clinic,2019-12-15
+2.2.0,PEDNICU,Pediatric neonatal intensive care unit,2019-12-15
+2.2.0,PEDRHEUM,Pediatric rheumatology clinic,2019-12-15
+2.2.0,PEDRHEUM,Pediatric rheumatology clinic,2019-12-15
+2.2.0,PEDU,Pediatric unit,2019-12-15
+2.2.0,PGGRFTH,paternal great-grandfather,2019-12-15
+2.2.0,PGGRFTH,paternal great-grandfather,2019-12-15
+2.2.0,PGGRMTH,paternal great-grandmother,2019-12-15
+2.2.0,PGGRMTH,paternal great-grandmother,2019-12-15
+2.2.0,PGGRPRN,paternal great-grandparent,2019-12-15
+2.2.0,PGRFTH,paternal grandfather,2019-12-15
+2.2.0,PGRFTH,paternal grandfather,2019-12-15
+2.2.0,PGRMTH,paternal grandmother,2019-12-15
+2.2.0,PGRMTH,paternal grandmother,2019-12-15
+2.2.0,PGRPRN,paternal grandparent,2019-12-15
+2.2.0,PH,Policy Holder,2019-12-15
+2.2.0,PHARM,Pharmacy,2019-12-15
+2.2.0,PHU,Psychiatric hospital unit,2019-12-15
+2.2.0,PL,Pleasure,2019-12-15
+2.2.0,PLS,Plastic surgery clinic,2019-12-15
+2.2.0,POD,Podiatry clinic,2019-12-15
+2.2.0,POWATT,power of attorney,2019-12-15
+2.2.0,PRC,Pain rehabilitation center,2019-12-15
+2.2.0,PREV,Preventive medicine clinic,2019-12-15
+2.2.0,PRN,parent,2019-12-15
+2.2.0,PRNFOST,foster parent,2019-12-15
+2.2.0,PRNINLAW,parent in-law,2019-12-15
+2.2.0,PROCTO,Proctology clinic,2019-12-15
+2.2.0,PROFF,Provider's Office,2019-12-15
+2.2.0,PROG,program eligible,2019-12-15
+2.2.0,PROS,Prosthodontics clinic,2019-12-15
+2.2.0,PSI,Psychology clinic,2019-12-15
+2.2.0,PSTUD,part-time student,2019-12-15
+2.2.0,PSY,Psychiatry clinic,2019-12-15
+2.2.0,PSYCHCF,,2019-12-15
+2.2.0,PSYCHF,Psychatric Care Facility,2019-12-15
+2.2.0,PT,Patient,2019-12-15
+2.2.0,PTRES,Patient's Residence,2019-12-15
+2.2.0,PUNCLE,paternal uncle,2019-12-15
+2.2.0,Q,Quality Control,2019-12-15
+2.2.0,R,Replicate,2019-12-15
+2.2.0,RADDX,Radiology diagnostics or therapeutics unit,2019-12-15
+2.2.0,RADO,Radiation oncology unit,2019-12-15
+2.2.0,RC,Racing,2019-12-15
+2.2.0,RESPRSN,responsible party,2019-12-15
+2.2.0,RETIREE,retiree,2019-12-15
+2.2.0,RETIREE,retiree,2019-12-15
+2.2.0,RETMIL,retired military,2019-12-15
+2.2.0,REVIEWER,reviewer,2019-12-15
+2.2.0,RH,Rehabilitation hospital,2019-12-15
+2.2.0,RHAT,addiction treatment center,2019-12-15
+2.2.0,RHEUM,Rheumatology clinic,2019-12-15
+2.2.0,RHII,intellectual impairment center,2019-12-15
+2.2.0,RHMAD,parents with adjustment difficulties center,2019-12-15
+2.2.0,RHPI,physical impairment center,2019-12-15
+2.2.0,RHPIH,physical impairment - hearing center,2019-12-15
+2.2.0,RHPIMS,physical impairment - motor skills center,2019-12-15
+2.2.0,RHPIVS,physical impairment - visual skills center,2019-12-15
+2.2.0,RHU,Rehabilitation hospital unit,2019-12-15
+2.2.0,RHYAD,youths with adjustment difficulties center,2019-12-15
+2.2.0,RNEU,Neuroradiology unit,2019-12-15
+2.2.0,ROOM,Roommate,2019-12-15
+2.2.0,RTF,Residential treatment facility,2019-12-15
+2.2.0,SCHOOL,school,2019-12-15
+2.2.0,SCN,screening,2019-12-15
+2.2.0,SEE,Seeing,2019-12-15
+2.2.0,SELF,self,2019-12-15
+2.2.0,SELFINS,Self insured coverage sponsor,2019-12-15
+2.2.0,SH,Show,2019-12-15
+2.2.0,SIB,sibling,2019-12-15
+2.2.0,SIBINLAW,sibling in-law,2019-12-15
+2.2.0,SIGOTHR,significant other,2019-12-15
+2.2.0,SIS,sister,2019-12-15
+2.2.0,SISINLAW,sister-in-law,2019-12-15
+2.2.0,SISLINLAW,sister-in-law,2019-12-15
+2.2.0,SLEEP,Sleep disorders unit,2019-12-15
+2.2.0,SNF,Skilled nursing facility,2019-12-15
+2.2.0,SNIFF,Sniffing,2019-12-15
+2.2.0,SON,natural son,2019-12-15
+2.2.0,SON,natural son,2019-12-15
+2.2.0,SONADOPT,adopted son,2019-12-15
+2.2.0,SONADOPT,adopted son,2019-12-15
+2.2.0,SONC,son,2019-12-15
+2.2.0,SONFOST,foster son,2019-12-15
+2.2.0,SONFOST,foster son,2019-12-15
+2.2.0,SONINLAW,son in-law,2019-12-15
+2.2.0,SPMED,Sports medicine clinic,2019-12-15
+2.2.0,SPON,sponsored dependent,2019-12-15
+2.2.0,SPOWATT,special power of attorney,2019-12-15
+2.2.0,SPS,spouse,2019-12-15
+2.2.0,SPSE,spouse,2019-12-15
+2.2.0,STEP,step child,2019-12-15
+2.2.0,STPBRO,stepbrother,2019-12-15
+2.2.0,STPBRO,stepbrother,2019-12-15
+2.2.0,STPCHLD,step child,2019-12-15
+2.2.0,STPDAU,stepdaughter,2019-12-15
+2.2.0,STPDAU,stepdaughter,2019-12-15
+2.2.0,STPFTH,stepfather,2019-12-15
+2.2.0,STPFTH,stepfather,2019-12-15
+2.2.0,STPMTH,stepmother,2019-12-15
+2.2.0,STPMTH,stepmother,2019-12-15
+2.2.0,STPPRN,step parent,2019-12-15
+2.2.0,STPSIB,step sibling,2019-12-15
+2.2.0,STPSIS,stepsister,2019-12-15
+2.2.0,STPSIS,stepsister,2019-12-15
+2.2.0,STPSON,stepson,2019-12-15
+2.2.0,STPSON,stepson,2019-12-15
+2.2.0,STUD,student,2019-12-15
+2.2.0,SU,Surgery clinic,2019-12-15
+2.2.0,SUBSCR,subscriber,2019-12-15
+2.2.0,SURF,Substance use rehabilitation facility,2019-12-15
+2.2.0,TPA,Third party administrator,2019-12-15
+2.2.0,TR,Transplant clinic,2019-12-15
+2.2.0,TRAVEL,Travel and geographic medicine clinic,2019-12-15
+2.2.0,TRB,Tribal Member,2019-12-15
+2.2.0,TWIN,twin,2019-12-15
+2.2.0,TWINBRO,twin brother,2019-12-15
+2.2.0,TWINBRO,twin brother,2019-12-15
+2.2.0,TWINSIS,twin sister,2019-12-15
+2.2.0,TWINSIS,twin sister,2019-12-15
+2.2.0,UMO,Utilization management organization,2019-12-15
+2.2.0,UNCLE,uncle,2019-12-15
+2.2.0,UPC,underage protection center,2019-12-15
+2.2.0,UPGRDER,upgrader,2019-12-15
+2.2.0,URO,Urology clinic,2019-12-15
+2.2.0,V,Verifying,2019-12-15
+2.2.0,VALIDATOR,validator,2019-12-15
+2.2.0,VET,veteran,2019-12-15
+2.2.0,VL,Veal,2019-12-15
+2.2.0,WARD,ward,2019-12-15
+2.2.0,WARD,ward,2019-12-15
+2.2.0,WIFE,wife,2019-12-15
+2.2.0,WL,Wool,2019-12-15
+2.2.0,WND,Wound clinic,2019-12-15
+2.2.0,WO,Working,2019-12-15
+2.2.0,WORK,work site,2019-12-15
+2.2.0,_AdministrativeContactRoleType,AdministrativeContactRoleType,2019-12-15
+2.2.0,_AdministrativeLocationRoleType,AdministrativeLocationRoleType,2019-12-15
+2.2.0,_AffiliationRoleType,AffiliationRoleType,2019-12-15
+2.2.0,_AgentRoleType,AgentRoleType,2019-12-15
+2.2.0,_AssignedNonPersonLivingSubjectRoleType,AssignedNonPersonLivingSubjectRoleType,2019-12-15
+2.2.0,_AssignedRoleType,AssignedRoleType,2019-12-15
+2.2.0,_CertifiedEntityType,CertifiedEntityType,2019-12-15
+2.2.0,_CitizenRoleType,CitizenRoleType,2019-12-15
+2.2.0,_ClaimantCoveredPartyRoleType,ClaimantCoveredPartyRoleType,2019-12-15
+2.2.0,_ClinicalOrganizationRoleType,ClinicalOrganizationRoleType,2019-12-15
+2.2.0,_CommissioningPartyRoleType,CommissioningPartyRoleType,2019-12-15
+2.2.0,_ContactRoleType,ContactRoleType,2019-12-15
+2.2.0,_CoverageRoleType,CoverageRoleType,2019-12-15
+2.2.0,_CoverageSponsorRoleType,CoverageSponsorRoleType,2019-12-15
+2.2.0,_CoveredPartyRoleType,covered party role type,2019-12-15
+2.2.0,_DedicatedClinicalLocationRoleType,DedicatedClinicalLocationRoleType,2019-12-15
+2.2.0,_DedicatedNonClinicalLocationRoleType,DedicatedNonClinicalLocationRoleType,2019-12-15
+2.2.0,_DedicatedServiceDeliveryLocationRoleType,DedicatedServiceDeliveryLocationRoleType,2019-12-15
+2.2.0,_DependentCoveredPartyRoleType,DependentCoveredPartyRoleType,2019-12-15
+2.2.0,_DeviceOperatorType,DeviceOperatorType,2019-12-15
+2.2.0,_EmployeeRoleType,EmployeeRoleType,2019-12-15
+2.2.0,_HealthcareProviderRoleType,HealthcareProviderRoleType,2019-12-15
+2.2.0,_IdentifiedEntityType,IdentifiedEntityType,2019-12-15
+2.2.0,_IncidentalServiceDeliveryLocationRoleType,IncidentalServiceDeliveryLocationRoleType,2019-12-15
+2.2.0,_IndividualInsuredPartyRoleType,IndividualInsuredPartyRoleType,2019-12-15
+2.2.0,_LicensedRoleType,LicensedRoleType,2019-12-15
+2.2.0,_LivingSubjectProductionClass,LivingSubjectProductionClass,2019-12-15
+2.2.0,_LocationIdentifiedEntityRoleCode,LocationIdentifiedEntityRoleCode,2019-12-15
+2.2.0,_MedicationGeneralizationRoleType,MedicationGeneralizationRoleType,2019-12-15
+2.2.0,_MemberRoleType,MemberRoleType,2019-12-15
+2.2.0,_NDCRelatedDrugEntityType,NDCRelatedDrugEntityType,2019-12-15
+2.2.0,_OrganizationPartRoleType,OrganizationPartRoleType,2019-12-15
+2.2.0,_PayorRoleType,PayorRoleType,2019-12-15
+2.2.0,_PersonalRelationshipRoleType,PersonalRelationshipRoleType,2019-12-15
+2.2.0,_PolicyOrProgramCoverageRoleType,PolicyOrProgramCoverageRoleType,2019-12-15
+2.2.0,_PractitionerCertifiedEntityType,PractitionerCertifiedEntityType,2019-12-15
+2.2.0,_ProductProcessingOrganizationRoleType,ProductProcessingOrganizationRoleType,2019-12-15
+2.2.0,_ProductSafetyReportPartyRoleType,ProductSafetyReportPartyRoleType,2019-12-15
+2.2.0,_ProgramEligiblePartyRoleType,ProgramEligiblePartyRoleType,2019-12-15
+2.2.0,_QualifiedRoleType,QualifiedRoleType,2019-12-15
+2.2.0,_ResearchSubjectRoleBasis,ResearchSubjectRoleBasis,2019-12-15
+2.2.0,_ServiceDeliveryLocationRoleType,ServiceDeliveryLocationRoleType,2019-12-15
+2.2.0,_SpecimenRoleType,SpecimenRoleType,2019-12-15
+2.2.0,_SubscriberCoveredPartyRoleType,SubscriberCoveredPartyRoleType,2019-12-15
+2.2.0,communityLaboratory,Community Laboratory,2019-12-15
+2.2.0,homeHealth,Home Health,2019-12-15
+2.2.0,laboratory,Laboratory,2019-12-15
+2.2.0,pathologist,Pathologist,2019-12-15
+2.2.0,phlebotomist,Phlebotomist,2019-12-15
+2.2.0,subject,Self,2019-12-15
+2.2.0,thirdParty,Third Party,2019-12-15
