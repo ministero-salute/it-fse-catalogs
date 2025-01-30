@@ -1,57 +1,57 @@
 version,code,description,release_date
-2.1.0,RLFA,right lower forearm,2019-03-20
-2.1.0,LSC,left subclavian,2019-03-20
-2.1.0,LA,left arm,2019-03-20
-2.1.0,LVG,left ventragluteal,2019-03-20
-2.1.0,LUA,left upper arm,2019-03-20
 2.1.0,BE,bilateral ears,2019-03-20
-2.1.0,_AnimalActSite,AnimalActSite,2019-03-20
-2.1.0,LUAQ,left upper abd quadrant,2019-03-20
-2.1.0,RLAQ,right lower abd quadrant,2019-03-20
-2.1.0,LF,left foot,2019-03-20
-2.1.0,LT,left thigh,2019-03-20
-2.1.0,_HumanSubstanceAdministrationSite,HumanSubstanceAdministrationSite,2019-03-20
-2.1.0,RN,right naris,2019-03-20
-2.1.0,RIJ,right internal jugular,2019-03-20
-2.1.0,RA,right arm,2019-03-20
-2.1.0,LH,left hand,2019-03-20
-2.1.0,RD,right deltoid,2019-03-20
-2.1.0,REJ,right external jugular,2019-03-20
-2.1.0,LVL,left vastus lateralis,2019-03-20
-2.1.0,_HumanActSite,HumanActSite,2019-03-20
-2.1.0,_InjuryActSite,InjuryActSite,2019-03-20
-2.1.0,RUFA,right upper forearm,2019-03-20
-2.1.0,LPC,left posterior chest,2019-03-20
-2.1.0,RE,right ear,2019-03-20
 2.1.0,BN,bilateral nares,2019-03-20
-2.1.0,PA,perianal,2019-03-20
-2.1.0,RVL,right vastus lateralis,2019-03-20
-2.1.0,LE,left ear,2019-03-20
 2.1.0,BU,buttock,2019-03-20
+2.1.0,LA,left arm,2019-03-20
+2.1.0,LAC,left anterior chest,2019-03-20
+2.1.0,LACF,left antecubital fossa,2019-03-20
+2.1.0,LD,left deltoid,2019-03-20
+2.1.0,LE,left ear,2019-03-20
+2.1.0,LEJ,left external jugular,2019-03-20
+2.1.0,LF,left foot,2019-03-20
+2.1.0,LG,left gluteus medius,2019-03-20
+2.1.0,LH,left hand,2019-03-20
+2.1.0,LIJ,left internal jugular,2019-03-20
+2.1.0,LLAQ,left lower abd quadrant,2019-03-20
+2.1.0,LLFA,left lower forearm,2019-03-20
+2.1.0,LMFA,left mid forearm,2019-03-20
+2.1.0,LN,left naris,2019-03-20
+2.1.0,LPC,left posterior chest,2019-03-20
+2.1.0,LSC,left subclavian,2019-03-20
+2.1.0,LT,left thigh,2019-03-20
+2.1.0,LUA,left upper arm,2019-03-20
+2.1.0,LUAQ,left upper abd quadrant,2019-03-20
+2.1.0,LUFA,left upper forearm,2019-03-20
+2.1.0,LVG,left ventragluteal,2019-03-20
+2.1.0,LVL,left vastus lateralis,2019-03-20
+2.1.0,OD,right eye,2019-03-20
+2.1.0,OS,left eye,2019-03-20
+2.1.0,OU,bilateral eyes,2019-03-20
+2.1.0,PA,perianal,2019-03-20
+2.1.0,PERIN,perineal,2019-03-20
+2.1.0,RA,right arm,2019-03-20
+2.1.0,RAC,right anterior chest,2019-03-20
+2.1.0,RACF,right antecubital fossa,2019-03-20
+2.1.0,RD,right deltoid,2019-03-20
+2.1.0,RE,right ear,2019-03-20
+2.1.0,REJ,right external jugular,2019-03-20
+2.1.0,RF,right foot,2019-03-20
 2.1.0,RG,right gluteus medius,2019-03-20
-2.1.0,RUA,right upper arm,2019-03-20
+2.1.0,RH,right hand,2019-03-20
+2.1.0,RIJ,right internal jugular,2019-03-20
+2.1.0,RLAQ,right lower abd quadrant,2019-03-20
+2.1.0,RLFA,right lower forearm,2019-03-20
+2.1.0,RMFA,right mid forearm,2019-03-20
+2.1.0,RN,right naris,2019-03-20
 2.1.0,RPC,right posterior chest,2019-03-20
 2.1.0,RSC,right subclavian,2019-03-20
 2.1.0,RT,right thigh,2019-03-20
-2.1.0,OU,bilateral eyes,2019-03-20
-2.1.0,LEJ,left external jugular,2019-03-20
-2.1.0,LAC,left anterior chest,2019-03-20
-2.1.0,LLAQ,left lower abd quadrant,2019-03-20
-2.1.0,RF,right foot,2019-03-20
-2.1.0,LD,left deltoid,2019-03-20
-2.1.0,RVG,right ventragluteal,2019-03-20
-2.1.0,LIJ,left internal jugular,2019-03-20
-2.1.0,RACF,right antecubital fossa,2019-03-20
-2.1.0,LG,left gluteus medius,2019-03-20
-2.1.0,LLFA,left lower forearm,2019-03-20
-2.1.0,RMFA,right mid forearm,2019-03-20
-2.1.0,OS,left eye,2019-03-20
-2.1.0,RAC,right anterior chest,2019-03-20
-2.1.0,PERIN,perineal,2019-03-20
-2.1.0,LN,left naris,2019-03-20
-2.1.0,OD,right eye,2019-03-20
-2.1.0,LACF,left antecubital fossa,2019-03-20
-2.1.0,LMFA,left mid forearm,2019-03-20
-2.1.0,LUFA,left upper forearm,2019-03-20
-2.1.0,RH,right hand,2019-03-20
+2.1.0,RUA,right upper arm,2019-03-20
 2.1.0,RUAQ,right upper abd quadrant,2019-03-20
+2.1.0,RUFA,right upper forearm,2019-03-20
+2.1.0,RVG,right ventragluteal,2019-03-20
+2.1.0,RVL,right vastus lateralis,2019-03-20
+2.1.0,_AnimalActSite,AnimalActSite,2019-03-20
+2.1.0,_HumanActSite,HumanActSite,2019-03-20
+2.1.0,_HumanSubstanceAdministrationSite,HumanSubstanceAdministrationSite,2019-03-20
+2.1.0,_InjuryActSite,InjuryActSite,2019-03-20
