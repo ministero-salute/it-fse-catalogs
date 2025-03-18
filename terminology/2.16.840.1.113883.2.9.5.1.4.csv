@@ -902,8 +902,8 @@ version,code,description,release_date
 7.0.0,HOSPVSTR,Hospital Visitor Interaction,2019-12-15
 7.0.0,HOUSEHLD,Household Interaction,2019-12-15
 7.0.0,HRCOMPT,human resource compartment,2019-12-15
-7.0.0,HSAPOL,health spending account,2019-12-15
 7.0.0,HSAPOL,,2019-12-15
+7.0.0,HSAPOL,health spending account,2019-12-15
 7.0.0,HST,harmonized sales Tax,2019-12-15
 7.0.0,HUAPRV,human approval,2019-12-15
 7.0.0,HUMHUMTRNS,human to human transmission,2019-12-15
