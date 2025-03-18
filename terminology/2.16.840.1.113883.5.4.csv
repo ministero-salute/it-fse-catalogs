@@ -710,8 +710,8 @@ version,code,description,release_date
 7.0.0,DENTAL,dental care policy,2019-12-15
 7.0.0,DENTPRG,dental program,2019-12-15
 7.0.0,DERMTRNS,transdermal transmission,2019-12-15
-7.0.0,DF,Daily Fill,2019-12-15
 7.0.0,DF,,2019-12-15
+7.0.0,DF,Daily Fill,2019-12-15
 7.0.0,DIA,diagnosis information sensitivity,2019-12-15
 7.0.0,DIAGLISTE,diagnosis list entry task,2019-12-15
 7.0.0,DIAGLISTREV,diagnosis list review task,2019-12-15
@@ -755,8 +755,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDA,,2019-12-15
+7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
