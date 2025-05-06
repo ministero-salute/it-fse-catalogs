@@ -536,8 +536,8 @@ version,code,description,release_date
 7.0.0,AUTO-HIGH,Auto-High Dilution,2019-12-15
 7.0.0,AUTO-LOW,Auto-Low Dilution,2019-12-15
 7.0.0,AUTOATTCH,auto attachment,2019-12-15
-7.0.0,AUTOPOL,,2019-12-15
 7.0.0,AUTOPOL,automobile,2019-12-15
+7.0.0,AUTOPOL,,2019-12-15
 7.0.0,AVAILABLE,Available Volume,2019-12-15
 7.0.0,B,business information sensitivity,2019-12-15
 7.0.0,BDYFLDTRNS,body fluid contact transmission,2019-12-15
@@ -689,8 +689,8 @@ version,code,description,release_date
 7.0.0,CWOH,certified women's health care,2019-12-15
 7.0.0,CommonRule,Common Rule,2019-12-15
 7.0.0,DACT,drug action detected issue,2019-12-15
-7.0.0,DALG,Drug Allergy,2019-12-15
 7.0.0,DALG,,2019-12-15
+7.0.0,DALG,Drug Allergy,2019-12-15
 7.0.0,DAY,day,2019-12-15
 7.0.0,DAY,,2019-12-15
 7.0.0,DDP,Direct Deposit,2019-12-15
