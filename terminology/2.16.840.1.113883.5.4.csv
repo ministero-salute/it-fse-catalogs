@@ -556,8 +556,8 @@ version,code,description,release_date
 7.0.0,FFCS,,2019-12-15
 7.0.0,FFP,First Fill - Part Fill,2019-12-15
 7.0.0,FFPS,,2019-12-15
-7.0.0,FFPS,,2019-12-15
 7.0.0,FFPS,"first fill, part fill; partial strength",2019-12-15
+7.0.0,FFPS,,2019-12-15
 7.0.0,FFS,fee for service,2019-12-15
 7.0.0,FFS,,2019-12-15
 7.0.0,FFSS,"first fill, partial strength",2019-12-15
@@ -1075,8 +1075,8 @@ version,code,description,release_date
 7.0.0,TEACHER,teacher,2019-12-15
 7.0.0,TF,Trial Fill,2019-12-15
 7.0.0,TFS,,2019-12-15
-7.0.0,TFS,,2019-12-15
 7.0.0,TFS,trial fill partial strength,2019-12-15
+7.0.0,TFS,,2019-12-15
 7.0.0,TIME,timing detected issue,2019-12-15
 7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
 7.0.0,TIME_RELATIVE,relative time sequence,2019-12-15
