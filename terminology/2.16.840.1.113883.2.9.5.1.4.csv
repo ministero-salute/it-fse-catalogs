@@ -502,13 +502,13 @@ version,code,description,release_date
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,,2019-12-15
 7.0.0,EALG,Environmental Allergy,2019-12-15
+7.0.0,EALG,,2019-12-15
 7.0.0,EAP,employee assistance program,2019-12-15
 7.0.0,EDU,education fees,2019-12-15
 7.0.0,EFORM,electronic form to follow,2019-12-15
-7.0.0,EHCPOL,,2019-12-15
 7.0.0,EHCPOL,extended healthcare,2019-12-15
+7.0.0,EHCPOL,,2019-12-15
 7.0.0,EINT,Environmental Intolerance,2019-12-15
 7.0.0,ELG,Eligible,2019-12-15
 7.0.0,ELLIPSE,ellipse,2019-12-15
@@ -1078,8 +1078,8 @@ version,code,description,release_date
 7.0.0,TBS,trial balance partial strength,2019-12-15
 7.0.0,TEACHER,teacher,2019-12-15
 7.0.0,TF,Trial Fill,2019-12-15
-7.0.0,TFS,trial fill partial strength,2019-12-15
 7.0.0,TFS,,2019-12-15
+7.0.0,TFS,trial fill partial strength,2019-12-15
 7.0.0,TFS,,2019-12-15
 7.0.0,TIME,timing detected issue,2019-12-15
 7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
