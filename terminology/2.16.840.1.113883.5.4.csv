@@ -480,8 +480,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDA,,2019-12-15
+7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
@@ -571,8 +571,8 @@ version,code,description,release_date
 7.0.0,FLD,field,2019-12-15
 7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
 7.0.0,FMCOMPT,financial management compartment,2019-12-15
-7.0.0,FNAINT,,2019-12-15
 7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
+7.0.0,FNAINT,,2019-12-15
 7.0.0,FNLFEE,final fee,2019-12-15
 7.0.0,FOMTRNS,fomite transmission,2019-12-15
 7.0.0,FOOD,Food Interaction Alert,2019-12-15
