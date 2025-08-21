@@ -710,8 +710,8 @@ version,code,description,release_date
 7.0.0,DENTAL,dental care policy,2019-12-15
 7.0.0,DENTPRG,dental program,2019-12-15
 7.0.0,DERMTRNS,transdermal transmission,2019-12-15
-7.0.0,DF,Daily Fill,2019-12-15
 7.0.0,DF,,2019-12-15
+7.0.0,DF,Daily Fill,2019-12-15
 7.0.0,DIA,diagnosis information sensitivity,2019-12-15
 7.0.0,DIAGLISTE,diagnosis list entry task,2019-12-15
 7.0.0,DIAGLISTREV,diagnosis list review task,2019-12-15
@@ -732,13 +732,13 @@ version,code,description,release_date
 7.0.0,DISPLAY,Display,2019-12-15
 7.0.0,DM,diabetes mellitus diet,2019-12-15
 7.0.0,DN,Diner's Club,2019-12-15
-7.0.0,DNAINT,,2019-12-15
 7.0.0,DNAINT,Drug Non-Allergy Intolerance,2019-12-15
+7.0.0,DNAINT,,2019-12-15
 7.0.0,DNTL,Dental,2019-12-15
 7.0.0,DOB,date of birth information sensitivity,2019-12-15
 7.0.0,DOCUMENT,document,2019-12-15
-7.0.0,DOSE,Dosage problem,2019-12-15
 7.0.0,DOSE,,2019-12-15
+7.0.0,DOSE,Dosage problem,2019-12-15
 7.0.0,DOSECOND,dosage-condition alert,2019-12-15
 7.0.0,DOSEDUR,Dose-Duration Alert,2019-12-15
 7.0.0,DOSEDURH,Dose-Duration High Alert,2019-12-15
@@ -756,8 +756,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,,2019-12-15
 7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
+7.0.0,DOSELINDA,,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
@@ -772,13 +772,13 @@ version,code,description,release_date
 7.0.0,DSC,discount,2019-12-15
 7.0.0,DUPTHPCLS,duplicate therapeutic alass alert,2019-12-15
 7.0.0,DUPTHPGEN,duplicate generic alert,2019-12-15
-7.0.0,DUPTHPY,,2019-12-15
 7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
+7.0.0,DUPTHPY,,2019-12-15
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,,2019-12-15
 7.0.0,EALG,Environmental Allergy,2019-12-15
+7.0.0,EALG,,2019-12-15
 7.0.0,EAP,employee assistance program,2019-12-15
 7.0.0,EDU,education fees,2019-12-15
 7.0.0,EFORM,electronic form to follow,2019-12-15
@@ -847,8 +847,8 @@ version,code,description,release_date
 7.0.0,FLD,field,2019-12-15
 7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
 7.0.0,FMCOMPT,financial management compartment,2019-12-15
-7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
 7.0.0,FNAINT,,2019-12-15
+7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
 7.0.0,FNLFEE,final fee,2019-12-15
 7.0.0,FOMTRNS,fomite transmission,2019-12-15
 7.0.0,FOOD,Food Interaction Alert,2019-12-15
@@ -959,10 +959,10 @@ version,code,description,release_date
 7.0.0,ISSUE,detected issue,2019-12-15
 7.0.0,ITMCNT,items counted,2019-12-15
 7.0.0,KEY,keyword,2019-12-15
-7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY204,,2019-12-15
-7.0.0,KEY205,Duplicate key identifier,2019-12-15
+7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY205,,2019-12-15
+7.0.0,KEY205,Duplicate key identifier,2019-12-15
 7.0.0,KEY206,non-matching identification,2019-12-15
 7.0.0,KSUBJ,knowledge subject,2019-12-15
 7.0.0,KSUBT,knowledge subtopic,2019-12-15
@@ -983,15 +983,15 @@ version,code,description,release_date
 7.0.0,LEN_RANGE,length out of range,2019-12-15
 7.0.0,LEN_SHORT,length is too short,2019-12-15
 7.0.0,LF,low fat,2019-12-15
-7.0.0,LFEMX,life time maximum,2019-12-15
 7.0.0,LFEMX,,2019-12-15
+7.0.0,LFEMX,life time maximum,2019-12-15
 7.0.0,LGPC,licensed general physician care,2019-12-15
 7.0.0,LIFE,life insurance policy,2019-12-15
 7.0.0,LIPEMIA,Lipemia,2019-12-15
 7.0.0,LIVARG,living arrangement information sensitivity,2019-12-15
 7.0.0,LOAN,Loan,2019-12-15
-7.0.0,LOC,location,2019-12-15
 7.0.0,LOC,,2019-12-15
+7.0.0,LOC,location,2019-12-15
 7.0.0,LOCIS,location information sensitivity,2019-12-15
 7.0.0,LP,low protein,2019-12-15
 7.0.0,LQ,liquid,2019-12-15
@@ -1032,8 +1032,8 @@ version,code,description,release_date
 7.0.0,MISSMAND,mandatory element missing,2019-12-15
 7.0.0,MLREV,medication list review task,2019-12-15
 7.0.0,MODEL,model,2019-12-15
-7.0.0,MONTH,,2019-12-15
 7.0.0,MONTH,month,2019-12-15
+7.0.0,MONTH,,2019-12-15
 7.0.0,MS,Manufacturer Sample,2019-12-15
 7.0.0,MSD,measurement start date,2019-12-15
 7.0.0,MSRADJ,risk adjustment,2019-12-15
@@ -1094,8 +1094,8 @@ version,code,description,release_date
 7.0.0,NUMEX,numerator exclusions,2019-12-15
 7.0.0,O,In Process,2019-12-15
 7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,,2019-12-15
 7.0.0,OBSA,Observation Alert,2019-12-15
+7.0.0,OBSA,,2019-12-15
 7.0.0,OBSANTC,antigen count,2019-12-15
 7.0.0,OBSANTV,antigen validity,2019-12-15
 7.0.0,OBSENC,observation encounter,2019-12-15
@@ -1165,8 +1165,8 @@ version,code,description,release_date
 7.0.0,PEALRT,pediatric alert,2019-12-15
 7.0.0,PED,Pediatrics,2019-12-15
 7.0.0,PERFEE,periodic fee,2019-12-15
-7.0.0,PERIOD,,2019-12-15
 7.0.0,PERIOD,period,2019-12-15
+7.0.0,PERIOD,,2019-12-15
 7.0.0,PERMBNS,performance bonus,2019-12-15
 7.0.0,PERSISTLABEL,persist security label,2019-12-15
 7.0.0,PHAR,Pharmaceutical,2019-12-15
@@ -1413,8 +1413,8 @@ version,code,description,release_date
 7.0.0,VRXINV,vision dispense invoice,2019-12-15
 7.0.0,W,Ward,2019-12-15
 7.0.0,WATTRNS,water-borne transmission,2019-12-15
-7.0.0,WCBPOL,,2019-12-15
 7.0.0,WCBPOL,worker's compensation,2019-12-15
+7.0.0,WCBPOL,,2019-12-15
 7.0.0,WEEK,week,2019-12-15
 7.0.0,WEEK,,2019-12-15
 7.0.0,WELLREMLE,wellness reminder list entry,2019-12-15
