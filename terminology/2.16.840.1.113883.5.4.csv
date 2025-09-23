@@ -536,8 +536,8 @@ version,code,description,release_date
 7.0.0,AUTO-HIGH,Auto-High Dilution,2019-12-15
 7.0.0,AUTO-LOW,Auto-Low Dilution,2019-12-15
 7.0.0,AUTOATTCH,auto attachment,2019-12-15
-7.0.0,AUTOPOL,,2019-12-15
 7.0.0,AUTOPOL,automobile,2019-12-15
+7.0.0,AUTOPOL,,2019-12-15
 7.0.0,AVAILABLE,Available Volume,2019-12-15
 7.0.0,B,business information sensitivity,2019-12-15
 7.0.0,BDYFLDTRNS,body fluid contact transmission,2019-12-15
@@ -626,8 +626,8 @@ version,code,description,release_date
 7.0.0,COND,Condition Alert,2019-12-15
 7.0.0,CONDLIST,condition list,2019-12-15
 7.0.0,CONSUMPTION,Consumption Volume,2019-12-15
-7.0.0,CONT,contract,2019-12-15
 7.0.0,CONT,,2019-12-15
+7.0.0,CONT,contract,2019-12-15
 7.0.0,CONTF,contract funding,2019-12-15
 7.0.0,CONVEYNC,Common Conveyance Interaction,2019-12-15
 7.0.0,COPAY,,2019-12-15
@@ -691,8 +691,8 @@ version,code,description,release_date
 7.0.0,DACT,drug action detected issue,2019-12-15
 7.0.0,DALG,,2019-12-15
 7.0.0,DALG,Drug Allergy,2019-12-15
-7.0.0,DAY,day,2019-12-15
 7.0.0,DAY,,2019-12-15
+7.0.0,DAY,day,2019-12-15
 7.0.0,DDP,Direct Deposit,2019-12-15
 7.0.0,DECLASSIFYLABEL,declassify security label,2019-12-15
 7.0.0,DEDUCT,,2019-12-15
@@ -771,8 +771,8 @@ version,code,description,release_date
 7.0.0,DSC,discount,2019-12-15
 7.0.0,DUPTHPCLS,duplicate therapeutic alass alert,2019-12-15
 7.0.0,DUPTHPGEN,duplicate generic alert,2019-12-15
-7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
 7.0.0,DUPTHPY,,2019-12-15
+7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
@@ -810,8 +810,8 @@ version,code,description,release_date
 7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
 7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
 7.0.0,F,final,2019-12-15
-7.0.0,FALG,Food Allergy,2019-12-15
 7.0.0,FALG,,2019-12-15
+7.0.0,FALG,Food Allergy,2019-12-15
 7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
 7.0.0,FAST,fasting,2019-12-15
 7.0.0,FAX,fax to follow,2019-12-15
@@ -826,8 +826,8 @@ version,code,description,release_date
 7.0.0,FECTRNS,fecal-oral transmission,2019-12-15
 7.0.0,FF,First Fill,2019-12-15
 7.0.0,FFC,First Fill - Complete,2019-12-15
-7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
 7.0.0,FFCS,,2019-12-15
+7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
 7.0.0,FFCS,,2019-12-15
 7.0.0,FFP,First Fill - Part Fill,2019-12-15
 7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
@@ -846,8 +846,8 @@ version,code,description,release_date
 7.0.0,FLD,field,2019-12-15
 7.0.0,FLEXP,flexible benefit plan policy,2019-12-15
 7.0.0,FMCOMPT,financial management compartment,2019-12-15
-7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
 7.0.0,FNAINT,,2019-12-15
+7.0.0,FNAINT,Food Non-Allergy Intolerance,2019-12-15
 7.0.0,FNLFEE,final fee,2019-12-15
 7.0.0,FOMTRNS,fomite transmission,2019-12-15
 7.0.0,FOOD,Food Interaction Alert,2019-12-15
@@ -901,8 +901,8 @@ version,code,description,release_date
 7.0.0,HOSPVSTR,Hospital Visitor Interaction,2019-12-15
 7.0.0,HOUSEHLD,Household Interaction,2019-12-15
 7.0.0,HRCOMPT,human resource compartment,2019-12-15
-7.0.0,HSAPOL,,2019-12-15
 7.0.0,HSAPOL,health spending account,2019-12-15
+7.0.0,HSAPOL,,2019-12-15
 7.0.0,HST,harmonized sales Tax,2019-12-15
 7.0.0,HUAPRV,human approval,2019-12-15
 7.0.0,HUMHUMTRNS,human to human transmission,2019-12-15
@@ -982,8 +982,8 @@ version,code,description,release_date
 7.0.0,LEN_RANGE,length out of range,2019-12-15
 7.0.0,LEN_SHORT,length is too short,2019-12-15
 7.0.0,LF,low fat,2019-12-15
-7.0.0,LFEMX,,2019-12-15
 7.0.0,LFEMX,life time maximum,2019-12-15
+7.0.0,LFEMX,,2019-12-15
 7.0.0,LGPC,licensed general physician care,2019-12-15
 7.0.0,LIFE,life insurance policy,2019-12-15
 7.0.0,LIPEMIA,Lipemia,2019-12-15
@@ -1093,8 +1093,8 @@ version,code,description,release_date
 7.0.0,NUMEX,numerator exclusions,2019-12-15
 7.0.0,O,In Process,2019-12-15
 7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,,2019-12-15
 7.0.0,OBSA,Observation Alert,2019-12-15
+7.0.0,OBSA,,2019-12-15
 7.0.0,OBSANTC,antigen count,2019-12-15
 7.0.0,OBSANTV,antigen validity,2019-12-15
 7.0.0,OBSENC,observation encounter,2019-12-15
@@ -1211,8 +1211,8 @@ version,code,description,release_date
 7.0.0,PSYCH,Psychiatric,2019-12-15
 7.0.0,PSYTHPN,psychotherapy note information sensitivity,2019-12-15
 7.0.0,PTNTCARE,Health Care Interaction - Patient Care,2019-12-15
-7.0.0,PUBLICPOL,public healthcare,2019-12-15
 7.0.0,PUBLICPOL,,2019-12-15
+7.0.0,PUBLICPOL,public healthcare,2019-12-15
 7.0.0,PUBTRN,public transport,2019-12-15
 7.0.0,PYRDELAY,delayed by a previous payor,2019-12-15
 7.0.0,R,Process Completed,2019-12-15
@@ -1349,8 +1349,8 @@ version,code,description,release_date
 7.0.0,TBS,trial balance partial strength,2019-12-15
 7.0.0,TEACHER,teacher,2019-12-15
 7.0.0,TF,Trial Fill,2019-12-15
-7.0.0,TFS,trial fill partial strength,2019-12-15
 7.0.0,TFS,,2019-12-15
+7.0.0,TFS,trial fill partial strength,2019-12-15
 7.0.0,TFS,,2019-12-15
 7.0.0,TIME,timing detected issue,2019-12-15
 7.0.0,TIME_ABSOLUTE,absolute time sequence,2019-12-15
