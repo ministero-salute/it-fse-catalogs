@@ -12,7 +12,7 @@ Questo repository contiene i:
 
 utilizzati in fase di verifica dei CDA2 dal gateway FSE2.0.
 
-Sono inoltre disponibili i [mapping](mapping/) in FHIR mapping language per la trasformazione dei CDA2 in bundle FHIR.
+Sono inoltre disponibili i [mapping](transform/) in FHIR mapping language per la trasformazione dei CDA2 in bundle FHIR.
 
 ## Container
 
@@ -33,4 +33,3 @@ Su `localhost:27888` sarà disponibile un mongodb con credenziali di default (us
 ## Repos
 - [*it-fse-support*](https://github.com/ministero-salute/it-fse-support) - Pagina di supporto FSE 2.0
 - [*it-fse-landing*](https://github.com/ministero-salute/it-fse-landing) - Landing page dei repository FSE 2.0
-
