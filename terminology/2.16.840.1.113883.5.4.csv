@@ -731,8 +731,8 @@ version,code,description,release_date
 7.0.0,DISPLAY,Display,2019-12-15
 7.0.0,DM,diabetes mellitus diet,2019-12-15
 7.0.0,DN,Diner's Club,2019-12-15
-7.0.0,DNAINT,,2019-12-15
 7.0.0,DNAINT,Drug Non-Allergy Intolerance,2019-12-15
+7.0.0,DNAINT,,2019-12-15
 7.0.0,DNTL,Dental,2019-12-15
 7.0.0,DOB,date of birth information sensitivity,2019-12-15
 7.0.0,DOCUMENT,document,2019-12-15
@@ -755,8 +755,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDA,,2019-12-15
+7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
@@ -810,8 +810,8 @@ version,code,description,release_date
 7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
 7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
 7.0.0,F,final,2019-12-15
-7.0.0,FALG,,2019-12-15
 7.0.0,FALG,Food Allergy,2019-12-15
+7.0.0,FALG,,2019-12-15
 7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
 7.0.0,FAST,fasting,2019-12-15
 7.0.0,FAX,fax to follow,2019-12-15
@@ -960,8 +960,8 @@ version,code,description,release_date
 7.0.0,KEY,keyword,2019-12-15
 7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY204,,2019-12-15
-7.0.0,KEY205,Duplicate key identifier,2019-12-15
 7.0.0,KEY205,,2019-12-15
+7.0.0,KEY205,Duplicate key identifier,2019-12-15
 7.0.0,KEY206,non-matching identification,2019-12-15
 7.0.0,KSUBJ,knowledge subject,2019-12-15
 7.0.0,KSUBT,knowledge subtopic,2019-12-15
