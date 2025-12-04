@@ -1,7 +1,13 @@
 version,code,description,release_date
-"",ALG,Allergy,2014-03-26
-"",DINT,Drug Intolerance,2014-03-26
-"",EINT,Environmental Intolerance,2014-03-26
-"",FINT,Food Intolerance,2014-03-26
-"",NAINT,Non-Allergy Intolerance,2014-03-26
-"",OINT,intolerance,2014-03-26
+"",ALG,Allergia,2023-05-22
+"",DALG,Allergia Farmaci,2023-05-22
+"",DINT,Intolleranza ai Farmaci,2023-05-22
+"",DNAINT,Intolleranza non allergica ai Farmaci,2023-05-22
+"",EALG,Allergia Ambientale,2023-05-22
+"",EINT,Intolleranza Ambientale,2023-05-22
+"",ENAINT,Intolleranza non allergica Ambientale,2023-05-22
+"",FALG,Allergia al Cibo,2023-05-22
+"",FINT,Intolleranza al Cibo,2023-05-22
+"",FNAINT,Intolleranza non allergica al Cibo,2023-05-22
+"",NAINT,Intolleranza non allergica,2023-05-22
+"",OINT,Allergia o Intolleranza,2023-05-22
