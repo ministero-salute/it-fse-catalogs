@@ -536,8 +536,8 @@ version,code,description,release_date
 7.0.0,AUTO-HIGH,Auto-High Dilution,2019-12-15
 7.0.0,AUTO-LOW,Auto-Low Dilution,2019-12-15
 7.0.0,AUTOATTCH,auto attachment,2019-12-15
-7.0.0,AUTOPOL,,2019-12-15
 7.0.0,AUTOPOL,automobile,2019-12-15
+7.0.0,AUTOPOL,,2019-12-15
 7.0.0,AVAILABLE,Available Volume,2019-12-15
 7.0.0,B,business information sensitivity,2019-12-15
 7.0.0,BDYFLDTRNS,body fluid contact transmission,2019-12-15
@@ -691,8 +691,8 @@ version,code,description,release_date
 7.0.0,DACT,drug action detected issue,2019-12-15
 7.0.0,DALG,,2019-12-15
 7.0.0,DALG,Drug Allergy,2019-12-15
-7.0.0,DAY,day,2019-12-15
 7.0.0,DAY,,2019-12-15
+7.0.0,DAY,day,2019-12-15
 7.0.0,DDP,Direct Deposit,2019-12-15
 7.0.0,DECLASSIFYLABEL,declassify security label,2019-12-15
 7.0.0,DEDUCT,,2019-12-15
@@ -710,8 +710,8 @@ version,code,description,release_date
 7.0.0,DENTAL,dental care policy,2019-12-15
 7.0.0,DENTPRG,dental program,2019-12-15
 7.0.0,DERMTRNS,transdermal transmission,2019-12-15
-7.0.0,DF,Daily Fill,2019-12-15
 7.0.0,DF,,2019-12-15
+7.0.0,DF,Daily Fill,2019-12-15
 7.0.0,DIA,diagnosis information sensitivity,2019-12-15
 7.0.0,DIAGLISTE,diagnosis list entry task,2019-12-15
 7.0.0,DIAGLISTREV,diagnosis list review task,2019-12-15
@@ -747,8 +747,8 @@ version,code,description,release_date
 7.0.0,DOSEDURLIND,Dose-Duration Low for Indication Alert,2019-12-15
 7.0.0,DOSEH,High Dose Alert,2019-12-15
 7.0.0,DOSEHIND,High Dose for Indication Alert,2019-12-15
-7.0.0,DOSEHINDA,High Dose for Age Alert,2019-12-15
 7.0.0,DOSEHINDA,,2019-12-15
+7.0.0,DOSEHINDA,High Dose for Age Alert,2019-12-15
 7.0.0,DOSEHINDSA,High Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSEHINDW,High Dose for Weight Alert,2019-12-15
 7.0.0,DOSEIND,,2019-12-15
@@ -777,8 +777,8 @@ version,code,description,release_date
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,Environmental Allergy,2019-12-15
 7.0.0,EALG,,2019-12-15
+7.0.0,EALG,Environmental Allergy,2019-12-15
 7.0.0,EAP,employee assistance program,2019-12-15
 7.0.0,EDU,education fees,2019-12-15
 7.0.0,EFORM,electronic form to follow,2019-12-15
@@ -811,8 +811,8 @@ version,code,description,release_date
 7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
 7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
 7.0.0,F,final,2019-12-15
-7.0.0,FALG,Food Allergy,2019-12-15
 7.0.0,FALG,,2019-12-15
+7.0.0,FALG,Food Allergy,2019-12-15
 7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
 7.0.0,FAST,fasting,2019-12-15
 7.0.0,FAX,fax to follow,2019-12-15
@@ -827,8 +827,8 @@ version,code,description,release_date
 7.0.0,FECTRNS,fecal-oral transmission,2019-12-15
 7.0.0,FF,First Fill,2019-12-15
 7.0.0,FFC,First Fill - Complete,2019-12-15
-7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
 7.0.0,FFCS,,2019-12-15
+7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
 7.0.0,FFCS,,2019-12-15
 7.0.0,FFP,First Fill - Part Fill,2019-12-15
 7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
@@ -902,8 +902,8 @@ version,code,description,release_date
 7.0.0,HOSPVSTR,Hospital Visitor Interaction,2019-12-15
 7.0.0,HOUSEHLD,Household Interaction,2019-12-15
 7.0.0,HRCOMPT,human resource compartment,2019-12-15
-7.0.0,HSAPOL,health spending account,2019-12-15
 7.0.0,HSAPOL,,2019-12-15
+7.0.0,HSAPOL,health spending account,2019-12-15
 7.0.0,HST,harmonized sales Tax,2019-12-15
 7.0.0,HUAPRV,human approval,2019-12-15
 7.0.0,HUMHUMTRNS,human to human transmission,2019-12-15
@@ -959,10 +959,10 @@ version,code,description,release_date
 7.0.0,ISSUE,detected issue,2019-12-15
 7.0.0,ITMCNT,items counted,2019-12-15
 7.0.0,KEY,keyword,2019-12-15
-7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY204,,2019-12-15
-7.0.0,KEY205,Duplicate key identifier,2019-12-15
+7.0.0,KEY204,Unknown key identifier,2019-12-15
 7.0.0,KEY205,,2019-12-15
+7.0.0,KEY205,Duplicate key identifier,2019-12-15
 7.0.0,KEY206,non-matching identification,2019-12-15
 7.0.0,KSUBJ,knowledge subject,2019-12-15
 7.0.0,KSUBT,knowledge subtopic,2019-12-15
