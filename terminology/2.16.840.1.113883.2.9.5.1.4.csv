@@ -737,8 +737,8 @@ version,code,description,release_date
 7.0.0,DNTL,Dental,2019-12-15
 7.0.0,DOB,date of birth information sensitivity,2019-12-15
 7.0.0,DOCUMENT,document,2019-12-15
-7.0.0,DOSE,Dosage problem,2019-12-15
 7.0.0,DOSE,,2019-12-15
+7.0.0,DOSE,Dosage problem,2019-12-15
 7.0.0,DOSECOND,dosage-condition alert,2019-12-15
 7.0.0,DOSEDUR,Dose-Duration Alert,2019-12-15
 7.0.0,DOSEDURH,Dose-Duration High Alert,2019-12-15
@@ -747,8 +747,8 @@ version,code,description,release_date
 7.0.0,DOSEDURLIND,Dose-Duration Low for Indication Alert,2019-12-15
 7.0.0,DOSEH,High Dose Alert,2019-12-15
 7.0.0,DOSEHIND,High Dose for Indication Alert,2019-12-15
-7.0.0,DOSEHINDA,,2019-12-15
 7.0.0,DOSEHINDA,High Dose for Age Alert,2019-12-15
+7.0.0,DOSEHINDA,,2019-12-15
 7.0.0,DOSEHINDSA,High Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSEHINDW,High Dose for Weight Alert,2019-12-15
 7.0.0,DOSEIND,,2019-12-15
@@ -756,8 +756,8 @@ version,code,description,release_date
 7.0.0,DOSEIVLIND,Dose-Interval for Indication Alert,2019-12-15
 7.0.0,DOSEL,Low Dose Alert,2019-12-15
 7.0.0,DOSELIND,Low Dose for Indication Alert,2019-12-15
-7.0.0,DOSELINDA,,2019-12-15
 7.0.0,DOSELINDA,Low Dose for Age Alert,2019-12-15
+7.0.0,DOSELINDA,,2019-12-15
 7.0.0,DOSELINDSA,Low Dose for Height/Surface Area Alert,2019-12-15
 7.0.0,DOSELINDW,Low Dose for Weight Alert,2019-12-15
 7.0.0,DOWNGRDLABEL,downgrade security label,2019-12-15
@@ -772,13 +772,13 @@ version,code,description,release_date
 7.0.0,DSC,discount,2019-12-15
 7.0.0,DUPTHPCLS,duplicate therapeutic alass alert,2019-12-15
 7.0.0,DUPTHPGEN,duplicate generic alert,2019-12-15
-7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
 7.0.0,DUPTHPY,,2019-12-15
+7.0.0,DUPTHPY,Duplicate Therapy Alert,2019-12-15
 7.0.0,DV,Discover Card,2019-12-15
 7.0.0,DVD,developmental disability information sensitivity,2019-12-15
 7.0.0,DX,ObservationDiagnosisTypes,2019-12-15
-7.0.0,EALG,,2019-12-15
 7.0.0,EALG,Environmental Allergy,2019-12-15
+7.0.0,EALG,,2019-12-15
 7.0.0,EAP,employee assistance program,2019-12-15
 7.0.0,EDU,education fees,2019-12-15
 7.0.0,EFORM,electronic form to follow,2019-12-15
@@ -811,8 +811,8 @@ version,code,description,release_date
 7.0.0,EVNFCTS,ActSpecObsEvntfctsCode,2019-12-15
 7.0.0,EWB,employee welfare benefit plan policy,2019-12-15
 7.0.0,F,final,2019-12-15
-7.0.0,FALG,,2019-12-15
 7.0.0,FALG,Food Allergy,2019-12-15
+7.0.0,FALG,,2019-12-15
 7.0.0,FALLRISK,falls risk assessment instrument task,2019-12-15
 7.0.0,FAST,fasting,2019-12-15
 7.0.0,FAX,fax to follow,2019-12-15
@@ -827,8 +827,8 @@ version,code,description,release_date
 7.0.0,FECTRNS,fecal-oral transmission,2019-12-15
 7.0.0,FF,First Fill,2019-12-15
 7.0.0,FFC,First Fill - Complete,2019-12-15
-7.0.0,FFCS,,2019-12-15
 7.0.0,FFCS,"first fill complete, partial strength",2019-12-15
+7.0.0,FFCS,,2019-12-15
 7.0.0,FFCS,,2019-12-15
 7.0.0,FFP,First Fill - Part Fill,2019-12-15
 7.0.0,FFPS,"first fill, part fill, partial strength",2019-12-15
@@ -1032,8 +1032,8 @@ version,code,description,release_date
 7.0.0,MISSMAND,mandatory element missing,2019-12-15
 7.0.0,MLREV,medication list review task,2019-12-15
 7.0.0,MODEL,model,2019-12-15
-7.0.0,MONTH,month,2019-12-15
 7.0.0,MONTH,,2019-12-15
+7.0.0,MONTH,month,2019-12-15
 7.0.0,MS,Manufacturer Sample,2019-12-15
 7.0.0,MSD,measurement start date,2019-12-15
 7.0.0,MSRADJ,risk adjustment,2019-12-15
@@ -1094,8 +1094,8 @@ version,code,description,release_date
 7.0.0,NUMEX,numerator exclusions,2019-12-15
 7.0.0,O,In Process,2019-12-15
 7.0.0,OBS,Obstetrics,2019-12-15
-7.0.0,OBSA,Observation Alert,2019-12-15
 7.0.0,OBSA,,2019-12-15
+7.0.0,OBSA,Observation Alert,2019-12-15
 7.0.0,OBSANTC,antigen count,2019-12-15
 7.0.0,OBSANTV,antigen validity,2019-12-15
 7.0.0,OBSENC,observation encounter,2019-12-15
@@ -1181,8 +1181,8 @@ version,code,description,release_date
 7.0.0,PNC,property and casualty insurance policy,2019-12-15
 7.0.0,POINT,point,2019-12-15
 7.0.0,POLY,polyline,2019-12-15
-7.0.0,POS,point of service policy,2019-12-15
 7.0.0,POS,,2019-12-15
+7.0.0,POS,point of service policy,2019-12-15
 7.0.0,PPO,preferred provider organization policy,2019-12-15
 7.0.0,PPRD,prior period adjustment,2019-12-15
 7.0.0,PRA,,2019-12-15
@@ -1383,8 +1383,8 @@ version,code,description,release_date
 7.0.0,TRSTMEC,trust mechanism,2019-12-15
 7.0.0,TRSTMECOBS,trust mechanism observation,2019-12-15
 7.0.0,Title38Section7332,Title 38 Section 7332,2019-12-15
-7.0.0,UD,,2019-12-15
 7.0.0,UD,Unit Dose,2019-12-15
+7.0.0,UD,,2019-12-15
 7.0.0,UDE,unit dose equivalent,2019-12-15
 7.0.0,UFIL,Ultrafiltration,2019-12-15
 7.0.0,ULIFE,universal life insurance policy,2019-12-15
@@ -1415,8 +1415,8 @@ version,code,description,release_date
 7.0.0,WATTRNS,water-borne transmission,2019-12-15
 7.0.0,WCBPOL,worker's compensation,2019-12-15
 7.0.0,WCBPOL,,2019-12-15
-7.0.0,WEEK,,2019-12-15
 7.0.0,WEEK,week,2019-12-15
+7.0.0,WEEK,,2019-12-15
 7.0.0,WELLREMLE,wellness reminder list entry,2019-12-15
 7.0.0,WELLREMLREV,wellness reminder list review,2019-12-15
 7.0.0,WGHT,,2019-12-15
@@ -1426,8 +1426,8 @@ version,code,description,release_date
 7.0.0,WRKCOMP,(workers compensation program,2019-12-15
 7.0.0,X,Container Unavailable,2019-12-15
 7.0.0,XRAY,x-ray,2019-12-15
-7.0.0,YEAR,year,2019-12-15
 7.0.0,YEAR,,2019-12-15
+7.0.0,YEAR,year,2019-12-15
 7.0.0,_ActPatientAnnotationType,ActPatientAnnotationType,2019-12-15
 7.0.0,_ActUSPrivacyLaw,_ActUSPrivacyLaw,2019-12-15
 7.0.0,_ImmunizationObservationType,ImmunizationObservationType,2019-12-15
