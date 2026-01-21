@@ -1,0 +1,221 @@
+map "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/ErogazioneFarmaceuticaNoSSN" = "ErogazioneFarmaceuticaNoSSN"
+
+conceptmap "priority" {
+  prefix s = "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+  prefix t = "http://hl7.org/fhir/ValueSet/request-priority" 
+  s:R == t:routine
+  s:P == t:asap
+  s:UR == t:urgent
+  s:EM == t: stat
+ }
+
+uses "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument" alias ClinicalDocument as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor" alias AssignedAuthor as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity" alias AssignedEntity as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssociatedEntity" alias AssociatedEntity as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/CustodianOrganization" alias CustodianOrganization as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/OrganizationPartOf" alias OrganizationPartOf as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Organization" alias rapresentedOrganization as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Section" alias Section as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PatientRole" alias PatientRole as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AD" alias AD as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Act" alias Act as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ" alias IVL_PQ as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PQ" alias PQ as source
+
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/Composition" alias Composition as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" alias Encounter as target
+uses "http://hl7.org/fhir/StructureDefinition/Person" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/List" alias List as target
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" alias Practitioner as target
+uses "http://hl7.org/fhir/StructureDefinition/Organization" alias Organization as target
+uses "http://hl7.org/fhir/StructureDefinition/SimpleQuantity" alias SimpleQuantity as target
+
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/CdaToFhirDataTypes"
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/FULLHEADER"
+
+group CdaToBundle(source cda : ClinicalDocument, target bundle : Bundle) {
+    cda ->  bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('Composition') as composition,  composition.id = uuid() as uuid1,  e.fullUrl = append('https://example/Composition/', uuid1), request.url = 'Composition',  bundle.entry as e2, e2.request = create('BackboneElement') as requestPAT, requestPAT.method = 'PUT', e2.resource = create('Patient') as patient,  patient.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Patient/', uuid2), bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST',  e3.resource = create('Encounter') as encounter,  encounter.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Encounter/', uuid3), request.url = 'Encounter', bundle.entry as e4, e4.request = create('BackboneElement') as request, request.method = 'POST',  e4.resource = create('DocumentReference') as DocumentReference,  DocumentReference.id = uuid() as uuid4,  e4.fullUrl = append('https://example/DocumentReference/', uuid4),request.url = 'DocumentReference' then {
+    cda then ClinicalDocumentToBundle(cda, patient, composition, encounter, bundle, DocumentReference) "cdatobundle";
+    cda.recordTarget as recordTarget then{
+        recordTarget.patientRole as patient then{
+        patient.id as id -> patient.identifier as identifier then {
+        id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+        id.extension as ext1 -> identifier.value = ext1 "value";
+        id.assigningAuthorityName as s -> identifier.assigner as a, a.display = s;
+        }"idfr";
+        patient.id as id where (root='2.16.840.1.113883.2.9.4.3.2') or (root='2.16.840.1.113883.2.9.4.3.7')
+        or (root='2.16.840.1.113883.2.9.4.3.3') or(root='2.16.840.1.113883.2.9.4.3.17')  or (root = '2.16.840.1.113883.2.9.4.3.18') or (root = '2.16.840.1.113883.2.9.2.10.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.20.4.1.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.41.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.42.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.50.4.1.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.70.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.80.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.90.4.1.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1.1') or (root = '2.16.840.1.113883.2.9.2.120.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.130.4.1.1') or (root = '2.16.840.1.113883.2.9.2.140.4.1.1') or (root = '2.16.840.1.113883.2.9.2.150.4.1.1') or (root = '2.16.840.1.113883.2.9.2.160.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.170.4.1.1') or (root = '2.16.840.1.113883.2.9.2.180.4.1.1') or (root = '2.16.840.1.113883.2.9.2.190.4.1.1') or (root = '2.16.840.1.113883.2.9.2.200.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.10.4.1') or (root = '2.16.840.1.113883.2.9.2.20.4.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1') or (root = '2.16.840.1.113883.2.9.2.41.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.42.4.1') or (root = '2.16.840.1.113883.2.9.2.50.4.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1') or (root = '2.16.840.1.113883.2.9.2.70.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.80.4.1') or (root = '2.16.840.1.113883.2.9.2.90.4.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.120.4.1')  or (root = '2.16.840.1.113883.2.9.2.130.4.1')  or (root = '2.16.840.1.113883.2.9.2.140.4.1')  or (root = '2.16.840.1.113883.2.9.2.150.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.160.4.1')  or (root = '2.16.840.1.113883.2.9.2.170.4.1')  or (root = '2.16.840.1.113883.2.9.2.180.4.1')  or (root = '2.16.840.1.113883.2.9.2.190.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.200.4.1') or (root='2.16.840.1.113883.2.9.4.3.15')  then {
+          id.extension as ext -> requestPAT.url = append('Patient?identifier=',ext) "UUID";
+          }"ext";
+        }"recPat";
+    }"patient";
+    } "ClinicalDocumentToBody";
+}
+
+group ClinicalDocumentToBundle(source cda : ClinicalDocument, target patient : Patient, target composition : Composition, target encounter : Encounter, target bundle : Bundle, target DocumentReference : DocumentReference) {
+    cda -> bundle.id = uuid() "id";
+    cda.id -> bundle.identifier "identifier";
+    cda -> bundle.type = 'transaction' "type";
+    cda -> bundle.timestamp=(timestamp.now()) "date";
+    cda then ClinicalDocumentComposition(cda, composition, patient, encounter, bundle, DocumentReference) "composition";
+    cda.component as component then {
+      component.structuredBody as body then {
+        body.component as component  then {
+           component.section as srcSection then {
+          srcSection.code -> composition.section as tgtSection  then ClinicalDocumentSection(cda, srcSection, patient, tgtSection, bundle,encounter);       
+         } "section";
+        } "componentbody";
+      }"body";
+    }"componentcda";
+  }
+
+  group ClinicalDocumentSection(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter) {
+    src.title as t -> tgt.title= (t.xmlText);
+    src.code -> tgt.code;
+    src.code where (code='60590-7') then {
+    src.entry as entry-> bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('MedicationDispense') as MedicationDispense,  MedicationDispense.id = uuid() as uuid1,  e.fullUrl = append('https://example/MedicationDispense/', uuid1), request.url = 'MedicationDispense', tgt.entry = create('Reference') as reference,  reference.reference = ('https://example/MedicationDispense/' + %MedicationDispense.id)  then{
+    src.text as cdaText -> tgt.text as fhirText then {
+       cdaText -> fhirText.status = 'generated' "narrativeStatus";
+         cdaText as t -> fhirText.div = t "narrativeText";
+        } "cdaText";
+     cda.inFulfillmentOf as inFulfillmentOf then{
+      inFulfillmentOf.order as order -> bundle.entry as e40,  e40.request = create('BackboneElement') as request, request.method = 'POST', e40.resource = create('MedicationRequest') as MedicationRequest,  MedicationRequest.id = uuid() as uuid1,  e40.fullUrl = append('https://example/MedicationRequest/', uuid1), request.url = 'MedicationRequest', MedicationDispense.authorizingPrescription=create('Reference') as reference,   reference.reference = ('https://example/MedicationRequest/' + %MedicationRequest.id) then {
+          order.id -> MedicationRequest.identifier;
+          order -> MedicationRequest.status='active'"status";
+          order -> MedicationRequest.intent='order'"intent";
+          order -> MedicationRequest.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+          order.code -> MedicationRequest.code;
+          order.priorityCode as priorityCode then{
+            priorityCode.code as v -> MedicationRequest.priority = translate(v, '#priority', 'code') "priority";
+        }"priorityCode";
+        src->MedicationDispense.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";     
+        src -> MedicationDispense.status = 'completed' "stats";
+  //----Sezione Erogazione Farmaceutica------------------------------------------------------------------------------------------------------------------------------------     
+             entry.supply as supply then {
+                 supply.effectiveTime as effectiveTime then {
+                    effectiveTime.low as low -> MedicationDispense.whenHandedOver = create('dateTime') as value then TSDateTime(low, value) "valuePeriodLow";
+                 }"effectiveTime";
+                 supply.quantity->MedicationDispense.quantity;
+                 supply.product as product then {
+                     product.manufacturedProduct as manufacturedProduct then {
+                      manufacturedProduct.manufacturedLabeledDrug as manufacturedLabeledDrug -> bundle.entry as e2,  e2.request = create('BackboneElement') as request, request.method = 'POST', e2.resource = create('Medication') as Medication,  Medication.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Medication/', uuid2), request.url = 'Medication',MedicationDispense.medication=create('Reference') as reference,  reference.reference = ('https://example/Medication/' + %Medication.id), MedicationRequest.medication=create('Reference') as reference,  reference.reference = ('https://example/Medication/' + %Medication.id)  then {
+                      manufacturedLabeledDrug ->Medication.code=create('CodeableConcept') as med then {
+                      manufacturedLabeledDrug.name as name then {
+                         name.item as item then {
+                                  item -> med.text=(item.xmlText) "med";
+                                 }"item";
+                                }"name";  
+                      manufacturedLabeledDrug.code->Medication.code;
+                        }"manufacturedLabeledDrug";
+                      } "medication";  
+                   }"manufacteredProduct";
+                 }"product";
+                 //-----Prezzo-------
+                 supply.entryRelationship as entryrelationship then {
+                  entryrelationship.observation as obs1 where (obs1.templateId.root = '2.16.840.1.113883.3.1937.777.63.10.829' ) then{
+                  obs1 -> bundle.entry as e4,  e4.request = create('BackboneElement') as request, request.method = 'POST', e4.resource = create('ChargeItem') as chargeitem,  chargeitem.id = uuid() as uuid1,  e4.fullUrl = append('https://example/ChargeItem/', uuid1), request.url = 'ChargeItem', MedicationDispense.supportingInformation=create('Reference') as reference,   reference.reference = ('https://example/ChargeItem/' + %chargeitem.id) then {
+                  obs1 -> chargeitem.status='unknown'"status"; 
+                  obs1->chargeitem.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+                  obs1.code -> chargeitem.code;
+                  obs1.value->chargeitem.priceOverride; 
+                   }"chargeitem";
+                  }"obs1";
+                 }"obsprezzo";
+                 //-----Altri Costi---------
+                  supply.entryRelationship as entryrelationship then {
+                  entryrelationship.observation as obs2 where (obs2.templateId.root = '2.16.840.1.113883.3.1937.777.63.10.830' ) then{
+                  obs2 -> bundle.entry as e4,  e4.request = create('BackboneElement') as request, request.method = 'POST', e4.resource = create('ChargeItem') as chargeitem,  chargeitem.id = uuid() as uuid1,  e4.fullUrl = append('https://example/ChargeItem/', uuid1), request.url = 'ChargeItem', MedicationDispense.supportingInformation=create('Reference') as reference,   reference.reference = ('https://example/ChargeItem/' + %chargeitem.id) then {
+                  obs2 -> chargeitem.status='unknown'"status"; 
+                  obs2->chargeitem.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+                  obs2.code -> chargeitem.code;
+                  obs2.value->chargeitem.priceOverride; 
+                   }"chargeitem";
+                  }"obs1";
+                 }"altricosti";
+
+                  supply.entryRelationship as entryrelationship-> MedicationDispense.substitution=create('BackboneElement') as substitution then {
+                  entryrelationship.act as act then {
+                  act.code where (code='S') or (code='V') then{
+                  act->substitution.wasSubstituted= create('boolean'),substitution.wasSubstituted='true' "act";
+                    }"code";
+                  act.entryRelationship as EntryRelationship1 then {
+                  EntryRelationship1.observation as observation then {
+                  observation.templateId where (root='2.16.840.1.113883.3.1937.777.63.10.812') then {
+                  observation.code->substitution.reason "reason";
+                  observation.entryRelationship as EntryRelationship2 then {
+                  EntryRelationship2.substanceAdministration as substanceAdministration then {
+                  substanceAdministration.consumable as consumable then {
+                  consumable.manufacturedProduct as manufacturedProduct then {   
+                  manufacturedProduct.manufacturedLabeledDrug as manufacturedLabeledDrug then{
+                  manufacturedLabeledDrug.code->substitution.type "type";
+                                    } "medication";
+                                  }"material";
+                                }"manufacteredProduct";
+                              }"consumable";
+                            }"substanceAdministration";
+
+                         }"templateId";
+                        }"observation";
+                       }"EntryRelationship1";
+                     }"act";
+                 }"entryrelationship";
+                 supply.entryRelationship as entryrelationship1 then {
+                    entryrelationship1.observation as observation then {
+                       observation.templateId where (root='2.16.840.1.113883.3.1937.777.63.10.813') then {
+                        observation.code->MedicationDispense.category "type";
+                       }"templateId";
+                    }"observation";
+                 }"entryrelationship1";
+
+                    supply.entryRelationship as entryrelationship1 then {
+                    entryrelationship1.act as act then {
+                       act.templateId where (root='2.16.840.1.113883.3.1937.777.63.10.818') then {
+                       act.text as text -> MedicationDispense.note as note then {
+                        text.reference as t then{
+                          t.value as l ->note.text=l "reference";
+                         }"text";
+                        }"reference";
+                       }"templateId";
+                    }"observation";
+                 }"entryrelationship1";
+
+             }"supply";
+         }"medReq";
+      }"inful"; 
+    }"medDisp";  
+  }"controllocode";  
+ //-----Messaggio Regionale------
+  src.code where (code='51851-4') then {
+     src.title as t -> tgt.title = (t.xmlText);
+            src.code -> tgt.code;
+            src.text as cdaText -> tgt.text as fhirText then { 
+            cdaText -> fhirText.status = 'generated' "narrativeStatus";
+            cdaText as t -> fhirText.div = t "narrativeText"; 
+          }"entry";
+         }"messaggioregionale";
+
+  //--------Annotazioni-------------------       
+  src.code where (code='48767-8') then {
+    src.title as t -> tgt.title = (t.xmlText);
+            src.code -> tgt.code;
+            src.text as cdaText -> tgt.text as fhirText then { 
+            cdaText -> fhirText.status = 'generated' "narrativeStatus";
+            cdaText as t -> fhirText.div = t "narrativeText"; 
+          }"entry";
+  }"annotazioni";
+
+}
