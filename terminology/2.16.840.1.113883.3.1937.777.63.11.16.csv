@@ -1,0 +1,4 @@
+version,code,description,release_date
+"",A,"il codice inserito nel campo si riferisce ad un codice AIC, riferito allo stesso farmaco prescritto dal medico, ma che il farmacista ritiene pi?? aggiornato come codice",
+"",S,"il codice AIC inserito nel campo rappresenta una sostituzione di farmaco, prevista per legge, rispetto a quanto indicato dal medico prescrittore. Se ?? impostato tale valore, deve essere impostata pure la motivazione della sostituzione tramite il campo motivazSostProd",
+"",V,il codice prestazione inserito nel campo ?? stato variato dall???erogatore specialistico rispetto a quanto prescritto dal medico,
