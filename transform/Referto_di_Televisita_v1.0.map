@@ -1,0 +1,979 @@
+map "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/RefertodiTelevisita" = "RefertodiTelevisita"
+
+conceptmap "OBSstatus" {
+prefix s = "http://terminology.hl7.org/ValueSet/v3-statusCode"
+prefix t = "http://hl7.org/fhir/observation-status"
+
+s:completed == t:final
+s:active == t:registered
+s:aborted == t:cancelled
+s:suspended == t:partial
+}
+conceptmap "MedicationStatusMap" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-statusCode"
+    prefix t = "http://hl7.org/fhir/CodeSystem/medicationrequest-status"
+    
+    s:completed == t:completed
+    s:active == t:active
+    s:aborted == t:cancelled
+    s:suspended == t:"on-hold"
+    }
+conceptmap "cm-v3-administrative-gender" {
+prefix s = "http://terminology.hl7.org/ValueSet/v3-AdministrativeGender"
+prefix t = "http://hl7.org/fhir/ValueSet/administrative-gender"
+
+s:M == t:male
+s:F == t:female
+}
+
+conceptmap "AllergyTypeMap" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-type"
+    prefix t = "http://hl7.org/fhir/ValueSet/allergy-intolerance-type"
+
+    s:OINT == t:intolerance
+    s:ALG == t:allergy
+    s:DALG == t:allergy
+    s:EALG == t:allergy
+    s:FALG == t:allergy
+    s:NAINT == t:intolerance
+    s:FNAINT == t:intolerance
+    s:DNAINT == t:intolerance
+    s:ENAINT == t:intolerance
+    s:FINT == t:intolerance
+    s:DINT == t:intolerance
+    s:EINT == t:intolerance
+  }
+  conceptmap "AllergyCategoryMap" {
+    prefix s = "http://terminology.hl7.org/ValueSet/v3-type"
+    prefix t = "http://hl7.org/fhir/ValueSet/allergy-intolerance-category"
+
+    s:DALG == t:medication
+    s:EALG == t:enviroment
+    s:FALG == t:food
+    s:FNAINT == t:food
+    s:DNAINT == t:medication
+    s:ENAINT == t:enviroment
+    s:FINT == t:food
+    s:DINT == t:medication
+    s:EINT == t:enviroment
+  }
+
+uses "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument" alias ClinicalDocument as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor" alias AssignedAuthor as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity" alias AssignedEntity as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssociatedEntity" alias AssociatedEntity as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/CustodianOrganization" alias CustodianOrganization as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/OrganizationPartOf" alias OrganizationPartOf as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Organization" alias rapresentedOrganization as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Section" alias Section as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PatientRole" alias PatientRole as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AD" alias AD as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Act" alias Act as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ" alias IVL_PQ as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PQ" alias PQ as source
+
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/Composition" alias Composition as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" alias Encounter as target
+uses "http://hl7.org/fhir/StructureDefinition/Person" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/List" alias List as target
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" alias Practitioner as target
+uses "http://hl7.org/fhir/StructureDefinition/Organization" alias Organization as target
+uses "http://hl7.org/fhir/StructureDefinition/SimpleQuantity" alias SimpleQuantity as target
+
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/CdaToFhirDataTypes"
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/FULLHEADER"
+
+group CdaToBundle(source cda : ClinicalDocument, target bundle : Bundle) {
+    cda ->  bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('Composition') as composition,  composition.id = uuid() as uuid1,  e.fullUrl = append('https://example/Composition/', uuid1), request.url = 'Composition',  bundle.entry as e2, e2.request = create('BackboneElement') as requestPAT, requestPAT.method = 'PUT', e2.resource = create('Patient') as patient,  patient.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Patient/', uuid2), bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST',  e3.resource = create('Encounter') as encounter,  encounter.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Encounter/', uuid3), request.url = 'Encounter', bundle.entry as e4, e4.request = create('BackboneElement') as request, request.method = 'POST',  e4.resource = create('DocumentReference') as DocumentReference,  DocumentReference.id = uuid() as uuid4,  e4.fullUrl = append('https://example/DocumentReference/', uuid4),request.url = 'DocumentReference' then {
+    cda then ClinicalDocumentToBundle(cda, patient, composition, encounter, bundle, DocumentReference) "cdatobundle";
+    cda.recordTarget as recordTarget then{
+        recordTarget.patientRole as patient then{
+        patient.id as id -> patient.identifier as identifier then {
+        id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+        id.extension as ext1 -> identifier.value = ext1 "value";
+        id.assigningAuthorityName as s -> identifier.assigner as a, a.display = s;
+        }"idfr";
+        patient.id as id where (root='2.16.840.1.113883.2.9.4.3.2') or (root='2.16.840.1.113883.2.9.4.3.7')
+        or (root='2.16.840.1.113883.2.9.4.3.3') or(root='2.16.840.1.113883.2.9.4.3.17')  or (root = '2.16.840.1.113883.2.9.4.3.18') or (root = '2.16.840.1.113883.2.9.2.10.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.20.4.1.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.41.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.42.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.50.4.1.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.70.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.80.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.90.4.1.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1.1') or (root = '2.16.840.1.113883.2.9.2.120.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.130.4.1.1') or (root = '2.16.840.1.113883.2.9.2.140.4.1.1') or (root = '2.16.840.1.113883.2.9.2.150.4.1.1') or (root = '2.16.840.1.113883.2.9.2.160.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.170.4.1.1') or (root = '2.16.840.1.113883.2.9.2.180.4.1.1') or (root = '2.16.840.1.113883.2.9.2.190.4.1.1') or (root = '2.16.840.1.113883.2.9.2.200.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.10.4.1') or (root = '2.16.840.1.113883.2.9.2.20.4.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1') or (root = '2.16.840.1.113883.2.9.2.41.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.42.4.1') or (root = '2.16.840.1.113883.2.9.2.50.4.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1') or (root = '2.16.840.1.113883.2.9.2.70.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.80.4.1') or (root = '2.16.840.1.113883.2.9.2.90.4.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.120.4.1')  or (root = '2.16.840.1.113883.2.9.2.130.4.1')  or (root = '2.16.840.1.113883.2.9.2.140.4.1')  or (root = '2.16.840.1.113883.2.9.2.150.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.160.4.1')  or (root = '2.16.840.1.113883.2.9.2.170.4.1')  or (root = '2.16.840.1.113883.2.9.2.180.4.1')  or (root = '2.16.840.1.113883.2.9.2.190.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.200.4.1') or (root='2.16.840.1.113883.2.9.4.3.15')  then {
+          id.extension as ext -> requestPAT.url = append('Patient?identifier=',ext) "UUID";
+          }"ext";
+        }"recPat";
+     }"patient";
+    } "ClinicalDocumentToBody";
+}
+
+group ClinicalDocumentToBundle(source cda : ClinicalDocument, target patient : Patient, target composition : Composition, target encounter : Encounter, target bundle : Bundle, target DocumentReference : DocumentReference) {
+    cda -> bundle.id = uuid() "id";
+    cda.id -> bundle.identifier "identifier";
+    cda -> bundle.type = 'transaction' "type";
+    cda -> bundle.timestamp=(timestamp.now()) "date";
+    cda then ClinicalDocumentComposition(cda, composition, patient, encounter, bundle, DocumentReference) "composition";
+    cda.component as component then {
+    component.structuredBody as body then {
+        body.component as component  then {
+            component.section as srcSection then {
+            //---------Section Narrative-----------
+            srcSection.code where (code = '29545-1') or (code = '93126-1') or (code = '47045-0') or (code = '55110-1') or (code = '62385-0') -> composition.section as tgtSection  then ClinicalDocumentSectionObservationNarrative(cda, srcSection, patient, tgtSection, bundle, encounter) "observationnarr";
+            //---------Section con entry Observation---------------         
+            srcSection.code where (code = '29299-5') or (code = '30954-2') or (code = '29548-5') -> composition.section as tgtSection  then ClinicalDocumentSectionEntryObservation(cda, srcSection, patient, tgtSection, bundle, encounter) "entryobservation";
+            //---------Section con entry Act-----------------------
+             srcSection.code where (code = '80615-8') -> composition.section as tgtSection  then ClinicalDocumentSectionEntryAct(cda, srcSection, patient, tgtSection, bundle, encounter) "entryact";
+            //---------Section Storia Clinica---------------
+            srcSection.code where (code = '11329-0') -> composition.section as tgtSection  then ClinicalDocumentSectionStoriaClinica(cda, srcSection, patient, tgtSection, bundle, encounter) "sectionStoriaClinica";
+            //---------Section Prestazioni------------------
+             srcSection.code where (code = '62387-6') -> composition.section as tgtSection  then ClinicalDocumentSectionPrestazioni(cda, srcSection, patient, tgtSection, bundle, encounter) "sectionPrestazioni";
+            //--------Section Terapia Farmacologica Consigliata----------------
+             srcSection.code where (code = '93341-6') -> composition.section as tgtSection  then ClinicalDocumentSectionTerapiaFarmacologicaConsigliata(cda, srcSection, patient, tgtSection, bundle, encounter) "sectionTerapiaFarmaConsigliata";
+            } 
+          "section";
+        } "component";
+      }"body";
+    }"component";
+}
+//--------------------------------------------------------------Sections----------------------------------------------------------------------------
+group ClinicalDocumentSectionObservationNarrative(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+    src.title as t -> tgt.title = (t.xmlText);
+    src.code -> tgt.code;
+    src.text as cdaText -> tgt.text as fhirText then { 
+    src.text as cdaText -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url ='Observation' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then {
+     cdaText -> fhirText.status = 'generated' "narrativeStatus";
+     cdaText as t -> fhirText.div = t "narrativeText"; 
+    src.code->obs1.code;
+    src->obs1.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    src-> obs1.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";      
+    src -> obs1.status ='final'"status";
+    src.text as t ->obs1.value=cast(t, 'string');                  
+     } "cdaText";
+    } "fhirText";
+}
+
+group ClinicalDocumentSectionEntryObservation(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+    src.title as t -> tgt.title = (t.xmlText);
+    src.code -> tgt.code;
+    src.text as cdaText -> tgt.text as fhirText then { 
+     cdaText -> fhirText.status = 'generated' "narrativeStatus";
+     cdaText as t -> fhirText.div = t "narrativeText"; 
+     //------Section Narrativa----------------
+    src where src.entry.exists().not() -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url ='Observation' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then {
+    src.code->obs1.code;
+    src->obs1.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    src-> obs1.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";      
+    src -> obs1.status ='final'"status";
+    src.text as t ->obs1.value=cast(t, 'string'); 
+      } "entryexistsnot"; 
+     } "fhirText";
+    //------Section Strutturata---------------
+    src.entry as entry where src.entry.exists() then {
+    entry.observation as observation -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url ='Observation' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then Observation(observation, patient, enc, obs1, bundle) "entryObs";
+    entry.observationMedia as obsmedia where entry.observationMedia.exists() -> bundle.entry as e5, e5.request = create('BackboneElement') as request, request.method = 'POST', e5.resource = create('Media') as media,  media.id = uuid() as uuid5,  e5.fullUrl = append('https://example/Media/', uuid5), request.url ='Media' ,tgt.entry = create('Reference') as reference,  reference.reference = ('https://example/Media/' + %media.id) then {
+    obsmedia->media.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    obsmedia-> media.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";      
+    obsmedia -> media.status ='completed'"status"; 
+    obsmedia-> media.content = create('Attachment') as Attachment then {
+          obsmedia.value as valueMedia then {
+          valueMedia.mediaType as ctype -> Attachment.contentType= ctype "type";
+          valueMedia as v -> Attachment.data=(v.xmlText) "data";
+           }"valuemedia";            
+          } "Attachment";
+        }"obsmedia";
+      } "entryexists";
+}
+
+group ClinicalDocumentSectionEntryAct(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+    src.title as t -> tgt.title = (t.xmlText);
+    src.code -> tgt.code;
+    src.text as cdaText -> tgt.text as fhirText then { 
+     cdaText -> fhirText.status = 'generated' "narrativeStatus";
+     cdaText as t -> fhirText.div = t "narrativeText"; 
+     //------Section Narrativa----------------
+    src where src.entry.exists().not() -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url ='Observation' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then {
+    src.code->obs1.code;
+    src->obs1.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    src-> obs1.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";      
+    src -> obs1.status ='final'"status";
+    src.text as t ->obs1.value=cast(t, 'string'); 
+      } "entryexistsnot"; 
+     } "fhirText";
+    //------Section Strutturata---------------
+    src.entry as entry where src.entry.exists() then {
+    entry.act as observation -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url ='Observation' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then Observation(observation, patient, enc, obs1, bundle) "entryObs";
+      } "entryexists";
+}
+
+group ClinicalDocumentSectionStoriaClinica(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+    src.title as t -> tgt.title = (t.xmlText);
+    src.code -> tgt.code;
+    src.text as cdaText -> tgt.text as fhirText then { 
+    cdaText -> fhirText.status = 'generated' "narrativeStatus";
+    cdaText as t -> fhirText.div = t "narrativeText"; 
+    //------Section Narrativa----------------
+    src where src.entry.exists().not() and src.component.exists().not() -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url ='Observation' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then {
+    src.code->obs1.code;
+    src->obs1.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    src-> obs1.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";      
+    src -> obs1.status ='final'"status";
+    src.text as t ->obs1.value=cast(t, 'string'); 
+    } "entryexistsnot"; 
+    } "fhirText";
+
+    //------Section Strutturata---------------
+    src where src.entry.exists() or src.component.exists() -> bundle.entry as e2, e2.request = create('BackboneElement') as request, request.method = 'POST', e2.resource = create('Observation') as obs2,  obs2.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Observation/', uuid2), request.url = 'Observation', tgt.entry = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs2.id) then {
+            src -> obs2.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+            src -> obs2.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";  
+            src -> obs2.status = 'final' "STatusobse";
+            src.code -> obs2.code;
+            src.entry as entry then {
+                //---------Anamnesi Fisiologica Patologica-------------
+                entry.observation as observation then {
+                observation -> bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST', e3.resource = create('Condition') as condition,  condition.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Condition/', uuid3), request.url = 'Condition', obs2.focus = create('Reference') as reference,  reference.reference = ('https://example/Condition/' + %condition.id) then ConditionFunction(observation ,condition, patient, enc, bundle) "condition";        
+                }"AnamnesiFisiologicaPatologica";
+                //-----------------Anamnesi Familiare------------------
+                entry.organizer as organizer then {
+                    organizer -> bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('List') as list11,  list11.id = uuid() as uuid11,  e11.fullUrl = append('https://example/List/', uuid11), request.url = 'List', obs2.focus = create('Reference') as reference,  reference.reference = ('https://example/List/' + %list11.id) then{
+                        organizer -> list11.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+                        organizer -> list11.status = 'current' "liststat";
+                        organizer -> list11.mode = 'working' "listmd";
+                        organizer -> list11.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";  
+                        organizer.code as code -> list11.code=create('CodeableConcept') as ce then CECodeableConcept(code,ce) "CE";
+                        organizer -> list11.entry as entryList2 then{
+                            organizer ->bundle.entry as e12, e12.request = create('BackboneElement') as request, request.method = 'POST', e12.resource = create('FamilyMemberHistory') as familyMember, familyMember.id = uuid() as uuid12,  e12.fullUrl = append('https://example/FamilyMemberHistory/', uuid12), request.url = 'FamilyMemberHistory', entryList2.item = create('Reference') as reference, reference.reference = ('https://example/FamilyMemberHistory/' + %familyMember.id) then FamilyMemberFunction(organizer, familyMember, patient) "family";
+                        }"org";
+                    }"List";
+                }"organizer";
+            }"entry";
+            //---------SottoSection------------
+             src.component as component then{
+                component.section as sottosection -> tgt.section as sottosection then{
+                    //---------Terapia Farmacologica in atto-----------------
+                    sottosection.code where code = '10160-0' then{
+                    sottosection.code -> sottosection.code;
+                    sottosection.title as t-> sottosection.title= (t.xmlText);    
+                    sottosection.text as cdaText -> sottosection.text as fhirText then { 
+                    cdaText -> fhirText.status = 'generated' "narrativeStatus";
+                    cdaText as t -> fhirText.div = t "narrativeText"; 
+                    //------SottoSection Narrativa----------------
+                     sottosection where sottosection.entry.exists().not() then{
+                     sottosection -> bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('MedicationStatement') as medicationstatement,  medicationstatement.id = uuid() as uuid11,  e11.fullUrl = append('https://example/MedicationStatement/', uuid11), request.url = 'MedicationStatement', sottosection.entry = create('Reference') as reference,  reference.reference = ('https://example/MedicationStatement/' + %medicationstatement.id) ,obs2.partOf = create('Reference') as reference,  reference.reference = ('https://example/MedicationStatement/' + %medicationstatement.id) then {
+                     sottosection -> medicationstatement.subject = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+                     sottosection-> medicationstatement.status ='unknown'"statuscode";
+                     sottosection.text as cdaText -> medicationstatement.medication=create('CodeableConcept') as med then {               
+                     cdaText as t  -> med.text=t "narrativa"; 
+                        }"med";
+                       }"medStatementnarrativa";
+                      }"sottosection";
+                     } "fhirText";
+                    //------SottoSection Strutturata----------------
+                        sottosection.entry as entry where sottosection.entry.exists() then{
+                            entry.substanceAdministration as subAdmin -> bundle.entry as e11, e11.request = create('BackboneElement') as request, request.method = 'POST', e11.resource = create('MedicationStatement') as medicationstatement,  medicationstatement.id = uuid() as uuid11,  e11.fullUrl = append('https://example/MedicationStatement/', uuid11), request.url = 'MedicationStatement', sottosection.entry = create('Reference') as reference,  reference.reference = ('https://example/MedicationStatement/' + %medicationstatement.id) ,obs2.partOf = create('Reference') as reference,  reference.reference = ('https://example/MedicationStatement/' + %medicationstatement.id) then MedicationStatement(subAdmin, medicationstatement, patient, enc, bundle) "medStatement";
+                        }"entry";
+                    }"Terapia Farmacologica in atto";
+                    //---------Allergie-----------------
+                    sottosection.code where code = '48765-2' then{
+                    sottosection.code -> sottosection.code;
+                    sottosection.title as t-> sottosection.title= (t.xmlText);    
+                    sottosection.text as cdaText -> sottosection.text as fhirText then { 
+                    cdaText -> fhirText.status = 'generated' "narrativeStatus";
+                    cdaText as t -> fhirText.div = t "narrativeText"; 
+                    //------SottoSection Narrativa----------------
+                    sottosection where sottosection.entry.exists().not() then{
+                    sottosection -> bundle.entry as e9, e9.request = create('BackboneElement') as request, request.method = 'POST', e9.resource = create('AllergyIntolerance') as allergyIntolerance,  allergyIntolerance.id = uuid() as uuid9,  e9.fullUrl = append('https://example/AllergyIntolerance/', uuid9), request.url = 'AllergyIntolerance', sottosection.entry  = create('Reference') as reference,  reference.reference = ('https://example/AllergyIntolerance/' + %allergyIntolerance.id), obs2.focus = create('Reference') as reference,  reference.reference = ('https://example/AllergyIntolerance/' + %allergyIntolerance.id)  then {
+                    sottosection -> allergyIntolerance.patient=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+                    sottosection -> allergyIntolerance.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference"; 
+                    sottosection.text as cdaText -> allergyIntolerance.note as note then{
+                    cdaText as t ->note.text =t "reference";
+                         }"reference";
+                        }"allergienarrativa";
+                       }"sottosection";
+                     } "fhirText";
+                     //------SottoSection Strutturata----------------
+                        sottosection where sottosection.entry.exists() -> bundle.entry as e4, e4.request = create('BackboneElement') as request, request.method = 'POST', e4.resource = create('List') as list1,  list1.id = uuid() as uuid4,  e4.fullUrl = append('https://example/List/', uuid4), request.url = 'List', sottosection.entry = create('Reference') as reference,  reference.reference = ('https://example/List/' + %list1.id), obs2.focus = create('Reference') as reference,  reference.reference = ('https://example/List/' + %list1.id) then{
+                        sottosection -> list1.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+                        sottosection -> list1.status = 'current' "listatus";
+                        sottosection -> list1.mode = 'working' "lstmod";
+                        sottosection -> list1.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";  
+                        sottosection -> list1.entry as entryList1 then{
+                        sottosection.entry as entry then{
+                            entry.act as act1 -> bundle.entry as e5, e5.request = create('BackboneElement') as request, request.method = 'POST', e5.resource = create('AllergyIntolerance') as allergy,  allergy.id = uuid() as uuid5,  e5.fullUrl = append('https://example/AllergyIntolerance/', uuid5), request.url = 'AllergyIntolerance', entryList1.item = create('Reference') as reference,  reference.reference = ('https://example/AllergyIntolerance/' + %allergy.id) then AllergyFunction(act1, allergy, patient,enc) "allergy";
+                                }"entryAllergie";
+                            }"entryList";
+                        }"list";
+                    }"sottosectionAllergie";
+                }"sottosection";
+            } "component";
+        }"StoriaClinica1";
+}
+
+group ClinicalDocumentSectionPrestazioni(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+    src.title as t -> tgt.title = (t.xmlText);
+    src.code -> tgt.code;
+    src.text as cdaText -> tgt.text as fhirText then { 
+     cdaText -> fhirText.status = 'generated' "narrativeStatus";
+     cdaText as t -> fhirText.div = t "narrativeText"; 
+     } "fhirText";
+    //------Section Strutturata---------------
+    src.entry as entry then {
+     //----entry act---------   
+     entry.act as act -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Procedure') as procedure,  procedure.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Procedure/', uuid1), request.url ='Procedure' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Procedure/' + %procedure.id) then {
+        act -> procedure.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";         
+        act->procedure.status ='unknown'"statuscode";
+        act.code as code -> procedure.code =create('CodeableConcept') as ce then CECodeableConcept(code,ce) "CE";
+        act.effectiveTime as effectiveTime -> procedure.performed = create('dateTime') as value then TSDateTime(effectiveTime, value) "data della prestazione";
+            act.entryRelationship as entryRel then{
+            //-----entryRelationship act procedure----------------
+            entryRel.procedure as procedure-> bundle.entry as e9, e9.request = create('BackboneElement') as request, request.method = 'POST', e9.resource = create('Procedure') as procedure2,  procedure2.id = uuid() as uuid9,  e9.fullUrl = append('https://example/Procedure/', uuid9), request.url = 'Procedure', procedure.partOf = create('Reference') as reference,  reference.reference = ('https://example/Procedure/' + %procedure2.id) then Procedure(procedure, patient, enc, procedure2, bundle) "procedurePrestazioni";
+            //------entryRelationship act substanceAdministation----------------
+            entryRel.substanceAdministration as subAdmin -> bundle.entry as e8, e8.request = create('BackboneElement') as request, request.method = 'POST', e8.resource = create('MedicationAdministration') as medAdmin,  medAdmin.id = uuid() as uuid8,  e8.fullUrl = append('https://example/MedicationAdministration/', uuid8), request.url = 'MedicationAdministration', procedure.partOf = create('Reference') as reference,  reference.reference = ('https://example/MedicationAdministration/' + %medAdmin.id) then MedicationAdministration(subAdmin, patient, enc, medAdmin, bundle) "farmacPrestazioni";
+            //------entryRelationship act Observation----------------
+            entryRel.observation as entryRobs -> bundle.entry as e7, e7.request = create('BackboneElement') as request, request.method = 'POST', e7.resource = create('Observation') as obs7,  obs7.id = uuid() as uuid7,  e7.fullUrl = append('https://example/Observation/', uuid7), request.url = 'Observation', procedure.partOf = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs7.id) then ObservationPrest(entryRobs, patient, enc, obs7, bundle) "osservazioniPrestazioni";
+                //------entryRelationship act Act----------------
+            entryRel.act as act2 -> bundle.entry as e6, e6.request = create('BackboneElement') as request, request.method = 'POST', e6.resource = create('Procedure') as procedure3,  procedure3.id = uuid() as uuid6,  e6.fullUrl = append('https://example/Procedure/', uuid6), request.url = 'Procedure', procedure.partOf = create('Reference') as reference,  reference.reference = ('https://example/Procedure/' + %procedure3.id) then Procedure(act2, patient, enc, procedure3, bundle) "procedureGenerichePrestazioni";
+            }"Relationship";
+    }"ActProcedure";
+    //------entry obserbation media--------
+    entry.observationMedia as obsmedia -> bundle.entry as e5, e5.request = create('BackboneElement') as request, request.method = 'POST', e5.resource = create('Media') as media,  media.id = uuid() as uuid5,  e5.fullUrl = append('https://example/Media/', uuid5), request.url ='Media' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Media/' + %media.id) then {
+        obsmedia-> media.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+        obsmedia-> media.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";      
+        obsmedia-> media.status ='completed'"status";                     
+        obsmedia-> media.content = create('Attachment') as Attachment then {
+        obsmedia.value as valueMedia then {
+        valueMedia.mediaType as ctype -> Attachment.contentType= ctype "type";
+        valueMedia as v -> Attachment.data=(v.xmlText) "data";
+         }"valuemedia";            
+        } "Attachment";
+      } "media";
+    } "entryexists";
+}
+
+group ClinicalDocumentSectionTerapiaFarmacologicaConsigliata(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt, target bundle : Bundle, target enc : Encounter){
+    src.title as t -> tgt.title = (t.xmlText);
+    src.code -> tgt.code;
+    src.text as cdaText -> tgt.text as fhirText then { 
+    cdaText -> fhirText.status = 'generated' "narrativeStatus";
+    cdaText as t -> fhirText.div = t "narrativeText"; 
+    //------Section Narrativa----------------
+    src where src.entry.exists().not() and src.component.exists().not() -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('MedicationRequest') as medR,  medR.id = uuid() as uuid1,  e1.fullUrl = append('https://example/MedicationRequest/', uuid1), request.url ='MedicationRequest' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/MedicationRequest/' + %medR.id) then {
+    src -> medR.subject = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src -> medR.encounter = create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %enc.id) "reference";
+    src -> medR.intent = 'proposal' "intent";
+    src where statusCode.exists().not() -> medR.status = 'unknown' "st";
+    src.statusCode as sc then {
+        sc.code as cos-> medR.status = translate(cos, '#MedicationStatusMap', 'code') "codeS";
+    }"status";
+    src.text as txt -> medR.note as note then{
+        txt -> note.text = (txt.value) "text";
+      }"note";
+     } "entryexistsnot"; 
+    } "fhirText";
+    //------Section Strutturata---------------
+    src.entry as entry where src.entry.exists() then {
+     //----entry Terapie Farmacologiche_SubstanceAdministration---------   
+     entry.substanceAdministration as subAdmin ->bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('MedicationRequest') as medR,  medR.id = uuid() as uuid1,  e1.fullUrl = append('https://example/MedicationRequest/', uuid1), request.url ='MedicationRequest' ,tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/MedicationRequest/' + %medR.id) then MedicationRequest(subAdmin, patient, enc, medR, bundle)"MedicationRequest";
+    } "entryexists";
+}
+
+//-------------------------------------------------------------------------Funzioni------------------------------------------------------------------
+group Observation(source cda : observation, target patient : Patient, target encounter : Encounter, target ob : Observation, target bundle : Bundle) {  
+    cda->ob.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    cda->ob.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference"; 
+    cda.code -> ob.code;
+    cda -> ob.status = 'final' "Stats";
+    cda.value:INT as int->ob.value=(int.value) "value";
+    cda.value : ST as value then {
+    value.xmlText as data -> ob.value = data "value";
+    }"st";
+    cda.value:BL as boolean ->ob.value=(boolean.value)"boolean";
+    cda.value:CE as val then{
+        val->ob.value =create('CodeableConcept') as ce then {
+        val.originalText as originalText then{
+            originalText.reference as reference-> ce.text = (reference.value) "reference";
+        }"originalText";
+        val -> ce.coding as coding then {
+        val.code as code -> coding.code = cast(code, 'string');
+        val.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+        val.displayName as display -> coding.display = cast(display, 'string');
+        } "code";
+        val.translation as translation -> ce.coding as coding then {
+          translation.code as code -> coding.code = cast(code, 'string');
+          translation.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+          translation.displayName as display -> coding.display = cast(display, 'string');
+          translation.qualifier as qualifier then{
+            qualifier.value as value -> ce.coding as coding then {
+              value.code as code -> coding.code = cast(code, 'string');
+              value.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+              value.displayName as display -> coding.display = cast(display, 'string');
+              } "value";
+            };
+          } "translation";
+        }"coding";
+      }"val";
+      cda.value:CD as val then{
+        val->ob.value =create('CodeableConcept') as ce then {
+        val.originalText as originalText then{
+            originalText.reference as reference-> ce.text = (reference.value) "reference";
+        }"originalText";
+        val -> ce.coding as coding then {
+        val.code as code -> coding.code = cast(code, 'string');
+        val.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+        val.displayName as display -> coding.display = cast(display, 'string');
+        } "code";
+        val.translation as translation -> ce.coding as coding then {
+          translation.code as code -> coding.code = cast(code, 'string');
+          translation.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+          translation.displayName as display -> coding.display = cast(display, 'string');
+          translation.qualifier as qualifier then{
+            qualifier.value as value -> ce.coding as coding then {
+              value.code as code -> coding.code = cast(code, 'string');
+              value.codeSystem as system -> coding.system = translate(system, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri');
+              value.displayName as display -> coding.display = cast(display, 'string');
+              } "value";
+            };
+          } "translation";
+        }"coding";
+      }"val";
+    cda.value:PQ as val then{
+        val->ob.value = create('Quantity') as quantity then {
+            val.value as value->quantity.value = value;
+            val.unit as unit-> quantity.unit = unit "unit";
+        }"quantity";
+    }"valueQuantity";
+    cda.effectiveTime as effectiveTime where (value.exists()) -> ob.effective = create('dateTime') as value then TSDateTime(effectiveTime, value) "value1";
+    cda.effectiveTime as effectiveTime where (low.exists()) -> ob.effective = create('Period') as value then IVLTSPeriod(effectiveTime, value) "valuePeriod";
+    cda.text as text -> ob.note as note then{
+        text.reference as reference -> note.text = (reference.value) "text";
+    } "note";
+    cda.statusCode as s then {
+        s.code as cos-> ob.status = translate(cos, '#OBSstatus', 'code') "codeS";
+    }"status";
+}  
+
+group ConditionFunction (source src: observation, target tgt: Condition, target patient : patient, target encounter : encounter, target bundle : Bundle) {
+    src.code -> tgt.category;
+    src -> tgt.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src -> tgt.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference"; 
+    src.statusCode as stscode -> tgt.verificationStatus as verifstatus then { 
+    stscode as codeS -> verifstatus.coding = create('Coding') as coding then {
+        codeS.code -> coding.code = 'confirmed' "code";
+        codeS -> coding.system ='http://terminology.hl7.org/CodeSystem/condition-ver-status' "system";
+        codeS -> coding.display= cast('Confirmed', 'string') "display";
+     }"coding";    
+    }"verifstatus";
+    src.effectiveTime as effectiveTime -> tgt.onset = create('Period') as value then IVLTSPeriod(effectiveTime, value) "valuePeriod";
+    src.value -> tgt.code;
+    src.entryRelationship as entryRelationship then{
+        entryRelationship.observation as obsentry then{
+            obsentry.code where code ='89261-2' then{
+            obsentry -> tgt.evidence as evidence, bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST', e1.resource = create('Observation') as obsy,  obsy.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Observation/', uuid1), request.url = 'Observation', evidence.detail = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obsy.id) then Observation(obsentry, patient, encounter, obsy, bundle) "observation";
+            }"observation";
+            obsentry.code as code where code = '33999-4' then{
+                obsentry.value as value -> tgt.clinicalStatus as clinicalstatus then {
+                    value -> clinicalstatus.coding = create('Coding') as coding then {
+                        value.code as code where(code = 'LA9041-0') -> coding.code =  'resolved' "code";
+                        value.code as code where(code = 'LA18632-2') -> coding.code =  'inactive' "code";
+                        value.code as code where(code = 'LA16666-2') -> coding.code =  'active' "code";
+                        value -> coding.system = 'http://terminology.hl7.org/CodeSystem/condition-clinical' "system";
+                        value.displayName as display-> coding.display= cast(display, 'string') "display";
+                    }"coding";           
+                    obsentry.text as text then{
+                     text.reference as reference -> clinicalstatus.text = (reference.value) "text";
+                    }"text";
+                }"clinicalstatus";
+            }"clinicalStatus2";
+        }"EntryRelObsevation";
+    } "entryR";
+}
+
+group FamilyMemberFunction(source src : organizer, target tgt : familyMember, target patient : patient){
+    src -> tgt.patient = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "patReference";    
+    src where src.statusCode .exists().not() then {
+    src->tgt.status ='health-unknown'"statuscode";
+       }"status";
+    src.statusCode as statusc where (code='completed') -> tgt.status ='completed';
+    src.statusCode as statusc where (code='active') -> tgt.status ='completed';
+    src.statusCode as statusc where (code='aborted') -> tgt.status ='entered-in-error';
+    src.statusCode as statusc where (code='suspended') -> tgt.status ='entered-in-error';
+    src.statusCode as statusc where (code='cancelled') -> tgt.status ='entered-in-error';
+    src.statusCode as statusc where (code='held') -> tgt.status ='entered-in-error';
+    src.statusCode as statusc where (code='new') -> tgt.status ='completed';
+    src.statusCode as statusc where (code='obsolete') -> tgt.status ='entered-in-error';
+    src.statusCode as statusc where (code='nullified') -> tgt.status ='health-unknown';
+    src.effectiveTime as effectiveTime -> tgt.date = create('date') as value then TSDateTime(effectiveTime,value) "date";
+    src.subject as subject then{
+        subject.relatedSubject as relatedSubject then{
+            relatedSubject.code -> tgt.relationship "relationshipCode";
+            relatedSubject.subject as subject -> tgt.sex as sex then {
+                subject.administrativeGenderCode as administrativeGenderCode -> sex.coding as coding then {
+                    administrativeGenderCode.code as sexCode-> coding.code = translate(sexCode, '#cm-v3-administrative-gender', 'code') "gender";
+                    administrativeGenderCode -> coding.system = 'http://hl7.org/fhir/administrative-gender' "system";
+                }"coding";
+            }"subject";
+        }"relatedSub";
+    }"relationship";
+    src.component as component -> tgt.condition as condition then{
+        component.observation as observation then{
+            observation.code -> condition.code "code";
+            observation.text as text -> tgt.note as note then{
+                text.reference as reference -> note.text = (reference.value) "value";
+            }"reference";
+             observation where observation.effectiveTime.exists() then {
+                observation.effectiveTime as effectiveTime -> tgt.condition = create('BackboneElement') as condition then {
+                    observation.code -> condition.code "code";
+                    observation.value -> condition.outcome "codeable"; 
+                    effectiveTime -> condition.onset = create('Period') as period then{
+                        effectiveTime -> period.start = create('dateTime') as start then TSDateTime(effectiveTime,start)
+                        "val";
+                    }"efft";
+                }"effttemp";
+            }"cont";
+            observation.value -> condition.outcome "codeable";
+            observation.entryRelationship as entryR then{
+                entryR.observation as obs then{
+                    obs where (code.code ='35267-4') then{
+                        obs.value as value -> condition.onset = create('Age') as Age then {
+                            value.value as valueAge -> Age.value = valueAge "age";
+                            value.unit as unit -> Age.code = unit "unit";
+                            value.unit as unit -> Age.unit = unit "unit";
+                            value -> Age.system = 'http://unitsofmeasure.org' "system";
+                    } "value";
+                }"insorgenza";
+                    obs where (code.code ='39016-1') then{
+                        obs.value as value -> tgt.deceased = create('Age') as Age then {
+                            value.value as valueAge -> Age.value = valueAge "age";
+                            value.unit as unit -> Age.code = unit "unit";
+                            value.unit as unit -> Age.unit = unit "unit";
+                            value -> Age.system = 'http://unitsofmeasure.org' "system";
+                    } "value";
+                }"death";
+            }"obser";
+            }"EntryRel";
+        }"observation";
+    }"component";
+}
+
+group AllergyFunction(source src: cdaElement, target tgt: AllergyIntolerance, target patient : patient, target encounter : encounter) {
+    src -> tgt.patient=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src -> tgt.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference"; 
+    src.text as text -> tgt.note as note then{
+     text.reference as reference -> note.text = (reference.value)"acttext";
+     }"note";
+    src.effectiveTime as effectiveTime where (value.exists()) -> tgt.recordedDate = create('dateTime') as value then TSDateTime(effectiveTime, value) "value1";
+    src.effectiveTime as effectiveTime where (low.exists()) then {
+    effectiveTime.low as low  -> tgt.recordedDate = create('dateTime') as value then TSDateTime(low, value) "low";
+    effectiveTime.high as high  -> tgt.lastOccurrence = create('dateTime') as value then TSDateTime(high, value) "high";
+    }"effective";
+    src.entryRelationship as entryRelationship1 then{
+        entryRelationship1.observation as observation1 then{
+            observation1.text as text -> tgt.note as note then{
+            text where text.reference.exists().not() -> note.text = (text.xmlText) "noreference";
+            text.reference as reference where text.reference.exists() -> note.text = (reference.value) "text";
+           }"note";  
+            observation1.effectiveTime as effectiveTime -> tgt.onset = create('Period') as value then IVLTSPeriod(effectiveTime, value) "valuePeriod";
+            observation1 -> tgt.code=create('CodeableConcept') as code then {
+            observation1.value as value then {
+             value.originalText as otext where value.originalText.exists() then {
+             otext.reference as reference -> code.text = (reference.value) "text";
+                        }"otext";
+                    }"value";      
+            observation1.code as code -> tgt.code as t then CECodeableConcept(code,t) "CE";
+             }"code";
+            observation1.value as code then{
+                code.code as code1-> tgt.type = translate(code1,'#AllergyTypeMap','code') "type"; 
+                code.code as code1 -> tgt.category = translate(code1,'#AllergyCategoryMap','code') "category";   
+            }"code";
+            //------Descrizione Agente & Reazione----------------
+            observation1.participant as participant-> tgt.reaction as reaction then{
+                observation1.entryRelationship as entryRelationship2 where (typeCode = 'MFST') then{
+                    entryRelationship2.observation as observation2 then{
+                        observation2.value -> reaction.manifestation "manifestation";
+                        observation2.effectiveTime as effectiveTime then{
+                            effectiveTime.low as low -> reaction.onset = create('dateTime') as value then TSDateTime(low, value) "valuePeriodLow";
+                        }"low";
+                    }"observ2";
+                }"entryR2";
+                participant.participantRole as participantRole then{
+                    participantRole.playingEntity as playingEntity then{
+                        playingEntity.code -> reaction.substance "reaction";
+                    }"playingEntity";
+                }"participantRole";
+            }"participant";
+            observation1.entryRelationship as entryRelationship2 where (typeCode = 'MFST') then{
+                entryRelationship2.observation as observation2 where observation1.participant.exists().not() -> tgt.reaction as reaction then{
+                    observation2.value -> reaction.manifestation "manifestation";
+                    observation2.effectiveTime as effectiveTime then{
+                        effectiveTime.low as low -> reaction.onset = create('dateTime') as value then TSDateTime(low, value) "valuePeriodLow";
+                    }"low";
+                }"observ2";
+            }"entryR2";
+            //--------------Descrizione Criticita------------
+            observation1.entryRelationship as entryRelationship3 where (typeCode = 'SUBJ') then{
+                entryRelationship3.observation as observation3 then{
+                    observation3.value as value then{
+                           value.code as code where(code = 'M') ->tgt.criticality = 'unable-to-assess'"uta";
+                           value.code as code where(code = 'L') ->tgt.criticality = 'low' "low"; 
+                           value.code as code where(code = 'H') ->tgt.criticality = 'high' "high"; 
+                    }"criticality"; 
+                }"observ3";
+            //----------Commenti-------------------
+                entryRelationship3.act as act -> tgt.note as note then{
+                    act.text as text then{
+                        text.reference as reference -> note.text = (reference.value);
+                    }"note";
+                }"act";
+            }"entryR3";
+            //-------------Stato dell'allergia/intolleranza---------------
+            observation1.entryRelationship as entryRelationship4 where (typeCode = 'REFR') then{
+                entryRelationship4.observation as observation4  then{
+                    observation4.value as value -> tgt.clinicalStatus as clinicalStatus then{
+                        value -> clinicalStatus.coding = create('Coding') as coding then{
+                            value.code as code where(code = 'LA9041-0') -> coding.code =  'resolved' "code";
+                            value.code as code where(code = 'LA18632-2') -> coding.code =  'inactive' "code";
+                            value.code as code where(code = 'LA16666-2') -> coding.code =  'active' "code";
+                            value -> coding.system ='http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical' "system";
+                            value.displayName as display-> coding.display= cast(display, 'string') "display";
+                        }"coding";
+                    }"clinicalStatus";
+                }"observ4";
+            }"entryR4";
+        }"observation";
+    }"entryrelationship";
+}
+
+group MedicationStatement(source src: subAdmin, target tgt: MedicationStatement, target patient: Patient, target encounter : Encounter, target bundle: Bundle){
+    src -> tgt.subject = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src where src.statusCode .exists().not() then {
+        src->tgt.status ='unknown'"statuscode";
+      }"status";
+    src.statusCode as statusc where (code='completed') -> tgt.status ='completed';
+    src.statusCode as statusc where (code='active') -> tgt.status ='active';
+    src.statusCode as statusc where (code='aborted') -> tgt.status ='stopped';
+    src.statusCode as statusc where (code='suspended') -> tgt.status ='on-hold';
+    src.statusCode as statusc where (code='cancelled') -> tgt.status ='not-taken';
+    src.statusCode as statusc where (code='held') -> tgt.status ='on-hold';
+    src.statusCode as statusc where (code='new') -> tgt.status ='intended';
+    src.statusCode as statusc where (code='obsolete') -> tgt.status ='entered-in-error';
+    src.statusCode as statusc where (code='nullified') -> tgt.status ='unknown';
+    src.consumable as consumable then{
+        consumable.manufacturedProduct as manufacturedProduct then{
+         manufacturedProduct.manufacturedMaterial as manufacturedMaterial then{
+            manufacturedMaterial -> tgt.medication=create('CodeableConcept') as med then {
+            manufacturedMaterial.name as name then {
+            name.item as item then {
+                item -> med.text=(item.xmlText) "name";
+                        }"item";
+                    }"name";
+            manufacturedMaterial.code as code -> med then CECodeableConcept(code,med) "CE";
+             }"med";
+            }"material";
+        }"product";
+    }"consumable";
+}
+
+group Procedure(source src : procedure, target patient : Patient, target encounter: Encounter, target tgt: Procedure, target bundle: Bundle){
+    src -> tgt.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    src -> tgt.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference";
+    src -> tgt.status ='unknown'"statuscode";
+    src.code as code -> tgt.code =create('CodeableConcept') as ce then CECodeableConcept(code,ce) "CE";
+    src.effectiveTime as effectiveTime where (value.exists()) -> tgt.performed = create('dateTime') as value then TSDateTime(effectiveTime, value) "value1";
+    src.effectiveTime as effectiveTime where (low.exists()) -> tgt.performed = create('Period') as value then IVLTSPeriod(effectiveTime, value) "valuePeriod";
+    src.methodCode as methodCode -> tgt.extension as ext1 then ITMethodExt(methodCode, ext1);
+    //--------Participant----------
+    src.participant as participant then{
+        participant.participantRole as participantRole then{
+            participantRole.playingDevice as device -> bundle.entry as e2, e2.request = create('BackboneElement') as request, request.method = 'POST', e2.resource = create('Device') as deviceRes,  deviceRes.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Device/', uuid2), request.url = 'Device', tgt.usedReference = create('Reference') as reference,  reference.reference = ('https://example/Device/' + %deviceRes.id) then{
+                device.code -> deviceRes.type "code";
+            }"device";
+        }"participantRole";
+    }"participant";
+    //-------EntryRel Observation---------
+    src.entryRelationship as entryR where entryR.observation.exists()  then{
+        entryR.observation as observation -> bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST', e3.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Observation/', uuid3), request.url = 'Observation', tgt.partOf = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then Observation(observation, patient, encounter, obs1, bundle) "Parametri";
+    }"entryRelobs";
+    //----------EntryRel Act----------
+    src.entryRelationship as entryR where entryR.act.exists()  then{
+        entryR.act as act then {
+         act.text as text -> tgt.note as note then{
+            text where text.reference.exists().not() -> note.text = (text.xmlText) "noreference";
+            text.reference as reference where text.reference.exists() -> note.text = (reference.value) "text";
+           }"note";
+         }"act"; 
+      }"entryRelact";
+}
+
+group ITMethodExt(source src, target ext) {
+    src -> ext.url = 'http://hl7.org/fhir/StructureDefinition/procedure-method' "url";
+    src -> ext.value = create('CodeableConcept') as value then CECodeableConcept(src, value) "value";
+}
+
+group MedicationAdministration(source src : subAdmin, target patient : Patient, target encounter: Encounter, target tgt: MedicationAdministration, target bundle: Bundle){
+    src -> tgt.subject = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src -> tgt.context = create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference";
+    src -> tgt.status = 'unknown' "status2";
+    src where src.effectiveTime.exists().not() ->tgt.effective = create('Period') as period then{
+        src->period.start=(start.now())"low";
+        src->period.end=(end.now())"high";
+    }"Period";
+    src.effectiveTime as effectiveTime where (value.exists()) -> tgt.effective = create('dateTime') as value then TSDateTime(effectiveTime, value) "value1";
+    src.effectiveTime as effectiveTime where (low.exists()) -> tgt.effective = create('Period') as value then IVLTSPeriod(effectiveTime, value) "valuePeriod";
+    src -> tgt.dosage as dosage then{
+    src.routeCode -> dosage.route "route";
+    src.repeatNumber as repeatNumber -> dosage.rate = create('SimpleQuantity') as value then PQQuantity(repeatNumber,value) "repQ";
+    src.approachSiteCode -> dosage.site "site";
+    src.targetSiteCode -> dosage.site "site";
+    }"dosage";
+    src.consumable as consumable -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Medication') as medication,  medication.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Medication/', uuid1), request.url = 'Medication', tgt.medication = create('Reference') as medref,  medref.reference = ('https://example/Medication/' + %medication.id) then Medication(src,medication,patient,bundle) "medication";
+     //--------Participant----------
+    src.participant as participant then{
+        participant.participantRole as participantRole then{
+            participantRole.playingDevice as device -> bundle.entry as e2, e2.request = create('BackboneElement') as request, request.method = 'POST', e2.resource = create('Device') as deviceRes,  deviceRes.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Device/', uuid2), request.url = 'Device', tgt.device = create('Reference') as reference,  reference.reference = ('https://example/Device/' + %deviceRes.id) then{
+                device.code -> deviceRes.type "code";
+            }"device";
+        }"participantRole";
+    }"participant";
+    //-------EntryRel Observation---------
+    src.entryRelationship as entryR where entryR.observation.exists()  then{
+        entryR.observation as observation -> bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST', e3.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Observation/', uuid3), request.url = 'Observation', tgt.supportingInformation = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then Observation(observation, patient, encounter, obs1, bundle) "Parametri";
+    }"entryRelobs";
+    //----------EntryRel Act----------
+    src.entryRelationship as entryR where entryR.act.exists()  then{
+        entryR.act as act then {
+         act.text as text -> tgt.note as note then{
+            text where text.reference.exists().not() -> note.text = (text.xmlText) "noreference";
+            text.reference as reference where text.reference.exists() -> note.text = (reference.value) "text";
+           }"note";
+         }"act"; 
+      }"entryRelact";
+}
+
+group ObservationPrest(source src : observation, target patient : Patient, target encounter : Encounter, target tgt : Observation, target bundle : Bundle) {  
+    src -> tgt.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src -> tgt.encounter=create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference";
+    src where statusCode.exists().not() ->tgt.status = 'final' "status2";
+    src.code -> tgt.code "code";
+    src.effectiveTime as effectiveTime where (value.exists()) -> tgt.effective = create('dateTime') as value then TSDateTime(effectiveTime, value) "value1";
+    src.effectiveTime as effectiveTime where (low.exists()) -> tgt.effective = create('Period') as value then IVLTSPeriod(effectiveTime, value) "valuePeriod";
+    src.repeatNumber as repeatNumber -> tgt.value = create('SimpleQuantity') as value then PQQuantity(repeatNumber,value) "repQ";
+    src.methodCode as code -> tgt.method as method then CECodeableConcept(code,method) "CE";
+     //--------Participant----------
+    src.participant as participant then{
+        participant.participantRole as participantRole then{
+            participantRole.playingDevice as device -> bundle.entry as e2, e2.request = create('BackboneElement') as request, request.method = 'POST', e2.resource = create('Device') as deviceRes,  deviceRes.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Device/', uuid2), request.url = 'Device', tgt.device = create('Reference') as reference,  reference.reference = ('https://example/Device/' + %deviceRes.id) then{
+                device.code -> deviceRes.type "code";
+            }"device";
+        }"participantRole";
+    }"participant";
+    //-------EntryRel Observation---------
+    src.entryRelationship as entryR where entryR.observation.exists()  then{
+        entryR.observation as observation -> bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST', e3.resource = create('Observation') as obs1,  obs1.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Observation/', uuid3), request.url = 'Observation', tgt.hasMember = create('Reference') as reference,  reference.reference = ('https://example/Observation/' + %obs1.id) then Observation(observation, patient, encounter, obs1, bundle) "Parametri";
+    }"entryRelobs";
+    //----------EntryRel Act----------
+    src.entryRelationship as entryR where entryR.act.exists()  then{
+        entryR.act as act then {
+         act.text as text -> tgt.note as note then{
+            text where text.reference.exists().not() -> note.text = (text.xmlText) "noreference";
+            text.reference as reference where text.reference.exists() -> note.text = (reference.value) "text";
+           }"note";
+         }"act"; 
+      }"entryRelact";
+}   
+
+group MedicationRequest(source src : substanceAdministration, target patient : Patient, target encounter: Encounter, target tgt: MedicationRequest, target bundle: Bundle){
+    src -> tgt.subject = create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";    
+    src -> tgt.encounter = create('Reference') as reference,  reference.reference = ('https://example/Encounter/' + %encounter.id) "reference";
+    src -> tgt.intent = 'proposal' "intent";
+    src where statusCode.exists().not() -> tgt.status = 'unknown' "st";
+    src.statusCode as sc then {
+        sc.code as cos-> tgt.status = translate(cos, '#MedicationStatusMap', 'code') "codeS";
+    }"status";
+    //----------Periodo di somministrazione, inizio e fine della terapia-------------------------
+    src.effectiveTime: IVL_TS as eff -> tgt.dosageInstruction = create('Dosage') as dosage then{
+        eff -> dosage.timing = create('Timing') as timing then {
+          eff -> timing.repeat as rep then {
+            eff as eff where (value.exists()) -> rep.bounds = create('dateTime') as value then TSDateTime(eff, value) "value1";
+            eff as eff where (low.exists()) -> rep.bounds = create('Period') as value then IVLTSPeriod(eff, value) "valuePeriod";
+          }"rep";
+        }"timing";
+      }"period";
+     //---------Assunzione di un farmacao Rivedere la tipologia del dato in quanto diverso da EIVL_TS-------------  
+      src.effectiveTime: EIVL_TS as effe -> tgt.dosageInstruction = create('Dosage') as dosage then{
+        effe -> dosage.timing = create('Timing') as timing then {
+          effe -> timing.repeat as rep then {
+            effe.eventCode as ev -> rep.when = (ev.code);
+          }"rep";
+        }"timing";
+      }"period";
+      //---------Posologia----------------
+      src.effectiveTime: IVL_TS as eff -> tgt.dosageInstruction = create('Dosage') as dosage, dosage.timing = create('Timing') as timing, timing.event = (eff.value) "tim";
+      src.effectiveTime: PIVL_TS as eff -> tgt.dosageInstruction = create('Dosage') as dosage then{
+          eff -> dosage.timing = create('Timing') as timing then periodTiming(eff,timing) "cod";
+          }"eff";
+      //-----Dose del farmaco & Frequenza di erogazione---------------------
+      src where (src.doseQuantity.exists() or src.rateQuantity.exists()) then{
+        src ->  tgt.dosageInstruction = create('Dosage') as dosageInstruction then{
+            src.doseQuantity as doseQuant then{
+                doseQuant.originalText as ot then{
+                    ot.reference -> dosageInstruction.text;
+                }"ot";  
+                doseQuant -> dosageInstruction.doseAndRate as dosageRate then{
+                doseQuant -> dosageRate.dose = create('Range') as d then{
+                doseQuant -> d.low = create('SimpleQuantity') as l then{
+                    doseQuant.low as lo -> l.value = (lo.value); 
+                    doseQuant.low as lo -> l.unit = (lo.unit); 
+                }"low";
+                doseQuant -> d.high = create('SimpleQuantity') as h then{
+                    doseQuant.high as hi -> h.value = (hi.value);
+                    doseQuant.high as hi -> h.unit = (hi.unit); 
+                }"low";
+                }"d";
+            }"dosageRate";
+        } "doseQuantity";
+            src.rateQuantity as rateQuantity then{
+                rateQuantity.originalText as ot then{
+                    ot.reference -> dosageInstruction.text;
+                }"ot";
+                rateQuantity -> dosageInstruction.doseAndRate as dosageRate then{
+                    rateQuantity -> dosageRate.rate = create('Range') as d then{
+                        rateQuantity -> d.low = create('SimpleQuantity') as l then{
+                            rateQuantity.low as lo -> l.value = (lo.value); 
+                            rateQuantity.low as lo -> l.unit = (lo.unit); 
+                        }"low";
+                        rateQuantity -> d.high = create('SimpleQuantity') as h then{
+                            rateQuantity.high as hi -> h.value = (hi.value);
+                            rateQuantity.high as hi -> h.unit = (hi.unit); 
+                        }"high";
+                    }"r";
+                }"dosageRate";
+            }"rate";
+        //------Via di somministrazione & Sito di somministrazione-------------------    
+        src.routeCode -> dosageInstruction.route "route";
+        src.approachSiteCode -> dosageInstruction.site "site";
+        src.targetSiteCode -> dosageInstruction.site "site";
+        }"dosageIn";
+    }"condition";
+    //-----------Codice Farmaco--------------
+    src.consumable as consumable -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Medication') as medication,  medication.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Medication/', uuid1), request.url = 'Medication', tgt.medication = create('Reference') as medref,  medref.reference = ('https://example/Medication/' + %medication.id) then Medication(src,medication,patient,bundle) "medication";       
+    //-----------Numero di confezioni---------------
+    src.entryRelationship as entryRelationship where entryRelationship.supply.exists()  then{
+        entryRelationship.supply as supply -> tgt.dispenseRequest as dispenseRequest then{
+            supply.quantity as quantityCDA -> dispenseRequest.quantity as quantityFHIR then{
+                quantityCDA -> quantityFHIR.value = (quantityCDA.value) "value";
+            }"quantity";
+        }"supply";
+    }"entryR";
+    //-----Participant-------
+    src.participant as participant then{
+        participant then Practitioner(participant, tgt, bundle) "function"; 
+        participant.effectiveTime -> tgt.authoredOn "autor"; 
+    }"Partecipant";
+}
+    
+group periodTiming(source effectiveTime: PIVL_TS, target timing: Timing){
+    effectiveTime -> timing.repeat as r then{
+      effectiveTime.period as p -> r.period = (p.value); 
+      effectiveTime.period as p -> r.periodUnit = (p.unit);   
+    }"repeat";
+}
+
+group Medication(source src:cda , target tgt: Medication, target patient: Patient, target bundle : Bundle){
+    src.administrationUnitCode->tgt.form "Forma farmaceutica";
+    src.consumable as consumable then{
+        consumable.manufacturedProduct as manufacturedProduct then{
+         manufacturedProduct.manufacturedMaterial as manufacturedMaterial then{
+            manufacturedMaterial -> tgt.code=create('CodeableConcept') as med then {
+            manufacturedMaterial.name as name then {
+            name.item as item then {
+                item -> med.text=(item.xmlText) "name";
+                        }"item";
+                    }"name";
+            manufacturedMaterial.code as code -> med then CECodeableConcept(code,med) "CE";
+             }"med";
+            }"material";
+        }"product";
+    }"consumable";
+    src.entryRelationship as entryR then{
+        entryR.observation as observation then{
+            //-----------Grammatura------------
+            observation.code where displayName='Grammatura' -> tgt.ingredient as ingredient then{
+                src.consumable as consumable then{
+                    consumable.manufacturedProduct as manufacturedProduct then{
+                        manufacturedProduct.manufacturedMaterial as manufacturedMaterial then{
+                            manufacturedMaterial.code as code -> ingredient.item = create('CodeableConcept') as value then CECodeableConcept(code,value) "CE";
+                        }"material";
+                    }"product";
+                }"consumable";
+                  observation.value:REAL as value then {
+                              value-> ingredient.strength= create('Ratio') as strength then{
+                                value -> strength.numerator=create('Quantity') as numerator then{
+                                    value.value as v -> numerator.value=(v.value) "valueN";
+                                } "numerator";
+                                value -> strength.denominator as denominator then{
+                                    value -> denominator.value = 1 "valueD";
+                                } "denominator";
+                          }"strenght";
+                        }"ingredient";
+                      }"value";
+            //---------Quantità nella confezione---------------
+            observation.code where displayName='Quantità nella Confezione' then{
+                observation.value:REAL as value then {
+                    value-> tgt.amount= create('Ratio') as amount then{
+                    value -> amount.numerator=create('Quantity')  as numerator then{
+                            value.value as v -> numerator.value=(v.value)  "valueN";
+                    } "numerator";
+                    value -> amount.denominator as denominator then{
+                        value -> denominator.value = 1 "valueD";
+                    } "denominator";
+                }"amount";
+            }"quantita";
+          }"value";      
+        }"obs";
+    }"entryR";
+}
+
+group Practitioner(source src : participant, target tgt: MedicationRequest, target bundle: Bundle){
+    src -> bundle.entry as e22, e22.request = create('BackboneElement') as request, request.method = 'PUT', e22.resource = create('Practitioner') as practitioner1 then{       
+        src.participantRole as practr then{
+            practr.id as id ->practitioner1.identifier as identifier then{
+                id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+                id.extension as ext->identifier.value = ext "ext";
+                id.assigningAuthorityName as s -> identifier.assigner as a, a.display = s;
+                id.root as r then {
+                    id.extension as ext -> practitioner1.id = (r + '-' + ext) as uuid22,  e22.fullUrl = append('https://example/Practitioner/', uuid22), tgt.requester = create('Reference') as reference,  reference.reference = ('https://example/Practitioner/' + %practitioner1.id) "id";
+                }"r";
+            }"identifier";
+            practr.id as id where (root='2.16.840.1.113883.2.9.4.3.2') then {
+                id.extension as ext-> request.url = append('Practitioner?identifier=',ext)"UUID";
+              }"2.16.840.1.113883.2.9.4.3.2";
+              practr.id as id where (root!='2.16.840.1.113883.2.9.4.3.2') then {
+                id.extension as ext-> request.url = append('Practitioner?identifier=',ext)"UUID";
+              }"diverso";
+            practr -> practitioner1.meta as meta then {
+                practr-> meta.tag = create('Coding') as coding then {
+                    practr -> coding.system ='http://algoritmodiscoring'"system";
+                    practr -> coding.code ='ClinicalDocument/body/TerapiaFarmacologicaConsigliata/participant' "code";
+                }"coding";
+            }"meta";
+            practr.addr -> practitioner1.address;      
+            practr.telecom -> practitioner1.telecom;
+            practr.playingEntity as plentity then{
+                plentity.name ->  practitioner1.name "name"; 
+                plentity.birthTime as birthTime then{
+                    birthTime.value as date -> practitioner1.birthDate= truncate(date, 10);
+                  }"birth";
+            }"partname";
+        }"resurceCreation";
+    }"practitionerCreate";
+
+}
+
+
