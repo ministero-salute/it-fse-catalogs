@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- schematron versione: 1.0-->
+<schema xmlns="http://purl.oclc.org/dsdl/schematron" 
+		xmlns:cda="urn:hl7-org:v3"
+        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+        xmlns:sch="http://www.ascc.net/xml/schematron"
+        queryBinding="xslt2">
+	<title>Schematron Relazione Collaborativa Teleconsulto </title>
+	<ns prefix="hl7" uri="urn:hl7-org:v3"/>
+	<ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
+	<pattern id="all">
+
+
+<!--_______________________________________________________________HEADER _____________________________________________________________-->
+	
+		<!-- ClinicalDocument -->
+		<rule context="hl7:ClinicalDocument">
+	        <!--Controllo realmCode-->	
+			<assert test="count(hl7:realmCode)=1"
+			>ERRORE-1| L'elemento <name/> DEVE avere almeno un elemento 'realmCode'.</assert>
+			
+			<assert test="count(hl7:realmCode[@code='IT'])= 1"
+			>ERRORE-2| L'elemento <name/>/realmCode DEVE avere l'attributo @code valorizzato con 'IT'.</assert>
+			
+			<!--Controllo templateId-->
+			<let name="num_tid" value="count(hl7:templateId)"/>
+			<assert test="$num_tid >= 1 "
+			>ERRORE-3| L'elemento <name/> DEVE avere un elemento di tipo 'templateId'.</assert>
+			
+			<assert test="count(hl7:templateId[@root='2.16.840.1.113883.2.9.10.1.16.2.1'])= 1 and  count(hl7:templateId[@root='2.16.840.1.113883.2.9.10.1.16.2.1']/@extension)= 1"
+			>ERRORE-4| Almeno un elemento <name/>/templateId DEVE essere valorizzato attraverso l'attributo @root='2.16.840.1.113883.2.9.10.1.16.2.1' (id del template nazionale), associato all'attributo @extension che indica la versione a cui il 'templateId' fa riferimento.</assert>
+
+			<!--Controllo code-->	
+			<assert test="count(hl7:code[@code='85208-7'][@codeSystem='2.16.840.1.113883.6.1']) = 1"
+			>ERRORE-5| L'elemento <name/>/code DEVE essere valorizzato con l'attributo @code='85208-7' e il @codeSystem='2.16.840.1.113883.6.1'.</assert>
+	
+			<report test="not(count(hl7:code[@codeSystemName='LOINC'])=1) or not(count(hl7:code[@displayName='Nota di teleconsulto (teleconsultation note)'])=1)"
+			>W001| Si raccomanda di valorizzare gli attributi dell'elemento <name/>/code nel seguente modo: @codeSystemName ='LOINC' e @displayName ='Nota di teleconsulto (teleconsultation note)'.</report>
+			
+			<!--Controllo confidentialityCode-->
+			<assert test="(count(hl7:confidentialityCode[@code='N'][@codeSystem='2.16.840.1.113883.5.25'])= 1) or 
+			(count(hl7:confidentialityCode[@code='V'][@codeSystem='2.16.840.1.113883.5.25'])= 1) or (count(hl7:confidentialityCode[@code='R'][@codeSystem='2.16.840.1.113883.5.25'])= 1)"
+			>ERRORE-6| L'elemento <name/>/confidentialityCode DEVE avere l'attributo @code valorizzato con 'N' o 'R' o 'V', e il @codeSystem='2.16.840.1.113883.5.25'.</assert>
+			
+			<!--Controllo languageCode-->
+			<assert test="count(hl7:languageCode)=1"
+			>ERRORE-7| L'elemento <name/> DEVE contenere un solo elemento 'languageCode'. </assert>
+			
+			<!--Controllo incrociato tra setId-versionNumber e relatedDocument-->
+			<let name="versionNumber" value="hl7:versionNumber/@value"/>
+			<assert test="(string(number($versionNumber)) = 'NaN') or
+					($versionNumber= '1' and count(hl7:setId)=0) or 
+					($versionNumber= '1' and hl7:id/@root = hl7:setId/@root and hl7:id/@extension = hl7:setId/@extension) or
+					($versionNumber!= '1' and hl7:id/@root = hl7:setId/@root and hl7:id/@extension != hl7:setId/@extension) or
+					(hl7:id/@root != hl7:setId/@root)"
+			>ERRORE-8| Se ClinicalDocument.id e ClinicalDocument.setId usano lo stesso dominio di identificazione (@root identico) allora l’attributo @extension del ClinicalDocument.id deve essere diverso da quello del ClinicalDocument.setId a meno che ClinicalDocument.versionNumber non sia uguale ad 1; cioè i valori di setId ed id per un documento clinico coincidono solo per la prima versione di un documento.</assert>
+			
+			<assert test="(string(number($versionNumber)) ='NaN') or
+						  ($versionNumber=1)  or 
+						  (($versionNumber &gt;1) and count(hl7:relatedDocument)&gt;=1 and count(hl7:relatedDocument)&lt;=2)"
+			>ERRORE-9| Se l'attributo <name/>/versionNumber/@value è maggiore di  1, l'elemento <name/>  deve contenere al più due elementi di tipo 'relatedDocument'.</assert>
+			
+			 <!--relatedDocument/@typeCode-->
+			<assert test="(count(hl7:relatedDocument)&lt;2 or (count(hl7:relatedDocument[@typeCode='XFRM'])=1 and (count(hl7:relatedDocument[@typeCode='RPLC'])=1 or count(hl7:relatedDocument[@typeCode='APND'])=1)))"
+			>ERRORE-10| Un documento CDA2 conforme può avere o un relatedDocument con @typeCode='APND' | 'RPLC' | 'XFRM'; oppure una combinazione di due 'relatedDocument' con la seguente composizione:
+			- @typeCode='XFRM' e @typeCode='RPLC'; 
+			- @typeCode='XFRM' e @typeCode='APND'.</assert>	
+			
+			<!--Controllo recordTarget-->
+			<assert test="count(hl7:recordTarget)=1"
+			>ERRORE-11| L'elemento <name/> DEVE contenere un solo elemento 'recordTarget'. </assert>
+
+			<!--Controllo recordTarget/patientRole/id-->
+			<assert test="count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.2'])=1 or
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.7'])=1 or 
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.3'])=1 or 
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.18'])=1 or
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.17'])=1 or
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.15'])=1 or count(hl7:recordTarget/hl7:patientRole/hl7:id[matches(@root,'^2\.16\.840\.1\.113883\.2\.9\.2\.(10|20|30|41|42|50|60|70|80|90|100|110|120|130|140|150|160|170|180|190|200)\.4\.1\.1$')])=1 or count(hl7:recordTarget/hl7:patientRole/hl7:id[matches(@root,'^2\.16\.840\.1\.113883\.2\.9\.2\.(10|20|30|41|42|50|60|70|80|90|100|110|120|130|140|150|160|170|180|190|200)\.4\.1$')])=1"
+			>ERRORE-12| L'elemento <name/>/recordTarget/patientRole/id  deve avere l'attributo @root valorizzato tramite uno dei seguenti identificatori Nazionanli:
+			- CF 2.16.840.1.113883.2.9.4.3.2
+			- TEAM 2.16.840.1.113883.2.9.4.3.7 e 2.16.840.1.113883.2.9.4.3.3
+			- ENI 2.16.840.1.113883.2.9.4.3.18
+			- STP 2.16.840.1.113883.2.9.4.3.17 oppure un identificativo regionale 
+			- ANA 2.16.840.1.113883.2.9.4.3.15
+			Oppure tramite gli identificatori regionali generati per rappresentare l'id del paziente.
+			</assert>
+
+			<assert test="
+			(
+			  count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.7']) = 0 or
+			  count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.3']) = 1
+			) and
+			(
+			  count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.3']) = 0 or
+			  count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.7']) = 1
+			)"
+
+			>ERRORE-13| Nel caso di Soggetti assicurati da istituzioni estere, devono essere riportati almeno due elementi di tipo 'id' contenenti:
+				- 2.16.840.1.113883.2.9.4.3.7: Il numero di identificazione della Tessera TEAM (Tessera Europea di Assicurazione Malattia);
+				- 2.16.840.1.113883.2.9.4.3.3: Il numero di identificazione Personale TEAM.
+			</assert>
+
+			<assert test="(count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.2'])=0 and
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.7'])=0 and
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.3'])=0 and
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.18'])=0 and
+			count(hl7:recordTarget/hl7:patientRole/hl7:id[@root='2.16.840.1.113883.2.9.4.3.15'])=0) or
+			not(count(hl7:recordTarget/hl7:patientRole/hl7:id[matches(@root,'^2\.16\.840\.1\.113883\.2\.9\.2\.(10|20|30|41|42|50|60|70|80|90|100|110|120|130|140|150|160|170|180|190|200)\.4\.1\.1$')])=1)"
+
+			>ERRORE-14| Nel caso di Stranieri Temporaneamente Presenti, l'elemento <name/>/recordTarget/patientRole/id  deve avere l'attributo @root valorizzato tramite un identificativo STP.</assert>
+			
+			<!--Controllo recordTarget/patientRole/addr-->
+			<let name="num_addr" value="count(hl7:recordTarget/hl7:patientRole/hl7:addr)"/>
+			
+			<assert test="$num_addr=0 or (count(hl7:recordTarget/hl7:patientRole/hl7:addr/hl7:country)=$num_addr and 
+			count(hl7:recordTarget/hl7:patientRole/hl7:addr/hl7:city)=$num_addr and 
+			count(hl7:recordTarget/hl7:patientRole/hl7:addr/hl7:streetAddressLine)=$num_addr)"
+			>ERRORE-15| L'elemento <name/>/recordTarget/patientRole/addr DEVE riportare i sotto-elementi 'country', 'city' e 'streetAddressLine'. </assert>
+			
+			<!--Controllo recordTarget/patientRole/patient/name-->
+			<let name="patient" value="hl7:recordTarget/hl7:patientRole/hl7:patient"/>
+			
+			<assert test="count($patient)=1 "
+			>ERRORE-16| L'elemento <name/>/recordTaget/patientRole DEVE contenere l'elemento 'patient'.</assert>
+			
+			<assert test="count($patient)=0 or count($patient/hl7:name)=1 and (count($patient/hl7:name/hl7:given)=1 and count($patient/hl7:name/hl7:family)=1)"
+			>ERRORE-17| L'elemento <name/>/recordTaget/patientRole/patient DEVE contenere l'elemento 'name', che a sua volta deve riportare i suoi sotto-elementi 'given' e 'family'.</assert>
+			
+			<!--Controllo recordTarget/patientRole/patient/administrativeGenderCode-->
+			<let name="genderOID" value="hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode/@codeSystem"/>
+			
+			<assert test="count($patient)=0 or count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:administrativeGenderCode)=1"
+			>ERRORE-19| L'elemento <name/>/recordTarget/patientRole/patient DEVE contenere l'elemento 'administrativeGenderCode'. </assert>
+			
+			<assert test="count($patient)=0 or $genderOID='2.16.840.1.113883.5.1'"
+			>ERRORE-20| L'OID assegnato all'attributo <name/>/recordTarget/patientRole/patient/administrativeGenderCode/@codeSystem='<value-of select="$genderOID"/>' non è corretto. L'attributo DEVE essere valorizzato con '2.16.840.1.113883.5.1'. </assert>
+			
+			<!--Controllo recordTarget/patientRole/patient/birthTime-->
+			<assert test="count($patient)=0 or count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:birthTime)=1"
+			>ERRORE-21| L'elemento <name/>/recordTaget/patientRole/patient DEVE riportare un elemento 'birthTime'.</assert>	
+			
+			
+			<!--Controllo recordTarget/patientRole/patient/birthplace/place/addr-->
+			<assert test="count($patient)=0 or count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:birthplace/hl7:place/hl7:addr/hl7:country)=1"
+ 
+			>ERRORE-22| L'elemento <name/>/recordTarget/patientRole/patient/birthplace DEVE essere presente e deve contenere un elemento place/addr che valorizzi l'elemento 'country'.</assert>	
+			
+			<!--Controllo recordTarget/patientRole/patient/guardian/guardianPerson/name-->
+			<assert test="count($patient)=0 or count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:guardian)=0 or count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:guardian/hl7:guardianPerson)=0 or (count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:given)=1 and count(hl7:recordTarget/hl7:patientRole/hl7:patient/hl7:guardian/hl7:guardianPerson/hl7:name/hl7:family)=1)"
+			>ERRORE-22a| L'elemento <name/>/recordTaget/patientRole/patient/guardian/guardianPerson se presente  DEVE riportare un elemento 'name' con i suoi sotto elementi given e family.</assert>	
+			
+			<!--Controllo author-->
+			<assert test="count(hl7:author)>=1"
+			>ERRORE-23| L'elemento <name/> DEVE contenere almeno un 'author'.</assert>
+
+			
+			<!--Controllo dataEnterer-->	
+			<assert test="count(hl7:dataEnterer)=0 or count(hl7:dataEnterer/hl7:time)=1"
+			>ERRORE-24| L'elemento <name/>/dataEnterer, se presente, DEVE contenere un elemento 'time'.</assert>
+
+			<!--Controllo dataEnterer/assignedEntity/assignedPerson-->
+			<let name="nome" value="hl7:dataEnterer/hl7:assignedEntity/hl7:assignedPerson/hl7:name"/>
+			
+			<assert test="count(hl7:dataEnterer)=0 or count(hl7:dataEnterer/hl7:assignedEntity/hl7:assignedPerson)=0 or (count(hl7:dataEnterer/hl7:assignedEntity/hl7:assignedPerson/hl7:name)=1 and (count($nome/hl7:family)=1 and count($nome/hl7:given)=1))"
+			>ERRORE-26| L'elemento <name/>/dataEnterer/assignedEntity DEVE riportare l'elemento 'assignedPerson/name', che deve a sua volta contenere i suoi sotto-elementi 'given' e 'family'.</assert>
+
+			
+			<!--Controllo custodian-->
+			<assert test="count(hl7:custodian)=1"
+			>ERRORE-28| L'elemento <name/>/custodian è obbligatorio.</assert>
+
+			<!--Controllo custodian/assignedCustodian/representedCustodianOrganization-->
+			<report test="not(count(hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization/hl7:id[@root='2.16.840.1.113883.2.9.4.1.1' or @root='2.16.840.1.113883.2.9.4.1.2' or @root='2.16.840.1.113883.2.9.4.1.3'])=1)"
+			>W002| L'elemento <name/>/custodian/assignedCustodian/representedCustodianOrganization/id PUO' essere valorizzato in uno dei modi seguenti:
+			- Se si vuole identificare le Aziende Sanitarie, è possibile utilizzare la codifica ministeriale FLS11 '2.16.840.1.113883.2.9.4.1.1';
+			- Se si vuole identificare il Presidio è possibile utilizzare le codifiche HSP11 ('2.16.840.1.113883.2.9.4.1.2') e STS11 ('2.16.840.1.113883.2.9.4.1.3').
+			</report>
+			
+			
+			
+			<assert test="count(hl7:custodian)=0 or count(hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization/hl7:name)=1"
+			>ERRORE-29| L'elemento <name/>/custodian/assignedCustodian/representedCustodianOrganization deve contenere un elemento 'name'.</assert>
+			
+			<let name="num_addr_cust" value="count(hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization/hl7:addr)"/>
+			<let name="addr_cust" value="hl7:custodian/hl7:assignedCustodian/hl7:representedCustodianOrganization/hl7:addr"/>
+			
+			<assert test="$num_addr_cust=0 or (count($addr_cust/hl7:country)=$num_addr_cust and
+			count($addr_cust/hl7:city)=$num_addr_cust and 
+			count($addr_cust/hl7:streetAddressLine)=$num_addr_cust)"
+			>ERRORE-30| L'elemento <name/>/custodian/assignedCustodian/representedCustodianOrganization/addr DEVE riportare i sotto-elementi 'country','city' e 'streetAddressLine'.</assert>
+			
+			 <!--Controllo legalAuthenticator-->
+			<assert test = "count(hl7:legalAuthenticator)=1" 
+			>ERRORE-31| L'elemento <name/>/legalAuthenticator è obbligatorio. </assert>
+
+			<assert test = "count(hl7:legalAuthenticator)=0 or count(hl7:legalAuthenticator/hl7:signatureCode[@code='S'])=1" 
+			>ERRORE-32| L'elemento <name/>/legalAuthenticator/signatureCode deve avere l'attributo @code valorizzato con il codice "S". </assert>
+			
+			
+			<assert test = "count(hl7:legalAuthenticator)= 0 or count(hl7:legalAuthenticator/hl7:assignedEntity/hl7:assignedPerson)=0 or count(hl7:legalAuthenticator/hl7:assignedEntity/hl7:assignedPerson/hl7:name)=1 and (count(hl7:legalAuthenticator/hl7:assignedEntity/hl7:assignedPerson/hl7:name/hl7:family)=1 and count(hl7:legalAuthenticator/hl7:assignedEntity/hl7:assignedPerson/hl7:name/hl7:given)=1)"
+			>ERRORE-34| L'elemento <name/>/legalAuthenticator/assignedEntity/assignedPerson DEVE contenere l'elemento 'name', che a sua volta deve contenere i suoi sotto-elementi 'given' e 'family'.</assert>
+	 
+
+			<!--Controllo componentOf-->
+			<assert test="count(hl7:componentOf)=1"
+			>ERRORE-36| L'elemento <name/>/componentOf è obbligatorio. </assert>
+			
+			<let name="num_compOf" value="hl7:componentOf/hl7:encompassingEncounter/hl7:responsibleParty/hl7:assignedEntity"/>
+			<assert test="count(hl7:componentOf)=0 or count($num_compOf)=0 or count($num_compOf/hl7:assignedPerson)=0 or (count($num_compOf/hl7:assignedPerson/hl7:name/hl7:given)=1 and count($num_compOf/hl7:assignedPerson/hl7:name/hl7:family)=1 )"
+			>ERRORE-37| L'elemento <name/>/componentOf/encompassingEncounter/responsibleParty/assignedEntity/assignedPerson/name deve essere presente e DEVE contenere gli elementi 'given'e 'family'.</assert>
+			
+			
+			<assert test="count(hl7:componentOf)=0 or count(hl7:componentOf/hl7:encompassingEncounter/hl7:location)=1"
+			>ERRORE-38| L'elemento <name/>/componentOf/encompassingEncounter DEVE contenere l'elemento 'location'. </assert>
+			
+			
+			<assert test="count(hl7:componentOf)=0 or count(hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:id)=0 or count(hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:id[@root='2.16.840.1.113883.2.9.4.1.6'])=1"
+			>ERRORE-40| L'elemento <name/>/componentOf/encompassingEncounter/location/healthcareFacility DEVE avere l'elemento 'id' con l'attributo @root='2.16.840.1.113883.2.9.4.1.6'. </assert>
+			
+			
+			
+			<assert test="count(hl7:componentOf)=0 or count(hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:serviceProviderOrganization[@classCode])=1"
+			>ERRORE-42| L'elemento <name/>/componentOf/encompassingEncounter/location/healthcareFacility/serviceProviderOrganization DEVE essere presente e DEVE essere valorizzato tramite l'attributo @classCode='ORG'.</assert>	
+			
+			<assert test="count(hl7:componentOf)=0 or count(hl7:componentOf/hl7:encompassingEncounter/hl7:location/hl7:healthCareFacility/hl7:serviceProviderOrganization/hl7:id[@root='2.16.840.1.113883.2.9.4.1.2' or @root='2.16.840.1.113883.2.9.4.1.3'])=1"
+			>ERRORE-43| L'elemento <name/>/componentOf/encompassingEncounter/location/healthcareFacility/serviceProviderOrganization/id, se presente, DEVE essere valorizzato con una delle seguenti @root:
+			- 2.16.840.1.113883.2.9.4.1.2 -> Elenco dei presidi Ospedalieri a cui fa capo l’unità operativa da cui viene eseguita la prestazione;
+			- 2.16.840.1.113883.2.9.4.1.3 -> Elenco delle strutture sanitarie a cui fa capo l’ambulatorio da cui viene eseguita la prestazione. </assert>	
+				
+			
+		
+		<!--Controllo participant--> 
+		<assert test="count(hl7:participant)>=1"
+			>ERRORE-45| L'elemento <name/> Deve contenere almeno un 'participant'.</assert>		
+		</rule>
+		
+		<!-- Controllo author-->
+		<rule context="hl7:ClinicalDocument/hl7:author">
+			
+			<!--Controllo author/assignedAuthor/assignedPerson/name-->
+			<let name="name_author" value="hl7:assignedAuthor/hl7:assignedPerson"/>
+			
+			<assert test="count($name_author/hl7:name)=1 and (count($name_author/hl7:name/hl7:given)=1 and count($name_author/hl7:name/hl7:family)=1)"
+			>ERRORE-46| L'elemento <name/>/assignedAuthor/assignedPerson DEVE avere l'elemento 'name', il quale a sua volta deve contenere i suoi sotto-elementi 'given' e 'family'. </assert>
+			
+		</rule>
+		
+		<!-- Controllo participant-->
+		<rule context="hl7:ClinicalDocument/hl7:participant">
+		
+			<report test="not(@typeCode='SPRF' or @typeCode='REF')"
+			>W003| L'elemento <name/> PUO' avere l'attributo @typeCode valorizzato come segue:
+			- "SPRF", nel caso di Tecnico di Approfondimento Diagnostico;
+			- "REF", nel caso di Medico Prescrittore. </report>
+		
+			<report test="not(count(hl7:functionCode)=0) or (count(hl7:functionCode[@codeSystem='2.16.840.1.113883.5.88'])=1)"
+			>W004| L'elemento <name/>/functionCode DOVREBBE avere il @codeSystem valorizzato con '2.16.840.1.113883.5.88' (ParticipationFunction). </report>
+			
+			<assert test="count(hl7:associatedEntity/hl7:id)>=1"
+			>ERRORE-49| L'elemento <name/>/associatedEntity DEVE contenere almeno un elemento 'id'.</assert>
+			
+			<assert test="count(hl7:associatedEntity/hl7:associatedPerson)=0 or count(hl7:associatedEntity/hl7:associatedPerson/hl7:name)=1 and (count(hl7:associatedEntity/hl7:associatedPerson/hl7:name/hl7:family)=1 and count(hl7:associatedEntity/hl7:associatedPerson/hl7:name/hl7:given)=1)"
+			>ERRORE-50| L'elemento <name/>/associatedEntity/associatedPerson DEVE contenere l'elemento 'name', che a sua volta deve contenere i due sotto-elementi 'given' e 'family'.</assert>
+			
+			<assert test="count(hl7:associatedEntity/hl7:scopingOrganization)=1"
+			>ERRORE-50a| L'elemento <name/>/associatedEntity Deve contenere l'elemento scopingOrganization .</assert>
+			
+			<assert test="count(hl7:associatedEntity/hl7:scopingOrganization)=0 or count(hl7:associatedEntity/hl7:scopingOrganization/hl7:addr)=0 or  (count(hl7:associatedEntity/hl7:scopingOrganization/hl7:addr/hl7:country)=1 and count(hl7:associatedEntity/hl7:scopingOrganization/hl7:addr/hl7:city)=1 and count(hl7:associatedEntity/hl7:scopingOrganization/hl7:addr/hl7:streetAddressLine)=1)"
+			>ERRORE-50b| L'elemento <name/>/associatedEntity/scopingOrganization Può contenere l'elemento addr che Deve contenere gli elementi country, city e streetAddressLine.</assert>
+	
+		</rule>
+		
+		<!-- Controllo inFulfillmentOf-->
+		<rule context="hl7:ClinicalDocument/hl7:inFulfillmentOf">
+			<!--Controllo ClinicalDocument/inFulfillmentOf-->
+			<assert test ="count(hl7:order/hl7:priorityCode)=0 or (
+			count(hl7:order/hl7:priorityCode[@code='S' or @code='A' or @code='EL' or @code='R'])=1 and count(hl7:order/hl7:priorityCode[@codeSystem='2.16.840.1.113883.5.7'])=1)" 
+			>ERRORE-51| <name/>/order/priorityCode DEVE avere l'elemento 'code' con l'attributo @codeSystem='2.16.840.1.113883.5.7' e il @code valorizzato con uno dei seguenti valori:
+			S = "STAT": Urgente;
+			A = "ASAP": Breve;
+			EL = "Elective": Differita;
+			R = "Routine":Programmata.</assert>
+		</rule>
+		
+		<!-- Controllo documentationOf-->
+		 <rule context="hl7:ClinicalDocument/hl7:documentationOf">
+			<assert test = "count(hl7:serviceEvent/hl7:code[@code='PROG'])=1 or
+                            count(hl7:serviceEvent/hl7:code[@code='DIR'])=1"
+			>ERRORE-52| L'elemento ClinicalDocument/documentationOf/serviceEvent DEVE contenere l'elemento 'code' e DEVE valorizzare il suo attributo @code con uno dei seguenti valori: 'PROG'|'DIR'. </assert>			
+			
+			<assert test = "count(hl7:serviceEvent/hl7:code[@codeSystem='2.16.840.1.113883.2.9.5.1.4'])= 1"
+			>ERRORE-53| L'elemento ClinicalDocument/documentationOf/serviceEvent DEVE contenere l'elemento 'code' valorizzato con l'attributo @codeSystem='2.16.840.1.113883.2.9.5.1.4'.</assert>
+			
+			<assert test="count(hl7:serviceEvent/hl7:performer)=0 or (count(hl7:serviceEvent/hl7:performer/hl7:time/hl7:low)=1 and count(hl7:serviceEvent/hl7:performer/hl7:time/hl7:high)=1)"
+			>ERRORE-54| L'elemento ClinicalDocument/documentationOf/serviceEvent/performer, se presente, deve contenere l'elemento 'time' valorizzato tramite i seguenti elementi:
+			- low, con cui indicare la data di presa in carico del teleconsulto, cioè la data di accettazione dell’appuntamento (o della richiesta, se il teleconsulto è estemporaneo);
+			- high, con cui indicare la data di pianificazione della consulenza, cioè la data dell’appuntamento (coincidente con la richiesta/presa in carico, se il teleconsulto è estemporaneo).</assert>
+
+		 </rule>
+		  
+		 
+		 
+		
+<!--____________________________________________________CONTROLLI GENERICI_________________________________________________________________-->
+	
+		<!--Controllo use addr-->
+		
+		<rule context="//*[contains(local-name(), 'Organization')]/hl7:addr[@use='H' or @use='HP' or @use='HV']">
+			<assert test="false()"
+			>ERRORE-55| L'indirizzo di un'organizzazione non può essere di tipo Home, ovvero l'attributo @use deve essere diverso da: H | HP | HV.
+			</assert>
+		</rule>
+		
+		<rule context="//hl7:addr[
+                  not(
+						ancestor::hl7:birthplace
+					)
+			]">
+			<assert test="count(hl7:country)=1 and count(hl7:city)=1 and count(hl7:streetAddressLine)=1"
+			>ERRORE-56| L'elemento <name/> addr DEVE avere valorizzati gli elementi 'country', 'city', 'streetAddressLine'.</assert>
+		</rule>
+		
+		
+		<!--Controllo use Telecom-->
+		<rule context="//hl7:telecom">
+			<assert test="(count(@use)=1)"
+			>ERRORE-57| L’elemento 'telecom' DEVE contenere l'attributo @use. </assert>
+		</rule>	
+		<rule context="//*[contains(local-name(), 'Organization')][hl7:telecom]">
+			<assert test="not(hl7:telecom/@use='H' or hl7:telecom/@use='HP' or hl7:telecom/@use='HV')"
+			>ERRORE-58| L'elemento telecom di un'organizzazione non può essere di tipo Home, ovvero l'attributo @use deve essere diverso da: H | HP | HV.
+			</assert>
+		</rule>
+		<!-- Controllo formato: -->
+		<!--campi Codice Fiscale: 16 cifre [A-Z0-9]{16} -->
+		<rule context="//hl7:id[@root='2.16.840.1.113883.2.9.4.3.2']">
+			<let name="CF" value="@extension"/>
+			<assert test="matches(@extension, '[A-Z0-9]{16}') and string-length($CF)=16"
+			>ERRORE-59| Il codice fiscale '<value-of select="$CF"/>' cittadino ed operatore deve essere costituito da 16 cifre [A-Z0-9]{16}</assert>
+		</rule>
+	
+		<!--Controllo sugli attributi di observation-->
+		<rule context="//hl7:observation">
+			<let name="moodCd" value="@moodCode"/>
+			<assert test="count(@classCode)=0 or @classCode='OBS'"
+			>ERRORE-60| L'attributo "@classCode" dell'elemento "observation" deve essere valorizzato con "OBS" </assert>
+
+			<assert test="$moodCd='EVN'"
+			>ERRORE-61| L'attributo "@moodCode" dell'elemento "observation" deve essere valorizzato con "EVN" </assert>
+		</rule>
+			
+		
+
+		<!--Verifica che i codici ActStatusActiveCompletedAborteSuspended utilizzati siano corretti-->
+        <rule context="//hl7:statusCode">
+            <let name="val_status" value="@code"/>
+            <assert test="$val_status='active' or  $val_status='completed' or $val_status='aborted' or $val_status='suspended'"
+            >Errore 62| Codice ActStatus '<value-of select="$val_status"/>' errato! L'attributo @code deve essere valorizzato con "active", "completed", "aborted", "suspended".
+            </assert>
+        </rule>
+
+		<rule context="//hl7:name[contains(local-name(..), 'Organization') or (parent::hl7:location)]">
+			<assert test="count(hl7:delimiter)=0 and count(hl7:prefix)=0 and count(hl7:suffix)=0"
+			>ERRORE-63| L’elemento 'name' di un'organizzazione NON DEVE contenere i sotto elementi 'delimiter', 'prefix', 'suffix'.</assert>
+		</rule>
+
+		<rule context="//hl7:name">
+			<assert test="count(hl7:delimiter)=0"
+			>ERRORE-64| L’elemento 'name' del soggetto NON DEVE contenere il sotto-elemento 'delimiter'.</assert>
+		</rule>
+
+		<rule context="//hl7:effectiveTime[hl7:low/@value]">
+			<let name="effective_time_low" value="string(hl7:low/@value)"/>
+			<let name="effective_time_high" value="string(hl7:high/@value)"/>
+			<assert test="count(hl7:high/@value)=0 or ($effective_time_high &gt; $effective_time_low)"
+			>ERRORE-65| Il valore dell'elemento effectiveTime/high : '<value-of select="$effective_time_high"/>'
+				deve essere maggione o uguale di quello di effectiveTime/low : '<value-of select="$effective_time_low"/>'.</assert>
+		</rule>
+
+		<rule context="//hl7:originalText[hl7:reference]">
+			<assert test="string(hl7:reference/@value)"
+			>ERRORE-66| L'elemento originalText/reference/@value DEVE essere valorizzato.</assert>
+		</rule>
+		
+		<let name="num_addr" value="count(//hl7:addr[not(parent::hl7:place)and not(parent::hl7:scopingOrganization)])"/>
+		<rule context="//hl7:addr">
+		<assert test="count(//hl7:addr[not(parent::hl7:place)and not(parent::hl7:scopingOrganization)][@use])=$num_addr"
+		>ERRORE-67| L'elemento 'addr' deve avere l'attributo @use valorizzato.</assert>
+		</rule>
+		
+		<!--Controllo su assignedEntity/id-->
+		<rule context="//hl7:assignedEntity[
+
+                  not(ancestor::hl7:participant)
+
+			]">
+		<assert test = " count(hl7:id)=2 or (count(hl7:id[@root='2.16.840.1.113883.2.9.4.3.2'])=0 and (count(hl7:id[matches(@root,'^2\.16\.840\.1\.113883\.2\.9\.2\.(10|20|30|41|42|50|60|70|80|90|100|110|120|130|140|150|160|170|180|190|200)\.4\.2$')])=1)) or (count(hl7:id[@root='2.16.840.1.113883.2.9.4.3.2'])=1 and (count(hl7:id[matches(@root,'^2\.16\.840\.1\.113883\.2\.9\.2\.(10|20|30|41|42|50|60|70|80|90|100|110|120|130|140|150|160|170|180|190|200)\.4\.2$')])=0))"
+		>ERRORE-68|L'elemento <name/> DEVE avere almeno un elemento 'id'. Tale elemento DEVE essere valorizzato tramite il Codice Fiscale, ossia con @root='2.16.840.1.113883.2.9.4.3.2', oppure può contenere un ulteriore elemento id che riporta l' identificativo regionale con l'attributo @root strutturato nel seguente modo: “2.16.840.1.113883.2.9.2.” + [REGIONE] + “.4.2”.</assert>
+		
+		<assert test = "count(hl7:id)=1 or count(hl7:id)=2 and count(hl7:id[@root='2.16.840.1.113883.2.9.4.3.2'])=1 and count(hl7:id[matches(@root,'^2\.16\.840\.1\.113883\.2\.9\.2\.(10|20|30|41|42|50|60|70|80|90|100|110|120|130|140|150|160|170|180|190|200)\.4\.2$')])=1"
+		>ERRORE-69| Qualora l'elemento <name/> contenga due elementi 'id', questi devono essere valorizzati come segue:
+
+			- @root='2.16.840.1.113883.2.9.4.3.2'
+
+			- @root=“2.16.840.1.113883.2.9.2.” + [REGIONE] + “.4.2”.</assert>
+		</rule>
+ 
+	
+<!--__________________________________________________BODY__________________________________________________________________________-->
+
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody">
+		<!--Controlli sulle sezioni obbligatorie-->
+			<!--1-->
+			<!--Sezione Quesito Diagnostico-->
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='29299-5'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b1| Sezione Quesito Diagnostico: la sezione DEVE essere presente</assert>	
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29299-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.648'])=1"
+			>ERRORE-b2| Sezione Quesito Diagnostico: se presente, l'elemento templateId DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.648"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29299-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:text)=1"
+			>ERRORE-b3| Sezione Quesito Diagnostico: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29299-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:entry)&lt;=1"
+			>ERRORE-b4| Sezione Quesito Diagnostico: la sezione PUO' contenere al più un elemento 'entry'</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29299-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:entry)=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:entry/hl7:observation/hl7:code[@code='29298-7'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b5| Sezione Quesito Diagnostico: l'elemento entry/observation/code deve avere l'attributo @code='29298-7' e l'attributo @codeSystem='2.16.840.1.113883.6.1'</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29299-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:entry)=0 or count(hl7:component/hl7:section[hl7:code[@code='29299-5']]/hl7:entry/hl7:observation/hl7:value[@xsi:type='CD' and @codeSystem='2.16.840.1.113883.6.103'])=1"
+			>ERRORE-b6| Sezione Quesito Diagnostico: l'elemento entry/observation/value DEVE avere attributo @codeSystem valorizzato con l'OID del sistema di codifica ICD-9-CM </assert>	
+		
+			<!--2-->
+			<!--Sezione Prestazioni-->
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='62387-6'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b7| Sezione Prestazioni: la sezione DEVE essere presente</assert>	
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='62387-6']])=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.657'])=1"
+			>ERRORE-b8| Sezione Prestazioni: se presente, l'elemento 'templateId' DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.657"</assert>
+			
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='62387-6'][@codeSystem='2.16.840.1.113883.6.1'])=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:text)=1"
+			>ERRORE-b9| Sezione Prestazioni: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='62387-6'][@codeSystem='2.16.840.1.113883.6.1'])=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry)&gt;=1"  
+			>ERRORE-b10| Sezione Prestazioni: la sezione DEVE contenere almeno un elemento 'entry'.</assert>
+			
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='62387-6'][@codeSystem='2.16.840.1.113883.6.1'])=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:observationMedia)&lt;=1"  
+			>ERRORE-b11| Sezione Prestazioni: la sezione Può contenere al più un elemento entry/observationMedia</assert>
+			
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='62387-6'][@codeSystem='2.16.840.1.113883.6.1'])=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:observationMedia)=0 or count(hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:observationMedia/hl7:value[@representation='B64'])=1"  
+			>ERRORE-b12| Sezione Prestazioni: se presente entry/observationMedia Deve contenere un elemento value con attributo @representation='B64'</assert>
+		
+			<!--3-->
+			<!--Sezione Referto-->
+			<assert test="count(hl7:component/hl7:section/hl7:code[@code='47045-0'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b13| Sezione Referto: la sezione DEVE essere presente</assert>	
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='47045-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='47045-0']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='47045-0']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.695'])=1"
+			>ERRORE-b14| Sezione Referto:se presente, l'elemento 'templateId' DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.695"</assert>		
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='47045-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='47045-0']]/hl7:text)=1"
+			>ERRORE-b15| Sezione Referto: la sezione DEVE contenere un elemento 'text'</assert>
+		
+		<!--Controlli sulle sezioni opzionali-->
+			
+			<!--4-->
+			<!--Sezione Storia Clinica-->
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='11329-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.649'])=1"
+			>ERRORE-b16| Sezione Storia Clinica: se presente, l'elemento 'templateId' DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.649"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='11329-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:text)=1"
+			>ERRORE-b17| Sezione Storia Clinica: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='11329-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:entry/hl7:organizer)&lt;=1"
+			>ERRORE-b18| Sezione Storia Clinica: la sezione può contenere al più una entry/organizer (Anamnesi familiare)</assert>
+				
+
+			<!--Controllo cardinalità sotto-sezioni-->
+			<!--Storia Clinica: Allergie-->
+			<assert test="(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component[hl7:section/hl7:code[@code='48765-2']])&lt;=1)"
+			>ERRORE-b19| Sezione Storia Clinica: la sezione può contenere al massimo una sotto-sezione "Allergie"</assert>
+
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section/hl7:code[@code='48765-2'])=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.652'])=1"
+			>ERRORE-b20| Sezione Storia Clinica: nella sotto-sezione Allergie, l'elemento 'templateId', se presente, DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.652 </assert>
+			
+			<assert test="(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section/hl7:code[@code='48765-2'])=0) or 
+			(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:text)=1)"
+			>ERRORE-b21| Sezione Storia Clinica: la sotto-sezione Allergie DEVE contenere un elemento 'text'</assert>
+
+			<assert test="(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section/hl7:code[@code='48765-2'])=0) or 
+			(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry)&lt;=1)"
+			>ERRORE-b22| Sezione Storia Clinica: la sotto-sezione Allergie può contenere al più una 'entry' di tipo 'act'.</assert>
+			
+			
+			<!--Storia Clinica: Sotto-sezione Terapia Farmacologica in Atto-->
+			<assert test="(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component[hl7:section/hl7:code[@code='10160-0']])&lt;=1)"
+			>ERRORE-b23| Sezione Storia Clinica: la sezione può contenere al massimo una sotto-sezione "Terapia Farmacologica in Atto"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='10160-0']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='10160-0']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.653'])=1"
+			>ERRORE-b24| Sezione Storia Clinica: nella sotto-sezione Terapia Farmacologica In Atto, se presente, il 'templateId' DEVE essere valorizzato con @root="2.16.840.1.113883.3.1937.777.63.10.653"</assert>
+			
+			<assert test="(count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section/hl7:code[@code='10160-0'])=0) or (count(hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='10160-0']]/hl7:text)=1)"
+			>ERRORE-b25| Sezione Storia Clinica: la sotto-sezione Terapia Farmacologica in Atto DEVE contenere un elemento 'text'</assert>
+		
+			<!--5-->
+			<!--Sezione Precedenti Esami Eseguiti-->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='30954-2']])=0 or count(hl7:component/hl7:section[hl7:code[@code='30954-2']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='30954-2']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.656'])=1"
+			>ERRORE-b26| Sezione Precedenti Esami eseguiti: nella sezione, se presente l'elemento 'templateId' DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.656"</assert>
+			
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='30954-2']])=0 or count(hl7:component/hl7:section[hl7:code[@code='30954-2']]/hl7:text)=1"
+			>ERRORE-b27| Sezione Precedenti Esami Eseguiti: la sezione DEVE contenere un elemento 'text'</assert>
+				
+			<!--6-->
+			<!--Sezione Esame obiettivo-->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29545-1']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29545-1']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='29545-1']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.669'])=1"
+			>ERRORE-b28| Sezione Esame obiettivo: se presente il 'templateId' deve essere valorizzato con @root="2.16.840.1.113883.3.1937.777.63.10.669".</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29545-1']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29545-1']]/hl7:text)=1"
+			>ERRORE-b29| Sezione Esame obiettivo: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			<!--7-->
+			<!--Sezione Confronto Con Precedenti Esami Eseguiti -->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='93126-1']])=0 or count(hl7:component/hl7:section[hl7:code[@code='93126-1']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='93126-1']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.694'])=1"
+			>ERRORE-b30| Sezione Confronto Con Precedenti Esami Eseguiti: se presente, il 'templateId' deve essere valorizzato con @root="2.16.840.1.113883.3.1937.777.63.10.694".</assert>
+			
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='93126-1']])=0 or count(hl7:component/hl7:section[hl7:code[@code='93126-1']]/hl7:text)=1"
+			>ERRORE-b31| Sezione Confronto Con Precedenti Esami Eseguiti: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			<!--8-->
+			<!--Sezione Diagnosi-->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29548-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29548-5']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='29548-5']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.696'])=1"
+			>ERRORE-b32| Sezione Diagnosi: se presente, l'elemento templateId DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.696"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='29548-5']])=0 or count(hl7:component/hl7:section[hl7:code[@code='29548-5']]/hl7:text)=1"
+			>ERRORE-b33| Sezione Diagnosi: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			<!--9-->
+			<!-- Sezione Conclusioni-->
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='55110-1']])=0 or count(hl7:component/hl7:section[hl7:code[@code='55110-1']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='55110-1']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.698'])=1"
+			>ERRORE-b34| Sezione Conclusioni: se presente, l'elemento templateId DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.698"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='55110-1']])=0 or count(hl7:component/hl7:section[hl7:code[@code='55110-1']]/hl7:text)=1"
+			>ERRORE-b35| Sezione Conclusioni: la sezione DEVE contenere un elemento 'text'</assert>
+						
+			<!--10-->
+			<!--Sezione Suggerimenti per il medico prescrittore-->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='62385-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='62385-0']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='62385-0']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.699'])=1"
+			>ERRORE-b36| Sezione Suggerimenti per il medico prescrittore: se presente, l'elemento templateId DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.699"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='62385-0']])=0 or count(hl7:component/hl7:section[hl7:code[@code='62385-0']]/hl7:text)=1"
+			>ERRORE-b37| Sezione Suggerimenti per il medico prescrittore: la sezione DEVE contenere un elemento 'text'</assert>
+
+			<!--11-->
+			<!-- sezione Accertamenti e controlli consigliati-->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='80615-8']])=0 or count(hl7:component/hl7:section[hl7:code[@code='80615-8']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='80615-8']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.701'])=1"
+			>ERRORE-b38| Sezione Accertamenti e controlli consigliati: se presente, l'elemento templateId DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.701"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='80615-8']])=0 or count(hl7:component/hl7:section[hl7:code[@code='80615-8']]/hl7:text)=1"
+			>ERRORE-b39| Sezione Accertamenti e controlli consigliati: la sezione DEVE contenere un elemento 'text'</assert>
+			
+			<!--12-->
+			<!-- Sezione Terapia farmacologica consigliata-->
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='93341-6']])=0 or count(hl7:component/hl7:section[hl7:code[@code='93341-6']]/hl7:templateId)=0 or count(hl7:component/hl7:section[hl7:code[@code='93341-6']]/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.702'])=1"
+			>ERRORE-b40| Sezione Terapia farmacologica consigliata: la sezione, se presente l'elemento templateId DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.702"</assert>
+			
+			<assert test="count(hl7:component/hl7:section[hl7:code[@code='93341-6']])=0 or count(hl7:component/hl7:section[hl7:code[@code='93341-6']]/hl7:text)=1"
+			>ERRORE-b41| Sezione Terapia farmacologica consigliata: la sezione DEVE contenere un elemento 'text'</assert>		
+		</rule>
+		
+		<!--Controllo sui codici delle sezioni-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section">
+			<let name="codice" value="hl7:code/@code"/>
+			<assert test="count(hl7:code[@code='29299-5'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='11329-0'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='30954-2'][@codeSystem='2.16.840.1.113883.6.1'])=1 
+			or count(hl7:code[@code='29545-1'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='62387-6'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='93126-1'][@codeSystem='2.16.840.1.113883.6.1'])=1 
+			or count(hl7:code[@code='47045-0'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='29548-5'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='55110-1'][@codeSystem='2.16.840.1.113883.6.1'])=1  
+			or count(hl7:code[@code='62385-0'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='80615-8'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='93341-6'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b42| Il codice '<value-of select="$codice"/>' non è corretto. La sezione deve essere valorizzata con uno dei seguenti codici:
+			29299-5	Sezione Quesito Diagnostico
+			11329-0	Sezione Storia Clinica
+			30954-2	Sezione Precedenti Esami Eseguiti
+			29545-1	Sezione Esame Obiettivo
+			62387-6	Sezione Prestazioni
+			93126-1	Sezione Confronto Con Precedenti Esami Eseguiti
+			47045-0	Sezione Referto
+			29548-5 Sezione Diagnosi
+			55110-1	Sezione Conclusioni
+			62385-0	Sezione Suggerimenti Per Il Medico Prescrittore 
+			80615-8 Sezione Accertamenti e Controlli Consigliati 
+			93341-6 Sezione Terapia Farmacologica Consigliata
+			</assert>
+		</rule>
+		
+		<!--Controllo sui codici delle Sotto Sezioni-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section/hl7:component/hl7:section">
+			<let name="codice" value="hl7:code/@code"/>
+			<assert test="count(hl7:code[@code='48765-2'][@codeSystem='2.16.840.1.113883.6.1'])=1 or count(hl7:code[@code='10160-0'][@codeSystem='2.16.840.1.113883.6.1'])=1 "
+			>ERRORE-b43| Il codice '<value-of select="$codice"/>' non è corretto. La sezione deve essere valorizzata con uno dei seguenti codici:
+			48765-2	Sotto Sezione Allergie
+			10160-0	Sotto Terapia Farmacologica In Atto
+			</assert>
+		</rule>
+		
+
+		<!--4-->
+		<!--Sezione Storia Clinica: dettaglio Anamnesi Patologica e Fisiologica(entry/observation) -->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:entry">
+			
+			<!--controllo sui sotto elementi di entry-->
+			
+			<assert test="count(hl7:observation)=1 or count(hl7:organizer)=1"
+			>ERRORE-b45| Sezione Storia Clinica: l'elemento 'entry' deve avere uno dei seguenti sotto elementi:
+			- 'observation': per l'Anamnesi patologica e fisiologica;
+			- 'organizer': per l'Anamnesi familiare.</assert>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:templateId)=0 or count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.650'])=1"
+			>ERRORE-b46| Sezione Storia Clinica: l'elemento entry/observation/templateId, se presente, DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.650"</assert>
+			
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:code[@code='75326-9'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b47| Sezione Storia Clinica: l'elemento entry/observation/code deve avere l'attributo @code='75326-9' e l'attributo @codeSystem='2.16.840.1.113883.6.1'</assert>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:statusCode[@code='completed'])=1"
+			>ERRORE-b48| Sezione Storia Clinica: l'elemento entry/observation/statusCode deve avere l'attributo @code='completed'</assert>
+			
+			
+			<assert test="count(hl7:observation)=0 or (count(hl7:observation/hl7:effectiveTime/hl7:low)=1 and count(hl7:observation/hl7:effectiveTime/hl7:high)=1)"
+			>ERRORE-b49| Sezione Storia Clinica: l'elemento entry/observation/effectiveTime deve essere presente e deve avere l'elemento 'low' e 'high' valorizzato</assert>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:value[@xsi:type='CD'])=1"
+			>ERRORE-b50| Sezione Storia Clinica: l'elemento entry/observation/value deve avere l'attributo @xsi:type="CD" </assert>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:value[@code])=1 or (count(hl7:observation/hl7:value[@code])=0 and count(hl7:observation/hl7:value/hl7:originalText/hl7:reference)=1)"
+			>ERRORE-b51| Sezione Storia Clinica: nel caso di entry/observation/value non codificato, deve essere valorizzato l'elemento 'originalText/reference'</assert>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:entryRelationship/hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.136'])&lt;=1"
+			>ERRORE-b52| Sezione Storia Clinica: l'entry/observation (Anamnesi Fisiologica Patologica) può contenere al più una entryRelationship (Cronicità) </assert>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:entryRelationship/hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.137'])&lt;=1"
+			>ERRORE-b53| Sezione Storia Clinica: l'entry/observation (Anamnesi Fisiologica Patologica) può contenere al più una entryRelationship (Stato) </assert>
+			
+			
+			
+			<!--Sezione Storia Clinica: dettaglio Anamnesi familiare(entry/organizer)-->
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer[@classCode='CLUSTER'])=1"
+			>ERRORE-b54| Sezione Storia Clinica: l'elemento entry/organizer, se presente, DEVE avere l'attributo @classCode='CLUSTER'
+			</assert>
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:templateId)=0 or count(hl7:organizer/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.651'])=1"
+			>ERRORE-b55| Sezione Storia Clinica: l'elemento entry/organizer/templateId, se presente, DEVE essere valorizzato con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.651"
+			</assert>
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:code[@code='10157-6' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b56| Sezione Storia Clinica: l'elemento entry/organizer/code deve avere gli attributi @code="10157-6" e @codeSystem="2.16.840.1.113883.6.1"</assert>
+			
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:statusCode[@code='completed'])=1"
+			>ERRORE-b57| Sezione Storia Clinica: l'elemento entry/organizer/statusCode deve avere l'attributo @code="completed"</assert>
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:subject)&gt;=1"
+			>ERRORE-b58| Sezione Storia Clinica: l'elemento entry/organizer deve avere almeno un elemento 'subject'.</assert>
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:subject/hl7:relatedSubject/hl7:code)=1"
+			>ERRORE-b59| Sezione Storia Clinica: l'elemento entry/organizer/subject/relatedSubject deve avere un elemento code che può essere valorizzato con @codeSystem="2.16.840.1.113883.5.111". </assert>
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:subject/hl7:relatedSubject/hl7:subject)=0 or count(hl7:organizer/hl7:subject/hl7:relatedSubject/hl7:subject/hl7:name)=0 or (count(hl7:organizer/hl7:subject/hl7:relatedSubject/hl7:subject/hl7:name/hl7:given)=1 and count(hl7:organizer/hl7:subject/hl7:relatedSubject/hl7:subject/hl7:name/hl7:family)=1)"
+			>ERRORE-b60| Sezione Storia Clinica: l'elemento subject/relatedSubject può contenere un elemento subject/name e se presente devono essere valorizzati gli elementi 'given' e 'family'. </assert>
+			
+			<assert test="count(hl7:organizer)=0 or count(hl7:organizer/hl7:component)&gt;=1"
+			>ERRORE-b61| Sezione Storia Clinica: l'elemento entry/organizer deve contenere almeno un elemento 'component' di tipo observation (dettaglio anamnesi familiare)</assert>
+		
+		
+		</rule>
+		
+		<!--Sezione Storia Clinica: dettaglio anamnesi del familiare in oggetto (entry/organizer/component/observation)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:entry/hl7:organizer/hl7:component">
+			
+			<assert test="count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.144'])=1"
+			>ERRORE-b62| Sezione Storia Clinica: l'elemento entry/organizer/component/observation/templateId deve avere l'attributo @root='2.16.840.1.113883.3.1937.777.63.10.144'</assert>
+			
+			<assert test="count(hl7:observation/hl7:code[@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b63| Sezione Storia Clinica: l'elemento entry/organizer/component/observation/code deve avere l'attributo @codeSystem="2.16.840.1.113883.6.1".</assert>
+			
+			<assert test="count(hl7:observation/hl7:text)=1"
+			>ERRORE-b64| Sezione Storia Clinica: l'elemento entry/organizer/component/observation DEVE avere un elemento 'text'.</assert>
+			
+			<assert test="count(hl7:observation/hl7:statusCode[@code='completed'])=1"
+			>ERRORE-b65| Sezione Storia Clinica: l'elemento entry/organizer/component/observation/statusCode deve avere l'attributo @code='completed'</assert>
+			
+			<assert test="count(hl7:observation/hl7:effectiveTime[@value])=1 or count(hl7:observation/hl7:effectiveTime/hl7:low[@value])=1 or count(hl7:observation/hl7:effectiveTime[@nullFlavor='UNK'])=1"
+			>ERRORE-b66| Sezione Storia Clinica: l'elemento entry/organizer/component/observation/effectiveTime deve essere presente, nel caso non se ne conosca il valore deve essere valorizzato con @nullflavor = “UNK”. </assert>
+			
+			<assert test="count(hl7:observation/hl7:value[@codeSystem='2.16.840.1.113883.6.103'])=1"
+			>ERRORE-b67| Sezione Storia Clinica: l'elemento entry/organizer/component/observation/value deve essere presente e valorizzato secondo il @codeSystem="2.16.840.1.113883.6.103". </assert>
+			
+			
+			<assert test="count(hl7:observation/hl7:entryRelationship[hl7:observation/hl7:code[@code='35267-4']])&lt;=1"
+			>ERRORE-b68| Sezione Storia Clinica: l'elemento entry/organizer/component/observation (anamnesi familiare) può contenere una 'entryRelationship' relativa all'Età di insorgenza.</assert>
+			
+			<assert test="count(hl7:observation/hl7:entryRelationship/hl7:observation/hl7:code[@code='39016-1'])&lt;=1"
+			>ERRORE-b69| Sezione Storia Clinica: l'elemento entry/organizer/component/observation (anamnesi familiare) può contenere al più una 'entryRelationship' relativa all'Età di decesso.</assert>
+			
+			
+			<assert test="count(hl7:observation/hl7:entryRelationship/hl7:observation[hl7:code[@code='35267-4']])=0 or count(hl7:observation/hl7:entryRelationship/hl7:observation[hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.145']])=1"
+			>ERRORE-b70| Sezione Storia Clinica (anamnesi familiare): l'elemento entry/observation/entryRelationship/observation(Età Insorgenza) deve contenere un templateId con l'attributo @root valorizzato con "2.16.840.1.113883.3.1937.777.63.10.145".
+			</assert>
+			
+			<assert test="count(hl7:observation/hl7:entryRelationship/hl7:observation[hl7:code[@code='39016-1']])=0 or count(hl7:observation/hl7:entryRelationship/hl7:observation[hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.152']])=1"
+			>ERRORE-b71| Sezione Storia Clinica (anamnesi familiare): l'elemento entry/observation/entryRelationship/observation (Età Decesso) deve contenere un templateId con l'attributo @root valorizzato con "2.16.840.1.113883.3.1937.777.63.10.152".
+			</assert>
+			
+			
+			<let name="num_er" value="count(hl7:observation/hl7:entryRelationship/hl7:observation)"/>
+			<assert test="count(hl7:observation/hl7:entryRelationship/hl7:observation/hl7:value)=$num_er"
+			>ERRORE-b72| Sezione Storia Clinica: l'elemento entry/organizer/component/observation/entryRelationship/observation relativo a "Età insorgenza" e/o "Età decesso" deve contenere un elemento 'value'.</assert>
+			
+			<assert test="count(hl7:observation/hl7:entryRelationship)=0 or count(hl7:observation/hl7:entryRelationship/hl7:observation/hl7:code[@code='39016-1' or @code='35267-4'])=$num_er"
+			>ERRORE-b73| Sezione Storia Clinica: l'elemento entry/organizer/component/observation può contenere al più 2 entryRelationship/observation. 
+			Qualora siano presenti, l'elemento entryRelationship/observation/code può avere il @code valorizzato in uno dei seguenti modi:
+				- Età di insorgenza: @code='35267-4';
+				- Età di decesso: @code='39016-1'.</assert>
+		
+		</rule>	
+	
+		<!--Sezione Storia Clinica: cronicità della patologia\stato clinico del problema (entry/observation/entryRelationship/observation)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:entry/hl7:observation/hl7:entryRelationship">
+		
+			<assert test="count(hl7:observation/hl7:code[@code='89261-2' and @codeSystem='2.16.840.1.113883.6.1'])=1 or
+			count(hl7:observation/hl7:code[@code='33999-4' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b74| Sezione Storia Clinica: l'elemento entry/observation/entryRelationship/observation/code deve avere l'attributo @code valorizzato con:
+			"89261-2" per "Cronicità patologia";
+			"33999-4" per "Stato clinico patologia"
+			</assert>
+			
+			<assert test="count(hl7:observation[hl7:code[@code='89261-2']])=0 or count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.136'])=1"
+			>ERRORE-b75| Sezione Storia Clinica: l'elemento entry/observation/entryRelationship/observation/templateId deve avere l'attributo @root valorizzato con:
+			"2.16.840.1.113883.3.1937.777.63.10.136" per "Cronicità patologia".
+			
+			</assert>
+			
+			
+			<assert test=" count(hl7:observation[hl7:code[@code='33999-4']])=0 or count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.137'])=1"
+			>ERRORE-b76| Sezione Storia Clinica: l'elemento entry/observation/entryRelationship/observation/templateId deve avere l'attributo @root valorizzato con:
+			"2.16.840.1.113883.3.1937.777.63.10.137" per "Stato clinico patologia".
+			</assert>
+			
+			<let name="num_ob" value="count(hl7:observation)"/>
+			<assert test="count(hl7:observation/hl7:value)=$num_ob"
+			>ERRORE-b76a| Sezione Storia Clinica: l'elemento entry/observation/entryRelationship/observation/value DEVE essere presente.</assert>
+			
+			<assert test="count(hl7:observation[hl7:code[@code='89261-2']]/hl7:value)=0 or 
+			(count(hl7:observation[hl7:code[@code='89261-2']]/hl7:value[@codeSystem='2.16.840.1.113883.6.1'])=1 or 
+			count(hl7:observation[hl7:code[@code='89261-2']]/hl7:value[@codeSystem='2.16.840.1.113883.2.9.77.22.11.10'])=1)"
+			>ERRORE-b77| Sezione Storia Clinica: l'elemento entry/observation/entryRelationship/observation/value relativo alla Cronicità deve essere valorizzato secondo il Value set "CronicitàProblema" o secondo la codifica LOINC.</assert>
+			
+			<assert test="count(hl7:observation[hl7:code[@code='89261-2']]/hl7:value)=0 or 
+			(count(hl7:observation[hl7:code[@code='89261-2']]/hl7:value[@code='LA28752-6'])=1 or
+			count(hl7:observation[hl7:code[@code='89261-2']]/hl7:value[@code='LA18821-1'])=1)"
+			>ERRORE-b78| Sezione Storia Clinica: l'attributo @code di entry/observation/entryRelationship/observation/value relativo alla Cronicità deve essere valorizzato con:
+			- "LA28752-6" se "chronic";
+			- "LA18821-1" se "acute".
+			</assert>
+			
+			<assert test="count(hl7:observation[hl7:code[@code='33999-4']]/hl7:value)=0 or 
+			(count(hl7:observation[hl7:code[@code='33999-4']]/hl7:value[@codeSystem='2.16.840.1.113883.6.1'])=1 or 
+			count(hl7:observation[hl7:code[@code='33999-4']]/hl7:value[@codeSystem='2.16.840.1.113883.2.9.77.22.11.7'])=1)"
+			>ERRORE-b79| Sezione Storia Clinica: l'elemento entry/observation/entryRelationship/observation/value relativo allo Stato Clinico della patologia deve essere valorizzato secondo il Value set "StatoClinicoProblema" o secondo la codifica LOINC.</assert>
+			
+			<assert test="count(hl7:observation[hl7:code[@code='33999-4']]/hl7:value)=0 or 
+			(count(hl7:observation[hl7:code[@code='33999-4']]/hl7:value[@code='LA16666-2'])=1 or
+			count(hl7:observation[hl7:code[@code='33999-4']]/hl7:value[@code='LA18632-2'])=1)"
+			>ERRORE-b80| Sezione Storia Clinica: l'attributo @code di entry/observation/entryRelationship/observation/value relativo allo Stato Clinico della patologia deve essere valorizzato con:
+			- "LA16666-2" se "active";
+			- "LA18632-2" se "inactive".
+			</assert>
+			
+		</rule>
+		
+		<!--4.1-->
+		<!--Sotto-sezione Allergie-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry">
+		
+			<assert test="hl7:act[@classCode='ACT'] and hl7:act[@moodCode='EVN']"
+			>ERRORE-b81| Sotto-sezione Allergie: la sezione deve contenere un elemento 'entry' di tipo 'act' con attributi @classCode='ACT' e @moodCode='EVN'</assert>
+			
+			<assert test="count(hl7:act/hl7:templateId)=0 or count(hl7:act/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.716'])=1"
+			>ERRORE-b82| Sotto-sezione Allergie: se presente l'elemento 'templateId' l'attributo @root deve essere valorizzato con '2.16.840.1.113883.3.1937.777.63.10.716'</assert>
+			
+			<assert test="count(hl7:act/hl7:code[@nullFlavor='NA'])=1 "
+			>ERRORE-b83| Sotto-sezione Allergie: la entry/act deve contenere un 'code' con @nullFlavor='NA'</assert>
+			
+			<assert test="count(hl7:act/hl7:statusCode)=1"
+			>ERRORE-b84| Sotto-sezione Allergie: la entry/act deve contenere un elemento 'statusCode'.</assert>
+			
+			<assert test="count(hl7:act/hl7:effectiveTime/hl7:low)=1"
+			>ERRORE-b85| Sotto-sezione  Allergie: l'elemento entry/act/effectiveTime deve essere presente e deve avere l'elemento 'low' valorizzato.</assert>
+			
+			<let name="status" value="hl7:act/hl7:statusCode/@code"/>
+			<assert test="count(hl7:act/hl7:statusCode)=0 or ($status='completed' and count(hl7:act/hl7:effectiveTime/hl7:high)=1) or
+			($status='aborted' and count(hl7:act/hl7:effectiveTime/hl7:high)=1) or 
+			($status='suspended' and count(hl7:act/hl7:effectiveTime/hl7:high)=0) or 
+			($status='active' and count(hl7:act/hl7:effectiveTime/hl7:high)=0)"
+			>ERRORE-b86| Sotto-sezione  Allergie: l'elemento entry/act/effectiveTime/high deve essere presente nel caso in cui lo 'statusCode' sia 'completed' oppure 'aborted'.</assert>
+			
+			<!--Sotto-sezione Allergie: osservazione Allergia o Intolleranza(entry/act/entryRelationship/observation)-->
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:templateId)=0 or count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.717'])=1"
+			>ERRORE-b87| Sotto-sezione Allergie: all'interno dell'elemento entry/act/entryRelationship/observation (Allergie-observation(Tele)), l'elemento 'templateId', se presente, deve avere l'attributo @root valorizzato con '2.16.840.1.113883.3.1937.777.63.10.717'.</assert>
+			
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:code[@code='52473-6'and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b88| Sotto-sezione Allergie: l'entry/act deve includere uno ed un solo elemento entryRelationship/observation (Allergie-observation(Tele)) con attributo @code='52473-6' e @codeSystem='2.16.840.1.113883.6.1</assert>	
+			
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:text)=0 or 
+			count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:text/hl7:reference/@value)=1"
+			>ERRORE-b89| Sotto-sezione Allergie: l'entry/act/entryRelationship/observation/text se presente, ha l'attributo reference/@value valorizzato con l'URI che punta alla descrizione di allarme, allergia o intolleranza nel narrative block della sezione.</assert>
+			
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:statusCode[@code='completed'])=1"
+			>ERRORE-b90| Sotto-sezione Allergie: l'elemento entry/act/entryRelationship/observation (Allergie-observation(Tele)) deve avere l'elemento 'statusCode' valorizzato con l'attributo @code="completed".</assert>
+			
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:effectiveTime/hl7:low)=1"
+			>ERRORE-b91| Sotto-sezione Allergie: l'elemento entry/act/entryRelationship/observation (Allergie-observation(Tele)) deve contenere l'elemento 'effectiveTime' che deve avere l'elemento 'low' valorizzato. </assert>
+			
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:value[@xsi:type='CD'])=1"
+			>ERRORE-b92| Sotto-sezione Allergie: l'elemento entry/act/entryRelationship/observation/value deve avere l'attributo @xsi:type='CD'. In caso di rappresentazione codificata si suggerisce di utilizzare il codeSystem='2.16.840.1.113883.5.4'</assert>
+			
+			
+			
+			<assert test="(count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:value[@xsi:type='CD' and @code])=0 and 
+			count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:value[@xsi:type='CD']/hl7:originalText/hl7:reference/@value)=1) or 
+			(hl7:act/hl7:entryRelationship/count(hl7:observation/hl7:value[@xsi:type='CD' and @code])=1 and 
+			count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:value[@xsi:type='CD']/hl7:originalText/hl7:reference/@value)&lt;=1)"
+			>ERRORE-b94| Sotto-sezione Allergie: se l'elemento entry/act/entryRelationship/observation/value non è codificato, deve avere l'elemento originalText/reference/@value valorizzato.</assert>
+			
+			<assert test="count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:participant)&gt;=1"
+			>ERRORE-b95| Sotto-sezione Allergie: entry/act/entryRelationship/observation (Allergie-observation(Tele)) deve contenere almeno un elemento 'participant'.</assert>
+			
+			<assert test="(count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='SUBJ'][hl7:observation])&lt;=1)"
+			>ERRORE-b96| Sotto-sezione Allergie: entry/act/entryRelationship/observation (Allergie-observation(Tele)) deve contenere solo un elemento 'entryRelationship/observation' relativo alla Criticità. </assert>
+			
+			<assert test="(count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='REFR'][hl7:observation])&lt;=1)"
+			>ERRORE-b97| Sotto-sezione Allergie: entry/act/entryRelationship/observation (Allergie-observation(Tele)) deve contenere solo un elemento 'entryRelationship/observation' relativo allo Stato dell'allergia. </assert>
+			
+			<assert test="(count(hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='SUBJ'][hl7:act])&lt;=1)"
+			>ERRORE-b98| Sotto-sezione Allergie: l'elemento entry/act/entryRelationship/observation (Allergie-observation(Tele)) deve contenere solo un elemento 'entryRelationship/act' relativo ai Commenti. </assert>
+		</rule>
+		
+			<!--Sotto-sezione Allergie: descrizione agente codificato(entry/act/entryRelationship/observation/participant)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:observation/hl7:participant">
+			
+			<assert test="@typeCode='CSM'"
+				>ERRORE-b99| L'elemento 'participant' deve avere l'attributo @typeCode valorizzato con 'CSM'.
+			</assert>
+			
+			<assert test="count(hl7:participantRole/hl7:playingEntity/hl7:code[@nullFlavor='UNK' and not(@code or @codeSystem or @codeSystemName or @displayName)])=1 or count(hl7:participantRole/hl7:playingEntity/hl7:code[(@code and @codeSystem) and not(@nullFlavor)])=1"
+				>ERRORE-b100| Sotto sezione Allergie: L'elemento participant/participantRole/playingEntity, se codificato, deve avere un elemento 'code' che può essere valorizzato tramite uno dei seguenti sistemi di codifica 
+				- WHO ATC (2.16.840.1.113883.6.73)
+				- AIC (2.16.840.1.113883.2.9.6.1.5)
+				- AllergenNoDrugs(2.16.840.1.113883.2.9.77.22.11.2).
+				Se l'agente non è noto, deve avere l'elemento 'code' valorizzato con @nullFlavor='UNK'.
+			</assert>
+		</rule>
+	
+			<!--Sotto-sezione Allergie: descrizione reazione (entry/act/entryRelationship/observation/entryRelationship[MFST]/observation)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='MFST']">	
+			
+			<assert test="count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.163'])=1"
+			>ERRORE-b101| Sotto-sezione Allergie (descrizione reazione): entry/act/entryRelationship/observation/entryRelationship/observation deve avere un elemento 'templateId' con l'attributo @root='2.16.840.1.113883.3.1937.777.63.10.163'. </assert>
+			
+			<assert test="count(hl7:observation/hl7:code[@code='75321-0'and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b102| Sotto-sezione Allergie (descrizione reazione): entry/act/entryRelationship/observation/entryRelationship/observation deve avere un elemento 'code' con gli attributi @code='75321-0' e @codeSystem='2.16.840.1.113883.6.1'. </assert>
+			
+			<assert test="count(hl7:observation/hl7:effectiveTime/hl7:low)=1"
+			>ERRORE-b103| Sotto-sezione Allergie (descrizione reazione): entry/act/entryRelationship/observation/entryRelationship/observation deve avere un 'effectiveTime' che contiene l'elemento 'low' valorizzato. </assert>
+			
+			<!--Descrizione reazione codificata-->
+			<assert test="count(hl7:observation/hl7:value[@xsi:type='CD'])=1"
+			>ERRORE-b104| Sotto-sezione Allergie (descrizione reazione): l'elemento observation deve avere un elemento value con @xsi:type='CD'</assert>
+			
+			<assert test="count(hl7:observation/hl7:value)=0 or
+						(count(hl7:observation/hl7:value[@code])=0 and count(hl7:observation/hl7:value/hl7:originalText/hl7:reference)=1) or
+						(count(hl7:observation/hl7:value[@code])=1 and (count(hl7:observation/hl7:value/hl7:originalText/hl7:reference)&lt;=1))"
+			>ERRORE-b105| Sotto-sezione Allergie (descrizione reazione): nel caso di entry/act/entryRelationship/observation/entryRelationship/observation/value non codificato, questi deve avere l'elemento originalText/reference valorizzato. Altrimenti, nel caso in cui è codificato, deve avere gli attributi @code e @codeSystem valorizzati.</assert>
+			
+		</rule>
+		
+			<!--Sotto-sezione Allergie: Criticità dell'allergia o intolleranza (entry/act/entryRelationship/observation/entryRelationship[SUBJ]/observation)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='SUBJ'][hl7:observation]">
+			
+			<assert test="count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.164'])=1"
+			>ERRORE-b106| Sotto-sezione Allergie (criticità dell'allergia o intolleranza): entry/act/entryRelationship/observation/entryRelationship/observation deve avere un elemento 'templateId' con l'attributo @root='2.16.840.1.113883.3.1937.777.63.10.164' </assert>		
+			
+			<assert test="count(hl7:observation/hl7:code[@code='82606-5' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b107| Sotto-sezione Allergie (criticità dell'allergia o intolleranza): entry/act/entryRelationship/observation/entryRelationship/observation/code con gli attributi @code='82606-5' e @codeSystem='2.16.840.1.113883.6.1'</assert>
+			
+			<assert test="count(hl7:observation/hl7:text)=0 or count(hl7:observation/hl7:text/hl7:reference[@value])=1"
+			>ERRORE-b108| Sotto-sezione Allergie (criticità dell'allergia o intolleranza): entry/act/entryRelationship/observation/entryRelationship/observation/text/reference/value deve essere valorizzato con l'URI che punta alla descrizione della severità nel narrative block della sezione. </assert>
+			
+			<assert test="count(hl7:observation/hl7:value)=1"
+			>ERRORE-b109| Sotto-sezione Allergie (criticità dell'allergia o intolleranza): entry/act/entryRelationship/observation/entryRelationship/observation deve essere presente almeno un elemento 'value'.</assert>
+			
+		</rule>
+			
+			<!--Sotto-sezione Allergie: Stato dell'Allergia (entry/act/entryRelationship/observation/entryRelationship[REFR]/observation)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='REFR']">
+			
+			<assert test="count(hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.165'])=1"
+			>ERRORE-b110| Sotto-sezione Allergie (Stato dell'allergia): entry/act/entryRelationship/observation/entryRelationship/observation deve avere un elemento 'templateId' con l'attributo @root='2.16.840.1.113883.3.1937.777.63.10.165'. </assert>
+			
+			<assert test="count(hl7:observation/hl7:code[@code='33999-4' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b111| Sotto-sezione Allergie (stato dell'allergia): entry/act/entryRelationship/observation/entryRelationship/observation/code deve avere l'attributo @code='33999-4' e @codesystem='2.16.840.1.113883.6.1'.</assert>
+			
+			
+			<assert test="count(hl7:observation/hl7:value)=1"
+			>ERRORE-b112| Sotto-sezione Allergie (stato dell'allergia): entry/act/entryRelationship/observation/entryRelationship/observation Deve avere l'elemento 'value', che può essere valorizzato tramite il Value Set StatoClinicoAllergia_PSSIT DYNAMIC</assert>
+			
+		</rule>
+	
+			<!--Sotto-sezione Allergie: commenti (entry/act/entryRelationship/observation/entryRelationship/act)-->	
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='48765-2']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:observation/hl7:entryRelationship[@typeCode='SUBJ'][hl7:act]">
+			
+			<assert test="count(hl7:act/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.166'])=1"
+			>ERRORE-b114| Sotto-sezione Allergie (Commenti): entry/act/entryRelationship/observation/entryRelationship/act deve avere un elemento 'templateId' con l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.166". </assert>
+			
+			<assert test="count(hl7:act/hl7:code[@code='48767-8' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b115| Sotto-sezione Allergie (commenti): l'elemento entry/act/entryRelationship/observation/entryRelationship/act deve contenere l'elemento 'act' con attributi @code='48767-8' e @codeSystem='2.16.840.1.113883.6.1'</assert>
+			
+			<assert test="count(hl7:act/hl7:text)=1"
+			>ERRORE-b116| Sotto-sezione Allergie (commenti): l'elemento entry/act/entryRelationship/observation/entryRelationship/act deve contenere l'elemento 'text'.</assert>
+		</rule>
+		
+		<!--4.2-->
+		<!--Sotto-sezione Terapia farmacologica in atto-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='11329-0']]/hl7:component/hl7:section[hl7:code[@code='10160-0']]/hl7:entry">
+		
+			<assert test="count(hl7:substanceAdministration[@classCode='SBADM'][@moodCode='EVN'])=1"
+			>ERRORE-b117| Sotto-sezione Terapia farmacologica in atto: la sezione deve contenere un elemento 'substanceAdministration' con attributi @classCode='SBADM' e @moodCode='EVN'.</assert>
+			
+			<assert test="count(hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:templateId)=0 or count(hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:templateId[@root='2.16.840.1.113883.2.9.10.1.6.53'])=1 "
+			>ERRORE-b118| Sotto-sezione Terapia farmacologica in atto: la sezione deve contenere un elemento entry/substanceAdministration/consumable/manufacturedProduct con 'templateId' valorizzato con @root="2.16.840.1.113883.2.9.10.1.6.53".</assert>
+			
+			<assert test="count(hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:manufacturedMaterial)=1"
+			>ERRORE-b119| Sotto-sezione Terapia farmacologica in atto: la sezione deve contenere un elemento entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial. </assert>
+			
+			<let name="man_mat" value="hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:manufacturedMaterial"/>
+			<assert test="count($man_mat/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5'])=1"
+			>ERRORE-b120| Sotto-sezione Terapia farmacologica in atto: l'elemento entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial deve contenere un elemento 'code' il cui @codeSystem deve essere valorizzato secondo il seguente sistema di codifica:
+			@codeSystem='2.16.840.1.113883.2.9.6.1.5' 	(AIC) 
+			</assert>
+			
+			<assert test="count($man_mat/hl7:code/hl7:translation)=0 or (count($man_mat/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5']/hl7:translation[@codeSystem='2.16.840.1.113883.6.73'])=1 or count($man_mat/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5']/hl7:translation[@codeSystem='2.16.840.1.113883.2.9.6.1.51'])=1)"
+			>ERRORE-b121| Sotto-sezione Terapia farmacologica in atto: l'elemento entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translation deve essere valorizzato secondo i seguenti sistemi di codifica:
+			@codeSystem='2.16.840.1.113883.6.73'		(ATC)
+			@codeSystem='2.16.840.1.113883.2.9.6.1.51' 	(GE)</assert>
+		</rule>
+		
+		<!--5-->
+		<!--Sezione Precedenti esami eseguiti-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='30954-2']]/hl7:entry">
+			
+			<assert test="count(hl7:observation)=1 or count(hl7:observationMedia)=1 "
+			>ERRORE-b122| Sezione Precedenti esami eseguiti: l'elemento 'entry' DEVE contenere un elemento di tipo 'observation' oppure un elemento di tipo 'observationMedia'.</assert>
+			
+			<report test="count(hl7:observation/hl7:code[not(@codeSystem='2.16.840.1.113883.6.1' or @codeSystem='2.16.840.1.113883.6.103')])=1"
+			>W005 | Sezione Precedenti Esami eseguiti: l'entry/observation/code può essere valorizzato secondo i seguenti sistemi di codifica
+			LOINC @codeSystem='2.16.840.1.113883.6.1'
+			ICD-9-CM @codeSystem='2.16.840.1.113883.6.103'</report>
+			
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:value[@xsi:type='ST'])=1"
+			>ERRORE-b123| Sezione Precedenti esami eseguiti: l'elemento observation/value DEVE avere l'attributo @xsi:type='ST'.</assert>
+			
+			<assert test="count(hl7:observationMedia)= 0 or count(hl7:observationMedia/hl7:value[@representation='B64'])=1"
+			>ERRORE-b124| Sezione Precedenti esami eseguiti: l'elemento observationMedia/value, deve avere l'attributo @representation valorizzato con 'B64'.</assert>	
+		</rule>	
+
+		<!--7-->
+		<!--Sezione prestazioni: dettaglio prestazioni amministrative eseguite (entry/act)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:act">
+			
+			<assert test="@classCode='ACT' and @moodCode='EVN'"
+			>ERRORE-b125| Sezione Prestazioni: l'elemento entry/act DEVE avere gli attributi valorizzati @classCode="ACT" e @moodCode="EVN".</assert>
+			
+			<assert test="count(hl7:effectiveTime/@value)=1"
+			>ERRORE-b126| Sezione Prestazioni: l'elemento entry/act DEVE contenere l'elemento 'effectiveTime' valorizzato con l'attributo @value.</assert>
+			
+			<!--controllo sulla entryRelationship/obsrvation obbligatoria relativa alla Branca Specialità-->
+			<assert test="count(hl7:entryRelationship/hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.703'])&gt;=1"
+			>ERRORE-b127| Sezione Prestazioni: l'elemento entryRelationship/observation (branca specialità) deve avere 'templateId' con @root="2.16.840.1.113883.3.1937.777.63.10.703".
+			</assert>
+			
+			<!--controllo sulla entryRelationship/obsrvation obbligatoria relativa alla Disciplina Specialità-->
+			<assert test="count(hl7:entryRelationship/hl7:observation/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.704'])&gt;=1"
+			>ERRORE-b128| Sezione Prestazioni: l'elemento entryRelationship/observation (disciplina specialità) deve avere 'templateId' con @root="2.16.840.1.113883.3.1937.777.63.10.704".
+			</assert>
+			
+		</rule>
+		
+		<!--Sezione prestazioni: procedura operativa eseguita (entry/act/entryRelationship)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:act/hl7:entryRelationship">
+
+			<assert test="count(hl7:procedure)=1 or count(hl7:substanceAdministration)=1 or count(hl7:observation)=1 or count(hl7:act)=1"
+			>ERRORE-b129| Sezione Prestazioni: l'elemento entry/act/entryRelationship deve avere uno dei seguenti sotto elementi:
+			- 'procedure': per procedure diagnostiche invasive, interventistiche, chirurgiche;
+			- 'substanceAdministration': per somministrazioni farmaceutiche;
+			- 'observation': per osservazioni eseguite durante la prestazione;
+			- 'act': per altre procedure che non ricadono nei casi precedenti.
+			</assert>
+			
+			<assert test="count(hl7:observation/hl7:participant)=0 or count(hl7:observation/hl7:participant/hl7:participantRole/hl7:playingDevice/hl7:code)=1"
+			>ERRORE-b130| Sezione Prestazioni: l'elemento observation/participant/participantRole/playingDevice deve contenere l'elemento 'code'. </assert>
+			
+			<assert test="count(hl7:observation/hl7:entryRelationship[not(hl7:act) and not(hl7:observation)]) = 0 and (count(hl7:observation/hl7:entryRelationship)=0 or count(hl7:observation/hl7:entryRelationship/hl7:act)=1 or count(hl7:observation/hl7:entryRelationship/hl7:observation)&gt;0)"
+			>ERRORE-b131| Sezione Prestazioni: l'elemento observation/entryRelationship se presente può contenere solo elementi di tipo 'observation' e/o 'act'. </assert>
+			
+			
+			<assert test="count(hl7:observation[not(hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.703' or @root='2.16.840.1.113883.3.1937.777.63.10.704'])]) = 0
+			or count(hl7:observation[not(hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.703' or @root='2.16.840.1.113883.3.1937.777.63.10.704'])]
+			/hl7:entryRelationship/hl7:act/hl7:code[@code='48767-8' and @codeSystem='2.16.840.1.113883.6.1']) = 1"
+			>ERRORE-b132| Sezione Prestazioni: l'elemento observation/entryRelationship/act (Nota Prestazioni Tele) deve essere presente e deve contenere l'elemento 'code' con attributo @code=48767-8 e @codeSystem='2.16.840.1.113883.6.1'.</assert>
+
+			
+			<assert test="count(hl7:observation[not(hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.703' or @root='2.16.840.1.113883.3.1937.777.63.10.704'])])=0 or count(hl7:observation[not(hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.703' or @root='2.16.840.1.113883.3.1937.777.63.10.704'])]/hl7:entryRelationship/hl7:act/hl7:text)=1"
+			>ERRORE-b133| Sezione Prestazioni: l'elemento observation/entryRelationship/act (Nota Prestazioni Tele) deve contenere l'elemento 'text'. </assert>
+			
+		</rule>
+		
+		
+		<!--Controlli su Procedure-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:procedure">
+			
+			
+			<assert test="count(hl7:code)=1 and count(hl7:code/hl7:originalText)=1"
+			>ERRORE-b134| Sezione Prestazioni: l'elemento entry/act/procedure deve contenere l'elemento 'code' che valorizza al suo interno l'elemento code/originalText. </assert>
+			
+			
+			<assert test="count(hl7:participant)=0 or count(hl7:participant/hl7:participantRole/hl7:playingDevice)=1"
+			>ERRORE-b135| Sezione Prestazioni: l'elemento procedure/participant/participantRole deve contenere l'elemento 'playingDevice'. </assert>
+			
+			<assert test="count(hl7:participant)=0 or count(hl7:participant/hl7:participantRole/hl7:playingDevice/hl7:code)=1"
+			>ERRORE-b136| Sezione Prestazioni: l'elemento procedure/participant/participantRole/playingDevice deve contenere l'elemento 'code'. </assert>
+			
+			
+			<assert test="count(hl7:entryRelationship[not(hl7:act) and not(hl7:observation)]) = 0 and (count(hl7:entryRelationship)=0 or count(hl7:entryRelationship/hl7:act)=1 or count(hl7:entryRelationship/hl7:observation)&gt;0)">
+			  ERRORE-b137| Sezione Prestazioni: l'elemento procedure/entryRelationship se presente può contenere solo elementi di tipo observation e/o act.
+			</assert>
+			
+			<assert test="count(hl7:entryRelationship/hl7:act)&lt;=1">
+			  ERRORE-b138| Sezione Prestazioni: l'elemento procedure/entryRelationship se presente PUO' contenere al più una entryRelationship/act.
+			</assert>
+			
+			<assert test="count(hl7:entryRelationship/hl7:act)=0 or count(hl7:entryRelationship/hl7:act/hl7:code[@code='48767-8' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b139| Sezione Prestazioni: l'elemento procedure/entryRelationship/act (Nota Prestazioni Tele) se presente deve contenere l'elemento code con attributo @code=48767-8 e @codeSystem='2.16.840.1.113883.6.1'</assert>
+			
+			<assert test="count(hl7:entryRelationship/hl7:act)=0 or count(hl7:entryRelationship/hl7:act/hl7:text)=1"
+			>ERRORE-b140| Sezione Prestazioni: l'elemento procedure/entryRelationship/act (Nota Prestazioni Tele) se presente deve contenere l'elemento text </assert>
+		</rule>
+		
+		<!--Controlli su substanceAdministration-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:substanceAdministration">
+			
+			
+			<assert test="count(hl7:consumable)=1"
+			>ERRORE-b141| Sezione Prestazioni: l'elemento entry/act/entryRelationship/substanceAdministration deve contenere l'elemento consumable </assert>
+			
+			<assert test="count(hl7:consumable/hl7:manufacturedProduct/hl7:templateId)=0 or count(hl7:consumable/hl7:manufacturedProduct/hl7:templateId[@root='2.16.840.1.113883.2.9.10.1.6.53'])=1"
+			>ERRORE-b142| Sezione Prestazioni: qualora l'elemento consumable/manufacturedProduct contenga un 'templateId', questo DEVE essere valorizzato con @root="2.16.840.1.113883.2.9.10.1.6.53". </assert>
+			
+			
+			<assert test="count(hl7:consumable/hl7:manufacturedProduct/hl7:manufacturedMaterial)=1"
+			>ERRORE-b143| Sezione Prestazioni: l'elemento substanceAdministration/consumable/manufacturedProduct deve contenere  'manufacturedMaterial'. </assert>
+			
+			<let name="man_mat" value="hl7:consumable/hl7:manufacturedProduct/hl7:manufacturedMaterial"/>
+			<assert test="count($man_mat/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5'])=1"
+			>ERRORE-b144| Sezione Prestazioni: l'elemento substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial deve contenere un elemento 'code' il cui @codeSystem deve essere valorizzato secondo il seguente sistema di codifica:
+			@codeSystem='2.16.840.1.113883.2.9.6.1.5' 	(AIC) 
+			</assert>
+			
+			<assert test="count($man_mat/hl7:code/hl7:translation)=0 or (count($man_mat/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5']/hl7:translation[@codeSystem='2.16.840.1.113883.6.73'])=1 or count($man_mat/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5']/hl7:translation[@codeSystem='2.16.840.1.113883.2.9.6.1.51'])=1)"
+			>ERRORE-b145| Sezione Prestazioni: l'elemento substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translation deve essere valorizzato secondo i seguenti sistemi di codifica:
+			@codeSystem='2.16.840.1.113883.6.73'		(ATC)
+			@codeSystem='2.16.840.1.113883.2.9.6.1.51' 	(GE)
+			</assert>
+			
+			
+			<assert test="count(hl7:participant)=0 or count(hl7:participant/hl7:participantRole/hl7:playingDevice/hl7:code)=1"
+			>ERRORE-b146| Sezione Prestazioni: l'elemento substanceAdministration/participant/participantRole/playingDevice deve contenere l'elemento 'code'. </assert>
+			
+			<assert test="count(hl7:entryRelationship[not(hl7:act) and not(hl7:observation)]) = 0 and (count(hl7:entryRelationship)=0 or count(hl7:entryRelationship/hl7:act)=1 or count(hl7:entryRelationship/hl7:observation)&gt;0)">
+			  ERRORE-b147| Sezione Prestazioni: l'elemento substanceAdministration/entryRelationship se presente può contenere solo elementi di tipo 'observation' e/o 'act'.
+			</assert>
+			
+			<!--Controlli  substanceAdministration/entryRelationship/act NOTE E COMMENTI-->
+			<assert test="count(hl7:entryRelationship/hl7:act)&lt;=1">
+			  ERRORE-b148| Sezione Prestazioni: l'elemento substanceAdministration se presente PUO' contenere al più una entryRelationship/act.
+			</assert>
+			
+			<assert test="count(hl7:entryRelationship/hl7:act)=0 or count(hl7:entryRelationship/hl7:act/hl7:code[@code='48767-8'and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b149| Sezione Prestazioni: l'elemento substanceAdministration/entryRelationship/act (Nota Prestazioni Tele) se presente deve contenere l'elemento code con attributo @code=48767-8 e @codeSystem='2.16.840.1.113883.6.1'.</assert>
+			
+			<assert test="count(hl7:entryRelationship/hl7:act)=0 or count(hl7:entryRelationship/hl7:act/hl7:text)=1"
+			>ERRORE-b150| Sezione Prestazioni: l'elemento substanceAdministration/entryRelationship/act (Nota Prestazioni Tele) se presente deve contenere l'elemento 'text'. </assert>
+			
+		</rule>
+		
+		
+		<!--Controlli su act-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='62387-6']]/hl7:entry/hl7:act/hl7:entryRelationship/hl7:act">		
+			
+			<assert test="count(hl7:participant)=0 or count(hl7:participant/hl7:participantRole/hl7:playingDevice/hl7:code)=1"
+			>ERRORE-b151| Sezione Prestazioni: l'elemento act/participant/participantRole/playingDevice deve contenere l'elemento 'code'. </assert>
+			
+			<assert test="count(hl7:entryRelationship[not(hl7:act) and not(hl7:observation)]) = 0 and (count(hl7:entryRelationship/hl7:act)=1 or count(hl7:entryRelationship/hl7:observation)&gt;1)"
+			>ERRORE-b152| Sezione Prestazioni: l'elemento 'entryRelationship' se presente può contenere solo elementi di tipo 'observation' e/o 'act'. </assert>
+								
+			<assert test="count(hl7:entryRelationship/hl7:act/hl7:code[@code='48767-8' and @codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b153| Sezione Prestazioni: l'elemento act/entryRelationship/act (Nota Prestazioni Tele) deve essere presente e deve contenere l'elemento code con attributo @code=48767-8 e @codeSystem='2.16.840.1.113883.6.1'.</assert>
+			
+			<assert test="count(hl7:entryRelationship/hl7:act/hl7:text)=1"
+			>ERRORE-b154| Sezione Prestazioni: l'elemento act/entryRelationship/act (Nota Prestazioni Tele) se presente deve contenere l'elemento 'text'. </assert>
+		</rule>
+							
+		<!--10-->
+		<!--Sezione Diagnosi-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='29548-5']]/hl7:entry">
+			
+			<assert test="count(hl7:observation)=1"
+			>ERRORE-b154a| Sezione Diagnosi: l'elemento entry DEVE contenere un elemento 'observation'.</assert>
+			
+			<assert test="count(hl7:observation/hl7:code[@code='29308-4'][@codeSystem='2.16.840.1.113883.6.1'])=1"
+			>ERRORE-b155| Sezione Diagnosi: l'elemento entry/observation DEVE contenere l'elemento 'code' valorizzato con gli attributi @code='29308-4' e @codeSystem='2.16.840.1.113883.6.1'.</assert>
+			
+			<assert test="count(hl7:observation/hl7:value[@codeSystem='2.16.840.1.113883.6.103'])=1"
+			>ERRORE-b156| Sezione Diagnosi: l'elemento entry/observation DEVE contenere l'elemento 'value' con codesystem=2.16.840.1.113883.6.103 (ICD9-CM). </assert>
+		</rule>
+		
+		<!--13-->
+		<!-- Sezione accertamenti e controlli consigliati-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='80615-8']]/hl7:entry">
+			
+			<assert test="count(hl7:act)=1"
+			>ERRORE-b157| Sezione Accertamenti e controlli consigliati: l'elemento 'entry' DEVE contenere l'elemento 'act'. </assert>
+			
+			<assert test="count(hl7:act[@classCode='ACT'][@moodCode='PRP'])=1"
+			>ERRORE-b158| Sezione Accertamenti e controlli consigliati: l'elemento entry/act DEVE avere gli attributi valorizzati @classCode="ACT" e @moodCode="PRP". </assert>
+			
+			
+		</rule>
+		
+		<!--14-->
+		<!--Sezione Terapia Farmacologica Consigliata-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='93341-6']]/hl7:entry">
+			
+			<assert test="count(hl7:substanceAdministration)=1"
+			>ERRORE-b159| Sezione Terapia farmacologica consigliata: l'elemento 'entry' deve contenere un elemento 'substanceAdministration'. </assert>
+			<assert test="count(hl7:substanceAdministration[@classCode='SBADM'][@moodCode='INT'])=1"
+			>ERRORE-b160| Sezione Terapia Farmacologica Consigliata: l'elemento entry/substanceAdministration DEVE avere gli attributi valorizzati @classCode="SBADM" e @moodCode="INT". </assert>
+			
+			<assert test="count(hl7:substanceAdministration/hl7:templateId)=0 or count(hl7:substanceAdministration/hl7:templateId[@root='2.16.840.1.113883.3.1937.777.63.10.718'])=1"
+			>ERRORE-b161| Sezione Terapia Farmacologica Consigliata: nell'elemento entry/substanceAdministration, il 'templateId', se presente, deve avere l'attributo @root="2.16.840.1.113883.3.1937.777.63.10.718". </assert>
+			
+			<assert test="count(hl7:substanceAdministration/hl7:statusCode)=1"
+			>ERRORE-b162| Sezione Terapia Farmacologica Consigliata: l'elemento entry/substanceAdministration deve contenere lo 'statusCode'. </assert>
+			
+			<assert test="count(hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:low)=1 or count(hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:low[@nullFlavor='UNK'])=1 "
+			>ERRORE-b163| Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration DEVE contenere l'elemento effectiveTime/low nel caso non se ne conosca il valore deve essere valorizzato con @nullflavor = UNK </assert>
+			
+			<assert test="(count(hl7:substanceAdministration/hl7:statusCode[@code='active' or @code='suspended'])=1 and count(hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:high)=0) or (count(hl7:substanceAdministration/hl7:statusCode[@code='completed' or @code='aborted'])=1 and count(hl7:substanceAdministration/hl7:effectiveTime[@xsi:type='IVL_TS']/hl7:high)=1)"
+			>ERRORE-b164| Sezione Terapia Farmacologica Consigliata: l'elemento effectiveTime/high  deve essere sempre presente quando lo statusCode è “completed” o “aborted”; NON DEVE essere presente negli altri casi. </assert>
+			
+			<!-- Controlli su consumable -->
+			<assert test="count(hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:templateId)=0 or count(hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:templateId[@root='2.16.840.1.113883.2.9.10.1.6.53'])=1"
+			>ERRORE-b165|Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration/consumable/manufacturedProduct/templateId se presente DEVE avere l'attributo @root valorizzato con '2.16.840.1.113883.2.9.10.1.6.53'.</assert>
+			
+			<assert test="count(hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:manufacturedMaterial/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5'])=1"
+			>ERRORE-b166|Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code DEVE avere l'attributo "@codeSystem" valorizzato come segue:
+			- 2.16.840.1.113883.2.9.6.1.5 	codifica "AIC";
+			</assert>
+			
+			<let name="trans_vl" value="hl7:substanceAdministration/hl7:consumable/hl7:manufacturedProduct/hl7:manufacturedMaterial"/>
+			<assert test="count($trans_vl/hl7:code/hl7:translation)=0 or (count($trans_vl/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5']/hl7:translation[@codeSystem='2.16.840.1.113883.6.73'])=1 or count($trans_vl/hl7:code[@codeSystem='2.16.840.1.113883.2.9.6.1.5']/hl7:translation[@codeSystem='2.16.840.1.113883.2.9.6.1.51'])=1)"
+			>ERRORE-b167| Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code/translation deve essere valorizzato secondo i seguenti sistemi di codifica:
+			@codeSystem='2.16.840.1.113883.6.73'		(ATC)
+			@codeSystem='2.16.840.1.113883.2.9.6.1.51' 	(GE)</assert>	
+		</rule>	
+		
+		<!--Sezione Terapia Farmacologica Consigliata (entry/substanceAdministration/entryRelationship)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='93341-6']]/hl7:entry/hl7:substanceAdministration/hl7:entryRelationship">
+
+			<assert test="count(hl7:observation)=1 or count(hl7:supply)=1"
+			>ERRORE-b168| Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration/entryRelationship deve avere uno dei seguenti sotto elementi:
+			- 'observation': per informazioni relative a grammatura e quantità della confezione;
+			- 'supply': per il numero di confezioni prescritte;
+			</assert>
+			
+			<!--observation relativa alla Grammatura/Quantità-->
+			<assert test="count(hl7:observation)=0 or count(hl7:observation/hl7:value[@xsi:type='REAL'])=1"
+			>ERRORE-b169| Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration/entryRelationship/observation DEVE avere l'elemento 'value' valorizzato con xsi:type=REAL.</assert>
+			
+			<!--numero di confezioni-->
+			<assert test="count(hl7:supply)=0 or count(hl7:supply/hl7:quantity[@value])=1"
+			>ERRORE-b170| Sezione Terapia farmacologica consigliata: l'elemento entry/substanceAdministration/entryRelationship/supply deve avere l'elemento 'quantity' valorizzato tramite il tuo attributo @value.</assert>
+		</rule>
+		
+		<!--Sezione Terapia Farmacologica Consigliata: controllo participant (entry/substanceAdministration/participant)-->
+		<rule context="hl7:ClinicalDocument/hl7:component/hl7:structuredBody/hl7:component/hl7:section[hl7:code[@code='93341-6']]/hl7:entry/hl7:substanceAdministration/hl7:participant">
+			
+			<assert test="count(hl7:participantRole/hl7:id)=1"
+			>ERRORE-b171| Sezione Terapia Farmacologica consigliata: se presente entry/substanceAdministration/participant, DEVE contenere un elemento participantRole/id </assert>
+			
+			<assert test="count(hl7:participantRole/hl7:playingEntity/hl7:name/hl7:given)=1 and count(hl7:participantRole/hl7:playingEntity/hl7:name/hl7:family)=1"
+			>ERRORE-b172| Sezione Terapia Farmacologica consigliata: se presente entry/substanceAdministration/participant, DEVE contenere l'elemento participantRole/playingEntity/name con i sotto-elementi given e family </assert>
+		</rule>	
+		
+	</pattern>
+</schema>
