@@ -192,10 +192,10 @@ version,code,description,release_date
 2.0.0,10.uN.s/cm2,10 * microNewton * second / (centimeter ^ 2),2014-03-26
 2.0.0,10^,the number ten for arbitrary powers,2014-03-26
 2.0.0,24.h,24 hour,2014-03-26
-2.0.0,A,Amp??re,2014-03-26
-2.0.0,A/m,Amp??re / meter,2014-03-26
+2.0.0,A,Amp��re,2014-03-26
+2.0.0,A/m,Amp��re / meter,2014-03-26
 2.0.0,AU,astronomic unit,2014-03-26
-2.0.0,Ao,??ngstr??m,2014-03-26
+2.0.0,Ao,��ngstr��m,2014-03-26
 2.0.0,B,bel,2014-03-26
 2.0.0,B[SPL],bel sound pressure,2014-03-26
 2.0.0,B[V],bel volt,2014-03-26
@@ -303,9 +303,9 @@ version,code,description,release_date
 2.0.0,[Amb'a'1'U],Amb a 1 units,2014-03-26
 2.0.0,[BAU],bioequivalent allergen unit,2014-03-26
 2.0.0,[Btu],British thermal unit,2014-03-26
-2.0.0,[Btu_39],British thermal unit at 39 ??F,2014-03-26
-2.0.0,[Btu_59],British thermal unit at 59 ??F,2014-03-26
-2.0.0,[Btu_60],British thermal unit at 60 ??F,2014-03-26
+2.0.0,[Btu_39],British thermal unit at 39 ��F,2014-03-26
+2.0.0,[Btu_59],British thermal unit at 59 ��F,2014-03-26
+2.0.0,[Btu_60],British thermal unit at 60 ��F,2014-03-26
 2.0.0,[Btu_IT],international table British thermal unit,2014-03-26
 2.0.0,[Btu_m],mean British thermal unit,2014-03-26
 2.0.0,[Btu_th],thermochemical British thermal unit,2014-03-26
@@ -523,8 +523,8 @@ version,code,description,release_date
 2.0.0,cSt,centiStokes,2014-03-26
 2.0.0,cal,calorie,2014-03-26
 2.0.0,cal_IT,international table calorie,2014-03-26
-2.0.0,cal_[15],calorie at 15 ??C,2014-03-26
-2.0.0,cal_[20],calorie at 20 ??C,2014-03-26
+2.0.0,cal_[15],calorie at 15 ��C,2014-03-26
+2.0.0,cal_[20],calorie at 20 ��C,2014-03-26
 2.0.0,cal_m,mean calorie,2014-03-26
 2.0.0,cal_th,thermochemical calorie,2014-03-26
 2.0.0,cd,candela,2014-03-26
@@ -673,7 +673,7 @@ version,code,description,release_date
 2.0.0,m2,square meter,2014-03-26
 2.0.0,m2/s,square meter per second,2014-03-26
 2.0.0,m3/s,cubic meter per second,2014-03-26
-2.0.0,mA,milliAmp??re,2014-03-26
+2.0.0,mA,milliAmp��re,2014-03-26
 2.0.0,mCi,milliCurie,2014-03-26
 2.0.0,mL,milliliter,2014-03-26
 2.0.0,mL/(10.h),milliliter per 10 hour,2014-03-26
