@@ -1,0 +1,243 @@
+map "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/TesseraPortatoreImpianto" = "TesseraPortatoreImpianto"
+
+uses "http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument" alias ClinicalDocument as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor" alias AssignedAuthor as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity" alias AssignedEntity as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AssociatedEntity" alias AssociatedEntity as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/CustodianOrganization" alias CustodianOrganization as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/OrganizationPartOf" alias OrganizationPartOf as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Organization" alias rapresentedOrganization as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Section" alias Section as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PatientRole" alias PatientRole as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/AD" alias AD as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/Act" alias Act as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ" alias IVL_PQ as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PQ" alias PQ as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole" alias participantRole as source
+uses "http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity" alias playingEntity as source
+
+uses "http://hl7.org/fhir/StructureDefinition/Bundle" alias Bundle as target
+uses "http://hl7.org/fhir/StructureDefinition/Composition" alias Composition as target
+uses "http://hl7.org/fhir/StructureDefinition/Patient" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/Encounter" alias Encounter as target
+uses "http://hl7.org/fhir/StructureDefinition/Person" alias Patient as target
+uses "http://hl7.org/fhir/StructureDefinition/List" alias List as target
+uses "http://hl7.org/fhir/StructureDefinition/Practitioner" alias Practitioner as target
+uses "http://hl7.org/fhir/StructureDefinition/Organization" alias Organization as target
+uses "http://hl7.org/fhir/StructureDefinition/SimpleQuantity" alias SimpleQuantity as target
+uses "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" alias DeviceUseStatement as target
+uses "http://hl7.org/fhir/StructureDefinition/DocumentReference" alias DocumentReference as target
+uses "http://hl7.org/fhir/StructureDefinition/Device" alias Device as target
+uses "http://hl7.org/fhir/StructureDefinition/PractitionerRole" alias PractitionerRole as target
+uses "http://hl7.org/fhir/StructureDefinition/OperationOutcome" alias OperationOutcome as target
+
+
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/CdaToFhirDataTypes"
+imports "http://salute.gov.it/ig/cda-fhir-maps/StructureMap/FULLHEADER"
+
+group CdaToBundle(source cda : ClinicalDocument, target bundle : Bundle) {
+    cda ->  bundle.entry as e, e.request = create('BackboneElement') as request, request.method = 'POST',  e.resource = create('Composition') as composition,  composition.id = uuid() as uuid1,  e.fullUrl = append('https://example/Composition/', uuid1), request.url = 'Composition',  bundle.entry as e2, e2.request = create('BackboneElement') as requestPAT, requestPAT.method = 'PUT', e2.resource = create('Patient') as patient,  patient.id = uuid() as uuid2,  e2.fullUrl = append('https://example/Patient/', uuid2), bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'POST',  e3.resource = create('Encounter') as encounter,  encounter.id = uuid() as uuid3,  e3.fullUrl = append('https://example/Encounter/', uuid3),request.url = 'Encounter', bundle.entry as e4, e4.request = create('BackboneElement') as request, request.method = 'POST',  e4.resource = create('DocumentReference') as DocumentReference,  DocumentReference.id = uuid() as uuid4,  e4.fullUrl = append('https://example/DocumentReference/', uuid4),request.url = 'DocumentReference' then {
+    cda then ClinicalDocumentToBundle(cda, patient, composition, encounter, bundle, DocumentReference) "cdatobundle";
+    cda.recordTarget as recordTarget then{
+        recordTarget.patientRole as patient then{
+        patient.id as id -> patient.identifier as identifier then {
+        id.root as r ->identifier.system= translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+        id.extension as ext1 -> identifier.value = ext1 "value";
+        id.assigningAuthorityName as s -> identifier.assigner as a, a.display = s;
+        }"idfr";
+        patient.id as id where (root='2.16.840.1.113883.2.9.4.3.2') or (root='2.16.840.1.113883.2.9.4.3.7')
+        or (root='2.16.840.1.113883.2.9.4.3.3') or(root='2.16.840.1.113883.2.9.4.3.17')  or (root = '2.16.840.1.113883.2.9.4.3.18') or (root = '2.16.840.1.113883.2.9.2.10.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.20.4.1.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.41.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.42.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.50.4.1.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.70.4.1.1')  or (root = '2.16.840.1.113883.2.9.2.80.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.90.4.1.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1.1') or (root = '2.16.840.1.113883.2.9.2.120.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.130.4.1.1') or (root = '2.16.840.1.113883.2.9.2.140.4.1.1') or (root = '2.16.840.1.113883.2.9.2.150.4.1.1') or (root = '2.16.840.1.113883.2.9.2.160.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.170.4.1.1') or (root = '2.16.840.1.113883.2.9.2.180.4.1.1') or (root = '2.16.840.1.113883.2.9.2.190.4.1.1') or (root = '2.16.840.1.113883.2.9.2.200.4.1.1')
+        or (root = '2.16.840.1.113883.2.9.2.10.4.1') or (root = '2.16.840.1.113883.2.9.2.20.4.1') or (root = '2.16.840.1.113883.2.9.2.30.4.1') or (root = '2.16.840.1.113883.2.9.2.41.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.42.4.1') or (root = '2.16.840.1.113883.2.9.2.50.4.1') or (root = '2.16.840.1.113883.2.9.2.60.4.1') or (root = '2.16.840.1.113883.2.9.2.70.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.80.4.1') or (root = '2.16.840.1.113883.2.9.2.90.4.1') or (root = '2.16.840.1.113883.2.9.2.100.4.1') or (root = '2.16.840.1.113883.2.9.2.110.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.120.4.1')  or (root = '2.16.840.1.113883.2.9.2.130.4.1')  or (root = '2.16.840.1.113883.2.9.2.140.4.1')  or (root = '2.16.840.1.113883.2.9.2.150.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.160.4.1')  or (root = '2.16.840.1.113883.2.9.2.170.4.1')  or (root = '2.16.840.1.113883.2.9.2.180.4.1')  or (root = '2.16.840.1.113883.2.9.2.190.4.1')
+        or (root = '2.16.840.1.113883.2.9.2.200.4.1') or (root='2.16.840.1.113883.2.9.4.3.15')  then {
+          id.extension as ext -> requestPAT.url = append('Patient?identifier=',ext) "UUID";
+          }"ext";
+        }"recPat";
+    }"patient";
+   } "ClinicalDocumentTo";
+  }
+  
+group ClinicalDocumentToBundle(source cda : ClinicalDocument, target patient : Patient, target composition : Composition, target encounter : Encounter, target bundle : Bundle, target DocumentReference : DocumentReference) {
+    cda -> bundle.id = uuid() "id";
+    cda.id -> bundle.identifier "identifier";
+    cda -> bundle.type = 'transaction' "type";
+    cda -> bundle.timestamp=(timestamp.now()) "date";
+    cda then ClinicalDocumentComposition(cda, composition, patient, encounter, bundle, DocumentReference) "composition";
+    cda.component as component then {
+      component.structuredBody as body then {
+        body.component as component  then {
+           component.section as srcSection then {
+          srcSection.code -> composition.section as tgtSection  then ClinicalDocumentSection(cda, srcSection, patient, tgtSection, bundle, DocumentReference);       
+         } "section";
+        } "component";
+       }"body";
+      }"component";
+  }
+  
+group ClinicalDocumentSection(source cda : ClinicalDocument, source src : Section, target patient : Patient, target tgt : Composition, target bundle : Bundle, target DocumentReference : DocumentReference) {
+    src.title as t -> tgt.title = (t.xmlText);
+    src.text as te -> tgt.text = (te.xmlText);
+    src.code -> tgt.code;
+    src.entry as entry then{
+        src.text as cdaText -> tgt.text as fhirText then {
+            cdaText -> fhirText.status = 'generated' "narrativeStatus";
+            cdaText as t -> fhirText.div = t "narrativeText";
+        } "cdaText";
+        entry then DeviceUseFunction(entry, bundle, tgt, patient) "dus";
+    }"entry";
+    src.component as component then {
+        component.section as sec -> tgt.section as tgtSection then ClinicalDocumentSection(cda, sec, patient, tgtSection, bundle, DocumentReference);
+    }"component";
+}
+
+group DeviceUseFunction(source src: entry, target bundle : Bundle, target tgt, target patient : Patient){
+  src.organizer as organizer then {
+  organizer.component as component then {
+    component.supply as sup -> bundle.entry as eDus, eDus.request = create('BackboneElement') as requestDus, requestDus.method = 'POST', eDus.resource = create('DeviceUseStatement') as dus, dus.id = uuid() as uuidDus, eDus.fullUrl = append('https://example/DeviceUseStatement/', uuidDus), requestDus.url = 'DeviceUseStatement', tgt.entry = create('Reference') as referenceDus, referenceDus.reference = ('https://example/DeviceUseStatement/' + %dus.id) then {
+    // una DeviceUseStatement per supply
+    sup -> dus.status = 'active' "dusstatus";
+    sup -> dus.subject = create('Reference') as referenceSubj, referenceSubj.reference = ('https://example/Patient/' + %patient.id) "dussubject";
+    // elementi dell'organizer, condivisi dalle DeviceUseStatement di ogni supply
+    organizer.sdtcText as text -> dus.note as note then{ 
+      text.reference as t -> note.text = (t.value) "t";
+      }"dusnote";
+    organizer.component as compObs where compObs.observation.exists() then {
+      compObs.observation as obsBody then {
+        obsBody.value -> dus.bodySite "bodysite";
+      } "obs";
+    } "orgobs";
+    sup -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'POST',   e1.resource = create('Device') as device,  device.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Device/', uuid1), request.url = 'Device' , dus.device  = create('Reference') as reference,  reference.reference = ('https://example/Device/' + %device.id), tgt.entry  = create('Reference') as reference,  reference.reference = ('https://example/Device/' + %device.id) then {
+    sup -> device.patient=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";
+    sup.id as id -> device.identifier as identifier then {
+      id.root as r -> identifier.system = translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+      id.extension as ext-> identifier.value = ext;
+      id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+     }"identifier";
+    sup.code -> device.type "type";
+    sup.effectiveTime: IVL_TS as eff then{
+      eff as eff where (low.exists()) -> dus.timing = create('Period') as value then IVLTSPeriod(eff, value) "valuePeriod";
+      }"period";
+    sup.entryRelationship as entry2 where entry2.observation.exists() then {
+      entry2.observation as observation then {
+      observation.value as value where (code='LA9633-4') -> device.status ='active';
+      observation.value as value where (code='LA9634-2') -> device.status ='inactive';
+       }"act";
+      }"entry1";
+    sup.product as product then {
+          product.manufacturedProduct as manu then {
+            manu.manufacturedMaterial as material then {
+            material.name as name -> device.deviceName as devname then {
+              name.item as v -> devname.name = (v.xmlText);
+              name-> devname.type = 'manufacturer-name' "deviceNametype";
+            }"name";  
+            material.lotNumberText as t -> device.lotNumber = (t.xmlText) "lotnumber"; 
+            }"material";
+            // manufacturerOrganization: id mancante -> non creare Organization (produttore) e genera OperationOutcome di warning
+            manu.manufacturerOrganization as manuorgNoId where (id.exists().not())
+              -> bundle.entry as warningEntry1,
+                 warningEntry1.request = create('BackboneElement') as warningRequest1,
+                 warningRequest1.method = 'POST',
+                 warningRequest1.url = 'OperationOutcome',
+                 warningEntry1.resource = create('OperationOutcome') as warning1,
+                 warning1.id = uuid() as warningId1,
+                 warningEntry1.fullUrl = append('https://example/OperationOutcome/', warningId1)
+            then {
+              manuorgNoId -> warning1.issue = create('BackboneElement') as issue1,
+                issue1.severity = 'warning',
+                issue1.code = 'required',
+                issue1.diagnostics = 'ATTENZIONE: la risorsa FHIR Organization (produttore) NON e stata creata perche manca id nel CDA2. Path CDA2: ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/supply/product/manufacturedProduct/manufacturerOrganization',
+                issue1.expression = 'ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/supply/product/manufacturedProduct/manufacturerOrganization/id'
+                "manufacturerIssue";
+            } "manufacturerWarning";
+            manu.manufacturerOrganization as manuorg where (id.exists()) -> bundle.entry as e1, e1.request = create('BackboneElement') as request, request.method = 'PUT',   e1.resource = create('Organization') as organization, organization.id = uuid() as uuid1,  e1.fullUrl = append('https://example/Organization/', uuid1), request.url = 'Organization' then {
+            manuorg -> device.owner  = create('Reference') as reference,  reference.reference = ('https://example/Organization/' + %organization.id) "org";
+            manuorg.id as id -> organization.identifier as identifier then {
+            id.root as r -> identifier.system = translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+            id.extension as ext-> identifier.value = ext;
+            id.extension as ext->identifier.value = ext then {
+            manuorg-> request.url = append('Organization?identifier=',ext)"UUID";
+            }"ext";
+            id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+            }"identifier";
+            manuorg.name as name then{
+              name.item as v -> organization.name = (v.xmlText);
+            }"item";
+            manuorg.telecom -> organization.telecom;
+            manuorg.addr -> organization.address;  
+            }"manuorg";
+           }"manu";
+          }"product";
+    sup.participant as part1 where (typeCode = 'LOC') ->  bundle.entry as e2, e2.request = create('BackboneElement') as request, request.method = 'POST',   e2.resource = create('Procedure') as procedure,  procedure.id = uuid() as uuid1,  e2.fullUrl = append('https://example/Procedure/', uuid1), request.url = 'Procedure' , dus.derivedFrom  = create('Reference') as reference,  reference.reference = ('https://example/Procedure/' + %procedure.id) then {
+    part1-> procedure.status ='completed'"status";
+    part1 -> procedure.subject=create('Reference') as reference,  reference.reference = ('https://example/Patient/' + %patient.id) "reference";  
+    // participant LOC: id mancante -> non creare Organization (esecutore) e genera OperationOutcome di warning
+    part1 where (participantRole.id.exists().not())
+      -> bundle.entry as warningEntry2,
+         warningEntry2.request = create('BackboneElement') as warningRequest2,
+         warningRequest2.method = 'POST',
+         warningRequest2.url = 'OperationOutcome',
+         warningEntry2.resource = create('OperationOutcome') as warning2,
+         warning2.id = uuid() as warningId2,
+         warningEntry2.fullUrl = append('https://example/OperationOutcome/', warningId2)
+    then {
+      part1 -> warning2.issue = create('BackboneElement') as issue2,
+        issue2.severity = 'warning',
+        issue2.code = 'required',
+        issue2.diagnostics = 'ATTENZIONE: la risorsa FHIR Organization (esecutore) NON e stata creata perche manca id nel CDA2. Path CDA2: ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/supply/participant/participantRole',
+        issue2.expression = 'ClinicalDocument/component/structuredBody/component/section/entry/organizer/component/supply/participant/participantRole/id'
+        "performerIssue";
+    } "performerWarning";
+    part1 where (participantRole.id.exists()) -> procedure.performer as performer then {
+    part1 ->  bundle.entry as e3, e3.request = create('BackboneElement') as request, request.method = 'PUT',   e3.resource = create('Organization') as organization,  organization.id = uuid() as uuid1,  e3.fullUrl = append('https://example/Organization/', uuid1), request.url = 'Organization', performer.actor  = create('Reference') as reference,  reference.reference = ('https://example/Organization/' + %organization.id), tgt.entry = create('Reference') as reference,  reference.reference = ('https://example/Organization/' + %organization.id) then {
+    part1.participantRole as role then {
+            role.addr -> organization.address;
+            role.id as id -> organization.identifier as identifier then {
+            id.root as r -> identifier.system = translate(r, 'http://hl7.org/fhir/ConceptMap/special-oid2uri', 'uri') "root1";
+            id.extension as ext-> identifier.value = ext;
+            id.extension as ext->identifier.value = ext then {
+            role-> request.url = append('Organization?identifier=',ext)"UUID";
+            }"ext";
+            id.assigningAuthorityName as s ->  identifier.assigner as a,  a.display = s;
+            }"identifier";
+            role.playingEntity as entity then {
+            entity.name as name then {
+            name.item as v -> organization.name = (v.xmlText);
+             }"name";
+            } "entity";
+           }"role";
+         }"organization";
+        } "performer";
+       } "participantLOC";
+    sup.participant as part2 where (typeCode = 'DEV') then {
+        part2.participantRole as role then {
+            role.playingDevice as pdevice then {
+                pdevice.manufacturerModelName as t -> device.modelNumber = (t.xmlText) "modelnumber"; 
+              } "pdevice";
+            } "role";
+          } "participantDEV";
+       
+    sup.entryRelationship as entry1 where entry1.act.exists() then {
+      entry1.act as act then {
+        act.reference as ref then {
+        ref.externalDocument as extdoc then {
+        extdoc.id as id then {
+         id.extension as ext -> tgt.entry = create('Reference') as reference,  reference.display = ext "reference";
+           } "ref";
+          } "extdoc";
+         } "ref"; 
+        }"act";
+       }"entry1";
+      }"device";
+     } "supply";
+
+   }"component";
+  }"organizer";
+}
